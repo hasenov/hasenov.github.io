@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Контакты</title>
+	<meta name="description" content="Описание">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
+	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__container container">
+			<a href="index.html" class="top-header__logo">
+				<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
+			</a>
+			<div class="top-header__contacts contacts-header">
+				<div class="contacts-header__items">
+					<div class="contacts-header__item">
+						<a href="#">namemail@mail.ru</a>
+					</div>
+					<div class="contacts-header__item">
+						<a href="#">+7 111 111 11 11</a>
+					</div>
+					<div class="contacts-header__item">
+						<a href="#">+7 222 222 22 22</a>
+					</div>
+				</div>
+			</div>
+			<div class="top-header__btns">
+				<a href="#" class="top-header__btn btn btn--accent" data-hystmodal="#modal-callback">Заказать звонок</a>
+			</div>
+			<button class="top-header__hamburger hamburger hamburger--spring" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
+	</div>
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__container container">
+			<nav class="bottom-header__menu menu">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="service.html">Услуга</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="#">Услуга</a></li>
+					<li><a href="#">Услуга</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<div class="bg-white">
+	<section class="section-callback">
+	<div class="container">
+		<div class="callback">
+			<div class="callback__row row no-gutters">
+				<div class="callback__col col-lg-4 col-md-5">
+					<div class="callback__info info-callback" style="background-image: url(images/dist/callback.jpg)">
+						<div class="info-callback__body">
+							<div class="info-callback__contacts contacts-callback">
+								<div class="contacts-callback__item">
+									<a href="#" class="contacts-callback__value">
+										<img src="images/icons/email-accent.svg" alt="alt" class="contacts-callback__icon" />
+										namemail@mail.ru
+									</a>
+								</div>
+								<div class="contacts-callback__item">
+									<a href="#" class="contacts-callback__value">
+										<img src="images/icons/phone-accent.svg" alt="alt" class="contacts-callback__icon" />
+										+7 111 111 11 11
+									</a>
+								</div>
+								<div class="contacts-callback__item">
+									<a href="#" class="contacts-callback__value">
+										<img src="images/icons/phone-accent.svg" alt="alt" class="contacts-callback__icon" />
+										+7 222 222 22 22
+									</a>
+								</div>
+							</div>
+							<div class="info-callback__socials socials-callback">
+								<a href="#" class="socials-callback__item">
+									<svg class="socials-callback__icon" role="img">
+										<use href="images/icons/sprite.svg#tg" />
+									</svg>
+								</a>
+								<a href="#" class="socials-callback__item">
+									<svg class="socials-callback__icon" role="img">
+										<use href="images/icons/sprite.svg#ig" />
+									</svg>
+								</a>
+								<a href="#" class="socials-callback__item">
+									<svg class="socials-callback__icon" role="img">
+										<use href="images/icons/sprite.svg#fb" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="callback__col col-lg-8 col-md-7">
+					<form class="callback__form form-callback js-validate-form">
+						<div class="form-callback__header">
+							<h2 class="form-callback__title h2">Свяжитесь с нами</h2>
+							<div class="form-callback__text text-lg">Наш менеджер ответит Вам в течение часа</div>
+						</div>
+						<div class="form-callback__controls row">
+							<div class="form-callback__group col-lg-6">
+								<label for="name_callback" class="form-callback__label label">Имя</label>
+								<input type="text" class="form-callback__control control" placeholder="Введите имя" id="name_callback" />
+							</div>
+							<div class="form-callback__group col-lg-6">
+								<label for="phone_callback" class="form-callback__label label">Телефон</label>
+								<input type="text" class="form-callback__control control js-phone-required js-phone-mask" placeholder="Введите номер телефона" id="phone_callback" />
+							</div>
+							<div class="form-callback__group col-lg-12">
+								<label for="email_callback" class="form-callback__label label">Email</label>
+								<input type="text" class="form-callback__control control js-email" placeholder="Введите адрес почты" id="email_callback" />
+							</div>
+							<div class="form-callback__group col-12">
+								<label for="message_callback" class="form-callback__label label">Комментарий</label>
+								<textarea class="form-callback__control control" placeholder="Оставьте комментарий" id="message_callback"></textarea>
+							</div>
+						</div>
+						<div class="form-callback__checkboxes">
+							<label class="form-callback__checkbox checkbox">
+								<input type="checkbox" class="checkbox__input hidden js-checkbox" checked />
+								<span class="checkbox__box"></span>
+								<span class="checkbox__text">Я согласен с политикой конфиденциальности</span>
+							</label>
+						</div>
+						<div class="form-callback__btn-wrap">
+							<button class="form-callback__btn btn btn--accent btn--lg" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="section-maps">
+	<div class="container">
+		<div class="section-headline">
+			<h2 class="h2">Наши офисы</h2>
+			<div class="tab-btns">
+				<button class="tab-btns__btn btn is-active" type="button">Москва</button>
+				<button class="tab-btns__btn btn" type="button">Пекин</button>
+			</div>
+		</div>
+		<div class="maps">
+			<div class="maps__item is-active">
+				<div class="maps__contacts contacts-maps">
+					<div class="contacts-maps__title h3 font-semibold">Московский офис</div>
+					<div class="contacts-maps__items">
+						<div class="contacts-maps__item">
+							<div class="contacts-maps__value">
+								<img src="images/icons/map-pin-accent.svg" alt="alt" class="contacts-maps__icon" />
+								г. Москва, ул. Пушкина, д. 42
+							</div>
+						</div>
+						<div class="contacts-maps__item">
+							<a href="#" class="contacts-maps__value">
+								<img src="images/icons/tg-accent.svg" alt="alt" class="contacts-maps__icon" />
+								nametelegram
+							</a>
+						</div>
+						<div class="contacts-maps__item">
+							<a href="#" class="contacts-maps__value">
+								<img src="images/icons/email-accent.svg" alt="alt" class="contacts-maps__icon" />
+								namemail@mail.ru
+							</a>
+						</div>
+						<div class="contacts-maps__item">
+							<a href="#" class="contacts-maps__value">
+								<img src="images/icons/phone-accent.svg" alt="alt" class="contacts-maps__icon" />
+								+7 111 111 11 11
+							</a>
+						</div>
+					</div>
+				</div>
+				<iframe class="maps__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6f6524067dc9043307dd91a05ad0192a1a35e149dba45fb2b87b50197594d888&amp;source=constructor"></iframe>
+			</div>
+			<div class="maps__item">
+				<div class="maps__contacts contacts-maps">
+					<div class="contacts-maps__title h3 font-semibold">Пекинский офис</div>
+					<div class="contacts-maps__items">
+						<div class="contacts-maps__item">
+							<div class="contacts-maps__value">
+								<img src="images/icons/map-pin-accent.svg" alt="alt" class="contacts-maps__icon" />
+								г. Москва, ул. Пушкина, д. 42
+							</div>
+						</div>
+						<div class="contacts-maps__item">
+							<a href="#" class="contacts-maps__value">
+								<img src="images/icons/tg-accent.svg" alt="alt" class="contacts-maps__icon" />
+								nametelegram
+							</a>
+						</div>
+						<div class="contacts-maps__item">
+							<a href="#" class="contacts-maps__value">
+								<img src="images/icons/email-accent.svg" alt="alt" class="contacts-maps__icon" />
+								namemail@mail.ru
+							</a>
+						</div>
+						<div class="contacts-maps__item">
+							<a href="#" class="contacts-maps__value">
+								<img src="images/icons/phone-accent.svg" alt="alt" class="contacts-maps__icon" />
+								+7 111 111 11 11
+							</a>
+						</div>
+					</div>
+				</div>
+				<iframe class="maps__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad2fae8c7e18971871b85efcb406e59740652937eb633882048acfb69f98f91ed&amp;source=constructor"></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>
+
+<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__row row">
+			<div class="footer__col col-xl-6 col-lg-3 col-md-8">
+				<a href="index.html" class="footer__logo">
+					<img src="images/dist/logo-white.svg" alt="alt" class="img-responsive">
+				</a>
+				<div class="footer__info info-footer">
+					<div class="info-footer__item">
+						<div class="info-footer__title footer__title">Телефоны</div>
+						<div class="info-footer__values">
+							<div class="info-footer__value">
+								<a href="#">+7 111 111 11 11</a>
+							</div>
+							<div class="info-footer__value">
+								<a href="#">+7 111 111 11 11</a>
+							</div>
+						</div>
+					</div>
+					<div class="info-footer__item">
+						<div class="info-footer__title footer__title">Адрес</div>
+						<div class="info-footer__values">
+							<div class="info-footer__value">Московская область, г. Пушкин, Пушкина 12</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__col col-xl-2 col-lg-3 col-md-4">
+				<div class="footer__title">Социальные сети</div>
+				<div class="footer__socials socials-footer">
+					<a href="#" class="socials-footer__item">
+						<svg role="img" class="socials-footer__icon">
+							<use href="images/icons/sprite.svg#tg" />
+						</svg>
+					</a>
+					<a href="#" class="socials-footer__item">
+						<svg role="img" class="socials-footer__icon">
+							<use href="images/icons/sprite.svg#ig" />
+						</svg>
+					</a>
+					<a href="#" class="socials-footer__item">
+						<svg role="img" class="socials-footer__icon">
+							<use href="images/icons/sprite.svg#fb" />
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__col col-xl-2 col-lg-3 col-md-6 col-sm-6">
+				<div class="footer__title">Услуги</div>
+				<ul class="footer__menu">
+					<li><a href="#">Услуга услуга услуга</a></li>
+					<li><a href="#">Услуга услуга услуга</a></li>
+					<li><a href="#">Услуга услуга услуга</a></li>
+					<li><a href="#">Услуга услуга услуга</a></li>
+					<li><a href="#">Услуга услуга услуга</a></li>
+				</ul>
+			</div>
+			<div class="footer__col col-xl-2 col-lg-3 col-md-6 col-sm-6">
+				<div class="footer__title">Контакты</div>
+				<ul class="footer__menu">
+					<li><a href="#">Правила пользования</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+		</div>
+		<p class="footer__copyright">2023 © Все права защищены.</p>
+	</div>
+</footer>
+
+<!-- Заказать звонок -->
+<div class="hystmodal" id="modal-callback" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal hystmodal__window" role="dialog" aria-modal="true">
+			<button class="modal__close hystmodal__close" type="button" data-hystclose>
+				<svg role="img">
+					<use href="images/icons/sprite.svg#close" />
+				</svg>
+			</button>
+			<div class="modal__title h2 font-semibold">Заказать звонок</div>
+			<form class="form-modal js-validate-form">
+				<div class="form-modal__controls">
+					<div class="form-modal__group">
+						<label for="name_modal_callback" class="form-modal__label label">Имя</label>
+						<input type="text" class="form-modal__control control js-required" placeholder="Введите имя" id="name_modal_callback">
+					</div>
+					<div class="form-modal__group">
+						<label for="phone_modal_callback" class="form-modal__label label">Телефон</label>
+						<input type="text" class="form-modal__control control js-phone-required js-phone-mask" placeholder="Введите номер телефона" id="phone_modal_callback">
+					</div>
+					<div class="form-modal__group">
+						<label for="time_modal_callback" class="form-modal__label label">Удобное время для звонка </label>
+						<input type="text" class="form-modal__control control" placeholder="Введите время" id="time_modal_callback">
+					</div>
+				</div>
+				<div class="form-modal__checkboxes">
+					<label class="form-modal__checkbox checkbox">
+						<input type="checkbox" class="checkbox__input hidden js-checkbox" checked>
+						<span class="checkbox__box"></span>
+						<span class="checkbox__text">Я согласен с политикой конфиденциальности</span>
+					</label>
+				</div>
+				<div class="form-modal__btn-wrap">
+					<button class="form-modal__btn btn btn--accent btn--lg" type="submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Расчет тарифа -->
+<div class="hystmodal" id="modal-tariff" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal hystmodal__window" role="dialog" aria-modal="true">
+			<button class="modal__close hystmodal__close" type="button" data-hystclose>
+				<svg role="img">
+					<use href="images/icons/sprite.svg#close" />
+				</svg>
+			</button>
+			<div class="modal__title h2 font-semibold">Авиа “Экспресс”</div>
+			<form class="form-modal js-validate-form">
+				<div class="form-modal__controls">
+					<div class="form-modal__group">
+						<label for="gruz_modal_tariff" class="form-modal__label label">Груз</label>
+						<input type="text" class="form-modal__control control js-required" placeholder="Введите описание груза" id="gruz_modal_tariff">
+					</div>
+					<div class="form-modal__group">
+						<label for="weight_modal_tariff" class="form-modal__label label">Вес (кг)</label>
+						<input type="text" class="form-modal__control control js-required" placeholder="Введите примерный вес" id="weight_modal_tariff">
+					</div>
+					<div class="form-modal__group">
+						<label for="email_modal_tariff" class="form-modal__label label">Email</label>
+						<input type="text" class="form-modal__control control js-email-required" placeholder="Введите email" id="email_modal_tariff">
+					</div>
+				</div>
+				<div class="form-modal__checkboxes">
+					<label class="form-modal__checkbox checkbox">
+						<input type="checkbox" class="checkbox__input hidden js-checkbox" checked>
+						<span class="checkbox__box"></span>
+						<span class="checkbox__text">Я согласен с политикой конфиденциальности</span>
+					</label>
+				</div>
+				<div class="form-modal__btn-wrap">
+					<button class="form-modal__btn btn btn--accent btn--lg" type="submit">Рассчитать</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Тариф по выкупу -->
+<div class="hystmodal" id="modal-tariff-buyout" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal hystmodal__window" role="dialog" aria-modal="true">
+			<button class="modal__close hystmodal__close" type="button" data-hystclose>
+				<svg role="img">
+					<use href="images/icons/sprite.svg#close" />
+				</svg>
+			</button>
+			<div class="modal__title h2 font-semibold">Тариф по выкупу</div>
+			<form class="form-modal js-validate-form">
+				<div class="form-modal__controls">
+					<div class="form-modal__group">
+						<label for="name_modal_buyout" class="form-modal__label label">Имя</label>
+						<input type="text" class="form-modal__control control js-required" placeholder="Введите имя" id="name_modal_buyout">
+					</div>
+					<div class="form-modal__group">
+						<label for="phone_modal_buyout" class="form-modal__label label">Телефон</label>
+						<input type="text" class="form-modal__control control js-phone-required js-phone-mask" placeholder="Введите номер телефона" id="phone_modal_buyout">
+					</div>
+					<div class="form-modal__group">
+						<label for="message_modal_buyout" class="form-modal__label label">Сообщение</label>
+						<input type="text" class="form-modal__control control" placeholder="Оставьте сообщение" id="message_modal_buyout">
+					</div>
+				</div>
+				<div class="form-modal__file-wrap">
+					<label class="form-modal__file file">
+						<input type="file" class="file__input hidden">
+						<svg role="img" class="file__icon">
+							<use href="images/icons/sprite.svg#file" />
+						</svg>
+						<span class="file__text">Прикрепите файл</span>
+					</label>
+				</div>
+				<div class="form-modal__checkboxes">
+					<label class="form-modal__checkbox checkbox">
+						<input type="checkbox" class="checkbox__input hidden js-checkbox" checked>
+						<span class="checkbox__box"></span>
+						<span class="checkbox__text">Я согласен с политикой конфиденциальности</span>
+					</label>
+				</div>
+				<div class="form-modal__btn-wrap">
+					<button class="form-modal__btn btn btn--accent btn--lg" type="submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="libs/svg4everybody.min.js"></script>
+<script src="libs/splide/splide.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
+<script src="libs/enquire.min.js"></script>
+<script src="libs/hystmodal/hystmodal.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
+<script src="libs/imask.min.js"></script>
+<script src="libs/just-validate.production.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
