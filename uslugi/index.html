@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- <base href="/"> -->
+
+		<title>Главная</title>
+		<meta name="description" content="description" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="icon" href="images/favicon.png" />
+		<meta property="og:image" content="images/dist/preview.jpg" />
+
+		<link rel="stylesheet" href="libs/swiper/swiper.min.css" />
+		<link rel="stylesheet" href="libs/glightbox/glightbox.min.css" />
+		<link rel="stylesheet" href="css/app.min.css" />
+	</head>
+
+	<body>
+		<header class="header is-home">
+			<div class="header__container container">
+				<div class="header__col header__col--logo">
+					<a href="index.html" class="header__logo">
+						<img src="images/dist/logo.png" alt="alt" class="img-responsive" />
+					</a>
+				</div>
+				<div class="header__col header__col--location">
+					<button class="header__hamburger hamburger" type="button">
+						<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive" />
+					</button>
+					<div class="header__location location">
+						<button class="location__btn" type="button">
+							<img src="images/icons/location.png" alt="alt" class="location__icon" />
+						</button>
+					</div>
+				</div>
+				<div class="header__col header__col--menu">
+					<nav class="header__menu menu container">
+						<div class="header__mobile-header">
+							<a href="index.html" class="header__mobile-logo">
+								<img src="images/dist/logo.png" alt="alt" class="img-responsive" />
+							</a>
+							<button class="header__close" type="button">
+								<img src="images/icons/close.svg" alt="alt" class="img-responsive" />
+							</button>
+						</div>
+						<ul>
+							<li><a href="about.html">О компании</a></li>
+							<li class="has-children">
+								<a href="#">Услуги</a>
+								<ul class="dropdown">
+									<li class="has-children">
+										<a href="#">О нас</a>
+										<ul class="dropdown">
+											<li><a href="about.html">О компании</a></li>
+											<li><a href="about-team.html">О команде</a></li>
+											<li><a href="about-news.html">Новости компании</a></li>
+											<li><a href="about-media.html">Публикации СМИ</a></li>
+											<li><a href="about-vacancies.html">Вакансии</a></li>
+											<li><a href="about-reviews.html">Отзывы</a></li>
+										</ul>
+									</li>
+									<li><a href="bankruptcy.html">Банкротство</a></li>
+									<li><a href="refinancing.html">Рефинансирование</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="blog.html">Блог</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Практика</a></li>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col header__col--auth-links">
+					<div class="header__auth-links auth-links">
+						<a href="#" class="auth-links__item">
+							<img src="images/icons/enter.png" alt="alt" class="auth-links__icon" />
+							<div class="auth-links__text">Войти</div>
+						</a>
+					</div>
+				</div>
+				<div class="header__col header__col--btns">
+					<div class="header__btns btns-header">
+						<a href="#" class="btns-header__btn btn btn--outline">Онлайн оплата</a>
+						<a href="tel:88005552501" class="btns-header__btn btns-header__btn--phone btn btn--accent">8 (800) 555-25-01</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<nav class="mobile-navbar">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="images/icons/home-alt.svg" alt="alt" class="img-responsive" />
+						Главная
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icons/wallet.svg" alt="alt" class="img-responsive" />
+						Оплатить
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icons/message-alt.svg" alt="alt" class="img-responsive" />
+						Вопрос-ответ
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icons/settings.svg" alt="alt" class="img-responsive" />
+						Калькулятор
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="section-showcase">
+			<div class="container">
+				<div class="showcase">
+					<div class="showcase__row row">
+						<div class="showcase__col col-xl-6">
+							<div class="showcase__body">
+								<h1 class="h2 showcase__title">Сервис по решению долговых и правовых проблем граждан</h1>
+								<div class="showcase__text-wrap">
+									<p>Первая автоматизированная платформа, которая помогает решать вопросы с долгами, кредитами и юридическими проблемами онлайн</p>
+								</div>
+								<a href="#" class="showcase__btn btn btn--outline">Зарегистрироваться</a>
+							</div>
+						</div>
+						<div class="showcase__col showcase__col--media col-xl-6">
+							<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI" class="showcase__media glightbox" data-gallery="showcase">
+								<img src="images/dist/showcase.png" alt="alt" class="showcase__img img-responsive" />
+								<div class="showcase__play play">
+									<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-service-tiles">
+			<div class="container">
+				<div class="service-tiles">
+					<div class="service-tiles__row row">
+						<div class="service-tiles__col col-xl-4 col-sm-6">
+							<div class="card-service-form card-service-form--debt">
+								<div class="card-service-form__body">
+									<div class="card-service-form__title">Списание долгов</div>
+									<div class="card-service-form__text-wrap">
+										<p>Через внесудебное и судебное банкротство</p>
+									</div>
+									<form class="card-service-form__form js-validate-form">
+										<div class="card-service-form__control-wrap">
+											<input type="text" class="card-service-form__control js-required" placeholder="Сумма долга" />
+										</div>
+										<button class="card-service-form__btn btn btn--accent" type="submit">Списать</button>
+									</form>
+								</div>
+								<img src="images/dist/woman.png" alt="alt" class="card-service-form__img img-responsive" />
+							</div>
+						</div>
+						<div class="service-tiles__col col-xl-4 col-sm-6">
+							<div class="card-service-form card-service-form--loan">
+								<div class="card-service-form__body">
+									<div class="card-service-form__title">Снизим выплаты по кредитам</div>
+									<div class="card-service-form__text-wrap">
+										<p>Через рефинансирование ваших обязательств</p>
+									</div>
+									<form class="card-service-form__form js-validate-form">
+										<div class="card-service-form__control-wrap">
+											<input type="text" class="card-service-form__control js-required" placeholder="Сумма кредитов" />
+										</div>
+										<button class="card-service-form__btn btn btn--accent" type="submit">Снизить платежи</button>
+									</form>
+								</div>
+								<img src="images/dist/bank.png" alt="alt" class="card-service-form__img img-responsive" />
+							</div>
+						</div>
+						<div class="service-tiles__col col-xl-4">
+							<div class="service-tiles__cards-service">
+								<div class="service-tiles__cards-service-col">
+									<div class="card-service card-service--yur">
+										<div class="card-service__body">
+											<div class="card-service__title">Юридические услуги</div>
+											<div class="card-service__text-wrap">
+												<p>Онлайн оценка перспектив</p>
+											</div>
+										</div>
+										<img src="images/dist/judge.png" alt="alt" class="card-service__img img-responsive" />
+									</div>
+								</div>
+								<div class="service-tiles__cards-service-col">
+									<div class="card-service card-service--loan">
+										<div class="card-service__body">
+											<div class="card-service__title">Реструктуризация кредитов</div>
+											<div class="card-service__text-wrap">
+												<p>Ипотека, потребительские кредиты подберем лучшие условиями</p>
+											</div>
+										</div>
+										<img src="images/dist/calculator.png" alt="alt" class="card-service__img img-responsive" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-tiles__col col-12">
+							<div class="services-menu">
+								<div class="services-menu__items">
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/judge.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Судебный приказ</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/cards.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Банковские карты</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/car.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Автомобиль</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/house.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Недвижимость</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/key.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Ипотека</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/judge.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Исполнительное производство</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/drop.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">ЖКХ</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/cards.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Кредиты при долгах</div>
+										</a>
+									</div>
+									<div class="services-menu__col">
+										<a href="#" class="services-menu__item item-services-menu">
+											<img src="images/icons/cards.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											<div class="item-services-menu__text">Антиколлектор</div>
+										</a>
+									</div>
+									<div class="services-menu__col services-menu__col--more">
+										<a href="#" class="services-menu__item item-services-menu">
+											<picture>
+												<source media="(max-width: 1199.98px)" srcset="images/icons/menu.svg" />
+												<source media="(min-width: 1200px)" srcset="images/icons/more.svg" />
+												<img src="images/icons/more.svg" alt="alt" class="item-services-menu__icon img-responsive" />
+											</picture>
+											<div class="item-services-menu__text">Все услуги</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-affiliation" style="background-image: url(images/dist/affiliation.png)">
+			<div class="container">
+				<div class="affiliation">
+					<div class="affiliation__title h3">Получи доход от 10 000 рублей</div>
+					<div class="affiliation__body">
+						<div class="affiliation__text-wrap">
+							<p>Пригласи друга и получи деньги! За любой продукт, который оформит друг по вашей рекомендации</p>
+						</div>
+						<a href="#" class="affiliation__link">Пригласить</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-differences">
+			<div class="section-headline">
+				<div class="container">
+					<h2 class="section-title h2">Что отличает нас от других</h2>
+				</div>
+			</div>
+			<div class="differences">
+				<div class="container">
+					<div class="differences__item item-differences item-differences--bike">
+						<img src="images/dist/bike.png" alt="alt" class="item-differences__img img-responsive" />
+						<div class="item-differences__body">
+							<div class="item-differences__title">Сервис – онлайн</div>
+							<div class="item-differences__text-wrap">
+								<p>Мы экономим ваше время и деньги - работа сервиса позволяет проводить консультации с вами из любой точки мира по видеосвязи - вы видите нас, мы видим вас</p>
+							</div>
+						</div>
+					</div>
+					<div class="differences__item item-differences item-differences--robot">
+						<div class="item-differences__body">
+							<div class="item-differences__title">Искусственный интеллект</div>
+							<div class="item-differences__text-wrap">
+								<p>
+									Для вас мы создали уникальный инструмент, где 90% работы автоматизировано. Больше никаких кип бумаг, поисков в интернете. Наш робот сам подберет для вас оптимальный
+									вариант решения
+								</p>
+							</div>
+						</div>
+						<img src="images/dist/robot.png" alt="alt" class="item-differences__img img-responsive" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-benefits">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xl-10">
+						<div class="benefits">
+							<div class="benefits__row row">
+								<div class="benefits__col col-lg-4 col-md-6">
+									<div class="benefits__item item-benefits">
+										<div class="item-benefits__img-wrap">
+											<img src="images/dist/benefits-1.png" alt="alt" class="item-benefits__img img-responsive" />
+										</div>
+										<div class="item-benefits__title">Всегда удачный исход</div>
+										<div class="item-benefits__text">
+											Искусственный интеллект заложенный в алгоритмы, позволяет до начала процессов определить исход по вашему делу и не примет в работу дела с плохим результатом
+										</div>
+									</div>
+								</div>
+								<div class="benefits__col col-lg-4 col-md-6">
+									<div class="benefits__item item-benefits">
+										<div class="item-benefits__img-wrap">
+											<img src="images/dist/benefits-2.png" alt="alt" class="item-benefits__img img-responsive" />
+										</div>
+										<div class="item-benefits__title">Мы быстрее, чем другие</div>
+										<div class="item-benefits__text">Более десятка интеграций, робот позволяют нам оперативно решать поставленные задачи</div>
+									</div>
+								</div>
+								<div class="benefits__col col-lg-4 col-md-6">
+									<div class="benefits__item item-benefits">
+										<div class="item-benefits__img-wrap">
+											<img src="images/dist/benefits-3.png" alt="alt" class="item-benefits__img img-responsive" />
+										</div>
+										<div class="item-benefits__title">Доступная цена</div>
+										<div class="item-benefits__text">
+											За счет автоматизации и правильных бизнес-процессов, стоимость услуг стала доступней - роботы в отличие от сотрудников не просят зарплату
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-cases">
+			<div class="container">
+				<div class="section-headline">
+					<h2 class="section-title h2">Наши кейсы</h2>
+				</div>
+
+				<div class="slider-cases slider swiper">
+					<div class="slider-cases__wrapper slider__wrapper swiper-wrapper">
+						<div class="slider-cases__slide slider__slide swiper-slide">
+							<div class="item-cases">
+								<div class="item-cases__dot"></div>
+								<div class="item-cases__date">
+									12 апреля 2023<br />
+									Уфа
+								</div>
+								<div class="item-cases__card card-cases">
+									<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-cases__media glightbox" data-gallery="cases">
+										<img src="images/dist/blog-1.jpg" alt="alt" class="card-cases__preview img-responsive" />
+										<div class="card-cases__play play">
+											<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+										</div>
+									</a>
+									<a href="#" class="card-cases__body">
+										<div class="card-cases__title">Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</div>
+										<div class="card-cases__footer">
+											<div class="card-cases__category">новости</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-cases__slide slider__slide swiper-slide">
+							<div class="item-cases">
+								<div class="item-cases__dot"></div>
+								<div class="item-cases__date">
+									12 апреля 2023<br />
+									Уфа
+								</div>
+								<div class="item-cases__card card-cases">
+									<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-cases__media glightbox" data-gallery="cases">
+										<img src="images/dist/blog-1.jpg" alt="alt" class="card-cases__preview img-responsive" />
+										<div class="card-cases__play play">
+											<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+										</div>
+									</a>
+									<a href="#" class="card-cases__body">
+										<div class="card-cases__title">Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</div>
+										<div class="card-cases__footer">
+											<div class="card-cases__category">новости</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-cases__slide slider__slide swiper-slide">
+							<div class="item-cases">
+								<div class="item-cases__dot"></div>
+								<div class="item-cases__date">
+									12 апреля 2023<br />
+									Уфа
+								</div>
+								<div class="item-cases__card card-cases">
+									<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-cases__media glightbox" data-gallery="cases">
+										<img src="images/dist/blog-1.jpg" alt="alt" class="card-cases__preview img-responsive" />
+										<div class="card-cases__play play">
+											<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+										</div>
+									</a>
+									<a href="#" class="card-cases__body">
+										<div class="card-cases__title">Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</div>
+										<div class="card-cases__footer">
+											<div class="card-cases__category">новости</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-cases__slide slider__slide swiper-slide">
+							<div class="item-cases">
+								<div class="item-cases__dot"></div>
+								<div class="item-cases__date">
+									12 апреля 2023<br />
+									Уфа
+								</div>
+								<div class="item-cases__card card-cases">
+									<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-cases__media glightbox" data-gallery="cases">
+										<img src="images/dist/blog-1.jpg" alt="alt" class="card-cases__preview img-responsive" />
+										<div class="card-cases__play play">
+											<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+										</div>
+									</a>
+									<a href="#" class="card-cases__body">
+										<div class="card-cases__title">Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</div>
+										<div class="card-cases__footer">
+											<div class="card-cases__category">новости</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-cases__slide slider__slide swiper-slide">
+							<div class="item-cases">
+								<div class="item-cases__dot"></div>
+								<div class="item-cases__date">
+									12 апреля 2023<br />
+									Уфа
+								</div>
+								<div class="item-cases__card card-cases">
+									<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-cases__media glightbox" data-gallery="cases">
+										<img src="images/dist/blog-1.jpg" alt="alt" class="card-cases__preview img-responsive" />
+										<div class="card-cases__play play">
+											<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+										</div>
+									</a>
+									<a href="#" class="card-cases__body">
+										<div class="card-cases__title">Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</div>
+										<div class="card-cases__footer">
+											<div class="card-cases__category">новости</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-cases__scrollbar slider__scrollbar swiper-scrollbar"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-mobapp">
+			<img src="images/dist/phone.png" alt="alt" class="section-mobapp__img img-responsive" />
+			<div class="container">
+				<div class="mobapp">
+					<div class="mobapp__row row">
+						<div class="mobapp__col col-lg-6">
+							<h2 class="mobapp__title h2">Скачай приложение и запускай свою процедуру</h2>
+							<p class="mobapp__text">Списать долги, снизить проценты или решить юридические вопросы теперь можно в 1 клик</p>
+							<div class="mobapp__btns">
+								<a href="#" class="mobapp__btn">
+									<img src="images/dist/google-play.png" alt="alt" class="img-responsive" />
+								</a>
+								<a href="#" class="mobapp__btn">
+									<img src="images/dist/app-store.png" alt="alt" class="img-responsive" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-blog">
+			<div class="container">
+				<div class="section-headline">
+					<h2 class="section-title h2">Блог</h2>
+					<p class="section-description">Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов</p>
+				</div>
+				<div class="tags">
+					<a href="#" class="tags__tag tag">Как списать долги</a>
+					<a href="#" class="tags__tag tag">Кредиты</a>
+					<a href="#" class="tags__tag tag">Коллекторы</a>
+					<a href="#" class="tags__tag tag">Рейтинги</a>
+				</div>
+				<div class="slider-cards slider swiper">
+					<div class="slider-cards__wrapper slider__wrapper swiper-wrapper">
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-blog__media glightbox" data-gallery="blog">
+									<img src="images/dist/blog-1.jpg" alt="alt" class="card-blog__preview img-responsive" />
+									<div class="card-blog__play play">
+										<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+									</div>
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-blog__media glightbox" data-gallery="blog">
+									<img src="images/dist/blog-2.jpg" alt="alt" class="card-blog__preview img-responsive" />
+									<div class="card-blog__play play">
+										<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+									</div>
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-blog__media glightbox" data-gallery="blog">
+									<img src="images/dist/blog-3.jpg" alt="alt" class="card-blog__preview img-responsive" />
+									<div class="card-blog__play play">
+										<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+									</div>
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-blog__media glightbox" data-gallery="blog">
+									<img src="images/dist/blog-4.jpg" alt="alt" class="card-blog__preview img-responsive" />
+									<div class="card-blog__play play">
+										<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+									</div>
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-blog__media glightbox" data-gallery="blog">
+									<img src="images/dist/blog-5.jpg" alt="alt" class="card-blog__preview img-responsive" />
+									<div class="card-blog__play play">
+										<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+									</div>
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="https://www.youtube.com/watch?v=KJwYBJMSbPI&ab_channel=RelaxationFilm" class="card-blog__media glightbox" data-gallery="blog">
+									<img src="images/dist/blog-6.jpg" alt="alt" class="card-blog__preview img-responsive" />
+									<div class="card-blog__play play">
+										<img src="images/icons/play.svg" alt="alt" class="play__icon" />
+									</div>
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="#" class="card-blog__media">
+									<img src="images/dist/blog-7.jpg" alt="alt" class="card-blog__preview img-responsive" />
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider-cards__slide slider__slide swiper-slide">
+							<div class="card-blog">
+								<a href="#" class="card-blog__media">
+									<img src="images/dist/blog-8.jpg" alt="alt" class="card-blog__preview img-responsive" />
+								</a>
+								<a href="#" class="card-blog__body">
+									<div class="card-blog__date">12 апреля</div>
+									<div class="card-blog__title">Мы рады рассказать о нашей практике, опыте, интересных решениях.</div>
+									<div class="card-blog__text-wrap">
+										<p>Мы рады рассказать о нашей практике, опыте, интересных решениях и новинках права и финансов.</p>
+									</div>
+									<div class="card-blog__footer">
+										<div class="card-blog__category">новости</div>
+										<div class="card-blog__actions">
+											<div class="card-blog__action">
+												<img src="images/icons/eye.svg" alt="alt" />
+												20548
+											</div>
+											<div class="card-blog__action">
+												<img src="images/icons/message.svg" alt="alt" />
+												20548
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="slider-cards__scrollbar slider__scrollbar swiper-scrollbar"></div>
+					<div class="slider-cards__btn-wrap">
+						<a href="#" class="slider-cards__btn btn btn--outline">Смотреть весь раздел</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-callback-testing">
+			<div class="container">
+				<div class="section-headline">
+					<h2 class="section-title h2">Протестируй сервис</h2>
+					<p class="section-description">Задай вопрос роботу и получи ответ на свой WhatsApp</p>
+				</div>
+				<form class="form-big form-big--home js-validate-form">
+					<div class="form-big__inner">
+						<div class="form-big__controls">
+							<div class="form-big__group">
+								<label for="name" class="form-big__label label">Как вас зовут?</label>
+								<input type="text" class="form-big__control control" placeholder="Иван Иванов" id="name" />
+							</div>
+							<div class="form-big__group">
+								<label for="phone" class="form-big__label label">Ваш номер телефона</label>
+								<input type="tel" class="form-big__control control js-phone" placeholder="+7" id="phone" />
+							</div>
+							<div class="form-big__group">
+								<label for="message" class="form-big__label label">Ваш вопрос</label>
+								<textarea class="form-big__control control" id="message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="form-big__actions">
+						<button type="submit" class="form-big__btn btn btn--accent">Задать вопрос</button>
+						<p class="form-big__accept">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__body">
+					<div class="footer__top-line">
+						<div class="footer__logo">
+							<img src="images/dist/logo.png" alt="alt" class="img-responsive" />
+						</div>
+						<div class="footer__contacts">
+							<a href="tel:88005552501" class="footer__contact">8 (800) 555-25-01</a>
+						</div>
+					</div>
+					<div class="footer__slider slider-footer slider swiper">
+						<div class="slider-footer__wrapper slider__wrapper swiper-wrapper">
+							<div class="slider-footer__slide slider__slide swiper-slide">
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="about.html">О нас</a></li>
+									<li><a href="about-team.html">Наша команда</a></li>
+									<li><a href="about-news.html">Новости</a></li>
+									<li><a href="about-media.html">Публикации в СМИ</a></li>
+									<li><a href="about-vacancies.html">Вакансии</a></li>
+								</ul>
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="bankruptcy.html">Банкротство</a></li>
+									<li><a href="bankruptcy-judicial.html">Через суд</a></li>
+									<li><a href="bankruptcy-mfc.html">Внесудебное</a></li>
+									<li><a href="bankruptcy.html">Калькулятор банкротства</a></li>
+								</ul>
+							</div>
+							<div class="slider-footer__slide slider__slide swiper-slide">
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="#">Юридические услуги</a></li>
+									<li><a href="#">Судебный приказ</a></li>
+									<li><a href="#">Банковские карты</a></li>
+									<li><a href="#">Автомобиль</a></li>
+									<li><a href="#">Недвижимость</a></li>
+									<li><a href="#">Ипотека</a></li>
+									<li><a href="#">Исполнительное производство</a></li>
+									<li><a href="#">ЖКХ</a></li>
+									<li><a href="#">Семейное право</a></li>
+								</ul>
+							</div>
+							<div class="slider-footer__slide slider__slide swiper-slide">
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="blog.html">Блог</a></li>
+									<li><a href="blog-legislation.html">Законодательство</a></li>
+									<li><a href="blog-bailiffs.html">Судебные приставы</a></li>
+									<li><a href="blog-single-bankruptcy-history.html">Истории банкротства</a></li>
+									<li><a href="blog-loans.html">Кредиты</a></li>
+								</ul>
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="refinancing.html">Рефинансирование</a></li>
+								</ul>
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="#">Реструктуризация кредитов</a></li>
+								</ul>
+								<ul class="menu-footer">
+									<li class="menu-footer__title"><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="slider-footer__arrows slider__arrows">
+							<div class="slider-footer__nav slider-footer__nav--prev slider__nav slider__nav--prev swiper-button-prev">
+								<img src="images/icons/arrow-left.svg" alt="alt" />
+							</div>
+							<div class="slider-footer__nav slider-footer__nav--next slider__nav slider__nav--next swiper-button-next">
+								<img src="images/icons/arrow-right.svg" alt="alt" />
+							</div>
+						</div>
+					</div>
+					<div class="footer__infos">
+						<div class="footer__info">г. Уфа, ул. 50-летия Октября, 18</div>
+						<div class="footer__info">г. Пермь, ул. Ленина, 26, ТАЦ «Привилегия»</div>
+						<div class="footer__info">г. Тюмень, ул. Герцена, 64, 1 этаж, ТОЦ «Сити-Центр»</div>
+						<div class="footer__info">г. Екатеринбург, проспект Ленина, 25, - 1 этаж, ТиДЦ «Европа»</div>
+					</div>
+					<div class="footer__text-wrap">
+						<p>
+							Страховщик АО «Тинькофф Страхование» выдает направление на ремонт за 1 час при соблюдении условий: а) клиент загрузил необходимые документы и фотографии в Мобильное
+							приложение «Тинькофф» и отметил повреждения автомобиля; б) выбрал станцию для ремонта из числа предложенных Страховщиком. АО «Тинькофф Страхование», ОГРН
+							1027739031540.Рейтинг и другие показатели Тинькофф СтрахованияТинькофф Страхование — №1 среди страховых компаний с наивысшим клиентским рейтингом за 2021 и 2022 по
+							состоянию на 14 февраля 2023 года, на основе отзывов, оставленных посетителями banki.ru в течение года в разделе «Годовой чемпионат»: banki.ru/insurance/responsesСкидки до
+							30% — понижающий коэффициент при расчете страховой премии для аккуратных водителей
+						</p>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p class="footer__copyright">
+						© 2015—2023 «ООО «МНОГОФУНКЦИОНАЛЬНЫЙ ПРАВОВОЙ ЦЕНТР МОИ ЮРИДИЧЕСКИЕ УСЛУГИ»
+						<br />
+						«ООО МФПЦ-МОИ ЮРИДИЧЕСКИЕ УСЛУГИ» ИНН/ОГРН: 0274957169 / 1200200029875
+					</p>
+					<div class="footer__socials socials-footer">
+						<div class="socials-footer__contact">Email: <a href="mailto:info@mfp.center">info@mfp.center</a></div>
+						<div class="socials-footer__items">
+							<a href="#" class="socials-footer__item">
+								<img src="images/icons/yt.png" alt="alt" class="img-responsive" />
+							</a>
+							<a href="#" class="socials-footer__item">
+								<img src="images/icons/vk.svg" alt="alt" class="img-responsive" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="libs/enquire.min.js"></script>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="libs/imask.min.js"></script>
+		<script src="libs/just-validate.production.min.js"></script>
+		<script src="libs/glightbox/glightbox.min.js"></script>
+		<script src="libs/slide-element.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
