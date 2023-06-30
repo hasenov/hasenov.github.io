@@ -1,0 +1,1447 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Каталог - Результаты</title>
+	<meta name="description" content="Описание">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
+	<link rel="stylesheet" href="libs/choices/choices.min.css">
+	<link rel="stylesheet" href="libs/simplebar/simplebar.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__container container-fluid">
+			<form class="top-header__search search">
+				<button class="search__btn" type="submit">
+					<img src="images/icons/search.svg" alt="alt" class="search__icon img-responsive">
+				</button>
+				<input type="text" class="search__control control" placeholder="Search...">
+			</form>
+			<div class="top-header__dropdowns">
+				<div class="top-header__dropdown dropdown dropdown--lang custom-select">
+					<select class="dropdown__select">
+						<option value="1">Рус</option>
+						<option value="2">Англ</option>
+					</select>
+				</div>
+				<div class="top-header__dropdown dropdown dropdown--location custom-select">
+					<select class="dropdown__select">
+						<option value="1">Москва</option>
+						<option value="2">Санкт-Петербург</option>
+						<option value="3">Краснодар</option>
+					</select>
+				</div>
+			</div>
+			<div class="top-header__info">
+				<div class="top-header__socials">
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/ig.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/fb.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/wa.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+				</div>
+				<div class="top-header__contacts">
+					<a href="tel:+4917630408044" class="top-header__contact contact-header">
+						<img src="images/icons/call.svg" alt="alt" class="contact-header__icon img-responsive">
+						+49 176 30408044
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__container container-fluid">
+			<a href="index.html" class="bottom-header__logo">
+				<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
+			</a>
+			<div class="bottom-header__catalog-menu catalog-menu">
+				<a href="catalog.html" class="catalog-menu__btn">
+					каталог
+					<img src="images/icons/circle-gray.svg" alt="alt" class="catalog-menu__icon img-responsive">
+				</a>
+			</div>
+			<nav class="bottom-header__menu menu">
+				<button class="bottom-header__close" type="button">
+					<img src="images/icons/close.svg" alt="alt" class="img-responsive">
+				</button>
+				<ul>
+					<li class="is-active"><a href="#">О нас</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="calculator.html">Калькулятор растаможки</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Видео</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Инфо</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<nav class="bottom-header__categories-menu categories-menu">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-blue.svg" alt="alt" class="img-responsive">
+							авто
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-blue.svg" alt="alt" class="img-responsive">
+							мото
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-blue.svg" alt="alt" class="img-responsive">
+							аква
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-blue.svg" alt="alt" class="img-responsive">
+							спец
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="bottom-header__hamburger hamburger" type="button">
+				<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive">
+			</button>
+		</div>
+	</div>
+</header>
+
+<nav class="breadcrumbs">
+	<div class="breadcrumbs__container container">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+			<li class="breadcrumbs__item is-active">Каталог</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="back">
+	<div class="container">
+		<a href="#" class="back__link">
+			<img src="images/icons/arrow-left.svg" alt="alt" class="back__icon img-responsive" />
+			Назад
+		</a>
+	</div>
+</div>
+
+<div class="catalog">
+	<div class="container">
+		<div class="catalog__row row">
+			<div class="catalog__col catalog__col--sidebar">
+				<div class="catalog__sidebar sidebar">
+					<form class="sidebar__filter filter-sidebar">
+						<div class="filter-sidebar__row filter-sidebar__row--main row">
+							<div class="filter-sidebar__col col-12">
+								<label class="filter-sidebar__checkbox checkbox checkbox--bold">
+									<input type="checkbox" class="checkbox__input hidden" />
+									<span class="checkbox__box">
+										<svg class="checkbox__check" role="img">
+											<use href="images/icons/sprite.svg#check" />
+										</svg>
+									</span>
+									<span class="checkbox__text">Новые автомобили</span>
+								</label>
+								<label class="filter-sidebar__checkbox checkbox checkbox--bold">
+									<input type="checkbox" class="checkbox__input hidden" />
+									<span class="checkbox__box">
+										<svg class="checkbox__check" role="img">
+											<use href="images/icons/sprite.svg#check" />
+										</svg>
+									</span>
+									<span class="checkbox__text">С пробегом</span>
+								</label>
+							</div>
+							<div class="filter-sidebar__col col-12">
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="brand">
+										<option value="">Марка</option>
+										<option value="1">BMW</option>
+										<option value="2">Audi</option>
+									</select>
+								</div>
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="model">
+										<option value="">Модель</option>
+										<option value="1">Модель 1</option>
+										<option value="2">Модель 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="filter-sidebar__col col-12">
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="type">
+										<option value="">Тип тс</option>
+										<option value="1">Тип тс 1</option>
+										<option value="2">Тип тс 2</option>
+									</select>
+								</div>
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="body_type">
+										<option value="">Тип кузова</option>
+										<option value="1">Тип кузова 1</option>
+										<option value="2">Тип кузова 2</option>
+									</select>
+								</div>
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="fuel_type">
+										<option value="">Тип топлива</option>
+										<option value="1">Тип топлива 1</option>
+										<option value="2">Тип топлива 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="filter-sidebar__col col-12">
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="year">
+										<option value="">Год выпуска</option>
+										<option value="1">Год выпуска 1</option>
+										<option value="2">Год выпуска 2</option>
+									</select>
+								</div>
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="country">
+										<option value="">Страна</option>
+										<option value="1">Страна 1</option>
+										<option value="2">Страна 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="filter-sidebar__col col-12">
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="from">
+										<option value="">Цена от</option>
+										<option value="1">Цена от 1</option>
+										<option value="2">Цена от 2</option>
+									</select>
+								</div>
+								<div class="filter-sidebar__select select-filter custom-select">
+									<select class="select-filter__select" name="to">
+										<option value="">Цена до</option>
+										<option value="1">Цена до 1</option>
+										<option value="2">Цена до 2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<button class="filter-sidebar__more" type="button" data-original-text="Дополнительные параметры поиска" data-opened-text="Сбросить поиск">
+							Дополнительные параметры поиска
+						</button>
+						<div class="filter-sidebar__extra">
+							<div class="filter-sidebar__extra-inner">
+								<div class="filter-sidebar__row row">
+									<div class="filter-sidebar__col col-12">
+										<div class="filter-sidebar__label">Пробег</div>
+										<div class="filter-sidebar__row filter-sidebar__row--gap-sm row">
+											<div class="filter-sidebar__col col-6">
+												<div class="filter-sidebar__select select-filter custom-select">
+													<select class="select-filter__select" name="mileage_from">
+														<option value="">От</option>
+														<option value="1">От 1</option>
+														<option value="2">От 2</option>
+													</select>
+												</div>
+											</div>
+											<div class="filter-sidebar__col col-6">
+												<div class="filter-sidebar__select select-filter custom-select">
+													<select class="select-filter__select" name="mileage_to">
+														<option value="">До</option>
+														<option value="1">До 1</option>
+														<option value="2">До 2</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-sidebar__col col-12">
+										<div class="filter-sidebar__label">Мощность</div>
+										<div class="filter-sidebar__row filter-sidebar__row--gap-sm row">
+											<div class="filter-sidebar__col col-6">
+												<div class="filter-sidebar__select select-filter custom-select">
+													<select class="select-filter__select" name="power_from">
+														<option value="">От (кВт)</option>
+														<option value="1">От (кВт) 1</option>
+														<option value="2">От (кВт) 2</option>
+													</select>
+												</div>
+											</div>
+											<div class="filter-sidebar__col col-6">
+												<div class="filter-sidebar__select select-filter custom-select">
+													<select class="select-filter__select" name="power_to">
+														<option value="">До (кВт)</option>
+														<option value="1">До (кВт) 1</option>
+														<option value="2">До (кВт) 2</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-sidebar__col col-12">
+										<div class="filter-sidebar__label">Коробка передач</div>
+										<div class="filter-sidebar__select select-filter custom-select">
+											<select class="select-filter__select" name="transmission">
+												<option value="">Все</option>
+												<option value="1">Все 1</option>
+												<option value="2">Все 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="filter-sidebar__col col-12">
+										<div class="filter-sidebar__label">Количество дверей</div>
+										<div class="filter-sidebar__switcher switcher">
+											<label class="switcher__item item-switcher">
+												<input type="radio" class="item-switcher__input hidden" name="doors" />
+												<span class="item-switcher__box">Все</span>
+											</label>
+											<label class="switcher__item item-switcher">
+												<input type="radio" class="item-switcher__input hidden" name="doors" />
+												<span class="item-switcher__box">2/3</span>
+											</label>
+											<label class="switcher__item item-switcher">
+												<input type="radio" class="item-switcher__input hidden" name="doors" />
+												<span class="item-switcher__box">4/5</span>
+											</label>
+											<label class="switcher__item item-switcher">
+												<input type="radio" class="item-switcher__input hidden" name="doors" />
+												<span class="item-switcher__box">6/7</span>
+											</label>
+										</div>
+									</div>
+									<div class="filter-sidebar__col col-12">
+										<div class="filter-sidebar__label">Кол-во сидений</div>
+										<div class="filter-sidebar__row filter-sidebar__row--gap-sm row">
+											<div class="filter-sidebar__col col-6">
+												<div class="filter-sidebar__select select-filter custom-select">
+													<select class="select-filter__select" name="seats_from">
+														<option value="">От</option>
+														<option value="1">От 1</option>
+														<option value="2">От 2</option>
+													</select>
+												</div>
+											</div>
+											<div class="filter-sidebar__col col-6">
+												<div class="filter-sidebar__select select-filter custom-select">
+													<select class="select-filter__select" name="seats_to">
+														<option value="">До</option>
+														<option value="1">До 1</option>
+														<option value="2">До 2</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-sidebar__accordions accordions-filter" data-accordions-once>
+									<div class="accordions-filter__item accordion-filter" data-accordion>
+										<div class="accordion-filter__btn" data-accordion-btn>
+											<div class="accordion-filter__title">Дополнительное оборудование</div>
+											<div class="accordion-filter__icon-wrap">
+												<img src="images/icons/chevron-down-white.svg" alt="alt" class="accordion-filter__icon img-responsive" />
+											</div>
+										</div>
+										<div class="accordion-filter__body" data-accordion-body>
+											<div class="filter-sidebar__row filter-sidebar__row--less-mb row">
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Автоматический климат контроль</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Кондиционер</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Ксеноновые фары</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Навигационная система</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Полный привод</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Светодиодные фары</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">ABS</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Адаптивный круиз-контроль</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Круиз-контроль</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Мультифунк. руль</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Обогрев сидений</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Прицепное устройство</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="equipment" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Эл. стеклоподъемники</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordions-filter__item accordion-filter" data-accordion>
+										<div class="accordion-filter__btn" data-accordion-btn>
+											<div class="accordion-filter__title">Лакокрасочное покрытие</div>
+											<div class="accordion-filter__icon-wrap">
+												<img src="images/icons/chevron-down-white.svg" alt="alt" class="accordion-filter__icon img-responsive" />
+											</div>
+										</div>
+										<div class="accordion-filter__body" data-accordion-body>
+											<div class="filter-sidebar__row row">
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Цвет корпуса</div>
+													<div class="filter-sidebar__row filter-sidebar__row--less-mb row">
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #dbaf6e">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Бежевый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #38a614">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Зеленый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #ff7500">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Оранжевый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #0059b2">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Синий</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #d91a2a">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Красный</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #e8c84a">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Золотистый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #994200">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Коричневый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #000000">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Черный</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #db9d5d">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Бронзовый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #c4c4c4">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Серебристый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #f7c81e">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Желтый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #991289">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Фиолетовый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #949494">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Серый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #ffffff">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Белый</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Тип лакокрассочного покрытия</div>
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="paint_type" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Металлик</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordions-filter__item accordion-filter" data-accordion>
+										<div class="accordion-filter__btn" data-accordion-btn>
+											<div class="accordion-filter__title">Цвет салона</div>
+											<div class="accordion-filter__icon-wrap">
+												<img src="images/icons/chevron-down-white.svg" alt="alt" class="accordion-filter__icon img-responsive" />
+											</div>
+										</div>
+										<div class="accordion-filter__body" data-accordion-body>
+											<div class="filter-sidebar__row row">
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__row filter-sidebar__row--less-mb row">
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #dbaf6e">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Бежевый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #38a614">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Зеленый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #ff7500">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Оранжевый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #0059b2">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Синий</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #d91a2a">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Красный</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #994200">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Коричневый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #000000">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Черный</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #f7c81e">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Желтый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #949494">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Серый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #ffffff">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Белый</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox checkbox--color">
+																<input type="checkbox" class="checkbox__input hidden" name="interior_color" />
+																<span class="checkbox__box">
+																	<span class="checkbox__box-inner" style="background-color: #ffffff">
+																		<svg class="checkbox__check" role="img">
+																			<use href="images/icons/sprite.svg#check" />
+																		</svg>
+																	</span>
+																</span>
+																<span class="checkbox__text">Прочее</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Материал</div>
+													<div class="filter-sidebar__row filter-sidebar__row--less-mb row">
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox">
+																<input type="checkbox" class="checkbox__input hidden" name="material" />
+																<span class="checkbox__box">
+																	<svg class="checkbox__check" role="img">
+																		<use href="images/icons/sprite.svg#check" />
+																	</svg>
+																</span>
+																<span class="checkbox__text">Алькантара</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox">
+																<input type="checkbox" class="checkbox__input hidden" name="material" />
+																<span class="checkbox__box">
+																	<svg class="checkbox__check" role="img">
+																		<use href="images/icons/sprite.svg#check" />
+																	</svg>
+																</span>
+																<span class="checkbox__text">Кожа</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox">
+																<input type="checkbox" class="checkbox__input hidden" name="material" />
+																<span class="checkbox__box">
+																	<svg class="checkbox__check" role="img">
+																		<use href="images/icons/sprite.svg#check" />
+																	</svg>
+																</span>
+																<span class="checkbox__text">Велюр</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox">
+																<input type="checkbox" class="checkbox__input hidden" name="material" />
+																<span class="checkbox__box">
+																	<svg class="checkbox__check" role="img">
+																		<use href="images/icons/sprite.svg#check" />
+																	</svg>
+																</span>
+																<span class="checkbox__text">Ткань</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox">
+																<input type="checkbox" class="checkbox__input hidden" name="material" />
+																<span class="checkbox__box">
+																	<svg class="checkbox__check" role="img">
+																		<use href="images/icons/sprite.svg#check" />
+																	</svg>
+																</span>
+																<span class="checkbox__text">Частичная кожа</span>
+															</label>
+														</div>
+														<div class="filter-sidebar__col col-12">
+															<label class="filter-sidebar__checkbox checkbox">
+																<input type="checkbox" class="checkbox__input hidden" name="material" />
+																<span class="checkbox__box">
+																	<svg class="checkbox__check" role="img">
+																		<use href="images/icons/sprite.svg#check" />
+																	</svg>
+																</span>
+																<span class="checkbox__text">Прочее</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordions-filter__item accordion-filter" data-accordion>
+										<div class="accordion-filter__btn" data-accordion-btn>
+											<div class="accordion-filter__title">Состояние</div>
+											<div class="accordion-filter__icon-wrap">
+												<img src="images/icons/chevron-down-white.svg" alt="alt" class="accordion-filter__icon img-responsive" />
+											</div>
+										</div>
+										<div class="accordion-filter__body" data-accordion-body>
+											<div class="filter-sidebar__row row">
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Количество предыдущих владельцев</div>
+													<div class="filter-sidebar__switcher switcher">
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="previous_owners" />
+															<span class="item-switcher__box">Все</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="previous_owners" />
+															<span class="item-switcher__box">1</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="previous_owners" />
+															<span class="item-switcher__box">2</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="previous_owners" />
+															<span class="item-switcher__box">3</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="previous_owners" />
+															<span class="item-switcher__box">4+</span>
+														</label>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">После ДТП</div>
+													<div class="filter-sidebar__select select-filter custom-select">
+														<select class="select-filter__select" name="accident">
+															<option value="">Не показывать</option>
+															<option value="1">Не показывать 1</option>
+															<option value="2">Не показывать 2</option>
+														</select>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="radio" class="checkbox__input hidden" name="warranty" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Гарантия</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="status_2" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Обслуживание по сервисной книжке</span>
+													</label>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="status_2" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Некурящий водитель</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordions-filter__item accordion-filter" data-accordion>
+										<div class="accordion-filter__btn" data-accordion-btn>
+											<div class="accordion-filter__title">Экологичность</div>
+											<div class="accordion-filter__icon-wrap">
+												<img src="images/icons/chevron-down-white.svg" alt="alt" class="accordion-filter__icon img-responsive" />
+											</div>
+										</div>
+										<div class="accordion-filter__body" data-accordion-body>
+											<div class="filter-sidebar__row row">
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Экологический класс (минимально)</div>
+													<div class="filter-sidebar__select select-filter custom-select">
+														<select class="select-filter__select" name="eco_class">
+															<option value="">Все</option>
+															<option value="1">Все 1</option>
+															<option value="2">Все 2</option>
+														</select>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Эко-стикер (минимально)</div>
+													<div class="filter-sidebar__switcher switcher">
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="eco_sticker" />
+															<span class="item-switcher__box">Все</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="eco_sticker" />
+															<span class="item-switcher__box">
+																<img src="images/dist/sticker-2.png" alt="alt" class="item-switcher__icon img-responsive" />
+															</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="eco_sticker" />
+															<span class="item-switcher__box">
+																<img src="images/dist/sticker-3.png" alt="alt" class="item-switcher__icon img-responsive" />
+															</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="eco_sticker" />
+															<span class="item-switcher__box">
+																<img src="images/dist/sticker-4.png" alt="alt" class="item-switcher__icon img-responsive" />
+															</span>
+														</label>
+														<label class="switcher__item item-switcher">
+															<input type="radio" class="item-switcher__input hidden" name="eco_sticker" />
+															<span class="item-switcher__box">
+																<img src="images/dist/sticker-5.png" alt="alt" class="item-switcher__icon img-responsive" />
+															</span>
+														</label>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="radio" class="checkbox__input hidden" name="filter" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">Сажевый фильтр</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordions-filter__item accordion-filter" data-accordion>
+										<div class="accordion-filter__btn" data-accordion-btn>
+											<div class="accordion-filter__title">Подробности предложения</div>
+											<div class="accordion-filter__icon-wrap">
+												<img src="images/icons/chevron-down-white.svg" alt="alt" class="accordion-filter__icon img-responsive" />
+											</div>
+										</div>
+										<div class="accordion-filter__body" data-accordion-body>
+											<div class="filter-sidebar__row row">
+												<div class="filter-sidebar__col col-12">
+													<div class="filter-sidebar__label">Предложение размещено онлайн с</div>
+													<div class="filter-sidebar__select select-filter custom-select">
+														<select class="select-filter__select" name="online">
+															<option value="">Все</option>
+															<option value="1">Все 1</option>
+															<option value="2">Все 2</option>
+														</select>
+													</div>
+												</div>
+												<div class="filter-sidebar__col col-12">
+													<label class="filter-sidebar__checkbox checkbox">
+														<input type="checkbox" class="checkbox__input hidden" name="nds" />
+														<span class="checkbox__box">
+															<svg class="checkbox__check" role="img">
+																<use href="images/icons/sprite.svg#check" />
+															</svg>
+														</span>
+														<span class="checkbox__text">в т.ч. НДС</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="catalog__col catalog__col--body">
+				<div class="catalog__results results-catalog">
+					<div class="results-catalog__header">
+						<div class="results-catalog__count">45 5214 результатов</div>
+						<div class="results-catalog__sort">
+							<div class="results-catalog__sort-item sort-item">
+								<label for="sort" class="sort-item__label">Сортировка:</label>
+								<div class="sort-item__select select-sort custom-select">
+									<select id="sort" class="select-sort__select">
+										<option value="1">Плиткой</option>
+										<option value="2">Плиткой 2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="results-catalog__row row">
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+						<div class="results-catalog__col col-lg-4 col-sm-6">
+							<a href="#" class="results-catalog__card card card--no-padding">
+								<div class="card__img-wrap">
+									<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+								</div>
+								<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+							</a>
+						</div>
+					</div>
+					<div class="results-catalog__more-wrap">
+						<button class="results-catalog__more btn btn--accent" type="button">Показать еще</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="section section-contacts">
+	<div class="contacts">
+		<div class="contacts__row row no-gutters">
+			<div class="contacts__col col-md-6">
+				<div class="contacts__body">
+					<h2 class="contacts__title section-title">остались вопросы?</h2>
+					<div class="contacts__item-callback item-callback">
+						<div class="item-callback__title">Позвоните нам:</div>
+						<a href="tel:+4917630408044" class="item-callback__btn-contact btn btn--secondary btn--icon-left btn--contact">
+							<img src="images/icons/call.svg" alt="alt" class="btn__icon img-responsive" />
+							+49 176 30408044
+						</a>
+					</div>
+					<div class="contacts__text-wrap">
+						<p>
+							или<br />
+							Заполните форму ниже и мы свяжемся с вами в ближайшее время
+						</p>
+					</div>
+					<form class="contacts__form form-contacts js-validate-form">
+						<div class="form-contacts__group">
+							<input type="text" class="form-contacts__control control" placeholder="Ваше имя" />
+						</div>
+						<div class="form-contacts__group">
+							<input type="text" class="form-contacts__control control js-email" placeholder="Ваш e-mail" />
+						</div>
+						<div class="form-contacts__group">
+							<input type="text" class="form-contacts__control control js-phone" placeholder="Ваш телефон" />
+						</div>
+						<div class="form-contacts__group">
+							<textarea class="form-contacts__control control" placeholder="Текст сообщения"></textarea>
+						</div>
+						<div class="form-contacts__group">
+							<button class="form-contacts__btn btn btn--secondary btn--icon-right" type="submit">
+								отправить
+								<img src="images/icons/circle-gray.svg" alt="alt" class="btn__icon img-responsive" />
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="contacts__col col-md-6">
+				<div class="contacts__map-wrap">
+					<iframe
+						class="contacts__map"
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9b761d8cf9a86fbc277c07462b94cab1189414ced6debf35786e2f15075b744&amp;source=constructor"
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <div class="footer__col footer__col--logo">
+                <img src="images/dist/logo.svg" alt="alt" class="footer__logo img-responsive">
+                <div class="footer__info info-footer">
+                    <div class="info-footer__item">
+                        <div class="info-footer__inner">
+                            <img src="images/icons/map.svg" alt="alt" class="info-footer__icon img-responsive">
+                            Адрес:125373, г. Москва,<br>
+                            пр-д Походный, д. 4 к. 1, БЦ "Тушино"
+                        </div>
+                    </div>
+                    <div class="info-footer__item">
+                        <div class="info-footer__inner">
+                            <img src="images/icons/map.svg" alt="alt" class="info-footer__icon img-responsive">
+                            График работы:пн-пт: 9.00-19.00
+                        </div>
+                    </div>
+                    <div class="info-footer__item">
+                        <a href="#" class="info-footer__inner">
+                            <img src="images/icons/map.svg" alt="alt" class="info-footer__icon img-responsive">
+                            email@mail.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col footer__col--menu">
+                <div class="footer__menus">
+                    <nav class="footer__menu menu-footer">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="catalog.html">каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="calculator.html">Калькулятор растаможки</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__menu menu-footer">
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Инфо</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__col footer__col--contacts">
+                <div class="footer__contacts">
+                    <div class="footer__contact contact-footer">
+                        <a href="tel:+4917630408044" class="contact-footer__inner">
+                            <img src="images/icons/call.svg" alt="alt" class="contact-footer__icon img-responsive">
+                            +49 176 30408044
+                        </a>
+                    </div>
+                    <div class="footer__contact contact-footer">
+                        <a href="tel:+4917630408044" class="contact-footer__inner">
+                            <img src="images/icons/call.svg" alt="alt" class="contact-footer__icon img-responsive">
+                            +49 176 30408044
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/ig.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/fb.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/wa.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            Copyright © 2022 AutoStock Все права защищены.<br>
+            <a href="#">Политика конфиденциальности</a>
+        </p>
+    </div>
+</footer>
+
+<script src="libs/svg4everybody.min.js"></script>
+<script src="libs/splide/splide.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
+<script src="libs/enquire.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
+<script src="libs/imask.min.js"></script>
+<script src="libs/just-validate.production.min.js"></script>
+<script src="libs/choices/choices.min.js"></script>
+<script src="libs/simplebar/simplebar.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

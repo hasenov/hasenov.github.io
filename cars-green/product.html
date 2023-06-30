@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Авто</title>
+	<meta name="description" content="Описание">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
+	<link rel="stylesheet" href="libs/choices/choices.min.css">
+	<link rel="stylesheet" href="libs/simplebar/simplebar.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__container container-fluid">
+			<form class="top-header__search search">
+				<button class="search__btn" type="submit">
+					<img src="images/icons/search.svg" alt="alt" class="search__icon img-responsive">
+				</button>
+				<input type="text" class="search__control control" placeholder="Search...">
+			</form>
+			<div class="top-header__dropdowns">
+				<div class="top-header__dropdown dropdown dropdown--lang custom-select">
+					<select class="dropdown__select">
+						<option value="1">Рус</option>
+						<option value="2">Англ</option>
+					</select>
+				</div>
+				<div class="top-header__dropdown dropdown dropdown--location custom-select">
+					<select class="dropdown__select">
+						<option value="1">Москва</option>
+						<option value="2">Санкт-Петербург</option>
+						<option value="3">Краснодар</option>
+					</select>
+				</div>
+			</div>
+			<div class="top-header__info">
+				<div class="top-header__socials">
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/ig.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/fb.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+					<a href="#" class="top-header__social social">
+						<img src="images/icons/wa.svg" alt="alt" class="social__icon img-responsive">
+					</a>
+				</div>
+				<div class="top-header__contacts">
+					<a href="tel:+4917630408044" class="top-header__contact contact-header">
+						<img src="images/icons/call.svg" alt="alt" class="contact-header__icon img-responsive">
+						+49 176 30408044
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__container container-fluid">
+			<a href="index.html" class="bottom-header__logo">
+				<img src="images/dist/logo-green.svg" alt="alt" class="img-responsive">
+			</a>
+			<div class="bottom-header__catalog-menu catalog-menu">
+				<a href="catalog.html" class="catalog-menu__btn">
+					каталог
+					<img src="images/icons/circle-gray.svg" alt="alt" class="catalog-menu__icon img-responsive">
+				</a>
+			</div>
+			<nav class="bottom-header__menu menu">
+				<button class="bottom-header__close" type="button">
+					<img src="images/icons/close.svg" alt="alt" class="img-responsive">
+				</button>
+				<ul>
+					<li class="is-active"><a href="#">О нас</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="calculator.html">Калькулятор растаможки</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Видео</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Инфо</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<nav class="bottom-header__categories-menu categories-menu">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-green.svg" alt="alt" class="img-responsive">
+							авто
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-green.svg" alt="alt" class="img-responsive">
+							мото
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-green.svg" alt="alt" class="img-responsive">
+							аква
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/icons/circle-green.svg" alt="alt" class="img-responsive">
+							спец
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="bottom-header__hamburger hamburger" type="button">
+				<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive">
+			</button>
+		</div>
+	</div>
+</header>
+
+<nav class="breadcrumbs">
+	<div class="breadcrumbs__container container">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+			<li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+			<li class="breadcrumbs__item is-active">SKODA ENYAQ iV80 | 204 PS | MEMORY SEAT | AMBIENTE | SMART LINK | ASSIST | WLTP 510 KM</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="back">
+	<div class="container">
+		<a href="#" class="back__link">
+			<img src="images/icons/arrow-left.svg" alt="alt" class="back__icon img-responsive" />
+			Назад в каталог
+		</a>
+	</div>
+</div>
+
+<div class="product">
+	<div class="container">
+		<div class="product__header">
+			<h1 class="product__title section-title">SKODA ENYAQ iV80 | 204 PS | MEMORY SEAT | AMBIENTE | SMART LINK | ASSIST | WLTP 510 KM</h1>
+			<div class="product__prices">
+				<div class="product__price-lg section-title">52,000€ НЕТТО</div>
+				<div class="product__price-md">61880€ БРУТТО</div>
+				<div class="product__price-text">Включая +19% НДС</div>
+			</div>
+		</div>
+		<div class="product__row row">
+			<div class="product__col col-xl-8">
+				<div class="product__slider-wrap">
+					<div class="product__slider-product-thumbs slider-product-thumbs slider splide">
+						<div class="slider-product-thumbs__track slider__track splide__track">
+							<div class="slider-product-thumbs__list slider__list splide__list">
+								<div class="slider-product-thumbs__slide slider__slide splide__slide">
+									<img src="images/dist/card.jpg" alt="alt" class="slider-product-thumbs__img img-responsive" />
+								</div>
+								<div class="slider-product-thumbs__slide slider__slide splide__slide">
+									<img src="images/dist/card.jpg" alt="alt" class="slider-product-thumbs__img img-responsive" />
+								</div>
+								<div class="slider-product-thumbs__slide slider__slide splide__slide">
+									<img src="images/dist/card.jpg" alt="alt" class="slider-product-thumbs__img img-responsive" />
+								</div>
+								<div class="slider-product-thumbs__slide slider__slide splide__slide">
+									<img src="images/dist/card.jpg" alt="alt" class="slider-product-thumbs__img img-responsive" />
+								</div>
+								<div class="slider-product-thumbs__slide slider__slide splide__slide">
+									<img src="images/dist/card.jpg" alt="alt" class="slider-product-thumbs__img img-responsive" />
+								</div>
+								<div class="slider-product-thumbs__slide slider__slide splide__slide">
+									<img src="images/dist/card.jpg" alt="alt" class="slider-product-thumbs__img img-responsive" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__slider-product-main slider-product-main slider splide">
+						<div class="slider-product-main__track slider__track splide__track">
+							<div class="slider-product-main__list slider__list splide__list">
+								<div class="slider-product-main__slide slider__slide splide__slide">
+									<a href="images/dist/card.jpg" class="slider-product-main__img-wrap glightbox" data-gallery="product">
+										<img src="images/dist/card.jpg" alt="alt" class="slider-product-main__img img-responsive" />
+									</a>
+								</div>
+								<div class="slider-product-main__slide slider__slide splide__slide">
+									<a href="images/dist/card.jpg" class="slider-product-main__img-wrap glightbox" data-gallery="product">
+										<img src="images/dist/card.jpg" alt="alt" class="slider-product-main__img img-responsive" />
+									</a>
+								</div>
+								<div class="slider-product-main__slide slider__slide splide__slide">
+									<a href="images/dist/card.jpg" class="slider-product-main__img-wrap glightbox" data-gallery="product">
+										<img src="images/dist/card.jpg" alt="alt" class="slider-product-main__img img-responsive" />
+									</a>
+								</div>
+								<div class="slider-product-main__slide slider__slide splide__slide">
+									<a href="images/dist/card.jpg" class="slider-product-main__img-wrap glightbox" data-gallery="product">
+										<img src="images/dist/card.jpg" alt="alt" class="slider-product-main__img img-responsive" />
+									</a>
+								</div>
+								<div class="slider-product-main__slide slider__slide splide__slide">
+									<a href="images/dist/card.jpg" class="slider-product-main__img-wrap glightbox" data-gallery="product">
+										<img src="images/dist/card.jpg" alt="alt" class="slider-product-main__img img-responsive" />
+									</a>
+								</div>
+								<div class="slider-product-main__slide slider__slide splide__slide">
+									<a href="images/dist/card.jpg" class="slider-product-main__img-wrap glightbox" data-gallery="product">
+										<img src="images/dist/card.jpg" alt="alt" class="slider-product-main__img img-responsive" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product__col col-xl-4">
+				<div class="product__info">
+					<table class="product__table-details table-details">
+						<tr>
+							<th>Год:</th>
+							<td>2021</td>
+						</tr>
+						<tr>
+							<th>Производитель:</th>
+							<td>Skoda</td>
+						</tr>
+						<tr>
+							<th>Модель:</th>
+							<td>Enyaq</td>
+						</tr>
+						<tr>
+							<th>Тип кузова:</th>
+							<td>SUV</td>
+						</tr>
+						<tr>
+							<th>Пробег:</th>
+							<td>35.850 km</td>
+						</tr>
+						<tr>
+							<th>Состояние:</th>
+							<td>Б/У</td>
+						</tr>
+						<tr>
+							<th>Местоположение:</th>
+							<td>Waidhofen</td>
+						</tr>
+						<tr>
+							<th>Цена:</th>
+							<td>52,000€</td>
+						</tr>
+						<tr>
+							<th>Цвет кузова:</th>
+							<td>Красный</td>
+						</tr>
+						<tr>
+							<th>Цвет салона:</th>
+							<td>Черный</td>
+						</tr>
+						<tr>
+							<th>Расход топлива:</th>
+							<td>Город / Трасса</td>
+						</tr>
+						<tr>
+							<th>Продается:</th>
+							<td>Да</td>
+						</tr>
+						<tr>
+							<th>Мощность:</th>
+							<td>150 kW / 204 PS</td>
+						</tr>
+						<tr>
+							<th>Тип топлива:</th>
+							<td>ELEKTRO</td>
+						</tr>
+					</table>
+					<form class="product__form form-product js-validate-form">
+						<div class="form-product__group">
+							<input type="text" class="form-product__control control" placeholder="Ваше имя" />
+						</div>
+						<div class="form-product__group">
+							<input type="text" class="form-product__control control js-phone" placeholder="Ваш телефон" />
+						</div>
+						<div class="form-product__group">
+							<button class="form-product__btn btn btn--accent btn--icon-right" type="submit">
+								оформить заявку
+								<img src="images/icons/circle-gray.svg" alt="alt" class="btn__icon img-responsive" />
+							</button>
+						</div>
+					</form>
+					<div class="product__question question-product">
+						<div class="question-product__title">Задать вопрос по автомобилю</div>
+						<div class="question-product__socials">
+							<a href="#" class="question-product__social">
+								<img src="images/icons/tg.svg" alt="alt" class="img-responsive" />
+							</a>
+							<a href="#" class="question-product__social">
+								<img src="images/icons/wa.svg" alt="alt" class="img-responsive" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="product__tabs tabs-product" data-tabs>
+			<div class="tabs-product__btns-wrap">
+				<div class="tabs-product__btns">
+					<button class="tabs-product__btn is-active" type="button" data-tabs-btn>Описание</button>
+					<button class="tabs-product__btn" type="button" data-tabs-btn>Дополнительная информация</button>
+					<button class="tabs-product__btn" type="button" data-tabs-btn>Комплектация</button>
+					<button class="tabs-product__btn" type="button" data-tabs-btn>Местонахождение</button>
+					<button class="tabs-product__btn" type="button" data-tabs-btn>Протокол</button>
+				</div>
+			</div>
+			<div class="tabs-product__items">
+				<div class="tabs-product__item is-active" data-tabs-item>
+					<p class="title-sm">
+						В наличии<br />
+						SKODA ENYAQ iV80
+					</p>
+					<div class="details">
+						<div class="details__row">
+							<div class="details__col">
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									01.2021
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									35.850 km
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									150KW
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Electro
+								</div>
+							</div>
+							<div class="details__col">
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									1 Хозяин
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									2 Ключа
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									В автомобиле не курили
+								</div>
+							</div>
+							<div class="details__col">
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Rot | Red
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Обслуживался вовремя.
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Автомобиль не битый
+								</div>
+							</div>
+							<div class="details__col">
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Автомобиль в хорошем состоянии.
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Сидения с подогревом.
+								</div>
+								<div class="details__item">
+									<img src="images/icons/circle-gray.svg" alt="alt" class="details__icon img-responsive" />
+									Летняя резина на алюминиевых дисках
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 class="title-md">Наши услуги</h3>
+					<p>
+						Предоставляем экспортные документы, подготавливаем таможенные номера. Забираем с аэропорта. Консультируем по поводу растаможивания или уплатой пошлин в других странах*
+						<br /><br />
+						*все обговаривается.
+						<br /><br />
+						** Подразумеваются любые виды НЕ ГАРАНТИЙНЫХ работ. Пример: замена кузовных элементов или малярные работы. Порезы шин и\или повреждения колесных дисков. Замены и\или ремонт
+						лобового и\или бокового\заднего стекла. Не гарантийный ремонт ходовой части, замена узлов и агрегатов технической части (ДВС, КПП, Раздаточная коробка, приводы и т.д.)
+					</p>
+					<input type="text" class="control" placeholder="Ваше имя" />
+				</div>
+				<div class="tabs-product__item" data-tabs-item>
+					<p class="title-sm">
+						В наличии<br />
+						SKODA ENYAQ iV80
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="section">
+	<div class="container">
+		<div class="section-headline">
+			<h2 class="section-title">Похожие сообщения</h2>
+		</div>
+		<div class="slider-cards slider splide">
+			<div class="slider-cards__track slider__track splide__track">
+				<div class="slider-cards__list slider__list splide__list">
+					<div class="slider-cards__slide slider__slide splide__slide">
+						<a href="#" class="card card--no-padding">
+							<div class="card__img-wrap">
+								<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+							</div>
+							<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+						</a>
+					</div>
+					<div class="slider-cards__slide slider__slide splide__slide">
+						<a href="#" class="card card--no-padding">
+							<div class="card__img-wrap">
+								<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+							</div>
+							<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+						</a>
+					</div>
+					<div class="slider-cards__slide slider__slide splide__slide">
+						<a href="#" class="card card--no-padding">
+							<div class="card__img-wrap">
+								<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+							</div>
+							<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+						</a>
+					</div>
+					<div class="slider-cards__slide slider__slide splide__slide">
+						<a href="#" class="card card--no-padding">
+							<div class="card__img-wrap">
+								<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+							</div>
+							<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+						</a>
+					</div>
+					<div class="slider-cards__slide slider__slide splide__slide">
+						<a href="#" class="card card--no-padding">
+							<div class="card__img-wrap">
+								<img src="images/dist/card.jpg" alt="alt" class="card__img img-responsive" />
+							</div>
+							<div class="card__title">MERCEDES-BENZ KLASA E 200</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<ul class="slider-cards__pagination slider__pagination splide__pagination"></ul>
+		</div>
+	</div>
+</section>
+
+<section class="section section-contacts">
+	<div class="contacts">
+		<div class="contacts__row row no-gutters">
+			<div class="contacts__col col-md-6">
+				<div class="contacts__body">
+					<h2 class="contacts__title section-title">остались вопросы?</h2>
+					<div class="contacts__item-callback item-callback">
+						<div class="item-callback__title">Позвоните нам:</div>
+						<a href="tel:+4917630408044" class="item-callback__btn-contact btn btn--secondary btn--icon-left btn--contact">
+							<img src="images/icons/call.svg" alt="alt" class="btn__icon img-responsive" />
+							+49 176 30408044
+						</a>
+					</div>
+					<div class="contacts__text-wrap">
+						<p>
+							или<br />
+							Заполните форму ниже и мы свяжемся с вами в ближайшее время
+						</p>
+					</div>
+					<form class="contacts__form form-contacts js-validate-form">
+						<div class="form-contacts__group">
+							<input type="text" class="form-contacts__control control" placeholder="Ваше имя" />
+						</div>
+						<div class="form-contacts__group">
+							<input type="text" class="form-contacts__control control js-email" placeholder="Ваш e-mail" />
+						</div>
+						<div class="form-contacts__group">
+							<input type="text" class="form-contacts__control control js-phone" placeholder="Ваш телефон" />
+						</div>
+						<div class="form-contacts__group">
+							<textarea class="form-contacts__control control" placeholder="Текст сообщения"></textarea>
+						</div>
+						<div class="form-contacts__group">
+							<button class="form-contacts__btn btn btn--secondary btn--icon-right" type="submit">
+								отправить
+								<img src="images/icons/circle-gray.svg" alt="alt" class="btn__icon img-responsive" />
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="contacts__col col-md-6">
+				<div class="contacts__map-wrap">
+					<iframe
+						class="contacts__map"
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9b761d8cf9a86fbc277c07462b94cab1189414ced6debf35786e2f15075b744&amp;source=constructor"
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <div class="footer__col footer__col--logo">
+                <img src="images/dist/logo-green.svg" alt="alt" class="footer__logo img-responsive">
+                <div class="footer__info info-footer">
+                    <div class="info-footer__item">
+                        <div class="info-footer__inner">
+                            <img src="images/icons/map.svg" alt="alt" class="info-footer__icon img-responsive">
+                            Адрес:125373, г. Москва,<br>
+                            пр-д Походный, д. 4 к. 1, БЦ "Тушино"
+                        </div>
+                    </div>
+                    <div class="info-footer__item">
+                        <div class="info-footer__inner">
+                            <img src="images/icons/map.svg" alt="alt" class="info-footer__icon img-responsive">
+                            График работы:пн-пт: 9.00-19.00
+                        </div>
+                    </div>
+                    <div class="info-footer__item">
+                        <a href="#" class="info-footer__inner">
+                            <img src="images/icons/map.svg" alt="alt" class="info-footer__icon img-responsive">
+                            email@mail.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col footer__col--menu">
+                <div class="footer__menus">
+                    <nav class="footer__menu menu-footer">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="catalog.html">каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="calculator.html">Калькулятор растаможки</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__menu menu-footer">
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Инфо</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__col footer__col--contacts">
+                <div class="footer__contacts">
+                    <div class="footer__contact contact-footer">
+                        <a href="tel:+4917630408044" class="contact-footer__inner">
+                            <img src="images/icons/call.svg" alt="alt" class="contact-footer__icon img-responsive">
+                            +49 176 30408044
+                        </a>
+                    </div>
+                    <div class="footer__contact contact-footer">
+                        <a href="tel:+4917630408044" class="contact-footer__inner">
+                            <img src="images/icons/call.svg" alt="alt" class="contact-footer__icon img-responsive">
+                            +49 176 30408044
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/ig-green.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/fb-green.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/tg-green.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                    <a href="#" class="footer__social social">
+                        <img src="images/icons/wa-green.svg" alt="alt" class="social__icon img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            Copyright © 2022 AutoStock Все права защищены.<br>
+            <a href="#">Политика конфиденциальности</a>
+        </p>
+    </div>
+</footer>
+
+<script src="libs/svg4everybody.min.js"></script>
+<script src="libs/splide/splide.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
+<script src="libs/enquire.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
+<script src="libs/imask.min.js"></script>
+<script src="libs/just-validate.production.min.js"></script>
+<script src="libs/choices/choices.min.js"></script>
+<script src="libs/simplebar/simplebar.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
