@@ -280,25 +280,23 @@
 							</div>
 						</div>
 						<div class="filter__col col-lg-4 col-md-6">
-							<div class="filter__label">Мощность</div>
-							<div class="filter__row filter__row--gap-sm row">
-								<div class="filter__col col-6">
-									<div class="filter__select select-filter custom-select">
-										<select class="select-filter__select" name="power_from">
-											<option value="">От (кВт)</option>
-											<option value="1">От (кВт) 1</option>
-											<option value="2">От (кВт) 2</option>
+							<div class="filter__row filter__row--gap-sm row align-items-end">
+								<div class="filter__col col-sm-4">
+									<div class="filter__label">Мощность</div>
+									<div class="filter__select select-filter select-filter--power-type custom-select">
+										<select class="select-filter__select" name="power_type" id="power_type">
+											<option value="л.с.">л.с.</option>
+											<option value="кВт">кВт</option>
 										</select>
 									</div>
 								</div>
-								<div class="filter__col col-6">
-									<div class="filter__select select-filter custom-select">
-										<select class="select-filter__select" name="power_to">
-											<option value="">До (кВт)</option>
-											<option value="1">До (кВт) 1</option>
-											<option value="2">До (кВт) 2</option>
-										</select>
-									</div>
+								<div class="filter__col col-sm-4 col-6">
+									<div class="filter__label">От</div>
+									<input type="text" class="filter__control control" id="power_from" />
+								</div>
+								<div class="filter__col col-sm-4 col-6">
+									<div class="filter__label">До</div>
+									<input type="text" class="filter__control control" id="power_to" />
 								</div>
 							</div>
 						</div>
