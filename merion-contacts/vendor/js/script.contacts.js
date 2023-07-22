@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				if (isValid) {
 					// Отправка формы
 					showSuccessMessage();
+					form.reset();
 				}
 			});
 		});
