@@ -138,6 +138,7 @@ body {
 	color: var(--not-black);
 	outline: none;
 	transition: box-shadow 0.2s ease, color 0.2s ease;
+	font-family: "Nunito Sans", Helvetica, sans-serif;
 }
 .form-callback__control.is-invalid {
 	box-shadow: 0 0 0 1px #b00020;
