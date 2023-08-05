@@ -7,8 +7,8 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<title>Атоматик</title>
+	<meta name="description" content="Атоматик">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -27,33 +27,38 @@
 			<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
 		</a>
 		<nav class="header__menu menu">
-			<ul class="menu__list list-unstyled">
-				<li><a href="#">цены</a></li>
-				<li><a href="#">преимущества</a></li>
-				<li><a href="#">партнеры</a></li>
-			</ul>
+			<div class="menu__inner container">
+				<ul class="menu__list list-unstyled">
+					<li><a href="#">цены</a></li>
+					<li><a href="#">преимущества</a></li>
+					<li><a href="#">партнеры</a></li>
+				</ul>
+				<button class="header__close" type="button">
+					<img src="images/icons/close.svg" alt="alt" class="img-responsive">
+				</button>
+			</div>
 		</nav>
 		<div class="header__contact-dropdown contact-dropdown" data-dropdown>
 			<button class="contact-dropdown__btn" type="button" data-dropdown-toggle>
-				связаться с нами
+				Связаться с нами
 				<img src="images/icons/chevron-down.svg" alt="alt" class="contact-dropdown__arrow img-responsive">
 			</button>
 			<div class="contact-dropdown__box" data-dropdown-box>
 				<div class="contact-dropdown__items">
 					<div class="contact-dropdown__item">
-						<a href="#" class="contact-dropdown__value">
+						<a href="tel:+84959712226" class="contact-dropdown__value">
 							<img src="images/icons/phone.svg" alt="alt" class="contact-dropdown__icon img-responsive">
 							+ 8 (495)971-22-26
 						</a>
 					</div>
 					<div class="contact-dropdown__item">
-						<a href="#" class="contact-dropdown__value">
+						<a href="tel:+79774482229" class="contact-dropdown__value">
 							<img src="images/icons/phone.svg" alt="alt" class="contact-dropdown__icon img-responsive">
 							+7 (977)448-22-29
 						</a>
 					</div>
 					<div class="contact-dropdown__item">
-						<a href="#" class="contact-dropdown__value">
+						<a href="mailto:Atomatic64@gmail.com" class="contact-dropdown__value">
 							<img src="images/icons/email.svg" alt="alt" class="contact-dropdown__icon img-responsive">
 							Atomatic64@gmail.com
 						</a>
@@ -67,6 +72,9 @@
 		<div class="header__btns">
 			<a href="#callback" class="header__btn btn btn--outline-black">оставить заявку</a>
 		</div>
+		<button class="header__hamburger" type="button">
+			<img src="images/icons/hamburger.svg" alt="alt" class="img-responsive">
+		</button>
 	</div>
 </header>
 
@@ -87,31 +95,35 @@
 					<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
 				</a>
 			</div>
-			<div class="footer__col col-4">
-				<div class="footer__title text-lg">Сайт</div>
-				<nav class="footer__menu menu-footer">
-					<ul class="menu-footer__list list-unstyled">
-						<li><a href="#">цены</a></li>
-						<li><a href="#">преимущества</a></li>
-						<li><a href="#">партнеры</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="footer__col col-4">
-				<div class="footer__title text-lg">Контакты</div>
-				<ul class="footer__contacts list-unstyled">
-					<li><a href="#">+7 (977)448-22-29</a></li>
-					<li><a href="#">+ 8 (495)971-22-26</a></li>
-					<li><a href="#">Atomatic64@gmail.com</a></li>
-				</ul>
+			<div class="footer__col col-8">
+				<div class="footer__row row">
+					<div class="footer__col col-sm-6">
+						<div class="footer__title text-lg">Сайт</div>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list list-unstyled">
+								<li><a href="#">цены</a></li>
+								<li><a href="#">преимущества</a></li>
+								<li><a href="#">партнеры</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__col col-sm-6">
+						<div class="footer__title text-lg">Контакты</div>
+						<ul class="footer__contacts list-unstyled">
+							<li><a href="tel:+79774482229">+7 (977)448-22-29</a></li>
+							<li><a href="tel:+84959712226">+ 8 (495)971-22-26</a></li>
+							<li><a href="mailto:Atomatic64@gmail.com">Atomatic64@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="footer__bottom">
 			<div class="footer__row row">
-				<div class="footer__col col-4 offset-4">
+				<div class="footer__col col-4 offset-md-4">
 					<p class="footer__copyright text-sm">ООО АТОМАТИК</p>
 				</div>
-				<div class="footer__col col-4">
+				<div class="footer__col col-md-4 col-8">
 					<p class="footer__info text-sm">413840, Саратовская область, город Балаково, Степная улица, дом 8а, квартира 155</p>
 				</div>
 			</div>
