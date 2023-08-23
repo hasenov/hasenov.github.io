@@ -1,26 +1,23 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<!-- <base href="/"> -->
 
 	<title>Наши работы</title>
-	<meta name="description" content="Описание">
+	<meta name="description" content="Описание" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="libs/aos/aos.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
-	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
-	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="icon" href="images/favicon.png" />
+	<meta property="og:image" content="images/dist/preview.jpg" />
 
+	<link rel="stylesheet" href="libs/aos/aos.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css" />
+	<link rel="stylesheet" href="css/app.min.css" />
 </head>
 
 <body>
@@ -40,14 +37,16 @@
 				</button>
 				<nav class="header__menu menu">
 					<ul class="list-unstyled">
-						<li class="has-child">
+						<!-- Всплывающее меню как вариант -->
+						<!-- <li class="has-child">
 							<a href="#">Услуги</a>
 							<ul class="dropdown list-unstyled">
 								<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
 								<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
 								<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
 							</ul>
-						</li>
+						</li> -->
+						<li><a href="index.html#services">Услуги</a></li>
 						<li><a href="works.html">Наши работы</a></li>
 						<li><a href="about.html">О компании</a></li>
 					</ul>
@@ -67,12 +66,12 @@
 					</ul>
 				</nav>
 				<div class="header__socials">
-					<a href="#" class="header__socail">
+					<a href="#" class="header__socail header__socail--wa">
 						<svg role="img" class="header__social-icon">
 							<use href="images/icons/sprite.svg#wa"/>
 						</svg>
 					</a>
-					<a href="#" class="header__socail">
+					<a href="#" class="header__socail header__socail--tg">
 						<svg role="img" class="header__social-icon">
 							<use href="images/icons/sprite.svg#tg"/>
 						</svg>
@@ -84,6 +83,47 @@
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="header__mobile mobile-menu">
+		<div class="mobile-menu__container container">
+			<div class="mobile-menu__header">
+				<div class="mobile-menu__logo-wrap">
+					<img src="images/dist/logo.svg" alt="alt" class="mobile-menu__logo img-responsive">
+				</div>
+				<button class="mobile-menu__close" type="button">
+					<svg role="img" class="mobile-menu__close-icon">
+						<use href="images/icons/sprite.svg#close"/>
+					</svg>
+				</button>
+			</div>
+			<nav class="mobile-menu__nav nav-mobile">
+				<ul class="list-unstyled">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="index.html#services">Услуги</a></li>
+					<li><a href="works.html">Наши работы</a></li>
+					<li><a href="certificates.html">Сертификаты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-menu__contact">
+				<a href="tel:+77077711144">+7 (707) 77-111-44</a>
+			</div>
+			<div class="mobile-menu__info">г.Алматы, ул.Торетай, 92, строение 4</div>
+			<div class="mobile-menu__socials">
+				<a href="#" class="mobile-menu__social mobile-menu__social--wa">
+					<svg role="img" class="mobile-menu__social-icon">
+						<use href="images/icons/sprite.svg#wa"/>
+					</svg>
+				</a>
+				<a href="#" class="mobile-menu__social">
+					<svg role="img" class="mobile-menu__social-icon">
+						<use href="images/icons/sprite.svg#tg"/>
+					</svg>
+				</a>
+			</div>
+			<a href="#modal-callback" class="mobile-menu__btn btn btn--accent js-popup-form">Оставить заявку</a>
 		</div>
 	</div>
 </header>
@@ -315,9 +355,9 @@
 			<div class="navigation-footer__title">Навигация по сайту</div>
 			<nav class="navigation-footer__menu">
 				<ul class="list-unstyled">
-					<li><a href="#">Изготовление металлоконструкций</a></li>
-					<li><a href="#">Монтаж металлоконструкций</a></li>
-					<li><a href="#">Строительство зданий и сооружений</a></li>
+					<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
+					<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
+					<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
 					<li><a href="works.html">Наши работы</a></li>
 					<li><a href="about.html">О компании</a></li>
 					<li><a href="certificates.html">Сертификаты</a></li>
@@ -349,6 +389,13 @@
 		</div>
 		<p class="form-modal__accept">Нажимая кнопку, Вы даете согласие на обработку <a href="#">персональных данных</a></p>
 	</form>
+</div>
+
+<div class="modal modal-message mfp-hide" id="modal-success">
+	<div class="modal-message__body">
+		<div class="modal-message__title">Спасибо!</div>
+		<div class="modal-message__text">Мы свяжемся с Вами в ближайшее время!</div>
+	</div>
 </div>
 
 <script src="libs/jquery.min.js"></script>

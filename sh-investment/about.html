@@ -1,26 +1,23 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<!-- <base href="/"> -->
 
 	<title>О компании</title>
-	<meta name="description" content="Описание">
+	<meta name="description" content="Описание" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="libs/aos/aos.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
-	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
-	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="icon" href="images/favicon.png" />
+	<meta property="og:image" content="images/dist/preview.jpg" />
 
+	<link rel="stylesheet" href="libs/aos/aos.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css" />
+	<link rel="stylesheet" href="css/app.min.css" />
 </head>
 
 <body>
@@ -40,14 +37,16 @@
 				</button>
 				<nav class="header__menu menu">
 					<ul class="list-unstyled">
-						<li class="has-child">
+						<!-- Всплывающее меню как вариант -->
+						<!-- <li class="has-child">
 							<a href="#">Услуги</a>
 							<ul class="dropdown list-unstyled">
 								<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
 								<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
 								<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
 							</ul>
-						</li>
+						</li> -->
+						<li><a href="index.html#services">Услуги</a></li>
 						<li><a href="works.html">Наши работы</a></li>
 						<li><a href="about.html">О компании</a></li>
 					</ul>
@@ -67,12 +66,12 @@
 					</ul>
 				</nav>
 				<div class="header__socials">
-					<a href="#" class="header__socail">
+					<a href="#" class="header__socail header__socail--wa">
 						<svg role="img" class="header__social-icon">
 							<use href="images/icons/sprite.svg#wa"/>
 						</svg>
 					</a>
-					<a href="#" class="header__socail">
+					<a href="#" class="header__socail header__socail--tg">
 						<svg role="img" class="header__social-icon">
 							<use href="images/icons/sprite.svg#tg"/>
 						</svg>
@@ -84,6 +83,47 @@
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="header__mobile mobile-menu">
+		<div class="mobile-menu__container container">
+			<div class="mobile-menu__header">
+				<div class="mobile-menu__logo-wrap">
+					<img src="images/dist/logo.svg" alt="alt" class="mobile-menu__logo img-responsive">
+				</div>
+				<button class="mobile-menu__close" type="button">
+					<svg role="img" class="mobile-menu__close-icon">
+						<use href="images/icons/sprite.svg#close"/>
+					</svg>
+				</button>
+			</div>
+			<nav class="mobile-menu__nav nav-mobile">
+				<ul class="list-unstyled">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="index.html#services">Услуги</a></li>
+					<li><a href="works.html">Наши работы</a></li>
+					<li><a href="certificates.html">Сертификаты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-menu__contact">
+				<a href="tel:+77077711144">+7 (707) 77-111-44</a>
+			</div>
+			<div class="mobile-menu__info">г.Алматы, ул.Торетай, 92, строение 4</div>
+			<div class="mobile-menu__socials">
+				<a href="#" class="mobile-menu__social mobile-menu__social--wa">
+					<svg role="img" class="mobile-menu__social-icon">
+						<use href="images/icons/sprite.svg#wa"/>
+					</svg>
+				</a>
+				<a href="#" class="mobile-menu__social">
+					<svg role="img" class="mobile-menu__social-icon">
+						<use href="images/icons/sprite.svg#tg"/>
+					</svg>
+				</a>
+			</div>
+			<a href="#modal-callback" class="mobile-menu__btn btn btn--accent js-popup-form">Оставить заявку</a>
 		</div>
 	</div>
 </header>
@@ -106,7 +146,7 @@
 					<div class="content__inner">
 						<div class="content__title-vertical title-vertical">О КОМПАНИИ</div>
 						<div class="content__body">
-							<h2 class="content__title">Строительство и изготовление металлоконструкций под любые нужды</h2>
+							<h2 class="content__title title">Строительство и изготовление металлоконструкций под любые нужды</h2>
 							<p>
 								Наш профиль – металлоконструкции и все, что с ними связано. Мы производим оригинальные и типовые МК любой сложности – от лестниц и заборов до несущих каркасов зданий и
 								мостов.
@@ -127,7 +167,7 @@
 	</div>
 </section>
 
-<section class="section-benefits is-dark">
+<section class="section-benefits is-dark" id="services">
 	<div class="container container-lg">
 		<div class="benefits">
 			<div class="benefits__row row">
@@ -149,7 +189,7 @@
 				<div class="benefits__col benefits__col--right">
 					<div class="benefits__cards-services cards-services">
 						<div class="cards-services__item-wrap" data-aos="fade-left" data-aos-delay="50" data-aos-duration="700">
-							<a href="#" class="cards-services__item card-service">
+							<a href="izgotovlenie-metallokonstrukcij.html" class="cards-services__item card-service">
 								<div class="card-service__body">
 									<div class="card-service__number">01</div>
 									<div class="card-service__title">Изготовление металлоконструкций</div>
@@ -167,7 +207,7 @@
 							</a>
 						</div>
 						<div class="cards-services__item-wrap" data-aos="fade-left" data-aos-delay="150" data-aos-duration="700">
-							<a href="#" class="cards-services__item card-service">
+							<a href="montaz-metallokonstrukcij.html" class="cards-services__item card-service">
 								<div class="card-service__body">
 									<div class="card-service__number">02</div>
 									<div class="card-service__title">Монтаж металлоконструкций</div>
@@ -185,7 +225,7 @@
 							</a>
 						</div>
 						<div class="cards-services__item-wrap" data-aos="fade-left" data-aos-delay="300" data-aos-duration="700">
-							<a href="#" class="cards-services__item card-service">
+							<a href="stroitelstvo-zdanij-i-sooruzenij.html" class="cards-services__item card-service">
 								<div class="card-service__body">
 									<div class="card-service__number">03</div>
 									<div class="card-service__title">Строительство зданий и сооружений</div>
@@ -217,7 +257,7 @@
 			<div class="info__row row">
 				<div class="info__col col-lg-6">
 					<div class="info__body" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-						<h2 class="info__title">
+						<h2 class="info__title title">
 							Производство<br />
 							полного цикла
 						</h2>
@@ -408,7 +448,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="#" class="gallery__btn">Показать больше работ</a>
+		<a href="works.html" class="gallery__btn">Показать больше работ</a>
 	</div>
 </section>
 
@@ -429,12 +469,12 @@
 						</div>
 					</div>
 					<div class="item-work__img-mob-wrap">
-						<img src="images/dist/ala-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" />
+						<img src="images/dist/ala-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" loading="lazy" />
 					</div>
 					<div class="item-work__body">
 						<div class="item-work__content">
 							<div class="item-work__type">Изготовление и установка</div>
-							<div class="item-work__title">ЖК ALA PARK</div>
+							<div class="item-work__title title">ЖК ALA PARK</div>
 							<div class="item-work__subtitle">1320 м2 нержавеющей стали</div>
 							<div class="item-work__text">Жалюзийные решетки, лифтовые порталы, временные ограждения по периметру ЖК</div>
 							<a href="#modal-callback" class="item-work__btn btn btn--accent js-popup-form">Оставить заявку</a>
@@ -453,12 +493,12 @@
 						</div>
 					</div>
 					<div class="item-work__img-mob-wrap">
-						<img src="images/dist/ala-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" />
+						<img src="images/dist/taugul-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" loading="lazy" />
 					</div>
 					<div class="item-work__body">
 						<div class="item-work__content">
 							<div class="item-work__type">Изготовление и установка</div>
-							<div class="item-work__title">ЖК Taugul-1,2</div>
+							<div class="item-work__title title">ЖК Taugul-1,2</div>
 							<div class="item-work__subtitle">1000 м2 оцинкованной стали <span class="hidden-on-md">с полимерно-порошковым покрытием</span></div>
 							<div class="item-work__text">Корзины для кондиционеров, металлические ограждения по периметру ЖК, лифтовые порталы, парапеты кровли и воздушной зоны и др.</div>
 							<a href="#modal-callback" class="item-work__btn btn btn--accent js-popup-form">Оставить заявку</a>
@@ -477,12 +517,12 @@
 						</div>
 					</div>
 					<div class="item-work__img-mob-wrap">
-						<img src="images/dist/ala-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" />
+						<img src="images/dist/gulder-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" loading="lazy" />
 					</div>
 					<div class="item-work__body">
 						<div class="item-work__content">
 							<div class="item-work__type">Изготовление и установка</div>
-							<div class="item-work__title">ЖК Gulder</div>
+							<div class="item-work__title title">ЖК Gulder</div>
 							<div class="item-work__subtitle">1800 м2 нержавеющей стали</div>
 							<div class="item-work__text">Кронштейны для кондиционеров, лифтовые порталы, парапеты кровли и воздушной зоны, лестницы пожарного выхода и др.</div>
 							<a href="#modal-callback" class="item-work__btn btn btn--accent js-popup-form">Оставить заявку</a>
@@ -493,6 +533,48 @@
 								<use href="images/icons/sprite.svg#arrow-right" />
 							</svg>
 						</a>
+					</div>
+				</div>
+				<div class="works__item item-work item-work--mob" data-aos="fade" data-aos-delay="100" data-aos-duration="800">
+					<div class="item-work__img-mob-wrap">
+						<img src="images/dist/ograzhdeniya-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" loading="lazy" />
+					</div>
+					<div class="item-work__body">
+						<div class="item-work__content">
+							<div class="item-work__type">Изготовление</div>
+							<div class="item-work__title title">Парковая зона</div>
+							<div class="item-work__subtitle">880 м2 полимерной стали</div>
+							<div class="item-work__text">Декоративные ограждения лазерной резки</div>
+							<a href="#modal-callback" class="item-work__btn btn btn--accent js-popup-form">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+				<div class="works__item item-work item-work--mob" data-aos="fade" data-aos-delay="100" data-aos-duration="800">
+					<div class="item-work__img-mob-wrap">
+						<img src="images/dist/tenevye-navesy-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" loading="lazy" />
+					</div>
+					<div class="item-work__body">
+						<div class="item-work__content">
+							<div class="item-work__type">Изготовление и установка</div>
+							<div class="item-work__title title">Сквер</div>
+							<div class="item-work__subtitle">800 м2 полимерной стали</div>
+							<div class="item-work__text">Металлические теневые навесы с последующей установкой в г.Алматы</div>
+							<a href="#modal-callback" class="item-work__btn btn btn--accent js-popup-form">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+				<div class="works__item item-work item-work--mob" data-aos="fade" data-aos-delay="100" data-aos-duration="800">
+					<div class="item-work__img-mob-wrap">
+						<img src="images/dist/jk-mob.jpg" alt="alt" class="item-work__img-mob img-responsive" loading="lazy" />
+					</div>
+					<div class="item-work__body">
+						<div class="item-work__content">
+							<div class="item-work__type">Изготовление и установка</div>
+							<div class="item-work__title title">ЖК в г.Алматы</div>
+							<div class="item-work__subtitle">650 м2 нержавеющей стали</div>
+							<div class="item-work__text">Металлические парапеты воздушной зоны с последующей установкой в г.Алматы</div>
+							<a href="#modal-callback" class="item-work__btn btn btn--accent js-popup-form">Оставить заявку</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -579,9 +661,9 @@
 			<div class="navigation-footer__title">Навигация по сайту</div>
 			<nav class="navigation-footer__menu">
 				<ul class="list-unstyled">
-					<li><a href="#">Изготовление металлоконструкций</a></li>
-					<li><a href="#">Монтаж металлоконструкций</a></li>
-					<li><a href="#">Строительство зданий и сооружений</a></li>
+					<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
+					<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
+					<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
 					<li><a href="works.html">Наши работы</a></li>
 					<li><a href="about.html">О компании</a></li>
 					<li><a href="certificates.html">Сертификаты</a></li>
@@ -613,6 +695,13 @@
 		</div>
 		<p class="form-modal__accept">Нажимая кнопку, Вы даете согласие на обработку <a href="#">персональных данных</a></p>
 	</form>
+</div>
+
+<div class="modal modal-message mfp-hide" id="modal-success">
+	<div class="modal-message__body">
+		<div class="modal-message__title">Спасибо!</div>
+		<div class="modal-message__text">Мы свяжемся с Вами в ближайшее время!</div>
+	</div>
 </div>
 
 <script src="libs/jquery.min.js"></script>
