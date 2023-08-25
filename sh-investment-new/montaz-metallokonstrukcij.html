@@ -26,27 +26,25 @@
 	<div class="header__container container">
 		<div class="header__inner">
 			<svg role="img" class="header__triangle header__triangle--top triangle">
-				<use href="images/icons/sprite.svg#triangle"/>
+				<use href="images/icons/sprite.svg#triangle" />
 			</svg>
 			<svg role="img" class="header__triangle header__triangle--bottom triangle">
-				<use href="images/icons/sprite.svg#triangle"/>
+				<use href="images/icons/sprite.svg#triangle" />
 			</svg>
 			<div class="header__col header__col--left">
 				<button class="header__hamburger" type="button">
-					<img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive">
+					<img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
 				</button>
 				<nav class="header__menu menu">
 					<ul class="list-unstyled">
-						<!-- Всплывающее меню как вариант -->
-						<!-- <li class="has-child">
+						<li class="has-child">
 							<a href="#">Услуги</a>
 							<ul class="dropdown list-unstyled">
 								<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
 								<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
 								<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
 							</ul>
-						</li> -->
-						<li><a href="index.html#services">Услуги</a></li>
+						</li>
 						<li><a href="works.html">Наши работы</a></li>
 						<li><a href="about.html">О компании</a></li>
 					</ul>
@@ -54,7 +52,7 @@
 			</div>
 			<div class="header__col header__col--logo">
 				<a href="index.html" class="header__logo">
-					<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
+					<img src="images/dist/logo.svg" alt="alt" class="img-responsive" />
 				</a>
 			</div>
 			<div class="header__col header__col--right">
@@ -68,17 +66,17 @@
 				<div class="header__socials">
 					<a href="#" class="header__socail header__socail--wa">
 						<svg role="img" class="header__social-icon">
-							<use href="images/icons/sprite.svg#wa"/>
+							<use href="images/icons/sprite.svg#wa" />
 						</svg>
 					</a>
 					<a href="#" class="header__socail header__socail--tg">
 						<svg role="img" class="header__social-icon">
-							<use href="images/icons/sprite.svg#tg"/>
+							<use href="images/icons/sprite.svg#tg" />
 						</svg>
 					</a>
 					<a href="tel:+77027711144" class="header__socail header__socail--phone">
 						<svg role="img" class="header__social-icon">
-							<use href="images/icons/sprite.svg#phone"/>
+							<use href="images/icons/sprite.svg#phone" />
 						</svg>
 					</a>
 				</div>
@@ -89,11 +87,11 @@
 		<div class="mobile-menu__container container">
 			<div class="mobile-menu__header">
 				<div class="mobile-menu__logo-wrap">
-					<img src="images/dist/logo.svg" alt="alt" class="mobile-menu__logo img-responsive">
+					<img src="images/dist/logo.svg" alt="alt" class="mobile-menu__logo img-responsive" />
 				</div>
 				<button class="mobile-menu__close" type="button">
 					<svg role="img" class="mobile-menu__close-icon">
-						<use href="images/icons/sprite.svg#close"/>
+						<use href="images/icons/sprite.svg#close" />
 					</svg>
 				</button>
 			</div>
@@ -101,7 +99,14 @@
 				<ul class="list-unstyled">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about.html">О нас</a></li>
-					<li><a href="index.html#services">Услуги</a></li>
+					<li class="has-child">
+						<a href="#">Услуги</a>
+						<ul class="dropdown list-unstyled">
+							<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
+							<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
+							<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
+						</ul>
+					</li>
 					<li><a href="works.html">Наши работы</a></li>
 					<li><a href="certificates.html">Сертификаты</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
@@ -114,12 +119,12 @@
 			<div class="mobile-menu__socials">
 				<a href="#" class="mobile-menu__social mobile-menu__social--wa">
 					<svg role="img" class="mobile-menu__social-icon">
-						<use href="images/icons/sprite.svg#wa"/>
+						<use href="images/icons/sprite.svg#wa" />
 					</svg>
 				</a>
 				<a href="#" class="mobile-menu__social">
 					<svg role="img" class="mobile-menu__social-icon">
-						<use href="images/icons/sprite.svg#tg"/>
+						<use href="images/icons/sprite.svg#tg" />
 					</svg>
 				</a>
 			</div>
@@ -128,9 +133,13 @@
 	</div>
 </header>
 
+
 <div class="banner" style="background-image: url(images/dist/banner.jpg)">
 	<div class="container">
-		<h1 class="banner__title">Монтаж металлоконструкций</h1>
+		<h1 class="banner__title">
+			Монтаж <br class="visible-xl" />
+			металлоконструкций
+		</h1>
 		<ul class="banner__breadcrumbs breadcrumbs list-unstyled">
 			<li><a href="index.html">Главная</a></li>
 			<li>Монтаж металлоконструкций</li>
@@ -658,6 +667,7 @@
 	</div>
 </div>
 
+
 <script src="libs/jquery.min.js"></script>
 <script src="libs/aos/aos.js"></script>
 <script src="libs/enquire.min.js"></script>
@@ -671,3 +681,4 @@
 
 </body>
 </html>
+

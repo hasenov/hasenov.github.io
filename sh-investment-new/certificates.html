@@ -26,27 +26,25 @@
 	<div class="header__container container">
 		<div class="header__inner">
 			<svg role="img" class="header__triangle header__triangle--top triangle">
-				<use href="images/icons/sprite.svg#triangle"/>
+				<use href="images/icons/sprite.svg#triangle" />
 			</svg>
 			<svg role="img" class="header__triangle header__triangle--bottom triangle">
-				<use href="images/icons/sprite.svg#triangle"/>
+				<use href="images/icons/sprite.svg#triangle" />
 			</svg>
 			<div class="header__col header__col--left">
 				<button class="header__hamburger" type="button">
-					<img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive">
+					<img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
 				</button>
 				<nav class="header__menu menu">
 					<ul class="list-unstyled">
-						<!-- Всплывающее меню как вариант -->
-						<!-- <li class="has-child">
+						<li class="has-child">
 							<a href="#">Услуги</a>
 							<ul class="dropdown list-unstyled">
 								<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
 								<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
 								<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
 							</ul>
-						</li> -->
-						<li><a href="index.html#services">Услуги</a></li>
+						</li>
 						<li><a href="works.html">Наши работы</a></li>
 						<li><a href="about.html">О компании</a></li>
 					</ul>
@@ -54,7 +52,7 @@
 			</div>
 			<div class="header__col header__col--logo">
 				<a href="index.html" class="header__logo">
-					<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
+					<img src="images/dist/logo.svg" alt="alt" class="img-responsive" />
 				</a>
 			</div>
 			<div class="header__col header__col--right">
@@ -68,17 +66,17 @@
 				<div class="header__socials">
 					<a href="#" class="header__socail header__socail--wa">
 						<svg role="img" class="header__social-icon">
-							<use href="images/icons/sprite.svg#wa"/>
+							<use href="images/icons/sprite.svg#wa" />
 						</svg>
 					</a>
 					<a href="#" class="header__socail header__socail--tg">
 						<svg role="img" class="header__social-icon">
-							<use href="images/icons/sprite.svg#tg"/>
+							<use href="images/icons/sprite.svg#tg" />
 						</svg>
 					</a>
 					<a href="tel:+77027711144" class="header__socail header__socail--phone">
 						<svg role="img" class="header__social-icon">
-							<use href="images/icons/sprite.svg#phone"/>
+							<use href="images/icons/sprite.svg#phone" />
 						</svg>
 					</a>
 				</div>
@@ -89,11 +87,11 @@
 		<div class="mobile-menu__container container">
 			<div class="mobile-menu__header">
 				<div class="mobile-menu__logo-wrap">
-					<img src="images/dist/logo.svg" alt="alt" class="mobile-menu__logo img-responsive">
+					<img src="images/dist/logo.svg" alt="alt" class="mobile-menu__logo img-responsive" />
 				</div>
 				<button class="mobile-menu__close" type="button">
 					<svg role="img" class="mobile-menu__close-icon">
-						<use href="images/icons/sprite.svg#close"/>
+						<use href="images/icons/sprite.svg#close" />
 					</svg>
 				</button>
 			</div>
@@ -101,7 +99,14 @@
 				<ul class="list-unstyled">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about.html">О нас</a></li>
-					<li><a href="index.html#services">Услуги</a></li>
+					<li class="has-child">
+						<a href="#">Услуги</a>
+						<ul class="dropdown list-unstyled">
+							<li><a href="izgotovlenie-metallokonstrukcij.html">Изготовление металлоконструкций</a></li>
+							<li><a href="montaz-metallokonstrukcij.html">Монтаж металлоконструкций</a></li>
+							<li><a href="stroitelstvo-zdanij-i-sooruzenij.html">Строительство зданий и сооружений</a></li>
+						</ul>
+					</li>
 					<li><a href="works.html">Наши работы</a></li>
 					<li><a href="certificates.html">Сертификаты</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
@@ -114,12 +119,12 @@
 			<div class="mobile-menu__socials">
 				<a href="#" class="mobile-menu__social mobile-menu__social--wa">
 					<svg role="img" class="mobile-menu__social-icon">
-						<use href="images/icons/sprite.svg#wa"/>
+						<use href="images/icons/sprite.svg#wa" />
 					</svg>
 				</a>
 				<a href="#" class="mobile-menu__social">
 					<svg role="img" class="mobile-menu__social-icon">
-						<use href="images/icons/sprite.svg#tg"/>
+						<use href="images/icons/sprite.svg#tg" />
 					</svg>
 				</a>
 			</div>
@@ -127,6 +132,7 @@
 		</div>
 	</div>
 </header>
+
 
 <div class="banner" style="background-image: url(images/dist/banner.jpg)">
 	<div class="container">
@@ -187,6 +193,7 @@
 									</div>
 								</div>
 							</div>
+							<a href="#modal-callback" class="content__btn btn btn--accent js-popup-form visible-sm">Связаться с нами</a>
 						</div>
 					</div>
 				</div>
@@ -201,37 +208,28 @@
 			<div class="certificates__row row">
 				<div class="certificates__col certificates__col--imgs" data-aos="fade" data-aos-delay="50" data-aos-duration="1000">
 					<div class="certificates__slider slider-certificates slider">
+						<svg role="img" class="slider-certificates__swipe swipe">
+							<use href="images/icons/sprite.svg#tap" />
+						</svg>
 						<div class="slider-certificates__wrapper slider__wrapper">
 							<div class="slider-certificates__slide slider__slide">
-								<a href="images/dist/cert-1-lg.jpg" class="item-certificates glightbox" data-gallery="certificates">
-									<picture>
-										<source srcset="images/dist/cert-1-lg.jpg" media="(max-width: 991.98px)" />
-										<img src="images/dist/cert-1.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
-									</picture>
+								<a href="images/dist/cert-1.jpg" class="item-certificates glightbox" data-gallery="certificates">
+									<img src="images/dist/cert-1.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
 								</a>
 							</div>
 							<div class="slider-certificates__slide slider__slide">
-								<a href="images/dist/cert-2-lg.jpg" class="item-certificates glightbox" data-gallery="certificates">
-									<picture>
-										<source srcset="images/dist/cert-2-lg.jpg" media="(max-width: 991.98px)" />
-										<img src="images/dist/cert-2.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
-									</picture>
+								<a href="images/dist/cert-2.jpg" class="item-certificates glightbox" data-gallery="certificates">
+									<img src="images/dist/cert-2.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
 								</a>
 							</div>
 							<div class="slider-certificates__slide slider__slide">
-								<a href="images/dist/cert-3-lg.jpg" class="item-certificates glightbox" data-gallery="certificates">
-									<picture>
-										<source srcset="images/dist/cert-3-lg.jpg" media="(max-width: 991.98px)" />
-										<img src="images/dist/cert-3.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
-									</picture>
+								<a href="images/dist/cert-3.jpg" class="item-certificates glightbox" data-gallery="certificates">
+									<img src="images/dist/cert-3.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
 								</a>
 							</div>
 							<div class="slider-certificates__slide slider__slide">
-								<a href="images/dist/cert-4-lg.jpg" class="item-certificates glightbox" data-gallery="certificates">
-									<picture>
-										<source srcset="images/dist/cert-4-lg.jpg" media="(max-width: 991.98px)" />
-										<img src="images/dist/cert-4.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
-									</picture>
+								<a href="images/dist/cert-4.jpg" class="item-certificates glightbox" data-gallery="certificates">
+									<img src="images/dist/cert-4.jpg" alt="alt" class="item-certificates__img img-responsive" loading="lazy" />
 								</a>
 							</div>
 						</div>
@@ -246,7 +244,10 @@
 				<div class="certificates__col certificates__col--body" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
 					<div class="certificates__body">
 						<div class="certificates__section-title underline">Сертификаты соответствия</div>
-						<h2 class="certificates__title title">Подтвержденное качество работы</h2>
+						<h2 class="certificates__title title">
+							Подтвержденное<br />
+							качество работы
+						</h2>
 						<div class="certificates__text-wrap">
 							<p>
 								«SH Investment» — проверенная компания для проведения проектных и строительно-монтажных работ. Качество наших изделий из металла и работы подтверждены сертификатами
@@ -288,8 +289,8 @@
 				<div class="slider-reviews__wrapper slider__wrapper">
 					<div class="slider-reviews__slide slider__slide">
 						<div class="item-review">
-							<a href="images/dist/review-1-lg.jpg" class="item-review__img-wrap glightbox" data-gallery="reviews">
-								<img src="images/dist/review-1-lg.jpg" alt="alt" class="item-review__img img-responsive" loading="lazy" />
+							<a href="images/dist/review-1-full.jpg" class="item-review__img-wrap glightbox" data-gallery="reviews">
+								<img src="images/dist/review-1.jpg" alt="alt" class="item-review__img img-responsive" loading="lazy" />
 								<span class="item-review__zoom">
 									<svg role="img" class="item-review__zoom-icon">
 										<use href="images/icons/sprite.svg#search" />
@@ -309,8 +310,8 @@
 					</div>
 					<div class="slider-reviews__slide slider__slide">
 						<div class="item-review">
-							<a href="images/dist/review-1-lg.jpg" class="item-review__img-wrap glightbox" data-gallery="reviews">
-								<img src="images/dist/review-1-lg.jpg" alt="alt" class="item-review__img img-responsive" loading="lazy" />
+							<a href="images/dist/review-1-full.jpg" class="item-review__img-wrap glightbox" data-gallery="reviews">
+								<img src="images/dist/review-1.jpg" alt="alt" class="item-review__img img-responsive" loading="lazy" />
 								<span class="item-review__zoom">
 									<svg role="img" class="item-review__zoom-icon">
 										<use href="images/icons/sprite.svg#search" />
@@ -736,6 +737,7 @@
 	</div>
 </div>
 
+
 <script src="libs/jquery.min.js"></script>
 <script src="libs/aos/aos.js"></script>
 <script src="libs/enquire.min.js"></script>
@@ -749,3 +751,4 @@
 
 </body>
 </html>
+
