@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!-- <base href="/"> -->
+
+	<title>Index</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="icon" href="images/favicon.png" />
+	<meta property="og:image" content="images/dist/preview.jpg" />
+
+	<link rel="stylesheet" href="libs/simplebar/simplebar.css" />
+	<link rel="stylesheet" href="css/app.min.css" />
+</head>
+
+<body>
+
+<!-- <div class="app is-loading"></div> -->
+<div class="app">
+	<div class="game" style="background: url(images/dist/game.jpg) center / cover no-repeat"></div>
+
+	<div class="sidebar">
+		<div class="sidebar__hamburger-wrap status-wrap">
+			<button class="sidebar__hamburger hamburger hamburger--emphatic" type="button" data-panel-target="panel-1">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<span class="status status--new status--pulse"></span>
+		</div>
+		<div class="sidebar__lang lang">
+			<button class="lang__btn" type="button">English</button>
+			<ul class="lang__dropdown list-unstyled js-scrollbar">
+				<li><button type="button" class="lang__option is-active" data-micromodal-trigger="modal-reload">En - English</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+				<li><button type="button" class="lang__option" data-micromodal-trigger="modal-reload">Ru - Русский</button></li>
+			</ul>
+		</div>
+		<div class="sidebar__actions">
+			<button class="sidebar__action sidebar__action--mute btn btn--accent btn--icon" type="button">
+				<svg role="img" class="btn__icon btn__icon--music">
+					<use href="images/icons/sprite.svg#music" />
+				</svg>
+				<svg role="img" class="btn__icon btn__icon--music-muted">
+					<use href="images/icons/sprite.svg#music-muted" />
+				</svg>
+			</button>
+			<button class="sidebar__action sidebar__action--chat btn btn--accent btn--icon status-wrap" type="button">
+				<svg role="img" class="btn__icon btn__icon--message">
+					<use href="images/icons/sprite.svg#message" />
+				</svg>
+				<span class="status status--new status--pulse"></span>
+			</button>
+			<button class="sidebar__action sidebar__action--fullscreen btn btn--accent btn--icon" type="button">
+				<svg role="img" class="btn__icon btn__icon--expand">
+					<use href="images/icons/sprite.svg#expand" />
+				</svg>
+				<svg role="img" class="btn__icon btn__icon--collapse">
+					<use href="images/icons/sprite.svg#collapse" />
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="panels">
+		<div class="panel js-scrollbar" id="panel-1">
+			<div class="panel__section">
+				<div class="user-info">
+					<div class="user-info__avatar-wrap">
+						<img src="images/dist/avatar.png" alt="alt" class="user-info__avatar img-responsive" />
+					</div>
+					<div class="user-info__body">
+						<div class="user-info__name">Татьяна Кошевая</div>
+						<div class="user-info__text">
+							WebID:<br />
+							SNID: 254856325
+						</div>
+					</div>
+				</div>
+				<div class="user-actions">
+					<a href="#" class="user-actions__item user-actions__confirm-email btn btn--accent-dark status-wrap">
+						Подтверить email
+						<span class="status status--new status--pulse"></span>
+					</a>
+					<button class="user-actions__item user-actions__user-details btn btn--accent btn--icon" type="button" data-panel-target="panel-2">
+						<svg role="img" class="btn__icon btn__icon--user">
+							<use href="images/icons/sprite.svg#user" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="panel__section">
+				<div class="help">
+					<div class="panel__title">Поддержка</div>
+					<p class="panel__text">Получить помощь и ответы на вопросы по игре ты сможешь у нашей команды поддержки.</p>
+					<a href="#" class="help__btn btn btn--light" data-micromodal-trigger="modal-faq">Поддержка</a>
+				</div>
+			</div>
+			<div class="panel__section">
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Условия</a></li>
+						<li><a href="#">Конфиденциальность</a></li>
+						<li><a href="#" data-micromodal-trigger="modal-cookies">Customize cookies</a></li>
+						<li><a href="#">Политика по обработке и защите персональных данных</a></li>
+						<li><a href="#">Правила сообщества</a></li>
+						<li><a href="#">Родителям</a></li>
+						<li><a href="#">Фанатское соглашение</a></li>
+						<li><a href="#">Шансы на выпадение</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="panel__section">
+				<div class="logouts">
+					<button type="button" class="logouts__btn btn btn--light">Выйти</button>
+					<button type="button" class="logouts__btn btn btn--light" disabled>Выйти из аккаунта на всех устройствах</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel js-scrollbar" id="panel-2">
+			<button class="panel__back back" type="button" data-panel-target="panel-1">
+				<svg role="img" class="back__icon">
+					<use href="images/icons/sprite.svg#arrow-left" />
+				</svg>
+			</button>
+			<div class="panel__section">
+				<div class="user-info">
+					<div class="user-info__avatar-wrap">
+						<img src="images/dist/avatar.png" alt="alt" class="user-info__avatar img-responsive" />
+					</div>
+					<div class="user-info__body">
+						<div class="user-info__name">Татьяна Кошевая</div>
+						<div class="user-info__text">
+							WebID:<br />
+							SNID: 254856325
+						</div>
+					</div>
+				</div>
+				<div class="user-actions">
+					<a href="#" class="user-actions__item user-actions__logout btn btn--light">Выйти из аккаунта на всех устройствах</a>
+				</div>
+			</div>
+			<div class="panel__section">
+				<div class="panel__title">Социальные сети</div>
+				<p class="panel__text">Привяжи профили социальных сетей, чтобы быстро входить в игру на любом устройстве</p>
+				<div class="socials">
+					<div class="socials__item">
+						<a href="#" class="socials__badge">
+							<img src="images/icons/google.svg" alt="alt" class="socials__badge-icon img-responsive" />
+							<div class="socials__badge-text">Google</div>
+						</a>
+						<button class="socials__btn btn btn--light btn--light-muted" type="button">Отвязать</button>
+					</div>
+					<div class="socials__item">
+						<a href="#" class="socials__badge">
+							<img src="images/icons/facebook.svg" alt="alt" class="socials__badge-icon img-responsive" />
+							<div class="socials__badge-text">Facebook</div>
+						</a>
+						<button class="socials__btn btn btn--light" type="button">Привязать</button>
+					</div>
+				</div>
+			</div>
+			<div class="panel__section">
+				<div class="panel__title">Изменение пароля</div>
+				<form class="form-password js-validate-form">
+					<div class="form-password__group form-group">
+						<input type="password" class="form-control form-control--password js-required" placeholder="Старый пароль" />
+						<button class="toggle-password" type="button">
+							<svg role="img" class="toggle-password__icon toggle-password__icon--hide">
+								<use href="images/icons/sprite.svg#eye-closed" />
+							</svg>
+							<svg role="img" class="toggle-password__icon toggle-password__icon--show">
+								<use href="images/icons/sprite.svg#eye-opened" />
+							</svg>
+						</button>
+					</div>
+					<div class="form-password__group form-group">
+						<input type="password" class="form-control form-control--password js-required" placeholder="Новый пароль" />
+						<button class="toggle-password" type="button">
+							<svg role="img" class="toggle-password__icon toggle-password__icon--hide">
+								<use href="images/icons/sprite.svg#eye-closed" />
+							</svg>
+							<svg role="img" class="toggle-password__icon toggle-password__icon--show">
+								<use href="images/icons/sprite.svg#eye-opened" />
+							</svg>
+						</button>
+					</div>
+					<div class="form-password__group form-group">
+						<input type="password" class="form-control form-control--password js-required" placeholder="Повторить новый пароль" />
+						<button class="toggle-password" type="button">
+							<svg role="img" class="toggle-password__icon toggle-password__icon--hide">
+								<use href="images/icons/sprite.svg#eye-closed" />
+							</svg>
+							<svg role="img" class="toggle-password__icon toggle-password__icon--show">
+								<use href="images/icons/sprite.svg#eye-opened" />
+							</svg>
+						</button>
+					</div>
+					<button class="form-password__btn btn btn--light" disabled>Сменить пароль</button>
+				</form>
+			</div>
+			<div class="panel__section">
+				<div class="panel__title">Установка валюты</div>
+				<select class="select">
+					<option value="1">Доллар США</option>
+					<option value="1">Доллар США</option>
+					<option value="1">Доллар США</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="notification" id="notify-cookies">
+		<div class="notification__title">Мы ценим вашу приватность!</div>
+		<div class="notification__body">
+			<div class="notification__content">
+				<div class="notification__text-wrap">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+						occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="notification__checkboxes">
+					<div class="notification__checkbox-wrap">
+						<label class="notification__checkbox checkbox">
+							<input type="checkbox" class="checkbox__input hidden" />
+							<span class="checkbox__box"></span>
+							<span class="checkbox__text">Function</span>
+						</label>
+					</div>
+					<div class="notification__checkbox-wrap">
+						<label class="notification__checkbox checkbox">
+							<input type="checkbox" class="checkbox__input hidden" />
+							<span class="checkbox__box"></span>
+							<span class="checkbox__text">Function</span>
+						</label>
+					</div>
+					<div class="notification__checkbox-wrap">
+						<label class="notification__checkbox checkbox">
+							<input type="checkbox" class="checkbox__input hidden" />
+							<span class="checkbox__box"></span>
+							<span class="checkbox__text">Function</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="notification__actions">
+				<div class="notification__btns">
+					<button class="notification__btn notification__decline btn btn--accent" type="button">Отклонить все</button>
+					<button class="notification__btn notification__accept btn btn--accent" type="button">Принять все</button>
+				</div>
+				<ul class="notification__links">
+					<li><a href="#">Настроить выбор</a></li>
+					<li><a href="#">Cookes</a></li>
+					<li><a href="#">Подробнее</a></li>
+					<li><a href="#">Текст рыба</a></li>
+					<li><a href="#">Еще пример рыба текст</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--faq" id="modal-faq" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-faq-title">
+			<div class="modal__inner">
+				<div class="modal__nav">
+					<button class="modal__nav-item modal__prev" type="button" disabled>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#arrow-left" />
+						</svg>
+					</button>
+					<button class="modal__nav-item modal__next" type="button" disabled>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#arrow-right" />
+						</svg>
+					</button>
+					<button class="modal__nav-item modal__home" type="button" disabled>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#home" />
+						</svg>
+					</button>
+				</div>
+				<button class="modal__close" type="button" aria-label="Закрыть окно" data-micromodal-close>
+					<svg role="img" class="modal__close-icon">
+						<use href="images/icons/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="modal__content">
+					<h2 class="modal__title" id="modal-faq-title">Частые вопросы</h2>
+					<nav class="menu-info">
+						<ul class="list-unstyled">
+							<li><a href="#" data-micromodal-trigger="modal-popular">Популярное</a></li>
+							<li><a href="#">Платежи</a></li>
+							<li><a href="#">Технические трудности и настройки</a></li>
+							<li><a href="#">Управление аккаунтом</a></li>
+							<li><a href="#">Вопросы по игре</a></li>
+							<li><a href="#">Официальные сообщества</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Сообщить о нарушении</a></li>
+							<li><a href="#">Информация для родителей</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--popular" id="modal-popular" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-popular-title">
+			<div class="modal__inner js-scrollbar">
+				<div class="modal__nav">
+					<button class="modal__nav-item modal__prev" type="button" data-micromodal-close>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#arrow-left" />
+						</svg>
+					</button>
+					<button class="modal__nav-item modal__next" type="button" disabled>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#arrow-right" />
+						</svg>
+					</button>
+					<button class="modal__nav-item modal__home" type="button">
+						<svg role="img">
+							<use href="images/icons/sprite.svg#home" />
+						</svg>
+					</button>
+				</div>
+				<button class="modal__close" type="button" aria-label="Закрыть окно" data-micromodal-close>
+					<svg role="img" class="modal__close-icon">
+						<use href="images/icons/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="modal__content">
+					<h2 class="modal__subtitle">Частые вопросы</h2>
+					<h2 class="modal__title" id="modal-popular-title">Популярное</h2>
+					<div class="popular">
+						<nav class="popular__menu-info menu-info js-scrollbar">
+							<ul class="list-unstyled">
+								<li><a href="#">Аккаунт утерян</a></li>
+								<li><a href="#">Игра вылетает, зависает или не запускается</a></li>
+								<li><a href="#">Не могу совершить платеж</a></li>
+								<li><a href="#">Купленные товары не пришли</a></li>
+								<li><a href="#">Не пришла награда на Арене / Гранд Арене</a></li>
+								<li><a href="#">Не пришла награда на Арене / Гранд Арене</a></li>
+								<li><a href="#">Не пришла награда на Арене / Гранд Арене</a></li>
+								<li><a href="#">Не пришла награда на Арене / Гранд Арене</a></li>
+								<li><a href="#">Не пришла награда на Арене / Гранд Арене</a></li>
+							</ul>
+						</nav>
+						<div class="popular__btn-wrap">
+							<button class="popular__btn btn btn--light" type="button" data-micromodal-trigger="modal-callback">Связаться с нами</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--callback" id="modal-callback" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-callback-title">
+			<div class="modal__inner js-scrollbar">
+				<div class="modal__nav">
+					<button class="modal__nav-item modal__prev" type="button" data-micromodal-close>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#arrow-left" />
+						</svg>
+					</button>
+					<button class="modal__nav-item modal__next" type="button" disabled>
+						<svg role="img">
+							<use href="images/icons/sprite.svg#arrow-right" />
+						</svg>
+					</button>
+					<button class="modal__nav-item modal__home" type="button">
+						<svg role="img">
+							<use href="images/icons/sprite.svg#home" />
+						</svg>
+					</button>
+				</div>
+				<button class="modal__close" type="button" aria-label="Закрыть окно" data-micromodal-close>
+					<svg role="img" class="modal__close-icon">
+						<use href="images/icons/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="modal__content">
+					<h2 class="modal__title" id="modal-callback-title">Связаться с нами</h2>
+					<form class="form-modal js-validate-form">
+						<div class="form-modal__group form-group">
+							<input type="email" class="form-modal__control form-control js-email" placeholder="E-mail" name="email" />
+						</div>
+						<div class="form-modal__group form-group">
+							<textarea class="form-modal__control form-control js-required" placeholder="Ваше сообщение" name="message"></textarea>
+						</div>
+						<div class="form-modal__btn-wrap">
+							<button class="form-modal__btn btn btn--light">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--cookies" id="modal-cookies" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-cookies-title">
+			<div class="modal__inner js-scrollbar">
+				<button class="modal__close" type="button" aria-label="Закрыть окно" data-micromodal-close>
+					<svg role="img" class="modal__close-icon">
+						<use href="images/icons/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="modal__content">
+					<h2 class="modal__title" id="modal-cookies-title">Customize cookies</h2>
+					<div class="cookies">
+						<div class="cookies__accordion accordion">
+							<div class="accordion__btn">
+								<img src="images/icons/chevron-down.svg" alt="alt" class="accordion__icon img-responsive" />
+								<div class="accordion__title">Operational cookies</div>
+								<label class="accordion__switch switch">
+									<input type="checkbox" class="switch__input hidden" />
+									<span class="switch__slider"></span>
+								</label>
+							</div>
+							<div class="accordion__body">
+								<div class="accordion__content">
+									<p>Operational cookies can’t be deactivated to the extent we use them to provide you our services. Please see below why we are using these cookies:</p>
+									<ul>
+										<li>To display features which might be of interest to you.</li>
+										<li>To recognize you when you sign in to use our Game</li>
+										<li>To display features which might be of interest to you.</li>
+									</ul>
+									<table class="table">
+										<tr>
+											<th>Cookie</th>
+											<th>What’s it for</th>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cookies__accordion accordion">
+							<div class="accordion__btn">
+								<img src="images/icons/chevron-down.svg" alt="alt" class="accordion__icon img-responsive" />
+								<div class="accordion__title">Operational cookies</div>
+								<label class="accordion__switch switch">
+									<input type="checkbox" class="switch__input hidden" />
+									<span class="switch__slider"></span>
+								</label>
+							</div>
+							<div class="accordion__body">
+								<div class="accordion__content">
+									<p>Operational cookies can’t be deactivated to the extent we use them to provide you our services. Please see below why we are using these cookies:</p>
+									<ul>
+										<li>To display features which might be of interest to you.</li>
+										<li>To recognize you when you sign in to use our Game</li>
+										<li>To display features which might be of interest to you.</li>
+									</ul>
+									<table class="table">
+										<tr>
+											<th>Cookie</th>
+											<th>What’s it for</th>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+										<tr>
+											<td>Cookie</td>
+											<td>What’s it for</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cookies__btns">
+							<button class="cookies__btn cookies__save btn btn--light" type="button" data-micromodal-close>Save my preferences</button>
+							<button class="cookies__btn cookies__accept btn btn--light" type="button" data-micromodal-close>Accept all cookies</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--reload" id="modal-reload" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-reload-title">
+			<div class="modal__inner js-scrollbar">
+				<button class="modal__close" type="button" aria-label="Закрыть окно" data-micromodal-close>
+					<svg role="img" class="modal__close-icon">
+						<use href="images/icons/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="modal__content">
+					<h2 class="modal__title" id="modal-reload-title">Перезагрузить страницу?</h2>
+					<div class="reload">
+						<div class="reload__text-wrap">
+							<p>Чтобы изменения вступили в силу, необходимо перезагрузить страницу с игрой.</p>
+						</div>
+						<div class="reload__btns">
+							<button class="reload__btn btn btn--light" type="button">Перезагрузить и изменить язык</button>
+							<button class="reload__btn btn btn--light" type="button" data-micromodal-close>keep language</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="libs/svg4everybody.min.js"></script>
+<script src="libs/simplebar/simplebar.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
+<script src="libs/micromodal.min.js"></script>
+<script src="libs/just-validate.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
