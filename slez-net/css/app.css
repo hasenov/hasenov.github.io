@@ -3320,6 +3320,7 @@ input:not(.input-donation__input):not(.checkbox__input):not(.payment-box__input)
 
 .invalid {
   font-size: 12px;
+  color: #e70239 !important;
   margin-top: 4px;
 }
 
@@ -3368,17 +3369,22 @@ input:not(.input-donation__input):not(.checkbox__input):not(.payment-box__input)
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
-  margin: 16px -6px;
+  margin: 16px 0;
 }
 .form-donation__payment-box {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 120px;
-  margin: 0 6px;
+}
+.form-donation__payment-box:not(:last-child) {
+  margin-right: 12px;
 }
 .form-donation__checkboxes {
   margin-top: 16px;
   margin-bottom: 24px;
+}
+.form-donation__checkboxes .invalid {
+  display: none;
 }
 .form-donation__checkbox:not(:last-child) {
   margin-bottom: 8px;
@@ -3526,6 +3532,9 @@ input:not(.input-donation__input):not(.checkbox__input):not(.payment-box__input)
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+.checkbox__input.is-invalid ~ .checkbox__box {
+  border-color: #e70239;
 }
 .checkbox__box {
   -ms-flex-negative: 0;
