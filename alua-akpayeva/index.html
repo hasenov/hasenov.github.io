@@ -24,12 +24,7 @@
 		<button class="header__hamburger hamburger" type="button">
 			<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive">
 		</button>
-		<a href="#" class="header__btn btn">
-			<svg role="img" class="btn__bg">
-				<use href="images/icons/sprite.svg#btn" />
-			</svg>
-			<span>Обсудить проект</span>
-		</a>
+		<a href="#" class="header__btn btn"><span>Обсудить проект</span></a>
 	</div>
 </header>
 
@@ -37,12 +32,14 @@
 	<div class="showcase">
 		<div class="showcase__container container">
 			<div class="showcase__inner">
-				<h1 class="showcase__title h1">
-					у меня есть навыки
-					<span>чтобы <span class="title-bg title-bg--1">сделать бизнес</span></span>
-					<span>более <span class="title-bg title-bg--2">успешным</span></span>
+				<div class="showcase__title-wrap">
+					<h1 class="showcase__title h1">
+						у меня есть навыки
+						<span>чтобы сделать бизнес</span>
+						<span>более успешным</span>
+					</h1>
 					<img src="images/dist/photo.png" alt="alt" class="showcase__photo img-responsive" />
-				</h1>
+				</div>
 				<div class="showcase__text-wrap">
 					<p>
 						Разрабатываю сайты, которые становятся<br />
@@ -82,6 +79,24 @@
 				<li>#туризм</li>
 				<li>#фотографы</li>
 			</ul>
+			<ul class="tags-block__list tags-block__list--mobile list-tags list-unstyled">
+				<li>#корпоративный сайт</li>
+				<li>#имиджевый сайт</li>
+				<li>#сайт для бизнеса</li>
+				<li>#сайт для компании</li>
+				<li>#многостраничный сайт</li>
+				<li>#сайт-визитка</li>
+				<li>#сайт-портфолио</li>
+				<li>#интернет-магазин</li>
+				<li>#персональный сайт</li>
+				<li>#продажа товаров</li>
+				<li>#продажа услуг</li>
+				<li>#производство</li>
+				<li>#стартапы</li>
+				<li>#события</li>
+				<li>#рестораны</li>
+				<li>#туризм</li>
+			</ul>
 		</div>
 	</div>
 	<div class="idea">
@@ -89,12 +104,10 @@
 			<div class="idea__inner">
 				<div class="idea__header">
 					<div class="idea__section-tag section-tag">
-						#смыслы<br />
-						#идея
+						<span>#смыслы</span>
+						<span>#идея</span>
 					</div>
-					<h2 class="idea__title h3">
-						Повысить имидж компании, <span class="title-bg"><span>сформировать образ бренда</span></span>
-					</h2>
+					<h2 class="idea__title h3">Повысить имидж компании, сформировать образ бренда</h2>
 				</div>
 				<div class="idea__body">
 					<div class="idea__quote">
@@ -107,8 +120,8 @@
 				</div>
 			</div>
 		</div>
-		<img src="images/dist/hand-2.png" alt="alt" class="idea__hand-2 img-responsive" />
 		<img src="images/dist/hand.png" alt="alt" class="idea__hand-1 img-responsive" />
+		<img src="images/dist/hand-2.png" alt="alt" class="idea__hand-2 img-responsive" />
 	</div>
 </section>
 
@@ -119,8 +132,8 @@
 				<div class="philosophy__header">
 					<h2 class="philosophy__title">Фокусируюсь на задачах бизнеса, а не на обертке</h2>
 					<div class="philosophy__section-tag section-tag">
-						#мояфилософия<br />
-						#ценности
+						<span>#мояфилософия</span>
+						<span>#ценности</span>
 					</div>
 				</div>
 				<div class="philosophy__body">
@@ -147,7 +160,7 @@
 			<div class="about__inner">
 				<div class="about__header">
 					<h2 class="about__title">Давайте знакомиться?</h2>
-					<div class="about__section-tag section-tag">#обомне</div>
+					<div class="about__section-tag section-tag"><span>#обомне</span></div>
 				</div>
 				<div class="about__brief">
 					<div class="about__description">Привет! Меня зовут Алуа. В моих сайтах, как в маминой еде, секретный ингредиент - любовь</div>
@@ -187,9 +200,9 @@
 			<div class="projects__inner">
 				<div class="projects__header">
 					<div class="projects__section-tag section-tag">
-						#портфолио<br />
-						#проекты<br />
-						#кейсы
+						<span>#портфолио</span>
+						<span>#проекты</span>
+						<span>#кейсы</span>
 					</div>
 					<h2 class="projects__title">Мои реализованные проекты</h2>
 				</div>
@@ -230,8 +243,8 @@
 			<div class="reviews__inner">
 				<div class="reviews__header">
 					<div class="reviews__section-tag section-tag">
-						#отзывы<br />
-						#обратнаясвязь
+						<span>#отзывы</span>
+						<span>#обратнаясвязь</span>
 					</div>
 					<h2 class="reviews__title">Посмотрите отзывы моих клиентов</h2>
 					<img src="images/dist/picture.png" alt="alt" class="reviews__img img-responsive" />
@@ -289,13 +302,15 @@
 		<div class="benefits__container container">
 			<div class="benefits__inner">
 				<div class="benefits__header">
-					<div class="benefits__section-tag section-tag">#преимущества</div>
+					<div class="benefits__section-tag section-tag"><span>#преимущества</span></div>
 					<h2 class="benefits__title">
 						Со<br />
 						мной<br />
 						легко
 					</h2>
-					<p class="benefits__quote">Работа над проектом должна проходить комфортно для всех, поэтому я придерживаюсь ряда принципов</p>
+					<div class="benefits__quote-wrap">
+						<p class="benefits__quote">Работа над проектом должна проходить комфортно для всех, поэтому я придерживаюсь ряда принципов</p>
+					</div>
 				</div>
 				<div class="benefits__body">
 					<div class="benefits__img-wrap">
@@ -305,7 +320,7 @@
 						</svg>
 					</div>
 					<div class="benefits__items row">
-						<div class="benefits__col col-4">
+						<div class="benefits__col col-lg-4 col-sm-6">
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__title">Договор</div>
 								<div class="item-benefits__text-wrap">
@@ -313,7 +328,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="benefits__col col-4">
+						<div class="benefits__col col-lg-4 col-sm-6">
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__title">Ответственность</div>
 								<div class="item-benefits__text-wrap">
@@ -321,7 +336,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="benefits__col col-4">
+						<div class="benefits__col col-lg-4 col-sm-6">
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__title">Прозрачные процессы</div>
 								<div class="item-benefits__text-wrap">
@@ -329,7 +344,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="benefits__col col-4">
+						<div class="benefits__col col-lg-4 col-sm-6">
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__title">Погружение</div>
 								<div class="item-benefits__text-wrap">
@@ -337,7 +352,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="benefits__col col-4">
+						<div class="benefits__col col-lg-4 col-sm-6">
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__title">Навыки</div>
 								<div class="item-benefits__text-wrap">
@@ -345,7 +360,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="benefits__col col-4">
+						<div class="benefits__col col-lg-4 col-sm-6">
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__title">Разный бюджет</div>
 								<div class="item-benefits__text-wrap">
@@ -366,8 +381,8 @@
 			<div class="process__inner">
 				<div class="process__header">
 					<div class="process__section-tag section-tag">
-						#этапы<br />
-						#процесс
+						<span>#этапы</span>
+						<span>#процесс</span>
 					</div>
 					<h2 class="process__title">
 						Процесс<br />
@@ -378,46 +393,65 @@
 					</div>
 				</div>
 				<div class="process__road road">
-					<div class="road__card card-road">
-						<div class="card-road__title">Брифинг</div>
-						<div class="card-road__text-wrap">
-							<p>Я задам вам несколько вопросов о проекте, обсудим структуру, функционал и референсы. После чего сформирую и отправлю вам коммерческое предложение</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Брифинг</div>
+							<div class="card-road__text-wrap">
+								<p>Я задам вам несколько вопросов о проекте, обсудим структуру, функционал и референсы. После чего сформирую и отправлю вам коммерческое предложение</p>
+							</div>
 						</div>
 					</div>
-					<div class="road__card card-road">
-						<div class="card-road__title">Аналитика</div>
-						<div class="card-road__text-wrap">
-							<p>Проведу анализ прямых конкурентов, выявлю плюсы и минусы, чтобы выделить сайт на их фоне. Изучаю вашу нишу. Благодаря этому сайт будет выполнять поставленные цели</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Аналитика</div>
+							<div class="card-road__text-wrap">
+								<p>
+									Проведу анализ прямых конкурентов, выявлю плюсы и минусы, чтобы выделить сайт на их фоне. Изучаю вашу нишу. Благодаря этому сайт будет выполнять поставленные цели
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="road__card card-road">
-						<div class="card-road__title">Мудборд</div>
-						<div class="card-road__text-wrap">
-							<p>Составлю мудборд, чтобы четко определить настроение будущего сайта — какие визуальные приемы, референсы, композицию, палитру и шрифты будем использовать</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Мудборд</div>
+							<div class="card-road__text-wrap">
+								<p>Составлю мудборд, чтобы четко определить настроение будущего сайта — какие визуальные приемы, референсы, композицию, палитру и шрифты будем использовать</p>
+							</div>
 						</div>
 					</div>
-					<div class="road__card card-road">
-						<div class="card-road__title">Прототипирование</div>
-						<div class="card-road__text-wrap">
-							<p>На основе полученных данных приступаю к прототипированию — содержанию блоков без оформления. Фокус на логике и текстах, чтобы закрыть вопросы вашей целевой аудитории</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Прототипирование</div>
+							<div class="card-road__text-wrap">
+								<p>
+									На основе полученных данных приступаю к прототипированию — содержанию блоков без оформления. Фокус на логике и текстах, чтобы закрыть вопросы вашей целевой
+									аудитории
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="road__card card-road">
-						<div class="card-road__title">Дизайн</div>
-						<div class="card-road__text-wrap">
-							<p>Разработаю до 3-х вариантов дизайна на примере первых 2-х блоков главной страницы для понимания направления. Затем перехожу к отрисовке всего сайта</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Дизайн</div>
+							<div class="card-road__text-wrap">
+								<p>Разработаю до 3-х вариантов дизайна на примере первых 2-х блоков главной страницы для понимания направления. Затем перехожу к отрисовке всего сайта</p>
+							</div>
 						</div>
 					</div>
-					<div class="road__card card-road">
-						<div class="card-road__title">Верстка</div>
-						<div class="card-road__text-wrap">
-							<p>Верстаю утвержденный дизайн под 5 основных расширений экранов, настраиваю анимацию и базовую SEO-оптимизацию, подключаю домен и функционал</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Верстка</div>
+							<div class="card-road__text-wrap">
+								<p>Верстаю утвержденный дизайн под 5 основных расширений экранов, настраиваю анимацию и базовую SEO-оптимизацию, подключаю домен и функционал</p>
+							</div>
 						</div>
 					</div>
-					<div class="road__card card-road">
-						<div class="card-road__title">Сопровождение</div>
-						<div class="card-road__text-wrap">
-							<p>Записываю видео-инструкцию по администрированию сайта, чтобы вы могли самостоятельно вносить изменения. И еще некоторое время помогаю с вопросами.</p>
+					<div class="road__card-wrap">
+						<div class="road__card card-road">
+							<div class="card-road__title">Сопровождение</div>
+							<div class="card-road__text-wrap">
+								<p>Записываю видео-инструкцию по администрированию сайта, чтобы вы могли самостоятельно вносить изменения. И еще некоторое время помогаю с вопросами.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -432,8 +466,8 @@
 			<div class="pricing__inner">
 				<div class="pricing__header">
 					<div class="pricing__section-tag section-tag">
-						#услуги<br />
-						#прайс
+						<span>#услуги</span>
+						<span>#прайс</span>
 					</div>
 					<h2 class="pricing__title">Стоимость и сроки</h2>
 				</div>
@@ -571,9 +605,6 @@
 					</p>
 				</div>
 				<a href="#" class="top-footer__btn btn">
-					<svg role="img" class="btn__bg">
-						<use href="images/icons/sprite.svg#btn" />
-					</svg>
 					<span>Оставить заявку</span>
 				</a>
 				<ul class="top-footer__links list-unstyled">
@@ -586,7 +617,10 @@
 						<use href="images/icons/sprite.svg#up" />
 					</svg>
 				</button>
-				<img src="images/dist/head-dress.png" alt="alt" class="top-footer__img img-responsive">
+				<picture>
+					<source srcset="images/dist/hand.png" media="(max-width: 767.98px)" />
+					<img src="images/dist/head-dress.png" alt="alt" class="top-footer__img img-responsive" />
+				</picture>
 			</div>
 		</div>
 	</div>
@@ -602,6 +636,8 @@
 
 <script src="libs/splide/splide.min.js"></script>
 <script src="libs/svg4everybody.min.js"></script>
+<script src="libs/typed/typed.umd.js"></script>
+<script src="libs/enquire.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
