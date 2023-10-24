@@ -13,6 +13,7 @@
 	<meta property="og:image" content="images/dist/preview.jpg">
 	
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
+	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -24,7 +25,51 @@
 		<button class="header__hamburger hamburger" type="button">
 			<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive">
 		</button>
-		<a href="#" class="header__btn btn"><span>Обсудить проект</span></a>
+		<ul class="header__lang list-unstyled">
+			<li><a href="#">RUS</a></li>
+			<li><a href="#">ENG</a></li>
+		</ul>
+		<a href="#" class="header__btn btn" data-hystmodal="#modal-callback"><span>Обсудить проект</span></a>
+	</div>
+	<div class="header__extra">
+		<div class="header__extra-container container">
+			<div class="header__extra-inner">
+				<div class="header__extra-header">
+					<button class="header__close" type="button">
+						<svg role="img" class="header__close-icon">
+							<use href="images/icons/sprite.svg#close" />
+						</svg>
+					</button>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__list list-unstyled">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Почему я?</a></li>
+						<li><a href="#">Обо мне</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Мои работы</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__phone">
+					<a href="#">+7 (707) 777-61-72</a>
+				</div>
+				<p class="header__info">г.Алматы, ул.Шаляпина, 114</p>
+				<div class="header__socials">
+					<a href="#" class="header__social header__social--wa">
+						<svg role="img" class="header__social-icon">
+							<use href="images/icons/sprite.svg#wa" />
+						</svg>
+					</a>
+					<a href="#" class="header__social header__social--tg">
+						<svg role="img" class="header__social-icon">
+							<use href="images/icons/sprite.svg#tg" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </header>
 
@@ -40,11 +85,18 @@
 					</h1>
 					<img src="images/dist/photo.png" alt="alt" class="showcase__photo img-responsive" />
 				</div>
-				<div class="showcase__text-wrap">
-					<p>
-						Разрабатываю сайты, которые становятся<br />
-						эффективным инструментом вашего бизнеса
-					</p>
+				<div class="showcase__content">
+					<button class="showcase__scroll-down scroll-down" type="button">
+						<svg role="img" class="scroll-down__icon">
+							<use href="images/icons/sprite.svg#up" />
+						</svg>
+					</button>
+					<div class="showcase__text-wrap">
+						<p>
+							Разрабатываю сайты, которые становятся<br />
+							эффективным инструментом вашего бизнеса
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,21 +107,21 @@
 	<div class="tags-block">
 		<div class="tags-block__container container">
 			<ul class="tags-block__list list-tags list-unstyled">
-				<li>#одностраничный сайт</li>
-				<li>#имиджевый сайт</li>
+				<li>#одностраничныйсайт</li>
+				<li>#имиджевыйсайт</li>
 				<li>#сайт-визитка</li>
-				<li>#персональный сайт</li>
-				<li>#корпоративный сайт</li>
-				<li>#сайт для бизнеса</li>
+				<li>#персональныйсайт</li>
+				<li>#корпоративныйсайт</li>
+				<li>#сайтдлябизнеса</li>
 				<li>#лендинг</li>
-				<li>#промо сайт</li>
+				<li>#промосайт</li>
 				<li>#сайт-портфолио</li>
-				<li>#многостраничный сайт</li>
-				<li>#информационный сайт</li>
+				<li>#многостраничныйсайт</li>
+				<li>#информационныйсайт</li>
 				<li>#интернет-магазин</li>
-				<li>#сайт для компании</li>
-				<li>#продажа товаров</li>
-				<li>#продажа услуг</li>
+				<li>#сайтдлякомпании</li>
+				<li>#продажатоваров</li>
+				<li>#продажауслуг</li>
 				<li>#производство</li>
 				<li>#рестораны</li>
 				<li>#фитнес</li>
@@ -80,17 +132,17 @@
 				<li>#фотографы</li>
 			</ul>
 			<ul class="tags-block__list tags-block__list--mobile list-tags list-unstyled">
-				<li>#корпоративный сайт</li>
-				<li>#имиджевый сайт</li>
-				<li>#сайт для бизнеса</li>
-				<li>#сайт для компании</li>
-				<li>#многостраничный сайт</li>
+				<li>#корпоративныйсайт</li>
+				<li>#имиджевыйсайт</li>
+				<li>#сайтдлябизнеса</li>
+				<li>#сайтдлякомпании</li>
+				<li>#многостраничныйсайт</li>
 				<li>#сайт-визитка</li>
 				<li>#сайт-портфолио</li>
 				<li>#интернет-магазин</li>
-				<li>#персональный сайт</li>
-				<li>#продажа товаров</li>
-				<li>#продажа услуг</li>
+				<li>#персональныйсайт</li>
+				<li>#продажатоваров</li>
+				<li>#продажауслуг</li>
 				<li>#производство</li>
 				<li>#стартапы</li>
 				<li>#события</li>
@@ -592,11 +644,67 @@
 	</div>
 </section>
 
+<div class="modal modal--dark modal--callback hystmodal" id="modal-callback" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button type="button" class="modal__close hystmodal__close" data-hystclose>
+				<svg role="img" class="modal__close-icon">
+					<use href="images/icons/sprite.svg#close" />
+				</svg>
+			</button>
+			<form class="modal__callback form-callback">
+				<div class="form-callback__title">Оставьте заявку на бесплатную консультацию</div>
+				<div class="form-callback__text-wrap">
+					<p>Оставьте Ваш контактный номер и я Вам перезвоню</p>
+				</div>
+				<div class="form-callback__controls">
+					<div class="form-callback__group">
+						<label class="form-callback__label label">Ваше имя</label>
+						<input type="text" class="form-callback__control control" />
+					</div>
+					<div class="form-callback__group">
+						<label class="form-callback__label label">Ваш телефон</label>
+						<input type="tel" class="form-callback__control control" placeholder="+7 (777) 999-99-99" />
+					</div>
+				</div>
+				<div class="form-callback__btn-wrap">
+					<button class="form-callback__btn btn" type="submit"><span>Оставить заявку</span></button>
+				</div>
+				<p class="form-callback__accept">
+					Отправляя свои данные, я принимаю условия<br />
+					<a href="#">политики конфиденциальности</a>
+				</p>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal--success hystmodal" id="modal-success" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button type="button" class="modal__close hystmodal__close" data-hystclose>
+				<svg role="img" class="modal__close-icon">
+					<use href="images/icons/sprite.svg#close" />
+				</svg>
+			</button>
+			<div class="feedback">
+				<div class="feedback__title">Спасибо!</div>
+				<div class="feedback__text-wrap">
+					<p>
+						Я свяжусь с Вами<br class="feedback__mobile-br" />
+						в ближайшее время!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <footer class="footer">
 	<div class="footer__top top-footer">
 		<div class="top-footer__container container">
 			<div class="top-footer__inner">
-				<h2 class="top-footer__title">Любой бизнес начинается с идеи, а сайт с брифа</h2>
+				<h2 class="top-footer__title">Любой бизнес начинается с идеи, а <span class="color-accent">сайт с брифа</span></h2>
 				<div class="top-footer__text-wrap">
 					<p>
 						Заполните форму, а лучше назначить встречу (офлайн или онлайн).
@@ -638,6 +746,7 @@
 <script src="libs/svg4everybody.min.js"></script>
 <script src="libs/typed/typed.umd.js"></script>
 <script src="libs/enquire.min.js"></script>
+<script src="libs/hystmodal/hystmodal.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
