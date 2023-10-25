@@ -14,6 +14,7 @@
 	
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -84,7 +85,7 @@
 						<span>чтобы сделать бизнес</span>
 						<span>более успешным</span>
 					</h1>
-					<img src="images/dist/photo.png" alt="alt" class="showcase__photo img-responsive" />
+					<img src="images/dist/photo-2x.png" srcset="images/dist/photo.png 1x, images/dist/photo-2x.png 2x" alt="alt" class="showcase__photo img-responsive" />
 				</div>
 				<div class="showcase__content">
 					<button class="showcase__scroll-down scroll-down" type="button">
@@ -164,7 +165,7 @@
 				</div>
 				<div class="idea__body">
 					<div class="idea__quote">
-						<img src="images/dist/flower.png" alt="alt" class="idea__quote-img img-responsive" />
+						<img src="images/dist/flower-2x.png" srcset="images/dist/flower.png 1x, images/dist/flower-2x.png 2x" alt="alt" class="idea__quote-img img-responsive" />
 						<p class="idea__quote-text">Готовлю проекты и продукты к запуску на рынок, в космос, в сердечко аудитории</p>
 					</div>
 					<div class="idea__text-wrap">
@@ -173,8 +174,8 @@
 				</div>
 			</div>
 		</div>
-		<img src="images/dist/hand.png" alt="alt" class="idea__hand-1 img-responsive" />
-		<img src="images/dist/hand-2.png" alt="alt" class="idea__hand-2 img-responsive" />
+		<img src="images/dist/hand-2x.png" srcset="images/dist/hand.png 1x, images/dist/hand-2x.png 2x" alt="alt" class="idea__hand-1 img-responsive" />
+		<img src="images/dist/hand-2-2x.png" srcset="images/dist/hand-2.png 1x, images/dist/hand-2-2x.png 2x" alt="alt" class="idea__hand-2 img-responsive" />
 	</div>
 </section>
 
@@ -199,7 +200,7 @@
 						</div>
 						<div class="philosophy__circle-quote-wrap">
 							<div class="philosophy__circle-quote">Стремлюсь к партнерским отношениям с клиентом, чтобы вместе создать впечатляющий и приносящий пользу проект</div>
-							<img src="images/dist/wise-man.png" alt="alt" class="philosophy__img img-responsive" />
+							<img src="images/dist/wise-man.png" srcset="images/dist/wise-man.png 1x, images/dist/wise-man-2x.png 2x" alt="alt" class="philosophy__img img-responsive" />
 						</div>
 					</div>
 					<div class="philosophy__quote">Четкий план и последовательность - это то, что мне по душе</div>
@@ -220,7 +221,11 @@
 				<div class="about__brief">
 					<div class="about__description">Привет! Меня зовут Алуа. В моих сайтах, как в маминой еде, секретный ингредиент - любовь</div>
 					<div class="about__img-wrap">
-						<img src="images/dist/photo-about.png" alt="alt" class="about__img img-responsive" />
+						<picture>
+							<source srcset="images/dist/photo-about-mob.png 1x, images/dist/photo-about-mob-2x.png 2x" media="(max-width: 1199.98px)" />
+							<source srcset="images/dist/photo-about.png 1x, images/dist/photo-about-2x.png 2x" />
+							<img src="images/dist/photo-about.png" alt="alt" class="about__img img-responsive" />
+						</picture>
 						<img src="images/dist/hello.svg" alt="alt" class="about__decor img-responsive" />
 					</div>
 				</div>
@@ -266,27 +271,42 @@
 						<div class="slider-projects__list slider__list splide__list">
 							<div class="slider-projects__slide slider__slide splide__slide">
 								<div class="item-project">
-									<img src="images/dist/baktrade.jpg" alt="alt" class="item-project__img img-responsive" />
+									<img src="images/dist/baktrade-2x.jpg" srcset="images/dist/baktrade.jpg 1x, images/dist/baktrade-2x.jpg 2x" alt="alt" class="item-project__img img-responsive" />
 								</div>
 							</div>
 							<div class="slider-projects__slide slider__slide splide__slide">
 								<div class="item-project">
-									<img src="images/dist/rasxodniki.jpg" alt="alt" class="item-project__img img-responsive" />
+									<img
+										src="images/dist/rasxodniki-2x.jpg"
+										srcset="images/dist/rasxodniki.jpg 1x, images/dist/rasxodniki-2x.jpg 2x"
+										alt="alt"
+										class="item-project__img img-responsive"
+									/>
 								</div>
 							</div>
 							<div class="slider-projects__slide slider__slide splide__slide">
 								<div class="item-project">
-									<img src="images/dist/sh-investment.jpg" alt="alt" class="item-project__img img-responsive" />
+									<img
+										src="images/dist/sh-investment-2x.jpg"
+										srcset="images/dist/sh-investment.jpg 1x, images/dist/sh-investment-2x.jpg 2x"
+										alt="alt"
+										class="item-project__img img-responsive"
+									/>
 								</div>
 							</div>
 							<div class="slider-projects__slide slider__slide splide__slide">
 								<div class="item-project">
-									<img src="images/dist/law-practice.jpg" alt="alt" class="item-project__img img-responsive" />
+									<img
+										src="images/dist/law-practice-2x.jpg"
+										srcset="images/dist/law-practice.jpg 1x, images/dist/law-practice-2x.jpg 2x"
+										alt="alt"
+										class="item-project__img img-responsive"
+									/>
 								</div>
 							</div>
 							<div class="slider-projects__slide slider__slide splide__slide">
 								<div class="item-project">
-									<img src="images/dist/araik.jpg" alt="alt" class="item-project__img img-responsive" />
+									<img src="images/dist/araik-2x.jpg" srcset="images/dist/araik.jpg 1x, images/dist/araik-2x.jpg 2x" alt="alt" class="item-project__img img-responsive" />
 								</div>
 							</div>
 						</div>
@@ -307,7 +327,7 @@
 						<span>#обратнаясвязь</span>
 					</div>
 					<h2 class="reviews__title">Посмотрите отзывы моих клиентов</h2>
-					<img src="images/dist/picture.png" alt="alt" class="reviews__img img-responsive" />
+					<img src="images/dist/picture-2x.png" srcset="images/dist/picture.png 1x, images/dist/picture-2x.png 2x" alt="alt" class="reviews__img img-responsive" />
 				</div>
 				<div class="reviews__body">
 					<div class="reviews__gif-wrap">
@@ -317,7 +337,7 @@
 						<div class="slider-reviews__track slider__track splide__track">
 							<div class="slider-reviews__list slider__list splide__list">
 								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="#" class="item-reviews">
+									<a href="images/dist/review-1.png" class="item-reviews glightbox" data-gallery="reviews">
 										<div class="item-reviews__img-wrap" style="background-image: url(images/dist/review-1-bg.svg)">
 											<img src="images/dist/review-1.png" alt="alt" class="item-reviews__img img-responsive" />
 										</div>
@@ -325,7 +345,7 @@
 									</a>
 								</div>
 								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="#" class="item-reviews">
+									<a href="images/dist/review-1.png" class="item-reviews glightbox" data-gallery="reviews">
 										<div class="item-reviews__img-wrap" style="background-image: url(images/dist/review-1-bg.svg)">
 											<img src="images/dist/review-1.png" alt="alt" class="item-reviews__img img-responsive" />
 										</div>
@@ -333,7 +353,7 @@
 									</a>
 								</div>
 								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="#" class="item-reviews">
+									<a href="images/dist/review-1.png" class="item-reviews glightbox" data-gallery="reviews">
 										<div class="item-reviews__img-wrap" style="background-image: url(images/dist/review-1-bg.svg)">
 											<img src="images/dist/review-1.png" alt="alt" class="item-reviews__img img-responsive" />
 										</div>
@@ -341,7 +361,7 @@
 									</a>
 								</div>
 								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="#" class="item-reviews">
+									<a href="images/dist/review-1.png" class="item-reviews glightbox" data-gallery="reviews">
 										<div class="item-reviews__img-wrap" style="background-image: url(images/dist/review-1-bg.svg)">
 											<img src="images/dist/review-1.png" alt="alt" class="item-reviews__img img-responsive" />
 										</div>
@@ -350,6 +370,14 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="reviews__mobile">
+						<a href="images/dist/review-1.png" class="reviews__link glightbox" data-gallery="reviews-mobile">
+							<img src="images/dist/reviews.png" alt="alt" class="reviews__link-img img-responsive" />
+						</a>
+						<a href="images/dist/review-1.png" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
+						<a href="images/dist/review-1.png" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
+						<a href="images/dist/review-1.png" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
 					</div>
 				</div>
 			</div>
@@ -374,7 +402,7 @@
 				</div>
 				<div class="benefits__body">
 					<div class="benefits__img-wrap">
-						<img src="images/dist/ok-gesture.png" alt="alt" class="benefits__img img-responsive" />
+						<img src="images/dist/ok-gesture-2x.png" srcset="images/dist/ok-gesture.png 1x, images/dist/ok-gesture-2x.png 2x" alt="alt" class="benefits__img img-responsive" />
 						<svg role="img" class="benefits__ok">
 							<use href="images/icons/sprite.svg#ok" />
 						</svg>
@@ -734,7 +762,8 @@
 					</svg>
 				</button>
 				<picture>
-					<source srcset="images/dist/hand.png" media="(max-width: 767.98px)" />
+					<source srcset="images/dist/hand.png 1x, images/dist/hand-2x.png 2x" media="(max-width: 767.98px)" />
+					<source srcset="images/dist/head-dress.png 1x, images/dist/head-dress-2x.png 2x" />
 					<img src="images/dist/head-dress.png" alt="alt" class="top-footer__img img-responsive" />
 				</picture>
 			</div>
@@ -755,6 +784,7 @@
 <script src="libs/typed/typed.umd.js"></script>
 <script src="libs/enquire.min.js"></script>
 <script src="libs/hystmodal/hystmodal.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
