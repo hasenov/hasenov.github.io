@@ -92,7 +92,7 @@
 					<div class="showcase__typed-wrap">
 						<span class="showcase__typed h1"></span>
 					</div>
-					<img src="images/dist/photo-2x.png" srcset="images/dist/photo.png 1x, images/dist/photo-2x.png 2x" alt="alt" class="showcase__photo img-responsive" loading="lazy" />
+					<img src="images/dist/photo-2x.png" srcset="images/dist/photo.png 1x, images/dist/photo-2x.png 2x" alt="alt" class="showcase__photo img-responsive" />
 				</div>
 				<div class="showcase__content">
 					<button class="showcase__scroll-down scroll-down" type="button">
@@ -175,7 +175,13 @@
 				</div>
 				<div class="idea__body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
 					<div class="idea__quote">
-						<img src="images/dist/flower-2x.png" srcset="images/dist/flower.png 1x, images/dist/flower-2x.png 2x" alt="alt" class="idea__quote-img img-responsive" loading="lazy" />
+						<img
+							src="images/dist/flower-sm.jpg"
+							data-src="images/dist/flower-2x.png"
+							data-srcset="images/dist/flower.png 1x, images/dist/flower-2x.png 2x"
+							alt="alt"
+							class="idea__quote-img img-responsive blur lazyload"
+						/>
 						<p class="idea__quote-text">I prepare projects for launch — be it in the market, in space or deep into the hearts of the audience</p>
 					</div>
 					<div class="idea__text-wrap">
@@ -184,18 +190,23 @@
 				</div>
 			</div>
 		</div>
-		<img
-			src="images/dist/hand-2x.png"
-			srcset="images/dist/hand.png 1x, images/dist/hand-2x.png 2x"
-			alt="alt"
-			class="idea__hand-1 img-responsive"
-			loading="lazy"
-			data-aos="fade-right"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-		/>
+		<div class="idea__hand-1-wrap" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+			<img
+				src="images/dist/hand-sm.png"
+				data-src="images/dist/hand-2x.png"
+				data-srcset="images/dist/hand.png 1x, images/dist/hand-2x.png 2x"
+				alt="alt"
+				class="idea__hand-1 img-responsive blur lazyload"
+			/>
+		</div>
 		<div class="idea__hand-2-wrap" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
-			<img src="images/dist/hand-2-2x.png" srcset="images/dist/hand-2.png 1x, images/dist/hand-2-2x.png 2x" alt="alt" class="idea__hand-2 img-responsive" loading="lazy" />
+			<img
+				src="images/dist/hand-2-sm.png"
+				data-src="images/dist/hand-2-2x.png"
+				data-srcset="images/dist/hand-2.png 1x, images/dist/hand-2-2x.png 2x"
+				alt="alt"
+				class="idea__hand-2 img-responsive blur lazyload"
+			/>
 		</div>
 	</div>
 </section>
@@ -227,15 +238,15 @@
 							<div class="philosophy__circle-quote" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
 								I aspire to cultivate a partnership with my clients to craft an impressive and beneficial project together
 							</div>
-							<img
-								src="images/dist/wise-man.png"
-								srcset="images/dist/wise-man.png 1x, images/dist/wise-man-2x.png 2x"
-								alt="alt"
-								class="philosophy__img img-responsive"
-								data-aos="fade-left"
-								data-aos-delay="50"
-								data-aos-duration="1000"
-							/>
+							<div class="philosophy__img-wrap" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+								<img
+									src="images/dist/wise-man-sm.png"
+									data-src="images/dist/wise-man.png"
+									data-srcset="images/dist/wise-man.png 1x, images/dist/wise-man-2x.png 2x"
+									alt="alt"
+									class="philosophy__img img-responsive blur lazyload"
+								/>
+							</div>
 						</div>
 					</div>
 					<div class="philosophy__quote" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">Clear action plan and structured follow-ups deeply resonate with me</div>
@@ -260,9 +271,13 @@
 					<div class="about__description">Hi! My name is Alua. In my websites, just like in a mother's cooking, the secret ingredient is love</div>
 					<div class="about__img-wrap">
 						<picture>
-							<source srcset="images/dist/photo-about-mob.png 1x, images/dist/photo-about-mob-2x.png 2x" media="(max-width: 1199.98px)" />
-							<source srcset="images/dist/photo-about.png 1x, images/dist/photo-about-2x.png 2x" />
-							<img src="images/dist/photo-about.png" alt="alt" class="about__img img-responsive" loading="lazy" />
+							<source
+								srcset="images/dist/photo-about-sm.png 1x, images/dist/photo-about-sm.png 2x"
+								data-srcset="images/dist/photo-about-mob.png 1x, images/dist/photo-about-mob-2x.png 2x"
+								media="(max-width: 1199.98px)"
+							/>
+							<source srcset="images/dist/photo-about-sm.png 1x, images/dist/photo-about-sm.png 2x" data-srcset="images/dist/photo-about.png 1x, images/dist/photo-about-2x.png 2x" />
+							<img src="images/dist/photo-about-sm.png" data-src="images/dist/photo-about.png" alt="alt" class="about__img img-responsive blur lazyload" />
 						</picture>
 						<img src="images/dist/hello.svg" alt="alt" class="about__decor img-responsive" loading="lazy" />
 					</div>
@@ -309,33 +324,33 @@
 							<div class="slider-projects__slide slider-projects__slide--baktrade slider__slide splide__slide">
 								<a href="https://bakrtade.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
 									<img
-										src="images/dist/baktrade-2x.jpg"
-										srcset="images/dist/baktrade.jpg 1x, images/dist/baktrade-2x.jpg 2x"
+										src="images/dist/baktrade-sm.jpg"
+										data-src="images/dist/baktrade-2x.jpg"
+										data-srcset="images/dist/baktrade.jpg 1x, images/dist/baktrade-2x.jpg 2x"
 										alt="alt"
-										class="item-project__img img-responsive"
-										loading="lazy"
+										class="item-project__img img-responsive blur lazyload"
 									/>
 								</a>
 							</div>
 							<div class="slider-projects__slide slider-projects__slide--rasxodniki slider__slide splide__slide">
 								<a href="https://rasxodniki.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
 									<img
-										src="images/dist/rasxodniki-2x.jpg"
-										srcset="images/dist/rasxodniki.jpg 1x, images/dist/rasxodniki-2x.jpg 2x"
+										src="images/dist/rasxodniki-sm.jpg"
+										data-src="images/dist/rasxodniki-2x.jpg"
+										data-srcset="images/dist/rasxodniki.jpg 1x, images/dist/rasxodniki-2x.jpg 2x"
 										alt="alt"
-										class="item-project__img img-responsive"
-										loading="lazy"
+										class="item-project__img img-responsive blur lazyload"
 									/>
 								</a>
 							</div>
 							<div class="slider-projects__slide slider-projects__slide--shinvestment slider__slide splide__slide">
 								<a href="https://shinvestment.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
 									<img
-										src="images/dist/sh-investment-2x.jpg"
-										srcset="images/dist/sh-investment.jpg 1x, images/dist/sh-investment-2x.jpg 2x"
+										src="images/dist/sh-investment-sm.jpg"
+										data-src="images/dist/sh-investment-2x.jpg"
+										data-srcset="images/dist/sh-investment.jpg 1x, images/dist/sh-investment-2x.jpg 2x"
 										alt="alt"
-										class="item-project__img img-responsive"
-										loading="lazy"
+										class="item-project__img img-responsive blur lazyload"
 									/>
 								</a>
 							</div>
@@ -350,22 +365,22 @@
 									data-aos-duration="1000"
 								>
 									<img
-										src="images/dist/law-practice-2x.jpg"
-										srcset="images/dist/law-practice.jpg 1x, images/dist/law-practice-2x.jpg 2x"
+										src="images/dist/law-practice-sm.jpg"
+										data-src="images/dist/law-practice-2x.jpg"
+										data-srcset="images/dist/law-practice.jpg 1x, images/dist/law-practice-2x.jpg 2x"
 										alt="alt"
-										class="item-project__img img-responsive"
-										loading="lazy"
+										class="item-project__img img-responsive blur lazyload"
 									/>
 								</a>
 							</div>
 							<div class="slider-projects__slide slider-projects__slide--floralhouse slider__slide splide__slide">
 								<a href="https://floralhouse.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
 									<img
-										src="images/dist/araik-2x.jpg"
-										srcset="images/dist/araik.jpg 1x, images/dist/araik-2x.jpg 2x"
+										src="images/dist/araik-sm.jpg"
+										data-src="images/dist/araik-2x.jpg"
+										data-srcset="images/dist/araik.jpg 1x, images/dist/araik-2x.jpg 2x"
 										alt="alt"
-										class="item-project__img img-responsive"
-										loading="lazy"
+										class="item-project__img img-responsive blur lazyload"
 									/>
 								</a>
 							</div>
@@ -390,20 +405,19 @@
 						customer<br />
 						feedback
 					</h2>
-					<img
-						src="images/dist/picture-2x.png"
-						srcset="images/dist/picture.png 1x, images/dist/picture-2x.png 2x"
-						alt="alt"
-						class="reviews__img img-responsive"
-						loading="lazy"
-						data-aos="fade-in"
-						data-aos-delay="50"
-						data-aos-duration="1000"
-					/>
+					<div class="reviews__img-wrap" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+						<img
+							src="images/dist/picture-sm.png"
+							data-src="images/dist/picture-2x.png"
+							data-srcset="images/dist/picture.png 1x, images/dist/picture-2x.png 2x"
+							alt="alt"
+							class="reviews__img img-responsive blur lazyload"
+						/>
+					</div>
 				</div>
 				<div class="reviews__body">
 					<div class="reviews__gif-wrap" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
-						<img src="images/dist/laptop.gif" alt="alt" class="reviews__gif img-responsive" loading="lazy" />
+						<img src="images/dist/laptop-sm.png" data-src="images/dist/laptop.gif" alt="alt" class="reviews__gif img-responsive blur lazyload" />
 					</div>
 					<div class="reviews__slider slider-reviews slider splide" data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000">
 						<div class="slider-reviews__track slider__track splide__track">
@@ -413,10 +427,11 @@
 										<div class="item-reviews__img-wrap">
 											<img src="images/dist/review-1-bg.svg" alt="alt" class="item-reviews__bg" />
 											<img
-												src="images/dist/review-sh-2x.jpg"
-												srcset="images/dist/review-sh.jpg 1x, images/dist/review-sh-2x.jpg 2x"
+												src="images/dist/review-sh-sm.jpg"
+												data-src="images/dist/review-sh-2x.jpg"
+												data-srcset="images/dist/review-sh.jpg 1x, images/dist/review-sh-2x.jpg 2x"
 												alt="alt"
-												class="item-reviews__img img-responsive"
+												class="item-reviews__img img-responsive blur lazyload"
 											/>
 										</div>
 										<div class="item-reviews__title">LLP SH Investment</div>
@@ -427,10 +442,11 @@
 										<div class="item-reviews__img-wrap">
 											<img src="images/dist/review-2-bg.svg" alt="alt" class="item-reviews__bg" />
 											<img
-												src="images/dist/review-law-2x.jpg"
-												srcset="images/dist/review-law.jpg 1x, images/dist/review-law-2x.jpg 2x"
+												src="images/dist/review-law-sm.jpg"
+												data-src="images/dist/review-law-2x.jpg"
+												data-srcset="images/dist/review-law.jpg 1x, images/dist/review-law-2x.jpg 2x"
 												alt="alt"
-												class="item-reviews__img img-responsive"
+												class="item-reviews__img img-responsive blur lazyload"
 											/>
 										</div>
 										<div class="item-reviews__title">LLP Law Practice</div>
@@ -440,16 +456,24 @@
 						</div>
 					</div>
 					<div class="reviews__mobile">
-						<a href="images/dist/review-sh-full.jpeg" class="reviews__link glightbox" data-gallery="reviews-mobile">
+						<a href="images/dist/review-sh-full.jpeg" class="reviews__mobile-item glightbox" data-gallery="mobile-reviews">
 							<img
-								src="images/dist/reviews-2x.png"
-								srcset="images/dist/reviews.png 1x, images/dist/reviews-2x.png 2x"
+								src="images/dist/review-sh-sm.jpg"
+								data-src="images/dist/review-sh-mobile-2x.jpg"
+								data-srcset="images/dist/review-sh-mobile.jpg 1x, images/dist/review-sh-mobile-2x.jpg 2x"
 								alt="alt"
-								class="reviews__link-img img-responsive"
-								loading="lazy"
+								class="reviews__mobile-img img-responsive blur lazyload"
 							/>
 						</a>
-						<a href="images/dist/review-law-full.jpeg" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
+						<a href="images/dist/review-law-full.jpeg" class="reviews__mobile-item glightbox" data-gallery="mobile-reviews">
+							<img
+								src="images/dist/review-law-sm.jpg"
+								data-src="images/dist/review-law-mobile-2x.jpg"
+								data-srcset="images/dist/review-law-mobile.jpg 1x, images/dist/review-law-mobile-2x.jpg 2x"
+								alt="alt"
+								class="reviews__mobile-img img-responsive blur lazyload"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -475,11 +499,11 @@
 				<div class="benefits__body">
 					<div class="benefits__img-wrap" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
 						<img
-							src="images/dist/ok-gesture-2x.png"
-							srcset="images/dist/ok-gesture.png 1x, images/dist/ok-gesture-2x.png 2x"
+							src="images/dist/ok-gesture-sm.png"
+							data-src="images/dist/ok-gesture-2x.png"
+							data-srcset="images/dist/ok-gesture.png 1x, images/dist/ok-gesture-2x.png 2x"
 							alt="alt"
-							class="benefits__img img-responsive"
-							loading="lazy"
+							class="benefits__img img-responsive blur lazyload"
 						/>
 						<svg role="img" class="benefits__ok">
 							<use href="images/icons/sprite.svg#ok" />
@@ -860,9 +884,9 @@
 				</div>
 				<div class="top-footer__img-wrap" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
 					<picture>
-						<source srcset="images/dist/hand.png 1x, images/dist/hand-2x.png 2x" media="(max-width: 767.98px)" />
-						<source srcset="images/dist/head-dress.png 1x, images/dist/head-dress-2x.png 2x" />
-						<img src="images/dist/head-dress.png" alt="alt" class="top-footer__img img-responsive" loading="lazy" />
+						<source srcset="images/dist/hand-sm.png 1x, images/dist/hand-sm.png 2x" data-srcset="images/dist/hand.png 1x, images/dist/hand-2x.png 2x" media="(max-width: 767.98px)" />
+						<source srcset="images/dist/head-dress-sm.png 1x, images/dist/head-dress-sm.png 2x" data-srcset="images/dist/head-dress.png 1x, images/dist/head-dress-2x.png 2x" />
+						<img src="images/dist/head-dress-sm.png" data-src="images/dist/head-dress.png" alt="alt" class="top-footer__img img-responsive blur lazyload" />
 					</picture>
 				</div>
 			</div>
@@ -879,6 +903,7 @@
 </footer>
 
 <script src="libs/aos/aos.js"></script>
+<script src="libs/lazysizes.min.js"></script>
 <script src="libs/enquire.min.js"></script>
 <script src="libs/svg4everybody.min.js"></script>
 <script src="libs/typed/typed.umd.js"></script>
