@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
+	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 	
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
@@ -23,15 +23,15 @@
 
 <header class="header">
 	<div class="header__container container">
-		<a href="#" class="header__logo">ALUA AKPAYEVA</a>
+		<div class="header__logo">ALUA AKPAYEVA</div>
 		<button class="header__hamburger hamburger" type="button">
 			<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive">
 		</button>
 		<ul class="header__lang list-unstyled">
-			<li><a href="index.html">RUS</a></li>
+			<li><a href="#">RUS</a></li>
 			<li><a href="en.html">ENG</a></li>
 		</ul>
-		<a href="#" class="header__btn btn" data-hystmodal="#modal-callback"><span>Обсудить проект</span></a>
+		<button type="button" class="header__btn btn" data-hystmodal="#modal-callback"><span>Обсудить проект</span></button>
 	</div>
 </header>
 
@@ -57,16 +57,16 @@
 				</ul>
 			</nav>
 			<div class="header-extra__phone">
-				<a href="#">+7 (707) 777-61-72</a>
+				<a href="tel:+77077776172">+7 (707) 777-61-72</a>
 			</div>
 			<p class="header-extra__info">г.Алматы, ул.Шаляпина, 114</p>
 			<div class="header-extra__socials">
-				<a href="#" class="header-extra__social header-extra__social--wa">
+				<a href="https://wa.me/77077776172" target="_blank" rel="noopener noreferrer" class="header-extra__social header-extra__social--wa">
 					<svg role="img" class="header-extra__social-icon">
 						<use href="images/icons/sprite.svg#wa" />
 					</svg>
 				</a>
-				<a href="#" class="header-extra__social header-extra__social--tg">
+				<a href="https://t.me/AluaAE02" target="_blank" rel="noopener noreferrer" class="header-extra__social header-extra__social--tg">
 					<svg role="img" class="header-extra__social-icon">
 						<use href="images/icons/sprite.svg#tg" />
 					</svg>
@@ -83,7 +83,11 @@
 				<div class="showcase__title-wrap">
 					<h1 class="showcase__title h1">
 						<!-- prettier-ignore -->
-						<span>у меня есть навыки<br /> <span class="second-line">чтобы <span class="lines-1">сделать бизнес</span></span><br /> <span class="third-line">более <span class="lines-2">успешным</span></span></span>
+						<span>у меня есть навыки<br /> <span class="second-line">чтобы <span class="lines-1">сделать бизнес</span></span><br /> <span class="third-line">более <span class="lines-2">успешнее</span></span></span>
+						<!-- prettier-ignore -->
+						<span>у меня есть навыки<br /> <span class="second-line">чтобы <span class="lines-1">сделать бизнес</span></span><br /> <span class="third-line">более <span class="lines-2">прибыльнее</span></span></span>
+						<!-- prettier-ignore -->
+						<span>у меня есть навыки<br /> <span class="second-line">чтобы <span class="lines-1">сделать бизнес</span></span><br /> <span class="third-line">более<br class="d-sm-none" /> <span class="lines-2 long">структурированнее</span></span></span>
 					</h1>
 					<div class="showcase__typed-wrap">
 						<span class="showcase__typed h1"></span>
@@ -102,7 +106,7 @@
 							эффективным инструментом вашего бизнеса
 						</p>
 					</div>
-					<a href="#" class="showcase__btn btn d-md-none" data-hystmodal="#modal-callback"><span>Обсудить проект</span></a>
+					<button type="button" class="showcase__btn btn d-md-none" data-hystmodal="#modal-callback"><span>Обсудить проект</span></button>
 				</div>
 			</div>
 		</div>
@@ -208,20 +212,30 @@
 						<span>#ценности</span>
 					</div>
 				</div>
-				<div class="philosophy__body" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+				<div class="philosophy__body">
 					<div class="philosophy__content">
-						<div class="philosophy__text-wrap">
+						<div class="philosophy__text-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
 							<p>
 								Я разрабатываю простые, понятные, современные и эффективные решения с продуманной логикой. Сайты с огромным количеством анимации и картинок - это не мой формат, так как
 								для пользователей, в первую очередь, важна логика и удобство сайта
 							</p>
 						</div>
 						<div class="philosophy__circle-quote-wrap">
-							<div class="philosophy__circle-quote">Стремлюсь к партнерским отношениям с клиентом, чтобы вместе создать впечатляющий и приносящий пользу проект</div>
-							<img src="images/dist/wise-man.png" srcset="images/dist/wise-man.png 1x, images/dist/wise-man-2x.png 2x" alt="alt" class="philosophy__img img-responsive" loading="lazy" />
+							<div class="philosophy__circle-quote" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+								Стремлюсь к партнерским отношениям с клиентом, чтобы вместе создать впечатляющий и приносящий пользу проект
+							</div>
+							<img
+								src="images/dist/wise-man.png"
+								srcset="images/dist/wise-man.png 1x, images/dist/wise-man-2x.png 2x"
+								alt="alt"
+								class="philosophy__img img-responsive"
+								data-aos="fade-left"
+								data-aos-delay="50"
+								data-aos-duration="1000"
+							/>
 						</div>
 					</div>
-					<div class="philosophy__quote">Четкий план и последовательность - это то, что мне по душе</div>
+					<div class="philosophy__quote" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">Четкий план и последовательность - это то, что мне по душе</div>
 				</div>
 			</div>
 		</div>
@@ -287,8 +301,8 @@
 				<div class="projects__slider slider-projects slider splide">
 					<div class="slider-projects__track slider__track splide__track">
 						<div class="slider-projects__list slider__list splide__list">
-							<div class="slider-projects__slide slider__slide splide__slide">
-								<a href="images/dist/baktrade-2x.jpg" class="item-project glightbox" data-gallery="projects" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+							<div class="slider-projects__slide slider-projects__slide--baktrade slider__slide splide__slide">
+								<a href="https://bakrtade.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
 									<img
 										src="images/dist/baktrade-2x.jpg"
 										srcset="images/dist/baktrade.jpg 1x, images/dist/baktrade-2x.jpg 2x"
@@ -298,8 +312,8 @@
 									/>
 								</a>
 							</div>
-							<div class="slider-projects__slide slider__slide splide__slide">
-								<a href="images/dist/rasxodniki-2x.jpg" class="item-project glightbox" data-gallery="projects" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+							<div class="slider-projects__slide slider-projects__slide--rasxodniki slider__slide splide__slide">
+								<a href="https://rasxodniki.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
 									<img
 										src="images/dist/rasxodniki-2x.jpg"
 										srcset="images/dist/rasxodniki.jpg 1x, images/dist/rasxodniki-2x.jpg 2x"
@@ -309,8 +323,8 @@
 									/>
 								</a>
 							</div>
-							<div class="slider-projects__slide slider__slide splide__slide">
-								<a href="images/dist/sh-investment-2x.jpg" class="item-project glightbox" data-gallery="projects" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+							<div class="slider-projects__slide slider-projects__slide--shinvestment slider__slide splide__slide">
+								<a href="https://shinvestment.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
 									<img
 										src="images/dist/sh-investment-2x.jpg"
 										srcset="images/dist/sh-investment.jpg 1x, images/dist/sh-investment-2x.jpg 2x"
@@ -320,8 +334,16 @@
 									/>
 								</a>
 							</div>
-							<div class="slider-projects__slide slider__slide splide__slide">
-								<a href="images/dist/law-practice-2x.jpg" class="item-project glightbox" data-gallery="projects" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
+							<div class="slider-projects__slide slider-projects__slide--lawpractice slider__slide splide__slide">
+								<a
+									href="https://www.lawpractice.kz/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="item-project"
+									data-aos="fade-right"
+									data-aos-delay="700"
+									data-aos-duration="1000"
+								>
 									<img
 										src="images/dist/law-practice-2x.jpg"
 										srcset="images/dist/law-practice.jpg 1x, images/dist/law-practice-2x.jpg 2x"
@@ -331,8 +353,8 @@
 									/>
 								</a>
 							</div>
-							<div class="slider-projects__slide slider__slide splide__slide">
-								<a href="images/dist/araik-2x.jpg" class="item-project glightbox" data-gallery="projects" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
+							<div class="slider-projects__slide slider-projects__slide--floralhouse slider__slide splide__slide">
+								<a href="https://floralhouse.kz/" target="_blank" rel="noopener noreferrer" class="item-project" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
 									<img
 										src="images/dist/araik-2x.jpg"
 										srcset="images/dist/araik.jpg 1x, images/dist/araik-2x.jpg 2x"
@@ -379,12 +401,12 @@
 						<div class="slider-reviews__track slider__track splide__track">
 							<div class="slider-reviews__list slider__list splide__list">
 								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="images/dist/review-1-2x.png" class="item-reviews glightbox" data-gallery="reviews">
+									<a href="images/dist/review-sh-full.jpeg" class="item-reviews glightbox" data-gallery="reviews">
 										<div class="item-reviews__img-wrap">
 											<img src="images/dist/review-1-bg.svg" alt="alt" class="item-reviews__bg" />
 											<img
-												src="images/dist/review-1-2x.png"
-												srcset="images/dist/review-1.png 1x, images/dist/review-1-2x.png 2x"
+												src="images/dist/review-sh-2x.jpg"
+												srcset="images/dist/review-sh.jpg 1x, images/dist/review-sh-2x.jpg 2x"
 												alt="alt"
 												class="item-reviews__img img-responsive"
 											/>
@@ -393,63 +415,39 @@
 									</a>
 								</div>
 								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="images/dist/review-1-2x.png" class="item-reviews glightbox" data-gallery="reviews">
+									<a href="images/dist/review-law-full.jpeg" class="item-reviews glightbox" data-gallery="reviews">
 										<div class="item-reviews__img-wrap">
 											<img src="images/dist/review-2-bg.svg" alt="alt" class="item-reviews__bg" />
 											<img
-												src="images/dist/review-1-2x.png"
-												srcset="images/dist/review-1.png 1x, images/dist/review-1-2x.png 2x"
+												src="images/dist/review-law-2x.jpg"
+												srcset="images/dist/review-law.jpg 1x, images/dist/review-law-2x.jpg 2x"
 												alt="alt"
 												class="item-reviews__img img-responsive"
 											/>
 										</div>
-										<div class="item-reviews__title">ТОО SH Investment</div>
-									</a>
-								</div>
-								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="images/dist/review-1-2x.png" class="item-reviews glightbox" data-gallery="reviews">
-										<div class="item-reviews__img-wrap">
-											<img src="images/dist/review-3-bg.svg" alt="alt" class="item-reviews__bg" />
-											<img
-												src="images/dist/review-1-2x.png"
-												srcset="images/dist/review-1.png 1x, images/dist/review-1-2x.png 2x"
-												alt="alt"
-												class="item-reviews__img img-responsive"
-											/>
-										</div>
-										<div class="item-reviews__title">ТОО SH Investment</div>
-									</a>
-								</div>
-								<div class="slider-reviews__slide slider__slide splide__slide">
-									<a href="images/dist/review-1-2x.png" class="item-reviews glightbox" data-gallery="reviews">
-										<div class="item-reviews__img-wrap">
-											<img src="images/dist/review-1-bg.svg" alt="alt" class="item-reviews__bg" />
-											<img
-												src="images/dist/review-1-2x.png"
-												srcset="images/dist/review-1.png 1x, images/dist/review-1-2x.png 2x"
-												alt="alt"
-												class="item-reviews__img img-responsive"
-											/>
-										</div>
-										<div class="item-reviews__title">ТОО SH Investment</div>
+										<div class="item-reviews__title">ТОО Law Practice</div>
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="reviews__mobile">
-						<a href="images/dist/review-1-2x.png" class="reviews__link glightbox" data-gallery="reviews-mobile">
+						<a href="images/dist/review-sh-full.jpeg" class="reviews__mobile-item glightbox" data-gallery="mobile-reviews">
 							<img
-								src="images/dist/reviews-2x.png"
-								srcset="images/dist/reviews.png 1x, images/dist/reviews-2x.png 2x"
+								src="images/dist/review-sh-mobile-2x.jpg"
+								srcset="images/dist/review-sh-mobile.jpg 1x, images/dist/review-sh-mobile-2x.jpg 2x"
 								alt="alt"
-								class="reviews__link-img img-responsive"
-								loading="lazy"
+								class="reviews__mobile-img img-responsive"
 							/>
 						</a>
-						<a href="images/dist/review-1-2x.png" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
-						<a href="images/dist/review-1-2x.png" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
-						<a href="images/dist/review-1-2x.png" class="reviews__mobile-item glightbox" data-gallery="reviews-mobile"></a>
+						<a href="images/dist/review-law-full.jpeg" class="reviews__mobile-item glightbox" data-gallery="mobile-reviews">
+							<img
+								src="images/dist/review-law-mobile-2x.jpg"
+								srcset="images/dist/review-law-mobile.jpg 1x, images/dist/review-law-mobile-2x.jpg 2x"
+								alt="alt"
+								class="reviews__mobile-img img-responsive"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -807,7 +805,7 @@
 				</div>
 				<p class="form-callback__accept">
 					Отправляя свои данные, я принимаю условия<br />
-					<a href="#">политики конфиденциальности</a>
+					<a href="images/dist/privacy.pdf" target="_blank" rel="noopener noreferrer">политики конфиденциальности</a>
 				</p>
 			</form>
 		</div>
@@ -848,14 +846,14 @@
 					</p>
 				</div>
 				<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
-					<a href="#" class="top-footer__btn btn" data-hystmodal="#modal-callback">
+					<button type="button" class="top-footer__btn btn" data-hystmodal="#modal-callback">
 						<span>Оставить заявку</span>
-					</a>
+					</button>
 				</div>
 				<ul class="top-footer__links list-unstyled" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
-					<li><a href="#">#whatsapp</a></li>
-					<li><a href="#">#telegram</a></li>
-					<li><a href="#">#instagram</a></li>
+					<li><a href="https://wa.me/77077776172" target="_blank" rel="noopener noreferrer">#whatsapp</a></li>
+					<li><a href="https://t.me/AluaAE02" target="_blank" rel="noopener noreferrer">#telegram</a></li>
+					<li><a href="https://www.instagram.com/alua.akpayeva/" target="_blank" rel="noopener noreferrer">#instagram</a></li>
 				</ul>
 				<div class="top-footer__to-top-wrap" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
 					<button class="top-footer__to-top to-top" type="button">
@@ -878,7 +876,7 @@
 		<div class="bottom-footer__container container">
 			<p class="bottom-footer__copyright">ALUA AKPAYEVA</p>
 			<ul class="bottom-footer__links list-unstyled">
-				<li><a href="#">Политика конфиденциальности</a></li>
+				<li><a href="images/dist/privacy.pdf" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a></li>
 			</ul>
 		</div>
 	</div>
