@@ -10,6 +10,7 @@
 	<link rel="icon" href="images/favicon.png">
 	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
+	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -36,43 +37,45 @@
 				</div>
 				<div class="item-contact__text">Перейти в чат</div>
 			</a>
-			<ul class="top-header__contacts contacts-header list-unstyled">
-				<li>
-					<a href="#" class="contacts-header__item item-contact item-contact--clock">
-						<div class="item-contact__icon-wrap">
-							<svg role="img" class="item-contact__icon">
-								<use href="images/icons/sprite.svg#clock" />
-							</svg>
-						</div>
-						<div class="item-contact__text">пн. – вс. 10:00-20:00</div>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="contacts-header__item item-contact item-contact--mail">
-						<div class="item-contact__icon-wrap">
-							<svg role="img" class="item-contact__icon">
-								<use href="images/icons/sprite.svg#mail" />
-							</svg>
-						</div>
-						<div class="item-contact__text">sales@applegod.ru</div>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="contacts-header__item item-contact item-contact--telephone">
-						<div class="item-contact__icon-wrap">
-							<svg role="img" class="item-contact__icon">
-								<use href="images/icons/sprite.svg#telephone" />
-							</svg>
-						</div>
-						<div class="item-contact__text">+7 (495) 124 86 00</div>
-					</a>
-				</li>
-			</ul>
+			<div class="top-header__contacts contacts-header">
+				<ul class="contacts-header__list list-unstyled">
+					<li>
+						<a href="#" class="contacts-header__item item-contact item-contact--clock">
+							<div class="item-contact__icon-wrap">
+								<svg role="img" class="item-contact__icon">
+									<use href="images/icons/sprite.svg#clock" />
+								</svg>
+							</div>
+							<div class="item-contact__text">пн. – вс. 10:00-20:00</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contacts-header__item item-contact item-contact--mail">
+							<div class="item-contact__icon-wrap">
+								<svg role="img" class="item-contact__icon">
+									<use href="images/icons/sprite.svg#mail" />
+								</svg>
+							</div>
+							<div class="item-contact__text">sales@applegod.ru</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contacts-header__item item-contact item-contact--telephone">
+							<div class="item-contact__icon-wrap">
+								<svg role="img" class="item-contact__icon">
+									<use href="images/icons/sprite.svg#telephone" />
+								</svg>
+							</div>
+							<div class="item-contact__text">+7 (495) 124 86 00</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="header__middle middle-header">
 		<div class="middle-header__container container">
-			<a href="#" class="middle-header__logo">
+			<a href="index.html" class="middle-header__logo">
 				<img src="images/dist/logo.svg" alt="alt" class="img-responsive">
 			</a>
 			<form class="middle-header__search search">
@@ -89,8 +92,8 @@
 						<use href="images/icons/sprite.svg#user" />
 					</svg>
 				</a>
-				<a href="#" class="middle-header__featured-btn featured-btn">
-					<svg role="img" class="featured-btn__icon">
+				<a href="#" class="middle-header__favorite-btn favorite-btn">
+					<svg role="img" class="favorite-btn__icon">
 						<use href="images/icons/sprite.svg#heart" />
 					</svg>
 				</a>
@@ -99,12 +102,50 @@
 						<use href="images/icons/sprite.svg#compare" />
 					</svg>
 				</a>
-				<a href="#" class="middle-header__cart-btn cart-btn">
-					<svg role="img" class="cart-btn__icon">
-						<use href="images/icons/sprite.svg#cart" />
-					</svg>
-					<span class="cart-btn__count">3</span>
-				</a>
+				<div class="middle-header__minicart minicart">
+					<a href="#" class="minicart__cart-btn cart-btn">
+						<svg role="img" class="cart-btn__icon">
+							<use href="images/icons/sprite.svg#cart" />
+						</svg>
+						<span class="cart-btn__count">3</span>
+					</a>
+					<div class="minicart__inner">
+						<div class="minicart__box">
+							<div class="minicart__items">
+								<div class="minicart__item item-minicart">
+									<a href="#" class="item-minicart__img-wrap">
+										<img src="images/dist/minicart-1.png" alt="alt" class="item-minicart__img img-responsive">
+									</a>
+									<div class="item-minicart__title"><a href="#">Apple iPhone 15 Pro dual-SIM 1 ТБ, «титановый белый»</a></div>
+									<div class="item-minicart__amount">1 шт.</div>
+									<button class="item-minicart__delete" type="button">
+										<svg role="img" class="item-minicart__delete-icon">
+											<use href="images/icons/sprite.svg#trash" />
+										</svg>
+									</button>
+								</div>
+								<div class="minicart__item item-minicart">
+									<a href="#" class="item-minicart__img-wrap">
+										<img src="images/dist/minicart-2.png" alt="alt" class="item-minicart__img img-responsive">
+									</a>
+									<div class="item-minicart__title"><a href="#">Apple iPhone 15 Pro dual-SIM 1 ТБ, «титановый белый»</a></div>
+									<div class="item-minicart__amount">1 шт.</div>
+									<button class="item-minicart__delete" type="button">
+										<svg role="img" class="item-minicart__delete-icon">
+											<use href="images/icons/sprite.svg#trash" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="minicart__footer">
+								<div class="minicart__footer-content">
+									<p class="minicart__price">Итого: <span>500 000 руб.</span></p>
+									<a href="#" class="minicart__btn btn btn--secondary">Оформить заказ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -539,7 +580,7 @@
 				<a href="#" class="footer__btn btn btn--accent btn--pill">Заказать звонок</a>
 			</div>
 			<div class="footer__col footer__col--map">
-				<iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c628f57f5a946bd3f7fb554902cfbff33ff907e0b81fc13782c2ea2585fb2f&amp;source=constructor" loading="lazy"></iframe>
+				<iframe class="footer__map map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c628f57f5a946bd3f7fb554902cfbff33ff907e0b81fc13782c2ea2585fb2f&amp;source=constructor" loading="lazy"></iframe>
 				<div class="footer__reviews">
 					<a href="#" class="footer__review">
 						<img src="images/dist/yandex.jpg" alt="alt" class="footer__review-img img-responsive">
@@ -555,6 +596,7 @@
 
 <script src="libs/svg4everybody.min.js"></script>
 <script src="libs/splide/splide.min.js"></script>
+<script src="libs/hystmodal/hystmodal.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
