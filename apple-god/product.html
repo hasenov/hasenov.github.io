@@ -21,14 +21,14 @@
 		<div class="top-header__container container">
 			<nav class="top-header__menu">
 				<ul class="list-unstyled">
-					<li><a href="#" class="font-medium">Каталог</a></li>
+					<li><a href="category.html" class="font-medium">Каталог</a></li>
 					<li><a href="#">Акции</a></li>
-					<li><a href="#">Ремонт</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Оплата</a></li>
+					<li class="d-none d-md-block"><a href="#">Ремонт</a></li>
+					<li class="d-none d-md-block"><a href="#">Гарантия</a></li>
+					<li class="d-none d-md-block"><a href="#">Доставка</a></li>
+					<li><a href="payment.html">Оплата</a></li>
 					<li><a href="#">Реквизиты</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 			<a href="#" class="top-header__chat item-contact">
@@ -39,7 +39,7 @@
 			</a>
 			<div class="top-header__contacts contacts-header">
 				<ul class="contacts-header__list list-unstyled">
-					<li>
+					<li class="is-clock">
 						<a href="#" class="contacts-header__item item-contact item-contact--clock">
 							<div class="item-contact__icon-wrap">
 								<svg role="img" class="item-contact__icon">
@@ -66,7 +66,7 @@
 									<use href="images/icons/sprite.svg#telephone" />
 								</svg>
 							</div>
-							<div class="item-contact__text">+7 (495) 124 86 00</div>
+							<div class="item-contact__text font-semibold">+7 (495) 124 86 00</div>
 						</a>
 					</li>
 				</ul>
@@ -87,11 +87,11 @@
 				</button>
 			</form>
 			<div class="middle-header__actions">
-				<a href="#" class="middle-header__user-btn user-btn">
+				<!-- <a href="#" class="middle-header__user-btn user-btn">
 					<svg role="img" class="user-btn__icon">
 						<use href="images/icons/sprite.svg#user" />
 					</svg>
-				</a>
+				</a> -->
 				<a href="#" class="middle-header__favorite-btn favorite-btn">
 					<svg role="img" class="favorite-btn__icon">
 						<use href="images/icons/sprite.svg#heart" />
@@ -147,10 +147,8 @@
 					</div>
 				</div>
 			</div>
-			<button class="middle-header__hamburger hamburger hamburger--emphatic" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
+			<button class="middle-header__hamburger hamburger" type="button">
+				<img src="images/icons/hamburger.svg" alt="alt" class="hamburger__icon img-responsive">
 			</button>
 		</div>
 	</div>
@@ -171,6 +169,19 @@
 		</div>
 	</div>
 </header>
+
+<nav class="mobile-menu">
+	<div class="mobile-menu__inner">
+		<button class="mobile-menu__close" type="button">
+			<svg role="img" class="mobile-menu__close-icon">
+				<use href="images/icons/sprite.svg#close" />
+			</svg>
+		</button>
+		<a href="#" class="mobile-menu__logo">
+			<img src="images/dist/logo-white.svg" alt="alt" class="img-responsive">
+		</a>
+	</div>
+</nav>
 
 <div class="breadcrumbs">
 	<div class="container">
@@ -591,33 +602,39 @@
 	<div class="footer__container container">
 		<div class="footer__row row">
 			<div class="footer__col footer__col--info">
-				<a href="#" class="footer__logo">
-					<img src="images/dist/logo-white.svg" alt="alt" class="img-responsive">
-				</a>
-				<p class="footer__text">«Apple God» – магазин современной техники в Москве.</p>
-				<p class="footer__copyright">Все права защищены. Информация на сайте не является публичной офертой.</p>
-				<div class="footer__socials">
-					<a href="#" class="footer__social footer__social--vk">
-						<svg role="img" class="footer__social-icon">
-							<use href="images/icons/sprite.svg#vk" />
-						</svg>
-					</a>
-					<a href="#" class="footer__social footer__social--tg">
-						<svg role="img" class="footer__social-icon">
-							<use href="images/icons/sprite.svg#tg" />
-						</svg>
-					</a>
-					<a href="#" class="footer__social footer__social--ig">
-						<svg role="img" class="footer__social-icon">
-							<use href="images/icons/sprite.svg#ig" />
-						</svg>
-					</a>
+				<div class="footer__info">
+					<div class="footer__info-body">
+						<a href="#" class="footer__logo">
+							<img src="images/dist/logo-white.svg" alt="alt" class="img-responsive">
+						</a>
+						<p class="footer__text">«Apple God» – магазин современной техники в Москве.</p>
+						<p class="footer__copyright">Все права защищены. Информация на сайте не является публичной офертой.</p>
+					</div>
+					<div class="footer__info-socials">
+						<div class="footer__socials">
+							<a href="#" class="footer__social footer__social--vk">
+								<svg role="img" class="footer__social-icon">
+									<use href="images/icons/sprite.svg#vk" />
+								</svg>
+							</a>
+							<a href="#" class="footer__social footer__social--tg">
+								<svg role="img" class="footer__social-icon">
+									<use href="images/icons/sprite.svg#tg" />
+								</svg>
+							</a>
+							<a href="#" class="footer__social footer__social--ig">
+								<svg role="img" class="footer__social-icon">
+									<use href="images/icons/sprite.svg#ig" />
+								</svg>
+							</a>
+						</div>
+						<ul class="footer__links list-unstyled">
+							<li>
+								<a href="#" class="footer__link">Политика конфиденциальности</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<ul class="footer__links list-unstyled">
-					<li>
-						<a href="#" class="footer__link">Политика конфиденциальности</a>
-					</li>
-				</ul>
 			</div>
 			<div class="footer__col footer__col--menu">
 				<nav class="footer__menu">
@@ -667,7 +684,7 @@
 							<div class="item-contact__text">пн. – вс. 10:00-20:00</div>
 						</a>
 					</li>
-					<li>
+					<li class="is-location">
 						<div class="contacts-footer__item item-contact item-contact--location">
 							<div class="item-contact__icon-wrap">
 								<svg role="img" class="item-contact__icon">
@@ -677,16 +694,18 @@
 							<div class="item-contact__text">Багратионовский проезд 7, корпус 20В. Вторая дверь в арке.</div>
 						</div>
 					</li>
+					<li class="is-chat">
+						<a href="#" class="contacts-footer__item item-contact">
+							<div class="item-contact__icon-wrap">
+								<img src="images/icons/wa.svg" alt="alt" class="item-contact__icon img-responsive">
+							</div>
+							<div class="item-contact__text">Перейти в чат</div>
+						</a>
+					</li>
 				</ul>
-				<div class="footer__chat-wrap">
-					<a href="#" class="footer__chat item-contact">
-						<div class="item-contact__icon-wrap">
-							<img src="images/icons/wa.svg" alt="alt" class="item-contact__icon img-responsive">
-						</div>
-						<div class="item-contact__text">Перейти в чат</div>
-					</a>
+				<div class="footer__btn-wrap">
+					<a href="#" class="footer__btn btn btn--accent btn--pill">Заказать звонок</a>
 				</div>
-				<a href="#" class="footer__btn btn btn--accent btn--pill">Заказать звонок</a>
 			</div>
 			<div class="footer__col footer__col--map">
 				<iframe class="footer__map map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c628f57f5a946bd3f7fb554902cfbff33ff907e0b81fc13782c2ea2585fb2f&amp;source=constructor" loading="lazy"></iframe>
@@ -706,6 +725,7 @@
 <script src="libs/svg4everybody.min.js"></script>
 <script src="libs/splide/splide.min.js"></script>
 <script src="libs/hystmodal/hystmodal.min.js"></script>
+<script src="libs/enquire.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
