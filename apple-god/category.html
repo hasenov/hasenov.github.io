@@ -11,6 +11,7 @@
 	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
+	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -22,12 +23,12 @@
 			<nav class="top-header__menu">
 				<ul class="list-unstyled">
 					<li><a href="category.html" class="font-medium">Каталог</a></li>
-					<li><a href="#">Акции</a></li>
-					<li class="d-none d-md-block"><a href="#">Ремонт</a></li>
-					<li class="d-none d-md-block"><a href="#">Гарантия</a></li>
-					<li class="d-none d-md-block"><a href="#">Доставка</a></li>
+					<li><a href="promos.html">Акции</a></li>
+					<li class="d-none d-md-block"><a href="repair.html">Ремонт</a></li>
+					<li class="d-none d-md-block"><a href="warranty.html">Гарантия</a></li>
+					<li class="d-none d-md-block"><a href="delivery.html">Доставка</a></li>
 					<li><a href="payment.html">Оплата</a></li>
-					<li><a href="#">Реквизиты</a></li>
+					<li><a href="requisites.html">Реквизиты</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
@@ -92,18 +93,18 @@
 						<use href="images/icons/sprite.svg#user" />
 					</svg>
 				</a> -->
-				<a href="#" class="middle-header__favorite-btn favorite-btn">
+				<a href="favorites.html" class="middle-header__favorite-btn favorite-btn">
 					<svg role="img" class="favorite-btn__icon">
 						<use href="images/icons/sprite.svg#heart" />
 					</svg>
 				</a>
-				<a href="#" class="middle-header__compare-btn compare-btn">
+				<a href="compare.html" class="middle-header__compare-btn compare-btn">
 					<svg role="img" class="compare-btn__icon">
 						<use href="images/icons/sprite.svg#compare" />
 					</svg>
 				</a>
 				<div class="middle-header__minicart minicart">
-					<a href="#" class="minicart__cart-btn cart-btn">
+					<a href="cart.html" class="minicart__cart-btn cart-btn">
 						<svg role="img" class="cart-btn__icon">
 							<use href="images/icons/sprite.svg#cart" />
 						</svg>
@@ -197,74 +198,142 @@
 
 <div class="page">
 	<div class="container">
-		<h1 class="page__title h2">Название категории товаров</h1>
-		<div class="page__row row">
-			<div class="page__col col-3">
-				<div class="page__sidebar sidebar">
-					<form class="form-filter">
-						<select class="form-filter__select select">
-							<option value="1">Модель</option>
-						</select>
-						<select class="form-filter__select select">
-							<option value="1">Параметры</option>
-						</select>
-						<div class="form-filter__range"></div>
-						<select class="form-filter__select select">
-							<option value="1">Модель</option>
-						</select>
-						<select class="form-filter__select select">
-							<option value="1">Параметры</option>
-						</select>
-						<button class="form-filter__reset btn btn--dark" type="button">Сбросить фильтры</button>
+		<div class="category">
+			<h1 class="category__title h2">Название категории товаров</h1>
+			<div class="category__row">
+				<div class="category__col category__col--filter">
+					<form class="category__form-filter form-filter">
+						<div class="form-filter__extra">
+							<div class="form-filter__row row">
+								<div class="form-filter__col col-xl-12 col-lg-4 col-md-6" id="mainFilterItemWrap">
+									<select class="form-filter__select select" id="mainFilterItem">
+										<option value="1">Модель</option>
+									</select>
+									<select class="form-filter__select select">
+										<option value="1">Параметры</option>
+									</select>
+								</div>
+								<div class="form-filter__col form-filter__col--range col-xl-12 col-lg-4 col-md-6">
+									<div class="form-filter__range range">
+										<div class="range__title">Цена, руб:</div>
+										<div class="range__slider" id="priceRange"></div>
+										<div class="range__controls">
+											<input type="text" class="range__control control" id="priceFrom" />
+											<input type="text" class="range__control control" id="priceTo" />
+										</div>
+									</div>
+								</div>
+								<div class="form-filter__col col-xl-12 col-lg-4 col-md-6">
+									<select class="form-filter__select select">
+										<option value="1">Модель</option>
+									</select>
+									<select class="form-filter__select select">
+										<option value="1">Параметры</option>
+									</select>
+								</div>
+							</div>
+							<button class="form-filter__reset btn btn--dark" type="button">Сбросить фильтры</button>
+						</div>
+						<button class="form-filter__toggle is-active" type="button">
+							<span class="form-filter__toggle-text" data-show-text="открыть фильтры" data-hide-text="свернуть фильтры">свернуть фильтры</span>
+							<svg role="img">
+								<use href="images/icons/sprite.svg#chevron-down" />
+							</svg>
+						</button>
 					</form>
 				</div>
-			</div>
-			<div class="page__col col-9">
-				<div class="page__toolbar toolbar">
-					<select class="toolbar__select select">
-						<option value="1">По возрастанию цены</option>
-					</select>
-					<p class="toolbar__result-count">Отображение 22 товаров. Всего товаров в категории: 50.</p>
-				</div>
-				<div class="page__products products">
-					<div class="products__row row">
-						<div class="products__col col-3">
-							<div class="products__card card-product">
-								<div class="card-product__badges">
-									<span class="card-product__badge badge badge--secondary">скидка</span>
-									<span class="card-product__badge badge badge--blue">акция “горячий май”</span>
+				<div class="category__col category__col--products">
+					<div class="category__toolbar toolbar">
+						<select class="toolbar__select select">
+							<option value="1">По возрастанию цены</option>
+						</select>
+						<p class="toolbar__result-count">Отображение 22 товаров. Всего товаров в категории: 50.</p>
+					</div>
+					<div class="category__products products">
+						<div class="products__row row">
+							<div class="products__col col-2xl-3 col-lg-4 col-sm-6">
+								<div class="products__card card-product is-added-to-cart">
+									<div class="card-product__badges">
+										<span class="card-product__badge badge badge--secondary">скидка</span>
+										<span class="card-product__badge badge badge--blue">акция “горячий май”</span>
+									</div>
+									<button class="card-product__compare">
+										<svg role="img">
+											<use href="images/icons/sprite.svg#compare" />
+										</svg>
+									</button>
+									<a href="#" class="card-product__img-wrap">
+										<img src="images/dist/card-1.png" alt="alt" class="card-product__img img-responsive" />
+									</a>
+									<div class="card-product__title"><a href="#">Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий</a></div>
+									<div class="card-product__footer">
+										<p class="card-product__price-old">257 000 руб.</p>
+										<p class="card-product__price">240 000 руб.</p>
+										<div class="card-product__buttons-wrap">
+											<div class="card-product__buttons">
+												<button class="card-product__add-to-cart btn btn--accent" type="button">
+													<svg role="img" class="btn__icon">
+														<use href="images/icons/sprite.svg#cart-plus" />
+													</svg>
+													В корзину
+												</button>
+												<button class="card-product__added-to-cart btn btn--secondary" type="button">
+													<svg role="img" class="btn__icon">
+														<use href="images/icons/sprite.svg#check" />
+													</svg>
+													В корзине
+												</button>
+												<button class="card-product__favorite btn btn--light" type="button">
+													<svg role="img" class="btn__icon">
+														<use href="images/icons/sprite.svg#heart" />
+													</svg>
+												</button>
+												<button class="card-product__one-click btn btn--dark" type="button">Купить в 1 клик</button>
+											</div>
+										</div>
+									</div>
 								</div>
-								<button class="card-product__compare">
-									<svg role="img">
-										<use href="images/icons/sprite.svg#compare" />
-									</svg>
-								</button>
-								<a href="#" class="card-product__img-wrap">
-									<img src="images/dist/card-1.png" alt="alt" class="card-product__img img-responsive" />
-								</a>
-								<div class="card-product__title"><a href="#">Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий</a></div>
-								<p class="card-product__price-old">257 000 руб.</p>
-								<p class="card-product__price">240 000 руб.</p>
-								<div class="card-product__buttons-wrap">
-									<div class="card-product__buttons">
-										<button class="card-product__add-to-cart btn btn--accent" type="button">
-											<svg role="img" class="btn__icon">
-												<use href="images/icons/sprite.svg#cart-plus" />
-											</svg>
-											В корзину
-										</button>
-										<button class="card-product__added-to-cart btn btn--secondary" type="button">
-											<svg role="img" class="btn__icon">
-												<use href="images/icons/sprite.svg#check" />
-											</svg>
-											В корзине
-										</button>
-										<button class="card-product__favorite btn btn--light" type="button">
-											<svg role="img" class="btn__icon">
-												<use href="images/icons/sprite.svg#heart" />
-											</svg>
-										</button>
-										<button class="card-product__one-click btn btn--dark" type="button">Купить в 1 клик</button>
+							</div>
+							<div class="products__col col-2xl-3 col-lg-4 col-sm-6">
+								<div class="products__card card-product is-added-to-cart">
+									<div class="card-product__badges">
+										<span class="card-product__badge badge badge--secondary">скидка</span>
+										<span class="card-product__badge badge badge--blue">акция “горячий май”</span>
+									</div>
+									<button class="card-product__compare">
+										<svg role="img">
+											<use href="images/icons/sprite.svg#compare" />
+										</svg>
+									</button>
+									<a href="#" class="card-product__img-wrap">
+										<img src="images/dist/card-1.png" alt="alt" class="card-product__img img-responsive" />
+									</a>
+									<div class="card-product__title"><a href="#">Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий</a></div>
+									<div class="card-product__footer">
+										<p class="card-product__price-old">257 000 руб.</p>
+										<p class="card-product__price">240 000 руб.</p>
+										<div class="card-product__buttons-wrap">
+											<div class="card-product__buttons">
+												<button class="card-product__add-to-cart btn btn--accent" type="button">
+													<svg role="img" class="btn__icon">
+														<use href="images/icons/sprite.svg#cart-plus" />
+													</svg>
+													В корзину
+												</button>
+												<button class="card-product__added-to-cart btn btn--secondary" type="button">
+													<svg role="img" class="btn__icon">
+														<use href="images/icons/sprite.svg#check" />
+													</svg>
+													В корзине
+												</button>
+												<button class="card-product__favorite btn btn--light" type="button">
+													<svg role="img" class="btn__icon">
+														<use href="images/icons/sprite.svg#heart" />
+													</svg>
+												</button>
+												<button class="card-product__one-click btn btn--dark" type="button">Купить в 1 клик</button>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -404,6 +473,8 @@
 <script src="libs/splide/splide.min.js"></script>
 <script src="libs/hystmodal/hystmodal.min.js"></script>
 <script src="libs/enquire.min.js"></script>
+<script src="libs/nouislider/nouislider.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>

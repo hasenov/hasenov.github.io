@@ -11,6 +11,7 @@
 	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
+	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -22,12 +23,12 @@
 			<nav class="top-header__menu">
 				<ul class="list-unstyled">
 					<li><a href="category.html" class="font-medium">Каталог</a></li>
-					<li><a href="#">Акции</a></li>
-					<li class="d-none d-md-block"><a href="#">Ремонт</a></li>
-					<li class="d-none d-md-block"><a href="#">Гарантия</a></li>
-					<li class="d-none d-md-block"><a href="#">Доставка</a></li>
+					<li><a href="promos.html">Акции</a></li>
+					<li class="d-none d-md-block"><a href="repair.html">Ремонт</a></li>
+					<li class="d-none d-md-block"><a href="warranty.html">Гарантия</a></li>
+					<li class="d-none d-md-block"><a href="delivery.html">Доставка</a></li>
 					<li><a href="payment.html">Оплата</a></li>
-					<li><a href="#">Реквизиты</a></li>
+					<li><a href="requisites.html">Реквизиты</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
@@ -92,18 +93,18 @@
 						<use href="images/icons/sprite.svg#user" />
 					</svg>
 				</a> -->
-				<a href="#" class="middle-header__favorite-btn favorite-btn">
+				<a href="favorites.html" class="middle-header__favorite-btn favorite-btn">
 					<svg role="img" class="favorite-btn__icon">
 						<use href="images/icons/sprite.svg#heart" />
 					</svg>
 				</a>
-				<a href="#" class="middle-header__compare-btn compare-btn">
+				<a href="compare.html" class="middle-header__compare-btn compare-btn">
 					<svg role="img" class="compare-btn__icon">
 						<use href="images/icons/sprite.svg#compare" />
 					</svg>
 				</a>
 				<div class="middle-header__minicart minicart">
-					<a href="#" class="minicart__cart-btn cart-btn">
+					<a href="cart.html" class="minicart__cart-btn cart-btn">
 						<svg role="img" class="cart-btn__icon">
 							<use href="images/icons/sprite.svg#cart" />
 						</svg>
@@ -252,29 +253,39 @@
 								<div class="slider-product-main__track slider__track splide__track">
 									<div class="slider-product-main__list slider__list splide__list">
 										<div class="slider-product-main__slide slider__slide splide__slide">
-											<a href="images/dist/product.png" class="item-slider-product">
-												<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
-											</a>
+											<div class="item-slider-product">
+												<a href="images/dist/product.png" class="item-slider-product__inner">
+													<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
+												</a>
+											</div>
 										</div>
 										<div class="slider-product-main__slide slider__slide splide__slide">
-											<a href="images/dist/product.png" class="item-slider-product">
-												<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
-											</a>
+											<div class="item-slider-product">
+												<a href="images/dist/product.png" class="item-slider-product__inner">
+													<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
+												</a>
+											</div>
 										</div>
 										<div class="slider-product-main__slide slider__slide splide__slide">
-											<a href="images/dist/product.png" class="item-slider-product">
-												<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
-											</a>
+											<div class="item-slider-product">
+												<a href="images/dist/product.png" class="item-slider-product__inner">
+													<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
+												</a>
+											</div>
 										</div>
 										<div class="slider-product-main__slide slider__slide splide__slide">
-											<a href="images/dist/product.png" class="item-slider-product">
-												<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
-											</a>
+											<div class="item-slider-product">
+												<a href="images/dist/product.png" class="item-slider-product__inner">
+													<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
+												</a>
+											</div>
 										</div>
 										<div class="slider-product-main__slide slider__slide splide__slide">
-											<a href="images/dist/product.png" class="item-slider-product">
-												<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
-											</a>
+											<div class="item-slider-product">
+												<a href="images/dist/product.png" class="item-slider-product__inner">
+													<img src="images/dist/product.png" alt="alt" class="item-slider-product__img img-responsive" />
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -299,17 +310,21 @@
 									<p class="summary-product__price">130 999 руб.</p>
 								</div>
 								<div class="summary-product__actions">
-									<button class="summary-product__price-drop summary-product__action btn btn--accent" type="button" data-hystmodal="#modal-price-drop">Узнать о снижении цены</button>
-									<button class="summary-product__favorite summary-product__action btn btn--light" type="button">
-										<svg role="img">
-											<use href="images/icons/sprite.svg#heart" />
-										</svg>
-									</button>
-									<button class="summary-product__compare summary-product__action btn btn--light" type="button">
-										<svg role="img">
-											<use href="images/icons/sprite.svg#compare" />
-										</svg>
-									</button>
+									<div class="summary-product__actions-btns">
+										<button class="summary-product__price-drop summary-product__action btn btn--accent" type="button" data-hystmodal="#modal-price-drop">
+											Узнать о снижении цены
+										</button>
+										<button class="summary-product__favorite summary-product__action btn btn--light" type="button">
+											<svg role="img">
+												<use href="images/icons/sprite.svg#heart" />
+											</svg>
+										</button>
+										<button class="summary-product__compare summary-product__action btn btn--light" type="button">
+											<svg role="img">
+												<use href="images/icons/sprite.svg#compare" />
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -429,46 +444,48 @@
 							<div class="summary-product__code">арт: 80395827703980</div>
 						</div>
 						<div class="summary-product__details details-product">
-							<div class="details-product__col details-product__col--left">
-								<div class="details-product__item">
-									<div class="details-product__title">
-										Наличие товара: <span class="details-product__text">есть в наличии <span class="details-product__amount">(много)</span></span>
+							<div class="details-product__row row">
+								<div class="details-product__col details-product__col--left">
+									<div class="details-product__item">
+										<div class="details-product__title">
+											Наличие товара: <span class="details-product__text">есть в наличии <span class="details-product__amount">(много)</span></span>
+										</div>
+									</div>
+									<div class="details-product__item">
+										<div class="details-product__title">Сведения о доставке:</div>
+										<ul class="details-product__list-icons list-icons list-unstyled">
+											<li>
+												<img src="images/icons/box.svg" alt="alt" class="list-icons__icon" />
+												<div class="list-icons__text">Самовывоз из магазина</div>
+											</li>
+											<li>
+												<img src="images/icons/truck.svg" alt="alt" class="list-icons__icon" />
+												<div class="list-icons__text">Курьерская от <span class="font-semibold">490 руб.</span></div>
+											</li>
+											<li>
+												<img src="images/icons/truck-fast.svg" alt="alt" class="list-icons__icon" />
+												<div class="list-icons__text">Срочная от <span class="font-semibold">800 руб.</span></div>
+											</li>
+										</ul>
+										<a href="#" class="details-product__link">Подробнее о доставке здесь</a>
 									</div>
 								</div>
-								<div class="details-product__item">
-									<div class="details-product__title">Сведения о доставке:</div>
-									<ul class="details-product__list-icons list-unstyled">
-										<li>
-											<img src="images/icons/box.svg" alt="alt" />
-											Самовывоз из магазина
-										</li>
-										<li>
-											<img src="images/icons/truck.svg" alt="alt" />
-											Курьерская от <span class="font-semibold">490 руб.</span>
-										</li>
-										<li>
-											<img src="images/icons/truck-fast.svg" alt="alt" />
-											Срочная от <span class="font-semibold">800 руб.</span>
-										</li>
-									</ul>
-									<a href="#" class="details-product__link">Подробнее о доставке здесь</a>
-								</div>
-							</div>
-							<div class="details-product__col details-product__col--right">
-								<div class="details-product__item">
-									<div class="details-product__title">Сведения об оплате:</div>
-									<p class="details-product__text">
-										- Наличный расчет<br />
-										- Онлайн-перевод<br />
-										- Безналичный расчет
-									</p>
-								</div>
-								<div class="details-product__item">
-									<div class="details-product__title">Гарантийные условия:</div>
-									<p class="details-product__text">
-										- 1 год с момента приобретения товара<br />
-										- Возврат или обмен товарав течение 14 дней
-									</p>
+								<div class="details-product__col details-product__col--right">
+									<div class="details-product__item">
+										<div class="details-product__title">Сведения об оплате:</div>
+										<p class="details-product__text">
+											- Наличный расчет<br />
+											- Онлайн-перевод<br />
+											- Безналичный расчет
+										</p>
+									</div>
+									<div class="details-product__item">
+										<div class="details-product__title">Гарантийные условия:</div>
+										<p class="details-product__text">
+											- 1 год с момента приобретения товара<br />
+											- Возврат или обмен товарав течение 14 дней
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -485,29 +502,22 @@
 		<div class="tabs-product__body">
 			<div class="tabs-product__items container">
 				<div class="tabs-product__item" data-tabs-item>
-					<div class="tabs-product__content">
-						<p>
-							Безупречный дизайн. Невероятная камера. Потрясающий экран с функцией Always -On Display и магия Apple, которая превращает обычный вырез в дисплее в уникальный интерактивный
-							элемент – всё это iPhone 14 Pro. Cмартфон получил новый процессор, сделанный по самым современным технологиям, а возможности для съёмки шагнули далеко как никогда раньше. С
-							новыми функциями iOS и всеми технологиями, унаследованными от предыдущих моделей линейки Pro, смартфон поражает воображение.
-						</p>
-						<p>
-							Поражает с первого взгляда<br />
-							Производительность, возможности камер и дизайн iPhone 14 Pro и iPhone 14 Pro Max не отличаются. Оба смартфона получили уже знакомые очертания и рамку из идеально
-							отполированной хирургической стали. Дисплей защищает сверхпрочное стекло Ceramic Shield, а задняя часть из матового стекла не только смотрится эффектно, но и ощущается
-							очень приятно, когда устройство лежит в руке. Одинаковая толщина рамок по периметру экрана придаёт смартфону более законченный внешний вид, чем у предыдущих моделей, а
-							любая из четырёх расцветок смотрится очень эффектно.
-						</p>
-						<p>
-							Ярче Солнца<br />
-							6,1-дюймовый OLED-экран iPhone 14 Pro стал гораздо ярче, что особенно хорошо ощущается при использовании смартфона днём. Яркость на улице достигает невероятных 2000 нит,
-							поэтому даже в яркий солнечный день всё отлично видно. Не забыли и про комфорт для любителей кино и сериалов: пиковая яркость при просмотре HDR-контента составляет 1600
-							нит. Кроме того, дисплей поддерживает True Tone, динамическую частоту обновления с технологией ProMotion и отличается потрясающей контрастностью 2000000:1.
-						</p>
-						<p class="img-wrapper">
-							<img src="images/dist/content-img.jpg" alt="alt" class="img-responsive" />
-						</p>
-					</div>
+					<table class="tabs-product__table table-details">
+						<tr class="table-details__heading">
+							<th>Комплектация</th>
+						</tr>
+						<tr>
+							<th>Зарядка</th>
+							<td>Есть</td>
+						</tr>
+						<tr class="table-details__heading">
+							<th>Дисплей</th>
+						</tr>
+						<tr>
+							<th>Диагональ</th>
+							<td>6,7"</td>
+						</tr>
+					</table>
 				</div>
 				<div class="tabs-product__item is-active" data-tabs-item>
 					<div class="tabs-product__content">
@@ -726,6 +736,8 @@
 <script src="libs/splide/splide.min.js"></script>
 <script src="libs/hystmodal/hystmodal.min.js"></script>
 <script src="libs/enquire.min.js"></script>
+<script src="libs/nouislider/nouislider.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>

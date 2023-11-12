@@ -189,121 +189,231 @@
 		<nav class="breadcrumbs__menu">
 			<ul class="breadcrumbs__list list-unstyled">
 				<li class="breadcrumbs__item"><a href="#">Главная</a></li>
-				<li class="breadcrumbs__item is-active">Контакты</li>
+				<li class="breadcrumbs__item is-active">Ваша корзина</li>
 			</ul>
 		</nav>
 	</div>
 </div>
 
-<div class="map-block">
-	<iframe
-		class="map-block__item map"
-		src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c628f57f5a946bd3f7fb554902cfbff33ff907e0b81fc13782c2ea2585fb2f&amp;source=constructor"
-		loading="lazy"
-	></iframe>
-</div>
-
-<div class="page">
+<div class="cart">
 	<div class="container">
-		<div class="contacts">
-			<div class="contacts__row row">
-				<div class="contacts__col col-2xl-5 col-lg-6">
-					<form class="contacts__form form-callback">
-						<div class="form-callback__title">Обратная связь по любому вопросу</div>
-						<div class="form-callback__row row">
-							<div class="form-callback__col col-xxl-8 col-xl-7 col-lg-12 col-sm-6">
-								<input type="text" class="form-callback__control control" placeholder="Ваши имя и фамилия" />
+		<div class="cart__row">
+			<div class="cart__col cart__col--main">
+				<h1 class="cart__title h2">Корзина <span class="font-normal color-gray">(3)</span></h1>
+				<div class="cart__section">
+					<div class="product-rows">
+						<div class="product-rows__header">
+							<div class="product-rows__checkboxes">
+								<label class="product-rows__checkbox checkbox">
+									<input type="checkbox" class="checkbox__input hidden" id="selectAllCartProducts" />
+									<span class="checkbox__box"></span>
+									<span class="checkbox__text">Выбрать все</span>
+								</label>
 							</div>
-							<div class="form-callback__col col-xxl-4 col-xl-5 col-sm-6">
-								<input type="tel" class="form-callback__control control" placeholder="+7 (000) 000 00 00" />
+							<div class="product-rows__actions">
+								<button class="product-rows__action" id="deleteSelectedCartProducts" type="button">Удалить выбранные</button>
 							</div>
-							<div class="form-callback__col col-xl-12 col-lg-6">
-								<input type="email" class="form-callback__control control" placeholder="Ваш email" />
+						</div>
+						<div class="product-rows__items">
+							<div class="product-rows__item product-row product-row--cart">
+								<label class="product-row__checkbox checkbox">
+									<input type="checkbox" class="checkbox__input hidden" />
+									<span class="checkbox__box"></span>
+								</label>
+								<a href="#" class="product-row__img-wrap">
+									<img src="images/dist/minicart-1.png" alt="alt" class="product-row__img img-responsive" />
+								</a>
+								<div class="product-row__info">
+									<div class="product-row__info-inner">
+										<div class="product-row__title"><a href="#">Apple iPhone 15 Pro dual-SIM 1 ТБ, «титановый белый»</a></div>
+										<div class="product-row__code-wrap">
+											<div class="product-row__code">арт: 80395827703980</div>
+										</div>
+									</div>
+								</div>
+								<select class="product-row__select-amount select">
+									<option value="1">1 шт.</option>
+								</select>
+								<p class="product-row__price">130 999 руб</p>
+								<button class="product-row__delete" type="button">
+									<svg role="img" class="product-row__delete-icon">
+										<use href="images/icons/sprite.svg#trash" />
+									</svg>
+								</button>
 							</div>
-							<div class="form-callback__col col-12">
-								<textarea class="form-callback__control control" placeholder="Ваш вопрос/пожелание"></textarea>
+							<div class="product-rows__item product-row product-row--cart product-row--stockout">
+								<label class="product-row__checkbox checkbox">
+									<input type="checkbox" class="checkbox__input hidden" />
+									<span class="checkbox__box"></span>
+								</label>
+								<a href="#" class="product-row__img-wrap">
+									<img src="images/dist/minicart-1.png" alt="alt" class="product-row__img img-responsive" />
+								</a>
+								<div class="product-row__info">
+									<div class="product-row__info-inner">
+										<div class="product-row__title"><a href="#">Apple iPhone</a></div>
+										<div class="product-row__code-wrap">
+											<div class="product-row__code">арт: 80395827703980</div>
+											<div class="product-row__stockout">закончился</div>
+										</div>
+									</div>
+								</div>
+								<select class="product-row__select-amount select">
+									<option value="1">1 шт.</option>
+								</select>
+								<p class="product-row__price">130 999 руб</p>
+								<button class="product-row__delete" type="button">
+									<svg role="img" class="product-row__delete-icon">
+										<use href="images/icons/sprite.svg#trash" />
+									</svg>
+								</button>
 							</div>
-							<div class="form-callback__col col-xxl-5 col-lg-12 col-md-5">
-								<button class="form-callback__btn btn btn--dark" type="submit">Отправить сообщение</button>
+						</div>
+					</div>
+				</div>
+				<div class="cart__section">
+					<h2 class="cart__section-title">Доставка и оплата</h2>
+					<div class="checkout-settings">
+						<div class="checkout-settings__block checkout-settings__form form-checkout-settings">
+							<div class="form-checkout-settings__row row">
+								<div class="form-checkout-settings__col form-checkout-settings__col--wider">
+									<input type="text" class="form-checkout-settings__control control" placeholder="Ваши имя и фамилия" />
+								</div>
+								<div class="form-checkout-settings__col form-checkout-settings__col--default">
+									<input type="text" class="form-checkout-settings__control control" placeholder="+7 (000) 000 00 00" />
+								</div>
+								<div class="form-checkout-settings__col form-checkout-settings__col--default">
+									<input type="text" class="form-checkout-settings__control control" placeholder="E-mail" />
+								</div>
+								<div class="form-checkout-settings__col form-checkout-settings__col--checkbox">
+									<label class="form-checkout-settings__checkbox checkbox">
+										<input type="checkbox" class="checkbox__input hidden" />
+										<span class="checkbox__box"></span>
+										<span class="checkbox__text">Перезвонить вам для подтверждения?</span>
+									</label>
+								</div>
 							</div>
-							<div class="form-callback__col col-xxl-7 col-lg-12 col-md-7">
-								<p class="form-callback__accept">
-									Нажимая кнопку, Вы соглашаетесь<br />
-									<a href="#">с условиями обработки персональных данных</a>
-								</p>
+						</div>
+						<div class="checkout-settings__block checkout-settings__delivery-method delivery-method">
+							<div class="delivery-method__title">Способ получения:</div>
+							<div class="delivery-method__checkboxes">
+								<div class="delivery-method__checkbox-wrap">
+									<label class="delivery-method__checkbox checkbox">
+										<input type="checkbox" class="checkbox__input hidden" />
+										<span class="checkbox__box"></span>
+										<span class="checkbox__text">Доставка курьером</span>
+									</label>
+									<button class="delivery-method__action" id="selectAddress" type="button">Указать адрес</button>
+								</div>
+								<div class="delivery-method__checkbox-wrap">
+									<label class="delivery-method__checkbox checkbox">
+										<input type="checkbox" class="checkbox__input hidden" />
+										<span class="checkbox__box"></span>
+										<span class="checkbox__text">Самовывоз</span>
+									</label>
+									<button class="delivery-method__action" id="selectShop" type="button">Выбрать магазин</button>
+								</div>
 							</div>
+						</div>
+						<div class="checkout-settings__block checkout-settings__payment-method payment-method">
+							<div class="payment-method__title">Способ оплаты:</div>
+							<div class="payment-method__tabs" data-tabs>
+								<div class="payment-method__btns row">
+									<div class="payment-method__btn-wrap col-md-3 col-6">
+										<button class="payment-method__btn btn btn--dark is-active" type="button" data-tabs-btn>При получении</button>
+									</div>
+									<div class="payment-method__btn-wrap col-md-3 col-6">
+										<button class="payment-method__btn btn btn--dark" type="button" data-tabs-btn>При получении</button>
+									</div>
+									<div class="payment-method__btn-wrap col-md-3 col-6">
+										<button class="payment-method__btn btn btn--dark" type="button" data-tabs-btn>При получении</button>
+									</div>
+									<div class="payment-method__btn-wrap col-md-3 col-6">
+										<button class="payment-method__btn btn btn--dark" type="button" data-tabs-btn>При получении</button>
+									</div>
+								</div>
+								<div class="payment-method__items">
+									<div class="payment-method__item is-active" data-tabs-item>
+										<div class="payment-method__message-payment message-payment">
+											<div class="message-payment__icon-wrap">
+												<img src="images/icons/wallet.svg" alt="alt" class="message-payment__icon img-responsive" />
+											</div>
+											<div class="message-payment__text">
+												Оплачивайте любым удобным для вас способом: <span class="font-semibold">наличными или банковской картой.</span> Вы можете оплатить покупку при получении
+												курьером или в нашем магазине, выбрав вариант самовывоз.
+											</div>
+										</div>
+									</div>
+									<div class="payment-method__item" data-tabs-item>
+										<div class="payment-method__message-payment message-payment">
+											<div class="message-payment__icon-wrap">
+												<img src="images/icons/card.svg" alt="alt" class="message-payment__icon img-responsive" />
+											</div>
+											<div class="message-payment__text">
+												Доступные способы онлайн-оплаты: Мир, Visa, Mastercard, СБП, SberPay, Тинькофф, ЮMoney, Яндекс Pay. Нажмите “Оплатить заказ” и выберите удобный для вас
+												способ оплаты.
+											</div>
+										</div>
+									</div>
+									<div class="payment-method__item" data-tabs-item>text</div>
+									<div class="payment-method__item" data-tabs-item>
+										<div class="payment-method__message-payment message-payment">
+											<div class="message-payment__icon-wrap">
+												<img src="images/icons/invoice.svg" alt="alt" class="message-payment__icon img-responsive" />
+											</div>
+											<div class="message-payment__text">Введите данные организации или загрузите документ с реквизитами юридического лица:</div>
+										</div>
+										<div class="payment-method__form form-payment">
+											<input type="text" class="form-payment__control control" placeholder="Введите название организации, адрес, ИНН или ОГРН" />
+											<div class="form-payment__file file">
+												<label class="file__label">
+													<input type="file" class="file__input hidden" id="file" />
+													<span class="file__inner control">
+														Перетяните файл сюда или нажмите «Загрузить файл». Допустимые форматы: jpg, png, jpeg, txt, doc, docx, pdf. Не более 25 МБ.
+													</span>
+												</label>
+												<label for="file" class="file__btn btn btn--dark">загрузить файл</label>
+											</div>
+										</div>
+										<div class="payment-method__message message">
+											<div class="message__icon-wrap">
+												<img src="images/icons/warning.svg" alt="alt" class="message__icon img-responsive" />
+											</div>
+											<div class="message__text">При данном способе оплаты прибавляется <span class="font-semibold">+15% к каждой позиции в корзине</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<label class="checkout-settings__checkbox checkbox">
+							<input type="checkbox" class="checkbox__input hidden" />
+							<span class="checkbox__box"></span>
+							<span class="checkbox__text">Я соглашаюсь с <a href="#">условиями оферты</a> и <a href="#">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="cart__col cart__col--sidebar">
+				<div class="checkout">
+					<div class="checkout__block checkout__total total-checkout">
+						<div class="total-checkout__text">2 товара на сумму 500 000 руб.</div>
+					</div>
+					<div class="checkout__block checkout__form form-checkout">
+						<div class="form-checkout__text">Стоимость доставки будет рассчитана на следующем шаге</div>
+						<p class="form-checkout__price">К оплате: 500 000 руб.</p>
+						<button class="form-checkout__btn btn btn--secondary" type="submit">Оформить заказ</button>
+					</div>
+					<form class="checkout__block checkout__promocodes promocodes">
+						<div class="promocodes__group">
+							<input type="text" class="promocodes__control control" placeholder="Есть промокод?" />
+							<button class="promocodes__btn btn btn--dark" type="submit">Применить</button>
+						</div>
+						<div class="promocodes__group">
+							<input type="text" class="promocodes__control control" placeholder="Подарочный сертификат?" />
+							<button class="promocodes__btn btn btn--dark" type="submit">Применить</button>
 						</div>
 					</form>
-				</div>
-				<div class="contacts__col col-2x-7 col-lg-6">
-					<div class="contacts__header">
-						<img src="images/dist/logo.svg" alt="alt" class="contacts__logo img-responsive" />
-						<div class="contacts__socials">
-							<a href="#" class="contacts__social contacts__social--vk">
-								<svg role="img" class="contacts__social-icon">
-									<use href="images/icons/sprite.svg#vk" />
-								</svg>
-							</a>
-							<a href="#" class="contacts__social contacts__social--tg">
-								<svg role="img" class="contacts__social-icon">
-									<use href="images/icons/sprite.svg#tg" />
-								</svg>
-							</a>
-							<a href="#" class="contacts__social contacts__social--ig">
-								<svg role="img" class="contacts__social-icon">
-									<use href="images/icons/sprite.svg#ig" />
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="contacts__text-wrap">
-						<p>«Apple God» – магазин современной техники в Москве</p>
-					</div>
-					<ul class="contacts__items list-unstyled">
-						<li>
-							<a href="#" class="contacts__item item-contact item-contact--telephone">
-								<div class="item-contact__icon-wrap">
-									<svg role="img" class="item-contact__icon">
-										<use href="images/icons/sprite.svg#telephone" />
-									</svg>
-								</div>
-								<div class="item-contact__text">+7 (495) 124 86 00</div>
-							</a>
-						</li>
-						<li>
-							<div class="contacts__item item-contact item-contact--mail">
-								<div class="item-contact__icon-wrap">
-									<svg role="img" class="item-contact__icon">
-										<use href="images/icons/sprite.svg#mail" />
-									</svg>
-								</div>
-								<div class="item-contact__text">
-									Решение вопросов по заказам: <a href="#">sales@applegod.ru</a><br />
-									По вопросам сотрудничества: <a href="#">info@applegod.ru</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="#" class="contacts__item item-contact item-contact--clock">
-								<div class="item-contact__icon-wrap">
-									<svg role="img" class="item-contact__icon">
-										<use href="images/icons/sprite.svg#clock" />
-									</svg>
-								</div>
-								<div class="item-contact__text">пн. – вс. 10:00-20:00</div>
-							</a>
-						</li>
-						<li>
-							<div class="contacts__item item-contact item-contact--location">
-								<div class="item-contact__icon-wrap">
-									<svg role="img" class="item-contact__icon">
-										<use href="images/icons/sprite.svg#location" />
-									</svg>
-								</div>
-								<div class="item-contact__text">Багратионовский проезд 7, корпус 20В. Вторая дверь в арке.</div>
-							</div>
-						</li>
-					</ul>
+					<p class="checkout__payment-type">Вы выбрали способ оплаты: <span class="font-semibold" id="paymentType">При получении</span></p>
 				</div>
 			</div>
 		</div>

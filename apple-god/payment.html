@@ -11,6 +11,7 @@
 	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
+	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -22,12 +23,12 @@
 			<nav class="top-header__menu">
 				<ul class="list-unstyled">
 					<li><a href="category.html" class="font-medium">Каталог</a></li>
-					<li><a href="#">Акции</a></li>
-					<li class="d-none d-md-block"><a href="#">Ремонт</a></li>
-					<li class="d-none d-md-block"><a href="#">Гарантия</a></li>
-					<li class="d-none d-md-block"><a href="#">Доставка</a></li>
+					<li><a href="promos.html">Акции</a></li>
+					<li class="d-none d-md-block"><a href="repair.html">Ремонт</a></li>
+					<li class="d-none d-md-block"><a href="warranty.html">Гарантия</a></li>
+					<li class="d-none d-md-block"><a href="delivery.html">Доставка</a></li>
 					<li><a href="payment.html">Оплата</a></li>
-					<li><a href="#">Реквизиты</a></li>
+					<li><a href="requisites.html">Реквизиты</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
@@ -92,18 +93,18 @@
 						<use href="images/icons/sprite.svg#user" />
 					</svg>
 				</a> -->
-				<a href="#" class="middle-header__favorite-btn favorite-btn">
+				<a href="favorites.html" class="middle-header__favorite-btn favorite-btn">
 					<svg role="img" class="favorite-btn__icon">
 						<use href="images/icons/sprite.svg#heart" />
 					</svg>
 				</a>
-				<a href="#" class="middle-header__compare-btn compare-btn">
+				<a href="compare.html" class="middle-header__compare-btn compare-btn">
 					<svg role="img" class="compare-btn__icon">
 						<use href="images/icons/sprite.svg#compare" />
 					</svg>
 				</a>
 				<div class="middle-header__minicart minicart">
-					<a href="#" class="minicart__cart-btn cart-btn">
+					<a href="cart.html" class="minicart__cart-btn cart-btn">
 						<svg role="img" class="cart-btn__icon">
 							<use href="images/icons/sprite.svg#cart" />
 						</svg>
@@ -196,58 +197,54 @@
 
 <div class="page">
 	<div class="container">
-		<div class="page__row row">
-			<div class="page__col col-12">
-				<div class="page__payment payment">
-					<div class="payment__row row">
-						<div class="payment__col col-3">
-							<div class="payment__card card-payment">
-								<img src="images/icons/wallet.svg" alt="alt" class="card-payment__icon img-responsive" />
-								<div class="card-payment__title">Наличный расчет</div>
-								<div class="card-payment__text-wrap">
-									<p>
-										Оплата наличными производится при передаче товара курьером или в магазине при самовывозе после ознакомления покупателя с товаром. Передача товарного и кассового
-										чека покупателю считается заключением договора купли-продажи.<br /><br />
-										Если при заказе доставки Вам необходима сдача с какой-либо суммы, предупредите об этом оператора.
-									</p>
-								</div>
-							</div>
+		<div class="payment">
+			<div class="payment__row row">
+				<div class="payment__col col-xxl-3 col-xl-4 col-sm-6">
+					<div class="payment__card card-payment">
+						<img src="images/icons/wallet.svg" alt="alt" class="card-payment__icon img-responsive" />
+						<div class="card-payment__title">Наличный расчет</div>
+						<div class="card-payment__text-wrap">
+							<p>
+								Оплата наличными производится при передаче товара курьером или в магазине при самовывозе после ознакомления покупателя с товаром. Передача товарного и кассового чека
+								покупателю считается заключением договора купли-продажи.<br /><br />
+								Если при заказе доставки Вам необходима сдача с какой-либо суммы, предупредите об этом оператора.
+							</p>
 						</div>
-						<div class="payment__col col-3">
-							<div class="payment__card card-payment">
-								<img src="images/icons/pay.svg" alt="alt" class="card-payment__icon img-responsive" />
-								<div class="card-payment__title">Оплата переводом на банковскую карту</div>
-								<div class="card-payment__text-wrap">
-									<p>
-										Оплата производится переводом средств на банковскую карту Тинькофф Банк;<br /><br />
-										Во избежание задержек с переводами и для быстрого подтверждения платежей, карта плательщика должна быть аналогичного банка, что и карта получателя;<br /><br />
-										При создании заказа нужно указать в комментарии к заказу “Оплата на карту”.
-									</p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="payment__col col-xxl-3 col-xl-4 col-sm-6">
+					<div class="payment__card card-payment">
+						<img src="images/icons/pay.svg" alt="alt" class="card-payment__icon img-responsive" />
+						<div class="card-payment__title">Оплата переводом на банковскую карту</div>
+						<div class="card-payment__text-wrap">
+							<p>
+								Оплата производится переводом средств на банковскую карту Тинькофф Банк;<br /><br />
+								Во избежание задержек с переводами и для быстрого подтверждения платежей, карта плательщика должна быть аналогичного банка, что и карта получателя;<br /><br />
+								При создании заказа нужно указать в комментарии к заказу “Оплата на карту”.
+							</p>
 						</div>
-						<div class="payment__col col-3">
-							<div class="payment__card card-payment">
-								<img src="images/icons/card.svg" alt="alt" class="card-payment__icon img-responsive" />
-								<div class="card-payment__title">Оплата банковскими картами</div>
-								<div class="card-payment__text-wrap">
-									<p>
-										Через терминал в нашем салоне;<br /><br />
-										Через сайт.
-									</p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="payment__col col-xxl-3 col-xl-4 col-sm-6">
+					<div class="payment__card card-payment">
+						<img src="images/icons/card.svg" alt="alt" class="card-payment__icon img-responsive" />
+						<div class="card-payment__title">Оплата банковскими картами</div>
+						<div class="card-payment__text-wrap">
+							<p>
+								Через терминал в нашем салоне;<br /><br />
+								Через сайт.
+							</p>
 						</div>
-						<div class="payment__col col-3">
-							<div class="payment__card card-payment">
-								<img src="images/icons/invoice.svg" alt="alt" class="card-payment__icon img-responsive" />
-								<div class="card-payment__title">Безналичная оплата по счету для юридических лиц</div>
-								<div class="card-payment__text-wrap">
-									<p>Оплата счета означает согласие с условиями поставки товара.</p>
-								</div>
-								<a href="#" class="card-payment__link" data-hystmodal="#modal-info">Как купить товар по безналичной оплате?</a>
-							</div>
+					</div>
+				</div>
+				<div class="payment__col col-xxl-3 col-xl-4 col-sm-6">
+					<div class="payment__card card-payment">
+						<img src="images/icons/invoice.svg" alt="alt" class="card-payment__icon img-responsive" />
+						<div class="card-payment__title">Безналичная оплата по счету для юридических лиц</div>
+						<div class="card-payment__text-wrap">
+							<p>Оплата счета означает согласие с условиями поставки товара.</p>
 						</div>
+						<a href="#" class="card-payment__link" data-hystmodal="#modal-info">Как купить товар по безналичной оплате?</a>
 					</div>
 				</div>
 			</div>
@@ -435,6 +432,8 @@
 <script src="libs/splide/splide.min.js"></script>
 <script src="libs/hystmodal/hystmodal.min.js"></script>
 <script src="libs/enquire.min.js"></script>
+<script src="libs/nouislider/nouislider.min.js"></script>
+<script src="libs/slide-element.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
