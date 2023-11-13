@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
 	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -409,15 +410,17 @@
 										</div>
 										<div class="payment-method__form form-payment">
 											<input type="text" class="form-payment__control control" placeholder="Введите название организации, адрес, ИНН или ОГРН" />
-											<div class="form-payment__file file">
-												<label class="file__label">
-													<input type="file" class="file__input hidden" id="file" />
-													<span class="file__inner control">
-														Перетяните файл сюда или нажмите «Загрузить файл». Допустимые форматы: jpg, png, jpeg, txt, doc, docx, pdf. Не более 25 МБ.
+											<form class="form-payment__file file" id="drop-area">
+												<input type="file" class="file__input hidden" id="file" accept=".jpg, .png, .jpeg, .txt, .doc, .docx, .pdf" />
+												<div class="file__inner">
+													<span class="file__text">
+														<span class="d-none d-lg-inline">Перетяните файл сюда или нажмите «Загрузить файл».</span> Допустимые форматы: jpg, png, jpeg, txt, doc, docx,
+														pdf. Не более 25 МБ.
 													</span>
-												</label>
-												<label for="file" class="file__btn btn btn--dark">загрузить файл</label>
-											</div>
+													<label for="file" class="file__btn btn btn--dark">загрузить файл</label>
+												</div>
+												<progress class="file__progress" id="progress-bar" max="100" value="0"></progress>
+											</form>
 										</div>
 										<div class="payment-method__message message">
 											<div class="message__icon-wrap">
@@ -628,6 +631,7 @@
 <script src="libs/enquire.min.js"></script>
 <script src="libs/nouislider/nouislider.min.js"></script>
 <script src="libs/slide-element.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>

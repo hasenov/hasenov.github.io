@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
 	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -198,7 +199,7 @@
 <div class="page">
 	<div class="container">
 		<div class="compare">
-			<div class="compare__row row">
+			<div class="compare__row">
 				<div class="compare__col compare__col--title">
 					<h1 class="compare__title h2">Сравнение товаров <span class="font-normal color-gray">(5)</span></h1>
 				</div>
@@ -214,7 +215,7 @@
 													<use href="images/icons/sprite.svg#close" />
 												</svg>
 											</button>
-											<div class="item-compare__card card-product">
+											<div class="item-compare__card card-product is-added-to-cart">
 												<a href="product.html" class="card-product__img-wrap">
 													<img
 														src="images/dist/card-2-1x.png"
@@ -288,7 +289,7 @@
 																</svg>
 																В корзине
 															</button>
-															<button class="card-product__favorite btn btn--light" type="button">
+															<button class="card-product__favorite btn btn--light is-active" type="button">
 																<svg role="img" class="btn__icon">
 																	<use href="images/icons/sprite.svg#heart" />
 																</svg>
@@ -408,29 +409,405 @@
 						</div>
 					</div>
 				</div>
-				<div class="compare__col col-12">
-					<table class="compare__table table-details">
-						<tr>
-							<td>
-								<div class="table-details__btns">
-									<button class="table-details__btn btn btn--dark" type="button">Все характеристики</button>
-									<button class="table-details__btn btn btn--dark" type="button">Только различия</button>
+			</div>
+			<div class="compare__table compare-table">
+				<div class="compare-table__btns-wrap">
+					<div class="compare-table__btns">
+						<button class="compare-table__btn btn btn--dark" type="button">Все характеристики</button>
+						<button class="compare-table__btn btn btn--dark" type="button">Только различия</button>
+					</div>
+				</div>
+				<div class="compare-table__heading">
+					<div>Комплектация</div>
+				</div>
+				<div class="compare-table__mobile-title">Аккумулятор</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Аккумулятор</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 4000, несъемный</div>
 								</div>
-							</td>
-						</tr>
-						<tr class="table-details__heading">
-							<th>Комплектация</th>
-						</tr>
-						<tr>
-							<th>Зарядка</th>
-						</tr>
-						<tr class="table-details__heading">
-							<th>Дисплей</th>
-						</tr>
-						<tr>
-							<th>Диагональ</th>
-						</tr>
-					</table>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 6000, съемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 3000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 5000, несъемный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title">Аккумулятор</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Аккумулятор</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 4000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 6000, съемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 3000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 5000, несъемный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title">Аккумулятор</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Аккумулятор</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 4000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 6000, съемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 3000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 5000, несъемный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title">Аккумулятор</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Аккумулятор</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 4000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 6000, съемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 3000, несъемный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Li-Ion, 5000, несъемный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__heading">
+					<div>Цвет</div>
+				</div>
+				<div class="compare-table__mobile-title">Цвет</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Цвет</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Черный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Красный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Красный</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">Черный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__heading">
+					<div>Дисплей</div>
+				</div>
+				<div class="compare-table__mobile-title">Диагональ</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Диагональ</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title">Диагональ</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Диагональ</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title">Диагональ</div>
+				<div class="compare-table__row">
+					<div class="compare-table__title">Диагональ</div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">15</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">13</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">14</div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell">12</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__heading">
+					<div>Операционная система</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__heading">
+					<div>Процессор и память</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__heading">
+					<div>Дополнительно</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="compare-table__mobile-title"></div>
+				<div class="compare-table__row">
+					<div class="compare-table__title"></div>
+					<div class="compare-table__slider slider-compare-table splide">
+						<div class="slider-compare-table__track splide__track">
+							<div class="slider-compare-table__list splide__list">
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+								<div class="slider-compare-table__slide splide__slide">
+									<div class="compare-table__cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -601,6 +978,7 @@
 <script src="libs/enquire.min.js"></script>
 <script src="libs/nouislider/nouislider.min.js"></script>
 <script src="libs/slide-element.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>

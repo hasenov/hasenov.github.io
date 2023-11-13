@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="libs/splide/splide-core.min.css">
 	<link rel="stylesheet" href="libs/hystmodal/hystmodal.min.css">
 	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="libs/glightbox/glightbox.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -200,8 +201,8 @@
 									</div>
 									<div class="item-showcase__img-wrap">
 										<img
-											src="images/dist/showcase-1x.png"
-											srcset="images/dist/showcase-1x.png 1x, images/dist/showcase-2x.png 2x"
+											src="images/dist/showcase-1x.jpg"
+											srcset="images/dist/showcase-1x.jpg 1x, images/dist/showcase-2x.jpg 2x"
 											alt="alt"
 											class="item-showcase__img img-responsive"
 											loading="lazy"
@@ -222,8 +223,8 @@
 									</div>
 									<div class="item-showcase__img-wrap">
 										<img
-											src="images/dist/showcase-1x.png"
-											srcset="images/dist/showcase-1x.png 1x, images/dist/showcase-2x.png 2x"
+											src="images/dist/showcase-1x.jpg"
+											srcset="images/dist/showcase-1x.jpg 1x, images/dist/showcase-2x.jpg 2x"
 											alt="alt"
 											class="item-showcase__img img-responsive"
 											loading="lazy"
@@ -244,8 +245,8 @@
 									</div>
 									<div class="item-showcase__img-wrap">
 										<img
-											src="images/dist/showcase-1x.png"
-											srcset="images/dist/showcase-1x.png 1x, images/dist/showcase-2x.png 2x"
+											src="images/dist/showcase-1x.jpg"
+											srcset="images/dist/showcase-1x.jpg 1x, images/dist/showcase-2x.jpg 2x"
 											alt="alt"
 											class="item-showcase__img img-responsive"
 											loading="lazy"
@@ -495,7 +496,11 @@
 		<div class="cases">
 			<div class="cases__row row">
 				<div class="cases__col col-xl-6">
-					<div class="cases__item item-cases" style="background-image: url(images/dist/case-1.jpg)">
+					<div class="cases__item item-cases">
+						<picture>
+							<source srcset="images/dist/case-1-mob.jpg" media="(max-width: 575.98px)" />
+							<img src="images/dist/case-1.jpg" class="item-cases__bg" alt="alt" />
+						</picture>
 						<div class="item-cases__title"><a href="#">Всё для учебы</a></div>
 						<div class="item-cases__footer">
 							<a href="#" class="item-cases__btn btn btn--accent btn--pill btn--white-shadow">Купить</a>
@@ -503,7 +508,11 @@
 					</div>
 				</div>
 				<div class="cases__col col-xl-6">
-					<div class="cases__item item-cases" style="background-image: url(images/dist/case-2.jpg)">
+					<div class="cases__item item-cases">
+						<picture>
+							<source srcset="images/dist/case-2-mob.jpg" media="(max-width: 575.98px)" />
+							<img src="images/dist/case-2.jpg" class="item-cases__bg" alt="alt" />
+						</picture>
 						<div class="item-cases__title"><a href="#">Товары для вашего настроения</a></div>
 						<div class="item-cases__footer">
 							<a href="#" class="item-cases__btn btn btn--accent btn--pill btn--white-shadow">Купить</a>
@@ -511,7 +520,11 @@
 					</div>
 				</div>
 				<div class="cases__col col-xl-6">
-					<div class="cases__item item-cases" style="background-image: url(images/dist/case-3.jpg)">
+					<div class="cases__item item-cases">
+						<picture>
+							<source srcset="images/dist/case-3-mob.jpg" media="(max-width: 575.98px)" />
+							<img src="images/dist/case-3.jpg" class="item-cases__bg" alt="alt" />
+						</picture>
 						<div class="item-cases__title"><a href="#">Твой яркий выходной</a></div>
 						<div class="item-cases__footer">
 							<a href="#" class="item-cases__btn btn btn--accent btn--pill btn--white-shadow">Купить</a>
@@ -519,7 +532,11 @@
 					</div>
 				</div>
 				<div class="cases__col col-xl-6">
-					<div class="cases__item item-cases" style="background-image: url(images/dist/case-4.jpg)">
+					<div class="cases__item item-cases">
+						<picture>
+							<source srcset="images/dist/case-4-mob.jpg" media="(max-width: 575.98px)" />
+							<img src="images/dist/case-4.jpg" class="item-cases__bg" alt="alt" />
+						</picture>
 						<div class="item-cases__title"><a href="#">Всё для идеального утра</a></div>
 						<div class="item-cases__footer">
 							<a href="#" class="item-cases__btn btn btn--accent btn--pill btn--white-shadow">Купить</a>
@@ -772,6 +789,7 @@
 <script src="libs/enquire.min.js"></script>
 <script src="libs/nouislider/nouislider.min.js"></script>
 <script src="libs/slide-element.min.js"></script>
+<script src="libs/glightbox/glightbox.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
