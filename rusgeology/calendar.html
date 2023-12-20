@@ -15,7 +15,6 @@
 	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 	
 	<link rel="stylesheet" href="libs/priority/priority-nav-core.css">
-	<link rel="stylesheet" href="libs/flatpickr/flatpickr.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -87,218 +86,124 @@
 				</nav>
 			</div>
 			<div class="page__col page__col--main">
-				<div class="events-items">
-					<div class="events-items__row row">
-						<div class="events-items__col col-lg-4 col-sm-6">
-							<div class="events-items__item item-event">
-								<div class="item-event__info">Событие через <span class="color-accent">02 дня</span></div>
-								<div class="item-event__text-wrap">
-									<p>Запуск производства собственного оборудования для разведки океанского дна Марианской впадины</p>
-								</div>
-								<div class="item-event__footer">
-									<div class="item-event__date-wrap">
-										<svg class="item-event__icon" role="img">
-											<use href="images/icons/sprite.svg#clock" />
-										</svg>
-										<div class="item-event__date">22.01.2024</div>
-									</div>
-									<button class="item-event__action" type="button">
-										<svg class="item-event__action-icon" role="img">
-											<use href="images/icons/sprite.svg#calendar-add" />
-										</svg>
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="events-items__col col-lg-4 col-sm-6">
-							<div class="events-items__item item-event">
-								<div class="item-event__info">Событие через <span class="color-accent">02 дня</span></div>
-								<div class="item-event__text-wrap">
-									<p>Запуск производства собственного оборудования для разведки океанского дна Марианской впадины</p>
-								</div>
-								<div class="item-event__footer">
-									<div class="item-event__date-wrap">
-										<svg class="item-event__icon" role="img">
-											<use href="images/icons/sprite.svg#clock" />
-										</svg>
-										<div class="item-event__date">22.01.2024</div>
-									</div>
-									<button class="item-event__action" type="button">
-										<svg class="item-event__action-icon" role="img">
-											<use href="images/icons/sprite.svg#calendar-add" />
-										</svg>
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="events-items__col col-lg-4 col-sm-6">
-							<div class="events-items__item item-event">
-								<div class="item-event__info">Событие через <span class="color-accent">02 дня</span></div>
-								<div class="item-event__text-wrap">
-									<p>Запуск производства собственного оборудования для разведки океанского дна Марианской впадины</p>
-								</div>
-								<div class="item-event__footer">
-									<div class="item-event__date-wrap">
-										<svg class="item-event__icon" role="img">
-											<use href="images/icons/sprite.svg#clock" />
-										</svg>
-										<div class="item-event__date">22.01.2024</div>
-									</div>
-									<button class="item-event__action" type="button">
-										<svg class="item-event__action-icon" role="img">
-											<use href="images/icons/sprite.svg#calendar-add" />
-										</svg>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="calendar-block">
-					<div class="calendar-block__row row">
-						<div class="calendar-block__col col-md-4">
-							<div class="calendar-block__datepicker datepicker">
-								<input type="text" class="datepicker__input hidden" />
-							</div>
-							<div class="calendar-block__btns">
-								<button class="calendar-block__btn btn has-icon-left" type="button">
-									<svg class="btn__icon" role="img">
-										<use href="images/icons/sprite.svg#home" />
+				<div class="calendar">
+					<form class="calendar__filter">
+						<div class="calendar__filter-col">
+							<div class="calendar__select js-custom-select custom-select">
+								<input type="text" class="js-custom-select__input hidden" name="year" />
+								<div class="js-custom-select__btn custom-select__btn">
+									<svg class="custom-select__icon" role="img">
+										<use href="images/icons/sprite.svg#calendar-alt" />
 									</svg>
-									Показать сегодня
-								</button>
-								<button class="calendar-block__btn btn has-icon-left" type="button" id="resetCalendar">
-									<svg class="btn__icon" role="img">
-										<use href="images/icons/sprite.svg#trash" />
-									</svg>
-									Сбросить фильтр
-								</button>
+									<span class="js-custom-select__placeholder custom-select__placeholder">2023 год</span>
+									<img src="images/icons/arrow-down.svg" alt="alt" class="custom-select__arrow img-responsive" />
+								</div>
+								<div class="js-custom-select__options custom-select__options">
+									<div class="js-custom-select__option custom-select__option" data-value="2023">2023 год</div>
+									<div class="js-custom-select__option custom-select__option" data-value="2024">2024 год</div>
+								</div>
 							</div>
 						</div>
-						<div class="calendar-block__col col-md-8">
-							<div class="events-cards">
-								<div class="events-cards__cards">
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#clock" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p>Собрание совета дерикторов</p>
-										</div>
-										<button class="card-event__action" type="button">
-											<svg class="card-event__action-icon" role="img">
-												<use href="images/icons/sprite.svg#calendar-add" />
-											</svg>
-										</button>
+					</form>
+					<div class="calendar__sections">
+						<div class="calendar__section">
+							<h3 class="calendar__title">I квартал</h3>
+							<div class="calendar__cards">
+								<div class="calendar__card card-event">
+									<div class="card-event__date-wrap">
+										<svg class="card-event__icon" role="img">
+											<use href="images/icons/sprite.svg#clock" />
+										</svg>
+										<div class="card-event__date">10.01.2023</div>
 									</div>
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#clock" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p>Начало торговли на Мос Бирже</p>
-										</div>
-										<button class="card-event__action" type="button">
-											<svg class="card-event__action-icon" role="img">
-												<use href="images/icons/sprite.svg#calendar-add" />
-											</svg>
-										</button>
+									<div class="card-event__text-wrap">
+										<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 10 декабря 2023г.</p>
 									</div>
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#clock" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p>Сообщение о проведении внеочередного общего собрания акционеров</p>
-										</div>
-										<button class="card-event__action" type="button">
-											<svg class="card-event__action-icon" role="img">
-												<use href="images/icons/sprite.svg#calendar-add" />
-											</svg>
-										</button>
-									</div>
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#clock" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 22 июня 2021г.</p>
-										</div>
-										<button class="card-event__action" type="button">
-											<svg class="card-event__action-icon" role="img">
-												<use href="images/icons/sprite.svg#calendar-add" />
-											</svg>
-										</button>
-									</div>
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#clock" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p><span class="color-accent">Сегодня ничего не запланировано</span></p>
-										</div>
-									</div>
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#check" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 22 июня 2021г.</p>
-										</div>
-									</div>
-									<div class="events-cards__card card-event">
-										<div class="card-event__date-wrap">
-											<svg class="card-event__icon" role="img">
-												<use href="images/icons/sprite.svg#check" />
-											</svg>
-											<div class="card-event__date">22.10.2021</div>
-										</div>
-										<div class="card-event__text-wrap">
-											<p>Публикация финансовых результатов за 1 кв. 2021г.</p>
-										</div>
-									</div>
+									<button class="card-event__action" type="button">
+										<svg class="card-event__action-icon" role="img">
+											<use href="images/icons/sprite.svg#calendar-add" />
+										</svg>
+									</button>
 								</div>
-								<nav class="events-cards__pagination pagination">
-									<ul class="pagination__list list-unstyled">
-										<!-- <li class="pagination__item">
-											<a href="#" class="pagination__link">
-												<svg class="pagination__arrow" role="img">
-													<use href="images/icons/sprite.svg#chevron-left" />
-												</svg>
-											</a>
-										</li> -->
-										<li class="pagination__item is-active"><a href="#" class="pagination__link">1</a></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-										<li class="pagination__item">...</li>
-										<li class="pagination__item"><a href="#" class="pagination__link">22</a></li>
-										<li class="pagination__item">
-											<a href="#" class="pagination__link">
-												<svg class="pagination__arrow" role="img">
-													<use href="images/icons/sprite.svg#chevron-right" />
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</nav>
+							</div>
+						</div>
+						<div class="calendar__section">
+							<h3 class="calendar__title">II квартал</h3>
+							<div class="calendar__cards">
+								<div class="calendar__card card-event">
+									<div class="card-event__date-wrap">
+										<svg class="card-event__icon" role="img">
+											<use href="images/icons/sprite.svg#clock" />
+										</svg>
+										<div class="card-event__date">25.04.2023</div>
+									</div>
+									<div class="card-event__text-wrap">
+										<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 10 декабря 2023г.</p>
+									</div>
+									<button class="card-event__action" type="button">
+										<svg class="card-event__action-icon" role="img">
+											<use href="images/icons/sprite.svg#calendar-add" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="calendar__section">
+							<h3 class="calendar__title">III квартал</h3>
+							<div class="calendar__cards">
+								<div class="calendar__card card-event">
+									<div class="card-event__date-wrap">
+										<svg class="card-event__icon" role="img">
+											<use href="images/icons/sprite.svg#clock" />
+										</svg>
+										<div class="card-event__date">05.07.2023</div>
+									</div>
+									<div class="card-event__text-wrap">
+										<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 10 декабря 2023г.</p>
+									</div>
+									<button class="card-event__action" type="button">
+										<svg class="card-event__action-icon" role="img">
+											<use href="images/icons/sprite.svg#calendar-add" />
+										</svg>
+									</button>
+								</div>
+								<div class="calendar__card card-event">
+									<div class="card-event__date-wrap">
+										<svg class="card-event__icon" role="img">
+											<use href="images/icons/sprite.svg#clock" />
+										</svg>
+										<div class="card-event__date">14.08.2023</div>
+									</div>
+									<div class="card-event__text-wrap">
+										<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 10 декабря 2023г.</p>
+									</div>
+									<button class="card-event__action" type="button">
+										<svg class="card-event__action-icon" role="img">
+											<use href="images/icons/sprite.svg#calendar-add" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="calendar__section">
+							<h3 class="calendar__title">iV квартал</h3>
+							<div class="calendar__cards">
+								<div class="calendar__card card-event">
+									<div class="card-event__date-wrap">
+										<svg class="card-event__icon" role="img">
+											<use href="images/icons/sprite.svg#clock" />
+										</svg>
+										<div class="card-event__date">27.12.2023</div>
+									</div>
+									<div class="card-event__text-wrap">
+										<p>Отчет об итогах голосования на внеочередном общем собрании акционеров 10 декабря 2023г.</p>
+									</div>
+									<button class="card-event__action" type="button">
+										<svg class="card-event__action-icon" role="img">
+											<use href="images/icons/sprite.svg#calendar-add" />
+										</svg>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -454,8 +359,6 @@
 <script src="libs/svg4everybody.min.js"></script>
 <script src="libs/enquire.min.js"></script>
 <script src="libs/priority/priority-nav.min.js"></script>
-<script src="libs/flatpickr/flatpickr.js"></script>
-<script src="libs/flatpickr/ru.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
