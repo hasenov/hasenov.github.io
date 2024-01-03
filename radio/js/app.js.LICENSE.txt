@@ -8,13 +8,6 @@
  * Released under the MIT license.
  */
 
-/*!
- * Splide.js
- * Version  : 4.1.4
- * License  : MIT
- * Copyright: 2022 Naotoshi Fujita
- */
-
 /*! ./functions */
 
 /*! ./range-slider.css */
