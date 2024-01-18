@@ -1,0 +1,151 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description" content="описание" />
+  <meta name="keywords" content="keyword" />
+  <meta name="theme-color" content="#1F1F1F" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" srcset="images/logo.png 1x, images/logo-2x.png 2x" alt="alt" class="img-responsive" />
+      </a>
+      <form class="header__search search">
+        <button class="search__btn" type="button">
+          <svg role="img" class="search__btn-icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+        <div class="search__group">
+          <input type="text" class="search__control" placeholder="Поиск среди тысячи учебников" />
+          <button class="search__submit" type="submit">
+            <svg role="img" class="search__submit-icon">
+              <use href="images/icons/sprite.svg#search" />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <a href="#" class="header__user-link user-link">
+        <div class="user-link__username">Никнейм</div>
+        <div class="user-link__avatar avatar is-active">
+          <svg role="img" class="avatar__icon">
+            <use href="images/icons/sprite.svg#user" />
+          </svg>
+          <div class="avatar__premium-badge premium-badge">
+            <svg role="img" class="premium-badge__icon">
+              <use href="images/icons/sprite.svg#crown" />
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+
+  <div class="page-centered">
+    <div class="page-centered__container container">
+      <form class="disable-premium">
+        <img src="images/crown-switcher.png" srcset="images/crown-switcher.png 1x, images/crown-switcher-2x.png 2x" alt="alt" class="disable-premium__img img-responsive" />
+        <h1 class="disable-premium__title">Отключение премиум подписки</h1>
+        <div class="disable-premium__text-wrap">
+          <p>
+            Если вы желаете отключить премиум подписку, то подтвердите пожалуйста действие, нажав на кнопку<br />
+            «Отключить подписку»
+          </p>
+        </div>
+        <div class="disable-premium__btns">
+          <button class="disable-premium__disable btn btn--accent" type="submit">Отключить подписку</button>
+          <a href="#" class="disable-premium__keep btn btn--ghost">Оставить подписку</a>
+        </div>
+        <p class="disable-premium__accept">
+          После нажатия на кнопку "Отключить подписку", автоматический платёж в приложении будет отключен, а премиум подписка продолжит работать до конца
+          действующего периода.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__row row">
+          <div class="footer__col footer__col--content col-md-6">
+            <img src="images/logo-white.png" srcset="images/logo-white.png 1x, images/logo-white-2x.png 2x" alt="alt" class="footer__logo img-responsive" loading="lazy" />
+            <div class="footer__text-wrap">
+              <p>Готовые домашние задания с пояснениями и подсказками от преподавателей-практиков</p>
+            </div>
+            <div class="footer__mobile-download mobile-download">
+              <div class="mobile-download__title">Скачайте наше мобильное приложение в <span>AppGallery</span> или <span>RuStore</span></div>
+              <div class="mobile-download__items">
+                <a href="#" class="mobile-download__item">
+                  <img src="images/appgallery.png" alt="alt" class="mobile-download__img img-responsive" loading="lazy" />
+                </a>
+                <a href="#" class="mobile-download__item">
+                  <img src="images/rustore.png" alt="alt" class="mobile-download__img img-responsive" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <ul class="footer__links list-unstyled">
+              <li><a href="#">Соглашение на обработку персональных данных</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--menu col-md-4 offset-md-2">
+            <nav class="footer__menu menu-footer">
+              <div class="menu-footer__title">Меню</div>
+              <ul class="menu-footer__list list-unstyled">
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Эксперты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Правообладателям</a></li>
+                <li><a href="#">Нашли ошибку?</a></li>
+                <li><a href="#">Справочный материал</a></li>
+              </ul>
+            </nav>
+            <div class="footer__socials-wrap">
+              <div class="footer__socials socials-footer">
+                <div class="socials-footer__title">Мы в соц. сетях:</div>
+                <div class="socials-footer__items">
+                  <a href="#" class="socials-footer__item">
+                    <img src="images/icons/vk.svg" alt="alt" class="socials-footer__icon img-responsive" loading="lazy" />
+                  </a>
+                  <a href="#" class="socials-footer__item">
+                    <img src="images/icons/tg.svg" alt="alt" class="socials-footer__icon img-responsive" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__row row">
+          <div class="footer__col col-sm-8 col-10">
+            <p class="footer__copyright">© GDZ-raketa - готовые домашние задания с 2018 года.</p>
+          </div>
+          <div class="footer__col footer__col--contacts col-4">
+            <div class="footer__contacts">
+              <a href="#" class="footer__contact">admin@gdz-raketa.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
