@@ -1,0 +1,656 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#307EE6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <form class="header__search search-header js-search-container">
+        <button class="search-header__btn" type="button">
+          <svg role="img" class="search-header__btn-icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+        <div class="search-header__menu">
+          <button class="search-header__close close" type="button">
+            <svg role="img" class="close__icon">
+              <use href="images/icons/sprite.svg#close" />
+            </svg>
+          </button>
+          <div class="search-header__group">
+            <button class="search-header__submit" type="submit">
+              <svg role="img" class="search-header__submit-icon">
+                <use href="images/icons/sprite.svg#search" />
+              </svg>
+            </button>
+            <input type="text" class="search-header__control control" placeholder="Поиск" data-placeholder-pc="Поиск по ОГРН, ОГРНИП, ИНН, названию или ФИО" />
+          </div>
+          <div class="search-header__results search-results">
+            <div class="search-results__triangle"></div>
+            <div class="search-results__items">
+              <div class="search-results__item">
+                <a href="#" class="item-search">
+                  <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                  <div class="item-search__details">
+                    <div class="item-search__detail detail-item-search">
+                      <svg role="img" class="detail-item-search__icon">
+                        <use href="images/icons/sprite.svg#crown" />
+                      </svg>
+                      <div class="detail-item-search__content">
+                        <div class="detail-item-search__title">Генеральный директор:</div>
+                        <div class="detail-item-search__text">Петров Степан Иванович</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-search__infos">
+                    <div class="item-search__info">ОГРН 1141650021523</div>
+                    <div class="item-search__info">ИНН 1650297664</div>
+                  </div>
+                </a>
+              </div>
+              <div class="search-results__item">
+                <a href="#" class="item-search">
+                  <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                  <div class="item-search__details">
+                    <div class="item-search__detail detail-item-search">
+                      <svg role="img" class="detail-item-search__icon">
+                        <use href="images/icons/sprite.svg#crown" />
+                      </svg>
+                      <div class="detail-item-search__content">
+                        <div class="detail-item-search__title">Генеральный директор:</div>
+                        <div class="detail-item-search__text">Петров Степан Иванович</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-search__infos">
+                    <div class="item-search__info">ОГРН 1141650021523</div>
+                    <div class="item-search__info">ИНН 1650297664</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="search-results__btn btn btn--light">показать все результаты</a>
+          </div>
+        </div>
+      </form>
+      <nav class="header__menu menu">
+        <button class="menu__close close" type="button">
+          <svg role="img" class="close__icon">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <ul class="menu__list list-unstyled">
+          <li class="is-active"><a href="#">Организации</a></li>
+          <li><a href="#">ИП</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">Источники данных</a></li>
+        </ul>
+        <img src="images/menu-img.svg" alt="alt" class="menu__img" />
+      </nav>
+      <button class="header__hamburger" type="button">
+        <img src="images/icons/burger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
+      </button>
+    </div>
+  </header>
+
+
+  <div class="page page--home">
+    <div class="banner">
+      <div class="banner__inner">
+        <div class="banner__container container">
+          <div class="banner__row row">
+            <div class="banner__col banner__col--img">
+              <picture>
+                <source srcset="images/showcase-1.svg" media="(min-width: 992px)" />
+                <img src="images/showcase-1-mob.svg" alt="alt" class="banner__img img-responsive" />
+              </picture>
+            </div>
+            <div class="banner__col banner__col--content">
+              <div class="banner__content">
+                <h1 class="banner__title">Сервис проверки организаций и ИП</h1>
+                <div class="banner__text-wrap">
+                  <p>
+                    Проверка контрагентов и конкурентов по государственным базам данных. Только актуальная информация с ежедневным обновлением.
+                  </p>
+                </div>
+                <div class="banner__splash splash">
+                  <div class="splash__text">Абсолютно бесплатно!</div>
+                </div>
+              </div>
+            </div>
+            <div class="banner__col col-12">
+              <form class="banner__search search-banner js-search-container">
+                <div class="search-banner__menu">
+                  <div class="search-banner__group">
+                    <button class="search-banner__submit" type="submit">
+                      <svg role="img" class="search-banner__submit-icon">
+                        <use href="images/icons/sprite.svg#search" />
+                      </svg>
+                    </button>
+                    <input type="text" class="search-banner__control control" placeholder="Поиск" data-placeholder-pc="Поиск по ОГРН, ОГРНИП, ИНН, названию или ФИО" />
+                  </div>
+                  <div class="search-banner__results search-results">
+                    <div class="search-results__triangle"></div>
+                    <div class="search-results__items">
+                      <div class="search-results__item">
+                        <a href="#" class="item-search">
+                          <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                          <div class="item-search__details">
+                            <div class="item-search__detail detail-item-search">
+                              <svg role="img" class="detail-item-search__icon">
+                                <use href="images/icons/sprite.svg#crown" />
+                              </svg>
+                              <div class="detail-item-search__content">
+                                <div class="detail-item-search__title">Генеральный директор:</div>
+                                <div class="detail-item-search__text">Петров Степан Иванович</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-search__infos">
+                            <div class="item-search__info">ОГРН 1141650021523</div>
+                            <div class="item-search__info">ИНН 1650297664</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="search-results__item">
+                        <a href="#" class="item-search">
+                          <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                          <div class="item-search__details">
+                            <div class="item-search__detail detail-item-search">
+                              <svg role="img" class="detail-item-search__icon">
+                                <use href="images/icons/sprite.svg#crown" />
+                              </svg>
+                              <div class="detail-item-search__content">
+                                <div class="detail-item-search__title">Генеральный директор:</div>
+                                <div class="detail-item-search__text">Петров Степан Иванович</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-search__infos">
+                            <div class="item-search__info">ОГРН 1141650021523</div>
+                            <div class="item-search__info">ИНН 1650297664</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <a href="#" class="search-results__btn btn btn--light">показать все результаты</a>
+                  </div>
+                </div>
+                <img src="images/showcase-2.svg" alt="alt" class="search-banner__img img-responsive" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page__content">
+      <section class="section-slider-services">
+        <div class="container">
+          <div class="slider-services slider splide">
+            <div class="slider__header">
+              <div class="slider__row row">
+                <div class="slider__col slider__col--nav">
+                  <div class="slider__nav">
+                    <div class="slider__pagination-wrap">
+                      <ul class="slider__pagination splide__pagination list-unstyled"></ul>
+                    </div>
+                    <div class="slider__arrows splide__arrows">
+                      <button class="slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+                        <svg role="img">
+                          <use href="images/icons/sprite.svg#arrow-left" />
+                        </svg>
+                      </button>
+                      <button class="slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+                        <svg role="img">
+                          <use href="images/icons/sprite.svg#arrow-right" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-services__track slider__track splide__track">
+              <div class="slider-services__list slider__list splide__list">
+                <div class="slider-services__slide slider__slide splide__slide">
+                  <div class="card-service">
+                    <div class="card-service__body">
+                      <div class="card-service__title h3">
+                        Информация<br />
+                        о контрагенте
+                      </div>
+                      <div class="card-service__text-wrap">
+                        <p>Получите все необходимые сведения на одной странице из 10 государственных источников данных.</p>
+                      </div>
+                    </div>
+                    <img src="images/card-service-1.svg" alt="alt" class="card-service__img img-responsive" />
+                  </div>
+                </div>
+                <div class="slider-services__slide slider__slide splide__slide">
+                  <div class="card-service">
+                    <div class="card-service__body">
+                      <div class="card-service__title h3">
+                        Проверка<br />
+                        связей
+                      </div>
+                      <div class="card-service__text-wrap">
+                        <p>Проверьте аффилированность лиц между компаниями, ИП и учредителями. Стройте связи на интерактивном графике.</p>
+                      </div>
+                    </div>
+                    <img src="images/card-service-2.svg" alt="alt" class="card-service__img img-responsive" />
+                  </div>
+                </div>
+                <div class="slider-services__slide slider__slide splide__slide">
+                  <div class="card-service">
+                    <div class="card-service__body">
+                      <div class="card-service__title h3">
+                        Финансовая<br />
+                        отчётность
+                      </div>
+                      <div class="card-service__text-wrap">
+                        <p>Узнайте обо всех доходах и расходах выбранной компании, а также суммах уплаченных налогов.</p>
+                      </div>
+                    </div>
+                    <img src="images/card-service-3.svg" alt="alt" class="card-service__img img-responsive" />
+                  </div>
+                </div>
+                <div class="slider-services__slide slider__slide splide__slide">
+                  <div class="card-service">
+                    <div class="card-service__body">
+                      <div class="card-service__title h3">
+                        Подбор<br />
+                        контрагентов
+                      </div>
+                      <div class="card-service__text-wrap">
+                        <p>Найдите интересующие вас организации по региону, виду деятельности и другим параметрам.</p>
+                      </div>
+                    </div>
+                    <img src="images/card-service-4.svg" alt="alt" class="card-service__img img-responsive" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-slider-sources">
+        <div class="container">
+          <div class="slider-sources slider splide">
+            <div class="slider__header">
+              <div class="slider__row row">
+                <div class="slider__col slider__col--title col-lg-3">
+                  <h2 class="slider__title">
+                    Источники<br class="br-lg" />
+                    данных
+                  </h2>
+                </div>
+                <div class="slider__col slider__col--text">
+                  <div class="slider__text-wrap">
+                    <p>
+                      Мы собираем и агрегируем информацию из 10 официальных источников данных. Все информация является полной и актуальной,
+                      данные синхронизируются с государственными базами данных ежедневно, в автоматическом режиме.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__col slider__col--nav">
+                  <div class="slider__nav">
+                    <div class="slider__pagination-wrap">
+                      <ul class="slider__pagination splide__pagination list-unstyled"></ul>
+                    </div>
+                    <div class="slider__arrows splide__arrows">
+                      <button class="slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+                        <svg role="img">
+                          <use href="images/icons/sprite.svg#arrow-left" />
+                        </svg>
+                      </button>
+                      <button class="slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+                        <svg role="img">
+                          <use href="images/icons/sprite.svg#arrow-right" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-sources__track slider__track splide__track">
+              <div class="slider-sources__list slider__list splide__list">
+                <div class="slider-sources__slide slider__slide splide__slide">
+                  <div class="card-source">
+                    <div class="card-source__header">
+                      <div class="card-source__img-wrap">
+                        <img src="images/source-1.png" srcset="images/source-1.png 1x, images/source-1-2x.png 2x" alt="alt" class="card-source__img img-responsive" />
+                      </div>
+                      <a href="#" class="card-source__website">nalog.gov.ru</a>
+                    </div>
+                    <div class="card-source__body">
+                      <div class="card-source__title h3">ФНС</div>
+                      <div class="card-source__text-wrap">
+                        <p>
+                          Федеральный орган исполнительной власти РФ по контролю и надзору за соблюдением законодательства о налогах и
+                          сборах.
+                        </p>
+                      </div>
+                      <div class="card-source__tags">
+                        <span class="card-source__tags-title">Данные:</span> EГРЮЛ, Доходы и расходы и
+                        <div class="card-source__dropdown-wrap" data-popper data-popper-outside>
+                          <button class="card-source__dropdown-toggle link link--dashed" type="button" data-popper-btn>ещё 4</button>
+                          <div class="card-source__dropdown dropdown dropdown--has-border" data-popper-menu>
+                            <ul class="list-unstyled list-checks">
+                              <li>ЕГРЮЛ</li>
+                              <li>ЕГРИП</li>
+                              <li>Доходы и расходы</li>
+                              <li>Уплаченные налоги</li>
+                              <li>Применяемые налоговые режимы</li>
+                              <li>Среднесписочная численность</li>
+                              <li>Принадлежность к субъектам МСП</li>
+                              <li>Сведения о предоставлении гос. поддержки</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-sources__slide slider__slide splide__slide">
+                  <div class="card-source">
+                    <div class="card-source__header">
+                      <div class="card-source__img-wrap">
+                        <img src="images/source-2.png" srcset="images/source-2.png 1x, images/source-2-2x.png 2x" alt="alt" class="card-source__img img-responsive" />
+                      </div>
+                      <a href="#" class="card-source__website">rosstat.gov.ru</a>
+                    </div>
+                    <div class="card-source__body">
+                      <div class="card-source__title h3">Росстат</div>
+                      <div class="card-source__text-wrap">
+                        <p>
+                          Федеральный орган исполнительной власти, осущест-вляющий функции по формированию официальной статистической
+                          информации в РФ.
+                        </p>
+                      </div>
+                      <div class="card-source__tags">
+                        <span class="card-source__tags-title">Данные:</span> Бухгалтерская отчётность, ОКВЭД
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-sources__slide slider__slide splide__slide">
+                  <div class="card-source">
+                    <div class="card-source__header">
+                      <div class="card-source__img-wrap">
+                        <img src="images/source-1.png" srcset="images/source-1.png 1x, images/source-1-2x.png 2x" alt="alt" class="card-source__img img-responsive" />
+                      </div>
+                      <a href="#" class="card-source__website">nalog.gov.ru</a>
+                    </div>
+                    <div class="card-source__body">
+                      <div class="card-source__title h3">ФНС</div>
+                      <div class="card-source__text-wrap">
+                        <p>
+                          Федеральный орган исполнительной власти РФ по контролю и надзору за соблюдением законодательства о налогах и
+                          сборах.
+                        </p>
+                      </div>
+                      <div class="card-source__tags"><span class="card-source__tags-title">Данные:</span> EГРЮЛ, Доходы и расходы</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-sources__slide slider__slide splide__slide">
+                  <div class="card-source">
+                    <div class="card-source__header">
+                      <div class="card-source__img-wrap">
+                        <img src="images/source-2.png" srcset="images/source-2.png 1x, images/source-2-2x.png 2x" alt="alt" class="card-source__img img-responsive" />
+                      </div>
+                      <a href="#" class="card-source__website">rosstat.gov.ru</a>
+                    </div>
+                    <div class="card-source__body">
+                      <div class="card-source__title h3">Росстат</div>
+                      <div class="card-source__text-wrap">
+                        <p>
+                          Федеральный орган исполнительной власти, осущест-вляющий функции по формированию официальной статистической
+                          информации в РФ.
+                        </p>
+                      </div>
+                      <div class="card-source__tags">
+                        <span class="card-source__tags-title">Данные:</span> Бухгалтерская отчётность, ОКВЭД
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-sources__slide slider__slide splide__slide">
+                  <div class="card-source">
+                    <div class="card-source__header">
+                      <div class="card-source__img-wrap">
+                        <img src="images/source-1.png" srcset="images/source-1.png 1x, images/source-1-2x.png 2x" alt="alt" class="card-source__img img-responsive" />
+                      </div>
+                      <a href="#" class="card-source__website">nalog.gov.ru</a>
+                    </div>
+                    <div class="card-source__body">
+                      <div class="card-source__title h3">ФНС</div>
+                      <div class="card-source__text-wrap">
+                        <p>
+                          Федеральный орган исполнительной власти РФ по контролю и надзору за соблюдением законодательства о налогах и
+                          сборах.
+                        </p>
+                      </div>
+                      <div class="card-source__tags"><span class="card-source__tags-title">Данные:</span> EГРЮЛ, Доходы и расходы</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-slider-news">
+        <div class="container">
+          <div class="slider-news slider splide">
+            <div class="slider__header">
+              <div class="slider__row row">
+                <div class="slider__col slider__col--title col-lg-3">
+                  <h2 class="slider__title">
+                    Что нового<br class="br-lg" />
+                    в сервисе
+                  </h2>
+                </div>
+                <div class="slider__col slider__col--text">
+                  <div class="slider__text-wrap">
+                    <p>
+                      Есть идеи или предложения по улучшению нашего сервиса? <a href="#" class="link">Напишите нам!</a> Мы стараемся сделать
+                      наш портал максимально удобным и полезным, сохраняя при этом бесплатным весь функционал по проверке контрагентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__col slider__col--nav">
+                  <div class="slider__nav">
+                    <div class="slider__pagination-wrap">
+                      <ul class="slider__pagination splide__pagination list-unstyled"></ul>
+                    </div>
+                    <div class="slider__arrows splide__arrows">
+                      <button class="slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+                        <svg role="img">
+                          <use href="images/icons/sprite.svg#arrow-left" />
+                        </svg>
+                      </button>
+                      <button class="slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+                        <svg role="img">
+                          <use href="images/icons/sprite.svg#arrow-right" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-news__track slider__track splide__track">
+              <div class="slider-news__list slider__list splide__list">
+                <div class="slider-news__slide slider__slide splide__slide">
+                  <div class="card-news">
+                    <div class="card-news__content js-scrollbar">
+                      <p>
+                        Обновление API до версии 2.1 — добавлен новый метод для работы с банками и кредитными организациями; добавлена
+                        информация о торговых знаках, Обновление API до версии 2.1 — добавлен новый метод для работы с банками и кредитными
+                        организациями; добавлена информация о торговых знаках,
+                      </p>
+                    </div>
+                    <div class="card-news__date">
+                      <svg role="img" class="card-news__date-icon">
+                        <use href="images/icons/sprite.svg#clock" />
+                      </svg>
+                      <div class="card-news__date-text">10 января 2024 г.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__slide slider__slide splide__slide">
+                  <div class="card-news">
+                    <div class="card-news__content js-scrollbar">
+                      <p>
+                        Добавлена информация по организа-циям и индивидуальным предпри-нимателям Республики Беларусь. Это около полутора
+                        миллионов записей, из Добавлена информация по организа-циям и индивидуальным предпри-нимателям Республики Беларусь.
+                        Это около полутора миллионов записей, из Добавлена информация по организа-циям и индивидуальным предпри-нимателям
+                        Республики Беларусь. Это около полутора миллионов записей, из
+                      </p>
+                    </div>
+                    <div class="card-news__date">
+                      <svg role="img" class="card-news__date-icon">
+                        <use href="images/icons/sprite.svg#clock" />
+                      </svg>
+                      <div class="card-news__date-text">25 декабря 2023 г.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__slide slider__slide splide__slide">
+                  <div class="card-news">
+                    <div class="card-news__content js-scrollbar">
+                      <p>
+                        Добавлена информация о вхождении организаций и ИП в реестр субъектов МСП, которым была оказана поддержка
+                        государством, корпорацией развития Добавлена информация о вхождении организаций и ИП в реестр субъектов МСП, которым
+                        была оказана поддержка государством, корпорацией развития
+                      </p>
+                    </div>
+                    <div class="card-news__date">
+                      <svg role="img" class="card-news__date-icon">
+                        <use href="images/icons/sprite.svg#clock" />
+                      </svg>
+                      <div class="card-news__date-text">18 ноября 2023 г.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__slide slider__slide splide__slide">
+                  <div class="card-news">
+                    <div class="card-news__content js-scrollbar">
+                      <p>
+                        Обновление API до версии 2.1 — добавлен новый метод для работы с банками и кредитными организациями; добавлена
+                        информация о торговых знаках, Обновление API до версии 2.1 — добавлен новый метод для работы с банками и кредитными
+                        организациями; добавлена информация о торговых знаках,
+                      </p>
+                    </div>
+                    <div class="card-news__date">
+                      <svg role="img" class="card-news__date-icon">
+                        <use href="images/icons/sprite.svg#clock" />
+                      </svg>
+                      <div class="card-news__date-text">10 января 2024 г.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__slide slider__slide splide__slide">
+                  <div class="card-news">
+                    <div class="card-news__content js-scrollbar">
+                      <p>
+                        Добавлена информация по организа-циям и индивидуальным предпри-нимателям Республики Беларусь. Это около полутора
+                        миллионов записей, из Добавлена информация по организа-циям и индивидуальным предпри-нимателям Республики Беларусь.
+                        Это около полутора миллионов записей, из Добавлена информация по организа-циям и индивидуальным предпри-нимателям
+                        Республики Беларусь. Это около полутора миллионов записей, из
+                      </p>
+                    </div>
+                    <div class="card-news__date">
+                      <svg role="img" class="card-news__date-icon">
+                        <use href="images/icons/sprite.svg#clock" />
+                      </svg>
+                      <div class="card-news__date-text">25 декабря 2023 г.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__triangle"></div>
+    <div class="footer__container container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--left col-md-7">
+          <div class="footer__company company-footer">
+            <div class="company-footer__logo-wrap">
+              <img src="images/logo-sm.svg" alt="alt" class="company-footer__logo img-responsive" />
+            </div>
+            <div class="company-footer__text-wrap">
+              <p>
+                © РусПроверка, 2018–2024.<br />
+                Сервис проверки организаций и ИП.
+              </p>
+            </div>
+          </div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu-footer__list list-unstyled">
+              <li><a href="#">Организации</a></li>
+              <li><a href="#">ИП</a></li>
+              <li><a href="#">Статистика</a></li>
+              <li><a href="#">Источники данных</a></li>
+              <li><a href="#">Правовые основания</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--right col-md-5">
+          <a href="#" class="footer__btn btn btn--accent btn--icon-left">
+            <svg role="img" class="btn__icon">
+              <use href="images/icons/sprite.svg#send" />
+            </svg>
+            Обратная связь
+          </a>
+          <ul class="footer__links list-unstyled">
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button">
+    <svg role="img" class="to-top__icon">
+      <use href="images/icons/sprite.svg#arrow-up-round" />
+    </svg>
+    <span class="to-top__text">вверх</span>
+  </button>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
