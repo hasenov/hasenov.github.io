@@ -1,0 +1,268 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#307EE6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <form class="header__search search-header js-search-container">
+        <button class="search-header__btn" type="button">
+          <svg role="img" class="search-header__btn-icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+        <div class="search-header__menu">
+          <button class="search-header__close close" type="button">
+            <svg role="img" class="close__icon">
+              <use href="images/icons/sprite.svg#close" />
+            </svg>
+          </button>
+          <div class="search-header__group">
+            <button class="search-header__submit" type="submit">
+              <svg role="img" class="search-header__submit-icon">
+                <use href="images/icons/sprite.svg#search" />
+              </svg>
+            </button>
+            <input type="text" class="search-header__control control" placeholder="Поиск" data-placeholder-pc="Поиск по ОГРН, ОГРНИП, ИНН, названию или ФИО" />
+          </div>
+          <div class="search-header__results search-results">
+            <div class="search-results__triangle"></div>
+            <div class="search-results__items">
+              <div class="search-results__item">
+                <a href="#" class="item-search">
+                  <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                  <div class="item-search__details">
+                    <div class="item-search__detail detail-item-search">
+                      <svg role="img" class="detail-item-search__icon">
+                        <use href="images/icons/sprite.svg#crown" />
+                      </svg>
+                      <div class="detail-item-search__content">
+                        <div class="detail-item-search__title">Генеральный директор:</div>
+                        <div class="detail-item-search__text">Петров Степан Иванович</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-search__infos">
+                    <div class="item-search__info">ОГРН 1141650021523</div>
+                    <div class="item-search__info">ИНН 1650297664</div>
+                  </div>
+                </a>
+              </div>
+              <div class="search-results__item">
+                <a href="#" class="item-search">
+                  <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                  <div class="item-search__details">
+                    <div class="item-search__detail detail-item-search">
+                      <svg role="img" class="detail-item-search__icon">
+                        <use href="images/icons/sprite.svg#crown" />
+                      </svg>
+                      <div class="detail-item-search__content">
+                        <div class="detail-item-search__title">Генеральный директор:</div>
+                        <div class="detail-item-search__text">Петров Степан Иванович</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-search__infos">
+                    <div class="item-search__info">ОГРН 1141650021523</div>
+                    <div class="item-search__info">ИНН 1650297664</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="search-results__btn btn btn--light">показать все результаты</a>
+          </div>
+        </div>
+      </form>
+      <nav class="header__menu menu">
+        <button class="menu__close close" type="button">
+          <svg role="img" class="close__icon">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <ul class="menu__list list-unstyled">
+          <li class="is-active"><a href="#">Организации</a></li>
+          <li><a href="#">ИП</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">Источники данных</a></li>
+        </ul>
+        <img src="images/menu-img.svg" alt="alt" class="menu__img" />
+      </nav>
+      <button class="header__hamburger" type="button">
+        <img src="images/icons/burger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
+      </button>
+    </div>
+  </header>
+
+
+  <div class="page page--search">
+    <div class="banner">
+      <div class="banner__inner">
+        <div class="banner__container container">
+          <div class="banner__row row">
+            <div class="banner__col banner__col--content">
+              <div class="banner__content">
+                <h1 class="banner__title">Выращивание однолетних культур</h1>
+                <div class="banner__text-wrap">
+                  <p>Поиск организаций по ОКВЭД, региону, городу и статусу</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page__content">
+      <div class="filter">
+        <div class="container">
+          <form class="filter__form form-filter"></form>
+          <div class="filter__toolbar">
+            <p class="filter__results">Найдено организаций: 578</p>
+            <div class="filter__actions">
+              <button class="filter__action filter-action-btn filter-action-btn--reset" type="button">
+                <svg role="img" class="filter-action-btn__icon">
+                  <use href="images/icons/sprite.svg#clear" />
+                </svg>
+                Сбросить фильтры
+              </button>
+            </div>
+          </div>
+          <div class="filter__cards">
+            <a href="#" class="filter__card card-organization">
+              <div class="card-organization__badges">
+                <div class="card-organization__badge badge-square badge-square--light">1</div>
+                <div class="card-organization__badge badge-square badge-square--danger">
+                  <svg role="img" class="badge-square__icon">
+                    <use href="images/icons/sprite.svg#danger" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-organization__body">
+                <div class="card-organization__content">
+                  <div class="card-organization__title h3">ООО «ИнвестПроект»</div>
+                  <div class="card-organization__text-wrap">
+                    <p>108801, г. Москва, вн. тер. г. поселение Сосенское, п. Коммунарка, ул. Липовый Парк, д. 8, к. 1, стр. 2.</p>
+                  </div>
+                  <div class="card-organization__infos">
+                    <div class="card-organization__info"><span>Дата регистрации:</span> 14 февраля 2005 года</div>
+                  </div>
+                </div>
+                <div class="card-organization__details">
+                  <div class="card-organization__detail detail">
+                    <svg role="img" class="detail__icon">
+                      <use href="images/icons/sprite.svg#crown"></use>
+                    </svg>
+                    <div class="detail__body">
+                      <div class="detail__title">Генеральный директор</div>
+                      <div class="detail__text">Светлов Александр Анатольевич</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="filter__nav items-nav">
+            <a href="#" class="items-nav__arrow items-nav__arrow--prev">
+              <svg role="img">
+                <use href="images/icons/sprite.svg#arrow-left" />
+              </svg>
+            </a>
+            <nav class="items-nav__pagination pagination">
+              <ul class="pagination__list list-unstyled">
+                <li class="pagination__item is-active"><a class="pagination__link" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">7</a></li>
+                <li class="pagination__item">
+                  <div class="pagination__dots">...</div>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">150</a></li>
+              </ul>
+            </nav>
+            <a href="#" class="items-nav__arrow items-nav__arrow--next">
+              <svg role="img">
+                <use href="images/icons/sprite.svg#arrow-right" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__triangle"></div>
+    <div class="footer__container container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--left col-md-7">
+          <div class="footer__company company-footer">
+            <div class="company-footer__logo-wrap">
+              <img src="images/logo-sm.svg" alt="alt" class="company-footer__logo img-responsive" />
+            </div>
+            <div class="company-footer__text-wrap">
+              <p>
+                © РусПроверка, 2018–2024.<br />
+                Сервис проверки организаций и ИП.
+              </p>
+            </div>
+          </div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu-footer__list list-unstyled">
+              <li><a href="#">Организации</a></li>
+              <li><a href="#">ИП</a></li>
+              <li><a href="#">Статистика</a></li>
+              <li><a href="#">Источники данных</a></li>
+              <li><a href="#">Правовые основания</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--right col-md-5">
+          <a href="#" class="footer__btn btn btn--accent btn--icon-left">
+            <svg role="img" class="btn__icon">
+              <use href="images/icons/sprite.svg#send" />
+            </svg>
+            Обратная связь
+          </a>
+          <ul class="footer__links list-unstyled">
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button">
+    <svg role="img" class="to-top__icon">
+      <use href="images/icons/sprite.svg#arrow-up-round" />
+    </svg>
+    <span class="to-top__text">вверх</span>
+  </button>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
