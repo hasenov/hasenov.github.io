@@ -1,0 +1,718 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Компания</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#307EE6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <form class="header__search search-header js-search-container">
+        <button class="search-header__btn" type="button">
+          <svg role="img" class="search-header__btn-icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+        <div class="search-header__menu">
+          <button class="search-header__close close" type="button">
+            <svg role="img" class="close__icon">
+              <use href="images/icons/sprite.svg#close" />
+            </svg>
+          </button>
+          <div class="search-header__group">
+            <button class="search-header__submit" type="submit">
+              <svg role="img" class="search-header__submit-icon">
+                <use href="images/icons/sprite.svg#search" />
+              </svg>
+            </button>
+            <input type="text" class="search-header__control control" placeholder="Поиск" data-placeholder-pc="Поиск по ОГРН, ОГРНИП, ИНН, названию или ФИО" />
+          </div>
+          <div class="search-header__results search-results">
+            <div class="search-results__triangle triangle"></div>
+            <div class="search-results__items">
+              <div class="search-results__item">
+                <a href="#" class="item-search">
+                  <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                  <div class="item-search__details">
+                    <div class="item-search__detail detail-item-search">
+                      <svg role="img" class="detail-item-search__icon">
+                        <use href="images/icons/sprite.svg#crown" />
+                      </svg>
+                      <div class="detail-item-search__content">
+                        <div class="detail-item-search__title">Генеральный директор:</div>
+                        <div class="detail-item-search__text">Петров Степан Иванович</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-search__infos">
+                    <div class="item-search__info">ОГРН 1141650021523</div>
+                    <div class="item-search__info">ИНН 1650297664</div>
+                  </div>
+                </a>
+              </div>
+              <div class="search-results__item">
+                <a href="#" class="item-search">
+                  <div class="item-search__title">ООО «МегаВояж-5» <span class="item-search__address">(г. Самара)</span></div>
+                  <div class="item-search__details">
+                    <div class="item-search__detail detail-item-search">
+                      <svg role="img" class="detail-item-search__icon">
+                        <use href="images/icons/sprite.svg#crown" />
+                      </svg>
+                      <div class="detail-item-search__content">
+                        <div class="detail-item-search__title">Генеральный директор:</div>
+                        <div class="detail-item-search__text">Петров Степан Иванович</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-search__infos">
+                    <div class="item-search__info">ОГРН 1141650021523</div>
+                    <div class="item-search__info">ИНН 1650297664</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="search-results__btn btn btn--light">показать все результаты</a>
+          </div>
+        </div>
+      </form>
+      <nav class="header__menu menu">
+        <button class="menu__close close" type="button">
+          <svg role="img" class="close__icon">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <ul class="menu__list list-unstyled">
+          <li class="is-active">
+            <a href="#">
+              <div class="menu__triangle triangle"></div>
+              Организации
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="menu__triangle triangle"></div>
+              ИП
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="menu__triangle triangle"></div>
+              Статистика
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="menu__triangle triangle"></div>
+              Источники данных
+            </a>
+          </li>
+        </ul>
+        <img src="images/menu-img.svg" alt="alt" class="menu__img" />
+      </nav>
+      <button class="header__hamburger" type="button">
+        <img src="images/icons/burger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
+      </button>
+    </div>
+  </header>
+
+
+  <div class="page page--company">
+    <div class="banner banner--company">
+      <div class="banner__inner">
+        <div class="banner__triangle triangle"></div>
+        <div class="banner__container container">
+          <div class="banner__row row">
+            <div class="banner__col col-12">
+              <div class="banner__content">
+                <h1 class="banner__title">ПАО «Сбербанк»</h1>
+                <div class="banner__text-wrap">
+                  <p>Публичное акционерное общество «Сбербанк России»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-sidebar">
+      <div class="mobile-sidebar__container container">
+        <div class="mobile-sidebar__inner">
+          <ul class="mobile-sidebar__list list-unstyled"></ul>
+          <button class="mobile-sidebar__toggle" type="button">
+            <svg role="img" class="mobile-sidebar__toggle-icon">
+              <use href="images/icons/sprite.svg#chevron-down" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page__content">
+      <div class="company">
+        <div class="container">
+          <div class="company__row row">
+            <div class="company__col col-xl-3">
+              <div class="company__sidebar-wrap">
+                <button class="company__sidebar-toggle btn btn--dark btn--icon-left" type="button" data-micromodal-trigger="modal-menu">
+                  <svg role="img" class="btn__icon">
+                    <use href="images/icons/sprite.svg#notebook" />
+                  </svg>
+                  открыть меню
+                </button>
+                <nav class="company__sidebar sidebar">
+                  <div class="sidebar__section">
+                    <ul class="sidebar__list list-unstyled">
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/article.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Общая информация
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Lifebuoy.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Надежность
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Notepad.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Реквизиты
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/ChatCircleText.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Контакты
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar__section">
+                    <ul class="sidebar__list list-unstyled">
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/PresentationChart.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Виды деятельности
+                          <span class="sidebar__count">10</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/ChartDonut.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Финансовая отчетность
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Crown.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Руководитель
+                          <span class="sidebar__count">1</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Users.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Учредители
+                          <span class="sidebar__count">3</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/TreeStructure.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Подразделения
+                          <span class="sidebar__count">27</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar__section">
+                    <ul class="sidebar__list list-unstyled">
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Link.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Связи
+                          <span class="sidebar__count">5</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Medal.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Лицензии
+                          <span class="sidebar__count">15</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Shapes.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Товарные знаки
+                          <span class="sidebar__count">2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/BookBookmark.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Федресурс
+                          <span class="sidebar__count">257</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/HandbagSimple.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Госзакупки
+                          <span class="sidebar__count">7</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Binoculars.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Проверки
+                          <span class="sidebar__count">1</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Scales.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Арбитражные дела
+                          <span class="sidebar__count">20</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/HardDrives.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Долги
+                          <span class="sidebar__count">57</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/Database.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Налоги и сборы
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/MegaphoneSimple.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Вакансии
+                          <span class="sidebar__count">15</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/NewspaperClipping.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          История изменений
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar__section">
+                    <ul class="sidebar__list list-unstyled">
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/CloudArrowDown.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Скачать краткий отчет
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/ArchiveBox.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Скачать выписку (ЕГРЮЛ)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sidebar__icon-wrap">
+                            <img src="images/icons/ShareFat.svg" alt="alt" class="sidebar__icon img-responsive" />
+                          </div>
+                          Поделиться
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="company__col col-xl-9">
+              <div class="company__content">
+                <div class="company__overview overview-company">
+                  <div class="overview-company__notification notification notification--danger">
+                    <div class="notification__icon-wrap">
+                      <svg role="img" class="notification__icon">
+                        <use href="images/icons/sprite.svg#danger" />
+                      </svg>
+                    </div>
+                    <div class="notification__body">
+                      <div class="notification__text-wrap">
+                        <p>
+                          Ликвидировано 16 августа 2022 года. Исключение из ЕГРЮЛ юридического лица в связи наличием в ЕГРЮЛ сведений о
+                          нем, в отношении которых внесена запись о недостоверности
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview-company__content">
+                    <div class="overview-company__row row">
+                      <div class="overview-company__col overview-company__col--table col-md-6">
+                        <div class="overview-company__dotted-table dotted-table">
+                          <div class="dotted-table__item">
+                            <div class="dotted-table__title">ОГРН</div>
+                            <div class="dotted-table__value">
+                              <div class="dotted-table__copy copy">
+                                <div class="copy__text"><span class="copy__target">1027700132195</span></div>
+                                <div class="copy__btn-wrap">
+                                  <button class="copy__btn" type="button">
+                                    <svg role="img" class="copy__icon">
+                                      <use href="images/icons/sprite.svg#copy" />
+                                    </svg>
+                                  </button>
+                                  <div class="copy__dropdown dropdown">скопировано</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dotted-table__item">
+                            <div class="dotted-table__title">ИНН</div>
+                            <div class="dotted-table__value">
+                              <div class="dotted-table__copy copy">
+                                <div class="copy__text"><span class="copy__target">7707083893</span></div>
+                                <div class="copy__btn-wrap">
+                                  <button class="copy__btn" type="button">
+                                    <svg role="img" class="copy__icon">
+                                      <use href="images/icons/sprite.svg#copy" />
+                                    </svg>
+                                  </button>
+                                  <div class="copy__dropdown dropdown">скопировано</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dotted-table__item">
+                            <div class="dotted-table__title">КПП</div>
+                            <div class="dotted-table__value">
+                              <div class="dotted-table__copy copy">
+                                <div class="copy__text"><span class="copy__target">773601001</span></div>
+                                <div class="copy__btn-wrap">
+                                  <button class="copy__btn" type="button">
+                                    <svg role="img" class="copy__icon">
+                                      <use href="images/icons/sprite.svg#copy" />
+                                    </svg>
+                                  </button>
+                                  <div class="copy__dropdown dropdown">скопировано</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dotted-table__item">
+                            <div class="dotted-table__title">ОКПО</div>
+                            <div class="dotted-table__value">
+                              <div class="dotted-table__copy copy">
+                                <div class="copy__text"><span class="copy__target">00032537</span></div>
+                                <div class="copy__btn-wrap">
+                                  <button class="copy__btn" type="button">
+                                    <svg role="img" class="copy__icon">
+                                      <use href="images/icons/sprite.svg#copy" />
+                                    </svg>
+                                  </button>
+                                  <div class="copy__dropdown dropdown">скопировано</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="overview-company__info-items">
+                          <div class="overview-company__info-item info-item"><span>Дата регистрации:</span> 26 июля 2004 года</div>
+                        </div>
+                        <div class="overview-company__links">
+                          <a href="#" class="link">Коды статистики</a> от Росстата и <a href="#" class="link">сведения о регистрации</a>
+                        </div>
+                      </div>
+                      <div class="overview-company__col overview-company__col--details col-md-6">
+                        <div class="overview-company__details">
+                          <div class="overview-company__detail detail">
+                            <svg role="img" class="detail__icon">
+                              <use href="images/icons/sprite.svg#house"></use>
+                            </svg>
+                            <div class="detail__body">
+                              <div class="detail__title">Юридический адрес</div>
+                              <div class="detail__text">
+                                446172, Самарская область, Пестравский район, с. Марьевка, ул. Советская, д. 1В
+                              </div>
+                            </div>
+                          </div>
+                          <div class="overview-company__detail detail">
+                            <svg role="img" class="detail__icon">
+                              <use href="images/icons/sprite.svg#rub"></use>
+                            </svg>
+                            <div class="detail__body">
+                              <div class="detail__title">Уставный капитал</div>
+                              <div class="detail__text">67 760 844 000 руб.</div>
+                            </div>
+                          </div>
+                          <div class="overview-company__detail detail">
+                            <svg role="img" class="detail__icon">
+                              <use href="images/icons/sprite.svg#pen"></use>
+                            </svg>
+                            <div class="detail__body">
+                              <div class="detail__title">Организационно-правовая форма</div>
+                              <div class="detail__text">Публичные акционерные общества</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="company__management management-company">
+                  <h2 class="company__title">Руководство</h2>
+                  <div class="person">
+                    <div class="person__personal">
+                      <div class="person__avatar-wrap">
+                        <img src="images/avatar-placeholder.svg" alt="alt" class="person__avatar img-responsive" />
+                      </div>
+                      <div class="person__body">
+                        <div class="person__title"><a href="#">Степановский Игорь Дормидонтович</a></div>
+                        <div class="person__text">Президент, председатель правления <span>(с 5.10.2009)</span></div>
+                      </div>
+                    </div>
+                    <div class="person__info-wrap">
+                      <div class="person__copy-items">
+                        <div class="person__copy copy">
+                          <div class="copy__text">ИНН <span class="copy__target">770303580308</span></div>
+                          <div class="copy__btn-wrap">
+                            <button class="copy__btn" type="button">
+                              <svg role="img" class="copy__icon">
+                                <use href="images/icons/sprite.svg#copy" />
+                              </svg>
+                            </button>
+                            <div class="copy__dropdown dropdown">скопировано</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="person__info info-person">
+                        <div class="info-person__title">Учредители:</div>
+                        <div class="info-person__values">
+                          <a href="#" class="link">2 физических лица</a>, <a href="#" class="link">1 юридическое лицо</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="company__info info-company">
+                  <div class="info-company__content">
+                    <div class="info-company__row row">
+                      <div class="info-company__col col-md-6">
+                        <h2 class="info-company__title company__title">Деятельность</h2>
+                        <div class="info-company__items-data">
+                          <div class="info-company__item-data item-data">
+                            <h4 class="item-data__title">Виды деятельности</h4>
+                            <div class="item-data__text-wrap">
+                              <p>
+                                Финансовые операции, кредитование физических лиц, лизинг юридических лиц и
+                                <a href="#" class="link link--dashed">ещё 15</a>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="info-company__item-data item-data">
+                            <h4 class="item-data__title">Единый реестр субъектов малого и среднего предпринимательства</h4>
+                            <div class="item-data__text-wrap">
+                              <p>
+                                В реестре с 10 июля 2023 года. Категория субъекта МСП: микропредприятие
+                                <span class="info-tooltip" data-tooltip data-placement="top-start" data-offset="0, 9">
+                                  <svg role="img" class="info-tooltip__icon" data-tooltip-btn>
+                                    <use href="images/icons/sprite.svg#question" />
+                                  </svg>
+                                  <span class="info-tooltip__dropdown dropdown dropdown--has-border" data-tooltip-dropdown>
+                                    Согласно данным ФНС за 2023 год.
+                                  </span>
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="info-company__item-data item-data">
+                            <h4 class="item-data__title">Среднесписочная численность работников</h4>
+                            <div class="item-data__text-wrap">
+                              <p>
+                                85 752 человека
+                                <span class="info-tooltip" data-tooltip data-placement="top-start" data-offset="0, 9">
+                                  <svg role="img" class="info-tooltip__icon" data-tooltip-btn>
+                                    <use href="images/icons/sprite.svg#question" />
+                                  </svg>
+                                  <span class="info-tooltip__dropdown dropdown dropdown--has-border" data-tooltip-dropdown>
+                                    Согласно данным ФНС за 2023 год.
+                                  </span>
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info-company__col col-md-6">
+                        <h2 class="info-company__title company__title">Упоминания</h2>
+                        <div class="info-company__items-data">
+                          <div class="info-company__item-data item-data">
+                            <h4 class="item-data__title">Федресурс</h4>
+                            <div class="item-data__text-wrap">
+                              <p>
+                                Компания опубликовала <a href="#" class="link">7 783 сообщения</a> и упомянута в
+                                <a href="#" class="link">18 843 сообщениях</a>.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="info-company__item-data item-data">
+                            <h4 class="item-data__title">ЕФРСБ (реестр банкротств)</h4>
+                            <div class="item-data__text-wrap">
+                              <p>Нет сообщений о банкротстве.</p>
+                            </div>
+                          </div>
+                          <div class="info-company__item-data item-data">
+                            <h4 class="item-data__title">Блокировка банковских счетов</h4>
+                            <div class="item-data__text-wrap">
+                              <p>Нет сведений о приостановке операций по счетам на 22 декабря 2023 года.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="info-company__check btn btn--light">Проверить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--sidebar" id="modal-menu" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <div class="modal__body">
+            <button class="modal__close close" type="button" aria-label="Close modal" data-micromodal-close>
+              <svg role="img" class="close__icon">
+                <use href="images/icons/sprite.svg#close" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__triangle triangle"></div>
+    <div class="footer__container container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--left col-md-7">
+          <div class="footer__company company-footer">
+            <div class="company-footer__logo-wrap">
+              <img src="images/logo-sm.svg" alt="alt" class="company-footer__logo img-responsive" />
+            </div>
+            <div class="company-footer__text-wrap">
+              <p>
+                © РусПроверка, 2018–2024.<br />
+                Сервис проверки организаций и ИП.
+              </p>
+            </div>
+          </div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu-footer__list list-unstyled">
+              <li><a href="#">Организации</a></li>
+              <li><a href="#">ИП</a></li>
+              <li><a href="#">Статистика</a></li>
+              <li><a href="#">Источники данных</a></li>
+              <li><a href="#">Правовые основания</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--right col-md-5">
+          <a href="#" class="footer__btn btn btn--accent btn--icon-left">
+            <svg role="img" class="btn__icon">
+              <use href="images/icons/sprite.svg#send" />
+            </svg>
+            Обратная связь
+          </a>
+          <ul class="footer__links list-unstyled">
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button">
+    <svg role="img" class="to-top__icon">
+      <use href="images/icons/sprite.svg#arrow-up-round" />
+    </svg>
+    <span class="to-top__text">вверх</span>
+  </button>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
