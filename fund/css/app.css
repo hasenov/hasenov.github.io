@@ -4655,24 +4655,32 @@ h4,
 .about__text-wrap p:last-child {
   margin-bottom: 0;
 }
-.about__btn {
+.about__btn-wrap {
   margin-top: 54px;
 }
 @media (max-width: 767.98px) {
-  .about__btn {
+  .about__btn-wrap {
     margin-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about__btn-wrap {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 374.98px) {
+  .about__btn-wrap {
+    margin-top: 17px;
   }
 }
 @media (max-width: 575.98px) {
   .about__btn {
     font-size: 14px;
-    margin-top: 24px;
   }
 }
 @media (max-width: 374.98px) {
   .about__btn {
     font-size: 10px;
-    margin-top: 17px;
   }
 }
 .about__imgs {
@@ -4830,7 +4838,7 @@ h4,
     display: none;
   }
 }
-.about--alt .about__btn {
+.about--alt .about__btn-wrap {
   margin-top: 16px;
 }
 
