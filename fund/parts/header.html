@@ -14,6 +14,20 @@
       <img src="images/logo.svg" alt="alt" class="img-responsive" />
     </a>
     <div class="header__slogan">возрождение природы</div>
+    <div class="header__actions">
+      <a href="#" class="header__help btn btn--accent btn--default">Помочь фонду</a>
+      <div class="header__lang-actions lang">
+        <button class="lang__btn" type="button">
+          <span class="lang__placeholder">RU</span>
+          <svg role="img" class="lang__icon">
+            <use href="images/icons/sprite.svg#caret-down" />
+          </svg>
+        </button>
+        <div class="lang__dropdown">
+          <a href="#" class="lang__item"><span class="lang__item-text">en</span></a>
+        </div>
+      </div>
+    </div>
     <div class="header__socials socials">
       <a href="#" class="socials__social social">
         <svg role="img" class="social__icon">
@@ -36,7 +50,19 @@
     <div class="header__menu-wrapper scrollbar-webkit">
       <div class="header__menu-inner">
         <ul class="header__list list-unstyled">
-          <li><a href="#">Проекты</a></li>
+          <li class="has-child">
+            <a href="#">Проекты</a>
+            <div class="header__arrow">
+              <svg role="img">
+                <use href="images/icons/sprite.svg#caret-down" />
+              </svg>
+            </div>
+            <ul class="header__submenu list-unstyled">
+              <li><a href="#">Пункт 1</a></li>
+              <li><a href="#">Пункт 2</a></li>
+              <li><a href="#">Пункт 3</a></li>
+            </ul>
+          </li>
           <li><a href="#">О фонде</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Витрина подарков</a></li>
