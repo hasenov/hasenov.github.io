@@ -1,0 +1,122 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#307EE6" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__sidebar scrollbar-webkit">
+      <button class="header__open" type="button">
+        <svg role="img" class="header__open-icon">
+          <use href="images/icons/sprite.svg#hamburger" />
+        </svg>
+      </button>
+      <button class="header__close" type="button">
+        <svg role="img" class="header__close-icon">
+          <use href="images/icons/sprite.svg#close" />
+        </svg>
+      </button>
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <div class="header__slogan">возрождение природы</div>
+      <div class="header__actions">
+        <a href="#" class="header__help btn btn--accent btn--default">Помочь фонду</a>
+        <div class="header__lang-actions lang">
+          <button class="lang__btn" type="button">
+            <span class="lang__placeholder">RU</span>
+            <svg role="img" class="lang__icon">
+              <use href="images/icons/sprite.svg#caret-down" />
+            </svg>
+          </button>
+          <div class="lang__dropdown">
+            <a href="#" class="lang__item"><span class="lang__item-text">en</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="header__socials socials">
+        <a href="#" class="socials__social social">
+          <svg role="img" class="social__icon">
+            <use href="images/icons/sprite.svg#tg-circle" />
+          </svg>
+        </a>
+        <a href="#" class="socials__social social">
+          <svg role="img" class="social__icon">
+            <use href="images/icons/sprite.svg#ig-circle" />
+          </svg>
+        </a>
+        <a href="#" class="socials__social social">
+          <svg role="img" class="social__icon">
+            <use href="images/icons/sprite.svg#vk-circle" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="header__menu-wrapper scrollbar-webkit">
+        <div class="header__menu-inner">
+          <ul class="header__list list-unstyled">
+            <li class="has-child">
+              <a href="#">Проекты</a>
+              <div class="header__arrow">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#caret-down" />
+                </svg>
+              </div>
+              <ul class="header__submenu list-unstyled">
+                <li><a href="#">Пункт 1</a></li>
+                <li><a href="#">Пункт 2</a></li>
+                <li><a href="#">Пункт 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">О фонде</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Витрина подарков</a></li>
+            <li><a href="#">Помочь природе</a></li>
+            <li><a href="#">Центр природоохранных инициатив</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="header__lang lang">
+            <button class="lang__btn" type="button">
+              <span class="lang__placeholder">RU</span>
+              <svg role="img" class="lang__icon">
+                <use href="images/icons/sprite.svg#caret-down" />
+              </svg>
+            </button>
+            <div class="lang__dropdown">
+              <a href="#" class="lang__item">en</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <div class="error-page">
+      <div class="error-page__container container">
+        <img src="images/404.svg" alt="alt" class="error-page__img img-responsive" />
+        <div class="error-page__title">Ошибка 404</div>
+        <div class="error-page__text">
+          К сожалению, страница, которую вы ищете, не существует или в ссылке, по которой вы перешли или которую ввели, была ошибка.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
