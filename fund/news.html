@@ -104,9 +104,9 @@
 
 
   <div class="wrapper">
-    <section class="section-hero">
+    <section class="section-hero" style="background-image: url(images/hero-news.jpg)">
       <div class="container-fluid">
-        <div class="hero hero--sm hero--title-center">
+        <div class="hero">
           <div class="row">
             <div class="col-12">
               <div class="hero__content">
@@ -123,53 +123,120 @@
                     <li class="is-active">Проекты</li>
                   </ul>
                 </nav>
-                <h1 class="hero__h3 h3 text-uppercase" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                  Квадроцикл для оренбургского заповедника
-                </h1>
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">Новости</h1>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img src="images/logo-white.svg" alt="alt" class="section-hero__decor" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" />
     </section>
-
-    <div class="project">
+    <div class="news">
       <div class="container">
-        <div class="project__row row" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-          <div class="project__col project__col--content col-lg-7">
-            <div class="project__text-wrap">
-              <p>
-                Для обеспечения беспрерывной деятельности Центра реинтродукции Благотворительный фонд «Возрождение природы» приобрел и передал
-                снегоболотоход (квадроцикл) Оренбургскому заповеднику.<br />
-                Квадроцикл необходим сотрудникам Центра реинтродукции лошади Пржевальского в государственном природном заповеднике «Оренбургский»
-                для паразитологического, демографического, социально-пространственного, а также экологического мониторинга популяции лошади
-                Пржевальского. Реализация проекта позволит обеспечить всесезонную потребность в заезде сотрудников Центра реинтродукции и
-                обеспечении их питьевой водой, горюче-смазочными материалами и продуктами в весенне-осенний период.
-              </p>
+        <div class="news__inner">
+          <form class="news__filter filter" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+            <div class="filter__links">
+              <a href="#" class="filter__link">Все события</a>
+              <a href="#" class="filter__link">Видео</a>
             </div>
-          </div>
-          <div class="project__col col-lg-5">
-            <div class="slider-project-gallery slider splide">
-              <div class="slider-project-gallery__inner">
-                <div class="slider-project-gallery__track slider__track splide__track">
-                  <div class="slider-project-gallery__list slider__list splide__list">
-                    <a href="images/project-img.jpg" class="slider-project-gallery__slide slider__slide splide__slide glightbox">
-                      <div class="item-project-gallery">
-                        <img src="images/project-img.jpg" alt="alt" class="item-project-gallery__img img-responsive" />
-                      </div>
-                    </a>
+            <div class="filter__selects">
+              <select class="filter__select select-filter">
+                <option>Месяц</option>
+                <option value="1">Месяц</option>
+              </select>
+              <select class="filter__select select-filter">
+                <option>Год</option>
+                <option value="1">Год</option>
+              </select>
+            </div>
+            <div class="filter__datepicker datepicker flatpickr">
+              <input type="text" class="datepicker__input hidden" data-input />
+              <button type="button" class="datepicker__toggle" data-toggle>
+                <svg role="img" class="datepicker__icon">
+                  <use href="images/icons/sprite.svg#calendar" />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="news__row row">
+            <div class="news__col col-md-6" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+              <div class="news__card card-news">
+                <a href="#" class="card-news__img-wrap">
+                  <div class="card-news__img-inner">
+                    <img src="images/slider-placeholder.png" alt="alt" class="card-news__img img-responsive" />
                   </div>
+                  <div class="card-news__date">28.09.23</div>
+                </a>
+                <div class="card-news__body">
+                  <div class="card-news__title"><a href="#">Название</a></div>
+                  <a href="#" class="card-news__btn btn btn--accent btn--default">Подробнее</a>
                 </div>
-
-                <ul class="slider-project-gallery__pagination slider__pagination splide__pagination list-unstyled"></ul>
+              </div>
+            </div>
+            <div class="news__col col-md-6" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+              <div class="news__card card-news">
+                <a href="#" class="card-news__img-wrap">
+                  <div class="card-news__img-inner">
+                    <img src="images/slider-placeholder.png" alt="alt" class="card-news__img img-responsive" />
+                  </div>
+                  <div class="card-news__date">28.09.23</div>
+                </a>
+                <div class="card-news__body">
+                  <div class="card-news__title"><a href="#">Название</a></div>
+                  <a href="#" class="card-news__btn btn btn--accent btn--default">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__col col-md-6" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+              <div class="news__card card-news">
+                <a href="#" class="card-news__img-wrap">
+                  <div class="card-news__img-inner">
+                    <img src="images/slider-placeholder.png" alt="alt" class="card-news__img img-responsive" />
+                  </div>
+                  <div class="card-news__date">28.09.23</div>
+                </a>
+                <div class="card-news__body">
+                  <div class="card-news__title"><a href="#">Название</a></div>
+                  <a href="#" class="card-news__btn btn btn--accent btn--default">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__col col-md-6" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+              <div class="news__card card-news">
+                <a href="#" class="card-news__img-wrap">
+                  <div class="card-news__img-inner">
+                    <img src="images/slider-placeholder.png" alt="alt" class="card-news__img img-responsive" />
+                  </div>
+                  <div class="card-news__date">28.09.23</div>
+                </a>
+                <div class="card-news__body">
+                  <div class="card-news__title"><a href="#">Название</a></div>
+                  <a href="#" class="card-news__btn btn btn--accent btn--default">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
+          <nav class="news__pagination pagination pagination--outline" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+            <ul class="pagination__list list-unstyled">
+              <li class="is-active"><a href="#" class="pagination__link">1</a></li>
+              <li><a href="#" class="pagination__link">2</a></li>
+              <li><a href="#" class="pagination__link">3</a></li>
+              <li><a href="#" class="pagination__link">4</a></li>
+              <li><a href="#" class="pagination__link">5</a></li>
+              <li>
+                <a href="#" class="pagination__arrow">
+                  <svg role="img" class="pagination__arrow-icon">
+                    <use href="images/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <img src="images/logo-white-gradient.svg" alt="alt" class="news__decor news__decor--1" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" />
+          <img src="images/logo-white-gradient.svg" alt="alt" class="news__decor news__decor--2" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" />
+          <img src="images/logo-white-gradient.svg" alt="alt" class="news__decor news__decor--3" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" />
         </div>
       </div>
     </div>
-
     <!-- prettier-ignore -->
     <section class="section-quick-donation">
       <div class="container">

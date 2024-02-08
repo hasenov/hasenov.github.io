@@ -123,9 +123,7 @@
                     <li class="is-active">Проекты</li>
                   </ul>
                 </nav>
-                <h1 class="hero__h3 h3 text-uppercase" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                  Квадроцикл для оренбургского заповедника
-                </h1>
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">Помочь природе</h1>
               </div>
             </div>
           </div>
@@ -134,90 +132,83 @@
       <img src="images/logo-white.svg" alt="alt" class="section-hero__decor" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" />
     </section>
 
-    <div class="project">
+    <div class="donate">
       <div class="container">
-        <div class="project__row row" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-          <div class="project__col project__col--content col-lg-7">
-            <div class="project__text-wrap">
-              <p>
-                Для обеспечения беспрерывной деятельности Центра реинтродукции Благотворительный фонд «Возрождение природы» приобрел и передал
-                снегоболотоход (квадроцикл) Оренбургскому заповеднику.<br />
-                Квадроцикл необходим сотрудникам Центра реинтродукции лошади Пржевальского в государственном природном заповеднике «Оренбургский»
-                для паразитологического, демографического, социально-пространственного, а также экологического мониторинга популяции лошади
-                Пржевальского. Реализация проекта позволит обеспечить всесезонную потребность в заезде сотрудников Центра реинтродукции и
-                обеспечении их питьевой водой, горюче-смазочными материалами и продуктами в весенне-осенний период.
-              </p>
-            </div>
+        <form class="donate__form form-donate">
+          <div class="form-donate__type" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+            <div class="form-donate__single is-active">Разовое</div>
+            <label class="form-donate__on-off on-off">
+              <input type="checkbox" class="on-off__input hidden" name="type" id="type" />
+              <span class="on-off__box"></span>
+            </label>
+            <div class="form-donate__monthly">Ежемесячное</div>
           </div>
-          <div class="project__col col-lg-5">
-            <div class="slider-project-gallery slider splide">
-              <div class="slider-project-gallery__inner">
-                <div class="slider-project-gallery__track slider__track splide__track">
-                  <div class="slider-project-gallery__list slider__list splide__list">
-                    <a href="images/project-img.jpg" class="slider-project-gallery__slide slider__slide splide__slide glightbox">
-                      <div class="item-project-gallery">
-                        <img src="images/project-img.jpg" alt="alt" class="item-project-gallery__img img-responsive" />
-                      </div>
-                    </a>
+          <div class="form-donate__inner" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+            <div class="form-donate__step is-active">
+              <div class="form-donate__section">
+                <div class="form-donate__title">Сумма пожертвования</div>
+                <div class="form-donate__section-inner">
+                  <div class="form-donate__options-wrap">
+                    <div class="form-donate__options">
+                      <label class="form-donate__option option-donate">
+                        <input type="radio" class="option-donate__input hidden" name="amount" />
+                        <span class="option-donate__box">1000 руб.</span>
+                      </label>
+                      <label class="form-donate__option option-donate">
+                        <input type="radio" class="option-donate__input hidden" name="amount" />
+                        <span class="option-donate__box">500 руб.</span>
+                      </label>
+                      <label class="form-donate__option option-donate">
+                        <input type="radio" class="option-donate__input hidden" name="amount" />
+                        <span class="option-donate__box">300 руб.</span>
+                      </label>
+                    </div>
                   </div>
+                  <div class="form-donate__controls">
+                    <select class="form-donate__select select">
+                      <option value="1">На уставную деятельность</option>
+                      <option value="2">На уставную деятельность</option>
+                    </select>
+                    <div class="form-donate__control-wrap control-wrap">
+                      <input type="text" class="control-wrap__control control" placeholder="Введите сумму" id="amount" required />
+                      <div class="control-wrap__currency">₽</div>
+                    </div>
+                  </div>
+                  <div class="form-donate__btns">
+                    <button class="form-donate__btn form-donate__next btn btn--accent btn--default" type="button">Далее</button>
+                  </div>
+                  <p class="form-donate__accept">Осуществляя пожертвование,я принимаю условия <a href="#">договора оферты</a></p>
                 </div>
-
-                <ul class="slider-project-gallery__pagination slider__pagination splide__pagination list-unstyled"></ul>
+              </div>
+              <div class="form-donate__section">
+                <div class="form-donate__title">Способы оплаты</div>
+              </div>
+            </div>
+            <div class="form-donate__step">
+              <div class="form-donate__section">
+                <div class="form-donate__title">Заполните форму</div>
+                <div class="form-donate__section-inner">
+                  <div class="form-donate__controls">
+                    <input type="text" class="form-donate__control control" placeholder="Введите имя" required />
+                    <input type="email" class="form-donate__control control" placeholder="Введите email" required />
+                  </div>
+                  <div class="form-donate__btns">
+                    <button class="form-donate__btn form-donate__back btn btn--accent btn--default" type="button">Назад</button>
+                    <button class="form-donate__btn btn btn--accent btn--default" type="submit">Далее</button>
+                  </div>
+                  <p class="form-donate__accept">Осуществляя пожертвование,я принимаю условия <a href="#">договора оферты</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-donate__step">
+              <div class="form-donate__section">
+                <div class="form-donate__title">Успех</div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-
-    <!-- prettier-ignore -->
-    <section class="section-quick-donation">
-      <div class="container">
-        <div class="quick-donation">
-          <h2 class="quick-donation__title h3 decor-underline" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-            Защитим природу сегодня,<br />
-            чтобы дарить ее красоту завтра.
-          </h2>
-          <div class="quick-donation__row row">
-            <div class="quick-donation__col col-xl-7">
-              <div class="quick-donation__text-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                <p>
-                  Природа мудрее и богаче нас. Мы в ней лишь потребители. Она обеспечивает города и села свежим воздухом, защищает нас от ветра,
-                  сохраняет биоразнообразие. Леса помогают и водным ресурсам, задерживая влагу в почве. Лес дает пищу и кров многим диким животным.<br />
-                  Однажды человек начал рубить лес для получения древесины и жечь костры, истреблять животных ради одежды, загрязнять реки. Он забыл о
-                  самом важном, что могло бы сделать его счастливым: «Построить дом, посадить дерево, вырастить сына».<br />
-                  Команда нашего фонда призывает вас совместными усилиями сохранить окружающую среду и поддержать гармонию. Мы должны стремиться к
-                  сотрудничеству с природой, чтобы сберечь ее для себя и будущих поколений.
-                </p>
-              </div>
-            </div>
-            <div class="quick-donation__col col-xl-5">
-              <form class="quick-donation__form form-quick-donation" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                <img src="images/logo-circle.png" alt="alt" class="form-quick-donation__logo img-responsive" />
-                <div class="form-quick-donation__options">
-                  <label class="form-quick-donation__option option-donation">
-                    <input type="radio" class="option-donation__input hidden" name="donation" />
-                    <span class="option-donation__box">100 руб.</span>
-                  </label>
-                  <label class="form-quick-donation__option option-donation">
-                    <input type="radio" class="option-donation__input hidden" name="donation" />
-                    <span class="option-donation__box">300 руб.</span>
-                  </label>
-                  <label class="form-quick-donation__option option-donation">
-                    <input type="radio" class="option-donation__input hidden" name="donation" />
-                    <span class="option-donation__box">500 руб.</span>
-                  </label>
-                </div>
-                <input type="text" class="form-quick-donation__control" placeholder="Введите сумму" />
-                <button class="form-quick-donation__submit btn btn--white" type="submit">Помочь</button>
-                <img src="images/logo-white-gradient.svg" alt="alt" class="form-quick-donation__decor" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__header" data-aos="fade-up" data-aos-delay="50" data-aos-duration="700">
