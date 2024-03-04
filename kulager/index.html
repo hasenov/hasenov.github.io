@@ -183,137 +183,120 @@
   <!-- Hero -->
   <section class="relative bg-white before:pointer-events-none before:absolute before:bottom-0 before:left-0 before:h-8 before:w-full before:bg-silver max-lg:rounded-b-[20px] max-lg:before:hidden" data-hero>
     <div class="container">
-      <div class="splide slider-hero">
-        <div class="splide__track overflow-visible transition-height">
-          <div class="splide__list items-start">
-            <div class="splide__slide">
-              <div class="flex pt-5 max-lg:flex-col-reverse md:pt-14 xl:pt-[67px]">
-                <div class="w-full pb-7 pt-8 sm:pb-14 sm:pt-14 lg:max-w-[58.333333%] lg:basis-7/12 lg:pt-0 xl:pb-[96px]">
-                  <div class="-mx-1 -mb-1.5 flex flex-wrap">
-                    <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold uppercase leading-tight text-primary max-sm:text-[12px] sm:px-5 sm:py-2.5">Акция!</div>
-                    <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold leading-tight max-sm:text-[12px] sm:px-5 sm:py-2.5">30 000 ₸</div>
-                  </div>
-                  <h1 class="mb-4 mt-3 font-raleway text-[32px] font-bold leading-none sm:mb-6 sm:mt-4 sm:text-[44px] xl:mb-5 xl:text-[64px]">Не можешь офлайн — <span class="text-primary">учись онлайн</span></h1>
-                  <p class="mb-4 max-w-[421px] leading-snug sm:mb-5 sm:text-[18px] xl:mb-8 xl:text-[21px]">Купи обучение на категорию «B» и получи «А» в подарок</p>
-                  <ul class="mb-8 space-y-2.5 leading-tight text-gray max-sm:text-[14px] xl:mb-[35px] xl:text-[18px] [&_li]:flex [&_li]:before:mr-[9px] [&_li]:before:mt-[2.5px] [&_li]:before:block [&_li]:before:size-3 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-primary sm:[&_li]:before:mt-[3.5px] xl:[&_li]:before:mt-[5px]">
-                    <li>Во всех регионах Казахстана!</li>
-                    <li>Срок обучения 1,5 - 2 месяца</li>
-                    <li>Лучшие инструктора</li>
-                  </ul>
-                  <div class="flex flex-wrap items-center max-sm:flex-col">
-                    <a href="#" class="inline-flex items-center justify-center rounded-[67px] bg-primary px-8 py-3.5 text-center text-[18px] font-bold leading-tight text-white transition-colors hover:bg-primary-darker max-sm:mb-7 sm:mr-6 sm:py-4">
-                      Написать в WhatsApp
-                      <svg role="img" class="ml-[10px] size-6 shrink-0">
-                        <use href="images/icons/sprite.svg#whatsapp" />
-                      </svg>
-                    </a>
-                    <div class="-mx-[3px] -mb-1.5 flex flex-wrap lg:max-xl:hidden">
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#facebook-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#youtube-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#instagram-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#vk-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#ok-circle" />
-                        </svg>
-                      </a>
+      <div class="slider-hero invisible relative [&.is-active]:visible">
+        <div class="flex pt-5 max-lg:flex-col-reverse md:pt-14 xl:pt-[67px]">
+          <div class="w-full pb-7 pt-8 sm:pb-14 sm:pt-14 lg:max-w-[58.333333%] lg:basis-7/12 lg:pt-0 xl:pb-[96px]">
+            <div class="splide slider-hero-main static">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <div class="-mx-1 -mb-1.5 flex flex-wrap">
+                      <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold uppercase leading-tight text-primary max-sm:text-[12px] sm:px-5 sm:py-2.5">Акция!</div>
+                      <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold leading-tight max-sm:text-[12px] sm:px-5 sm:py-2.5">30 000 ₸</div>
                     </div>
+                    <h1 class="mb-4 mt-3 font-raleway text-[32px] font-bold leading-none sm:mb-6 sm:mt-4 sm:text-[44px] xl:mb-5 xl:text-[64px]">Не можешь офлайн — <span class="text-primary">учись онлайн</span></h1>
+                    <p class="mb-4 max-w-[421px] leading-snug sm:mb-5 sm:text-[18px] xl:mb-8 xl:text-[21px]">Купи обучение на категорию «B» и получи «А» в подарок</p>
+                    <ul class="mb-8 space-y-2.5 leading-tight text-gray max-sm:text-[14px] xl:mb-[35px] xl:text-[18px] [&_li]:flex [&_li]:before:mr-[9px] [&_li]:before:mt-[2.5px] [&_li]:before:block [&_li]:before:size-3 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-primary sm:[&_li]:before:mt-[3.5px] xl:[&_li]:before:mt-[5px]">
+                      <li>Во всех регионах Казахстана!</li>
+                      <li>Срок обучения 1,5 - 2 месяца</li>
+                      <li>Лучшие инструктора</li>
+                    </ul>
                   </div>
-                </div>
-                <div class="w-full self-end max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center lg:max-w-[41.666667%] lg:basis-5/12" data-hero-img-wrap>
-                  <div class="relative -mb-2 inline-block align-top max-lg:mx-[25px] max-lg:max-w-[400px] sm:-mb-5">
-                    <img src="images/iphones.png" srcset="images/iphones.png 1x, images/iphones-2x.png 2x" alt="alt" class="relative z-10" />
-                    <img src="images/circle-half-1.svg" alt="alt" class="absolute -left-[8%] top-[55%] w-[10.058%]" />
-                    <img src="images/glow.svg" alt="alt" class="pointer-events-none absolute bottom-0 left-1/2 w-[218%] max-w-none [transform:translateX(-50%)]" />
-                    <div class="absolute left-[13.6%] top-[2.65%] w-[12.255%] animate-floating rounded-full bg-[linear-gradient(80.64deg,#FABD2F_-5.78%,#DB924B_105.62%)] pb-[12.255%]"></div>
-                    <div class="absolute -right-[6%] top-[35.93%] w-[7.115%] animate-floating-alt rounded-full bg-[linear-gradient(80.64deg,#FABD2F_-5.78%,#DB924B_105.62%)] pb-[7.115%]"></div>
+                  <div class="splide__slide">
+                    <div class="-mx-1 -mb-1.5 flex flex-wrap">
+                      <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold uppercase leading-tight text-primary max-sm:text-[12px] sm:px-5 sm:py-2.5">Акция!</div>
+                      <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold leading-tight max-sm:text-[12px] sm:px-5 sm:py-2.5">30 000 ₸</div>
+                    </div>
+                    <h1 class="mb-4 mt-3 font-raleway text-[32px] font-bold leading-none sm:mb-6 sm:mt-4 sm:text-[44px] xl:mb-5 xl:text-[64px]"><span class="text-primary">Четыре</span> категории по цене одной!</h1>
+                    <p class="mb-4 max-w-[421px] leading-snug sm:mb-5 sm:text-[18px] xl:mb-8 xl:text-[21px]">Купи обучение на категорию «B» и получи «А» в подарок</p>
+                    <ul class="mb-8 space-y-2.5 leading-tight text-gray max-sm:text-[14px] xl:mb-[35px] xl:text-[18px] [&_li]:flex [&_li]:before:mr-[9px] [&_li]:before:mt-[2.5px] [&_li]:before:block [&_li]:before:size-3 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-primary sm:[&_li]:before:mt-[3.5px] xl:[&_li]:before:mt-[5px]">
+                      <li>Во всех регионах Казахстана!</li>
+                      <li>Срок обучения 1,5 - 2 месяца</li>
+                      <li>Лучшие инструктора</li>
+                    </ul>
                   </div>
                 </div>
               </div>
+              <div class="splide__arrows absolute bottom-5 left-0 z-10 flex w-full justify-center space-x-3 max-xl:hidden">
+                <button class="splide__arrow splide__arrow--prev flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-dark/30 transition-colors hover:bg-primary hover:text-white" type="button">
+                  <svg role="img" class="size-6 shrink-0">
+                    <use href="images/icons/sprite.svg#chevron-left" />
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-dark/30 transition-colors hover:bg-primary hover:text-white" type="button">
+                  <svg role="img" class="size-6 shrink-0">
+                    <use href="images/icons/sprite.svg#chevron-right" />
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="splide__slide">
-              <div class="flex pt-5 max-lg:flex-col-reverse md:pt-14 xl:pt-[67px]">
-                <div class="w-full pb-7 pt-8 sm:pb-14 sm:pt-14 lg:max-w-[58.333333%] lg:basis-7/12 lg:pt-0 xl:pb-[96px]">
-                  <div class="-mx-1 -mb-1.5 flex flex-wrap">
-                    <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold uppercase leading-tight text-primary max-sm:text-[12px] sm:px-5 sm:py-2.5">Акция!</div>
-                    <div class="mx-1 mb-1.5 rounded-[52px] bg-silver px-4 py-2 font-semibold leading-tight max-sm:text-[12px] sm:px-5 sm:py-2.5">30 000 ₸</div>
-                  </div>
-                  <h1 class="mb-4 mt-3 font-raleway text-[32px] font-bold leading-none sm:mb-6 sm:mt-4 sm:text-[44px] xl:mb-5 xl:text-[64px]"><span class="text-primary">Четыре</span> категории по цене одной!</h1>
-                  <p class="mb-4 max-w-[421px] leading-snug sm:mb-5 sm:text-[18px] xl:mb-8 xl:text-[21px]">Купи обучение на категорию «B» и получи «А» в подарок</p>
-                  <ul class="mb-8 space-y-2.5 leading-tight text-gray max-sm:text-[14px] xl:mb-[35px] xl:text-[18px] [&_li]:flex [&_li]:before:mr-[9px] [&_li]:before:mt-[2.5px] [&_li]:before:block [&_li]:before:size-3 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-primary sm:[&_li]:before:mt-[3.5px] xl:[&_li]:before:mt-[5px]">
-                    <li>Во всех регионах Казахстана!</li>
-                    <li>Срок обучения 1,5 - 2 месяца</li>
-                    <li>Лучшие инструктора</li>
-                  </ul>
-                  <div class="flex flex-wrap items-center max-sm:flex-col">
-                    <a href="#" class="inline-flex items-center justify-center rounded-[67px] bg-primary px-8 py-3.5 text-center text-[18px] font-bold leading-tight text-white transition-colors hover:bg-primary-darker max-sm:mb-7 sm:mr-6 sm:py-4">
-                      Написать в WhatsApp
-                      <svg role="img" class="ml-[10px] size-6 shrink-0">
-                        <use href="images/icons/sprite.svg#whatsapp" />
-                      </svg>
-                    </a>
-                    <div class="-mx-[3px] -mb-1.5 flex flex-wrap lg:max-xl:hidden">
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#facebook-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#youtube-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#instagram-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#vk-circle" />
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
-                        <svg role="img" class="size-8">
-                          <use href="images/icons/sprite.svg#ok-circle" />
-                        </svg>
-                      </a>
+            <div class="flex flex-wrap items-center max-sm:flex-col">
+              <a href="#" class="inline-flex items-center justify-center rounded-[67px] bg-primary px-8 py-3.5 text-center text-[18px] font-bold leading-tight text-white transition-colors hover:bg-primary-darker max-sm:mb-7 sm:mr-6 sm:py-4">
+                Написать в WhatsApp
+                <svg role="img" class="ml-[10px] size-6 shrink-0">
+                  <use href="images/icons/sprite.svg#whatsapp" />
+                </svg>
+              </a>
+              <div class="-mx-[3px] -mb-1.5 flex flex-wrap lg:max-xl:hidden">
+                <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                  <svg role="img" class="size-8">
+                    <use href="images/icons/sprite.svg#facebook-circle" />
+                  </svg>
+                </a>
+                <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                  <svg role="img" class="size-8">
+                    <use href="images/icons/sprite.svg#youtube-circle" />
+                  </svg>
+                </a>
+                <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                  <svg role="img" class="size-8">
+                    <use href="images/icons/sprite.svg#instagram-circle" />
+                  </svg>
+                </a>
+                <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                  <svg role="img" class="size-8">
+                    <use href="images/icons/sprite.svg#vk-circle" />
+                  </svg>
+                </a>
+                <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                  <svg role="img" class="size-8">
+                    <use href="images/icons/sprite.svg#ok-circle" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full self-end lg:max-w-[41.666667%] lg:basis-5/12" data-hero-img-wrap>
+            <div class="splide slider-hero-imgs">
+              <div class="splide__track overflow-visible">
+                <div class="splide__list [&>div]:max-lg:flex [&>div]:max-lg:flex-col [&>div]:max-lg:items-center [&>div]:max-lg:justify-center">
+                  <div class="splide__slide">
+                    <div class="relative -mb-2 inline-block align-top max-lg:mx-[25px] max-lg:max-w-[400px] sm:-mb-5">
+                      <img src="images/iphones.png" srcset="images/iphones.png 1x, images/iphones-2x.png 2x" alt="alt" class="relative z-10" />
+                      <img src="images/circle-half-1.svg" alt="alt" class="absolute -left-[8%] top-[55%] w-[10.058%]" />
+                      <img src="images/glow.svg" alt="alt" class="pointer-events-none absolute bottom-0 left-1/2 w-[218%] max-w-none [transform:translateX(-50%)]" />
+                      <div class="absolute left-[13.6%] top-[2.65%] w-[12.255%] animate-floating rounded-full bg-[linear-gradient(80.64deg,#FABD2F_-5.78%,#DB924B_105.62%)] pb-[12.255%]"></div>
+                      <div class="absolute -right-[6%] top-[35.93%] w-[7.115%] animate-floating-alt rounded-full bg-[linear-gradient(80.64deg,#FABD2F_-5.78%,#DB924B_105.62%)] pb-[7.115%]"></div>
                     </div>
                   </div>
-                </div>
-                <div class="w-full self-end max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center lg:max-w-[41.666667%] lg:basis-5/12" data-hero-img-wrap>
-                  <div class="relative -mb-2 inline-block align-top max-lg:mx-[25px] max-lg:max-w-[400px] sm:-mb-5">
-                    <img src="images/girl.png" srcset="images/girl.png 1x, images/girl-2x.png 2x" alt="alt" class="relative z-10" />
-                    <img src="images/circle-half-2.svg" alt="alt" class="absolute left-[4%] top-[29%] w-[13.48%]" />
-                    <img src="images/glow.svg" alt="alt" class="pointer-events-none absolute bottom-0 left-1/2 w-[218%] max-w-none [transform:translateX(-50%)]" />
-                    <div class="absolute -right-[6%] top-[35.93%] w-[6.835%] animate-floating-alt rounded-full bg-[linear-gradient(80.64deg,#FABD2F_-5.78%,#DB924B_105.62%)] pb-[6.835%]"></div>
-                    <div class="absolute left-[1%] top-[11.5%] z-10 w-[14.8%] -rotate-[9.09deg] animate-square-floating-1 rounded-[10px] bg-white pb-[14.8%]">
-                      <img src="images/icons/id.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] [transform:translate(-50%,-50%)]" />
-                    </div>
-                    <div class="absolute right-[2.8%] top-[11.2%] z-10 w-[14.8%] rotate-[5.05deg] animate-square-floating-2 rounded-[10px] bg-white pb-[14.8%]">
-                      <img src="images/icons/wheel.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] animate-wheel" />
-                    </div>
-                    <div class="absolute -left-[9%] top-[66.3%] z-10 w-[14.8%] -rotate-[9.03deg] animate-square-floating-3 rounded-[10px] bg-white pb-[14.8%]">
-                      <img src="images/icons/speedometer.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] [transform:translate(-50%,-50%)]" />
-                    </div>
-                    <div class="absolute -right-[5.6%] top-[66.3%] z-10 w-[14.8%] rotate-[3.72deg] animate-square-floating-4 rounded-[10px] bg-white pb-[14.8%]">
-                      <img src="images/icons/cone-alt.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] [transform:translate(-50%,-50%)]" />
+                  <div class="splide__slide">
+                    <div class="relative -mb-2 inline-block align-top max-lg:mx-[25px] max-lg:max-w-[400px] sm:-mb-5">
+                      <img src="images/girl.png" srcset="images/girl.png 1x, images/girl-2x.png 2x" alt="alt" class="relative z-10" />
+                      <img src="images/circle-half-2.svg" alt="alt" class="absolute left-[4%] top-[29%] w-[13.48%]" />
+                      <img src="images/glow.svg" alt="alt" class="pointer-events-none absolute bottom-0 left-1/2 w-[218%] max-w-none [transform:translateX(-50%)]" />
+                      <div class="absolute -right-[6%] top-[35.93%] w-[6.835%] animate-floating-alt rounded-full bg-[linear-gradient(80.64deg,#FABD2F_-5.78%,#DB924B_105.62%)] pb-[6.835%]"></div>
+                      <div class="absolute left-[1%] top-[11.5%] z-10 w-[14.8%] -rotate-[9.09deg] animate-square-floating-1 rounded-[10px] bg-white pb-[14.8%]">
+                        <img src="images/icons/id.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] [transform:translate(-50%,-50%)]" />
+                      </div>
+                      <div class="absolute right-[2.8%] top-[11.2%] z-10 w-[14.8%] rotate-[5.05deg] animate-square-floating-2 rounded-[10px] bg-white pb-[14.8%]">
+                        <img src="images/icons/wheel.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] animate-wheel" />
+                      </div>
+                      <div class="absolute -left-[9%] top-[66.3%] z-10 w-[14.8%] -rotate-[9.03deg] animate-square-floating-3 rounded-[10px] bg-white pb-[14.8%]">
+                        <img src="images/icons/speedometer.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] [transform:translate(-50%,-50%)]" />
+                      </div>
+                      <div class="absolute -right-[5.6%] top-[66.3%] z-10 w-[14.8%] rotate-[3.72deg] animate-square-floating-4 rounded-[10px] bg-white pb-[14.8%]">
+                        <img src="images/icons/cone-alt.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[69.23%] [transform:translate(-50%,-50%)]" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -321,21 +304,9 @@
             </div>
           </div>
         </div>
-        <div class="splide__arrows absolute bottom-5 left-0 flex w-full justify-center space-x-3 max-xl:hidden">
-          <button class="splide__arrow splide__arrow--prev flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-dark/30 transition-colors hover:bg-primary hover:text-white" type="button">
-            <svg role="img" class="size-6 shrink-0">
-              <use href="images/icons/sprite.svg#chevron-left" />
-            </svg>
-          </button>
-          <button class="splide__arrow splide__arrow--next flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-dark/30 transition-colors hover:bg-primary hover:text-white" type="button">
-            <svg role="img" class="size-6 shrink-0">
-              <use href="images/icons/sprite.svg#chevron-right" />
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
-    <div class="splide slider-ticker z-10 -rotate-1 bg-primary py-2 sm:py-3 xl:py-4">
+    <div class="splide slider-ticker z-10 -rotate-1 bg-primary py-2 max-lg:-mx-5 sm:py-3 xl:py-4">
       <div class="splide__track">
         <div class="splide__list">
           <div class="splide__slide">
