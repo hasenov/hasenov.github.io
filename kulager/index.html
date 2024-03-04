@@ -332,7 +332,7 @@
               <path d="M1 0V48.6667C1 79.5946 26.0721 104.667 57 104.667H249.667C278.57 104.667 302 128.097 302 157V157C302 185.903 278.57 209.333 249.667 209.333H53.3333C24.4304 209.333 1 232.764 1 261.667V261.667C1 290.57 24.4304 314 53.3333 314H249.667C278.57 314 302 337.43 302 366.333V366.333C302 395.236 278.57 418.667 249.667 418.667H53.3333C24.4304 418.667 1 442.097 1 471V471C1 499.903 24.4304 523.333 53.3333 523.333H246C276.928 523.333 302 548.405 302 579.333V628" stroke="#AFAFAF" stroke-dasharray="12 12" />
             </svg>
 
-            <div class="absolute w-[17.16%] rounded-full bg-primary pb-[17.16%] max-xl:!-left-[5.28%] max-xl:!top-[7.96%]" data-road-car>
+            <div class="absolute -left-[5.28%] top-[7.96%] w-[17.16%] rounded-full bg-primary pb-[17.16%]" data-road-car>
               <div class="absolute -inset-[9.62%] rounded-full bg-primary/15"></div>
               <img src="images/icons/car.svg" alt="alt" class="absolute left-1/2 top-1/2 w-[61.54%] [transform:translate(-50%,-50%)]" />
             </div>
@@ -346,22 +346,22 @@
         <div class="w-full px-[18.5px] lg:max-w-[72%] lg:basis-[72%] lg:max-xl:pt-12 xl:max-w-[66.666667%] xl:basis-8/12 xl:px-[15px]">
           <div class="-mx-2.5 -mb-2 flex flex-wrap xl:-mx-[15px] xl:-mb-5">
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-1.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -423,22 +423,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-2.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -500,22 +500,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-3.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -577,22 +577,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-4.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -654,22 +654,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-5.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -731,22 +731,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-6.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -808,22 +808,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-7.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -885,22 +885,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-8.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -962,22 +962,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-9.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -1039,22 +1039,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-10.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -1116,22 +1116,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-11.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -1193,22 +1193,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-12.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -1270,22 +1270,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-13.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -1347,22 +1347,22 @@
               </div>
             </div>
             <div class="mb-2 w-full px-2.5 lg:max-w-[50%] lg:basis-6/12 xl:mb-5 xl:px-[15px]">
-              <div class="group relative" data-price-card>
-                <div class="flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]:rounded-b-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
+              <div class="group/price-card relative transition-shadow [&.is-active]:z-20 [&.is-active]:shadow-2" data-price-card>
+                <div class="group/price-btn relative z-10 flex cursor-pointer items-center rounded-xl bg-white p-3.5 shadow-1 transition-all group-[.is-active]/price-card:rounded-b-none group-[.is-active]/price-card:shadow-none xl:rounded-[20px] xl:p-4" data-price-card-btn>
                   <div class="mr-2 flex size-9 shrink-0 items-center justify-center rounded-[7.45px] bg-primary p-1.5 xl:mr-3 xl:size-[58px] xl:rounded-xl xl:p-2.5">
                     <img src="images/icons/transport-14.svg" alt="alt" />
                   </div>
-                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight xl:text-[24px]">A1</div>
+                  <div class="mr-auto pr-1 text-[15px] font-semibold leading-tight transition-colors group-hover/price-btn:text-primary xl:text-[24px]">A1</div>
                   <div class="-mx-0.5 -mb-1 flex flex-wrap xl:-mx-[3px] xl:-mb-1.5">
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">30 000 ₸</div>
                     <div class="mx-0.5 mb-1 rounded-[52px] bg-silver px-3.5 py-2 text-[12px] font-semibold leading-tight xl:mx-[3px] xl:mb-1.5 xl:text-[18px]">2 месяца</div>
                   </div>
-                  <div class="group relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]:bg-silver xl:hidden">
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]:bg-primary group-[.is-active]:opacity-0 group-[.is-active]:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
-                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]:bg-primary group-[.is-active]:[transform:translate(-50%,-50%)_rotate(0)]"></div>
+                  <div class="relative ml-2 size-7 shrink-0 cursor-pointer rounded-full bg-primary transition-colors group-[.is-active]/price-card:bg-silver xl:hidden">
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:opacity-0 group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(-90deg)]"></div>
+                    <div class="absolute left-1/2 top-1/2 h-0.5 w-3.5 rounded-lg bg-white transition-all [transform:translate(-50%,-50%)_rotate(90deg)] group-[.is-active]/price-card:bg-primary group-[.is-active]/price-card:[transform:translate(-50%,-50%)_rotate(0)]"></div>
                   </div>
                 </div>
-                <div class="invisible absolute left-0 right-0 top-full z-10 rounded-b-[20px] bg-white px-4 pb-4 opacity-0 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]:visible group-[.is-active]:opacity-100 xl:before:mb-[15px]" data-price-card-content>
+                <div class="invisible absolute left-0 right-0 top-full rounded-b-[20px] bg-white px-4 pb-4 opacity-0 shadow-2 transition-all before:mb-3 before:block before:h-px before:bg-custom-border-dashed group-[.is-active]/price-card:visible group-[.is-active]/price-card:opacity-100 xl:before:mb-[15px]" data-price-card-content>
                   <div class="mb-3 text-[14px] leading-tight xl:mb-[15px] xl:text-[15px]">Практика 90 минут.</div>
                   <div class="space-y-[15px]">
                     <div>
@@ -2402,7 +2402,7 @@
   <section class="bg-white py-10 xl:py-[120px]">
     <div class="container">
       <h2 class="mb-5 text-[28px] font-bold leading-tight md:text-[32px] lg:text-[38px] xl:mb-[30px] xl:text-[40px]">Адреса</h2>
-      <div id="map" class="h-[465px] w-full rounded-[20px] md:h-[524px] xl:h-[746px]"></div>
+      <div id="map" class="h-[465px] w-full overflow-hidden rounded-[20px] md:h-[524px] xl:h-[550px]"></div>
     </div>
   </section>
 
