@@ -1,0 +1,237 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-dark bg-silver leading-normal selection:bg-primary selection:text-white overflow-x-hidden">
+  <header class="relative z-20 bg-white py-4 max-xl:h-[65px] max-xl:border-b max-xl:border-solid max-xl:border-[#F0F0F1] max-sm:h-[67px] sm:py-3 xl:py-[8.5px]" data-header>
+    <div class="container flex items-center xl:justify-between max-xl:[&>[data-header-langs]]:hidden max-md:[&>[data-header-whatsapp]]:hidden" data-header-container>
+      <img src="images/logo.png" alt="alt" class="max-w-16 max-xl:mr-auto sm:max-w-[75px] xl:max-w-36" />
+      <nav class="transition-transform max-xl:fixed max-xl:bottom-0 max-xl:right-0 max-xl:top-[65px] max-xl:z-20 max-xl:flex max-xl:w-[360px] max-xl:max-w-full max-xl:flex-col max-xl:overflow-y-auto max-xl:bg-white max-xl:px-5 max-xl:py-[60px] max-xl:[transform:translateX(100%)] max-sm:top-[67px] max-sm:py-5 max-xl:[&.is-active]:[transform:translateX(0)]" data-mobile-menu>
+        <div class="max-xl:flex max-xl:flex-col max-sm:my-auto" data-mobile-menu-content>
+          <ul class="max-xl:order-1 max-xl:mb-9 max-xl:space-y-2 xl:flex">
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">О нас</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors group-hover/item:bg-silver group-hover/item:text-[#25313F]">Полезное</a>
+              <div class="invisible absolute -left-[11px] top-full z-10 pt-[29px] opacity-0 transition-all group-hover/item:visible group-hover/item:opacity-100 max-xl:hidden">
+                <ul class="w-[330px] rounded-[20px] bg-white p-3 shadow-submenu">
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Полезное
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Статьи
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Таблица штрафов
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Услуги</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Тестирование ПДД</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Контакты</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Филиалы</a>
+            </li>
+          </ul>
+          <div class="-mx-[3px] -mb-1.5 flex flex-wrap justify-center max-xl:order-3 xl:hidden">
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#facebook-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#youtube-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#instagram-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#vk-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#ok-circle" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="text-right max-xl:mr-5 max-sm:mr-4">
+        <div class="mb-0.5 text-[13px] font-medium leading-tight text-[#202020] sm:text-[16px] xl:mb-px xl:text-[20px]"><a href="tel:87024688881" class="text-[#202020] transition-colors hover:text-primary">8 (702) 468-8881</a></div>
+        <div class="text-[12px] leading-snug text-primary sm:text-[13px]">• Звоните с 9:00 до 20:00</div>
+      </div>
+      <a href="#" class="inline-flex items-center justify-center rounded-[67px] bg-primary px-5 py-[15px] text-center font-bold leading-tight text-white transition-colors hover:bg-primary-darker max-md:order-2 max-md:mb-7 md:py-2.5 md:max-xl:mr-5 md:max-xl:text-[14px] xl:py-[13px]" data-header-whatsapp>
+        Написать в WhatsApp
+        <svg role="img" class="ml-[10px] size-5">
+          <use href="images/icons/sprite.svg#whatsapp" />
+        </svg>
+      </a>
+      <div class="text-sm leading-tight max-xl:order-4 max-xl:mt-9 max-xl:flex max-xl:space-x-px xl:space-y-px" data-header-langs>
+        <a href="#" class="is-active block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Рус</a>
+        <a href="#" class="block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Қаз</a>
+      </div>
+      <button type="button" class="group relative order-last size-6 focus:outline-none xl:hidden" data-header-hamburger>
+        <span class="sr-only">Открыть мобильное меню</span>
+        <span class="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
+          <span class="absolute block h-0.5 w-5 -translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:opacity-0"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+
+  <div class="bg-primary py-8 text-white">
+    <div class="container min-h-[330px]">
+      <nav class="mb-8 text-[15px] leading-tight">
+        <ol class="flex flex-wrap [&>li+li]:ml-1.5 [&>li+li]:before:mr-1.5 [&>li+li]:before:block [&>li+li]:before:size-[5px] [&>li+li]:before:shrink-0 [&>li+li]:before:bg-white/40 [&>li]:flex [&>li]:items-center [&_a]:text-white/70">
+          <li><a href="#">Главная</a></li>
+          <li>О нашей автошколе</li>
+        </ol>
+      </nav>
+      <h1 class="font-raleway text-[32px] font-bold leading-none sm:text-[44px] xl:text-[64px]">О нашей автошколе</h1>
+      <p class="leading-snug sm:text-[18px] xl:text-[21px]">Учиться с нами - быть с «правами»!</p>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="bg-[#222222] py-10 text-white/70 sm:py-[50px] xl:py-[60px]">
+    <div class="container">
+      <div class="xl:flex xl:items-center">
+        <div class="max-xl:mb-5 md:max-xl:flex md:max-xl:items-center md:max-xl:space-x-2.5 md:max-xl:border-b md:max-xl:border-solid md:max-xl:border-[#404040] md:max-xl:pb-5 xl:max-w-[33.333333%] xl:basis-4/12 xl:pr-12">
+          <div class="md:max-xl:max-w-[33.333333%] md:max-xl:basis-4/12">
+            <img src="images/logo.png" alt="alt" class="mb-5 max-w-[120px] sm:mb-4" data-footer-logo />
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]" data-footer-text>
+              МИССИЯ автошколы «Кұлагер» - содействие гражданам Астаны и других регионов Казахстана - слушателям Автошколы «Кұлагер», в изучении Правил безопасности дорожного движения и в обучении безопасному управлению транспортными средствами
+            </p>
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]">© KULAGER-AUTO.KZ & RAT.KZ, 2023</p>
+            <div class="-mx-[3px] -mb-1.5 flex flex-wrap">
+              <a href="#" class="hover:text-primary-darker mx-[3px] mb-1.5 text-primary transition-colors">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#facebook-circle" />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-primary-darker mx-[3px] mb-1.5 text-primary transition-colors">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#youtube-circle" />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-primary-darker mx-[3px] mb-1.5 text-primary transition-colors">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#instagram-circle" />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-primary-darker mx-[3px] mb-1.5 text-primary transition-colors">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#vk-circle" />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-primary-darker mx-[3px] mb-1.5 text-primary transition-colors">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#ok-circle" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="pr-5 md:max-xl:max-w-[66.666667%] md:max-xl:basis-8/12 xl:hidden" data-footer-text-wrap></div>
+        </div>
+        <div class="xl:max-w-[66.666667%] xl:basis-8/12">
+          <div class="-mx-2.5 -mb-5 flex flex-wrap">
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Об автошколе</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">О нас</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Контакты</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Мастера обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Стоимость обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Отзывы</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Услуги</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Онлайн обучение</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Ускоренное обучениие</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Уроки вождения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Тестирование пдд онлайн</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Полезная информация</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Новости</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">О дорожном движении РК</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Таблица штрафов</a></li>
+                </ul>
+              </nav>
+              <a href="#" class="group mt-6 inline-flex items-center rounded-[78px] bg-[#0B0B0B] py-1 pl-1 pr-6 align-top font-semibold leading-snug text-white sm:text-[18px]">
+                <div class="mr-2.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary">
+                  <svg role="img" class="size-7 shrink-0">
+                    <use href="images/icons/sprite.svg#tower" />
+                  </svg>
+                </div>
+                Мы в Алмате
+                <svg role="img" class="ml-2.5 size-3 shrink-0 transition-transform group-hover:translate-x-1">
+                  <use href="images/icons/sprite.svg#arrow-up-right" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="invisible fixed left-0 top-0 h-full w-full bg-black/20 opacity-0 transition-all [&.is-active]:visible [&.is-active]:opacity-100" data-overlay></div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
