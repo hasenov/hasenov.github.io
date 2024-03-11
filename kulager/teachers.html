@@ -1,0 +1,709 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>О нас</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-dark bg-silver leading-normal selection:bg-primary selection:text-white overflow-x-hidden">
+  <header class="relative z-20 bg-white py-4 max-xl:h-[65px] max-xl:border-b max-xl:border-solid max-xl:border-[#F0F0F1] max-sm:h-[67px] sm:py-3 xl:py-[8.5px]" data-header>
+    <div class="container flex items-center xl:justify-between max-xl:[&>[data-header-langs]]:hidden max-md:[&>[data-header-whatsapp]]:hidden" data-header-container>
+      <a href="index.html" class="max-xl:mr-auto">
+        <img src="images/logo.png" alt="alt" class="max-w-16 sm:max-w-[75px] xl:max-w-36" />
+      </a>
+      <nav class="max-xl:fixed max-xl:bottom-0 max-xl:right-0 max-xl:top-[65px] max-xl:z-20 max-xl:flex max-xl:w-[360px] max-xl:max-w-full max-xl:flex-col max-xl:overflow-y-auto max-xl:bg-white max-xl:px-5 max-xl:py-[60px] max-xl:transition-transform max-xl:[transform:translateX(100%)] max-sm:top-[67px] max-sm:py-5 max-xl:[&.is-active]:[transform:translateX(0)]" data-mobile-menu>
+        <div class="max-xl:flex max-xl:flex-col max-sm:my-auto" data-mobile-menu-content>
+          <ul class="max-xl:order-1 max-xl:mb-9 max-xl:space-y-2 xl:flex">
+            <li class="group/item relative">
+              <a href="about.html" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">О нас</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors group-hover/item:bg-silver group-hover/item:text-[#25313F]">Полезное</a>
+              <div class="invisible absolute -left-[11px] top-full z-10 pt-[29px] opacity-0 transition-all group-hover/item:visible group-hover/item:opacity-100 max-xl:hidden">
+                <ul class="w-[330px] rounded-[20px] bg-white p-3 shadow-submenu">
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Полезное
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Статьи
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Таблица штрафов
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Услуги</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Тестирование ПДД</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Контакты</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Филиалы</a>
+            </li>
+          </ul>
+          <div class="-mx-[3px] -mb-1.5 flex flex-wrap justify-center max-xl:order-3 xl:hidden">
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#facebook-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#youtube-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#instagram-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#vk-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#ok-circle" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="text-right max-xl:mr-5 max-sm:mr-4">
+        <div class="mb-0.5 text-[13px] font-medium leading-tight text-[#202020] sm:text-[16px] xl:mb-px xl:text-[20px]"><a href="tel:87024688881" class="text-[#202020] transition-colors hover:text-primary">8 (702) 468-8881</a></div>
+        <div class="text-[12px] leading-snug text-primary sm:text-[13px]">• Звоните с 9:00 до 20:00</div>
+      </div>
+      <a href="#" class="inline-flex items-center justify-center rounded-[67px] bg-primary px-5 py-[15px] text-center font-bold leading-tight text-white transition-colors hover:bg-primary-darker max-md:order-2 max-md:mb-7 md:py-2.5 md:max-xl:mr-5 md:max-xl:text-[14px] xl:py-[13px]" data-header-whatsapp>
+        Написать в WhatsApp
+        <svg role="img" class="ml-[10px] size-5">
+          <use href="images/icons/sprite.svg#whatsapp" />
+        </svg>
+      </a>
+      <div class="text-sm leading-tight max-xl:order-4 max-xl:mt-9 max-xl:flex max-xl:space-x-px xl:space-y-px" data-header-langs>
+        <a href="#" class="is-active block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Рус</a>
+        <a href="#" class="block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Қаз</a>
+      </div>
+      <button type="button" class="group relative order-last size-6 focus:outline-none xl:hidden" data-header-hamburger>
+        <span class="sr-only">Открыть мобильное меню</span>
+        <span class="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
+          <span class="absolute block h-0.5 w-5 -translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:opacity-0"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- Баннер -->
+  <div class="relative overflow-hidden bg-primary text-white">
+    <div class="container">
+      <div class="relative min-h-[233px] py-8 lg:z-10 lg:flex lg:min-h-[258px] lg:flex-col lg:pr-[calc(50%-50vw+650px)] xl:min-h-[330px] xl:pr-[calc(50%-50vw+800px)]">
+        <nav class="text-[13px] leading-tight max-lg:mb-7 lg:text-[12px] xl:pr-14 xl:text-[15px]">
+          <ol class="flex flex-wrap [&>li+li]:before:mr-1.5 [&>li+li]:before:block [&>li+li]:before:size-[5px] [&>li+li]:before:shrink-0 [&>li+li]:before:rounded-full [&>li+li]:before:bg-white/40 [&>li:not(:last-child)]:mr-1.5 [&>li]:flex [&>li]:items-center [&_a:hover]:text-white [&_a]:text-white/70 [&_a]:transition-colors">
+            <li><a href="#">Главная</a></li>
+            <li>О нашей автошколе</li>
+          </ol>
+        </nav>
+        <div class="lg:my-auto">
+          <h1 class="mb-4 font-raleway text-[32px] font-bold leading-none sm:text-[44px] lg:mb-3 xl:mb-5 xl:text-[64px]">Мастера обучения</h1>
+          <p class="leading-snug xl:text-[21px]">Наши специалисты по теории и практике вождения автомобиля</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex overflow-hidden lg:hidden">
+      <img src="images/banner-teachers.jpg" alt="alt" class="h-[260px] w-full object-cover sm:h-[300px]" />
+      <img src="images/banner-decor-mob.svg" alt="alt" class="absolute left-0 top-0 h-full" />
+    </div>
+    <div class="pointer-events-none absolute -right-14 top-0 h-full max-lg:hidden xl:right-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.48 330" class="w-[656px] xl:w-[839px]">
+        <defs>
+          <clipPath id="clip-path">
+            <path d="m0,0v7.87s230.98,87.63,354.98,314.63c0,0,26.57,2,63.78,7.5h419.72V0H0Z" />
+          </clipPath>
+        </defs>
+        <image clip-path="url(#clip-path)" xlink:href="images/banner-teachers.jpg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" />
+      </svg>
+      <img src="images/banner-decor.svg" alt="alt" class="absolute right-0 top-0 max-w-none xl:-left-[37%]" />
+    </div>
+  </div>
+
+  <!-- Мастера обучения -->
+  <div class="mb-20 mt-10 xl:mb-[120px] xl:mt-[120px]">
+    <div class="container">
+      <div class="-mx-2.5 -mb-5 flex flex-wrap xl:-mx-[15px] xl:-mb-[30px]">
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-1.jpg" srcset="images/card-teacher-1.jpg 1x, images/card-teacher-1-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Руслан Сапоргалиевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-2.jpg" srcset="images/card-teacher-2.jpg 1x, images/card-teacher-2-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Тайходжаев Кайрат Файфуддинович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-3.jpg" srcset="images/card-teacher-3.jpg 1x, images/card-teacher-3-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Шадрин Николай Николаевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-4.jpg" srcset="images/card-teacher-4.jpg 1x, images/card-teacher-4-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Ринат Канатович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-1.jpg" srcset="images/card-teacher-1.jpg 1x, images/card-teacher-1-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Руслан Сапоргалиевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-2.jpg" srcset="images/card-teacher-2.jpg 1x, images/card-teacher-2-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Тайходжаев Кайрат Файфуддинович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-3.jpg" srcset="images/card-teacher-3.jpg 1x, images/card-teacher-3-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Шадрин Николай Николаевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-4.jpg" srcset="images/card-teacher-4.jpg 1x, images/card-teacher-4-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Ринат Канатович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-1.jpg" srcset="images/card-teacher-1.jpg 1x, images/card-teacher-1-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Руслан Сапоргалиевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-2.jpg" srcset="images/card-teacher-2.jpg 1x, images/card-teacher-2-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Тайходжаев Кайрат Файфуддинович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-3.jpg" srcset="images/card-teacher-3.jpg 1x, images/card-teacher-3-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Шадрин Николай Николаевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-4.jpg" srcset="images/card-teacher-4.jpg 1x, images/card-teacher-4-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Ринат Канатович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-1.jpg" srcset="images/card-teacher-1.jpg 1x, images/card-teacher-1-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Руслан Сапоргалиевич</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full max-w-[50%] basis-6/12 px-2.5 int:max-w-[33.333333%] int:basis-4/12 lg:max-w-[25%] lg:basis-3/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(280/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-2.jpg" srcset="images/card-teacher-2.jpg 1x, images/card-teacher-2-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Тайходжаев Кайрат Файфуддинович</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-sm:mt-2 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:flex-col max-md:items-center xl:text-[13px]">
+                  <div class="text-old-silver max-md:mb-1.5 md:py-[5px] md:pl-3 md:pr-2">Стаж работы</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">5 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full px-2.5 md:max-w-[66.666667%] md:basis-8/12 lg:max-w-[50%] lg:basis-6/12 xl:mb-[30px] xl:px-[15px]">
+          <div class="h-full rounded-xl bg-white px-[5px] pb-2.5 pt-[5px] shadow-1 sm:rounded-2xl sm:px-2.5 sm:pb-3 sm:pt-2.5 xl:rounded-[20px] xl:pb-[17px]">
+            <div class="relative flex overflow-hidden rounded-lg pb-[calc(100%/(610/314))] sm:rounded-[14px]">
+              <img src="images/card-teacher-5.jpg" srcset="images/card-teacher-5.jpg 1x, images/card-teacher-5-2x.jpg 2x" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+            </div>
+            <div class="relative pt-3 max-md:flex max-md:items-center max-md:justify-between md:px-2.5 md:pt-[15px]">
+              <div class="text-center text-[13px] font-semibold leading-tight sm:text-[16px] xl:text-[18px]">Наши мастера</div>
+              <div class="flex justify-center max-xl:mt-2.5 max-lg:mt-0 xl:absolute xl:bottom-full xl:left-0 xl:mb-2.5 xl:w-full">
+                <div class="flex rounded-[52px] bg-white align-top text-[12px] leading-tight max-md:items-center xl:text-[13px]">
+                  <div class="pr-2 text-old-silver md:py-[5px] md:pl-3">Работаем</div>
+                  <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">с 2008 года</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Принципы работы инструкторов -->
+  <section class="bg-white py-10 xl:py-[120px]">
+    <div class="container">
+      <h2 class="mb-5 text-[28px] font-bold leading-tight sm:mb-[30px] md:text-[32px] lg:text-[38px] xl:text-[40px]">Принципы работы инструкторов</h2>
+      <div class="-mx-2.5 -mb-3 flex flex-wrap sm:-mb-5">
+        <div class="mb-3 w-full px-2.5 sm:mb-5 sm:max-w-[50%] sm:basis-6/12 xl:max-w-[25%] xl:basis-3/12">
+          <div class="h-full rounded-[20px] bg-silver p-5">
+            <img src="images/icons/car-shield.svg" alt="alt" class="mb-[15px] size-9 sm:size-12 lg:max-xl:mb-3" />
+            <p class="leading-snug max-sm:text-[15px]">Инструктор по вождению может не бояться за свой автомобиль только за счёт своего профессионализма</p>
+          </div>
+        </div>
+        <div class="mb-3 w-full px-2.5 sm:mb-5 sm:max-w-[50%] sm:basis-6/12 xl:max-w-[25%] xl:basis-3/12">
+          <div class="h-full rounded-[20px] bg-silver p-5">
+            <img src="images/icons/dialog.svg" alt="alt" class="mb-[15px] size-9 sm:size-12 lg:max-xl:mb-3" />
+            <p class="leading-snug max-sm:text-[15px]">Он должен уметь донести информацию до обучаемого. То есть должен уметь говорить</p>
+          </div>
+        </div>
+        <div class="mb-3 w-full px-2.5 sm:mb-5 sm:max-w-[50%] sm:basis-6/12 xl:max-w-[25%] xl:basis-3/12">
+          <div class="h-full rounded-[20px] bg-silver p-5">
+            <img src="images/icons/search-person.svg" alt="alt" class="mb-[15px] size-9 sm:size-12 lg:max-xl:mb-3" />
+            <p class="leading-snug max-sm:text-[15px]">Быть наблюдательным, что бы подбирать методы обучения исходя из индивидуальных особенностей обучаемого</p>
+          </div>
+        </div>
+        <div class="mb-3 w-full px-2.5 sm:mb-5 sm:max-w-[50%] sm:basis-6/12 xl:max-w-[25%] xl:basis-3/12">
+          <div class="h-full rounded-[20px] bg-silver p-5">
+            <img src="images/icons/crash.svg" alt="alt" class="mb-[15px] size-9 sm:size-12 lg:max-xl:mb-3" />
+            <p class="leading-snug max-sm:text-[15px]">Каждый инструктор автошколы должен помнить о том, что статус ученика предполагаетa возможность совершения ошибок</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преподаватели -->
+  <section class="mb-[63px] mt-[60px] lg:mb-[83px] lg:mt-20 xl:mb-[123px] xl:mt-[120px]">
+    <div class="container">
+      <div class="splide slider-teachers">
+        <div class="mb-5 flex justify-between max-md:items-center sm:mb-[30px]">
+          <h2 class="text-[28px] font-bold leading-tight md:text-[32px] lg:text-[38px] xl:text-[40px]">Что говорят наши преподаватели</h2>
+          <div class="splide__arrows flex space-x-3 max-sm:hidden">
+            <button class="splide__arrow splide__arrow--prev flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-old-silver transition-colors hover:bg-primary hover:text-white" type="button">
+              <svg role="img" class="size-6 shrink-0">
+                <use href="images/icons/sprite.svg#chevron-left" />
+              </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-old-silver transition-colors hover:bg-primary hover:text-white" type="button">
+              <svg role="img" class="size-6 shrink-0">
+                <use href="images/icons/sprite.svg#chevron-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="splide__track max-lg:overflow-visible max-md:transition-height max-md:duration-[400ms] lg:-m-[30px] lg:!p-[30px]">
+          <div class="splide__list max-md:items-start">
+            <div class="splide__slide group flex flex-col">
+              <div class="relative mb-6 flex-auto rounded-[20px] bg-white p-4 text-[14px] leading-snug transition-shadow duration-[400ms] before:absolute before:left-[30px] before:top-full before:block before:h-[11px] before:w-[22px] before:[background:url(../images/icons/arrow-white-down.svg)_center/contain_no-repeat] max-lg:shadow-2 sm:text-[15px] lg:group-[.is-visible]:shadow-teacher-lg">
+                <p>
+                  «Считаю своим профессиональным долгом не только давать знания, но и научить стремлению познавать новое и дальше, быть требовательнее к себе. Так каждый научится в любой ситуации действовать самостоятельно. Знания ещё никому не мешали.
+                  <span class="font-semibold">Больше знаешь — лучше едешь»</span>
+                </p>
+              </div>
+              <div class="flex items-center pl-2.5">
+                <div class="mr-3 flex size-[65px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                  <img src="images/avatar.png" srcset="images/avatar.png 1x, images/avatar-2x.png 2x" alt="alt" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex-auto leading-tight">
+                  <div class="mb-2 text-[14px] font-semibold sm:text-[15px]">Бекмаганбетов Жармахан Алдашович</div>
+                  <div class="inline-flex rounded-[52px] bg-white align-top text-[12px] sm:text-[13px]">
+                    <div class="py-[5px] pl-3 pr-2 text-old-silver">Стаж работы</div>
+                    <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group flex flex-col">
+              <div class="relative mb-6 flex-auto rounded-[20px] bg-white p-4 text-[14px] leading-snug transition-shadow duration-[400ms] before:absolute before:left-[30px] before:top-full before:block before:h-[11px] before:w-[22px] before:[background:url(../images/icons/arrow-white-down.svg)_center/contain_no-repeat] max-lg:shadow-2 sm:text-[15px] lg:group-[.is-visible]:shadow-teacher-lg">
+                <p>«Каждой новой группе напоминаю: <span class="font-semibold">«Тяжело в ученье, легко в бою».</span> Но в каждой шутке, как говорится. Сразу должен быть настрой на серьёзное, глубокое обучение. Программа насыщенная, и её надо освоить полностью»</p>
+              </div>
+              <div class="flex items-center pl-2.5">
+                <div class="mr-3 flex size-[65px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                  <img src="images/avatar.png" srcset="images/avatar.png 1x, images/avatar-2x.png 2x" alt="alt" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex-auto leading-tight">
+                  <div class="mb-2 text-[14px] font-semibold sm:text-[15px]">Шарипов Божек Турмиевич</div>
+                  <div class="inline-flex rounded-[52px] bg-white align-top text-[12px] sm:text-[13px]">
+                    <div class="py-[5px] pl-3 pr-2 text-old-silver">Стаж работы</div>
+                    <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group flex flex-col">
+              <div class="relative mb-6 flex-auto rounded-[20px] bg-white p-4 text-[14px] leading-snug transition-shadow duration-[400ms] before:absolute before:left-[30px] before:top-full before:block before:h-[11px] before:w-[22px] before:[background:url(../images/icons/arrow-white-down.svg)_center/contain_no-repeat] max-lg:shadow-2 sm:text-[15px] lg:group-[.is-visible]:shadow-teacher-lg">
+                <p><span class="font-semibold">«Учебный процесс — взаимная работа.</span> И мы, преподаватели и курсанты, должны вместе достигать максимального результата — глубоких крепких знаний. Дорога — серьёзный экзаменатор. Ошибки нерадивых учеников слишком дорого обходятся»</p>
+              </div>
+              <div class="flex items-center pl-2.5">
+                <div class="mr-3 flex size-[65px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                  <img src="images/avatar.png" srcset="images/avatar.png 1x, images/avatar-2x.png 2x" alt="alt" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex-auto leading-tight">
+                  <div class="mb-2 text-[14px] font-semibold sm:text-[15px]">Шарипов Божек Турмиевич</div>
+                  <div class="inline-flex rounded-[52px] bg-white align-top text-[12px] sm:text-[13px]">
+                    <div class="py-[5px] pl-3 pr-2 text-old-silver">Стаж работы</div>
+                    <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group flex flex-col">
+              <div class="relative mb-6 flex-auto rounded-[20px] bg-white p-4 text-[14px] leading-snug transition-shadow duration-[400ms] before:absolute before:left-[30px] before:top-full before:block before:h-[11px] before:w-[22px] before:[background:url(../images/icons/arrow-white-down.svg)_center/contain_no-repeat] max-lg:shadow-2 sm:text-[15px] lg:group-[.is-visible]:shadow-teacher-lg">
+                <p>
+                  «Считаю своим профессиональным долгом не только давать знания, но и научить стремлению познавать новое и дальше, быть требовательнее к себе. Так каждый научится в любой ситуации действовать самостоятельно. Знания ещё никому не мешали.
+                  <span class="font-semibold">Больше знаешь — лучше едешь»</span>
+                </p>
+              </div>
+              <div class="flex items-center pl-2.5">
+                <div class="mr-3 flex size-[65px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                  <img src="images/avatar.png" srcset="images/avatar.png 1x, images/avatar-2x.png 2x" alt="alt" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex-auto leading-tight">
+                  <div class="mb-2 text-[14px] font-semibold sm:text-[15px]">Бекмаганбетов Жармахан Алдашович</div>
+                  <div class="inline-flex rounded-[52px] bg-white align-top text-[12px] sm:text-[13px]">
+                    <div class="py-[5px] pl-3 pr-2 text-old-silver">Стаж работы</div>
+                    <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group flex flex-col">
+              <div class="relative mb-6 flex-auto rounded-[20px] bg-white p-4 text-[14px] leading-snug transition-shadow duration-[400ms] before:absolute before:left-[30px] before:top-full before:block before:h-[11px] before:w-[22px] before:[background:url(../images/icons/arrow-white-down.svg)_center/contain_no-repeat] max-lg:shadow-2 sm:text-[15px] lg:group-[.is-visible]:shadow-teacher-lg">
+                <p>«Каждой новой группе напоминаю: <span class="font-semibold">«Тяжело в ученье, легко в бою».</span> Но в каждой шутке, как говорится. Сразу должен быть настрой на серьёзное, глубокое обучение. Программа насыщенная, и её надо освоить полностью»</p>
+              </div>
+              <div class="flex items-center pl-2.5">
+                <div class="mr-3 flex size-[65px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                  <img src="images/avatar.png" srcset="images/avatar.png 1x, images/avatar-2x.png 2x" alt="alt" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex-auto leading-tight">
+                  <div class="mb-2 text-[14px] font-semibold sm:text-[15px]">Шарипов Божек Турмиевич</div>
+                  <div class="inline-flex rounded-[52px] bg-white align-top text-[12px] sm:text-[13px]">
+                    <div class="py-[5px] pl-3 pr-2 text-old-silver">Стаж работы</div>
+                    <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group flex flex-col">
+              <div class="relative mb-6 flex-auto rounded-[20px] bg-white p-4 text-[14px] leading-snug transition-shadow duration-[400ms] before:absolute before:left-[30px] before:top-full before:block before:h-[11px] before:w-[22px] before:[background:url(../images/icons/arrow-white-down.svg)_center/contain_no-repeat] max-lg:shadow-2 sm:text-[15px] lg:group-[.is-visible]:shadow-teacher-lg">
+                <p><span class="font-semibold">«Учебный процесс — взаимная работа.</span> И мы, преподаватели и курсанты, должны вместе достигать максимального результата — глубоких крепких знаний. Дорога — серьёзный экзаменатор. Ошибки нерадивых учеников слишком дорого обходятся»</p>
+              </div>
+              <div class="flex items-center pl-2.5">
+                <div class="mr-3 flex size-[65px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                  <img src="images/avatar.png" srcset="images/avatar.png 1x, images/avatar-2x.png 2x" alt="alt" class="h-full w-full object-cover" />
+                </div>
+                <div class="flex-auto leading-tight">
+                  <div class="mb-2 text-[14px] font-semibold sm:text-[15px]">Шарипов Божек Турмиевич</div>
+                  <div class="inline-flex rounded-[52px] bg-white align-top text-[12px] sm:text-[13px]">
+                    <div class="py-[5px] pl-3 pr-2 text-old-silver">Стаж работы</div>
+                    <div class="rounded-[52px] bg-primary px-3 py-[5px] font-semibold text-white">25 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="splide__pagination -mx-[7.5px] -mb-[7.5px] mt-7 [&>li]:mx-[7.5px] [&>li]:mb-[7.5px] [&_button.is-active]:opacity-100 [&_button.is-active]:before:opacity-100 [&_button:hover]:opacity-100 [&_button]:relative [&_button]:block [&_button]:size-2 [&_button]:rounded-full [&_button]:bg-primary [&_button]:opacity-50 [&_button]:transition [&_button]:before:absolute [&_button]:before:-inset-1 [&_button]:before:block [&_button]:before:rounded-full [&_button]:before:border [&_button]:before:border-primary/30 [&_button]:before:opacity-0 [&_button]:before:transition-opacity"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пройди онлайн обучение -->
+  <section class="mb-20 mt-20 xl:mb-[120px] xl:mt-[120px]">
+    <div class="container">
+      <div class="relative rounded-[20px] bg-primary text-white max-xl:overflow-hidden">
+        <div class="flex flex-wrap">
+          <div class="relative z-10 w-full self-center pb-9 pl-5 pr-5 pt-[30px] max-lg:pb-0 sm:pl-10 sm:pr-10 sm:pt-9 lg:max-w-[623px] lg:basis-[623px] lg:pr-0 xl:pb-10 xl:pt-10">
+            <div class="-mx-1 -mb-1.5 flex flex-wrap">
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold uppercase leading-tight max-xl:text-[14px]">Акция!</div>
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold leading-tight max-xl:text-[14px]">30 000 ₸</div>
+            </div>
+            <h3 class="mb-4 mt-6 text-[28px] font-bold uppercase leading-tight sm:mb-3 lg:text-[32px] xl:mb-4">Пройди онлайн обучение</h3>
+            <p class="mb-4 text-[15px] leading-snug sm:mb-[22px] sm:text-[17px] lg:text-[18px] xl:mb-[26px]">Доступно для всех регионов и городов Казахстана</p>
+            <ul class="mb-8 space-y-2.5 leading-tight text-white/90 max-xl:text-[15px] max-sm:text-[14px] sm:mb-[50px] [&_li]:flex [&_li]:before:mr-[4.5px] [&_li]:before:mt-[4.5px] [&_li]:before:block [&_li]:before:size-2 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-white/90 sm:[&_li]:before:mr-[5px] sm:[&_li]:before:mt-[5px] xl:[&_li]:before:mr-[5.5px] xl:[&_li]:before:mt-[5.5px]">
+              <li>Во всех регионах Казахстана!</li>
+              <li>Срок обучения 1,5 - 2 месяца</li>
+              <li>Лучшие инструктора</li>
+            </ul>
+            <a href="#" class="inline-flex items-center justify-center rounded-[71px] bg-white px-8 py-5 text-center font-bold leading-tight text-primary transition-colors max-sm:w-full sm:py-4 sm:text-[18px]">
+              Написать в WhatsApp
+              <svg role="img" class="ml-[10px] size-6 shrink-0">
+                <use href="images/icons/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+          </div>
+          <div class="w-full">
+            <img src="images/online-learning.png" srcset="images/online-learning.png 1x, images/online-learning-2x.png 2x" alt="alt" class="max-xl:w-[500px] max-lg:-mt-[5px] max-lg:ml-auto lg:absolute lg:bottom-0 lg:right-0 lg:max-xl:-right-5" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- prettier-ignore -->
+  <footer class="bg-[#222222] py-10 text-white/70 sm:py-[50px] xl:py-[60px]">
+    <div class="container">
+      <div class="xl:flex xl:items-center">
+        <div class="max-xl:mb-5 md:max-xl:flex md:max-xl:items-center md:max-xl:space-x-2.5 md:max-xl:border-b md:max-xl:border-solid md:max-xl:border-[#404040] md:max-xl:pb-5 xl:max-w-[33.333333%] xl:basis-4/12 xl:pr-12">
+          <div class="md:max-xl:max-w-[33.333333%] md:max-xl:basis-4/12">
+            <img src="images/logo.png" alt="alt" class="mb-5 max-w-[120px] sm:mb-4" data-footer-logo />
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]" data-footer-text>
+              МИССИЯ автошколы «Кұлагер» - содействие гражданам Астаны и других регионов Казахстана - слушателям Автошколы «Кұлагер», в изучении Правил безопасности дорожного движения и в обучении безопасному управлению транспортными средствами
+            </p>
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]">© KULAGER-AUTO.KZ & RAT.KZ, 2023</p>
+            <div class="-mx-[3px] -mb-1.5 flex flex-wrap">
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#facebook-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#youtube-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#instagram-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#vk-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#ok-circle" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="pr-5 md:max-xl:max-w-[66.666667%] md:max-xl:basis-8/12 xl:hidden" data-footer-text-wrap></div>
+        </div>
+        <div class="xl:max-w-[66.666667%] xl:basis-8/12">
+          <div class="-mx-2.5 -mb-5 flex flex-wrap">
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Об автошколе</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">О нас</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Контакты</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Мастера обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Стоимость обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Отзывы</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Услуги</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Онлайн обучение</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Ускоренное обучениие</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Уроки вождения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Тестирование пдд онлайн</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Полезная информация</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Новости</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">О дорожном движении РК</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Таблица штрафов</a></li>
+                </ul>
+              </nav>
+              <a href="#" class="group mt-6 inline-flex items-center rounded-[78px] bg-[#0B0B0B] py-1 pl-1 pr-6 align-top font-semibold leading-snug text-white sm:text-[18px]">
+                <div class="mr-2.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary">
+                  <svg role="img" class="size-7 shrink-0">
+                    <use href="images/icons/sprite.svg#tower" />
+                  </svg>
+                </div>
+                Мы в Алмате
+                <svg role="img" class="ml-2.5 size-3 shrink-0 transition-transform group-hover:translate-x-1">
+                  <use href="images/icons/sprite.svg#arrow-up-right" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="invisible fixed left-0 top-0 z-10 h-full w-full bg-black/20 opacity-0 transition-all [&.is-active]:visible [&.is-active]:opacity-100" data-overlay></div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
