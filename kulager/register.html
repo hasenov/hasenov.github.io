@@ -1,0 +1,368 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Создание акаунта</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-dark bg-silver leading-normal selection:bg-primary selection:text-white overflow-x-hidden">
+  <header class="relative z-20 bg-white py-4 max-xl:h-[65px] max-xl:border-b max-xl:border-solid max-xl:border-[#F0F0F1] max-sm:h-[67px] sm:py-3 xl:py-[8.5px]" data-header>
+    <div class="container flex items-center xl:justify-between max-xl:[&>[data-header-langs]]:hidden max-md:[&>[data-header-whatsapp]]:hidden" data-header-container>
+      <a href="index.html" class="max-xl:mr-auto">
+        <img src="images/logo.png" alt="alt" class="max-w-16 sm:max-w-[75px] xl:max-w-36" />
+      </a>
+      <nav class="max-xl:fixed max-xl:bottom-0 max-xl:right-0 max-xl:top-[65px] max-xl:z-20 max-xl:flex max-xl:w-[360px] max-xl:max-w-full max-xl:flex-col max-xl:overflow-y-auto max-xl:bg-white max-xl:px-5 max-xl:py-[60px] max-xl:transition-transform max-xl:[transform:translateX(100%)] max-sm:top-[67px] max-sm:py-5 max-xl:[&.is-active]:[transform:translateX(0)]" data-mobile-menu>
+        <div class="max-xl:flex max-xl:flex-col max-sm:my-auto" data-mobile-menu-content>
+          <ul class="max-xl:order-1 max-xl:mb-9 max-xl:space-y-2 xl:flex">
+            <li class="group/item relative">
+              <a href="about.html" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">О нас</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors group-hover/item:bg-silver group-hover/item:text-[#25313F]">Полезное</a>
+              <div class="invisible absolute -left-[11px] top-full z-10 pt-[29px] opacity-0 transition-all group-hover/item:visible group-hover/item:opacity-100 max-xl:hidden">
+                <ul class="w-[330px] rounded-[20px] bg-white p-3 shadow-submenu">
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Полезное
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Статьи
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Таблица штрафов
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Услуги</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Тестирование ПДД</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Контакты</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Филиалы</a>
+            </li>
+          </ul>
+          <div class="-mx-[3px] -mb-1.5 flex flex-wrap justify-center max-xl:order-3 xl:hidden">
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#facebook-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#youtube-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#instagram-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#vk-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#ok-circle" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="text-right max-xl:mr-5 max-sm:mr-4">
+        <div class="mb-0.5 text-[13px] font-medium leading-tight text-[#202020] sm:text-[16px] xl:mb-px xl:text-[20px]"><a href="tel:87024688881" class="text-[#202020] transition-colors hover:text-primary">8 (702) 468-8881</a></div>
+        <div class="text-[12px] leading-snug text-primary sm:text-[13px]">• Звоните с 9:00 до 20:00</div>
+      </div>
+      <a href="#" class="btn btn-primary rounded-[67px] px-5 py-[15px] font-bold max-md:order-2 max-md:mb-7 md:py-2.5 md:max-xl:mr-5 md:max-xl:text-[14px] xl:py-[13px]" data-header-whatsapp>
+        Написать в WhatsApp
+        <svg role="img" class="ml-2.5 size-5">
+          <use href="images/icons/sprite.svg#whatsapp" />
+        </svg>
+      </a>
+      <div class="text-sm leading-tight max-xl:order-4 max-xl:mt-9 max-xl:flex max-xl:space-x-px xl:space-y-px" data-header-langs>
+        <a href="#" class="is-active block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Рус</a>
+        <a href="#" class="block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Қаз</a>
+      </div>
+      <button type="button" class="group relative order-last size-6 focus:outline-none xl:hidden" data-header-hamburger>
+        <span class="sr-only">Открыть мобильное меню</span>
+        <span class="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
+          <span class="absolute block h-0.5 w-5 -translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:opacity-0"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+
+  <div class="pb-20 pt-5 sm:pt-7 xl:pb-[120px] xl:pt-8">
+    <div class="container">
+      <nav class="mb-8 text-[13px] leading-tight lg:text-[12px] xl:pr-14 xl:text-[15px]">
+        <ol class="flex flex-wrap [&>li+li]:before:mr-1.5 [&>li+li]:before:block [&>li+li]:before:size-[5px] [&>li+li]:before:shrink-0 [&>li+li]:before:rounded-full [&>li+li]:before:bg-gray/40 [&>li:not(:last-child)]:mr-1.5 [&>li]:flex [&>li]:items-center [&_a:hover]:text-dark [&_a]:text-gray/70 [&_a]:transition-colors">
+          <li><a href="index.html">Главная</a></li>
+          <li>Создание аккаунта</li>
+        </ol>
+      </nav>
+      <div class="rounded-[20px] bg-white p-5">
+        <div class="-mx-2.5 -mb-7 flex flex-wrap xl:-mx-5">
+          <div class="mb-7 w-full shrink-0 self-center px-2.5 lg:max-w-[66.666667%] lg:basis-8/12 xl:max-w-[60.4%] xl:basis-[60.4%] xl:px-5">
+            <!-- .is-success -->
+            <form class="group lg:max-xl:py-2.5 xl:pl-5">
+              <h2 class="mb-7 border-b border-platinum pb-7 font-raleway text-[28px] font-bold leading-[1] md:text-[32px] lg:text-[38px] lg:group-[.is-success]:hidden xl:text-[40px]">Создание акаунта</h2>
+              <div class="group-[.is-success]:hidden">
+                <div class="space-y-7">
+                  <div>
+                    <div class="mb-5 text-[18px] font-semibold leading-[1]">Ваш регион</div>
+                    <div class="-mx-2.5 -mb-3 flex flex-wrap sm:-mb-5 xl:-mx-[15px]">
+                      <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:px-[15px]">
+                        <div class="custom-select group" data-select>
+                          <div class="relative">
+                            <input type="text" class="hidden-absolute" data-select-input />
+                            <div class="custom-select__btn" data-select-btn>
+                              <div class="flex-auto">
+                                <div class="custom-select__label">Область</div>
+                                <div class="custom-select__placeholder" data-select-placeholder></div>
+                              </div>
+                              <svg role="img" class="custom-select__arrow">
+                                <use href="images/icons/sprite.svg#chevron-down" />
+                              </svg>
+                            </div>
+                            <ul class="custom-select__popup" data-select-options>
+                              <li data-select-option="1">Область 1</li>
+                              <li data-select-option="2">Область 2</li>
+                              <li data-select-option="3">Область 3</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:px-[15px]">
+                        <div class="custom-select group" data-select>
+                          <div class="relative">
+                            <input type="text" class="hidden-absolute" data-select-input />
+                            <div class="custom-select__btn" data-select-btn>
+                              <div class="flex-auto">
+                                <div class="custom-select__label">Город</div>
+                                <div class="custom-select__placeholder" data-select-placeholder></div>
+                              </div>
+                              <svg role="img" class="custom-select__arrow">
+                                <use href="images/icons/sprite.svg#chevron-down" />
+                              </svg>
+                            </div>
+                            <ul class="custom-select__popup" data-select-options>
+                              <li data-select-option="1">Комсомольское</li>
+                              <li data-select-option="2">Комсомольское 2</li>
+                              <li data-select-option="3">Комсомольское 3</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="mb-5 text-[18px] font-semibold leading-[1]">Контактные данные</div>
+                    <div class="-mx-2.5 -mb-3 flex flex-wrap sm:-mb-5 xl:-mx-[15px]">
+                      <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:px-[15px]">
+                        <div class="control-floating group" data-input-wrap>
+                          <div class="relative">
+                            <input id="fio" type="text" class="control-floating__input" data-input />
+                            <label for="fio" class="control-floating__label">ФИО</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:px-[15px]">
+                        <div class="control-floating group" data-input-wrap>
+                          <div class="relative">
+                            <input id="email" type="email" class="control-floating__input" data-input />
+                            <label for="email" class="control-floating__label">Электронная почта</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:px-[15px]">
+                        <div class="control-floating group" data-input-wrap>
+                          <div class="relative">
+                            <input id="phone" type="tel" class="control-floating__input" data-input />
+                            <label for="phone" class="control-floating__label">Телефон</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:px-[15px]">
+                        <label class="group flex cursor-pointer items-center rounded-[14px] bg-silver px-3.5 py-[11px] sm:py-[13px] xl:py-[14.5px]">
+                          <input type="file" class="hidden-absolute" />
+                          <svg role="img" class="mr-3 size-7 shrink-0 text-primary transition-colors group-hover:text-primary-light sm:mr-[15px] sm:size-8">
+                            <use href="images/icons/sprite.svg#image-add" />
+                          </svg>
+                          <span class="flex-auto leading-snug text-gray/80 max-xl:text-[14px]">Ваше фото (не обязательно) </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 flex max-int:flex-col max-int:space-y-2.5 int:mt-9 int:items-center int:justify-between">
+                  <label class="inline-flex cursor-pointer items-center align-top">
+                    <input type="checkbox" class="hidden-absolute peer" />
+                    <span class="block p-2 text-platinum transition-colors peer-checked:text-primary">
+                      <svg role="img" class="size-6">
+                        <use href="images/icons/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="flex-auto leading-snug text-gray max-xl:text-[12px]">Я согласен с <a href="#" class="font-semibold text-primary/80 transition-colors hover:text-primary">условиями использования ресурса</a></span>
+                  </label>
+                  <button type="submit" class="btn btn-primary rounded-[67px] px-8 py-4 font-bold xl:text-[18px]">Создать аккаунт</button>
+                </div>
+                <div class="mt-7 space-y-3 border-t border-platinum pt-7 leading-snug max-xl:text-[14px] xl:space-y-4">
+                  <div class="flex flex-wrap space-x-3 max-int:justify-center">
+                    <div class="text-gray/80">Есть аккаунт?</div>
+                    <a href="login.html" class="font-semibold text-primary/80 transition-colors hover:text-primary">Войти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-auto hidden max-w-[569px] animate-fade text-center group-[.is-success]:block max-lg:pb-2.5">
+                <img src="images/icons/check-alt.svg" alt="alt" class="mx-auto mb-5 w-12 sm:w-14 md:mb-7 md:w-[68px]" />
+                <h2 class="mb-4 text-[28px] font-bold leading-tight md:text-[32px] lg:text-[38px] lg:leading-[1] xl:text-[40px]">Отлично!</h2>
+                <p class="mb-5 text-[15px] leading-snug text-gray sm:mb-7 xl:text-[18px]">Теперь вы зарегистрированный пользователь и можете войти в личный кабинет и выбрать программу подготовки. Нажмите на кнопку ниже и авторизуйтесь, чтобы войти в систему</p>
+                <a href="login.html" class="btn btn-primary rounded-[67px] px-8 py-4 font-bold max-sm:w-full xl:text-[18px]">Войти в аккаунт</a>
+              </div>
+            </form>
+          </div>
+          <div class="mb-7 w-full shrink-0 px-2.5 lg:max-w-[33.333333%] lg:basis-4/12 xl:max-w-[39.6%] xl:basis-[39.6%] xl:px-5">
+            <div class="mx-auto flex h-full flex-col items-center justify-end overflow-hidden rounded-lg bg-primary max-sm:max-w-[470px] sm:rounded-[15px] lg:min-h-[512px] lg:max-w-[470px]">
+              <picture>
+                <source srcset="images/auth-img-full.png 1x, images/auth-img-full-2x.png 2x" media="(min-width: 576px) and (max-width: 991.98px)" />
+                <img src="images/auth-img.png" srcset="images/auth-img.png 1x, images/auth-img-2x.png 2x" alt="alt" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="bg-[#222222] py-10 text-white/70 sm:py-[50px] xl:py-[60px]">
+    <div class="container">
+      <div class="xl:flex xl:items-center">
+        <div class="max-xl:mb-5 md:max-xl:flex md:max-xl:items-center md:max-xl:space-x-2.5 md:max-xl:border-b md:max-xl:border-solid md:max-xl:border-[#404040] md:max-xl:pb-5 xl:max-w-[33.333333%] xl:basis-4/12 xl:pr-12">
+          <div class="md:max-xl:max-w-[33.333333%] md:max-xl:basis-4/12">
+            <img src="images/logo.png" alt="alt" class="mb-5 max-w-[120px] sm:mb-4" data-footer-logo />
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]" data-footer-text>
+              МИССИЯ автошколы «Кұлагер» - содействие гражданам Астаны и других регионов Казахстана - слушателям Автошколы «Кұлагер», в изучении Правил безопасности дорожного движения и в обучении безопасному управлению транспортными средствами
+            </p>
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]">© KULAGER-AUTO.KZ & RAT.KZ, 2023</p>
+            <div class="-mx-[3px] -mb-1.5 flex flex-wrap">
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#facebook-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#youtube-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#instagram-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#vk-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#ok-circle" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="pr-5 md:max-xl:max-w-[66.666667%] md:max-xl:basis-8/12 xl:hidden" data-footer-text-wrap></div>
+        </div>
+        <div class="xl:max-w-[66.666667%] xl:basis-8/12">
+          <div class="-mx-2.5 -mb-5 flex flex-wrap">
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Об автошколе</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">О нас</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Контакты</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Мастера обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Стоимость обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Отзывы</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Услуги</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Онлайн обучение</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Ускоренное обучениие</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Уроки вождения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Тестирование пдд онлайн</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Полезная информация</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Новости</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">О дорожном движении РК</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Таблица штрафов</a></li>
+                </ul>
+              </nav>
+              <a href="#" class="btn group mt-6 rounded-[78px] bg-[#0B0B0B] py-1 pl-1 pr-6 font-semibold leading-snug text-white sm:text-[18px]">
+                <div class="mr-2.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary">
+                  <svg role="img" class="size-7 shrink-0">
+                    <use href="images/icons/sprite.svg#tower" />
+                  </svg>
+                </div>
+                Мы в Алмате
+                <svg role="img" class="ml-2.5 size-3 shrink-0 transition-transform group-hover:translate-x-1">
+                  <use href="images/icons/sprite.svg#arrow-up-right" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="invisible fixed left-0 top-0 z-10 h-full w-full bg-black/20 opacity-0 transition-all [&.is-active]:visible [&.is-active]:opacity-100" data-overlay></div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
