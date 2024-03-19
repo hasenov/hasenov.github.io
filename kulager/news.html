@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Придумайте новый пароль</title>
+  <title>Новости</title>
   <meta name="description" content="описание" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -124,79 +124,158 @@
   </header>
 
 
-  <div class="pb-20 pt-5 sm:pt-7 xl:pb-[120px] xl:pt-8">
+  <!-- Баннер -->
+  <div class="relative overflow-hidden bg-primary text-white">
     <div class="container">
-      <nav class="mb-8 text-[13px] leading-tight lg:text-[12px] xl:pr-14 xl:text-[15px]">
-        <ol class="flex flex-wrap [&>li+li]:before:mr-1.5 [&>li+li]:before:block [&>li+li]:before:size-[5px] [&>li+li]:before:shrink-0 [&>li+li]:before:rounded-full [&>li+li]:before:bg-gray/40 [&>li:not(:last-child)]:mr-1.5 [&>li]:flex [&>li]:items-center [&_a:hover]:text-dark [&_a]:text-gray/70 [&_a]:transition-colors">
-          <li><a href="index.html">Главная</a></li>
-          <li>Создание аккаунта</li>
-        </ol>
-      </nav>
-      <div class="rounded-[20px] bg-white p-5">
-        <div class="-mx-2.5 -mb-7 flex flex-wrap xl:-mx-10">
-          <div class="mb-7 w-full shrink-0 self-center px-2.5 lg:max-w-[66.666667%] lg:basis-8/12 xl:max-w-[58.333333%] xl:basis-7/12 xl:px-10">
-            <form class="lg:max-xl:py-2.5 xl:pl-5">
-              <div class="mb-7 lg:max-xl:border-b lg:max-xl:border-platinum lg:max-xl:pb-7">
-                <h2 class="mb-3 font-raleway text-[28px] font-bold leading-[1] md:text-[32px] lg:text-[38px] xl:mb-4 xl:text-[40px]">Придумайте новый пароль</h2>
-                <p class="leading-snug text-gray max-sm:text-[15px] xl:text-[18px]">Теперь мы знаем, что это вы, введите новый пароль для входа</p>
+      <div class="relative min-h-[233px] py-8 lg:z-10 lg:flex lg:min-h-[258px] lg:flex-col lg:pr-[calc(50%-50vw+650px)] xl:min-h-[330px] xl:pr-[calc(50%-50vw+800px)]">
+        <nav class="text-[13px] leading-tight max-lg:mb-7 lg:text-[12px] xl:pr-14 xl:text-[15px]">
+          <ol class="flex flex-wrap [&>li+li]:before:mr-1.5 [&>li+li]:before:block [&>li+li]:before:size-[5px] [&>li+li]:before:shrink-0 [&>li+li]:before:rounded-full [&>li+li]:before:bg-white/40 [&>li:not(:last-child)]:mr-1.5 [&>li]:flex [&>li]:items-center [&_a:hover]:text-white [&_a]:text-white/70 [&_a]:transition-colors">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Полезное</a></li>
+            <li>Новости</li>
+          </ol>
+        </nav>
+        <div class="lg:my-auto">
+          <h1 class="mb-4 font-raleway text-[32px] font-bold leading-none sm:text-[44px] lg:mb-3 xl:mb-5 xl:text-[64px]">Полезные новости</h1>
+          <p class="leading-snug xl:text-[21px]">Статьи о ПДД, обслуживании авто и многом другом</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex overflow-hidden lg:hidden">
+      <img src="images/banner-reviews.jpg" alt="alt" class="h-[260px] w-full object-cover sm:h-[300px]" loading="lazy" />
+      <img src="images/banner-decor-mob.svg" alt="alt" class="absolute left-0 top-0 h-full" loading="lazy" />
+    </div>
+    <div class="pointer-events-none absolute -right-14 top-0 h-full max-lg:hidden xl:right-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.48 330" class="w-[656px] xl:w-[839px]">
+        <defs>
+          <clipPath id="clip-path">
+            <path d="m0,0v7.87s230.98,87.63,354.98,314.63c0,0,26.57,2,63.78,7.5h419.72V0H0Z" />
+          </clipPath>
+        </defs>
+        <image clip-path="url(#clip-path)" xlink:href="images/banner-reviews.jpg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" />
+      </svg>
+      <img src="images/banner-decor.svg" alt="alt" class="absolute right-0 top-0 max-w-none xl:-left-[37%]" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- Новости -->
+  <div class="mb-20 mt-10 xl:mb-[120px] xl:mt-[120px]">
+    <div class="container">
+      <div class="-mx-2.5 -mb-5 flex flex-wrap xl:-mb-[30px]">
+        <div class="mb-5 w-full px-2.5 md:max-lg:max-w-[50%] md:max-lg:basis-6/12 xl:mb-[30px]">
+          <div class="rounded-[20px] bg-white p-2.5 shadow-1 sm:p-5">
+            <div class="lg:-mx-2.5 lg:flex">
+              <div class="max-w-[470px] max-lg:mb-[15px] max-md:mx-auto lg:max-w-[458px] lg:shrink-0 lg:basis-[458px] lg:px-2.5 xl:max-w-[490px] xl:basis-[490px]">
+                <a href="#" class="relative flex overflow-hidden rounded-xl pb-[calc(100%/(470/310))] sm:rounded-[14px]">
+                  <img src="images/card-news-1.jpg" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+                </a>
               </div>
-              <div class="space-y-7">
-                <div>
-                  <div class="-mx-2.5 -mb-3 flex flex-wrap sm:-mb-5 xl:-mx-[15px]">
-                    <div class="mb-3 w-full px-2.5 sm:mb-5 lg:max-xl:max-w-[50%] lg:max-xl:basis-6/12 xl:px-[15px]">
-                      <div class="control-floating group" data-input-wrap>
-                        <div class="relative">
-                          <input id="password" type="password" class="control-floating__input pr-[50px]" data-input />
-                          <label for="password" class="control-floating__label">Пароль</label>
-                          <button type="button" class="group/password password-toggle" data-input-password-toggle>
-                            <svg role="img" class="password-toggle__show">
-                              <use href="images/icons/sprite.svg#eye-open" />
-                            </svg>
-                            <svg role="img" class="password-toggle__hide">
-                              <use href="images/icons/sprite.svg#eye-closed" />
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mb-3 w-full px-2.5 sm:mb-5 lg:max-xl:max-w-[50%] lg:max-xl:basis-6/12 xl:px-[15px]">
-                      <!-- .is-invalid -->
-                      <div class="control-floating group" data-input-wrap>
-                        <div class="relative">
-                          <input id="password" type="password" class="control-floating__input pr-[50px]" data-input />
-                          <label for="password" class="control-floating__label">Пароль ещё раз</label>
-                          <button type="button" class="group/password password-toggle" data-input-password-toggle>
-                            <svg role="img" class="password-toggle__show">
-                              <use href="images/icons/sprite.svg#eye-open" />
-                            </svg>
-                            <svg role="img" class="password-toggle__hide">
-                              <use href="images/icons/sprite.svg#eye-closed" />
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="text-danger mt-2 hidden font-medium leading-snug group-[.is-invalid]:block">Пожалуйста, повторите пароль ещё раз</div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="flex flex-col lg:flex-auto lg:px-2.5">
+                <div class="mb-[15px] flex items-start justify-between max-lg:flex-col max-lg:space-y-2.5 lg:mb-6 lg:items-center lg:space-x-2.5">
+                  <div class="rounded-[52px] bg-silver px-3 py-2 font-medium leading-tight text-gray max-xl:text-[14px] max-sm:text-[12px]">Обслуживание автомобиля (тема)</div>
+                  <div class="leading-snug text-old-silver/70 lg:max-xl:text-[12px]">27 Ноября 2018</div>
                 </div>
+                <div class="mb-2.5 text-[18px] font-semibold leading-tight transition-colors hover:text-primary sm:text-[20px] lg:text-[24px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                <p class="mb-6 text-[15px] leading-snug xl:text-[18px]">Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?</p>
+                <a href="#" class="btn btn-primary mt-auto self-start rounded-[67px] px-5 py-[13px] font-bold max-lg:w-full lg:text-[18px]">
+                  Читать далее
+                  <svg role="img" class="ml-1 size-4 shrink-0">
+                    <use href="images/icons/sprite.svg#chevron-right-sm" />
+                  </svg>
+                </a>
               </div>
-              <div class="mt-8 flex max-xl:flex-row-reverse max-sm:flex-col max-sm:space-y-2 sm:mt-7 sm:space-x-5 sm:max-xl:space-x-reverse xl:mt-11 xl:space-x-2.5">
-                <button type="submit" class="btn btn-primary rounded-[67px] px-8 py-4 font-bold max-xl:flex-1 xl:text-[18px]">Войти</button>
-              </div>
-            </form>
+            </div>
           </div>
-          <div class="mb-7 w-full shrink-0 px-2.5 lg:max-w-[33.333333%] lg:basis-4/12 xl:max-w-[41.666667%] xl:basis-5/12 xl:px-10">
-            <div class="mx-auto flex h-full flex-col items-center justify-end overflow-hidden rounded-lg bg-primary max-sm:max-w-[470px] sm:rounded-[15px] lg:min-h-[512px] lg:max-w-[470px]">
-              <picture>
-                <source srcset="images/security-img-full.png 1x, images/security-img-full-2x.png 2x" media="(min-width: 576px) and (max-width: 991.98px)" />
-                <img src="images/security-img.png" srcset="images/security-img.png 1x, images/security-img-2x.png 2x" alt="alt" class="max-lg:-mt-6 xl:-mt-10" />
-              </picture>
+        </div>
+        <div class="mb-5 w-full px-2.5 md:max-lg:max-w-[50%] md:max-lg:basis-6/12 xl:mb-[30px]">
+          <div class="rounded-[20px] bg-white p-2.5 shadow-1 sm:p-5">
+            <div class="lg:-mx-2.5 lg:flex">
+              <div class="max-w-[470px] max-lg:mb-[15px] max-md:mx-auto lg:max-w-[458px] lg:shrink-0 lg:basis-[458px] lg:px-2.5 xl:max-w-[490px] xl:basis-[490px]">
+                <a href="#" class="relative flex overflow-hidden rounded-xl pb-[calc(100%/(470/310))] sm:rounded-[14px]">
+                  <img src="images/card-news-1.jpg" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+                </a>
+              </div>
+              <div class="flex flex-col lg:flex-auto lg:px-2.5">
+                <div class="mb-[15px] flex items-start justify-between max-lg:flex-col max-lg:space-y-2.5 lg:mb-6 lg:items-center lg:space-x-2.5">
+                  <div class="rounded-[52px] bg-silver px-3 py-2 font-medium leading-tight text-gray max-xl:text-[14px] max-sm:text-[12px]">Обслуживание автомобиля (тема)</div>
+                  <div class="leading-snug text-old-silver/70 lg:max-xl:text-[12px]">27 Ноября 2018</div>
+                </div>
+                <div class="mb-2.5 text-[18px] font-semibold leading-tight transition-colors hover:text-primary sm:text-[20px] lg:text-[24px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                <p class="mb-6 text-[15px] leading-snug xl:text-[18px]">Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?</p>
+                <a href="#" class="btn btn-primary mt-auto self-start rounded-[67px] px-5 py-[13px] font-bold max-lg:w-full lg:text-[18px]">
+                  Читать далее
+                  <svg role="img" class="ml-1 size-4 shrink-0">
+                    <use href="images/icons/sprite.svg#chevron-right-sm" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 w-full px-2.5 md:max-lg:max-w-[50%] md:max-lg:basis-6/12 xl:mb-[30px]">
+          <div class="rounded-[20px] bg-white p-2.5 shadow-1 sm:p-5">
+            <div class="lg:-mx-2.5 lg:flex">
+              <div class="max-w-[470px] max-lg:mb-[15px] max-md:mx-auto lg:max-w-[458px] lg:shrink-0 lg:basis-[458px] lg:px-2.5 xl:max-w-[490px] xl:basis-[490px]">
+                <a href="#" class="relative flex overflow-hidden rounded-xl pb-[calc(100%/(470/310))] sm:rounded-[14px]">
+                  <img src="images/card-news-1.jpg" alt="alt" class="absolute left-0 top-0 h-full w-full object-cover" />
+                </a>
+              </div>
+              <div class="flex flex-col lg:flex-auto lg:px-2.5">
+                <div class="mb-[15px] flex items-start justify-between max-lg:flex-col max-lg:space-y-2.5 lg:mb-6 lg:items-center lg:space-x-2.5">
+                  <div class="rounded-[52px] bg-silver px-3 py-2 font-medium leading-tight text-gray max-xl:text-[14px] max-sm:text-[12px]">Обслуживание автомобиля (тема)</div>
+                  <div class="leading-snug text-old-silver/70 lg:max-xl:text-[12px]">27 Ноября 2018</div>
+                </div>
+                <div class="mb-2.5 text-[18px] font-semibold leading-tight transition-colors hover:text-primary sm:text-[20px] lg:text-[24px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                <p class="mb-6 text-[15px] leading-snug xl:text-[18px]">Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?</p>
+                <a href="#" class="btn btn-primary mt-auto self-start rounded-[67px] px-5 py-[13px] font-bold max-lg:w-full lg:text-[18px]">
+                  Читать далее
+                  <svg role="img" class="ml-1 size-4 shrink-0">
+                    <use href="images/icons/sprite.svg#chevron-right-sm" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="mt-5 text-center xl:mt-[30px]">
+        <a href="#" class="btn btn-white rounded-[20px] px-8 py-5 font-semibold max-sm:w-full sm:rounded-[71px] sm:py-4 lg:text-[18px]">Показать ещё</a>
+      </div>
     </div>
   </div>
+
+  <!-- Пройди онлайн обучение -->
+  <section class="mb-20 mt-20 xl:mb-[120px] xl:mt-[120px]">
+    <div class="container">
+      <div class="relative rounded-[20px] bg-primary text-white max-xl:overflow-hidden">
+        <div class="flex flex-wrap">
+          <div class="relative z-10 w-full self-center pb-9 pl-5 pr-5 pt-[30px] max-lg:pb-0 sm:pl-10 sm:pr-10 sm:pt-9 lg:max-w-[623px] lg:basis-[623px] lg:pr-0 xl:pb-10 xl:pt-10">
+            <div class="-mx-1 -mb-1.5 flex flex-wrap">
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold uppercase leading-tight max-xl:text-[14px]">Акция!</div>
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold leading-tight max-xl:text-[14px]">30 000 ₸</div>
+            </div>
+            <h3 class="mb-4 mt-6 text-[28px] font-bold uppercase leading-tight sm:mb-3 lg:text-[32px] xl:mb-4">Пройди онлайн обучение</h3>
+            <p class="mb-4 text-[15px] leading-snug sm:mb-[22px] sm:text-[17px] lg:text-[18px] xl:mb-[26px]">Доступно для всех регионов и городов Казахстана</p>
+            <ul class="mb-8 space-y-2.5 leading-tight text-white/90 max-xl:text-[15px] max-sm:text-[14px] sm:mb-[50px] [&_li]:flex [&_li]:before:mr-[4.5px] [&_li]:before:mt-[4.5px] [&_li]:before:block [&_li]:before:size-2 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-white/90 sm:[&_li]:before:mr-[5px] sm:[&_li]:before:mt-[5px] xl:[&_li]:before:mr-[5.5px] xl:[&_li]:before:mt-[5.5px]">
+              <li>Во всех регионах Казахстана!</li>
+              <li>Срок обучения 1,5 - 2 месяца</li>
+              <li>Лучшие инструктора</li>
+            </ul>
+            <a href="#" class="btn btn-white-alt rounded-[71px] px-8 py-5 font-bold max-sm:w-full sm:py-4 sm:text-[18px]">
+              Написать в WhatsApp
+              <svg role="img" class="ml-2.5 size-6 shrink-0">
+                <use href="images/icons/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+          </div>
+          <div class="w-full">
+            <img src="images/online-learning.png" srcset="images/online-learning.png 1x, images/online-learning-2x.png 2x" alt="alt" class="max-xl:w-[500px] max-lg:-mt-[5px] max-lg:ml-auto lg:absolute lg:bottom-0 lg:right-0 lg:max-xl:-right-5" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- prettier-ignore -->
   <footer class="bg-[#222222] py-10 text-white/70 sm:py-[50px] xl:py-[60px]">

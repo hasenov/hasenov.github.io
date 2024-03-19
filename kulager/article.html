@@ -1,0 +1,587 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Статья</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-dark bg-silver leading-normal selection:bg-primary selection:text-white overflow-x-hidden">
+  <header class="relative z-20 bg-white py-4 max-xl:h-[65px] max-xl:border-b max-xl:border-solid max-xl:border-[#F0F0F1] max-sm:h-[67px] sm:py-3 xl:py-[8.5px]" data-header>
+    <div class="container flex items-center xl:justify-between max-xl:[&>[data-header-langs]]:hidden max-md:[&>[data-header-whatsapp]]:hidden" data-header-container>
+      <a href="index.html" class="max-xl:mr-auto">
+        <img src="images/logo.png" alt="alt" class="max-w-16 sm:max-w-[75px] xl:max-w-36" />
+      </a>
+      <nav class="max-xl:fixed max-xl:bottom-0 max-xl:right-0 max-xl:top-[65px] max-xl:z-20 max-xl:flex max-xl:w-[360px] max-xl:max-w-full max-xl:flex-col max-xl:overflow-y-auto max-xl:bg-white max-xl:px-5 max-xl:py-[60px] max-xl:transition-transform max-xl:[transform:translateX(100%)] max-sm:top-[67px] max-sm:py-5 max-xl:[&.is-active]:[transform:translateX(0)]" data-mobile-menu>
+        <div class="max-xl:flex max-xl:flex-col max-sm:my-auto" data-mobile-menu-content>
+          <ul class="max-xl:order-1 max-xl:mb-9 max-xl:space-y-2 xl:flex">
+            <li class="group/item relative">
+              <a href="about.html" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">О нас</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors group-hover/item:bg-silver group-hover/item:text-[#25313F]">Полезное</a>
+              <div class="invisible absolute -left-[11px] top-full z-10 pt-[29px] opacity-0 transition-all group-hover/item:visible group-hover/item:opacity-100 max-xl:hidden">
+                <ul class="w-[330px] rounded-[20px] bg-white p-3 shadow-submenu">
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Полезное
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="news.html" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Статьи
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
+                      Таблица штрафов
+                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group/item relative">
+              <a href="services.html" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Услуги</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Тестирование ПДД</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Контакты</a>
+            </li>
+            <li class="group/item relative">
+              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Филиалы</a>
+            </li>
+          </ul>
+          <div class="-mx-[3px] -mb-1.5 flex flex-wrap justify-center max-xl:order-3 xl:hidden">
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#facebook-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#youtube-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#instagram-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#vk-circle" />
+              </svg>
+            </a>
+            <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-lighter">
+              <svg role="img" class="size-8">
+                <use href="images/icons/sprite.svg#ok-circle" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="text-right max-xl:mr-5 max-sm:mr-4">
+        <div class="mb-0.5 text-[13px] font-medium leading-tight text-[#202020] sm:text-[16px] xl:mb-px xl:text-[20px]"><a href="tel:87024688881" class="text-[#202020] transition-colors hover:text-primary">8 (702) 468-8881</a></div>
+        <div class="text-[12px] leading-snug text-primary sm:text-[13px]">• Звоните с 9:00 до 20:00</div>
+      </div>
+      <a href="#" class="btn btn-primary rounded-[67px] px-5 py-[15px] font-bold max-md:order-2 max-md:mb-7 md:py-2.5 md:max-xl:mr-5 md:max-xl:text-[14px] xl:py-[13px]" data-header-whatsapp>
+        Написать в WhatsApp
+        <svg role="img" class="ml-2.5 size-5">
+          <use href="images/icons/sprite.svg#whatsapp" />
+        </svg>
+      </a>
+      <div class="text-sm leading-tight max-xl:order-4 max-xl:mt-9 max-xl:flex max-xl:space-x-px xl:space-y-px" data-header-langs>
+        <a href="#" class="is-active block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Рус</a>
+        <a href="#" class="block rounded-[63px] px-[8.5px] py-2 text-center text-gray transition-colors hover:bg-silver hover:text-dark max-xl:flex-1 xl:py-[3px] [&.is-active]:bg-silver [&.is-active]:text-dark">Қаз</a>
+      </div>
+      <button type="button" class="group relative order-last size-6 focus:outline-none xl:hidden" data-header-hamburger>
+        <span class="sr-only">Открыть мобильное меню</span>
+        <span class="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
+          <span class="absolute block h-0.5 w-5 -translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:opacity-0"></span>
+          <span class="group-[.is-active]: absolute block h-0.5 w-5 translate-y-1.5 transform rounded-md bg-dark transition ease-in-out group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- Баннер -->
+  <div class="relative overflow-hidden bg-primary text-white">
+    <div class="container">
+      <div class="relative min-h-[233px] py-8 lg:z-10 lg:flex lg:min-h-[258px] lg:flex-col lg:pr-[calc(50%-50vw+650px)] xl:min-h-[330px] xl:pr-[calc(50%-50vw+800px)]">
+        <nav class="text-[13px] leading-tight max-lg:mb-7 lg:text-[12px] xl:pr-14 xl:text-[15px]">
+          <ol class="flex flex-wrap [&>li+li]:before:mr-1.5 [&>li+li]:before:block [&>li+li]:before:size-[5px] [&>li+li]:before:shrink-0 [&>li+li]:before:rounded-full [&>li+li]:before:bg-white/40 [&>li:not(:last-child)]:mr-1.5 [&>li]:flex [&>li]:items-center [&_a:hover]:text-white [&_a]:text-white/70 [&_a]:transition-colors">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Полезное</a></li>
+            <li>Статья</li>
+          </ol>
+        </nav>
+        <div class="lg:my-auto">
+          <h1 class="mb-4 font-raleway text-[32px] font-bold leading-none sm:text-[44px] lg:mb-3 xl:mb-5 xl:text-[64px]">Статья (h1)</h1>
+          <p class="leading-snug xl:text-[21px]">Статьи о ПДД, обслуживании авто и многом другом</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex overflow-hidden lg:hidden">
+      <img src="images/banner-online.jpg" alt="alt" class="h-[260px] w-full object-cover sm:h-[300px]" loading="lazy" />
+      <img src="images/banner-decor-mob.svg" alt="alt" class="absolute left-0 top-0 h-full" loading="lazy" />
+    </div>
+    <div class="pointer-events-none absolute -right-14 top-0 h-full max-lg:hidden xl:right-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.48 330" class="w-[656px] xl:w-[839px]">
+        <defs>
+          <clipPath id="clip-path">
+            <path d="m0,0v7.87s230.98,87.63,354.98,314.63c0,0,26.57,2,63.78,7.5h419.72V0H0Z" />
+          </clipPath>
+        </defs>
+        <image clip-path="url(#clip-path)" xlink:href="images/banner-online.jpg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" />
+      </svg>
+      <img src="images/banner-decor.svg" alt="alt" class="absolute right-0 top-0 max-w-none xl:-left-[37%]" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- Статья -->
+  <div class="mb-10 mt-10 lg:mb-20 xl:my-[120px]">
+    <div class="container">
+      <div class="-mx-[15px] flex">
+        <div class="w-full shrink-0 grow-0 px-[15px] xl:max-w-[75%] xl:basis-9/12">
+          <div class="rounded-[20px] bg-white p-5 md:p-[30px]">
+            <article class="post prose">
+              <p>
+                Знакомая ситуация: вышли из салона авто на пару часов и забыли выключить фары. Как следствие, получаете букет проблем, связанных с <strong>состоянием аккумулятора.</strong> Если он разрядится по максимуму, то уже не удастся избежать дорогостоящего ремонта авто, да и
+                вообще <a href="#">безопасно</a> тронуться с места.
+              </p>
+              <blockquote>
+                <p><strong>Цитата</strong></p>
+                <p>Загрязнения с корпуса убираются плотной ветошью, смоченной в содовом растворе. Как его приготовить? – Разведите одну столовую ложку соды в граненом стандартном стакане с теплой водой.</p>
+                <p style="text-align: center">Механик – Николай Николаевич</p>
+              </blockquote>
+              <figure>
+                <img src="images/article-big.jpg" />
+                <figcaption>Подпись к фото</figcaption>
+              </figure>
+
+              <h2>Три способа проверить состояние аккумулятора (h2)</h2>
+              <h3>1. Визуальный осмотр. (h3)</h3>
+              <p>
+                Достаньте аккумулятор, разместите его на ровной поверхности, обеспечьте хорошее освещение, тщательно осмотрите короб автомобильного оборудования. Во-первых, не допускается деформация корпуса, даже незначительные повреждения. Во-вторых, грязь, следы от утечек электролита –
+                вообще опасно, потому что процесс ухудшения функционирования аккумулятора уверенно стартовал, остановить его может лишь комплексный ремонт автомобилей.
+              </p>
+              <div class="info-block">
+                <h4>Совет-напоминание (h4)</h4>
+                <p>Щуп мильтиметра, окрашенный в красный цвет, присоединяется в зоне плюса клеммы аккумулятора. А черный щуп прибора с отрицательным зарядом приближают к корпусу тестируемого агрегата в местах утечек и повреждений. Оцениваются показатели мультиметра.</p>
+              </div>
+              <h3>2. Технический контроль.</h3>
+              <p>
+                Используйте мультиметр для замеров электрических параметров. Трезво оцените полученные результаты, проверьте уровень разряженности батареи, ее соответствие норме. Понадобится ремонт авто в том случае, если цифра на табло будет меньше 12,1 В. Значит, идет угасание
+                потенциала аккумулятора. Еще шаг в одну целую вниз, и агрегат будет разряжен на сто процентов. Если у вас не оказалось под рукой мультиметра, то советуем обратиться к электрикам в Астане, ну или купить в магазине.
+              </p>
+              <div class="info-block">
+                <h4>Совет-напоминание</h4>
+                <p>
+                  Займите удобное положение, откройте доступ к банкам аккумулятора, возьмите в руку ареометр и опустите его вертикально до предела, то есть до сетки сепаратора. Зафиксируйте мерный прибор на несколько секунд в таком положении, а потом доставайте его и снимайте
+                  показания. Норма электролита – 10-15 мм.
+                </p>
+              </div>
+              <div class="post-images">
+                <img src="images/article-1.jpg" alt="alt" />
+                <img src="images/article-1.jpg" alt="alt" />
+              </div>
+              <h3>3. Оценка состояния электролита.</h3>
+              <p>
+                Для проверки уровня и плотности электролита используют ареометр. Прибор представляет собой стеклянно-медную трубку, при помощи которой выполняются замеры плотности жидкости. Его регулярно используют для тестирования и ремонта автомобилей. Наберитесь терпения и выполняйте
+                замеры в каждой емкости аккумулятора.
+              </p>
+              <div class="warning-block">
+                <p>Обратите внимание на цвет жидкости — она должна быть прозрачной! Никакие примеси не допускаются.</p>
+              </div>
+              <p>
+                Итак, к жидкостям, с которыми имеет дело автомобиль, относятся бензин, масло, охлаждающая жидкость, тормозная жидкость, стеклоочистительная жидкость, трансмиссионное масло, жидкость для механизма усиленного рулевого управления и жидкость автоматической коробки передач.
+                Все автомобили схожи, по крайней мере, в том, что в них используются бензин, масло и тормозная жидкость. В двигателях с воздушным охлаждением (например, в старых моделях «Фольксваген Жук») нет охлаждающей жидкости. Кроме того, ваша модель автомобиля может иметь или не
+                иметь жидкости для механизма усиленного рулевого управления и жидкости автоматической коробки передач.
+              </p>
+              <ul>
+                <li>Откройте капот и визуально осмотрите блок двигателя и моторный отсек. Многие виды утечек могут быть легко обнаружены невооруженным глазом.</li>
+                <li>Обратите внимание на то, что для того, чтобы найти утечку, вам не совсем обязательно знать название вытекающей жидкости или название того механизма машины, из которой эта жидкость просачивается.</li>
+                <li>Возьмите фонарь и внимательно посмотрите, нет ли под машиной и, прежде всего, под двигателем влажных пятен или капель, цепляющихся за нижнюю часть транспортного средства.</li>
+                <li>Если признаков утечки не видно, положите большой кусок гофрированного картона и припаркуйте автомобиль так, чтобы двигатель оказался над ним. Ручкой отметьте положение колес.</li>
+                <li>На следующее утро уберите картон. Отметьте все появившиеся капли относительно маркировок колеса. Эта информация поможет вашему механику диагностировать проблему.</li>
+              </ul>
+              <ol>
+                <li>Откройте капот и визуально осмотрите блок двигателя и моторный отсек. Многие виды утечек могут быть легко обнаружены невооруженным глазом.</li>
+                <li>Обратите внимание на то, что для того, чтобы найти утечку, вам не совсем обязательно знать название вытекающей жидкости или название того механизма машины, из которой эта жидкость просачивается.</li>
+                <li>Возьмите фонарь и внимательно посмотрите, нет ли под машиной и, прежде всего, под двигателем влажных пятен или капель, цепляющихся за нижнюю часть транспортного средства.</li>
+                <li>Если признаков утечки не видно, положите большой кусок гофрированного картона и припаркуйте автомобиль так, чтобы двигатель оказался над ним. Ручкой отметьте положение колес.</li>
+                <li>На следующее утро уберите картон. Отметьте все появившиеся капли относительно маркировок колеса. Эта информация поможет вашему механику диагностировать проблему.</li>
+              </ol>
+              <figure class="table">
+                <table>
+                  <colgroup>
+                    <col style="width: 50%" />
+                    <col style="width: 13%" />
+                    <col style="width: 20%" />
+                    <col style="width: 17%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Вид нарушения</th>
+                      <th>Статья коап</th>
+                      <th>Штраф (МРП 2 269 ₸)</th>
+                      <th>Сумма штрафа (₸)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="post-table-tr-primary">
+                      <td colspan="4">СКОРОСТЬ</td>
+                    </tr>
+                    <tr>
+                      <td>Превышение скорости на 10-20 км/ч</td>
+                      <td style="text-align: center">ст. 592 ч. 1</td>
+                      <td style="text-align: center">10</td>
+                      <td style="text-align: center">22 690</td>
+                    </tr>
+                    <tr>
+                      <td>Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика.</td>
+                      <td style="text-align: center">ст. 592 ч. 1</td>
+                      <td style="text-align: center">10</td>
+                      <td style="text-align: center">22 690</td>
+                    </tr>
+                    <tr class="post-table-tr-primary">
+                      <td colspan="4">ПРОЕЗД ПЕРЕКРЕСТКОВ, ПЕРЕХОДОВ, ПЕРЕЕЗДОВ</td>
+                    </tr>
+                    <tr>
+                      <td>Выезд на перекресток или пересечение проезжей части дороги в случае образовавшегося затора, который привел к созданию препятствия (затора) для движения транспортных средств в поперечном направлении.</td>
+                      <td style="text-align: center">ст. 592 ч. 1</td>
+                      <td style="text-align: center">10</td>
+                      <td style="text-align: center">22 690</td>
+                    </tr>
+                    <tr>
+                      <td>Превышение скорости на 10-20 км/ч</td>
+                      <td style="text-align: center">ст. 592 ч. 1</td>
+                      <td style="text-align: center">10</td>
+                      <td style="text-align: center">22 690</td>
+                    </tr>
+                    <tr>
+                      <td>Превышение скорости на 10-20 км/ч</td>
+                      <td style="text-align: center">ст. 592 ч. 1</td>
+                      <td style="text-align: center">10</td>
+                      <td style="text-align: center">22 690</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </figure>
+              <figure>
+                <div>
+                  <div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%">
+                    <iframe src="https://www.youtube.com/embed/3YTohytF9oE" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </figure>
+            </article>
+            <div class="mt-[30px] text-right sm:mt-10">
+              <a href="#" class="btn btn-primary rounded-[67px] px-3 py-[13px] font-bold max-sm:w-full sm:px-5">
+                Читать следующую новость
+                <svg role="img" class="ml-1 size-4 shrink-0">
+                  <use href="images/icons/sprite.svg#chevron-right-sm" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-[25%] shrink-0 grow-0 basis-3/12 px-[15px] max-xl:hidden">
+          <div class="rounded-[20px] bg-primary p-5 text-white">
+            <div class="-mx-1 -mb-1.5 flex flex-wrap">
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold uppercase leading-tight">Акция!</div>
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold leading-tight">30 000 ₸</div>
+            </div>
+            <h3 class="mb-3 mt-5 text-[24px] font-bold uppercase leading-tight">Пройди онлайн обучение</h3>
+            <p class="mb-5 leading-snug">Доступно для всех регионов и городов Казахстана</p>
+            <ul class="mb-8 space-y-2 leading-tight text-white/90 [&_li]:flex [&_li]:before:mr-[5px] [&_li]:before:mt-[5.5px] [&_li]:before:block [&_li]:before:size-2 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-white/90">
+              <li>Во всех регионах Казахстана!</li>
+              <li>Срок обучения 1,5 - 2 месяца</li>
+              <li>Лучшие инструктора</li>
+            </ul>
+            <a href="#" class="btn btn-white-alt w-full rounded-[71px] px-8 py-4 text-[18px] font-bold">
+              Подробнее
+              <svg role="img" class="ml-2.5 size-6 shrink-0">
+                <use href="images/icons/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Другие полезные материалы -->
+  <section class="mb-[63px] mt-[60px] lg:mb-[83px] lg:mt-20 xl:mb-[123px] xl:mt-[120px]">
+    <div class="container">
+      <div class="splide slider-news xs:max-sm:px-5">
+        <div class="mb-5 flex justify-between max-md:items-center sm:mb-[30px]">
+          <h2 class="text-[28px] font-bold leading-tight md:text-[32px] lg:text-[38px] xl:text-[40px]">Другие полезные материалы</h2>
+          <div class="splide__arrows flex space-x-3 max-sm:hidden">
+            <button class="splide__arrow splide__arrow--prev flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-old-silver transition-colors hover:bg-primary hover:text-white" type="button">
+              <svg role="img" class="size-6 shrink-0">
+                <use href="images/icons/sprite.svg#chevron-left" />
+              </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-old-silver transition-colors hover:bg-primary hover:text-white" type="button">
+              <svg role="img" class="size-6 shrink-0">
+                <use href="images/icons/sprite.svg#chevron-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="splide__track max-lg:overflow-visible lg:-m-[30px] lg:!p-[30px]">
+          <div class="splide__list">
+            <div class="splide__slide group">
+              <div class="relative rounded-[20px] bg-white px-2.5 pb-[15px] pt-2.5 max-lg:shadow-1 lg:transition-shadow lg:group-[.is-visible]:shadow-1">
+                <div class="absolute left-[18px] top-[18px] rounded-[52px] bg-silver px-3 pb-1.5 pt-[5px] font-medium leading-tight text-gray max-sm:text-[10px]">Обслуживание автомобиля</div>
+                <div class="flex overflow-hidden rounded-[14px]">
+                  <img src="images/article-big.jpg" alt="alt" class="h-[180px] w-full object-cover sm:h-[270px]" />
+                </div>
+                <div class="mt-2 px-[5px] pt-[5px] sm:mt-3">
+                  <div class="mb-2.5 font-semibold leading-tight sm:text-[18px] xl:text-[21px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                  <p class="leading-snug text-gray max-lg:text-[15px] max-sm:text-[14px]">
+                    Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?
+                  </p>
+                  <div class="mt-3 sm:mt-[14px] sm:flex sm:items-center sm:justify-between">
+                    <div class="leading-snug text-old-silver/70 max-sm:mb-[15px] max-sm:text-[12px] sm:mr-3">27 Ноября 2023</div>
+                    <a href="#" class="btn btn-primary rounded-[67px] px-5 py-[13px] font-bold max-sm:w-full sm:self-start">
+                      Читать далее
+                      <svg role="img" class="ml-1 size-4 shrink-0">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group">
+              <div class="relative rounded-[20px] bg-white px-2.5 pb-[15px] pt-2.5 max-lg:shadow-1 lg:transition-shadow lg:group-[.is-visible]:shadow-1">
+                <div class="absolute left-[18px] top-[18px] rounded-[52px] bg-silver px-3 pb-1.5 pt-[5px] font-medium leading-tight text-gray max-sm:text-[10px]">Обслуживание автомобиля</div>
+                <div class="flex overflow-hidden rounded-[14px]">
+                  <img src="images/article-big.jpg" alt="alt" class="h-[180px] w-full object-cover sm:h-[270px]" />
+                </div>
+                <div class="mt-2 px-[5px] pt-[5px] sm:mt-3">
+                  <div class="mb-2.5 font-semibold leading-tight sm:text-[18px] xl:text-[21px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                  <p class="leading-snug text-gray max-lg:text-[15px] max-sm:text-[14px]">
+                    Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?
+                  </p>
+                  <div class="mt-3 sm:mt-[14px] sm:flex sm:items-center sm:justify-between">
+                    <div class="leading-snug text-old-silver/70 max-sm:mb-[15px] max-sm:text-[12px] sm:mr-3">27 Ноября 2023</div>
+                    <a href="#" class="btn btn-primary rounded-[67px] px-5 py-[13px] font-bold max-sm:w-full sm:self-start">
+                      Читать далее
+                      <svg role="img" class="ml-1 size-4 shrink-0">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group">
+              <div class="relative rounded-[20px] bg-white px-2.5 pb-[15px] pt-2.5 max-lg:shadow-1 lg:transition-shadow lg:group-[.is-visible]:shadow-1">
+                <div class="absolute left-[18px] top-[18px] rounded-[52px] bg-silver px-3 pb-1.5 pt-[5px] font-medium leading-tight text-gray max-sm:text-[10px]">Обслуживание автомобиля</div>
+                <div class="flex overflow-hidden rounded-[14px]">
+                  <img src="images/article-big.jpg" alt="alt" class="h-[180px] w-full object-cover sm:h-[270px]" />
+                </div>
+                <div class="mt-2 px-[5px] pt-[5px] sm:mt-3">
+                  <div class="mb-2.5 font-semibold leading-tight sm:text-[18px] xl:text-[21px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                  <p class="leading-snug text-gray max-lg:text-[15px] max-sm:text-[14px]">
+                    Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?
+                  </p>
+                  <div class="mt-3 sm:mt-[14px] sm:flex sm:items-center sm:justify-between">
+                    <div class="leading-snug text-old-silver/70 max-sm:mb-[15px] max-sm:text-[12px] sm:mr-3">27 Ноября 2023</div>
+                    <a href="#" class="btn btn-primary rounded-[67px] px-5 py-[13px] font-bold max-sm:w-full sm:self-start">
+                      Читать далее
+                      <svg role="img" class="ml-1 size-4 shrink-0">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide group">
+              <div class="relative rounded-[20px] bg-white px-2.5 pb-[15px] pt-2.5 max-lg:shadow-1 lg:transition-shadow lg:group-[.is-visible]:shadow-1">
+                <div class="absolute left-[18px] top-[18px] rounded-[52px] bg-silver px-3 pb-1.5 pt-[5px] font-medium leading-tight text-gray max-sm:text-[10px]">Обслуживание автомобиля</div>
+                <div class="flex overflow-hidden rounded-[14px]">
+                  <img src="images/article-big.jpg" alt="alt" class="h-[180px] w-full object-cover sm:h-[270px]" />
+                </div>
+                <div class="mt-2 px-[5px] pt-[5px] sm:mt-3">
+                  <div class="mb-2.5 font-semibold leading-tight sm:text-[18px] xl:text-[21px]"><a href="#">Cамостоятельный ремонт авто: тестируем аккумулятор</a></div>
+                  <p class="leading-snug text-gray max-lg:text-[15px] max-sm:text-[14px]">
+                    Избежать стихийного ремонта авто реально, если следить за устройством транспортного средства, периодически тестировать аккумулятор. Что делать, чтобы зимой аккумулятор не подвел в самый ответственный момент?
+                  </p>
+                  <div class="mt-3 sm:mt-[14px] sm:flex sm:items-center sm:justify-between">
+                    <div class="leading-snug text-old-silver/70 max-sm:mb-[15px] max-sm:text-[12px] sm:mr-3">27 Ноября 2023</div>
+                    <a href="#" class="btn btn-primary rounded-[67px] px-5 py-[13px] font-bold max-sm:w-full sm:self-start">
+                      Читать далее
+                      <svg role="img" class="ml-1 size-4 shrink-0">
+                        <use href="images/icons/sprite.svg#chevron-right-sm" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="splide__pagination -mx-[7.5px] -mb-[7.5px] mt-6 [&>li]:mx-[7.5px] [&>li]:mb-[7.5px] [&_button.is-active]:opacity-100 [&_button.is-active]:before:opacity-100 [&_button:hover]:opacity-100 [&_button]:relative [&_button]:block [&_button]:size-2 [&_button]:rounded-full [&_button]:bg-primary [&_button]:opacity-50 [&_button]:transition [&_button]:before:absolute [&_button]:before:-inset-1 [&_button]:before:block [&_button]:before:rounded-full [&_button]:before:border [&_button]:before:border-primary/30 [&_button]:before:opacity-0 [&_button]:before:transition-opacity"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пройди онлайн обучение -->
+  <section class="mb-20 mt-20 xl:mb-[120px] xl:mt-[120px]">
+    <div class="container">
+      <div class="relative rounded-[20px] bg-primary text-white max-xl:overflow-hidden">
+        <div class="flex flex-wrap">
+          <div class="relative z-10 w-full self-center pb-9 pl-5 pr-5 pt-[30px] max-lg:pb-0 sm:pl-10 sm:pr-10 sm:pt-9 lg:max-w-[623px] lg:basis-[623px] lg:pr-0 xl:pb-10 xl:pt-10">
+            <div class="-mx-1 -mb-1.5 flex flex-wrap">
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold uppercase leading-tight max-xl:text-[14px]">Акция!</div>
+              <div class="mx-1 mb-1.5 rounded-[52px] bg-primary-light px-5 py-2.5 font-semibold leading-tight max-xl:text-[14px]">30 000 ₸</div>
+            </div>
+            <h3 class="mb-4 mt-6 text-[28px] font-bold uppercase leading-tight sm:mb-3 lg:text-[32px] xl:mb-4">Пройди онлайн обучение</h3>
+            <p class="mb-4 text-[15px] leading-snug sm:mb-[22px] sm:text-[17px] lg:text-[18px] xl:mb-[26px]">Доступно для всех регионов и городов Казахстана</p>
+            <ul class="mb-8 space-y-2.5 leading-tight text-white/90 max-xl:text-[15px] max-sm:text-[14px] sm:mb-[50px] [&_li]:flex [&_li]:before:mr-[4.5px] [&_li]:before:mt-[4.5px] [&_li]:before:block [&_li]:before:size-2 [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-white/90 sm:[&_li]:before:mr-[5px] sm:[&_li]:before:mt-[5px] xl:[&_li]:before:mr-[5.5px] xl:[&_li]:before:mt-[5.5px]">
+              <li>Во всех регионах Казахстана!</li>
+              <li>Срок обучения 1,5 - 2 месяца</li>
+              <li>Лучшие инструктора</li>
+            </ul>
+            <a href="#" class="btn btn-white-alt rounded-[71px] px-8 py-5 font-bold max-sm:w-full sm:py-4 sm:text-[18px]">
+              Написать в WhatsApp
+              <svg role="img" class="ml-2.5 size-6 shrink-0">
+                <use href="images/icons/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+          </div>
+          <div class="w-full">
+            <img src="images/online-learning.png" srcset="images/online-learning.png 1x, images/online-learning-2x.png 2x" alt="alt" class="max-xl:w-[500px] max-lg:-mt-[5px] max-lg:ml-auto lg:absolute lg:bottom-0 lg:right-0 lg:max-xl:-right-5" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- prettier-ignore -->
+  <footer class="bg-[#222222] py-10 text-white/70 sm:py-[50px] xl:py-[60px]">
+    <div class="container">
+      <div class="xl:flex xl:items-center">
+        <div class="max-xl:mb-5 md:max-xl:flex md:max-xl:items-center md:max-xl:space-x-2.5 md:max-xl:border-b md:max-xl:border-solid md:max-xl:border-[#404040] md:max-xl:pb-5 xl:max-w-[33.333333%] xl:basis-4/12 xl:pr-12">
+          <div class="md:max-xl:max-w-[33.333333%] md:max-xl:basis-4/12">
+            <img src="images/logo.png" alt="alt" class="mb-5 max-w-[120px] sm:mb-4" data-footer-logo />
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]" data-footer-text>
+              МИССИЯ автошколы «Кұлагер» - содействие гражданам Астаны и других регионов Казахстана - слушателям Автошколы «Кұлагер», в изучении Правил безопасности дорожного движения и в обучении безопасному управлению транспортными средствами
+            </p>
+            <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]">© KULAGER-AUTO.KZ & RAT.KZ, 2023</p>
+            <div class="-mx-[3px] -mb-1.5 flex flex-wrap">
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#facebook-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#youtube-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#instagram-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#vk-circle" />
+                </svg>
+              </a>
+              <a href="#" class="mx-[3px] mb-1.5 text-primary transition-colors hover:text-primary-darker">
+                <svg role="img" class="size-8">
+                  <use href="images/icons/sprite.svg#ok-circle" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="pr-5 md:max-xl:max-w-[66.666667%] md:max-xl:basis-8/12 xl:hidden" data-footer-text-wrap></div>
+        </div>
+        <div class="xl:max-w-[66.666667%] xl:basis-8/12">
+          <div class="-mx-2.5 -mb-5 flex flex-wrap">
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Об автошколе</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">О нас</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Контакты</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Мастера обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Стоимость обучения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Отзывы</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Услуги</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Онлайн обучение</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Ускоренное обучениие</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Уроки вождения</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Тестирование пдд онлайн</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Полезная информация</div>
+              <nav>
+                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
+                  <li><a href="#" class="transition-colors hover:text-white">Новости</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">О дорожном движении РК</a></li>
+                  <li><a href="#" class="transition-colors hover:text-white">Таблица штрафов</a></li>
+                </ul>
+              </nav>
+              <a href="#" class="btn group mt-6 rounded-[78px] bg-[#0B0B0B] py-1 pl-1 pr-6 font-semibold leading-snug text-white sm:text-[18px]">
+                <div class="mr-2.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary">
+                  <svg role="img" class="size-7 shrink-0">
+                    <use href="images/icons/sprite.svg#tower" />
+                  </svg>
+                </div>
+                Мы в Алмате
+                <svg role="img" class="ml-2.5 size-3 shrink-0 transition-transform group-hover:translate-x-1">
+                  <use href="images/icons/sprite.svg#arrow-up-right" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="invisible fixed left-0 top-0 z-10 h-full w-full bg-black/20 opacity-0 transition-all [&.is-active]:visible [&.is-active]:opacity-100" data-overlay></div>
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/classic/ckeditor.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
