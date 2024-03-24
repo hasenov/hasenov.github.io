@@ -1,0 +1,341 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Мобильное приложение</title>
+  <meta name="description" content="описание" />
+  <meta name="keywords" content="keyword" />
+  <meta name="theme-color" content="#1F1F1F" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" srcset="images/logo.png 1x, images/logo-2x.png 2x" alt="alt" class="img-responsive" />
+      </a>
+      <button class="header__hamburger hamburger" type="button">
+        <svg role="img" class="hamburger__open">
+          <use href="images/icons/sprite.svg#hamburger" />
+        </svg>
+        <svg role="img" class="hamburger__close">
+          <use href="images/icons/sprite.svg#hamburger-close" />
+        </svg>
+      </button>
+      <a href="#" class="header__user-link user-link">
+        <div class="user-link__username">Никнейм</div>
+        <div class="user-link__avatar avatar is-active">
+          <svg role="img" class="avatar__icon">
+            <use href="images/icons/sprite.svg#user" />
+          </svg>
+          <div class="avatar__premium-badge premium-badge">
+            <svg role="img" class="premium-badge__icon">
+              <use href="images/icons/sprite.svg#crown" />
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="mobile-menu">
+    <div class="container">
+      <div class="mobile-menu__user user">
+        <div class="user__avatar">
+          <img src="images/rocket.png" alt="alt" class="user__avatar-img img-responsive" />
+          <div class="user__premium-badge premium-badge">
+            <svg role="img" class="premium-badge__icon">
+              <use href="images/icons/sprite.svg#crown"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="user__body">
+          <div class="user__title">Имя Фамилия</div>
+          <div class="user__text">emaildlyaprimera@gmail.com</div>
+        </div>
+        <!-- <div class="user__btns">
+                <a href="#" class="user__register btn btn--accent">Регистрация</a>
+                <a href="#" class="user__login btn btn--ghost">Вход</a>
+            </div> -->
+        <a href="#" class="user__logout-btn logout-btn">
+          <svg role="img" class="logout-btn__icon">
+            <use href="images/icons/sprite.svg#exit"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="mobile-menu__list list-unstyled">
+        <li><a href="#">Личный кабинет</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Скачать приложение</a></li>
+        <li><a href="#">Контакты для примера</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="section-mobile-app-showcase">
+    <div class="container">
+      <div class="mobile-app-showcase">
+        <div class="mobile-app-showcase__row row">
+          <div class="mobile-app-showcase__col col-lg-6">
+            <div class="mobile-app-showcase__title-wrap">
+              <h1 class="mobile-app-showcase__title">Переходи в мобильное приложение <span>GDZ-raketa</span></h1>
+              <img src="images/stars-md.png" srcset="images/stars-md.png 1x, images/stars-md-2x.png 2x" alt="alt" class="mobile-app-showcase__stars" loading="lazy" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" />
+            </div>
+            <div class="mobile-app-showcase__benefits benefits-block">
+              <div class="benefits-block__title">Основые преимущества</div>
+              <ul class="benefits-block__list list-unstyled">
+                <li>Смотрите уникальные пояснения к заданиям от преподавателей-практиков с 10-летним стажем</li>
+                <li>Отключайте всю рекламу на сайте и в мобильном приложении</li>
+                <li>Добавляйте учебники в быстрые закладки</li>
+                <li>
+                  Используйте приложение<br />
+                  без подключения к интернету
+                </li>
+                <li>Получайте премиум подписку бесплатно, приглашая друзей</li>
+              </ul>
+              <img src="images/cloud.png" alt="alt" class="benefits-block__cloud" loading="lazy" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500" />
+              <img src="images/saturn-sm.png" srcset="images/saturn-sm.png 1x, images/saturn-sm-2x.png 2x" alt="alt" class="benefits-block__saturn" loading="lazy" data-aos="fade" data-aos-delay="500" data-aos-duration="1000" />
+            </div>
+            <div class="mobile-app-showcase__mobile-download mobile-download-showcase">
+              <div class="mobile-download-showcase__title">Скачайте в <span>AppGallery</span> или <span>RuStore</span></div>
+              <div class="mobile-download-showcase__items">
+                <a href="#" class="mobile-download-showcase__item">
+                  <img src="images/appgallery.png" alt="alt" class="mobile-download-showcase__img img-responsive" loading="lazy" />
+                </a>
+                <a href="#" class="mobile-download-showcase__item">
+                  <img src="images/rustore.png" alt="alt" class="mobile-download-showcase__img img-responsive" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-app-showcase__col col-lg-6">
+            <picture>
+              <source srcset="images/phone-2-mob.png 1x, images/phone-2-mob-2x.png 2x" media="(max-width: 767.98px)" />
+              <img src="images/phone-2.png" srcset="images/phone-2.png 1x, images/phone-2-2x.png 2x" alt="alt" class="mobile-app-showcase__phone" loading="lazy" />
+            </picture>
+            <div class="mobile-app-showcase__rocket-wrap" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
+              <img src="images/liftoff-lg.png" srcset="images/liftoff-lg.png 1x, images/liftoff-lg-2x.png 2x" alt="alt" class="mobile-app-showcase__rocket" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-benefits">
+    <div class="container">
+      <div class="benefits">
+        <h2 class="benefits__title">
+          Подробнее о преимуществах<br />
+          премиум подписки в мобильном приложении
+        </h2>
+        <div class="benefits__items">
+          <div class="benefits__row row">
+            <div class="benefits__col col-md-6">
+              <div class="benefits__card card-benefits card-benefits--purple">
+                <div class="card-benefits__description">Полезно для родителей</div>
+                <img src="images/gun-lg.png" srcset="images/gun-lg.png 1x, images/gun-lg-2x.png 2x" alt="alt" class="card-benefits__img img-responsive" loading="lazy" />
+                <div class="card-benefits__title">Пояснения к задания от преподавателей-практиков</div>
+                <div class="card-benefits__text-wrap">
+                  <p>
+                    Уникальная разработка наших преподавателей с 10-летним стажем обучения детей.
+                    <br /><br />
+                    На простом и понятном для детей языке, написали подробный разбор решения заданий по шагам. Теперь процесс обучения и
+                    объяснения алгоритма решения ребёнку стал более эффективным.
+                  </p>
+                </div>
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--1" loading="lazy" />
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--2" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--1" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--2" loading="lazy" />
+              </div>
+            </div>
+            <div class="benefits__col col-md-6">
+              <div class="benefits__card card-benefits card-benefits--accent">
+                <div class="card-benefits__description">Просто удобно</div>
+                <img src="images/rocket-lg.png" srcset="images/rocket-lg.png 1x, images/rocket-lg-2x.png 2x" alt="alt" class="card-benefits__img img-responsive" loading="lazy" />
+                <div class="card-benefits__title">Закладки для быстрого перехода в учебники</div>
+                <div class="card-benefits__text-wrap">
+                  <p>
+                    Не нужно каждый раз при входе в приложение искать свои учебники.
+                    <br /><br />
+                    Просто добавь их в закладки и они всегда будут под рукой.
+                  </p>
+                </div>
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--1" loading="lazy" />
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--2" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--1" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--2" loading="lazy" />
+              </div>
+            </div>
+            <div class="benefits__col col-md-6">
+              <div class="benefits__card card-benefits card-benefits--aqua">
+                <div class="card-benefits__description">Ничего не отвлекает</div>
+                <img src="images/telescope-lg.png" srcset="images/telescope-lg.png 1x, images/telescope-lg-2x.png 2x" alt="alt" class="card-benefits__img img-responsive" loading="lazy" />
+                <div class="card-benefits__title">В приложении будет отключена вся реклама</div>
+                <div class="card-benefits__text-wrap">
+                  <p>Не нужно больше терпеть навязчивой рекламы и ждать пока появится крестик.</p>
+                </div>
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--1" loading="lazy" />
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--2" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--1" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--2" loading="lazy" />
+              </div>
+            </div>
+            <div class="benefits__col col-md-6">
+              <div class="benefits__card card-benefits card-benefits--blue">
+                <div class="card-benefits__description">Полезно при плохом интернете</div>
+                <img src="images/observatory.png" srcset="images/observatory.png 1x, images/observatory-2x.png 2x" alt="alt" class="card-benefits__img img-responsive" loading="lazy" />
+                <div class="card-benefits__title">Приложение будет работать без интернета</div>
+                <div class="card-benefits__text-wrap">
+                  <p>Скачайте нужные учебники и после завершения скачивания перезапустите приложение.</p>
+                </div>
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--1" loading="lazy" />
+                <img src="images/cloud.png" alt="alt" class="card-benefits__cloud card-benefits__cloud--2" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--1" loading="lazy" />
+                <img src="images/stars-xs.png" srcset="images/stars-xs.png 1x, images/stars-xs-2x.png 2x" alt="alt" class="card-benefits__stars card-benefits__stars--2" loading="lazy" />
+                <img src="images/stars-xl.png" srcset="images/stars-xl.png 1x, images/stars-xl-2x.png 2x" alt="alt" class="card-benefits__big-stars" loading="lazy" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" />
+              </div>
+            </div>
+          </div>
+          <img src="images/saturn.png" srcset="images/saturn.png 1x, images/saturn-2x.png 2x" alt="alt" class="benefits__decor benefits__decor--1" loading="lazy" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-offset="300" />
+          <img src="images/saturn.png" srcset="images/saturn.png 1x, images/saturn-2x.png 2x" alt="alt" class="benefits__decor benefits__decor--2" loading="lazy" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-invite">
+    <div class="container">
+      <div class="invite">
+        <div class="invite__row row">
+          <div class="invite__col col-md-6">
+            <picture>
+              <source srcset="images/phone-mob.png 1x, images/phone-mob-2x.png 2x" media="(max-width: 767.98px)" />
+              <img src="images/phone.png" srcset="images/phone.png 1x, images/phone-2x.png 2x" alt="alt" class="invite__img" loading="lazy" />
+            </picture>
+          </div>
+          <div class="invite__col col-md-6">
+            <div class="invite__content">
+              <div class="invite__title">Приглашайте друзей в приложение <span>GDZ-raketa</span></div>
+              <div class="invite__subtitle">и получайте премиум подписку бесплатно!</div>
+              <div class="invite__text-wrap">
+                <p>
+                  За каждого приведенного друга вы получаете 1 звезду.
+                  <br /><br />
+                  Меняйте звезды на премиум подписку в личном кабинете мобильного приложения и пользуйтесь всеми преимуществами бесплатно!
+                </p>
+              </div>
+              <div class="invite__mobile-download mobile-download-showcase">
+                <div class="mobile-download-showcase__big-title">Начните учебный год с новым мобильным приложением <span>GDZ-raketa</span></div>
+                <div class="mobile-download-showcase__title">Скачайте в <span>AppGallery</span> или <span>RuStore</span></div>
+                <div class="mobile-download-showcase__items">
+                  <a href="#" class="mobile-download-showcase__item">
+                    <img src="images/appgallery.png" alt="alt" class="mobile-download-showcase__img img-responsive" loading="lazy" />
+                  </a>
+                  <a href="#" class="mobile-download-showcase__item">
+                    <img src="images/rustore.png" alt="alt" class="mobile-download-showcase__img img-responsive" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__row row">
+          <div class="footer__col footer__col--content">
+            <picture>
+              <source srcset="images/logo-white-lg.png 1x, images/logo-white-lg-2x.png 2x" media="(max-width: 767.98px)" />
+              <img src="images/logo-white.png" srcset="images/logo-white.png 1x, images/logo-white-2x.png 2x" alt="alt" class="footer__logo img-responsive" loading="lazy" />
+            </picture>
+            <div class="footer__text-wrap">
+              <p>Готовые домашние задания с пояснениями и подсказками от преподавателей-практиков</p>
+            </div>
+            <div class="footer__qr qr-horizontal">
+              <div class="qr-horizontal__code-wrap">
+                <img src="images/qr.png" srcset="images/qr.png 1x, images/qr-2x.png 2x" alt="alt" class="qr-horizontal__code img-responsive" loading="lazy" />
+              </div>
+              <div class="qr-horizontal__text">Наведите камеру на Qr-код, чтобы скачать</div>
+            </div>
+            <div class="footer__mobile-download mobile-download">
+              <div class="mobile-download__title">
+                Скачайте наше мобильное<br />
+                приложение в <span>AppGallery</span> или <span>RuStore</span>
+              </div>
+              <div class="mobile-download__items">
+                <a href="#" class="mobile-download__item">
+                  <img src="images/google-play.png" srcset="images/google-play.png 1x, images/google-play-2x.png 2x" alt="alt" class="mobile-download__img img-responsive" loading="lazy" />
+                </a>
+                <a href="#" class="mobile-download__item">
+                  <img src="images/appgallery.png" srcset="images/appgallery.png 1x, images/appgallery-2x.png 2x" alt="alt" class="mobile-download__img img-responsive" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <ul class="footer__links list-unstyled">
+              <li><a href="#">Соглашение на обработку персональных данных</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--menu">
+            <div class="footer__rocket">
+              <img src="images/liftoff-footer.png" srcset="images/liftoff-footer.png 1x, images/liftoff-footer-2x.png 2x" alt="alt" class="img-responsive" loading="lazy" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
+            </div>
+            <div class="footer__menu-wrap">
+              <nav class="footer__menu menu-footer">
+                <div class="menu-footer__title">Меню</div>
+                <ul class="menu-footer__list list-unstyled">
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Карта сайта</a></li>
+                  <li><a href="#">Личный кабинет</a></li>
+                  <li><a href="#">Правообладателям</a></li>
+                </ul>
+              </nav>
+              <div class="footer__socials-wrap">
+                <a href="#" class="footer__btn btn btn--accent">Нашли ошибку?</a>
+                <div class="footer__socials socials-footer">
+                  <div class="socials-footer__title">Мы в соц. сетях:</div>
+                  <div class="socials-footer__items">
+                    <a href="#" class="socials-footer__item">
+                      <img src="images/icons/vk.svg" alt="alt" class="socials-footer__icon img-responsive" loading="lazy" />
+                    </a>
+                    <a href="#" class="socials-footer__item">
+                      <img src="images/icons/tg.svg" alt="alt" class="socials-footer__icon img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">2024 © GDZ-raketa.ru</p>
+        <p class="footer__copyright">
+          Копирование и размещение<br class="footer__mob-br" />
+          на других сайтах запрещено.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
