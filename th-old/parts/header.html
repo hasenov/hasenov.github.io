@@ -1,0 +1,88 @@
+<header class="absolute left-0 top-0 z-20 w-full pb-[22px] pt-1.5 sm:pb-9 sm:pt-3 md:pb-12 2xl:pb-20 2xl:pt-8">
+  <picture>
+    <source srcset="images/header-glow.svg" media="(min-width: 576px)" />
+    <img src="images/header-glow-mob.svg" alt="alt" class="pointer-events-none absolute left-1/2 top-0 max-w-none -translate-x-1/2" />
+  </picture>
+  <div class="container relative z-10 flex items-center xl:justify-between 2xl:max-w-[1785px]">
+    <a href="index.html" class="max-w-[86px] max-xl:mr-auto sm:max-w-[125px]">
+      <img src="images/logo.svg" alt="alt" />
+    </a>
+    <nav class="z-10 !duration-700 max-xl:invisible max-xl:fixed max-xl:left-0 max-xl:top-0 max-xl:h-full max-xl:w-full max-xl:overflow-y-auto max-xl:bg-dark max-xl:pb-20 max-xl:transition-all max-xl:[transform:translate3d(0,-100%,0)] xl:ml-10 2xl:ml-20 max-xl:[&.is-active]:visible max-xl:[&.is-active]:[transform:translate3d(0,0,0)]" data-mobile-menu>
+      <div class="mb-[87px] xl:hidden">
+        <div class="relative flex items-center justify-end pt-[15px] max-xl:px-[30px] sm:pt-3">
+          <a href="#" class="mx-auto max-w-[86px] sm:max-w-[125px]">
+            <img src="images/logo.svg" alt="alt" />
+          </a>
+          <button type="button" class="absolute right-[25px] top-[26px] block size-4 shrink-0" data-hamburger-close>
+            <svg role="img" class="size-full">
+              <use href="images/icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="pointer-events-none flex justify-center overflow-hidden">
+          <picture>
+            <source srcset="images/line.svg" media="(min-width: 576px)" />
+            <img src="images/line-mob-alt.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+          </picture>
+        </div>
+      </div>
+      <ul class="menu">
+        <li class="group"><a href="about.html">Обо мне</a></li>
+        <li class="has-child group">
+          <a href="#">SEO</a>
+          <ul class="dropdown">
+            <li><a href="#">SEO продвижение сайта</a></li>
+            <li><a href="#">Аудит и внутренняя оптимизация</a></li>
+          </ul>
+        </li>
+        <li class="has-child group">
+          <a href="#">Настройка рекламы</a>
+          <ul class="dropdown">
+            <li><a href="#">SEO продвижение сайта</a></li>
+            <li><a href="#">Аудит и внутренняя оптимизация</a></li>
+          </ul>
+        </li>
+        <li class="has-child group">
+          <a href="#">Соц. сети</a>
+          <ul class="dropdown">
+            <li><a href="#">SEO продвижение сайта</a></li>
+            <li><a href="#">Аудит и внутренняя оптимизация</a></li>
+          </ul>
+        </li>
+        <li class="group"><a href="#">Контакты</a></li>
+      </ul>
+      <div class="flex flex-wrap justify-center space-x-5 pt-14 sm:space-x-8 lg:space-x-10 xl:hidden">
+        <a href="#" class="transition-colors hover:text-orange">
+          <svg role="img" class="size-[22px] sm:size-10 lg:size-[45px]">
+            <use href="images/icons/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="transition-colors hover:text-orange">
+          <svg role="img" class="size-[22px] sm:size-10 lg:size-[45px]">
+            <use href="images/icons/sprite.svg#fb"></use>
+          </svg>
+        </a>
+        <a href="#" class="transition-colors hover:text-orange">
+          <svg role="img" class="size-[22px] sm:size-10 lg:size-[45px]">
+            <use href="images/icons/sprite.svg#ig"></use>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <a href="#" class="inline-flex items-center align-top font-geologica text-[18px] leading-[1.41] transition-colors hover:text-orange max-sm:hidden 2xl:text-[24px]">
+      <svg role="img" class="mr-2.5 size-4 shrink-0 2xl:size-[18px]">
+        <use href="images/icons/sprite.svg#telephone"></use>
+      </svg>
+      980-801-63-63
+    </a>
+    <button type="button" class="ml-10 shrink-0 xl:hidden" data-hamburger>
+      <img src="images/icons/hamburger.svg" alt="alt" />
+    </button>
+  </div>
+  <div class="pointer-events-none absolute bottom-0 left-0 flex w-full justify-center overflow-hidden">
+    <picture>
+      <source srcset="images/line.svg" media="(min-width: 576px)" />
+      <img src="images/line-mob-alt.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+    </picture>
+  </div>
+</header>

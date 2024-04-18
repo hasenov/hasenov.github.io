@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#000" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="bg-dark text-white selection:bg-orange selection:text-white overflow-x-hidden">
+  <div class="relative overflow-x-hidden">
+    <header class="absolute left-0 top-0 z-20 w-full pb-[22px] pt-1.5 sm:pb-9 sm:pt-3 md:pb-12 2xl:pb-20 2xl:pt-8">
+      <picture>
+        <source srcset="images/header-glow.svg" media="(min-width: 576px)" />
+        <img src="images/header-glow-mob.svg" alt="alt" class="pointer-events-none absolute left-1/2 top-0 max-w-none -translate-x-1/2" />
+      </picture>
+      <div class="container relative z-10 flex items-center xl:justify-between 2xl:max-w-[1785px]">
+        <a href="index.html" class="max-w-[86px] max-xl:mr-auto sm:max-w-[125px]">
+          <img src="images/logo.svg" alt="alt" />
+        </a>
+        <nav class="z-10 !duration-700 max-xl:invisible max-xl:fixed max-xl:left-0 max-xl:top-0 max-xl:h-full max-xl:w-full max-xl:overflow-y-auto max-xl:bg-dark max-xl:pb-20 max-xl:transition-all max-xl:[transform:translate3d(0,-100%,0)] xl:ml-10 2xl:ml-20 max-xl:[&.is-active]:visible max-xl:[&.is-active]:[transform:translate3d(0,0,0)]" data-mobile-menu>
+          <div class="mb-[87px] xl:hidden">
+            <div class="relative flex items-center justify-end pt-[15px] max-xl:px-[30px] sm:pt-3">
+              <a href="#" class="mx-auto max-w-[86px] sm:max-w-[125px]">
+                <img src="images/logo.svg" alt="alt" />
+              </a>
+              <button type="button" class="absolute right-[25px] top-[26px] block size-4 shrink-0" data-hamburger-close>
+                <svg role="img" class="size-full">
+                  <use href="images/icons/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="pointer-events-none flex justify-center overflow-hidden">
+              <picture>
+                <source srcset="images/line.svg" media="(min-width: 576px)" />
+                <img src="images/line-mob-alt.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+              </picture>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="group"><a href="about.html">Обо мне</a></li>
+            <li class="has-child group">
+              <a href="#">SEO</a>
+              <ul class="dropdown">
+                <li><a href="#">SEO продвижение сайта</a></li>
+                <li><a href="#">Аудит и внутренняя оптимизация</a></li>
+              </ul>
+            </li>
+            <li class="has-child group">
+              <a href="#">Настройка рекламы</a>
+              <ul class="dropdown">
+                <li><a href="#">SEO продвижение сайта</a></li>
+                <li><a href="#">Аудит и внутренняя оптимизация</a></li>
+              </ul>
+            </li>
+            <li class="has-child group">
+              <a href="#">Соц. сети</a>
+              <ul class="dropdown">
+                <li><a href="#">SEO продвижение сайта</a></li>
+                <li><a href="#">Аудит и внутренняя оптимизация</a></li>
+              </ul>
+            </li>
+            <li class="group"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="flex flex-wrap justify-center space-x-5 pt-14 sm:space-x-8 lg:space-x-10 xl:hidden">
+            <a href="#" class="transition-colors hover:text-orange">
+              <svg role="img" class="size-[22px] sm:size-10 lg:size-[45px]">
+                <use href="images/icons/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="transition-colors hover:text-orange">
+              <svg role="img" class="size-[22px] sm:size-10 lg:size-[45px]">
+                <use href="images/icons/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="transition-colors hover:text-orange">
+              <svg role="img" class="size-[22px] sm:size-10 lg:size-[45px]">
+                <use href="images/icons/sprite.svg#ig"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <a href="#" class="inline-flex items-center align-top font-geologica text-[18px] leading-[1.41] transition-colors hover:text-orange max-sm:hidden 2xl:text-[24px]">
+          <svg role="img" class="mr-2.5 size-4 shrink-0 2xl:size-[18px]">
+            <use href="images/icons/sprite.svg#telephone"></use>
+          </svg>
+          980-801-63-63
+        </a>
+        <button type="button" class="ml-10 shrink-0 xl:hidden" data-hamburger>
+          <img src="images/icons/hamburger.svg" alt="alt" />
+        </button>
+      </div>
+      <div class="pointer-events-none absolute bottom-0 left-0 flex w-full justify-center overflow-hidden">
+        <picture>
+          <source srcset="images/line.svg" media="(min-width: 576px)" />
+          <img src="images/line-mob-alt.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+        </picture>
+      </div>
+    </header>
+
+
+    <div class="max-sm:pb-[69px]">
+      <!-- Первый экран -->
+      <section class="bg-gray/[.24] bg-cover bg-center bg-no-repeat max-sm:!bg-none" style="background-image: url(images/hero-bg.jpg)">
+        <div class="container max-2xl:max-w-[1785px]">
+          <div class="relative">
+            <div class="flex pt-[104px] sm:pt-[160px] md:pt-[200px] xl:min-h-[771px] xl:pb-[100px] 2xl:min-h-[887px] 2xl:pt-[283px]">
+              <div class="absolute bottom-0 left-0 max-xl:right-0 max-xl:flex max-xl:justify-center sm:-bottom-6 md:-bottom-9 2xl:-bottom-[46px]">
+                <div class="relative">
+                  <img src="images/about-curve.svg" alt="alt" class="absolute left-[37px] top-[30px] w-[86.7%] sm:left-[6.1%] sm:top-0 sm:w-[83.9%]" />
+                  <div class="absolute w-[170px] bg-[#161524] blur-[27.5px] max-sm:-bottom-[60px] max-sm:-right-[90px] max-sm:h-[141px] sm:-top-[21.5%] sm:left-[13.4%] sm:w-[32.5%] sm:pb-[35.3%] sm:blur-[40px]"></div>
+                  <div class="absolute -top-10 left-16 w-[170px] bg-[#161524] blur-[27.5px] max-sm:h-[141px] sm:left-[29%] sm:top-[45%] sm:w-[49.66%] sm:pb-[24%] sm:blur-[20px]"></div>
+                  <div class="absolute bottom-10 right-8 w-[170px] bg-[#161524] blur-[20px] max-sm:h-[141px] sm:-bottom-[21.4%] sm:-right-[9%] sm:w-[32.5%] sm:pb-[32.5%] sm:blur-[40px]"></div>
+                  <div class="absolute bottom-16 left-6 w-[170px] bg-[#161524] blur-[20px] max-sm:h-[141px] sm:-bottom-[5.3%] sm:right-[21%] sm:w-[32.5%] sm:pb-[29.1%]"></div>
+                  <div class="absolute bottom-[103px] left-[67px] w-[170px] bg-[#161524] blur-[20px] max-sm:h-[141px] sm:bottom-[2.75%] sm:left-[15.2%] sm:w-[32.5%] sm:pb-[29.1%]"></div>
+                  <div class="absolute bottom-[136px] w-[170px] bg-[#161524] blur-[20px] max-sm:right-[54px] max-sm:h-[141px] sm:bottom-[20.35%] sm:left-[10.15%] sm:w-[32.5%] sm:pb-[29.1%]"></div>
+                  <div class="absolute left-[90px] w-[170px] bg-[#161524] blur-[20px] max-sm:top-[125px] max-sm:h-[141px] sm:bottom-[48%] sm:left-[33.5%] sm:w-[32.5%] sm:pb-[29.1%]"></div>
+                  <picture>
+                    <source srcset="images/about.png" media="(min-width: 576px)" />
+                    <img src="images/about-mob.png" alt="alt" class="mix-blend-screen max-2xl:max-w-[620px]" />
+                  </picture>
+                  <div class="absolute -left-[17%] top-0 w-[23.55%] bg-[#161423] pb-[118.14%] blur-[20px] sm:-left-[12.65%] sm:blur-[60px]"></div>
+                  <div class="absolute -right-[10.2%] top-0 w-[23.55%] bg-[#161423] pb-[118.14%] blur-[80px]"></div>
+                  <div class="absolute -top-[18%] left-0 w-full bg-[#201E32] pb-[27%] blur-[20px] 2xl:hidden"></div>
+                  <div class="absolute bottom-0 left-0 w-full bg-[#201E32] pb-[30%] opacity-[.57] blur-[22px] xl:hidden"></div>
+                  <img src="images/decor-about-1.svg" alt="alt" class="absolute right-[5%] top-[19%] w-[27.89%] max-xl:rotate-[80deg] max-xl:-scale-x-[1] sm:-right-[4%] sm:top-[28%]" />
+                </div>
+              </div>
+              <div class="relative z-10 w-full max-xl:pb-[600px] max-sm:pb-[490px] xl:ml-[50%] xl:max-w-[50%] xl:basis-6/12">
+                <div class="-mx-1.5 -mb-3 flex flex-wrap">
+                  <div class="mx-1.5 mb-3 rounded-md bg-white/[.08] px-3 py-2.5 text-[12px] leading-[1.41] shadow-badge transition-transform hover:-translate-y-1 sm:bg-white/[.04] sm:px-6 sm:text-[18px] 2xl:text-[24px]">SEO cпециалист</div>
+                  <div class="mx-1.5 mb-3 rounded-md bg-white/[.08] px-3 py-2.5 text-[12px] leading-[1.41] shadow-badge transition-transform hover:-translate-y-1 sm:bg-white/[.04] sm:px-6 sm:text-[18px] 2xl:text-[24px]">Констектолог</div>
+                  <div class="mx-1.5 mb-3 rounded-md bg-white/[.08] px-3 py-2.5 text-[12px] leading-[1.41] shadow-badge transition-transform hover:-translate-y-1 sm:bg-white/[.04] sm:px-6 sm:text-[18px] 2xl:text-[24px]">Таргетолог</div>
+                </div>
+                <h1 class="mb-5 mt-5 text-[40px] font-bold leading-[1.26] [text-shadow:0px_0px_22.4px_theme(colors.jacarta)] xs:text-[50px] sm:mb-4 md:text-[60px] lg:text-[70px] 2xl:text-[84px]">Ярослав Traffic Hunter</h1>
+                <p class="relative max-w-[816px] text-[16px] font-medium leading-[1.625] text-light sm:text-[18px] sm:leading-[1.75] md:text-[20px] xl:mb-[50px] 2xl:text-[24px]">
+                  Специалист по трафику с более 14 летним опытом.
+                  <img src="images/decor-hero-1.svg" alt="alt" class="absolute -top-1 right-full mr-2.5 sm:hidden" />
+                </p>
+                <div class="max-xl:absolute max-xl:bottom-0 max-xl:left-0 max-xl:w-full max-xl:pb-4">
+                  <table class="-mb-3 w-[492px] max-w-full text-[12px] font-medium max-xl:mx-auto sm:-mb-5 sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-light">
+                    <tr>
+                      <th class="pb-3 text-left font-medium sm:pb-5">
+                        <div class="inline-block rounded-md bg-white/[.08] px-3 py-2.5 align-top sm:px-4 sm:py-3.5 xl:bg-jacarta/75">Имя:</div>
+                      </th>
+                      <td class="pb-3 text-right sm:pb-5">Ярослав</td>
+                    </tr>
+                    <tr>
+                      <th class="pb-3 text-left font-medium sm:pb-5">
+                        <div class="inline-block rounded-md bg-white/[.08] px-3 py-2.5 align-top sm:px-4 sm:py-3.5 xl:bg-jacarta/75">Возраст</div>
+                      </th>
+                      <td class="pb-3 text-right sm:pb-5">33 года</td>
+                    </tr>
+                    <tr>
+                      <th class="pb-3 text-left font-medium sm:pb-5">
+                        <div class="inline-block rounded-md bg-white/[.08] px-3 py-2.5 align-top sm:px-4 sm:py-3.5 xl:bg-jacarta/75">ГЕО:</div>
+                      </th>
+                      <td class="pb-3 text-right sm:pb-5">Санкт-Петербург</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="pointer-events-none absolute left-1/2 top-0 h-full w-[1775px] -translate-x-1/2">
+              <div class="absolute bottom-0 left-[0] top-0 w-[3px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0.06%,rgba(255,255,255,0.17)_53.08%,rgba(255,255,255,0)_100.1%)] opacity-20 max-2xl:hidden"></div>
+              <div class="absolute bottom-0 left-[720px] top-12 w-[3px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0.06%,rgba(255,255,255,0.17)_53.08%,rgba(255,255,255,0)_100.1%)] opacity-20 sm:left-[635px] sm:top-0 sm:opacity-10 md:left-[509px] 2xl:-bottom-[46px] 2xl:left-[476px]"></div>
+              <div class="absolute -bottom-6 left-1/2 top-16 w-[3px] -translate-x-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0.06%,rgba(255,255,255,0.17)_53.08%,rgba(255,255,255,0)_100.1%)] opacity-[.16] max-xl:h-[477px] max-lg:h-[400px] sm:top-0 sm:opacity-40 md:-bottom-9 2xl:-bottom-[46px]"></div>
+              <div class="absolute bottom-0 left-[1052px] top-12 w-[3px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0.06%,rgba(255,255,255,0.17)_53.08%,rgba(255,255,255,0)_100.1%)] opacity-20 sm:left-[1135px] sm:top-0 sm:opacity-30 md:left-[1261px] 2xl:left-[1298px]"></div>
+              <div class="absolute -bottom-6 right-0 top-0 w-[3px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0.06%,rgba(255,255,255,0.17)_53.08%,rgba(255,255,255,0)_100.1%)] opacity-20 max-2xl:hidden md:-bottom-9 2xl:-bottom-[46px]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pointer-events-none relative z-10 flex justify-center overflow-hidden max-sm:bg-dark">
+          <picture>
+            <source srcset="images/line-left.svg" media="(min-width: 576px)" />
+            <img src="images/line-left-mob.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="relative z-10 bg-dark pt-[75px] 2xl:pt-[128px]">
+        <div class="container pb-[50px] 2xl:pb-[55px]">
+          <h2 class="relative mb-[50px] text-center font-vela text-[25px] font-bold leading-[1.11] text-[#F5F5F6] sm:text-[34px] lg:mb-16 lg:text-[43px] 2xl:mb-[82px] 2xl:text-[52px]">
+            Skills
+            <picture>
+              <source srcset="images/curve.svg" media="(min-width: 576px)" />
+              <img src="images/curve-mob.svg" alt="alt" class="pointer-events-none absolute -bottom-5 left-1/2 -z-10 max-w-none -translate-x-1/2 max-2xl:max-w-[1844px] max-xl:max-w-[1366px] max-lg:max-w-[1200px] max-sm:-bottom-3" />
+            </picture>
+          </h2>
+          <div class="custom-border custom-border-stats mb-[42px] rounded-[14px] bg-jacarta/25 p-4 max-sm:before:p-px sm:rounded-[22px] sm:p-8 md:mb-16 2xl:mb-[82px] 2xl:px-[77px] 2xl:py-[45px]">
+            <div class="custom-border custom-border-stats flex rounded-[14px] px-3 pb-14 pt-11 max-lg:flex-col max-lg:items-center max-lg:space-y-[35px] max-sm:before:p-px sm:px-5 sm:py-10 2xl:pb-20 2xl:pt-16 2xl:before:p-[4px] [&>div:not(:last-child)]:after:absolute [&>div:not(:last-child)]:after:bottom-4 [&>div:not(:last-child)]:after:right-0 [&>div:not(:last-child)]:after:top-4 [&>div:not(:last-child)]:after:block [&>div:not(:last-child)]:after:w-px [&>div:not(:last-child)]:after:bg-white [&>div:not(:last-child)]:max-lg:pb-10 [&>div:not(:last-child)]:after:max-lg:bottom-0 [&>div:not(:last-child)]:after:max-lg:left-1/2 [&>div:not(:last-child)]:after:max-lg:right-auto [&>div:not(:last-child)]:after:max-lg:top-auto [&>div:not(:last-child)]:after:max-lg:h-px [&>div:not(:last-child)]:after:max-lg:w-[163px] [&>div:not(:last-child)]:after:max-lg:-translate-x-1/2">
+              <div class="relative text-center lg:max-w-[33.333333%] lg:shrink-0 lg:basis-4/12">
+                <div class="mb-2 font-vela text-[26px] font-bold uppercase tracking-[0.12em] text-orange-light 2xl:text-[32px]">SEO</div>
+                <div class="text-[36px] font-light leading-[1] 2xl:text-[48px]"><span class="mr-2 text-[110px] font-semibold leading-[1] 2xl:text-[128px]">14</span> лет</div>
+              </div>
+              <div class="relative text-center lg:max-w-[33.333333%] lg:shrink-0 lg:basis-4/12">
+                <div class="mb-2 font-vela text-[26px] font-bold uppercase tracking-[0.12em] text-orange-light 2xl:text-[32px]">Контекст</div>
+                <div class="text-[36px] font-light leading-[1] 2xl:text-[48px]"><span class="mr-2 text-[110px] font-semibold leading-[1] 2xl:text-[128px]">10</span> лет</div>
+              </div>
+              <div class="relative text-center lg:max-w-[33.333333%] lg:shrink-0 lg:basis-4/12">
+                <div class="mb-2 font-vela text-[26px] font-bold uppercase tracking-[0.12em] text-orange-light 2xl:text-[32px]">Таргет</div>
+                <div class="text-[36px] font-light leading-[1] 2xl:text-[48px]"><span class="mr-2 text-[110px] font-semibold leading-[1] 2xl:text-[128px]">8</span> лет</div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-2.5 sm:space-y-5 lg:space-y-6 2xl:space-y-[30px]">
+            <div class="custom-border custom-border-light flex items-center rounded-[10px] bg-white/5 px-[14px] py-5 font-vela sm:rounded-2xl sm:px-5 sm:py-[23px] sm:text-[20px] lg:px-8 lg:text-[25px] 2xl:px-[77px] 2xl:text-[35px]">
+              <div class="mr-2 w-7 shrink-0 sm:mr-5 sm:w-10 lg:mr-6 lg:w-[52px] 2xl:mr-[31px]">
+                <img src="images/uk.png" alt="alt" />
+              </div>
+              <div class="font-medium">Английский:</div>
+              <div class="ml-auto bg-gradient-to-l from-orange from-[25.37%] to-red to-[125.31%] bg-clip-text font-extrabold text-transparent">Advanced</div>
+            </div>
+            <div class="custom-border custom-border-light flex items-center rounded-[10px] bg-white/5 px-[14px] py-5 font-vela sm:rounded-2xl sm:px-5 sm:py-[23px] sm:text-[20px] lg:px-8 lg:text-[25px] 2xl:px-[77px] 2xl:text-[35px]">
+              <div class="mr-2 w-7 shrink-0 sm:mr-5 sm:w-10 lg:mr-6 lg:w-[52px] 2xl:mr-[31px]">
+                <img src="images/es.png" alt="alt" />
+              </div>
+              <div class="font-medium">Испанский:</div>
+              <div class="ml-auto bg-gradient-to-l from-orange from-[25.37%] to-red to-[125.31%] bg-clip-text font-extrabold text-transparent">Intermediate</div>
+            </div>
+            <div class="custom-border custom-border-light flex items-center rounded-[10px] bg-white/5 px-[14px] py-5 font-vela sm:rounded-2xl sm:px-5 sm:py-[23px] sm:text-[20px] lg:px-8 lg:text-[25px] 2xl:px-[77px] 2xl:text-[35px]">
+              <div class="mr-2 w-7 shrink-0 sm:mr-5 sm:w-10 lg:mr-6 lg:w-[52px] 2xl:mr-[31px]">
+                <img src="images/de.png" alt="alt" />
+              </div>
+              <div class="font-medium">Немецкий:</div>
+              <div class="ml-auto bg-gradient-to-l from-orange from-[25.37%] to-red to-[125.31%] bg-clip-text font-extrabold text-transparent">Elementary</div>
+            </div>
+          </div>
+          <div class="mt-10 text-center 2xl:mt-[68px]">
+            <a href="#" class="btn btn-orange min-h-16 w-[330px] p-3 font-semibold sm:text-[18px] lg:text-[20px] 2xl:min-h-[84px] 2xl:w-[449px] 2xl:text-[24px]">Запрос на услугу</a>
+          </div>
+        </div>
+        <div class="pointer-events-none flex justify-center overflow-hidden">
+          <picture>
+            <source srcset="images/line-left.svg" media="(min-width: 576px)" />
+            <img src="images/line-left-mob.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Обо мне -->
+      <section class="pt-28 sm:pb-6 2xl:pb-[65px] 2xl:pt-[170px]">
+        <div class="container font-vela">
+          <div class="relative mb-[58px] pb-5 pr-5 pt-9 before:absolute before:-left-[9999px] before:bottom-0 before:right-0 before:top-0 before:block before:rounded-br-xl before:rounded-tr-xl before:bg-white/5 sm:mb-[50px] sm:py-10 lg:pr-10 xl:py-[50px] xl:pr-[50px] 2xl:pl-[21px]">
+            <div class="relative">
+              <h2 class="mb-10 font-vela text-[25px] font-medium leading-[1.11] sm:mb-6 sm:text-[34px] sm:font-bold lg:text-[43px] 2xl:text-[52px]">Обо мне</h2>
+              <blockquote class="relative pl-6 text-[14px] before:absolute before:left-0 before:top-0 before:block before:w-1 before:rounded-[1px] before:bg-orange max-sm:leading-[1.71] max-sm:before:h-[115px] sm:px-10 sm:text-[16px] sm:font-medium sm:before:bottom-5 sm:before:top-5 md:px-14 md:text-[18px] xl:text-[20px] 2xl:text-[26px]">
+                <p>
+                  Рад приветствовать всех, кто решил посетить данную страницу и ознакомиться с моей лаконичной, но емкой биографией. Если коротко, то вот как уже более 13 лет я занимаюсь работой с трафиком в самых разных форматах: SEO, PPC, SMM. Успел поработать с очень известными
+                  компаниями, среди которых: киностудии, известные франшизы, а также знакомые многим личности в виде блогеров и звезд.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="space-y-[22px] text-[12px] leading-[1.41] sm:text-[16px] sm:leading-[1.77] xl:text-[18px] 2xl:space-y-[58px] 2xl:text-[22px] 2xl:font-medium" id="content">
+            <p>Не в таком уж далеком 2008 году я только пытался знакомиться с разработкой сайтов, больше не как возможность в дальнейшем работать в этой сфере, а только ради интереса к тому, как работает мир IT технологий. Именно тогда я за короткий срок выучил HTML и CSS, что позволило мне понять как браузеры и поисковые системы видят и обрабатывают код сайтов. Спустя какое-то время я также приступил к изучению JavaScript, и на сегодняшний день продолжаю его изучать как аспект саморазвития. Сейчас мои знания позволяют создавать довольно интересные WEB-приложения.</p>
+            <p>Я решил, что очень важно сконцентрировать ваше внимание на информации о моих скиллах в IT, поскольку это серьезно выделяет меня среди моих коллег, которые в 99.99% случаях понятия не имеют, как работает код, и как его видят поисковые машины, что касается сферы SEO услуг. Вы бы сами хотели работать со специалистом, который даже не знает, где должен закрываться в случае чего тег &lt;div&gt;? Либо не увидит как выглядит вредоносный код на JS или PHP? Я думаю, что точно бы не хотели иметь дел с таким низкокачественным исполнителем, а хотели бы работать только с лучшим.<br />
+              Собственно тогда, в 2008 году, я начал самостоятельно продвигать свои pet-проекты, после чего моя карьера в работе с трафиком пошла вверх.<br />
+              Один из моих самых успешных кейсов — это проект, который удалось продвинуть за 3 месяца до 50 000 человек в сутки, или же до 1 500 000 человек в месяц с нуля!<br />
+              Да, да — это реальность, чистая органика! Рыбный текст рыбный текст Рыбный текст рыбный текст Рыбный текст рыбный текст Рыбный текст рыбный текст</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      <!-- Что говорят обо мне мои клиенты -->
+      <section class="pb-[38px] pt-[78px] sm:pb-16 lg:pb-[80px] lg:pt-[100px] 2xl:pb-28 2xl:pt-[184px]">
+        <div class="container">
+          <h2 class="relative mb-[51px] font-vela text-[25px] font-medium leading-[1.4] sm:text-[34px] sm:font-bold sm:leading-[1.11] lg:text-[43px] 2xl:mb-[70px] 2xl:text-[52px]">
+            Что говорят обо мне<br />
+            мои клиенты
+            <img src="images/decor-reviews-1.svg" alt="alt" class="pointer-events-none absolute -left-[21px] -top-[30px] max-xl:w-[70px] max-lg:w-[60px] max-sm:w-[43px] sm:-left-[28px] sm:-top-[49px] lg:-left-[35px] lg:-top-[55px] xl:-left-[40px] xl:-top-[70px]" />
+          </h2>
+          <div class="splide slider-reviews">
+            <div class="splide__track !px-px max-xl:overflow-visible max-sm:!pr-[33px]">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <div class="custom-border custom-border-light rounded-lg bg-white/5 px-5 pb-[22px] pt-12 sm:px-[30px] sm:pb-9 sm:pt-16 2xl:px-[34px] 2xl:pt-[85px]">
+                    <img src="images/icons/quotes.svg" alt="alt" class="absolute left-5 top-[22px] w-[18px] drop-shadow-orange sm:left-[34px] sm:top-6 sm:w-8 2xl:top-9 2xl:w-10" />
+                    <p class="line-clamp-5 leading-[1.85] max-sm:text-[8px] 2xl:text-[20px]">
+                      Я познакомился с Ярославом в Яндекс Метрике, сначала заочно. Увидел, что тот, кто занимается трафиком из Инстаграма, очень хорошо знает своё дело: число заявок в несколько раз превышало число заявок из стабильного и надёжного, как раньше казалось, контекста. Потом,
+                      пообщавшись по телефону, понял, что Ярослав готов ответить не только на технические вопросы, но и даёт дельные советы по стратегии маркетинга. Рад, что теперь мы совместно работаем по нескольким направлениям.
+                    </p>
+                    <div class="mt-3.5 flex items-center sm:mt-5 2xl:mt-9">
+                      <div class="mr-2 flex size-7 overflow-hidden rounded-full sm:mr-[11px] sm:size-10 2xl:size-[62px]">
+                        <img src="images/avatar-placeholder.svg" alt="alt" class="h-full w-full object-cover" />
+                      </div>
+                      <div class="flex-auto leading-[1.2]">
+                        <div class="mb-0.5 text-[12px] font-medium sm:mb-[7px] sm:text-[18px] 2xl:text-[26px]">Валентин</div>
+                        <div class="text-white/70 max-sm:text-[8px]">Стоматология “Новый век”</div>
+                      </div>
+                    </div>
+                    <picture>
+                      <source srcset="images/glow-review.svg" media="(min-width: 576px)" />
+                      <img src="images/glow-review-mob.svg" alt="alt" class="pointer-events-none absolute left-1/2 top-1/2 max-xl:-z-10 max-xl:-translate-x-1/2 max-xl:-translate-y-1/2 xl:-left-5 xl:-top-10" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="custom-border custom-border-light rounded-lg bg-white/5 px-5 pb-[22px] pt-12 sm:px-[30px] sm:pb-9 sm:pt-16 2xl:px-[34px] 2xl:pt-[85px]">
+                    <img src="images/icons/quotes.svg" alt="alt" class="absolute left-5 top-[22px] w-[18px] drop-shadow-orange sm:left-[34px] sm:top-6 sm:w-8 2xl:top-9 2xl:w-10" />
+                    <p class="line-clamp-5 leading-[1.85] max-sm:text-[8px] 2xl:text-[20px]">
+                      Я познакомился с Ярославом в Яндекс Метрике, сначала заочно. Увидел, что тот, кто занимается трафиком из Инстаграма, очень хорошо знает своё дело: число заявок в несколько раз превышало число заявок из стабильного и надёжного, как раньше казалось, контекста. Потом,
+                      пообщавшись по телефону, понял, что Ярослав готов ответить не только на технические вопросы, но и даёт дельные советы по стратегии маркетинга. Рад, что теперь мы совместно работаем по нескольким направлениям.
+                    </p>
+                    <div class="mt-3.5 flex items-center sm:mt-5 2xl:mt-9">
+                      <div class="mr-2 flex size-7 overflow-hidden rounded-full sm:mr-[11px] sm:size-10 2xl:size-[62px]">
+                        <img src="images/avatar-placeholder.svg" alt="alt" class="h-full w-full object-cover" />
+                      </div>
+                      <div class="flex-auto leading-[1.2]">
+                        <div class="mb-0.5 text-[12px] font-medium sm:mb-[7px] sm:text-[18px] 2xl:text-[26px]">Валентин</div>
+                        <div class="text-white/70 max-sm:text-[8px]">Стоматология “Новый век”</div>
+                      </div>
+                    </div>
+                    <picture>
+                      <source srcset="images/glow-review.svg" media="(min-width: 576px)" />
+                      <img src="images/glow-review-mob.svg" alt="alt" class="pointer-events-none absolute left-1/2 top-1/2 max-xl:-z-10 max-xl:-translate-x-1/2 max-xl:-translate-y-1/2 xl:-left-5 xl:-top-10" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="custom-border custom-border-light rounded-lg bg-white/5 px-5 pb-[22px] pt-12 sm:px-[30px] sm:pb-9 sm:pt-16 2xl:px-[34px] 2xl:pt-[85px]">
+                    <img src="images/icons/quotes.svg" alt="alt" class="absolute left-5 top-[22px] w-[18px] drop-shadow-orange sm:left-[34px] sm:top-6 sm:w-8 2xl:top-9 2xl:w-10" />
+                    <p class="line-clamp-5 leading-[1.85] max-sm:text-[8px] 2xl:text-[20px]">
+                      Я познакомился с Ярославом в Яндекс Метрике, сначала заочно. Увидел, что тот, кто занимается трафиком из Инстаграма, очень хорошо знает своё дело: число заявок в несколько раз превышало число заявок из стабильного и надёжного, как раньше казалось, контекста. Потом,
+                      пообщавшись по телефону, понял, что Ярослав готов ответить не только на технические вопросы, но и даёт дельные советы по стратегии маркетинга. Рад, что теперь мы совместно работаем по нескольким направлениям.
+                    </p>
+                    <div class="mt-3.5 flex items-center sm:mt-5 2xl:mt-9">
+                      <div class="mr-2 flex size-7 overflow-hidden rounded-full sm:mr-[11px] sm:size-10 2xl:size-[62px]">
+                        <img src="images/avatar-placeholder.svg" alt="alt" class="h-full w-full object-cover" />
+                      </div>
+                      <div class="flex-auto leading-[1.2]">
+                        <div class="mb-0.5 text-[12px] font-medium sm:mb-[7px] sm:text-[18px] 2xl:text-[26px]">Валентин</div>
+                        <div class="text-white/70 max-sm:text-[8px]">Стоматология “Новый век”</div>
+                      </div>
+                    </div>
+                    <picture>
+                      <source srcset="images/glow-review.svg" media="(min-width: 576px)" />
+                      <img src="images/glow-review-mob.svg" alt="alt" class="pointer-events-none absolute left-1/2 top-1/2 max-xl:-z-10 max-xl:-translate-x-1/2 max-xl:-translate-y-1/2 xl:-left-5 xl:-top-10" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="custom-border custom-border-light rounded-lg bg-white/5 px-5 pb-[22px] pt-12 sm:px-[30px] sm:pb-9 sm:pt-16 2xl:px-[34px] 2xl:pt-[85px]">
+                    <img src="images/icons/quotes.svg" alt="alt" class="absolute left-5 top-[22px] w-[18px] drop-shadow-orange sm:left-[34px] sm:top-6 sm:w-8 2xl:top-9 2xl:w-10" />
+                    <p class="line-clamp-5 leading-[1.85] max-sm:text-[8px] 2xl:text-[20px]">
+                      Я познакомился с Ярославом в Яндекс Метрике, сначала заочно. Увидел, что тот, кто занимается трафиком из Инстаграма, очень хорошо знает своё дело: число заявок в несколько раз превышало число заявок из стабильного и надёжного, как раньше казалось, контекста. Потом,
+                      пообщавшись по телефону, понял, что Ярослав готов ответить не только на технические вопросы, но и даёт дельные советы по стратегии маркетинга. Рад, что теперь мы совместно работаем по нескольким направлениям.
+                    </p>
+                    <div class="mt-3.5 flex items-center sm:mt-5 2xl:mt-9">
+                      <div class="mr-2 flex size-7 overflow-hidden rounded-full sm:mr-[11px] sm:size-10 2xl:size-[62px]">
+                        <img src="images/avatar-placeholder.svg" alt="alt" class="h-full w-full object-cover" />
+                      </div>
+                      <div class="flex-auto leading-[1.2]">
+                        <div class="mb-0.5 text-[12px] font-medium sm:mb-[7px] sm:text-[18px] 2xl:text-[26px]">Валентин</div>
+                        <div class="text-white/70 max-sm:text-[8px]">Стоматология “Новый век”</div>
+                      </div>
+                    </div>
+                    <picture>
+                      <source srcset="images/glow-review.svg" media="(min-width: 576px)" />
+                      <img src="images/glow-review-mob.svg" alt="alt" class="pointer-events-none absolute left-1/2 top-1/2 max-xl:-z-10 max-xl:-translate-x-1/2 max-xl:-translate-y-1/2 xl:-left-5 xl:-top-10" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="splide__pagination mt-[25px] max-sm:hidden [&_button.is-active]:w-[62px] [&_button.is-active]:rounded-[40px] [&_button.is-active]:bg-orange [&_button:not(.is-active):hover]:bg-silver/50 [&_button]:block [&_button]:size-[13px] [&_button]:rounded-full [&_button]:bg-silver/25 [&_button]:transition-all [&_li]:mx-1"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Компании, которые доверили мне свои проекты -->
+      <section>
+        <div class="flex justify-center overflow-hidden">
+          <picture>
+            <source srcset="images/line.svg" media="(min-width: 576px)" />
+            <img src="images/line-mob.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+          </picture>
+        </div>
+        <div class="container relative pb-[60px] pt-20 2xl:pb-[97px] 2xl:pt-[104px]">
+          <div class="text-center">
+            <h2 class="relative mb-[34px] inline-block align-top font-vela text-[21px] font-medium leading-[1.66] max-xl:max-w-[700px] max-lg:max-w-[500px] max-sm:max-w-[330px] sm:mb-14 sm:text-[34px] sm:leading-[1.11] lg:mb-20 lg:text-[43px] 2xl:mb-[92px] 2xl:text-[52px]">
+              Компании, которые доверили мне свои проекты
+              <img src="images/decor-partners-1.svg" alt="alt" class="absolute right-full top-0 max-lg:w-[40px] max-sm:w-5 sm:mr-4 xl:mr-12" />
+              <img src="images/decor-partners-2.svg" alt="alt" class="absolute left-full top-9 -ml-2 max-lg:w-[30px] max-sm:w-[14px] sm:top-3 sm:ml-4 xl:ml-[38px]" />
+            </h2>
+          </div>
+          <div class="-mx-2.5 flex items-center justify-between overflow-x-auto md:-mx-6 lg:-mx-10">
+            <div class="px-2.5 md:px-6 lg:px-10 2xl:basis-3/12">
+              <img src="images/partner-1.png" alt="alt" class="mx-auto" />
+            </div>
+            <div class="px-2.5 md:px-6 lg:px-10 2xl:basis-3/12">
+              <img src="images/partner-2.svg" alt="alt" class="mx-auto" />
+            </div>
+            <div class="px-2.5 md:px-6 lg:px-10 2xl:basis-3/12">
+              <img src="images/partner-3.png" alt="alt" class="mx-auto" />
+            </div>
+            <div class="px-2.5 md:px-6 lg:px-10 2xl:basis-3/12">
+              <img src="images/partner-4.png" alt="alt" class="mx-auto" />
+            </div>
+          </div>
+          <svg class="sm:animate-pulse-glow-light pointer-events-none absolute bottom-0 left-1/2 -z-10 w-[150px] transform-gpu fill-orange opacity-[0.58] blur-[60px] max-2xl:-translate-x-1/2 sm:-bottom-10 sm:w-[350px] sm:opacity-[0.17] sm:blur-[100px] 2xl:left-[410px] 2xl:top-16 2xl:w-[440px] 2xl:blur-[130px]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.9,-23.8C26.5,-20.3,29.8,-13.1,32.2,-4.9C34.5,3.2,35.8,12.3,31.3,16C26.7,19.7,16.3,18,8.5,18.9C0.7,19.8,-4.5,23.3,-9.6,22.9C-14.7,22.6,-19.8,18.5,-23.9,13C-28.1,7.5,-31.5,0.7,-31.2,-6.2C-30.8,-13.1,-26.8,-20.1,-20.9,-23.6C-15.1,-27.1,-7.6,-27.1,0.1,-27.2C7.7,-27.3,15.4,-27.4,20.9,-23.8Z" transform="translate(50 50)" stroke-width="0">
+              <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+                    M20.9,-23.8C26.5,-20.3,29.8,-13.1,32.2,-4.9C34.5,3.2,35.8,12.3,31.3,16C26.7,19.7,16.3,18,8.5,18.9C0.7,19.8,-4.5,23.3,-9.6,22.9C-14.7,22.6,-19.8,18.5,-23.9,13C-28.1,7.5,-31.5,0.7,-31.2,-6.2C-30.8,-13.1,-26.8,-20.1,-20.9,-23.6C-15.1,-27.1,-7.6,-27.1,0.1,-27.2C7.7,-27.3,15.4,-27.4,20.9,-23.8Z;
+                    M23.9,-28.4C30.7,-22.8,35.7,-15,36.2,-7.1C36.8,0.8,33,8.8,28.2,15.6C23.5,22.4,17.9,28,11.2,30.2C4.5,32.4,-3.2,31.2,-11.5,29.2C-19.8,27.2,-28.7,24.5,-32.4,18.5C-36.1,12.5,-34.5,3.4,-31.1,-3.7C-27.7,-10.7,-22.4,-15.5,-16.9,-21.4C-11.4,-27.2,-5.7,-34.1,1.4,-35.8C8.6,-37.5,17.1,-34,23.9,-28.4Z;
+                    M24.2,-28.5C30,-23.9,32.4,-15,33.2,-6.4C34,2.1,33.1,10.4,29.5,17.5C25.9,24.5,19.6,30.4,11.5,34.5C3.5,38.7,-6.2,41.2,-15.5,39.3C-24.8,37.3,-33.8,31,-36.1,22.8C-38.5,14.7,-34.3,4.7,-29.5,-2.2C-24.7,-9,-19.2,-12.7,-14.2,-17.3C-9.1,-22,-4.6,-27.6,2.3,-30.4C9.2,-33.1,18.4,-33,24.2,-28.5Z;
+                    M20.9,-23.8C26.5,-20.3,29.8,-13.1,32.2,-4.9C34.5,3.2,35.8,12.3,31.3,16C26.7,19.7,16.3,18,8.5,18.9C0.7,19.8,-4.5,23.3,-9.6,22.9C-14.7,22.6,-19.8,18.5,-23.9,13C-28.1,7.5,-31.5,0.7,-31.2,-6.2C-30.8,-13.1,-26.8,-20.1,-20.9,-23.6C-15.1,-27.1,-7.6,-27.1,0.1,-27.2C7.7,-27.3,15.4,-27.4,20.9,-23.8Z;
+                    "></animate>
+            </path>
+          </svg>
+          <svg class="animate-pulse-glow-light pointer-events-none absolute right-20 top-28 w-[440px] transform-gpu fill-orange opacity-[0.17] blur-[130px] max-2xl:hidden" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.9,-23.8C26.5,-20.3,29.8,-13.1,32.2,-4.9C34.5,3.2,35.8,12.3,31.3,16C26.7,19.7,16.3,18,8.5,18.9C0.7,19.8,-4.5,23.3,-9.6,22.9C-14.7,22.6,-19.8,18.5,-23.9,13C-28.1,7.5,-31.5,0.7,-31.2,-6.2C-30.8,-13.1,-26.8,-20.1,-20.9,-23.6C-15.1,-27.1,-7.6,-27.1,0.1,-27.2C7.7,-27.3,15.4,-27.4,20.9,-23.8Z" transform="translate(50 50)" stroke-width="0">
+              <animate attributeName="d" dur="2s" repeatCount="indefinite" begin="1s" values="
+                    M20.9,-23.8C26.5,-20.3,29.8,-13.1,32.2,-4.9C34.5,3.2,35.8,12.3,31.3,16C26.7,19.7,16.3,18,8.5,18.9C0.7,19.8,-4.5,23.3,-9.6,22.9C-14.7,22.6,-19.8,18.5,-23.9,13C-28.1,7.5,-31.5,0.7,-31.2,-6.2C-30.8,-13.1,-26.8,-20.1,-20.9,-23.6C-15.1,-27.1,-7.6,-27.1,0.1,-27.2C7.7,-27.3,15.4,-27.4,20.9,-23.8Z;
+                    M23.9,-28.4C30.7,-22.8,35.7,-15,36.2,-7.1C36.8,0.8,33,8.8,28.2,15.6C23.5,22.4,17.9,28,11.2,30.2C4.5,32.4,-3.2,31.2,-11.5,29.2C-19.8,27.2,-28.7,24.5,-32.4,18.5C-36.1,12.5,-34.5,3.4,-31.1,-3.7C-27.7,-10.7,-22.4,-15.5,-16.9,-21.4C-11.4,-27.2,-5.7,-34.1,1.4,-35.8C8.6,-37.5,17.1,-34,23.9,-28.4Z;
+                    M24.2,-28.5C30,-23.9,32.4,-15,33.2,-6.4C34,2.1,33.1,10.4,29.5,17.5C25.9,24.5,19.6,30.4,11.5,34.5C3.5,38.7,-6.2,41.2,-15.5,39.3C-24.8,37.3,-33.8,31,-36.1,22.8C-38.5,14.7,-34.3,4.7,-29.5,-2.2C-24.7,-9,-19.2,-12.7,-14.2,-17.3C-9.1,-22,-4.6,-27.6,2.3,-30.4C9.2,-33.1,18.4,-33,24.2,-28.5Z;
+                    M20.9,-23.8C26.5,-20.3,29.8,-13.1,32.2,-4.9C34.5,3.2,35.8,12.3,31.3,16C26.7,19.7,16.3,18,8.5,18.9C0.7,19.8,-4.5,23.3,-9.6,22.9C-14.7,22.6,-19.8,18.5,-23.9,13C-28.1,7.5,-31.5,0.7,-31.2,-6.2C-30.8,-13.1,-26.8,-20.1,-20.9,-23.6C-15.1,-27.1,-7.6,-27.1,0.1,-27.2C7.7,-27.3,15.4,-27.4,20.9,-23.8Z;
+                    "></animate>
+            </path>
+          </svg>
+        </div>
+      </section>
+
+
+      <div class="pointer-events-none flex justify-center overflow-hidden sm:hidden">
+        <img src="images/line-alt-mob.svg" alt="alt" class="max-w-none max-2xl:h-9 max-md:h-6 max-sm:h-[19px]" />
+      </div>
+    </div>
+
+    <footer class="bg-vampire-black pb-[30px] pt-11 font-vela sm:py-[46px] 2xl:min-h-[435px]">
+      <div class="container">
+        <div class="flex max-w-[1600px] max-xl:flex-wrap max-xl:space-y-9">
+          <div class="w-full xl:mr-10 xl:max-w-[26%] xl:basis-[26%]">
+            <img src="images/logo.svg" alt="alt" class="mb-3 w-[123px] sm:w-[200px] 2xl:mb-1 2xl:w-[304px]" />
+            <p class="font-light leading-[1.666] text-white/80 max-xl:max-w-96 max-sm:max-w-[180px] max-sm:text-[8px] max-sm:leading-[2] xl:text-[18px]">Качественные услуги по продвижению сайтов в СПб, а также настройка контекстной и таргетированной рекламы.</p>
+          </div>
+          <div class="-mb-5 flex flex-auto max-2xl:-mx-3 max-2xl:flex-wrap sm:-mb-8 2xl:justify-between">
+            <div class="mb-5 max-2xl:max-w-[33.333333%] max-2xl:shrink-0 max-2xl:basis-4/12 max-2xl:px-3 max-md:max-w-[50%] max-md:basis-6/12 max-sm:order-last max-sm:w-full max-sm:max-w-full max-sm:basis-full sm:mb-8">
+              <div class="mb-[13px] font-bold leading-[1.365] sm:text-[22px] 2xl:text-[24px]">Я в соц сетях</div>
+              <div class="-mx-2.5 -mb-5 flex flex-wrap">
+                <a href="#" class="mx-2.5 mb-5 transition-colors hover:text-orange">
+                  <svg role="img" class="size-[27px] sm:size-[35px]">
+                    <use href="images/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="mx-2.5 mb-5 transition-colors hover:text-orange">
+                  <svg role="img" class="size-[27px] sm:size-[35px]">
+                    <use href="images/icons/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="mx-2.5 mb-5 transition-colors hover:text-orange">
+                  <svg role="img" class="size-[27px] sm:size-[35px]">
+                    <use href="images/icons/sprite.svg#ig"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="mb-5 max-2xl:max-w-[33.333333%] max-2xl:shrink-0 max-2xl:basis-4/12 max-2xl:px-3 max-md:max-w-[50%] max-md:basis-6/12 max-sm:w-full max-sm:max-w-full max-sm:basis-full sm:mb-8">
+              <div class="mb-[13px] font-bold leading-[1.365] sm:text-[22px] 2xl:text-[24px]">Телефон</div>
+              <div class="text-[8px] leading-[1.666] sm:text-[16px] md:text-[18px]"><a href="#" class="transition-colors hover:text-orange">980-801-63-63</a></div>
+            </div>
+            <div class="mb-5 max-2xl:max-w-[33.333333%] max-2xl:shrink-0 max-2xl:basis-4/12 max-2xl:px-3 max-md:max-w-[50%] max-md:basis-6/12 max-sm:w-full max-sm:max-w-full max-sm:basis-full sm:mb-8">
+              <div class="mb-[13px] font-bold leading-[1.365] sm:text-[22px] 2xl:text-[24px]">Местоположение</div>
+              <div class="text-[8px] leading-[1.666] sm:text-[16px] md:text-[18px]">Россия, Санкт-Петербург</div>
+            </div>
+            <div class="mb-5 max-2xl:max-w-[33.333333%] max-2xl:shrink-0 max-2xl:basis-4/12 max-2xl:px-3 max-md:max-w-[50%] max-md:basis-6/12 max-sm:w-full max-sm:max-w-full max-sm:basis-full sm:mb-8">
+              <div class="mb-[13px] font-bold leading-[1.365] sm:text-[22px] 2xl:text-[24px]">Полезные ссылки</div>
+              <nav>
+                <ul class="space-y-2 text-[8px] font-light leading-[1.666] sm:space-y-[14px] sm:text-[16px] md:text-[18px] [&_a:hover]:text-white [&_a]:text-white/80 [&_a]:transition-colors">
+                  <li><a href="about.html">Обо мне</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Проекты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+          <div class="modal__inner custom-border custom-border-modal pb-[62px] pt-16 2xl:pt-[86px]">
+            <button class="modal__close group absolute right-[3px] top-[3px] z-10 size-20 [background:url(../images/close-bg.svg)_center/contain_no-repeat] sm:size-24 2xl:size-[127px]" aria-label="Close modal" data-micromodal-close>
+              <svg role="img" class="absolute right-4 top-4 size-4 text-dark transition-colors group-hover:text-orange sm:right-5 sm:top-5 sm:size-5 2xl:right-[30px] 2xl:top-[30px] 2xl:size-6">
+                <use href="images/icons/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <form class="relative z-10 mx-auto max-w-[936px]">
+              <div class="-mx-2.5 -mb-4 flex flex-wrap sm:-mb-5 2xl:-mb-[25px]">
+                <div class="mb-4 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:shrink-0 md:basis-6/12 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <input type="text" placeholder="Ваша компания/имя заказчика" class="control" />
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:shrink-0 md:basis-6/12 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <input type="text" placeholder="Сайт для продвижения" class="control" />
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:shrink-0 md:basis-6/12 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <select class="control">
+                      <option value="" disabled selected>Бюджет</option>
+                      <option value="1">Бюджет</option>
+                      <option value="2">Бюджет</option>
+                      <option value="3">Бюджет</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:shrink-0 md:basis-6/12 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <select class="control">
+                      <option value="" disabled selected>Желаемые сроки</option>
+                      <option value="1">Желаемые сроки</option>
+                      <option value="2">Желаемые сроки</option>
+                      <option value="3">Желаемые сроки</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <select class="control">
+                      <option value="" disabled selected>Регион продвижения</option>
+                      <option value="1">Регион продвижения</option>
+                      <option value="2">Регион продвижения</option>
+                      <option value="3">Регион продвижения</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <select class="control">
+                      <option value="" disabled selected>Продвижение в каких поисковых системах</option>
+                      <option value="1">Продвижение в каких поисковых системах</option>
+                      <option value="2">Продвижение в каких поисковых системах</option>
+                      <option value="3">Продвижение в каких поисковых системах</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <select class="control">
+                      <option value="" disabled selected>Приоритетные категории или товары для продвижения</option>
+                      <option value="1">Приоритетные категории или товары для продвижения</option>
+                      <option value="2">Приоритетные категории или товары для продвижения</option>
+                      <option value="3">Приоритетные категории или товары для продвижения</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <select class="control">
+                      <option value="" disabled selected>Ключевые слова, которые нужно вывести в ТОП</option>
+                      <option value="1">Ключевые слова, которые нужно вывести в ТОП</option>
+                      <option value="2">Ключевые слова, которые нужно вывести в ТОП</option>
+                      <option value="3">Ключевые слова, которые нужно вывести в ТОП</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <textarea class="control" placeholder="Список сайтов конкурентов, на которые вы считаете, что нужно обратить внимание"></textarea>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <input type="text" placeholder="Вы ранее продвигали сайт? Есть какие-то достижения?" class="control" />
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <textarea class="control textarea-sm" placeholder="Какие результаты впервую очередь вы бы хотели получить за счет SEO в ближайшее время?"></textarea>
+                  </div>
+                </div>
+                <div class="mb-4 w-full px-2.5 sm:mb-5 2xl:mb-[25px]">
+                  <div class="control-wrap custom-border custom-border-light">
+                    <textarea class="control" placeholder="Укажите любую информацию, которую я должен учесть во время продвижения вашего сайта"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-orange mt-8 min-h-16 w-full p-3 font-semibold sm:text-[18px] lg:text-[20px] 2xl:mt-[37px] 2xl:min-h-[84px] 2xl:text-[24px]">Отправить</button>
+            </form>
+            <svg class="pointer-events-none absolute left-10 top-0 w-[650px] transform-gpu fill-orange opacity-40 blur-[200px] max-lg:hidden" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z" transform="translate(50 50)" stroke-width="0">
+                <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+                            M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z;
+                            M17.1,-19.6C21.7,-16.6,24.4,-10.7,26.4,-4C28.4,2.7,29.6,10.2,26.2,14.4C22.9,18.5,15.1,19.3,7.6,23C0,26.7,-7.2,33.3,-11.3,31.6C-15.4,29.9,-16.3,19.9,-20.4,12.1C-24.5,4.3,-31.8,-1.3,-31.6,-6.2C-31.5,-11.1,-23.9,-15.3,-17.4,-17.9C-10.9,-20.5,-5.4,-21.6,0.4,-22.1C6.3,-22.6,12.6,-22.5,17.1,-19.6Z;
+                            M13,-14.5C17.1,-12,21.1,-8.2,23.5,-2.9C25.9,2.4,26.8,9.2,24.8,15.8C22.8,22.5,17.8,28.9,11.3,31.4C4.8,33.8,-3.2,32.3,-8.4,28.2C-13.6,24.1,-16.1,17.4,-21.4,11C-26.7,4.6,-34.9,-1.5,-35.4,-7.5C-35.9,-13.5,-28.6,-19.5,-21.4,-21.4C-14.2,-23.4,-7.1,-21.4,-1.3,-19.8C4.4,-18.2,8.8,-17,13,-14.5Z;
+                            M18.7,-24.3C22.1,-19.3,21.4,-11.5,20.1,-5.5C18.8,0.5,16.9,4.6,15.8,11.7C14.7,18.8,14.5,28.9,9.9,33.2C5.3,37.5,-3.7,36.1,-12.9,33.5C-22.2,31,-31.9,27.5,-34.7,20.9C-37.5,14.2,-33.5,4.5,-28.7,-2C-23.9,-8.4,-18.2,-11.7,-13.3,-16.4C-8.3,-21,-4.2,-27.2,1.7,-29.2C7.6,-31.3,15.2,-29.2,18.7,-24.3Z;
+                            M23.3,-28.2C30.1,-22.1,35.4,-14.6,34,-8.1C32.6,-1.6,24.5,4,20.1,11.7C15.8,19.4,15,29.3,9.5,35.3C4,41.3,-6.3,43.3,-11.1,38.2C-15.9,33.1,-15.3,20.8,-19.7,12C-24.1,3.2,-33.4,-2.2,-33.4,-6.6C-33.5,-11,-24.2,-14.4,-17.1,-20.4C-10,-26.4,-5,-34.9,1.6,-36.9C8.3,-38.8,16.6,-34.2,23.3,-28.2Z;
+                            M22.7,-31C26.2,-24.2,23.4,-13.9,23.1,-5.6C22.7,2.7,24.7,9,22.3,12.6C19.9,16.2,13.2,17,7.6,17.7C2,18.4,-2.6,19,-7,18C-11.4,16.9,-15.6,14.2,-19.3,10.1C-23,5.9,-26,0.4,-27.6,-7.3C-29.2,-15.1,-29.3,-25,-24.4,-31.5C-19.5,-38.1,-9.8,-41.2,-0.1,-41.1C9.6,-41,19.3,-37.7,22.7,-31Z;
+                            M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z;
+                            "></animate>
+              </path>
+            </svg>
+            <svg class="pointer-events-none absolute -bottom-5 right-20 w-[650px] transform-gpu fill-orange opacity-40 blur-[200px] max-lg:hidden" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z" transform="translate(50 50)" stroke-width="0">
+                <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+                            M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z;
+                            M17.1,-19.6C21.7,-16.6,24.4,-10.7,26.4,-4C28.4,2.7,29.6,10.2,26.2,14.4C22.9,18.5,15.1,19.3,7.6,23C0,26.7,-7.2,33.3,-11.3,31.6C-15.4,29.9,-16.3,19.9,-20.4,12.1C-24.5,4.3,-31.8,-1.3,-31.6,-6.2C-31.5,-11.1,-23.9,-15.3,-17.4,-17.9C-10.9,-20.5,-5.4,-21.6,0.4,-22.1C6.3,-22.6,12.6,-22.5,17.1,-19.6Z;
+                            M13,-14.5C17.1,-12,21.1,-8.2,23.5,-2.9C25.9,2.4,26.8,9.2,24.8,15.8C22.8,22.5,17.8,28.9,11.3,31.4C4.8,33.8,-3.2,32.3,-8.4,28.2C-13.6,24.1,-16.1,17.4,-21.4,11C-26.7,4.6,-34.9,-1.5,-35.4,-7.5C-35.9,-13.5,-28.6,-19.5,-21.4,-21.4C-14.2,-23.4,-7.1,-21.4,-1.3,-19.8C4.4,-18.2,8.8,-17,13,-14.5Z;
+                            M18.7,-24.3C22.1,-19.3,21.4,-11.5,20.1,-5.5C18.8,0.5,16.9,4.6,15.8,11.7C14.7,18.8,14.5,28.9,9.9,33.2C5.3,37.5,-3.7,36.1,-12.9,33.5C-22.2,31,-31.9,27.5,-34.7,20.9C-37.5,14.2,-33.5,4.5,-28.7,-2C-23.9,-8.4,-18.2,-11.7,-13.3,-16.4C-8.3,-21,-4.2,-27.2,1.7,-29.2C7.6,-31.3,15.2,-29.2,18.7,-24.3Z;
+                            M23.3,-28.2C30.1,-22.1,35.4,-14.6,34,-8.1C32.6,-1.6,24.5,4,20.1,11.7C15.8,19.4,15,29.3,9.5,35.3C4,41.3,-6.3,43.3,-11.1,38.2C-15.9,33.1,-15.3,20.8,-19.7,12C-24.1,3.2,-33.4,-2.2,-33.4,-6.6C-33.5,-11,-24.2,-14.4,-17.1,-20.4C-10,-26.4,-5,-34.9,1.6,-36.9C8.3,-38.8,16.6,-34.2,23.3,-28.2Z;
+                            M22.7,-31C26.2,-24.2,23.4,-13.9,23.1,-5.6C22.7,2.7,24.7,9,22.3,12.6C19.9,16.2,13.2,17,7.6,17.7C2,18.4,-2.6,19,-7,18C-11.4,16.9,-15.6,14.2,-19.3,10.1C-23,5.9,-26,0.4,-27.6,-7.3C-29.2,-15.1,-29.3,-25,-24.4,-31.5C-19.5,-38.1,-9.8,-41.2,-0.1,-41.1C9.6,-41,19.3,-37.7,22.7,-31Z;
+                            M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z;
+                            "></animate>
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-success" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+          <div class="modal__inner custom-border custom-border-modal py-10 sm:py-16 2xl:pb-[83px] 2xl:pt-[70px]">
+            <button class="modal__close group absolute right-[3px] top-[3px] z-10 size-20 [background:url(../images/close-bg.svg)_center/contain_no-repeat] sm:size-24 2xl:size-[127px]" aria-label="Close modal" data-micromodal-close>
+              <svg role="img" class="absolute right-4 top-4 size-4 text-dark transition-colors group-hover:text-orange sm:right-5 sm:top-5 sm:size-5 2xl:right-[30px] 2xl:top-[30px] 2xl:size-6">
+                <use href="images/icons/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="relative z-10 text-center font-vela">
+              <img src="images/success.svg" alt="alt" class="mx-auto mb-5 max-2xl:max-w-56 max-xl:max-w-48 max-sm:max-w-32 2xl:mb-7" loading="lazy" />
+              <div class="mb-5 text-[24px] font-bold leading-[1] sm:text-[28px] md:text-[35px] xl:text-[45px] 2xl:mb-7 2xl:text-[52px]">Успешно отправлено!</div>
+              <div class="mx-auto mb-14 max-w-[740px] font-medium leading-[1.41] text-white/70 sm:mb-[100px] sm:text-[18px] 2xl:mb-[189px] 2xl:text-[24px]">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div>
+              <div class="flex flex-wrap justify-center space-x-10">
+                <a href="#" class="text-white/[.67] transition-colors hover:text-white">
+                  <svg role="img" class="size-[45px]">
+                    <use href="images/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="text-white/[.67] transition-colors hover:text-white">
+                  <svg role="img" class="size-[45px]">
+                    <use href="images/icons/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="text-white/[.67] transition-colors hover:text-white">
+                  <svg role="img" class="size-[45px]">
+                    <use href="images/icons/sprite.svg#ig"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <svg class="pointer-events-none absolute left-10 top-0 w-[650px] transform-gpu fill-orange opacity-40 blur-[200px] max-lg:hidden" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z" transform="translate(50 50)" stroke-width="0">
+                <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+                            M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z;
+                            M17.1,-19.6C21.7,-16.6,24.4,-10.7,26.4,-4C28.4,2.7,29.6,10.2,26.2,14.4C22.9,18.5,15.1,19.3,7.6,23C0,26.7,-7.2,33.3,-11.3,31.6C-15.4,29.9,-16.3,19.9,-20.4,12.1C-24.5,4.3,-31.8,-1.3,-31.6,-6.2C-31.5,-11.1,-23.9,-15.3,-17.4,-17.9C-10.9,-20.5,-5.4,-21.6,0.4,-22.1C6.3,-22.6,12.6,-22.5,17.1,-19.6Z;
+                            M13,-14.5C17.1,-12,21.1,-8.2,23.5,-2.9C25.9,2.4,26.8,9.2,24.8,15.8C22.8,22.5,17.8,28.9,11.3,31.4C4.8,33.8,-3.2,32.3,-8.4,28.2C-13.6,24.1,-16.1,17.4,-21.4,11C-26.7,4.6,-34.9,-1.5,-35.4,-7.5C-35.9,-13.5,-28.6,-19.5,-21.4,-21.4C-14.2,-23.4,-7.1,-21.4,-1.3,-19.8C4.4,-18.2,8.8,-17,13,-14.5Z;
+                            M18.7,-24.3C22.1,-19.3,21.4,-11.5,20.1,-5.5C18.8,0.5,16.9,4.6,15.8,11.7C14.7,18.8,14.5,28.9,9.9,33.2C5.3,37.5,-3.7,36.1,-12.9,33.5C-22.2,31,-31.9,27.5,-34.7,20.9C-37.5,14.2,-33.5,4.5,-28.7,-2C-23.9,-8.4,-18.2,-11.7,-13.3,-16.4C-8.3,-21,-4.2,-27.2,1.7,-29.2C7.6,-31.3,15.2,-29.2,18.7,-24.3Z;
+                            M23.3,-28.2C30.1,-22.1,35.4,-14.6,34,-8.1C32.6,-1.6,24.5,4,20.1,11.7C15.8,19.4,15,29.3,9.5,35.3C4,41.3,-6.3,43.3,-11.1,38.2C-15.9,33.1,-15.3,20.8,-19.7,12C-24.1,3.2,-33.4,-2.2,-33.4,-6.6C-33.5,-11,-24.2,-14.4,-17.1,-20.4C-10,-26.4,-5,-34.9,1.6,-36.9C8.3,-38.8,16.6,-34.2,23.3,-28.2Z;
+                            M22.7,-31C26.2,-24.2,23.4,-13.9,23.1,-5.6C22.7,2.7,24.7,9,22.3,12.6C19.9,16.2,13.2,17,7.6,17.7C2,18.4,-2.6,19,-7,18C-11.4,16.9,-15.6,14.2,-19.3,10.1C-23,5.9,-26,0.4,-27.6,-7.3C-29.2,-15.1,-29.3,-25,-24.4,-31.5C-19.5,-38.1,-9.8,-41.2,-0.1,-41.1C9.6,-41,19.3,-37.7,22.7,-31Z;
+                            M16.8,-20.9C20.7,-16.7,22,-10.4,23.1,-4.1C24.2,2.2,25,8.6,23,14.4C21,20.2,16.1,25.4,9,30.4C2,35.4,-7.2,40.1,-14.8,38.4C-22.5,36.6,-28.6,28.3,-32.1,19.8C-35.5,11.2,-36.2,2.4,-33.4,-4.6C-30.6,-11.5,-24.3,-16.5,-18.2,-20.3C-12,-24.1,-6,-26.8,0.2,-27C6.4,-27.3,12.9,-25.2,16.8,-20.9Z;
+                            "></animate>
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
