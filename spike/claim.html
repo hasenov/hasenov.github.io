@@ -1,0 +1,181 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-black bg-lemon lg:bg-body leading-tight selection:bg-orange selection:text-white overflow-x-hidden min-h-screen flex flex-col">
+  <header class="pt-5 sm:pt-4">
+    <div class="container flex items-center">
+      <div class="max-lg:hidden lg:shrink lg:grow-0 lg:basis-6/12">
+        <div class="mb-1 text-eerie-black">Next price increase in:</div>
+        <div class="flex space-x-[27px] text-center text-eerie-black" data-countdown>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-days>00</div>
+            <div class="text-[14px] text-gold-fusion">days</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-hrs>00</div>
+            <div class="text-[14px] text-gold-fusion">hrs</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-mins>00</div>
+            <div class="text-[14px] text-gold-fusion">mins</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-secs>00</div>
+            <div class="text-[14px] text-gold-fusion">secs</div>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="relative max-w-[54px] shrink-0 max-lg:mr-3 max-md:z-30 sm:max-w-[66px]">
+        <img src="images/logo.png" srcset="images/logo.png 1x, images/logo-2x.png 2x" alt="alt" />
+      </a>
+      <div class="flex items-center justify-end max-lg:ml-auto lg:shrink lg:grow-0 lg:basis-6/12">
+        <nav class="!duration-700 max-md:invisible max-md:fixed max-md:left-0 max-md:top-0 max-md:z-20 max-md:flex max-md:h-full max-md:w-full max-md:flex-col max-md:justify-between max-md:overflow-y-auto max-md:bg-lemon max-md:pt-28 max-md:transition-all max-md:[transform:translate3d(0,-100%,0)] md:mr-11 max-md:[&.is-active]:visible max-md:[&.is-active]:[transform:translate3d(0,0,0)]" data-mobile-menu>
+          <ul class="text-[18px] font-extrabold max-md:mb-28 max-md:space-y-[50px] max-md:text-center md:flex md:space-x-[50px] [&_a:hover]:text-orange [&_a]:transition-colors">
+            <li><a href="referral.html">Referral</a></li>
+            <li><a href="claim.html">Claim</a></li>
+          </ul>
+        </nav>
+        <div class="relative -mx-[5px] -mb-2.5 flex flex-wrap max-md:z-30">
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/x.svg" alt="alt" class="w-3/5 shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/cmc.svg" alt="alt" class="w-[70%] shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/tg.svg" alt="alt" class="w-1/2 shrink-0" />
+          </a>
+        </div>
+      </div>
+      <div class="group relative z-30 ml-7 flex size-7 shrink-0 cursor-pointer items-center justify-center transition-transform md:hidden [&.is-active]:rotate-90" data-hamburger>
+        <div class="flex h-2 w-[18px] shrink-0 flex-col justify-between">
+          <div class="h-0.5 w-full shrink-0 bg-eerie-black transition-colors group-[.is-active]:bg-orange"></div>
+          <div class="h-0.5 w-full shrink-0 bg-eerie-black transition-colors group-[.is-active]:bg-orange"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- MEMBERS AREA -->
+  <section class="pb-[100px] pt-14 lg:pb-20 lg:pt-20 xl:pb-[90px] xl:pt-28">
+    <div class="container">
+      <div class="-mx-[5px] flex flex-wrap">
+        <div class="w-full px-[5px] lg:max-w-[50%] lg:shrink-0 lg:grow-0 lg:basis-6/12">
+          <h2 class="mb-3 text-[24px] font-extrabold text-eerie-black max-lg:max-w-[450px] max-sm:max-w-[305px] sm:mb-5 sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]"><span class="text-orange">Enter Your Email</span> To Create or Log Into Your Spike AI Account</h2>
+          <p class="mb-3 text-[18px] sm:mb-7 sm:text-[20px] md:text-[22px] lg:text-[24px]">Members area</p>
+          <form>
+            <div class="mb-5 sm:mb-[30px]">
+              <label for="email" class="mb-1.5 block text-eerie-black">Email address*</label>
+              <input type="email" placeholder="join@smith.com" id="email" class="block w-[398px] max-w-full rounded-[10px] bg-white px-[30px] py-[15px] text-[18px] outline-none ring-inset ring-silver transition-shadow placeholder:text-silver focus:ring-1" required />
+            </div>
+            <button type="submit" class="btn btn-red w-[246px] sm:w-[296px]">Access members area</button>
+            <p class="mt-4 max-w-[381px] text-[14px] leading-normal text-gold-fusion">
+              By creating an account or loggin in you are explicitly agreeing to our <a href="#" class="underline transition-colors hover:text-orange-light focus:text-orange-dark">Terms of Service</a> &
+              <a href="#" class="underline transition-colors hover:text-orange-light focus:text-orange-dark">Privacy Policy</a>
+            </p>
+          </form>
+        </div>
+        <div class="w-full px-[5px] pt-14 lg:ml-[5%] lg:max-w-[41.666667%] lg:shrink-0 lg:grow-0 lg:basis-5/12 lg:pt-8 xl:ml-[8.333333%]">
+          <div class="space-y-2.5">
+            <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5">
+              <img src="images/1.svg" alt="alt" class="mr-[15px] w-[60px] sm:mr-5 sm:w-20" />
+              <div>
+                <div class="text-[18px] font-extrabold sm:mb-1 sm:text-[24px]">Register</div>
+                <div class="text-eerie-black sm:mb-1.5 sm:text-[18px]">Get started with just your email</div>
+                <div class="text-gray max-sm:text-[15px]">No password or other information required!</div>
+              </div>
+            </div>
+            <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5">
+              <img src="images/2.svg" alt="alt" class="mr-[15px] w-[60px] sm:mr-5 sm:w-20" />
+              <div>
+                <div class="text-[18px] font-extrabold sm:mb-1 sm:text-[24px]">Monitor</div>
+                <div class="text-eerie-black sm:mb-1.5 sm:text-[18px]">View all your orders</div>
+                <div class="text-gray max-sm:text-[15px]">Track the amounts you purchased and much more</div>
+              </div>
+            </div>
+            <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5">
+              <img src="images/3.svg" alt="alt" class="mr-[15px] w-[60px] sm:mr-5 sm:w-20" />
+              <div>
+                <div class="text-[18px] font-extrabold sm:mb-1 sm:text-[24px]">Claim</div>
+                <div class="text-eerie-black sm:mb-1.5 sm:text-[18px]">Claim your tokens after presale ends</div>
+                <div class="text-gray max-sm:text-[15px]">Click the claim button to claim your Harambe AI Tokens</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="mt-auto px-[5px]" data-footer>
+    <div class="mx-auto max-w-[1600px] rounded-tl-[30px] rounded-tr-[30px] bg-eerie-black pb-16 pt-[30px] text-white sm:pt-[46px]">
+      <div class="container">
+        <div class="mb-5 flex max-lg:flex-wrap sm:mb-9">
+          <div class="flex w-full space-x-5 max-lg:mb-6 max-sm:mb-[14px] lg:max-w-[50%] lg:shrink lg:grow-0 lg:basis-6/12 lg:space-x-2.5">
+            <a href="#" class="btn btn-outline-orange flex-1">White Paper</a>
+            <a href="#" class="btn btn-outline-orange flex-1">
+              <div class="mr-[5px] flex size-5 shrink-0 items-center justify-center rounded-full bg-black sm:mr-2.5 sm:size-6">
+                <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+              </div>
+              Certik Audit
+            </a>
+          </div>
+          <img src="images/logo-white.png" srcset="images/logo-white.png 1x, images/logo-white-2x.png 2x" alt="alt" class="mx-auto max-w-[66px] shrink-0 max-lg:order-first max-lg:mb-6 max-sm:mb-5 lg:mx-[72px]" />
+          <div class="flex w-full items-center justify-between lg:max-w-[50%] lg:shrink lg:grow-0 lg:basis-6/12 lg:justify-end">
+            <nav class="mr-5 sm:mr-11">
+              <ul class="flex space-x-[30px] font-extrabold sm:space-x-[50px] sm:text-[18px]">
+                <li><a href="referral.html">Referral</a></li>
+                <li><a href="claim.html">Claim</a></li>
+              </ul>
+            </nav>
+            <div class="-mx-[5px] -mb-2.5 flex flex-wrap justify-end">
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/x.svg" alt="alt" class="w-3/5 shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/cmc.svg" alt="alt" class="w-[70%] shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/tg.svg" alt="alt" class="w-1/2 shrink-0" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap max-md:flex-col max-md:items-center max-md:space-y-4 md:justify-between">
+          <p class="text-dim-gray">© 2024 Spike Token</p>
+          <a href="mailto:support@spiketoken.ai" class="text-dim-gray transition-colors hover:text-light">support@spiketoken.ai</a>
+          <a href="#" class="text-dim-gray transition-colors hover:text-light">Terms of Service</a>
+          <a href="#" class="text-dim-gray transition-colors hover:text-light">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
