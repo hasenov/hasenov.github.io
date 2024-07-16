@@ -194,7 +194,7 @@
   <!-- Почему стоит учиться у нас? -->
   <section class="bg-white py-10 xl:py-[120px]">
     <div class="container">
-      <h2 class="mb-[30px] text-[28px] font-bold leading-tight md:text-[32px] lg:text-[38px] lg:max-xl:mb-5 xl:text-[40px]">Почему стоит учиться у нас?</h2>
+      <h2 class="mb-[30px] text-[28px] font-bold uppercase leading-tight md:text-[32px] lg:text-[38px] lg:max-xl:mb-5 xl:text-[40px]">Почему стоит учиться у нас?</h2>
       <div class="-mx-2.5 -mb-3 flex flex-wrap sm:-mb-5">
         <div class="mb-3 w-full px-2.5 sm:mb-5 md:max-w-[50%] md:basis-6/12 xl:max-w-[33.333333%] xl:basis-4/12">
           <div class="h-full rounded-[20px] bg-silver p-5">
@@ -281,115 +281,399 @@
     </div>
   </section>
 
+  <!-- prettier-ignore -->
   <!-- Отзывы -->
-  <section class="my-20 xl:my-[120px]">
-    <div class="container">
-      <div class="splide slider-reviews-alt">
-        <div class="-mx-[15px] -mb-5 flex flex-wrap sm:-mb-[30px]">
-          <div class="mb-5 w-full shrink-0 grow-0 px-[15px] sm:mb-[30px] sm:flex sm:flex-wrap xl:max-w-[25%] xl:basis-3/12 xl:flex-col xl:items-start xl:pt-5">
-            <h2 class="mb-4 text-[28px] font-bold leading-tight sm:mb-0 sm:flex-auto md:text-[32px] lg:text-[38px] xl:mb-4 xl:flex-initial xl:text-[40px] xl:uppercase">Отзывы</h2>
-            <div class="splide__arrows flex space-x-3 max-sm:hidden xl:order-last">
-              <button class="splide__arrow splide__arrow--prev flex size-10 cursor-pointer items-center justify-center rounded-full bg-white text-old-silver transition-colors hover:bg-primary hover:text-white" type="button">
-                <svg role="img" class="size-6 shrink-0">
-                  <use href="images/icons/sprite.svg#chevron-left" />
-                </svg>
-              </button>
-              <button class="splide__arrow splide__arrow--next flex size-10 cursor-pointer items-center justify-center rounded-full bg-white text-old-silver transition-colors hover:bg-primary hover:text-white" type="button">
-                <svg role="img" class="size-6 shrink-0">
-                  <use href="images/icons/sprite.svg#chevron-right" />
-                </svg>
-              </button>
-            </div>
-            <p class="mb-4 w-full leading-snug max-sm:text-[15px] sm:mt-3 xl:mt-0">Мы ценим вашу обратную связь! Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм</p>
-            <div class="w-full xl:mb-[50px]">
-              <a href="#" class="btn btn-white rounded-[52px] px-3 py-2 font-semibold max-sm:text-[12px]">
-                Смотреть всё
-                <svg role="img" class="ml-1 size-4 shrink-0">
-                  <use href="images/icons/sprite.svg#chevron-right-sm" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="mb-5 w-full shrink-0 grow-0 px-[15px] sm:mb-[30px] xl:max-w-[75%] xl:basis-9/12">
-            <div class="splide__track -m-[30px] !p-[30px]">
-              <div class="splide__list">
-                <div class="splide__slide group">
-                  <div class="flex h-full flex-col rounded-[20px] bg-white px-4 py-5 transition-shadow group-[.is-visible]:shadow-1 sm:p-6">
-                    <div class="mb-2 sm:mb-3 sm:flex">
-                      <img src="images/icons/quotes.svg" alt="alt" class="w-8 shrink-0 self-start max-sm:mb-3 sm:mr-3" loading="lazy" />
-                      <div class="flex-auto self-center font-semibold leading-snug md:text-[15px] xl:text-[18px]">Хочется от души поблагодарить коллектив автошколы "Кулагер"!</div>
+  <section class="py-[60px] lg:py-20 xl:py-[120px]">
+    <div class="container flex flex-col">
+      <h2 class="mb-4 text-[28px] font-bold leading-tight md:text-[32px] lg:text-[38px] xl:text-[40px]">Отзывы</h2>
+      <p class="mb-4 leading-snug">Мы ценим вашу обратную связь!</p>
+      <div class="max-lg:mb-5 lg:order-last lg:mt-6 lg:hidden lg:text-center">
+        <a href="#" class="btn btn-white rounded-[52px] px-3 py-2 font-semibold max-sm:text-[12px]">
+          Смотреть всё
+          <svg role="img" class="ml-1 size-4 shrink-0">
+            <use href="images/icons/sprite.svg#chevron-right-sm" />
+          </svg>
+        </a>
+      </div>
+      <div class="mb-5 flex space-x-1.5 overflow-x-auto rounded-[20px] bg-white p-3 sm:space-x-3 md:rounded-[22px] xl:mb-[30px]">
+        <button type="button" class="is-active flex shrink-0 items-center rounded-xl px-3 py-2.5 font-medium leading-tight text-old-silver transition-colors hover:bg-silver hover:text-dark md:px-4 md:text-[18px] [&.is-active]:bg-silver [&.is-active]:text-dark" data-filter-btn="all">
+          Все отзывы
+        </button>
+        <button type="button" class="flex shrink-0 items-center rounded-xl px-3 py-2.5 font-medium leading-tight text-old-silver transition-colors hover:bg-silver hover:text-dark md:px-4 md:text-[18px] [&.is-active]:bg-silver [&.is-active]:text-dark" data-filter-btn="2gis">
+          <img src="images/icons/2gis.svg" alt="alt" class="mr-2 w-6 shrink-0 sm:mr-2.5" loading="lazy" />
+          2GIS
+        </button>
+        <button type="button" class="flex shrink-0 items-center rounded-xl px-3 py-2.5 font-medium leading-tight text-old-silver transition-colors hover:bg-silver hover:text-dark md:px-4 md:text-[18px] [&.is-active]:bg-silver [&.is-active]:text-dark" data-filter-btn="google">
+          <img src="images/icons/google.svg" alt="alt" class="mr-2 w-6 shrink-0 sm:mr-2.5" loading="lazy" />
+          Google Maps
+        </button>
+      </div>
+      <div class="splide slider-reviews group xl:max-2xl:px-14">
+        <div class="splide__track max-lg:overflow-visible max-md:transition-height max-md:duration-[400ms] md:!h-auto lg:-m-6 lg:!p-6">
+          <div class="splide__list max-lg:items-start">
+            <div class="splide__slide" data-filter-item data-filter-category="2gis">
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="flex justify-between max-xl:mt-2.5 xl:mb-1 xl:pl-[54px]">
+                      <div class="flex space-x-0.5">
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-platinum">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                      </div>
+                      <div class="flex items-center text-[15px] leading-snug text-dark/60">
+                        <img src="images/icons/2gis.svg" alt="alt" class="mr-1.5 w-[19px] shrink-0" loading="lazy" />
+                        2GIS
+                      </div>
                     </div>
-                    <p class="mb-4 line-clamp-[11] leading-snug max-xl:text-[14px] max-md:text-[15px] sm:mb-6 md:line-clamp-[7] xl:mb-[15px] xl:line-clamp-[10]">
-                      Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не
-                      только грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни.Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
-                    </p>
-                    <div class="mt-auto flex items-center">
-                      <div class="mr-2.5 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
-                        <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
-                      </div>
-                      <div class="flex-auto leading-tight">
-                        <div class="mb-1 text-[14px] font-semibold md:text-[13px] xl:text-[15px]">Бекмаганбетов Жармахан Алдашович</div>
-                        <div class="flex flex-wrap text-[12px] leading-tight text-old-silver xl:text-[15px] [&>div+div]:before:mr-1.5 [&>div+div]:before:block [&>div+div]:before:size-[5px] [&>div+div]:before:shrink-0 [&>div+div]:before:rounded-full [&>div+div]:before:bg-old-silver/60 [&>div:not(:last-child)]:mr-1.5 [&>div]:flex [&>div]:items-center">
-                          <div>15 апреля 2023</div>
-                          <div>Категория B</div>
-                        </div>
-                      </div>
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px] xl:flex xl:items-center">
+                      <div class="font-medium max-xl:mb-1">Елена</div>
+                      <div class="mx-2 size-1 shrink-0 rounded-full bg-[#81817F]/60 max-xl:hidden"></div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
                     </div>
                   </div>
                 </div>
-                <div class="splide__slide group">
-                  <div class="flex h-full flex-col rounded-[20px] bg-white px-4 py-5 transition-shadow group-[.is-visible]:shadow-1 sm:p-6">
-                    <div class="mb-2 sm:mb-3 sm:flex">
-                      <img src="images/icons/quotes.svg" alt="alt" class="w-8 shrink-0 self-start max-sm:mb-3 sm:mr-3" loading="lazy" />
-                      <div class="flex-auto self-center font-semibold leading-snug md:text-[15px] xl:text-[18px]">Cлова благодарности преподавателю</div>
-                    </div>
-                    <p class="mb-4 line-clamp-[11] leading-snug max-xl:text-[14px] max-md:text-[15px] sm:mb-6 md:line-clamp-[7] xl:mb-[15px] xl:line-clamp-[10]">
-                      Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не
-                      только грамотно и доступно объясняет материал
-                    </p>
-                    <div class="mt-auto flex items-center">
-                      <div class="mr-2.5 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
-                        <img src="images/placeholder.png" srcset="images/placeholder.png 1x, images/placeholder-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
-                      </div>
-                      <div class="flex-auto leading-tight">
-                        <div class="mb-1 text-[14px] font-semibold md:text-[13px] xl:text-[15px]">Бекмаганбетов Жармахан Алдашович</div>
-                        <div class="flex flex-wrap text-[12px] leading-tight text-old-silver xl:text-[15px] [&>div+div]:before:mr-1.5 [&>div+div]:before:block [&>div+div]:before:size-[5px] [&>div+div]:before:shrink-0 [&>div+div]:before:rounded-full [&>div+div]:before:bg-old-silver/60 [&>div:not(:last-child)]:mr-1.5 [&>div]:flex [&>div]:items-center">
-                          <div>15 апреля 2023</div>
-                          <div>Категория B</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="splide__slide group">
-                  <div class="flex h-full flex-col rounded-[20px] bg-white px-4 py-5 transition-shadow group-[.is-visible]:shadow-1 sm:p-6">
-                    <div class="mb-2 sm:mb-3 sm:flex">
-                      <img src="images/icons/quotes.svg" alt="alt" class="w-8 shrink-0 self-start max-sm:mb-3 sm:mr-3" loading="lazy" />
-                      <div class="flex-auto self-center font-semibold leading-snug md:text-[15px] xl:text-[18px]">Хочется от души поблагодарить коллектив автошколы "Кулагер"!</div>
-                    </div>
-                    <p class="mb-4 line-clamp-[11] leading-snug max-xl:text-[14px] max-md:text-[15px] sm:mb-6 md:line-clamp-[7] xl:mb-[15px] xl:line-clamp-[10]">
-                      Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не
-                      только грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни.Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
-                    </p>
-                    <div class="mt-auto flex items-center">
-                      <div class="mr-2.5 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
-                        <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
-                      </div>
-                      <div class="flex-auto leading-tight">
-                        <div class="mb-1 text-[14px] font-semibold md:text-[13px] xl:text-[15px]">Бекмаганбетов Жармахан Алдашович</div>
-                        <div class="flex flex-wrap text-[12px] leading-tight text-old-silver xl:text-[15px] [&>div+div]:before:mr-1.5 [&>div+div]:before:block [&>div+div]:before:size-[5px] [&>div+div]:before:shrink-0 [&>div+div]:before:rounded-full [&>div+div]:before:bg-old-silver/60 [&>div:not(:last-child)]:mr-1.5 [&>div]:flex [&>div]:items-center">
-                          <div>15 апреля 2023</div>
-                          <div>Категория B</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не только
+                    грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни. Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
                 </div>
               </div>
             </div>
-            <ul class="splide__pagination -mx-[7.5px] -mb-[7.5px] mt-[23px] sm:mt-[27px] [&>li]:mx-[7.5px] [&>li]:mb-[7.5px] [&_button.is-active]:opacity-100 [&_button.is-active]:before:opacity-100 [&_button:hover]:opacity-100 [&_button]:relative [&_button]:block [&_button]:size-2 [&_button]:rounded-full [&_button]:bg-primary [&_button]:opacity-50 [&_button]:transition [&_button]:before:absolute [&_button]:before:-inset-1 [&_button]:before:block [&_button]:before:rounded-full [&_button]:before:border [&_button]:before:border-primary/30 [&_button]:before:opacity-0 [&_button]:before:transition-opacity"></ul>
+            <div class="splide__slide" data-filter-item>
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px]">
+                      <div class="mb-1 font-medium">Елена</div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item data-filter-category="google">
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="flex justify-between max-xl:mt-2.5 xl:mb-1 xl:pl-[54px]">
+                      <div class="flex space-x-0.5">
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                      </div>
+                      <div class="flex items-center text-[15px] leading-snug text-dark/60">
+                        <img src="images/icons/google.svg" alt="alt" class="mr-1.5 w-[19px] shrink-0" loading="lazy" />
+                        Google Maps
+                      </div>
+                    </div>
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px] xl:flex xl:items-center">
+                      <div class="font-medium max-xl:mb-1">Елена</div>
+                      <div class="mx-2 size-1 shrink-0 rounded-full bg-[#81817F]/60 max-xl:hidden"></div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не только
+                    грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни. Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item data-filter-category="2gis">
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="flex justify-between max-xl:mt-2.5 xl:mb-1 xl:pl-[54px]">
+                      <div class="flex space-x-0.5">
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                      </div>
+                      <div class="flex items-center text-[15px] leading-snug text-dark/60">
+                        <img src="images/icons/2gis.svg" alt="alt" class="mr-1.5 w-[19px] shrink-0" loading="lazy" />
+                        2GIS
+                      </div>
+                    </div>
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px] xl:flex xl:items-center">
+                      <div class="font-medium max-xl:mb-1">Елена</div>
+                      <div class="mx-2 size-1 shrink-0 rounded-full bg-[#81817F]/60 max-xl:hidden"></div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не только
+                    грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни. Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item>
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px]">
+                      <div class="mb-1 font-medium">Елена</div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item data-filter-category="google">
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="flex justify-between max-xl:mt-2.5 xl:mb-1 xl:pl-[54px]">
+                      <div class="flex space-x-0.5">
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-platinum">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-platinum">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                      </div>
+                      <div class="flex items-center text-[15px] leading-snug text-dark/60">
+                        <img src="images/icons/google.svg" alt="alt" class="mr-1.5 w-[19px] shrink-0" loading="lazy" />
+                        Google Maps
+                      </div>
+                    </div>
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px] xl:flex xl:items-center">
+                      <div class="font-medium max-xl:mb-1">Елена</div>
+                      <div class="mx-2 size-1 shrink-0 rounded-full bg-[#81817F]/60 max-xl:hidden"></div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не только
+                    грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни. Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item data-filter-category="2gis">
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="flex justify-between max-xl:mt-2.5 xl:mb-1 xl:pl-[54px]">
+                      <div class="flex space-x-0.5">
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-platinum">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                      </div>
+                      <div class="flex items-center text-[15px] leading-snug text-dark/60">
+                        <img src="images/icons/2gis.svg" alt="alt" class="mr-1.5 w-[19px] shrink-0" loading="lazy" />
+                        2GIS
+                      </div>
+                    </div>
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px] xl:flex xl:items-center">
+                      <div class="font-medium max-xl:mb-1">Елена</div>
+                      <div class="mx-2 size-1 shrink-0 rounded-full bg-[#81817F]/60 max-xl:hidden"></div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не только
+                    грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни. Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item>
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px]">
+                      <div class="mb-1 font-medium">Елена</div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide" data-filter-item data-filter-category="google">
+              <div class="card-review h-full rounded-[20px] bg-white p-4 transition-shadow max-lg:shadow-1 xl:p-6">
+                <div class="relative mb-[15px] flex items-center xl:min-h-[42px]">
+                  <div class="absolute left-0 top-0 flex size-[42px] shrink-0 overflow-hidden rounded-full border-2 border-primary">
+                    <img src="images/avatar-sm.png" srcset="images/avatar-sm.png 1x, images/avatar-sm-2x.png 2x" alt="alt" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="flex-auto max-xl:flex max-xl:flex-col-reverse">
+                    <div class="flex justify-between max-xl:mt-2.5 xl:mb-1 xl:pl-[54px]">
+                      <div class="flex space-x-0.5">
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                        <svg role="img" class="size-[18px] shrink-0 text-[#FAD62D]">
+                          <use href="images/icons/sprite.svg#star" />
+                        </svg>
+                      </div>
+                      <div class="flex items-center text-[15px] leading-snug text-dark/60">
+                        <img src="images/icons/google.svg" alt="alt" class="mr-1.5 w-[19px] shrink-0" loading="lazy" />
+                        Google Maps
+                      </div>
+                    </div>
+                    <div class="pl-[54px] text-[15px] leading-tight max-xl:min-h-[42px] xl:flex xl:items-center">
+                      <div class="font-medium max-xl:mb-1">Елена</div>
+                      <div class="mx-2 size-1 shrink-0 rounded-full bg-[#81817F]/60 max-xl:hidden"></div>
+                      <div class="text-[#81817F]/60">10 декабря 2023</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group/expandable" data-expandable>
+                  <p class="line-clamp-5 group-[.is-active]/expandable:!line-clamp-none sm:group-[.is-overflow]/expandable:line-clamp-4" data-expandable-content>
+                    Хочется от души поблагодарить коллектив автошколы «Кулагер» (Сары-Арка 31) за хорошую и добросовестную работу. Мои слова благодарности преподавателю Беркуту Ажибаевичу за профессионализм и доброжелательное отношение к обучающимся вождению, причём Б.А. не только
+                    грамотно и доступно объясняет материал, но и сопровождает это интересными примерами из жизни. Инструктор Владимир Владимирович, которого все знают как В.В., терпеливо и доходчиво…
+                  </p>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-overflow]/expandable:block group-[.is-active]/expandable:hidden" data-expandable-show>Развернуть</button>
+                  <button type="button" class="mt-3 hidden font-medium leading-tight text-primary transition-colors hover:text-primary-darker group-[.is-active]/expandable:block" data-expandable-hide>Свернуть</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="splide__arrows transition-all duration-[400ms] group-[&:not(.is-overflow)]:invisible group-[&:not(.is-overflow)]:opacity-0 max-xl:hidden">
+          <button class="splide__arrow splide__arrow--prev absolute top-1/2 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-primary text-white transition-colors hover:bg-primary-light hover:text-white disabled:pointer-events-none disabled:bg-white disabled:text-old-silver max-2xl:left-0 2xl:right-full 2xl:mr-[35px]" type="button">
+            <svg role="img" class="size-6 shrink-0">
+              <use href="images/icons/sprite.svg#chevron-left" />
+            </svg>
+          </button>
+          <button class="splide__arrow splide__arrow--next absolute top-1/2 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-primary text-white transition-colors hover:bg-primary-light hover:text-white disabled:pointer-events-none disabled:bg-white disabled:text-old-silver max-2xl:right-0 2xl:left-full 2xl:ml-[35px]" type="button">
+            <svg role="img" class="size-6 shrink-0">
+              <use href="images/icons/sprite.svg#chevron-right" />
+            </svg>
+          </button>
+        </div>
+        <ul class="splide__pagination -mx-[7.5px] -mb-[7.5px] mt-[23px] sm:mt-[27px] [&>li]:mx-[7.5px] [&>li]:mb-[7.5px] [&_button.is-active]:opacity-100 [&_button.is-active]:before:opacity-100 [&_button:hover]:opacity-100 [&_button]:relative [&_button]:block [&_button]:size-2 [&_button]:rounded-full [&_button]:bg-primary [&_button]:opacity-50 [&_button]:transition [&_button]:before:absolute [&_button]:before:-inset-1 [&_button]:before:block [&_button]:before:rounded-full [&_button]:before:border [&_button]:before:border-primary/30 [&_button]:before:opacity-0 [&_button]:before:transition-opacity"></ul>
       </div>
     </div>
   </section>
