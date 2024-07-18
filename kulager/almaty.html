@@ -1,6 +1,6 @@
 <!-- prettier-ignore -->
 <!DOCTYPE html>
-<html lang="ru" class="overflow-x-hidden">
+<html lang="ru" class="overflow-x-hidden scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -23,50 +23,22 @@
         <div class="max-xl:flex max-xl:flex-col max-sm:my-auto" data-mobile-menu-content>
           <ul class="max-xl:order-1 max-xl:mb-9 max-xl:space-y-2 xl:flex">
             <li class="group/item relative">
-              <a href="about.html" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">О нас</a>
+              <a href="#pricing" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Стоимость</a>
             </li>
             <li class="group/item relative">
-              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors group-hover/item:bg-silver group-hover/item:text-[#25313F]">Полезное</a>
-              <div class="invisible absolute -left-[11px] top-full z-10 pt-[29px] opacity-0 transition-all group-hover/item:visible group-hover/item:opacity-100 max-xl:hidden">
-                <ul class="w-[330px] rounded-[20px] bg-white p-3 shadow-submenu">
-                  <li>
-                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
-                      Полезное
-                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
-                        <use href="images/icons/sprite.svg#chevron-right-sm" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="news.html" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
-                      Статьи
-                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
-                        <use href="images/icons/sprite.svg#chevron-right-sm" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="group/sublink flex items-center rounded-[10px] px-3.5 py-2.5 leading-[1.375] transition-colors hover:bg-silver">
-                      Таблица штрафов
-                      <svg role="img" class="ml-auto size-[13px] shrink-0 text-[#81817F]/40 transition-colors group-hover/sublink:text-primary">
-                        <use href="images/icons/sprite.svg#chevron-right-sm" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <a href="#about" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">О нас</a>
             </li>
             <li class="group/item relative">
-              <a href="services.html" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Услуги</a>
+              <a href="#services" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Услуги</a>
             </li>
             <li class="group/item relative">
-              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Тестирование ПДД</a>
+              <a href="#reviews" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Отзывы</a>
             </li>
             <li class="group/item relative">
-              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Контакты</a>
+              <a href="#contacts" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Контакты</a>
             </li>
             <li class="group/item relative">
-              <a href="#" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Филиалы</a>
+              <a href="#branches" class="inline-block rounded-[63px] px-3.5 py-2 align-top leading-tight text-[#25313F]/80 transition-colors hover:bg-silver hover:text-[#25313F]">Филиалы</a>
             </li>
           </ul>
           <div class="-mx-[3px] -mb-1.5 flex flex-wrap justify-center max-xl:order-3 xl:hidden">
@@ -267,7 +239,7 @@
 
 
   <!-- Стоимость обучения -->
-  <section class="my-[100px] lg:my-[120px]">
+  <section class="my-[100px] lg:my-[120px]" id="pricing">
     <div class="container">
       <div data-pricing-title-alt-wrap></div>
       <div class="-mx-[18.5px] flex flex-wrap xl:-mx-[15px]">
@@ -1729,7 +1701,7 @@
   </section>
 
   <!-- О нас -->
-  <section class="bg-primary py-10 xl:py-[120px]">
+  <section class="bg-primary py-10 xl:py-[120px]" id="about">
     <div class="container">
       <div class="-mx-[15px] -mb-5 flex flex-wrap sm:-mb-[24px]">
         <div class="mb-5 w-full px-[15px] sm:mb-[24px] xl:max-w-[50%] xl:basis-6/12">
@@ -2259,7 +2231,7 @@
             </svg>
           </button>
         </div>
-        <ul class="splide__pagination -mx-[7.5px] -mb-[7.5px] mt-[23px] sm:mt-[27px] [&>li]:mx-[7.5px] [&>li]:mb-[7.5px] [&_button.is-active]:opacity-100 [&_button.is-active]:before:opacity-100 [&_button:hover]:opacity-100 [&_button]:relative [&_button]:block [&_button]:size-2 [&_button]:rounded-full [&_button]:bg-primary [&_button]:opacity-50 [&_button]:transition [&_button]:before:absolute [&_button]:before:-inset-1 [&_button]:before:block [&_button]:before:rounded-full [&_button]:before:border [&_button]:before:border-primary/30 [&_button]:before:opacity-0 [&_button]:before:transition-opacity"></ul>
+        <ul class="splide__pagination -mx-[7.5px] -mb-[7.5px] mt-6 [&>li]:mx-[7.5px] [&>li]:mb-[7.5px] [&_button.is-active]:opacity-100 [&_button.is-active]:before:opacity-100 [&_button:hover]:opacity-100 [&_button]:relative [&_button]:block [&_button]:size-2 [&_button]:rounded-full [&_button]:bg-primary [&_button]:opacity-50 [&_button]:transition [&_button]:before:absolute [&_button]:before:-inset-1 [&_button]:before:block [&_button]:before:rounded-full [&_button]:before:border [&_button]:before:border-primary/30 [&_button]:before:opacity-0 [&_button]:before:transition-opacity"></ul>
       </div>
     </div>
   </section>
@@ -2431,7 +2403,7 @@
   <footer class="bg-[#222222] py-10 text-white/70 sm:py-[50px] xl:py-[60px]">
     <div class="container">
       <div class="xl:flex xl:items-center">
-        <div class="max-xl:mb-5 md:max-xl:flex md:max-xl:items-center md:max-xl:space-x-2.5 md:max-xl:border-b md:max-xl:border-solid md:max-xl:border-[#404040] md:max-xl:pb-5 xl:max-w-[33.333333%] xl:basis-4/12 xl:pr-12">
+        <div class="max-xl:mb-5 md:max-xl:flex md:max-xl:items-center md:max-xl:space-x-2.5 md:max-xl:border-b md:max-xl:border-solid md:max-xl:border-[#404040] md:max-xl:pb-5 xl:max-w-[41.666667%] xl:shrink-0 xl:basis-5/12 xl:pr-[8.3%]">
           <div class="md:max-xl:max-w-[33.333333%] md:max-xl:basis-4/12">
             <img src="images/logo.png" alt="alt" class="mb-5 max-w-[120px] sm:mb-4" data-footer-logo />
             <p class="mb-5 text-[12px] leading-snug sm:mb-4 sm:text-[14px]" data-footer-text>
@@ -2468,9 +2440,9 @@
           </div>
           <div class="pr-5 md:max-xl:max-w-[66.666667%] md:max-xl:basis-8/12 xl:hidden" data-footer-text-wrap></div>
         </div>
-        <div class="xl:max-w-[66.666667%] xl:basis-8/12">
+        <div class="xl:max-w-[58.333333%] xl:shrink-0 xl:basis-7/12">
           <div class="-mx-2.5 -mb-5 flex flex-wrap">
-            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12">
               <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Об автошколе</div>
               <nav>
                 <ul class="space-y-3 leading-tight max-sm:text-[14px]">
@@ -2482,7 +2454,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
+            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12">
               <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Услуги</div>
               <nav>
                 <ul class="space-y-3 leading-tight max-sm:text-[14px]">
@@ -2490,16 +2462,6 @@
                   <li><a href="#" class="transition-colors hover:text-white">Ускоренное обучениие</a></li>
                   <li><a href="#" class="transition-colors hover:text-white">Уроки вождения</a></li>
                   <li><a href="#" class="transition-colors hover:text-white">Тестирование пдд онлайн</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="mb-5 w-full px-2.5 sm:max-w-[50%] sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12">
-              <div class="mb-3 font-medium leading-tight text-white sm:text-[18px]">Полезная информация</div>
-              <nav>
-                <ul class="space-y-3 leading-tight max-sm:text-[14px]">
-                  <li><a href="#" class="transition-colors hover:text-white">Новости</a></li>
-                  <li><a href="#" class="transition-colors hover:text-white">О дорожном движении РК</a></li>
-                  <li><a href="#" class="transition-colors hover:text-white">Таблица штрафов</a></li>
                 </ul>
               </nav>
               <a href="#" class="btn group mt-6 rounded-[78px] bg-[#0B0B0B] py-1 pl-1 pr-6 font-semibold leading-snug text-white sm:text-[18px]">
