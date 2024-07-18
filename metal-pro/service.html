@@ -1,0 +1,847 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Сварка Аргоном</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#307EE6" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top top-header">
+      <div class="top-header__container container">
+        <a href="index.html" class="top-header__logo">
+          <img src="images/logo.svg" alt="alt" class="img-responsive" />
+        </a>
+        <div class="top-header__contacts">
+          <a href="tel:+79123456789" class="top-header__contact contact-header contact-header--phone text-md">
+            <svg role="img" class="contact-header__icon">
+              <use href="images/icons/sprite.svg#call" />
+            </svg>
+            <div class="contact-header__text">+7 912 345 67 89</div>
+          </a>
+          <div class="top-header__contact contact-header text-sm contact-header--worktime">
+            <svg role="img" class="contact-header__icon">
+              <use href="images/icons/sprite.svg#clock" />
+            </svg>
+            <div class="contact-header__text">Часы работы</div>
+          </div>
+          <a href="#" class="top-header__contact contact-header text-sm contact-header--email">
+            <svg role="img" class="contact-header__icon">
+              <use href="images/icons/sprite.svg#email" />
+            </svg>
+            <div class="contact-header__text">pochta@mail.ru</div>
+          </a>
+        </div>
+        <div class="top-header__socials socials">
+          <div class="socials__items">
+            <a href="#" class="socials__item">
+              <svg role="img" class="socials__icon">
+                <use href="images/icons/sprite.svg#tg" />
+              </svg>
+            </a>
+            <a href="#" class="socials__item">
+              <svg role="img" class="socials__icon">
+                <use href="images/icons/sprite.svg#wa" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <button class="top-header__hamburger hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="header__bottom bottom-header">
+      <div class="bottom-header__container container">
+        <div class="bottom-header__mobile-line">
+          <img src="images/logo-white.svg" alt="alt" class="bottom-header__mobile-logo img-responsive" />
+          <button class="bottom-header__hamburger hamburger hamburger--collapse is-active" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <nav class="bottom-header__menu menu text-sm">
+          <ul class="list-unstyled">
+            <li><a href="index.html">Главная</a></li>
+            <li class="has-child">
+              <a href="#">Услуги</a>
+              <div class="submenu">
+                <ul class="submenu__list list-unstyled">
+                  <li><a href="service.html">Сварка аргоном</a></li>
+                  <li><a href="service.html">Каркасы из профильной трубы </a></li>
+                  <li><a href="service.html">Лазерная резка металла </a></li>
+                  <li><a href="service.html">Корпуса оборудования из металла</a></li>
+                  <li><a href="service.html">Столы из металла</a></li>
+                  <li><a href="service.html">Мебель из металла</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="bottom-header__contacts"></div>
+        <button class="bottom-header__callback-btn text-sm" type="button">Оставить заявку</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <nav class="breadcrumbs text-xs">
+      <ol class="breadcrumbs__list list-unstyled">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item">Сварка аргоном</li>
+      </ol>
+    </nav>
+  </div>
+
+  <section class="section-showcase-page">
+    <div class="container">
+      <div class="showcase">
+        <div class="showcase__row row">
+          <div class="showcase__col col-xl-6 col-lg-7 col-md-9">
+            <div class="showcase__content">
+              <h1 class="showcase__title">Сварка Аргоном</h1>
+              <nav class="showcase__navlinks navlinks text-md">
+                <ul class="list-unstyled">
+                  <li><a href="#">Под ключ</a></li>
+                  <li><a href="#gallery" class="anchor">Примеры работ</a></li>
+                  <li><a href="#how-we-work" class="anchor">Этапы работ</a></li>
+                </ul>
+              </nav>
+              <p class="text-md">
+                Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
+              <div class="showcase__btns">
+                <a href="#" class="showcase__btn btn btn--primary">Кнопка</a>
+                <a href="#" class="showcase__btn btn btn--outline-primary">Кнопка</a>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__col col-xl-6 col-lg-5 col-md-9">
+            <div class="slider-gallery">
+              <div class="slider-gallery__main slider-gallery-main slider splide">
+                <div class="slider-gallery-main__track slider__track splide__track">
+                  <div class="slider-gallery-main__list slider__list splide__list">
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="slider-gallery-main__slide slider__slide splide__slide">
+                      <a href="images/gallery-1.jpg" class="item-gallery item-gallery--big glightbox" data-gallery="slider-gallery">
+                        <img src="images/gallery-1.jpg" alt="alt" loading="lazy" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-gallery__thumbs slider-gallery-thumbs slider splide">
+                <div class="slider-gallery-thumbs__track slider__track splide__track">
+                  <div class="slider-gallery-thumbs__list slider__list splide__list">
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-2-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-3-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-4-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-5-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-6-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-7-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="slider-gallery-thumbs__slide slider__slide splide__slide">
+                      <div class="item-gallery item-gallery--sm">
+                        <img src="images/gallery-2-sm.jpg" alt="alt" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/circles.svg" alt="alt" class="showcase__decor decor" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="spacing section-pricing">
+    <div class="container">
+      <div class="pricing">
+        <h2 class="pricing__title title-spacing">Прайс лист</h2>
+        <div class="pricing__sections">
+          <div class="pricing__section">
+            <h3 class="pricing__section-title">Листовая нержавеющая сталь</h3>
+            <div class="pricing__table-wrap table-wrap webkit-scrollbar">
+              <table class="table-wrap__table table">
+                <thead>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="pricing__section">
+            <h3 class="pricing__section-title">Листовая нержавеющая сталь</h3>
+            <div class="pricing__table-wrap table-wrap webkit-scrollbar">
+              <table class="table-wrap__table table">
+                <thead>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                  <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pricing__btns">
+              <a href="#" class="pricing__btn btn btn--primary">Кнопка</a>
+              <a href="#" class="pricing__btn btn btn--outline-primary">Кнопка</a>
+            </div>
+          </div>
+        </div>
+        <img src="images/decor-1.svg" alt="alt" class="pricing__decor decor" />
+        <img src="images/decor-6.svg" alt="alt" class="pricing__decor-2 decor" />
+      </div>
+    </div>
+  </section>
+
+  <section class="spacing section-about" id="about">
+    <div class="container">
+      <div class="about">
+        <h2 class="about__title title-spacing">О компании</h2>
+        <div class="about__row row">
+          <div class="about__col col-xl-6 col-lg-7">
+            <div class="about__content">
+              <p>
+                С другой стороны укрепление и развитие структуры требуют от нас анализа соответствующий условий активизации. Идейные соображения
+                высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание существенных
+                финансовых условий.
+              </p>
+              <p>
+                Равным образом дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки дальнейших
+                направлений развития.
+              </p>
+            </div>
+          </div>
+          <div class="about__col col-xl-6 col-lg-5">
+            <div class="about__stats stats">
+              <div class="stats__row row">
+                <div class="stats__col col-lg-12 col-sm-6 col-xl-6">
+                  <div class="stats__item item-stats">
+                    <div class="item-stats__icon-wrap">
+                      <img src="images/icons/task-done.svg" alt="alt" class="item-stats__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="item-stats__body">
+                      <div class="item-stats__value h3"><span data-countup="9000">0</span></div>
+                      <div class="item-stats__text text-md">Выполненных заказов</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stats__col col-lg-12 col-sm-6 col-xl-6">
+                  <div class="stats__item item-stats">
+                    <div class="item-stats__icon-wrap">
+                      <img src="images/icons/clock.svg" alt="alt" class="item-stats__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="item-stats__body">
+                      <div class="item-stats__value h3"><span data-countup="15">0</span></div>
+                      <div class="item-stats__text text-md">Лет работы</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stats__col col-lg-12 col-sm-6 col-xl-6">
+                  <div class="stats__item item-stats">
+                    <div class="item-stats__icon-wrap">
+                      <img src="images/icons/person.svg" alt="alt" class="item-stats__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="item-stats__body">
+                      <div class="item-stats__value h3"><span data-countup="2000">0</span></div>
+                      <div class="item-stats__text text-md">Клиентов</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stats__col col-lg-12 col-sm-6 col-xl-6">
+                  <div class="stats__item item-stats">
+                    <div class="item-stats__icon-wrap">
+                      <img src="images/icons/settings.svg" alt="alt" class="item-stats__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="item-stats__body">
+                      <div class="item-stats__value h3"><span data-countup="100">0</span>%</div>
+                      <div class="item-stats__text text-md">Полный спектр работ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__imgs row">
+          <div class="about__img-col col-sm-4 col-6">
+            <a href="images/about-1.jpg" class="about__img-wrap glightbox" data-gallery="about">
+              <img src="images/about-1.jpg" alt="alt" class="about__img img-responsive" loading="lazy" />
+            </a>
+          </div>
+          <div class="about__img-col col-sm-4 col-6">
+            <a href="images/about-2.jpg" class="about__img-wrap glightbox" data-gallery="about">
+              <img src="images/about-2.jpg" alt="alt" class="about__img img-responsive" loading="lazy" />
+            </a>
+          </div>
+          <div class="about__img-col col-sm-4 col-6">
+            <a href="images/about-3.jpg" class="about__img-wrap glightbox" data-gallery="about">
+              <img src="images/about-3.jpg" alt="alt" class="about__img img-responsive" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spacing section-info-cards" id="how-we-work">
+    <div class="container">
+      <div class="info-cards">
+        <h2 class="info-cards__title title-spacing">Как мы работаем</h2>
+        <div class="info-cards__row row">
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/carbon_delivery.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Доставка по Москве и МО</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/graph.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Расчет стоимости заказа</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/person.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Работаем с юр. и физ. лицами</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/coins.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Гибкая ценовая политика</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/clock.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Срок изготовления заказа 1 - 5 дней</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/image.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Проектирование изделия</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/card.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Безналичный и наличный расчет</div>
+            </div>
+          </div>
+          <div class="info-cards__col col-lg-3 col-md-4 col-sm-6">
+            <div class="info-cards__card card-info">
+              <img src="images/icons/percentage.svg" alt="alt" class="card-info__icon" loading="lazy" />
+              <div class="card-info__title text-lg">Скидки на крупные повторные заказы</div>
+            </div>
+          </div>
+        </div>
+        <div class="info-cards__contacts-row contacts-row">
+          <div class="contacts-row__row row">
+            <div class="contacts-row__col col-lg-5">
+              <div class="contacts-row__btns">
+                <a href="#" class="contacts-row__btn btn btn--primary">Кнопка</a>
+                <a href="#" class="contacts-row__btn btn btn--outline-primary">Кнопка</a>
+              </div>
+            </div>
+            <div class="contacts-row__col col-lg-7">
+              <div class="contacts-row__contacts">
+                <div class="contacts-row__contact contact text-lg">
+                  <a href="tel:+79123456789" class="contact__inner">
+                    <svg role="img" class="contact__icon">
+                      <use href="images/icons/sprite.svg#call" />
+                    </svg>
+                    +7 912 345 67 89
+                  </a>
+                </div>
+                <div class="contacts-row__contact contact text-lg">
+                  <a href="#" class="contact__inner">
+                    <svg role="img" class="contact__icon">
+                      <use href="images/icons/sprite.svg#wa" />
+                    </svg>
+                    WhatsApp
+                  </a>
+                </div>
+                <div class="contacts-row__contact contact text-lg">
+                  <a href="#" class="contact__inner">
+                    <svg role="img" class="contact__icon">
+                      <use href="images/icons/sprite.svg#email" />
+                    </svg>
+                    mail@mail.ru
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/decor-3.svg" alt="alt" class="info-cards__decor decor" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="spacing section-content">
+    <div class="container">
+      <div class="content">
+        <div class="content__inner">
+          <h2>Типы изделий</h2>
+          <p>
+            Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+          </p>
+          <p>
+            Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+          </p>
+        </div>
+        <img src="images/decor-4.svg" alt="alt" class="content__decor decor" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="spacing section-gallery" id="gallery">
+    <div class="container">
+      <div class="slider-gallery-alt slider splide">
+        <div class="slider-gallery-alt__header slider__header">
+          <h2 class="slider-gallery-alt__title slider__title">Галерея работ</h2>
+          <div class="slider-gallery-alt__navs slider__navs splide__arrows">
+            <ul class="slider-gallery-alt__pagination slider__pagination splide__pagination"></ul>
+            <div class="slider-gallery-alt__arrows slider__arrows">
+              <button class="slider-gallery-alt__arrow slider-gallery-alt__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#arrow-left" />
+                </svg>
+              </button>
+              <button class="slider-gallery-alt__arrow slider-gallery-alt__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#arrow-right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-gallery-alt__track slider__track splide__track">
+          <div class="slider-gallery-alt__list slider__list splide__list">
+            <div class="slider-gallery-alt__slide slider__slide splide__slide">
+              <a href="images/slider-gallery-1.jpg" class="item-gallery-alt glightbox">
+                <img src="images/slider-gallery-1.jpg" alt="alt" loading="lazy" />
+              </a>
+            </div>
+            <div class="slider-gallery-alt__slide slider__slide splide__slide">
+              <a href="images/slider-gallery-2.jpg" class="item-gallery-alt glightbox">
+                <img src="images/slider-gallery-2.jpg" alt="alt" loading="lazy" />
+              </a>
+            </div>
+            <div class="slider-gallery-alt__slide slider__slide splide__slide">
+              <a href="images/slider-gallery-3.jpg" class="item-gallery-alt glightbox">
+                <img src="images/slider-gallery-3.jpg" alt="alt" loading="lazy" />
+              </a>
+            </div>
+            <div class="slider-gallery-alt__slide slider__slide splide__slide">
+              <a href="images/slider-gallery-1.jpg" class="item-gallery-alt glightbox">
+                <img src="images/slider-gallery-1.jpg" alt="alt" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <img src="images/decor-5.svg" alt="alt" class="slider-gallery-alt__decor decor" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="spacing section-reviews" id="reviews">
+    <div class="container">
+      <div class="slider-reviews slider splide">
+        <div class="slider-reviews__header slider__header">
+          <h2 class="slider-reviews__title slider__title">Отзывы клиентов</h2>
+          <div class="slider-reviews__navs slider__navs splide__arrows">
+            <ul class="slider-reviews__pagination slider__pagination splide__pagination"></ul>
+            <div class="slider-reviews__arrows slider__arrows">
+              <button class="slider-reviews__arrow slider-reviews__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#arrow-left" />
+                </svg>
+              </button>
+              <button class="slider-reviews__arrow slider-reviews__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#arrow-right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-reviews__track slider__track splide__track">
+          <div class="slider-reviews__list slider__list splide__list">
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <div class="card-review">
+                <div class="card-review__header">
+                  <div class="card-review__avatar-wrap">
+                    <img src="images/avatar.png" alt="alt" class="card-review__avatar img-responsive" loading="lazy" />
+                  </div>
+                  <div class="card-review__info">
+                    <div class="card-review__title text-md">Имя Фамилия</div>
+                    <div class="card-review__description text-sm">Род деятельности</div>
+                  </div>
+                </div>
+                <div class="card-review__text-wrap">
+                  <p>
+                    Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis.Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <div class="card-review">
+                <div class="card-review__header">
+                  <div class="card-review__avatar-wrap">
+                    <img src="images/avatar.png" alt="alt" class="card-review__avatar img-responsive" loading="lazy" />
+                  </div>
+                  <div class="card-review__info">
+                    <div class="card-review__title text-md">Имя Фамилия</div>
+                    <div class="card-review__description text-sm">Род деятельности</div>
+                  </div>
+                </div>
+                <div class="card-review__text-wrap">
+                  <p>
+                    Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis.Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <div class="card-review">
+                <div class="card-review__header">
+                  <div class="card-review__avatar-wrap">
+                    <img src="images/avatar.png" alt="alt" class="card-review__avatar img-responsive" loading="lazy" />
+                  </div>
+                  <div class="card-review__info">
+                    <div class="card-review__title text-md">Имя Фамилия</div>
+                    <div class="card-review__description text-sm">Род деятельности</div>
+                  </div>
+                </div>
+                <div class="card-review__text-wrap">
+                  <p>
+                    Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis.Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <div class="card-review">
+                <div class="card-review__header">
+                  <div class="card-review__avatar-wrap">
+                    <img src="images/avatar.png" alt="alt" class="card-review__avatar img-responsive" loading="lazy" />
+                  </div>
+                  <div class="card-review__info">
+                    <div class="card-review__title text-md">Имя Фамилия</div>
+                    <div class="card-review__description text-sm">Род деятельности</div>
+                  </div>
+                </div>
+                <div class="card-review__text-wrap">
+                  <p>
+                    Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis.Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/circles.svg" alt="alt" class="slider-reviews__decor decor" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-callback" style="background-image: url(images/callback-bg.jpg)">
+    <div class="container">
+      <div class="callback">
+        <h2 class="callback__title h1">Присоединяйтесь к успешному бизнесу</h2>
+        <div class="callback__text-wrap text-md">
+          <p>
+            Worem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            Nunc vulputate libero et velit interdum
+          </p>
+        </div>
+        <a href="#" class="callback__btn btn btn--primary">Кнопка</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="map">
+    <img src="images/map.jpg" alt="alt" loading="lazy" />
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--logo col-md-4 col-sm-6">
+          <img src="images/logo-white.svg" alt="alt" class="footer__logo img-responsive" />
+          <p class="footer__copyright text-sm">All Rights Reserved. 2024</p>
+        </div>
+        <div class="footer__col footer__col--company col-md-4 col-sm-6">
+          <h4 class="footer__title text-sm">Компания</h4>
+          <nav class="footer__menu text-sm">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Правила пользования</a></li>
+            </ul>
+          </nav>
+          <div class="footer__socials socials socials--white">
+            <div class="socials__items">
+              <a href="#" class="socials__item">
+                <svg role="img" class="socials__icon">
+                  <use href="images/icons/sprite.svg#tg" />
+                </svg>
+              </a>
+              <a href="#" class="socials__item">
+                <svg role="img" class="socials__icon">
+                  <use href="images/icons/sprite.svg#wa" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__col footer__col--services col-md-4 col-sm-6">
+          <h4 class="footer__title text-sm">Услуги</h4>
+          <nav class="footer__menu text-sm">
+            <ul class="list-unstyled">
+              <li><a href="service.html">Сварка аргоном</a></li>
+              <li><a href="service.html">Лазерная резка металла</a></li>
+              <li><a href="service.html">Каркасы из профильной трубы</a></li>
+              <li><a href="service.html">Корпуса оборудования из металла</a></li>
+              <li><a href="service.html">Столы из металла</a></li>
+              <li><a href="service.html">Мебель из металла</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--contacts col-md-4 col-sm-6">
+          <h4 class="footer__title text-sm">Контакты</h4>
+          <div class="footer__contacts">
+            <div class="footer__contact contact-footer text-sm">
+              <div class="contact-footer__inner">
+                <svg role="img" class="contact-footer__icon">
+                  <use href="images/icons/sprite.svg#home" />
+                </svg>
+                Адрес
+              </div>
+            </div>
+            <div class="footer__contact contact-footer text-sm">
+              <a href="#" class="contact-footer__inner">
+                <svg role="img" class="contact-footer__icon">
+                  <use href="images/icons/sprite.svg#call" />
+                </svg>
+                Телефон
+              </a>
+            </div>
+            <div class="footer__contact contact-footer text-sm">
+              <a href="#" class="contact-footer__inner">
+                <svg role="img" class="contact-footer__icon">
+                  <use href="images/icons/sprite.svg#email" />
+                </svg>
+                Почта
+              </a>
+            </div>
+            <div class="footer__contact contact-footer text-sm">
+              <div class="contact-footer__inner">
+                <svg role="img" class="contact-footer__icon">
+                  <use href="images/icons/sprite.svg#clock" />
+                </svg>
+                Часы работы
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
