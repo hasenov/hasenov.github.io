@@ -1,0 +1,660 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#00D66F" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.png" alt="alt" class="img-responsive" />
+      </a>
+      <nav class="header__menu menu">
+        <div class="menu__header">
+          <a href="index.html" class="menu__logo">
+            <img src="images/logo-gray.png" alt="alt" class="img-responsive" />
+          </a>
+          <button class="menu__close close" type="button">
+            <svg class="close__icon" role="img">
+              <use href="images/icons/sprite.svg#close" />
+            </svg>
+          </button>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" type="button">
+        <svg role="img">
+          <use href="images/icons/sprite.svg#hamburger" />
+        </svg>
+      </button>
+      <a href="#" class="header__btn btn btn--outline-white">Написать в WhatsApp</a>
+    </div>
+  </header>
+
+
+  <section class="section-showcase bg-dark" style="background-image: url(images/showcase-home.jpg)">
+    <div class="container">
+      <div class="showcase showcase--fullscreen">
+        <div class="showcase__content">
+          <h1 class="showcase__title hero-title">
+            Event-агентство<br />
+            CONTRAST
+          </h1>
+          <h2 class="showcase__subtitle text-base">Делаем больше, чем просто проекты</h2>
+          <div class="showcase__btns">
+            <a href="#test" class="showcase__btn btn btn--primary glightbox-modal">Получить консультацию</a>
+            <a href="#" class="showcase__btn btn btn--outline-white">Скачать презентацию</a>
+          </div>
+        </div>
+        <div class="showcase__lava-wrap"><a href="https://www.youtube.com/watch?v=nw6HDb2NyDg" class="showcase__lava lava-button glightbox" data-gallery="reel">
+            <svg class="lava-button__svg" xmlns="http://www.w3.org/2000/svg" width="250" height="250" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250">
+              <defs>
+                <linearGradient id="grad1" x1="122.21" y1="199.43" x2="122.21" y2="21.48" gradientTransform="translate(0 252) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#00e7b0" />
+                  <stop offset=".65" stop-color="#90cc00" />
+                  <stop offset="1" stop-color="#00b000" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="142.15" y1="141.43" x2="142.15" y2="-36.52" xlink:href="#grad1" />
+                <linearGradient id="grad3" x1="71.3" y1="189.76" x2="71.3" y2="-48.5" xlink:href="#grad1" />
+                <linearGradient id="grad4" x1="169.2" y1="218.43" x2="169.2" y2="40.48" xlink:href="#grad1" />
+                <linearGradient id="grad5" x1="194.96" y1="358.82" x2="194.96" y2="17.13" xlink:href="#grad1" />
+                <filter id="lava" color-interpolation-filters="sRGB">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                  <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+                </filter>
+                <filter xmlns="http://www.w3.org/2000/svg" id="triangle" x="0" y="0" width="250" height="250" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_30" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_30" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.0655392 0 0 0 0 0.795833 0 0 0 0 0 0 0 0 0.06 0" />
+                  <feBlend mode="normal" in2="shape" result="effect2_innerShadow_12_30" />
+                </filter>
+              </defs>
+              <g filter="url(#lava)">
+                <path d="m 20.51 124 c 4.33 -18.25 21.25 -27.52 29.17 -29.88 c 4.31 -3.22 13.83 -11.1 17.41 -16.94 c 11.53 -20.23 13.17 -17.17 26.11 -23.05 c 12.94 -5.88 34.82 6.35 40.23 12.7 c 5.41 6.35 25.17 -2.12 31.52 -2.35 c 6.35 -0.24 11.53 6.12 19.29 16 c 7.76 9.88 -5.18 18.58 -6.12 24.23 c -0.94 5.65 14.52 10.99 15.29 11.53 l 0.08 0.05 c 1.35 0.93 9.46 6.52 15.21 6.06 c 4.71 -0.38 9.02 4.08 10.59 6.35 c 5.41 8.39 12.18 27.15 -4 35.05 c -16.18 7.9 -23.68 20.08 -25.41 25.17 c -1.88 10.27 -11.9 32.51 -36.93 39.29 c -31.29 8.47 -19.53 -8.7 -24.47 -13.17 c -4.94 -4.47 -35.29 -1.41 -47.99 -1.88 c -12.7 -0.47 -30.82 -16.47 -30.82 -41.17 s -5.65 -23.05 -9.41 -25.64 c -29.41 -8.94 -19.76 -14.59 -19.76 -22.35 Z" style="fill: url(#grad1)" id="lava-main" />
+                <path d="m111.96,56.55c-32.37,7.53-26.5,23.84-19.53,31.05,1.8,1.18,6.31,3.53,9.88,3.53,41.4,0,21.64-36.46,9.64-34.58Z" style="fill: url(#grad2)" id="lava-one" />
+                <path d="m60.52,93.61c1.53-5.04,9.36-6.51,13.08-6.61,8.61,4.09,8.93,8.19,9.25,8.19s1.28,15.12-11.48,15.75c-12.76.63-12.76-11.02-10.85-17.32Z" style="fill: url(#grad3)" id="lava-two" />
+                <path d="m149.35,198.9c1.39-7.38,8.99-11.19,17.98-9.51,5.8,2.52,6.67,6.99,6.67,10.35-1.62,14.99-10.73,16.22-18.56,13.98-2.61-1.86-7.48-7.44-6.09-14.82Z" style="fill: url(#grad4)" id="lava-three" />
+                <path d="m172.32,177.35c1.5-4.7,8.43-4.67,11.71-4.06,6.56,2.26,7.02,10.84,4.68,13.1-5.25,3.97-10.93,2.56-13.12,1.36-1.72-1.51-4.78-5.69-3.28-10.39Z" style="fill: url(#grad5)" id="lava-four" />
+              </g>
+              <g filter="url(#triangle)">
+                <path d="m167.27,118.3l-69.4-30.58c-8.08-3.45-23.9-4.8-22.58,17.41,1.32,22.21,3.69,60.07,4.7,76.22.31,9.33,5.88,24.98,25.64,12.94,19.76-12.04,53.56-35.6,67.99-45.87,9.1-5.65,20.56-19.57-6.35-30.11Zm-25.23,9.66l-36.31-15.93c-4.23-1.8-12.51-2.5-11.82,9.07.69,11.57,1.93,31.29,2.46,39.7.16,4.86,3.08,13.01,13.42,6.74,10.34-6.27,28.02-18.54,35.57-23.9,4.76-2.94,10.76-10.19-3.32-15.69Z" style="fill: #ececec; fill-rule: evenodd" />
+              </g>
+              <g>
+                <path d="m160.21,123.56c1.15.49,1.94,1.13,2.35,1.91.41.78.39,1.69-.04,2.73-.46,1.09-1.16,1.77-2.09,2.04-.92.26-1.99.14-3.22-.38l-4.17-1.77,4.11-9.7,1.77.75-1.39,3.28,2.69,1.14Zm-2.51,4.87c.69.29,1.3.36,1.81.2.52-.16.92-.55,1.18-1.17.26-.61.26-1.13,0-1.57-.26-.45-.74-.82-1.44-1.12l-2.32-.98-1.55,3.66,2.32.98Z" style="fill: #212121" />
+                <path d="m146.46,125.3l3.66-8.62.24.63-3.63-1.54.65-1.52,8.2,3.48-.65,1.52-3.63-1.54.6-.27-3.66,8.62-1.79-.76Z" style="fill: #212121" />
+                <path d="m139.2,115.53l4.82,2.05-.63,1.48-4.82-2.05.63-1.48Zm-1.62,4.22l5.48,2.32-.64,1.51-7.28-3.09,4.11-9.7,7.08,3-.64,1.51-5.28-2.24-2.83,6.68Z" style="fill: #212121" />
+                <path d="m125.31,116.33l4.11-9.7,3.99,1.69c.86.36,1.53.81,2.03,1.35.5.54.81,1.14.92,1.8s.02,1.34-.28,2.05c-.3.71-.73,1.26-1.28,1.63-.55.38-1.2.57-1.93.59-.73.02-1.52-.15-2.38-.52l-2.99-1.27,1.16-.5-1.55,3.64-1.8-.76Zm3.26-2.69l-.43-1.21,2.91,1.23c.8.34,1.46.42,2,.26.55-.17.96-.56,1.22-1.17.26-.62.26-1.18,0-1.69-.26-.5-.78-.92-1.58-1.26l-2.91-1.23,1.18-.55-2.38,5.61Z" style="fill: #212121" />
+                <path d="m118.75,113.54l3.66-8.62.24.63-3.63-1.54.65-1.52,8.2,3.48-.65,1.52-3.63-1.54.6-.27-3.66,8.62-1.79-.76Z" style="fill: #212121" />
+                <path d="m109.58,109.82c-.76-.32-1.4-.74-1.93-1.26-.53-.52-.94-1.1-1.22-1.75-.28-.65-.42-1.33-.42-2.04,0-.72.15-1.44.46-2.16.31-.72.72-1.33,1.23-1.82.52-.5,1.11-.87,1.77-1.12.66-.25,1.37-.37,2.11-.35.74.02,1.49.19,2.24.51.76.32,1.4.74,1.92,1.26.53.52.94,1.11,1.22,1.76.28.64.42,1.33.42,2.04,0,.71-.15,1.43-.45,2.15-.31.72-.72,1.33-1.23,1.83-.52.5-1.11.87-1.77,1.12-.66.24-1.36.36-2.1.33-.73-.02-1.48-.18-2.22-.5Zm.66-1.59c.49.21.98.32,1.46.33.49.01.95-.07,1.38-.25.44-.18.83-.45,1.17-.78.35-.34.63-.76.85-1.26.21-.5.32-.99.31-1.47,0-.49-.07-.95-.25-1.38-.17-.44-.43-.84-.78-1.18-.35-.34-.76-.62-1.25-.83-.49-.21-.98-.32-1.46-.33-.48,0-.94.08-1.39.26-.43.18-.83.43-1.18.78-.34.34-.61.75-.83,1.25-.21.49-.32.98-.33,1.46,0,.49.08.96.26,1.4.18.43.44.82.78,1.17.35.34.76.62,1.25.83Z" style="fill: #212121" />
+                <path d="m91.8,102.12l4.12-9.7,1.47.62,1.25,8.89-.79-.34,7.19-5.31,1.47.62-4.09,9.71-1.72-.73,2.97-7.03.36.15-6.06,4.41-.8-.34-1.09-7.45.42.18-2.98,7.03-1.7-.72Z" style="fill: #212121" />
+                <path d="m86.21,99.9c-.74-.31-1.38-.73-1.91-1.24-.52-.52-.93-1.1-1.21-1.74-.27-.65-.4-1.33-.4-2.05,0-.72.15-1.44.46-2.16.31-.72.72-1.33,1.23-1.83.52-.5,1.11-.87,1.76-1.12.66-.25,1.36-.37,2.09-.34.73.02,1.48.18,2.22.5.79.34,1.46.78,2,1.34.54.55.93,1.18,1.15,1.91l-1.63.6c-.19-.53-.46-.98-.82-1.35-.35-.38-.78-.68-1.29-.89-.51-.22-1.01-.33-1.51-.34-.49,0-.95.07-1.39.24-.43.18-.83.43-1.18.78-.34.35-.62.77-.83,1.27-.21.5-.32.99-.33,1.48,0,.49.09.95.26,1.39.18.44.45.83.79,1.17.35.35.79.63,1.29.84.51.22,1.02.32,1.53.32.52,0,1.03-.13,1.55-.37l.69,1.6c-.68.33-1.4.5-2.17.5-.77,0-1.56-.17-2.37-.51Z" style="fill: #212121" />
+                <path d="m156.38,154.85c-.14.1-.29.18-.45.25-.16.07-.33.14-.52.22l-.83-1.49c.14-.04.27-.11.41-.2.35-.24.53-.56.55-.99.01-.43-.12-.96-.4-1.58-.28-.62-.68-1.35-1.2-2.19l-2.31-3.71,6.44-4.32,5.87,8.75-1.6,1.07-5.21-7.78.64.15-4.16,2.79.07-.65,1.66,2.66c.56.88,1.01,1.69,1.36,2.41.35.72.58,1.37.69,1.95.11.57.09,1.07-.06,1.51-.15.44-.47.82-.94,1.14Z" style="fill: #212121" />
+                <path d="m146.27,161.44l-5.87-8.75,1.6-1.07,4.17,6.21.53-9.37,1.51-1.01,5.87,8.75-1.6,1.07-4.16-6.2-.54,9.35-1.51,1.01Z" style="fill: #212121" />
+                <path d="m137.39,167.39l-5.87-8.75,3.6-2.41c.78-.52,1.52-.84,2.24-.96.73-.12,1.4-.05,2.01.21.61.27,1.14.72,1.57,1.36s.65,1.3.67,1.96-.18,1.32-.57,1.94c-.38.62-.96,1.19-1.74,1.71l-2.7,1.81.21-1.25,2.2,3.29-1.62,1.09Zm-.46-4.2l-1.25-.3,2.63-1.76c.72-.48,1.15-.99,1.31-1.53.16-.56.06-1.11-.31-1.66-.37-.56-.85-.86-1.41-.92-.56-.06-1.2.15-1.92.63l-2.63,1.76.19-1.29,3.39,5.06Z" style="fill: #212121" />
+                <path d="m127.95,171.73c.57-.15,1-.38,1.3-.69.3-.31.44-.77.43-1.39l-.02-.95.04-.28-.91-7.95,1.6-1.07.94,9.61c.09.8.02,1.49-.19,2.09-.22.59-.56,1.07-1.03,1.43-.45.37-1.02.61-1.7.74l-.46-1.54Zm2.65-1.89l-8.8-4.69,1.74-1.16,7.11,4.01-.05,1.85Z" style="fill: #212121" />
+                <path d="m122.65,177.46c-.68.46-1.39.77-2.11.93-.73.16-1.44.18-2.13.07-.7-.12-1.35-.38-1.94-.76-.6-.39-1.12-.92-1.56-1.57-.44-.65-.72-1.32-.85-2.02-.14-.71-.12-1.4.03-2.09.15-.69.44-1.35.86-1.96.42-.61.97-1.14,1.65-1.6.68-.46,1.38-.76,2.1-.92.73-.16,1.44-.18,2.14-.06.69.12,1.34.37,1.94.76.6.39,1.11.9,1.55,1.55.44.65.72,1.33.86,2.04s.12,1.4-.03,2.09c-.16.68-.45,1.33-.87,1.94-.42.6-.96,1.13-1.64,1.59Zm-.97-1.42c.44-.3.8-.65,1.07-1.05.27-.4.46-.83.55-1.29.08-.47.08-.94-.02-1.4-.09-.48-.29-.95-.59-1.4-.3-.45-.65-.81-1.06-1.07-.4-.27-.83-.46-1.29-.55-.47-.1-.94-.1-1.41,0-.47.1-.93.3-1.38.6-.44.3-.8.65-1.07,1.05-.27.4-.45.83-.54,1.3-.09.46-.09.93,0,1.41.1.47.29.93.6,1.38.3.44.65.8,1.05,1.07.41.27.85.45,1.31.55.46.09.93.09,1.4-.02.48-.1.93-.3,1.38-.6Z" style="fill: #212121" />
+                <path d="m109.07,184.39l-.09.64-5.21-7.78,1.6-1.07,5.21,7.78-.66-.14,3.99-2.68-.12.66-5.21-7.78,1.6-1.07,5.87,8.75-11.24,7.54-5.87-8.75,1.6-1.07,5.21,7.78-.64-.15,3.96-2.66Z" style="fill: #212121" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <section class="section-about bg-dark bg-gradient" style="background-image: url(images/about-bg.jpg)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">о нас</div>
+        <h2 class="section-header__title section-title">
+          Event-агенство<br />
+          полного цикла
+        </h2>
+      </div>
+      <div class="about">
+        <div class="about__row row">
+          <div class="about__col col-xl-6 col-md-7">
+            <div class="about__text-wrap">
+              <p>
+                Наше агентство специализируется на организации креативных, небанальных, концептуальных и просто красивых мероприятий. Главная задача
+                нашей команды – сделать Ваше мероприятие непохожим на остальные, чтобы оно запомнилось каждому гостю. В каждое торжество мы
+                вкладываем свои идеи, профессионализм и душу.
+              </p>
+            </div>
+            <a href="#about-more" class="about__btn btn btn--outline-primary-alt glightbox-modal">Читать далее</a>
+          </div>
+          <div class="about__col about__col--img col-md-6">
+            <img src="images/group.png" alt="alt" class="about__img img-responsive" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">портфолио</div>
+        <h2 class="section-header__title section-title">наши работы</h2>
+      </div>
+      <div class="works">
+        <div class="works__row row gy-4">
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-4 col-6">
+            <a href="project.html" class="works__item item-works">
+              <img src="images/work-1.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <div class="item-works__box item-works__box--text">
+                <div class="item-works__title">Двухдневное выездное мероприятие для компании «Мечта</div>
+              </div>
+              <div class="item-works__box item-works__box--logo">
+                <img src="images/alfa-bank.png" alt="alt" class="item-works__logo img-responsive" loading="lazy" />
+              </div>
+            </a>
+          </div>
+          <div class="works__col col-xl-3 col-md-8 col-6">
+            <a href="portfolio.html" class="works__item item-works">
+              <img src="images/work-see-all.jpg" alt="alt" class="item-works__img img-responsive" loading="lazy" />
+              <span class="item-works__arrow-link arrow-link">
+                Смотреть все
+                <svg role="img" class="arrow-link__icon">
+                  <use href="images/icons/sprite.svg#arrow-right" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-events bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">мероприятия</div>
+        <h2 class="section-header__title section-title">мы делаем</h2>
+      </div>
+
+      <div class="events">
+        <div class="events__row row gy-4">
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+          <div class="events__col col-xl-3 col-md-4 col-6">
+            <a href="#" class="events__btn btn btn--outline-primary-alt">Мероприятие</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-benefits">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">услуги</div>
+        <h2 class="section-header__title section-title">наша уникальность</h2>
+      </div>
+
+      <div class="benefits">
+        <div class="benefits__row row gy-4">
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/darts.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Идеальное попадание</div>
+              <div class="item-benefits__text">в целевую аудиторию</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/mind.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Комплексный подход</div>
+              <div class="item-benefits__text">мероприятия “под ключ”</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/settings.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Управление рисками</div>
+              <div class="item-benefits__text">работаем по договору</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/camera.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Уникальный формат</div>
+              <div class="item-benefits__text">профессиональные режиссеры</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/darts.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Идеальное попадание</div>
+              <div class="item-benefits__text">в целевую аудиторию</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/mind.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Комплексный подход</div>
+              <div class="item-benefits__text">мероприятия “под ключ”</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/settings.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Управление рисками</div>
+              <div class="item-benefits__text">работаем по договору</div>
+            </div>
+          </div>
+          <div class="benefits__col col-xl-3 col-lg-4 col-6">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon-wrap">
+                <img src="images/icons/camera.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              </div>
+              <div class="item-benefits__title text-md">Уникальный формат</div>
+              <div class="item-benefits__text">профессиональные режиссеры</div>
+            </div>
+          </div>
+        </div>
+        <!-- convert to masonry layout on mobile -->
+        <div class="benefits__mobile-row row">
+          <div class="benefits__mobile-col col-6"></div>
+          <div class="benefits__mobile-col col-6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-team">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">мы</div>
+        <h2 class="section-header__title section-title">наша команда</h2>
+      </div>
+      <div class="slider-team slider splide">
+        <div class="slider-team__track slider__track splide__track">
+          <div class="slider-team__list slider__list splide__list">
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-1.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Колодкин Дмитрий</div>
+                <div class="item-team__text text-sm">Сценарист, Креатор</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-2.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Трубицкий Александр</div>
+                <div class="item-team__text text-sm">Финансовый директор</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-3.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Трубицкий Александр</div>
+                <div class="item-team__text text-sm">Финансовый директор</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-4.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Коссман Алена</div>
+                <div class="item-team__text text-sm">Media production</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-5.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Рахимов Санжар</div>
+                <div class="item-team__text text-sm">Управляющий директор</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-6.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Ашимова Айнур</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-7.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Есенжолова Бота</div>
+                <div class="item-team__text text-sm">Координатор проектов</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-8.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Коровкин Сергей</div>
+                <div class="item-team__text text-sm">Старший проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-9.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Куриленко Татьяна</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-10.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Лозенко Вадим</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-11.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Лю-Гуной Руслан</div>
+                <div class="item-team__text text-sm">Media Production</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-12.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Мубинов Рауфаль</div>
+                <div class="item-team__text text-sm">Старший проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-13.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Сайлауов Газиз</div>
+                <div class="item-team__text text-sm">Координатор проектов</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-14.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Сочинская Валентина</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-15.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Трубачев Александр</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-16.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Архарова Алёна</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-17.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Сайлауов Газиз</div>
+                <div class="item-team__text text-sm">Координатор проектов</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-18.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Сочинская Валентина</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-19.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Трубачев Александр</div>
+                <div class="item-team__text text-sm">Проект менеджер</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-20.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Хаирбекова Мадина</div>
+                <div class="item-team__text text-sm">Координатор проектов</div>
+              </div>
+            </div>
+            <div class="slider-team__slide slider__slide splide__slide">
+              <div class="item-team">
+                <img src="images/team-21.png" alt="alt" class="item-team__img img-responsive" loading="lazy" />
+                <div class="item-team__title">Сайлауов Газиз</div>
+                <div class="item-team__text text-sm">Координатор проектов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-team__arrows slider__arrows splide__arrows">
+          <button class="slider-team__arrow slider-team__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+            <svg role="img">
+              <use href="images/icons/sprite.svg#chevron-left" />
+            </svg>
+          </button>
+          <button class="slider-team__arrow slider-team__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+            <svg role="img">
+              <use href="images/icons/sprite.svg#chevron-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- prettier-ignore -->
+  <footer class="footer bg-dark" id="contacts">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">связь</div>
+        <h2 class="section-header__title section-title">контакты</h2>
+      </div>
+      <div class="footer__tabs-wrap" data-tabs>
+        <div class="footer__tabs row gx-0">
+          <div class="footer__tabs-col col-6">
+            <button type="button" class="footer__tab btn btn--outline-primary-alt is-active" data-tabs-btn>Астана</button>
+          </div>
+          <div class="footer__tabs-col col-6">
+            <button type="button" class="footer__tab btn btn--outline-primary-alt" data-tabs-btn>Алматы</button>
+          </div>
+        </div>
+        <div class="footer__tab-contents">
+          <div class="footer__tab-content is-active" data-tabs-item>
+            <div class="footer__row row gy-4">
+              <div class="footer__col col-md-6">
+                <div class="map">
+                  <img src="images/map.png" alt="alt" class="img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="footer__col col-md-6">
+                <div class="footer__info">
+                  <img src="images/logo.png" alt="alt" class="footer__logo img-responsive" />
+                  <div class="footer__contacts">
+                    <div class="footer__contact contact-footer contact-footer--big"><a href="tel:87470942817">8 (747) 094 28 17</a></div>
+                    <div class="footer__contact contact-footer"><a href="mailto:contrastkz@mail.ru">contrastkz@mail.ru</a></div>
+                    <div class="footer__contact contact-footer">г. Нур-Султан (Астана), ул. Арай, 29/3, 6 эт.</div>
+                  </div>
+                  <div class="footer__btns">
+                    <a href="#" class="footer__btn btn btn--outline-white">Мы в Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__tab-content" data-tabs-item>
+            <div class="footer__row row gy-4">
+              <div class="footer__col col-md-6">
+                <div class="map">
+                  <img src="images/map.png" alt="alt" class="img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="footer__col col-md-6">
+                <div class="footer__info">
+                  <img src="images/logo.png" alt="alt" class="footer__logo img-responsive" />
+                  <div class="footer__contacts">
+                    <div class="footer__contact contact-footer contact-footer--big"><a href="tel:87470942817">8 (747) 094 28 17</a></div>
+                    <div class="footer__contact contact-footer"><a href="mailto:contrastkz@mail.ru">contrastkz@mail.ru</a></div>
+                    <div class="footer__contact contact-footer">г. Алматы, ул. Арай, 29/3, 6 эт.</div>
+                  </div>
+                  <div class="footer__btns">
+                    <a href="#" class="footer__btn btn btn--outline-white">Мы в Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="about-more" class="modal">
+    <a href="#" class="modal__close close gtrigger-close inline-close-btn">
+      <svg class="close__icon" role="img">
+        <use href="images/icons/sprite.svg#close" />
+      </svg>
+    </a>
+    <div class="modal__img-wrap">
+      <picture>
+        <source srcset="images/modal.jpg" media="(min-width: 576px)" />
+        <img src="images/modal-mob.jpg" alt="alt" class="modal__img img-responsive" loading="lazy" />
+      </picture>
+    </div>
+    <div class="modal__content">
+      <p>
+        Дополнительные советы Дополнительные советыДополнительные советы<br />
+        * Используйте яркие и запоминающиеся изображения в своей рекламе.<br />
+        * Укажите примеры прошлых работ и положительные отзывы клиентов.<br />
+        * Создайте сайт или страницу в социальных сетях.<br />
+        * Предложите скидки или бонусы для привлечения новых клиентов.<br />
+        Помните:ваше агентство по созданию праздников - это ваш шанс сделать любое событие незабываемым!
+      </p>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

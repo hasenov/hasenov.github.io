@@ -1,0 +1,314 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Услуги</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#00D66F" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.png" alt="alt" class="img-responsive" />
+      </a>
+      <nav class="header__menu menu">
+        <div class="menu__header">
+          <a href="index.html" class="menu__logo">
+            <img src="images/logo-gray.png" alt="alt" class="img-responsive" />
+          </a>
+          <button class="menu__close close" type="button">
+            <svg class="close__icon" role="img">
+              <use href="images/icons/sprite.svg#close" />
+            </svg>
+          </button>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" type="button">
+        <svg role="img">
+          <use href="images/icons/sprite.svg#hamburger" />
+        </svg>
+      </button>
+      <a href="#" class="header__btn btn btn--outline-white">Написать в WhatsApp</a>
+    </div>
+  </header>
+
+
+  <section class="section-showcase bg-dark" style="background-image: url(images/showcase-services.jpg)">
+    <div class="container">
+      <div class="showcase showcase--banner">
+        <div class="showcase__content">
+          <h1 class="showcase__title hero-title">Услуги</h1>
+          <h2 class="showcase__subtitle text-base">Нет проблем, которые мы не можем решить</h2>
+          <div class="showcase__btns">
+            <a href="#test" class="showcase__btn btn btn--primary glightbox-modal">Получить консультацию</a>
+            <a href="#" class="showcase__btn btn btn--outline-white">Скачать презентацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-service">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">Мероприятия</div>
+        <h2 class="section-header__title section-title">Корпоративные</h2>
+      </div>
+      <div class="service">
+        <div class="service__row row gy-4">
+          <div class="service__col service__col--content col-md-6">
+            <div class="service__content">
+              <p>
+                Любое корпоративное мероприятие должно быть интересным и уникальным. Соблюдая цели и ценности компании нам легко удается создать
+                подходящий формат, который запоминается и сотрудникам, и приглашенным гостям. Мы составляем сценарий мероприятия детально, не
+                упуская мелочей, что приводит к успеху любое торжественное событие.
+              </p>
+              <ul class="list-unstyled list-dashed">
+                <li>Корпоративная вечеринка</li>
+                <li>Выездное мероприятие</li>
+                <li>Корпоративные игры</li>
+                <li>Корпоративный новый год</li>
+                <li>Профессиональный праздник</li>
+              </ul>
+              <a href="portfolio.html#projects-corporate" class="btn btn--outline-primary">Смотреть проекты</a>
+            </div>
+          </div>
+          <div class="service__col service__col--img col-md-6">
+            <div class="service__img-wrap">
+              <picture>
+                <source srcset="images/service-1.jpg" media="(min-width: 576px)" />
+                <img src="images/service-1-mob.jpg" alt="alt" class="service__img img-responsive rounded" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-service bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">Мероприятия</div>
+        <h2 class="section-header__title section-title">Тимбилдинги</h2>
+      </div>
+      <div class="service">
+        <div class="service__row row gy-4">
+          <div class="service__col service__col--content col-md-6">
+            <div class="service__content">
+              <p>
+                Наши тимбилдинги – это новый формат активного отдыха. Авторские программы, новые идеи, проработанный сценарий персонально под
+                компанию. Мы понимаем нашу ответственность и стараемся превзойти ожидание. В команде профессиональные коучеры, тренеры, хореографы,
+                фитнес инструктора и все те, кто раскроет новые грани ваших коллег. Стоит один раз рискнуть, чтобы ощутить на себе настоящий
+                тимбилдинг.
+              </p>
+              <ul class="list-unstyled list-dashed">
+                <li>Спортивный тимбилдинг</li>
+                <li>тематический квест</li>
+                <li>выездной тимбилдинг</li>
+                <li>Творческий тимбилдинг</li>
+                <li>Научный тимбилдинг</li>
+              </ul>
+              <a href="portfolio.html#projects-teambuilding" class="btn btn--outline-primary-alt">Смотреть проекты</a>
+            </div>
+          </div>
+          <div class="service__col service__col--img col-md-6">
+            <div class="service__img-wrap">
+              <picture>
+                <source srcset="images/teambuilding.jpg" media="(min-width: 576px)" />
+                <img src="images/teambuilding-mob.jpg" alt="alt" class="service__img img-responsive rounded" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-service">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">Мероприятия</div>
+        <h2 class="section-header__title section-title">деловые</h2>
+      </div>
+      <div class="service">
+        <div class="service__row row gy-4">
+          <div class="service__col service__col--content col-md-6">
+            <div class="service__content">
+              <p>
+                Одни из главных целей деловых мероприятий это разработка стратегических целей бизнеса, обмен профессиональным опытом и знаниями,
+                создание и развитие операционных процессов. Беря в расчет всю ответственность и уровень данных мероприятий, мы создаем все
+                необходимые условия для данных бизнес встреч. Профессиональное проведение подобных событий повышает уровень предприятия и
+                демонстрирует рынку его конкурентоспособность.
+              </p>
+              <ul class="list-unstyled list-dashed">
+                <li>Конференции</li>
+                <li>Форумы</li>
+                <li>Деловые ужины</li>
+                <li>Семинары</li>
+                <li>Деловые игры</li>
+              </ul>
+              <a href="portfolio.html#projects-business" class="btn btn--outline-primary">Смотреть проекты</a>
+            </div>
+          </div>
+          <div class="service__col service__col--img col-md-6">
+            <div class="service__img-wrap">
+              <picture>
+                <source srcset="images/business.jpg" media="(min-width: 576px)" />
+                <img src="images/business-mob.jpg" alt="alt" class="service__img img-responsive rounded" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-service bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">Мероприятия</div>
+        <h2 class="section-header__title section-title">Маркетинговые</h2>
+      </div>
+      <div class="service">
+        <div class="service__row row gy-4">
+          <div class="service__col service__col--content col-md-6">
+            <div class="service__content">
+              <p>
+                Маркетинговые мероприятия проводятся, в первую очередь, для клиентов и партнеров компании. Данный формат несет гораздо больше
+                стратегической ценности, чем принято об этом думать. Мы имеем более десяти различных решений, каждое из которых легко адаптируется
+                под цель компании. Выбор проводимого сценария напрямую зависит от поставленных задач, продукта и целевой аудитории.
+              </p>
+              <ul class="list-unstyled list-dashed">
+                <li>Открытия центров</li>
+                <li>Презентации</li>
+                <li>Промо-тур</li>
+                <li>Выставки</li>
+                <li>Городские мероприятия</li>
+              </ul>
+              <a href="portfolio.html#projects-marketing" class="btn btn--outline-primary-alt">Смотреть проекты</a>
+            </div>
+          </div>
+          <div class="service__col service__col--img col-md-6">
+            <div class="service__img-wrap">
+              <picture>
+                <source srcset="images/marketing.jpg" media="(min-width: 576px)" />
+                <img src="images/marketing-mob.jpg" alt="alt" class="service__img img-responsive rounded" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="footer bg-dark" id="contacts">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__bg-title bg-title">связь</div>
+        <h2 class="section-header__title section-title">контакты</h2>
+      </div>
+      <div class="footer__tabs-wrap" data-tabs>
+        <div class="footer__tabs row gx-0">
+          <div class="footer__tabs-col col-6">
+            <button type="button" class="footer__tab btn btn--outline-primary-alt is-active" data-tabs-btn>Астана</button>
+          </div>
+          <div class="footer__tabs-col col-6">
+            <button type="button" class="footer__tab btn btn--outline-primary-alt" data-tabs-btn>Алматы</button>
+          </div>
+        </div>
+        <div class="footer__tab-contents">
+          <div class="footer__tab-content is-active" data-tabs-item>
+            <div class="footer__row row gy-4">
+              <div class="footer__col col-md-6">
+                <div class="map">
+                  <img src="images/map.png" alt="alt" class="img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="footer__col col-md-6">
+                <div class="footer__info">
+                  <img src="images/logo.png" alt="alt" class="footer__logo img-responsive" />
+                  <div class="footer__contacts">
+                    <div class="footer__contact contact-footer contact-footer--big"><a href="tel:87470942817">8 (747) 094 28 17</a></div>
+                    <div class="footer__contact contact-footer"><a href="mailto:contrastkz@mail.ru">contrastkz@mail.ru</a></div>
+                    <div class="footer__contact contact-footer">г. Нур-Султан (Астана), ул. Арай, 29/3, 6 эт.</div>
+                  </div>
+                  <div class="footer__btns">
+                    <a href="#" class="footer__btn btn btn--outline-white">Мы в Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__tab-content" data-tabs-item>
+            <div class="footer__row row gy-4">
+              <div class="footer__col col-md-6">
+                <div class="map">
+                  <img src="images/map.png" alt="alt" class="img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="footer__col col-md-6">
+                <div class="footer__info">
+                  <img src="images/logo.png" alt="alt" class="footer__logo img-responsive" />
+                  <div class="footer__contacts">
+                    <div class="footer__contact contact-footer contact-footer--big"><a href="tel:87470942817">8 (747) 094 28 17</a></div>
+                    <div class="footer__contact contact-footer"><a href="mailto:contrastkz@mail.ru">contrastkz@mail.ru</a></div>
+                    <div class="footer__contact contact-footer">г. Алматы, ул. Арай, 29/3, 6 эт.</div>
+                  </div>
+                  <div class="footer__btns">
+                    <a href="#" class="footer__btn btn btn--outline-white">Мы в Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="about-more" class="modal">
+    <a href="#" class="modal__close close gtrigger-close inline-close-btn">
+      <svg class="close__icon" role="img">
+        <use href="images/icons/sprite.svg#close" />
+      </svg>
+    </a>
+    <div class="modal__img-wrap">
+      <picture>
+        <source srcset="images/modal.jpg" media="(min-width: 576px)" />
+        <img src="images/modal-mob.jpg" alt="alt" class="modal__img img-responsive" loading="lazy" />
+      </picture>
+    </div>
+    <div class="modal__content">
+      <p>
+        Дополнительные советы Дополнительные советыДополнительные советы<br />
+        * Используйте яркие и запоминающиеся изображения в своей рекламе.<br />
+        * Укажите примеры прошлых работ и положительные отзывы клиентов.<br />
+        * Создайте сайт или страницу в социальных сетях.<br />
+        * Предложите скидки или бонусы для привлечения новых клиентов.<br />
+        Помните:ваше агентство по созданию праздников - это ваш шанс сделать любое событие незабываемым!
+      </p>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
