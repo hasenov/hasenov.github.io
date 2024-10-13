@@ -1,0 +1,752 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>3D-художник по персонажам</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#1b1b1b" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <nav class="header__menu menu">
+        <div class="menu__header">
+          <button class="menu__close" type="button">
+            <img src="images/icons/close.svg" alt="alt" class="img-responsive" />
+          </button>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="#about">О курсе</a></li>
+          <li><a href="#for-who">Для кого</a></li>
+          <li><a href="#curator">Преподаватель</a></li>
+          <li><a href="#program">Программа</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header__btn btn btn--outline-primary">Записаться</a>
+      <button class="header__hamburger" type="button">
+        <img src="images/icons/burger.svg" alt="alt" class="img-responsive" />
+      </button>
+    </div>
+  </header>
+
+
+  <section class="section-showcase">
+    <div class="container">
+      <div class="showcase showcase--3d">
+        <div class="showcase__row row">
+          <div class="showcase__col col-lg-7">
+            <div class="showcase__content">
+              <div class="showcase__badges">
+                <div class="showcase__badge badge badge--outline-white">Профессия</div>
+              </div>
+              <h1 class="showcase__title">
+                3D-художник<br />
+                по персонажам
+              </h1>
+              <div class="showcase__text-wrap">
+                <p>
+                  Курс, где ты с нуля получишь навыки востребованного 3D-художника для перспективной работы в Gamedev, кинематографе или анимации
+                  с высокой оплатой труда.
+                </p>
+              </div>
+              <div class="showcase__btn-wrap">
+                <a href="#" class="showcase__btn btn btn--primary">Записаться</a>
+                <a href="https://www.youtube.com/watch?v=3YTohytF9oE&ab_channel=PRIMALEARTH" class="showcase__play-text showcase__play-text--pc play-text glightbox" data-gallery="trailer">
+                  <img src="images/icons/play-circle.svg" alt="alt" class="play-text__img img-responsive" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__col col-lg-5">
+            <div class="showcase__character">
+              <img src="images/character.png" alt="alt" class="showcase__character-img img-responsive" />
+              <a href="https://www.youtube.com/watch?v=3YTohytF9oE&ab_channel=PRIMALEARTH" class="showcase__play-text showcase__play-text--mob play-text glightbox" data-gallery="trailer-mob">
+                <img src="images/icons/play-circle.svg" alt="alt" class="play-text__img img-responsive" />
+              </a>
+            </div>
+            <a href="#" class="showcase__btn showcase__btn--mob btn btn--primary">Записаться</a>
+          </div>
+        </div>
+        <img src="images/bg-character.png" alt="alt" class="showcase__bg" />
+      </div>
+    </div>
+  </section>
+
+  <div class="logos">
+    <div class="container">
+      <div class="logos__row row">
+        <div class="logos__col logos__col--20 col-md-3 col-sm-4 col-6">
+          <div class="logos__item item-logos">
+            <img src="images/blender.svg" alt="alt" class="item-logos__img img-responsive" loading="lazy" />
+          </div>
+        </div>
+        <div class="logos__col logos__col--20 col-md-3 col-sm-4 col-6">
+          <div class="logos__item item-logos">
+            <img src="images/zbrush.svg" alt="alt" class="item-logos__img img-responsive" loading="lazy" />
+          </div>
+        </div>
+        <div class="logos__col logos__col--20 col-md-3 col-sm-4 col-6">
+          <div class="logos__item item-logos">
+            <img src="images/substance.svg" alt="alt" class="item-logos__img img-responsive" loading="lazy" />
+          </div>
+        </div>
+        <div class="logos__col logos__col--20 col-md-3 col-sm-4 col-6">
+          <div class="logos__item item-logos">
+            <img src="images/m.svg" alt="alt" class="item-logos__img img-responsive" loading="lazy" />
+          </div>
+        </div>
+        <div class="logos__col logos__col--20 col-md-3 col-sm-4 col-6">
+          <div class="logos__item item-logos">
+            <img src="images/marmoset.svg" alt="alt" class="item-logos__img img-responsive" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-about spacing" id="about">
+    <div class="container">
+      <div class="about about--character">
+        <div class="about__row row">
+          <div class="about__col about__col--video col-lg-4 col-12">
+            <div class="about__video-wrap">
+              <a href="https://www.youtube.com/watch?v=3YTohytF9oE&ab_channel=PRIMALEARTH" class="about__video video glightbox" data-gallery="video">
+                <img src="images/cover-character.jpg" alt="alt" class="video__cover img-responsive" loading="lazy" />
+                <div class="video__play play">
+                  <svg role="img" class="play__icon">
+                    <use href="images/icons/sprite.svg#play" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="about__col about__col--content col-lg-8 col-12">
+            <div class="about__content">
+              <h2 class="about__title">О курсе</h2>
+              <div class="about__text-wrap">
+                <p>
+                  Получите уникальный опыт работы с самым мощным инструментом для создания трехмерных персонажей,<br />
+                  а также научитесь основам моделирования, текстурирования и рендеринга.
+                </p>
+              </div>
+              <div class="about__stats stats stats--primary">
+                <div class="stats__row row">
+                  <div class="stats__col col-md-4 col-6">
+                    <div class="stats__item item-stats">
+                      <svg role="img" class="item-stats__icon">
+                        <use href="images/icons/sprite.svg#videos" />
+                      </svg>
+                      <div class="item-stats__value">96</div>
+                      <div class="item-stats__text">уроков по 30 минут</div>
+                    </div>
+                  </div>
+                  <div class="stats__col col-md-4 col-6">
+                    <div class="stats__item item-stats">
+                      <svg role="img" class="item-stats__icon">
+                        <use href="images/icons/sprite.svg#conversation" />
+                      </svg>
+                      <div class="item-stats__value">6</div>
+                      <div class="item-stats__text">месяцев наставничества</div>
+                    </div>
+                  </div>
+                  <div class="stats__col col-md-4 col-12">
+                    <div class="stats__item item-stats">
+                      <svg role="img" class="item-stats__icon">
+                        <use href="images/icons/sprite.svg#picture" />
+                      </svg>
+                      <div class="item-stats__value">2</div>
+                      <div class="item-stats__text">работы в портфолио</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-for-who spacing" id="for-who">
+    <div class="container">
+      <h2 class="section-title">Для кого</h2>
+      <div class="for-who">
+        <div class="for-who__row row">
+          <div class="for-who__col col-lg-6">
+            <div class="for-who__card card-for-who card-for-who--main">
+              <div class="card-for-who__content">
+                <svg role="img" class="card-for-who__icon">
+                  <use href="images/icons/sprite.svg#ladder" />
+                </svg>
+                <h4 class="card-for-who__title">Новички</h4>
+                <div class="card-for-who__text-wrap">
+                  <p>Для начинающих художников, которые хотят изучить создание 3D-персонажей и освоить инструменты программы ZBrush.</p>
+                </div>
+              </div>
+              <img src="images/character-2.png" alt="alt" class="card-for-who__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="for-who__col col-xl-3 col-lg-6">
+            <div class="for-who__card card-for-who">
+              <div class="card-for-who__content">
+                <svg role="img" class="card-for-who__icon">
+                  <use href="images/icons/sprite.svg#paint" />
+                </svg>
+                <h4 class="card-for-who__title">Опытные художники</h4>
+                <div class="card-for-who__text-wrap">
+                  <p>Для опытных художников, которые хотят улучшить свои навыки в создании персонажей и освоить новые инструменты.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="for-who__col col-xl-3 col-lg-6">
+            <div class="for-who__card card-for-who">
+              <div class="card-for-who__content">
+                <svg role="img" class="card-for-who__icon">
+                  <use href="images/icons/sprite.svg#easel" />
+                </svg>
+                <h4 class="card-for-who__title">Хобби</h4>
+                <div class="card-for-who__text-wrap">
+                  <p>
+                    Для людей, которые хотят пройти курс в качестве хобби и научиться создавать своих собственных персонажей для удовольствия.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-program spacing" id="program">
+    <div class="container">
+      <h2 class="section-title">Программа курса</h2>
+      <div class="program program--primary">
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-1.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 1: Основы в Zbrush</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>
+                При изучении программы, ты познакомишься с ее интерфейсом и горячими клавишами. Также узнаешь о различных кистях и их применении,
+                научишься работать с референсами.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-2.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 2: Скульптинг</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>Вы освоите базовые пропорций тела и лица, что поможет вам в создании персонажей</p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-3.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 3: Моделирование оружия</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>Вы изучите основы твердотельного моделирования и научитесь работать с инструментами Blender для создания моделей оружия.</p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-4.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 4: Ретопология</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>
+                При изучении ретопологии ты познакомишься с процессом подготовки модели для использования в игре. Научишься создавать игровую сетку
+                и оптимизировать количество полигонов в Maya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-5.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 5: UV-Baking</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>
+                В ходе работы тебе потребуется перенести объемные фигуры на плоскость для последующего наложения на них текстур. Кроме того, тебе
+                необходимо будет выполнить процедуру запекания, чтобы перенести детализацию из скульпта персонажа на низкополигональную модель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-6.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 6: Текстурирование</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>
+                Вы научитесь создавать текстуры, которые соответствуют заданному стилю персонажа. Вы узнаете о различных методах создания текстур и
+                материалов, которые помогут вам достичь желаемого эффекта.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-7.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 7: Позинг</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>
+                Вы узнаете о различных инструментах и методах, используемых в Maya для создания поз. Кроме того, вы изучите процесс риггинга,
+                который позволит вам управлять пластикой персонажа и менять его позы с помощью контроллеров
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="program__item item-program">
+          <div class="item-program__img-col">
+            <div class="item-program__img-wrap">
+              <img src="images/program-8.jpg" alt="alt" class="item-program__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="item-program__content">
+            <div class="item-program__header">
+              <h3 class="item-program__title">МОДУЛЬ 8: Презентация</h3>
+              <div class="item-program__count h3">10 уроков</div>
+            </div>
+            <div class="item-program__text-wrap">
+              <p>
+                Вы научитесь использовать различные методы рендеринга и инструменты, такие как освещение, материалы, тени и постобработка. Вы
+                сможете настроить желаемую сцену, передавая ее настроение, чтобы ваш персонаж выглядел максимально привлекательным.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-curator spacing" id="curator">
+    <div class="container">
+      <h2 class="section-title">Куратор курса</h2>
+      <div class="curator curator--primary">
+        <div class="curator__row row">
+          <div class="curator__col col-lg-4">
+            <div class="curator__img-wrap">
+              <img src="images/curator.png" alt="alt" class="curator__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="curator__col col-lg-8">
+            <div class="curator__card">
+              <h3 class="curator__info">
+                Виталий Волокитин<br />
+                <span>3D-Artist</span>
+              </h3>
+              <p class="curator__mobile-text">
+                Получите уникальный опыт работы с самым мощным инструментом для создания трехмерных персонажей, а также научитесь основам
+                моделирования, текстурирования и рендеринга.
+              </p>
+              <div class="curator__portfolio portfolio-curator">
+                <div class="portfolio-curator__title">Посмотреть портфолио:</div>
+                <a href="#" class="portfolio-curator__link">
+                  <img src="images/art-station.svg" alt="alt" class="portfolio-curator__logo img-responsive" loading="lazy" />
+                </a>
+              </div>
+              <div class="curator__benefits benefits-curator benefits-curator--primary">
+                <div class="benefits-curator__row row">
+                  <div class="benefits-curator__col col-xl-4 col-6">
+                    <div class="benefits-curator__item item-benefits-curator">
+                      <svg role="img" class="item-benefits-curator__icon">
+                        <use href="images/icons/sprite.svg#palette" />
+                      </svg>
+                      <div class="item-benefits-curator__text-wrap">
+                        <p>Художник по персонажам</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="benefits-curator__col col-xl-4 col-6">
+                    <div class="benefits-curator__item item-benefits-curator">
+                      <svg role="img" class="item-benefits-curator__icon">
+                        <use href="images/icons/sprite.svg#gamepad" />
+                      </svg>
+                      <div class="item-benefits-curator__text-wrap">
+                        <p>В игровой индустрии более 7 лет</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="benefits-curator__col col-xl-4 col-12">
+                    <div class="benefits-curator__item item-benefits-curator">
+                      <svg role="img" class="item-benefits-curator__icon">
+                        <use href="images/icons/sprite.svg#group" />
+                      </svg>
+                      <div class="item-benefits-curator__text-wrap">
+                        <p>
+                          Работал в кампаниях:<br />
+                          Wargaming, 101xp, MyGames
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="curator__col col-12">
+            <div class="curator__slider slider-projects slider splide" aria-label="Проекты куратора">
+              <div class="slider-projects__track slider__track splide__track">
+                <div class="slider-projects__list slider__list splide__list">
+                  <div class="slider-projects__slide slider__slide splide__slide">
+                    <a href="images/slider-1.jpg" class="item-slider-project glightbox" data-gallery="slider-1">
+                      <img src="images/slider-1.jpg" alt="alt" class="item-slider-project__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-projects__slide slider__slide splide__slide">
+                    <a href="images/slider-2.jpg" class="item-slider-project glightbox" data-gallery="slider-1">
+                      <img src="images/slider-2.jpg" alt="alt" class="item-slider-project__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-projects__slide slider__slide splide__slide">
+                    <a href="images/slider-3.jpg" class="item-slider-project glightbox" data-gallery="slider-1">
+                      <img src="images/slider-3.jpg" alt="alt" class="item-slider-project__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-projects__slide slider__slide splide__slide">
+                    <a href="images/slider-4.jpg" class="item-slider-project glightbox" data-gallery="slider-1">
+                      <img src="images/slider-4.jpg" alt="alt" class="item-slider-project__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-process spacing">
+    <div class="container">
+      <h2 class="section-title">Процесс обучения</h2>
+      <div class="process">
+        <div class="process__row row">
+          <div class="process__col col-xl-4 col-md-6">
+            <div class="process__card card-process">
+              <div class="card-process__header">
+                <h3 class="card-process__title">Видео уроки</h3>
+                <div class="card-process__number h2">01</div>
+              </div>
+              <div class="card-process__content">
+                <p>
+                  Курс представляет собой комплекс из видеоуроков, где опытные инструкторы детально объясняют каждый этап создания 3D-персонажа.
+                  Уроки доступны 24/7 и могут быть просмотрены в любое время и в любом месте.
+                </p>
+              </div>
+              <picture>
+                <source srcset="images/process-1.png" media="(min-width: 768px)" />
+                <img src="images/process-1-mob.png" alt="alt" class="card-process__img img-responsive" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+          <div class="process__col col-xl-4 col-md-6">
+            <div class="process__card card-process card-process--2">
+              <div class="card-process__header">
+                <h3 class="card-process__title">Практические упражнения</h3>
+                <div class="card-process__number h2">02</div>
+              </div>
+              <div class="card-process__content">
+                <p>
+                  Каждый блок уроков сопровождается практическими упражнениями, которые позволяют вам практиковать свои навыки и закрепить
+                  полученные знания на практике.
+                </p>
+              </div>
+              <picture>
+                <source srcset="images/process-2.png" media="(min-width: 768px)" />
+                <img src="images/process-2-mob.png" alt="alt" class="card-process__img img-responsive" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+          <div class="process__col col-xl-4 col-md-6">
+            <div class="process__card card-process">
+              <div class="card-process__header">
+                <h3 class="card-process__title">Проекты</h3>
+                <div class="card-process__number h2">03</div>
+              </div>
+              <div class="card-process__content">
+                <p>
+                  Курс включает в себя проектные работы, где вы должны создать своего собственного персонажа в Zbrush, начиная с концептуального
+                  дизайна и заканчивая окончательным рендером
+                </p>
+              </div>
+              <picture>
+                <source srcset="images/process-3.png" media="(min-width: 768px)" />
+                <img src="images/process-3-mob.png" alt="alt" class="card-process__img img-responsive" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+          <div class="process__col col-md-6">
+            <div class="process__card card-process card-process--4">
+              <div class="card-process__header">
+                <h3 class="card-process__title">Наставничество</h3>
+                <div class="card-process__number h2">04</div>
+              </div>
+              <div class="card-process__content">
+                <p>
+                  В течение всего обучения вы получаете комментарии и обратную связь от преподавателя, чтобы улучшить свои навыки и повысить
+                  качество своих работ.
+                </p>
+              </div>
+              <picture>
+                <source srcset="images/process-4.png" media="(min-width: 768px)" />
+                <img src="images/process-4-mob.png" alt="alt" class="card-process__img img-responsive" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+          <div class="process__col col-md-6">
+            <div class="process__card card-process card-process--5">
+              <div class="card-process__header">
+                <h3 class="card-process__title">Сертификат</h3>
+                <div class="card-process__number h2">05</div>
+              </div>
+              <div class="card-process__content">
+                <p>
+                  По завершении обучения вы получаете сертификат о прохождении курса, который подтверждает ваши навыки и знания в области
+                  художественного моделирования в Zbrush.
+                </p>
+              </div>
+              <picture>
+                <source srcset="images/process-5.png" media="(min-width: 768px)" />
+                <img src="images/process-5-mob.png" alt="alt" class="card-process__img img-responsive" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pricing spacing">
+    <div class="container">
+      <div class="pricing">
+        <div class="pricing__row row">
+          <div class="pricing__col col-lg-6">
+            <div class="pricing__card card-pricing card-pricing--primary card-pricing--outline">
+              <h2 class="card-pricing__title">Подписка <span>PRO</span></h2>
+              <div class="card-pricing__subtitle h4">Оформи подписку и плати частями на пути всего обучения</div>
+              <ul class="card-pricing__list list-unstyled list-checks list-checks--primary">
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Поэтапный доступ к обучению
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Чат с однокурсниками
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Техподдержка от кураторов
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Сертификат по окончанию
+                </li>
+              </ul>
+              <div class="card-pricing__footer">
+                <div class="card-pricing__prices">
+                  <div class="card-pricing__prices-value h2">3 500 ₽</div>
+                </div>
+                <a href="#" class="card-pricing__btn btn btn--outline-primary-alt">Присоединиться</a>
+              </div>
+            </div>
+          </div>
+          <div class="pricing__col col-lg-6">
+            <div class="pricing__card card-pricing card-pricing--primary card-pricing--filled">
+              <h2 class="card-pricing__title">Покупка курса</h2>
+              <div class="card-pricing__subtitle h4">Оплати курс сразу с выгодой 20%</div>
+              <ul class="card-pricing__list list-unstyled list-checks list-checks--primary">
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Доступ к урокам навсегда
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Vip-чат с преподавателем
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Техподдержка от кураторов
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Личный проект в портфолио
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  1 год на проверку домашнего задания
+                </li>
+                <li>
+                  <svg role="img" class="list-checks__icon">
+                    <use href="images/icons/sprite.svg#check" />
+                  </svg>
+                  Сертификат по окончанию
+                </li>
+              </ul>
+              <div class="card-pricing__footer">
+                <div class="card-pricing__prices">
+                  <div class="card-pricing__prices-title">Выгода 20%</div>
+                  <div class="card-pricing__prices-value h2">22 000 ₽</div>
+                </div>
+                <a href="#" class="card-pricing__btn btn btn--primary">Купить курс</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-callback spacing">
+    <div class="container">
+      <div class="callback">
+        <div class="callback__row row">
+          <div class="callback__col col-md-6">
+            <div class="callback__characters">
+              <picture>
+                <source srcset="images/callback-1.png" media="(min-width: 992px)" />
+                <img src="images/callback-1-mob.png" alt="alt" class="callback__characters-img img-responsive" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+          <div class="callback__col col-lg-5 col-md-6 offset-lg-1">
+            <div class="callback__content">
+              <h2 class="callback__title">Остались вопросы?</h2>
+              <div class="callback__text-wrap">
+                <p>Напиши нам в телеграм или в онлайн чат и мы с радостью ответим на все ваши вопросы.</p>
+              </div>
+              <a href="#" class="callback__btn btn btn--primary btn--icon-left">
+                <svg role="img" class="btn__icon">
+                  <use href="images/icons/sprite.svg#telegram" />
+                </svg>
+                Написать в Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="footer spacing-top">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__row row">
+          <div class="footer__col col-lg-4">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.svg" alt="alt" class="img-responsive" />
+            </a>
+          </div>
+          <div class="footer__col col-xl-4 col-lg-5 col-sm-7">
+            <nav class="footer__menu menu-footer">
+              <ul class="list-unstyled">
+                <li><a href="#about">О курсе</a></li>
+                <li><a href="#for-who">Для кого</a></li>
+                <li><a href="#curator">Преподаватель</a></li>
+                <li><a href="#program">Программа</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__col footer__col--btn col-xl-4 col-lg-3 col-sm-5">
+            <a href="#" class="footer__btn btn btn--outline-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">©2024, First Flight School</p>
+        <ul class="footer__links list-unstyled">
+          <li><a href="#">Обработка персональных данных</a></li>
+          <li><a href="#">Оферта</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
