@@ -1,0 +1,1061 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#3656e9" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.png" alt="alt" class="img-responsive" />
+        </a>
+        <nav class="header__menu menu">
+          <ul class="list-unstyled">
+            <li class="is-active"><a href="index.html">Главная</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">ProBono</a></li>
+            <li><a href="#">Франшиза</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__lang lang">
+          <a href="#" class="lang__inner">
+            <img src="images/icons/uk.svg" alt="alt" class="lang__flag img-responsive" />
+          </a>
+        </div>
+        <div class="header__socials-wrap">
+          <div class="header__socials">
+            <a href="tel:+79630385054" class="header__social social">
+              <img src="images/icons/phone.svg" alt="alt" class="social__icon img-responsive" />
+            </a>
+            <a href="#" class="header__social social">
+              <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive" />
+            </a>
+            <a href="#" class="header__social social">
+              <img src="images/icons/mail.svg" alt="alt" class="social__icon img-responsive" />
+            </a>
+          </div>
+        </div>
+        <a href="#" class="header__btn btn btn--primary btn--icon-right">
+          Есть вопрос?
+          <img src="images/icons/chat.svg" alt="alt" class="btn__icon img-responsive" />
+        </a>
+        <button class="header__hamburger" type="button">
+          <img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-header">
+    <button class="mobile-header__close" type="button">
+      <img src="images/icons/close.svg" alt="alt" class="mobile-header__close-icon img-responsive" />
+    </button>
+  </div>
+
+
+  <section class="section-hero">
+    <div class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Комплексно<br />
+              продвигаем бизнес<br />
+              в Интернете с 2014 г.
+            </h1>
+            <div class="hero__row row">
+              <div class="hero__col hero__col--benefits col-12">
+                <div class="hero__benefits benefits-hero row">
+                  <div class="benefits-hero__col col-lg-4 col-md-6">
+                    <div class="benefits-hero__card card-benefits card-benefits--services">
+                      <div class="card-benefits__title">Услуги</div>
+                      <div class="card-benefits__text-wrap">
+                        <p>От консультаций до вывода на рынок</p>
+                      </div>
+                      <img src="images/icons/lightning.svg" alt="alt" class="card-benefits__icon img-responsive" />
+                    </div>
+                  </div>
+                  <div class="benefits-hero__col col-lg-4 col-md-6">
+                    <div class="benefits-hero__card card-benefits card-benefits--about">
+                      <div class="card-benefits__title">О компании</div>
+                      <div class="card-benefits__text-wrap">
+                        <p>Подробнее о <span>price-nt</span></p>
+                      </div>
+                      <img src="images/icons/crown.svg" alt="alt" class="card-benefits__icon img-responsive" />
+                    </div>
+                  </div>
+                  <div class="benefits-hero__col col-lg-4 col-md-6">
+                    <div class="benefits-hero__card card-benefits card-benefits--portfolio">
+                      <div class="card-benefits__title">Портфолио</div>
+                      <div class="card-benefits__text-wrap">
+                        <p>Более 850 проектов</p>
+                      </div>
+                      <img src="images/icons/case.svg" alt="alt" class="card-benefits__icon img-responsive" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__col hero__col--contacts col-12">
+                <div class="hero__contacts">
+                  <div class="hero__contact"><a href="mailto:info@price-nt.ru">info@price-nt.ru</a></div>
+                  <div class="hero__contact hero__contact--primary"><a href="tel:+79630385054">+7 (963) 038-50-54</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/triangle.svg" alt="alt" class="hero__decor hero__decor--triangle" />
+          <img src="images/nt.svg" alt="alt" class="hero__decor hero__decor--nt" />
+          <img src="images/dots.svg" alt="alt" class="hero__decor hero__decor--dots" />
+          <img src="images/rhombus.png" alt="alt" class="hero__decor hero__decor--rhombus" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-services">
+    <div class="container">
+      <h2 class="section-title h1">Наши Услуги</h2>
+      <div class="services" data-tabs>
+        <div class="services__row row">
+          <div class="services__col col-xl-6">
+            <div class="services__main-cards services-main-cards">
+              <div class="services-main-cards__row row">
+                <div class="services-main-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-main-cards__card card-service card-service--default" data-tabs-btn="service-1">
+                    <div class="card-service__title">Мобильные приложения</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-1.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-main-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-main-cards__card card-service card-service--default" data-tabs-btn="service-2">
+                    <div class="card-service__title">Mini-app в Telegram</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-2.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-main-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-main-cards__card card-service card-service--default is-active" data-tabs-btn="service-3">
+                    <div class="card-service__title">Веб-сервисы и онлайн-платформы</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-3.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-main-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-main-cards__card card-service card-service--default" data-tabs-btn="service-4">
+                    <div class="card-service__title">Интернет-магазины</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-4.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-main-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-main-cards__card card-service card-service--default card-service--bitrix" data-tabs-btn="service-5">
+                    <div class="card-service__title">Битрикс</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-5.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-main-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-main-cards__card card-service card-service--default" data-tabs-btn="service-6">
+                    <div class="card-service__title">Продвижение</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-6.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services__col services__col--infos col-xl-6">
+            <div class="services__infos">
+              <div class="services__info info-service" data-tabs-item="service-1">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-2">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service is-active" data-tabs-item="service-3">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-4">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-5">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-6">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-7">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-8">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-9">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+              <div class="services__info info-service" data-tabs-item="service-10">
+                <div class="info-service__content">
+                  <div class="info-service__title">Веб-сервисы и онлайн-платформы</div>
+                  <div class="info-service__text-wrap">
+                    <p>
+                      С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует
+                      повышению качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся структура организации
+                      является качественно новой ступенью позиций, занимаемых участниками в отношении поставленных задач. Безусловно,
+                      семантический разбор внешних противодействий требует от нас анализа кластеризации усилий.
+                    </p>
+                  </div>
+                  <a href="#" class="info-service__btn btn btn--primary btn--icon-right">
+                    Подробнее об услуге
+                    <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+                  </a>
+                  <button class="info-service__back btn btn--white btn--icon-right" type="button">
+                    Все услуги
+                    <img src="images/icons/menu.svg" alt="alt" class="btn__icon img-responsive" />
+                  </button>
+                </div>
+                <img src="images/dots.svg" alt="alt" class="info-service__decor info-service__decor--dots" />
+                <img src="images/triangle.svg" alt="alt" class="info-service__decor info-service__decor--triangle" />
+              </div>
+            </div>
+            <div class="services__alt-cards services-alt-cards">
+              <div class="services-alt-cards__row row">
+                <div class="services-alt-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-alt-cards__card card-service card-service--sm card-service--complex" data-tabs-btn="service-7">
+                    <div class="card-service__title">Комплексные решения</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-7.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-alt-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-alt-cards__card card-service card-service--sm card-service--blockchain" data-tabs-btn="service-8">
+                    <div class="card-service__title">Блокчейн, токенизация</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-8.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-alt-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-alt-cards__card card-service card-service--sm card-service--consult" data-tabs-btn="service-9">
+                    <div class="card-service__title">Консультации</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-9.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="services-alt-cards__col col-xl-6 col-md-4 col-6">
+                  <div class="services-alt-cards__card card-service card-service--sm card-service--register" data-tabs-btn="service-10">
+                    <div class="card-service__title">Регистрация прав</div>
+                    <div class="card-service__arrow-circle arrow-circle">
+                      <svg role="img" class="arrow-circle__icon">
+                        <use href="images/icons/sprite.svg#arrow-right" />
+                      </svg>
+                    </div>
+                    <div class="card-service__img-wrap">
+                      <img src="images/service-10.png" alt="alt" class="card-service__img img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-about">
+    <div class="container">
+      <div class="about">
+        <h2 class="about__title h1">О компании</h2>
+        <div class="about__text-wrap">
+          <p>
+            С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению качества
+            благоприятных перспектив. Не следует, однако
+          </p>
+        </div>
+        <div class="about__stats stats-about">
+          <div class="stats-about__row row gx-0">
+            <div class="stats-about__col col-lg-6">
+              <div class="stats-about__item item-stats-about">
+                <div class="item-stats-about__value">2014 <span>г.</span></div>
+                <div class="item-stats-about__text-wrap">
+                  <p>
+                    год основания нашей<br />
+                    компании
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="stats-about__col col-lg-6">
+              <div class="stats-about__item item-stats-about">
+                <div class="item-stats-about__value">850+</div>
+                <div class="item-stats-about__text-wrap">
+                  <p>
+                    проектов успешно<br />
+                    завершено
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="stats-about__col col-lg-6">
+              <div class="stats-about__item item-stats-about">
+                <div class="item-stats-about__value">14 <span>стран мира</span></div>
+                <div class="item-stats-about__text-wrap">
+                  <p>клиентский охват price-nt</p>
+                </div>
+              </div>
+            </div>
+            <div class="stats-about__col col-lg-6">
+              <div class="stats-about__item item-stats-about item-stats-about--horizontal">
+                <div class="item-stats-about__icon-wrap">
+                  <img src="images/icons/gov.svg" alt="alt" class="item-stats-about__icon img-responsive" loading="lazy" />
+                </div>
+                <div class="item-stats-about__title">
+                  Государственная<br />
+                  аккредитация <img src="images/icons/check.svg" alt="alt" class="item-stats-about__check" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source srcset="images/iphone.png" media="(min-width: 992px)" />
+          <img src="images/iphone-mob.png" alt="alt" class="about__img img-responsive" loading="lazy" />
+        </picture>
+      </div>
+      <div class="benefits">
+        <div class="benefits__row row">
+          <div class="benefits__col col-lg-3 col-md-4">
+            <div class="benefits__item item-benefits">
+              <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              <div class="item-benefits__text-wrap">
+                <p>Гарантия на работы по договору</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__col col-lg-3 col-md-4">
+            <div class="benefits__item item-benefits">
+              <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              <div class="item-benefits__text-wrap">
+                <p>Все проекты сдаются точно в срок</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__col col-lg-3 col-md-4">
+            <div class="benefits__item item-benefits">
+              <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              <div class="item-benefits__text-wrap">
+                <p>Собственный штат, без посредников или фрилансеров</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__col col-lg-3 col-md-4">
+            <div class="benefits__item item-benefits">
+              <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              <div class="item-benefits__text-wrap">
+                <p>Передаем права, доступы и обучаем клиентов</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__col col-lg-3 col-md-4">
+            <div class="benefits__item item-benefits">
+              <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+              <div class="item-benefits__text-wrap">
+                <p>Всегда доводим работу до конца</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-documents">
+    <div class="container">
+      <h2 class="section-title h1">Сертификаты и благодарности</h2>
+      <div class="documents" data-tabs>
+        <div class="documents__btns">
+          <button class="documents__btn" type="button" data-tabs-btn>Благодарности</button>
+          <button class="documents__btn is-active" type="button" data-tabs-btn>Сертификаты</button>
+        </div>
+        <div class="documents__tabs">
+          <div class="documents__tab" data-tabs-item>
+            <div class="slider-documents slider splide">
+              <div class="slider-documents__track slider__track splide__track">
+                <div class="slider-documents__list slider__list splide__list">
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="slider-documents__pagination slider__pagination splide__pagination"></ul>
+            </div>
+          </div>
+          <div class="documents__tab is-active" data-tabs-item>
+            <div class="slider-documents slider splide">
+              <div class="slider-documents__track slider__track splide__track">
+                <div class="slider-documents__list slider__list splide__list">
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="slider-documents__slide slider__slide splide__slide">
+                    <a href="images/cert-1.jpg" class="item-document glightbox">
+                      <img src="images/cert-1.jpg" alt="alt" class="item-document__img img-responsive" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <ul class="slider-documents__pagination slider__pagination splide__pagination"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-portfolio">
+    <div class="container">
+      <h2 class="section-title h1">Портфолио</h2>
+    </div>
+    <div class="portfolio">
+      <div class="portfolio__row row gx-0">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+          <div class="portfolio__card card-portfolio card-portfolio--big">
+            <img src="images/portfolio-3.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                  качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-4.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+          <div class="portfolio__card card-portfolio card-portfolio--big">
+            <img src="images/portfolio-3.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                  качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+          <div class="portfolio__card card-portfolio card-portfolio--big">
+            <img src="images/portfolio-5.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                  качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+          <div class="portfolio__card card-portfolio card-portfolio--big">
+            <img src="images/portfolio-6.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                  качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+          <div class="portfolio__card card-portfolio">
+            <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+          <div class="portfolio__card card-portfolio card-portfolio--big">
+            <img src="images/portfolio-3.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
+            <div class="card-portfolio__content">
+              <div class="card-portfolio__title">Сайт “Название проекта”</div>
+              <div class="card-portfolio__text-wrap">
+                <p>
+                  С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+                  качества благоприятных перспектив. Не следует, однако, забывать, что сложившаяся
+                </p>
+              </div>
+              <a href="#" class="card-portfolio__btn btn btn--primary btn--icon-right">
+                Подробнее
+                <img src="images/icons/arrow-right.svg" alt="alt" class="btn__icon img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__more-wrap">
+        <div class="portfolio__more">
+          <button class="portfolio__more-btn" type="button">Загрузить больше</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="footer footer--big">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content content-footer">
+          <div class="content-footer__title">Обсудим детали вашего проекта?</div>
+          <div class="content-footer__phone"><a href="tel:+79630385054">+7 (963) 038-50-54</a></div>
+          <div class="content-footer__contact"><a href="mailto:info@price-nt.ru">info@price-nt.ru</a></div>
+        </div>
+        <div class="footer__panel">
+          <div class="footer__top">
+            <a href="index.html" class="footer__logo">
+              <img src="images/logo.png" alt="alt" class="img-responsive" />
+            </a>
+            <nav class="footer__menu menu">
+              <ul class="list-unstyled">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Карьера</a></li>
+                <li><a href="#">ProBono</a></li>
+                <li><a href="#">Франшиза</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer__lang lang">
+              <a href="#" class="lang__inner">
+                <img src="images/icons/uk.svg" alt="alt" class="lang__flag img-responsive" />
+              </a>
+            </div>
+            <div class="footer__socials-wrap">
+              <div class="footer__socials">
+                <a href="tel:+79630385054" class="footer__social social">
+                  <img src="images/icons/phone.svg" alt="alt" class="social__icon img-responsive" />
+                </a>
+                <a href="#" class="footer__social social">
+                  <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive" />
+                </a>
+                <a href="mailto:info@price-nt.ru" class="footer__social social">
+                  <img src="images/icons/mail.svg" alt="alt" class="social__icon img-responsive" />
+                </a>
+              </div>
+            </div>
+            <a href="#" class="footer__btn btn btn--primary btn--icon-right">Остались вопросы?</a>
+          </div>
+          <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__row row">
+              <div class="bottom-footer__col col-xl-4 col-12">
+                <p class="bottom-footer__copyright">
+                  © 2014 - 2024 ООО «ПЛЮС ГРУПП»<br />
+                  ИНН 6623141593<br />
+                  ОГРН 1226600067396
+                </p>
+              </div>
+              <div class="bottom-footer__col col-xl-4 col-12">
+                <p class="bottom-footer__info">Информация на сайте не является публичной офертой</p>
+              </div>
+              <div class="bottom-footer__col bottom-footer__col--links col-xl-4 col-12">
+                <ul class="bottom-footer__links list-unstyled">
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+                <button class="bottom-footer__to-top to-top" type="button">
+                  <svg role="img" class="to-top__icon">
+                    <use href="images/icons/sprite.svg#arrow-up" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/triangle.svg" alt="alt" class="footer__decor footer__decor--triangle" loading="lazy" />
+        <img src="images/speakers.png" alt="alt" class="footer__decor footer__decor--speakers" loading="lazy" />
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top to-top--main" type="button">
+    <svg role="img" class="to-top__icon">
+      <use href="images/icons/sprite.svg#arrow-up" />
+    </svg>
+  </button>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
