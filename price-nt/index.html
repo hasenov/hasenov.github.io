@@ -40,7 +40,7 @@
             <a href="tel:+79630385054" class="header__social social">
               <img src="images/icons/phone.svg" alt="alt" class="social__icon img-responsive" />
             </a>
-            <a href="#" class="header__social social">
+            <a href="#" class="header__social header__social--tg social">
               <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive" />
             </a>
             <a href="#" class="header__social social">
@@ -48,10 +48,10 @@
             </a>
           </div>
         </div>
-        <a href="#" class="header__btn btn btn--primary btn--icon-right">
+        <button class="header__btn btn btn--primary btn--icon-right" type="button" data-micromodal-trigger="modal-callback">
           Есть вопрос?
           <img src="images/icons/chat.svg" alt="alt" class="btn__icon img-responsive" />
-        </a>
+        </button>
         <button class="header__hamburger" type="button">
           <img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
         </button>
@@ -61,8 +61,11 @@
 
   <div class="mobile-header">
     <button class="mobile-header__close" type="button">
-      <img src="images/icons/close.svg" alt="alt" class="mobile-header__close-icon img-responsive" />
+      <svg role="img" class="mobile-header__close-icon">
+        <use href="images/icons/sprite.svg#close"></use>
+      </svg>
     </button>
+    <div class="mobile-header__content"></div>
   </div>
 
 
@@ -72,14 +75,14 @@
         <div class="hero__inner">
           <div class="hero__content">
             <h1 class="hero__title">
-              Комплексно<br />
-              продвигаем бизнес<br />
-              в Интернете с 2014 г.
+              <span><span class="animate-text-up">Комплексно</span></span>
+              <span><span class="animate-text-up">продвигаем бизнес</span></span>
+              <span><span class="animate-text-up">в Интернете с 2014 г.</span></span>
             </h1>
             <div class="hero__row row">
               <div class="hero__col hero__col--benefits col-12">
                 <div class="hero__benefits benefits-hero row">
-                  <div class="benefits-hero__col col-lg-4 col-md-6">
+                  <div class="benefits-hero__col col-lg-4 col-md-6" data-aos="fade" data-aos-delay="1100" data-aos-duration="1000">
                     <div class="benefits-hero__card card-benefits card-benefits--services">
                       <div class="card-benefits__title">Услуги</div>
                       <div class="card-benefits__text-wrap">
@@ -88,7 +91,7 @@
                       <img src="images/icons/lightning.svg" alt="alt" class="card-benefits__icon img-responsive" />
                     </div>
                   </div>
-                  <div class="benefits-hero__col col-lg-4 col-md-6">
+                  <div class="benefits-hero__col col-lg-4 col-md-6" data-aos="fade" data-aos-delay="1200" data-aos-duration="1000">
                     <div class="benefits-hero__card card-benefits card-benefits--about">
                       <div class="card-benefits__title">О компании</div>
                       <div class="card-benefits__text-wrap">
@@ -97,7 +100,7 @@
                       <img src="images/icons/crown.svg" alt="alt" class="card-benefits__icon img-responsive" />
                     </div>
                   </div>
-                  <div class="benefits-hero__col col-lg-4 col-md-6">
+                  <div class="benefits-hero__col col-lg-4 col-md-6" data-aos="fade" data-aos-delay="1300" data-aos-duration="1000">
                     <div class="benefits-hero__card card-benefits card-benefits--portfolio">
                       <div class="card-benefits__title">Портфолио</div>
                       <div class="card-benefits__text-wrap">
@@ -109,7 +112,7 @@
                 </div>
               </div>
               <div class="hero__col hero__col--contacts col-12">
-                <div class="hero__contacts">
+                <div class="hero__contacts" data-aos="fade" data-aos-delay="1400" data-aos-duration="650">
                   <div class="hero__contact"><a href="mailto:info@price-nt.ru">info@price-nt.ru</a></div>
                   <div class="hero__contact hero__contact--primary"><a href="tel:+79630385054">+7 (963) 038-50-54</a></div>
                 </div>
@@ -127,8 +130,10 @@
 
   <section class="section-services">
     <div class="container">
-      <h2 class="section-title h1">Наши Услуги</h2>
-      <div class="services" data-tabs>
+      <div class="section-title-wrap">
+        <h2 class="section-title h1" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">Наши Услуги</h2>
+      </div>
+      <div class="services" data-tabs data-aos="fade" data-aos-delay="50" data-aos-duration="650">
         <div class="services__row row">
           <div class="services__col col-xl-6">
             <div class="services__main-cards services-main-cards">
@@ -512,18 +517,22 @@
   <section class="section-about">
     <div class="container">
       <div class="about">
-        <h2 class="about__title h1">О компании</h2>
-        <div class="about__text-wrap">
-          <p>
-            С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению качества
-            благоприятных перспектив. Не следует, однако
-          </p>
+        <div class="about__title-wrap">
+          <h2 class="about__title h1" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">О компании</h2>
         </div>
-        <div class="about__stats stats-about">
+        <div class="about__text-outer">
+          <div class="about__text-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">
+            <p>
+              С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление способствует повышению
+              качества благоприятных перспектив. Не следует, однако
+            </p>
+          </div>
+        </div>
+        <div class="about__stats stats-about" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="stats-about__row row gx-0">
             <div class="stats-about__col col-lg-6">
               <div class="stats-about__item item-stats-about">
-                <div class="item-stats-about__value">2014 <span>г.</span></div>
+                <div class="item-stats-about__value"><span data-countup="2014">2014</span> <span class="item-stats-about__label">г.</span></div>
                 <div class="item-stats-about__text-wrap">
                   <p>
                     год основания нашей<br />
@@ -534,7 +543,7 @@
             </div>
             <div class="stats-about__col col-lg-6">
               <div class="stats-about__item item-stats-about">
-                <div class="item-stats-about__value">850+</div>
+                <div class="item-stats-about__value"><span data-countup="850">850</span>+</div>
                 <div class="item-stats-about__text-wrap">
                   <p>
                     проектов успешно<br />
@@ -545,7 +554,7 @@
             </div>
             <div class="stats-about__col col-lg-6">
               <div class="stats-about__item item-stats-about">
-                <div class="item-stats-about__value">14 <span>стран мира</span></div>
+                <div class="item-stats-about__value"><span data-countup="14">14</span> <span class="item-stats-about__label">стран мира</span></div>
                 <div class="item-stats-about__text-wrap">
                   <p>клиентский охват price-nt</p>
                 </div>
@@ -566,12 +575,12 @@
         </div>
         <picture>
           <source srcset="images/iphone.png" media="(min-width: 992px)" />
-          <img src="images/iphone-mob.png" alt="alt" class="about__img img-responsive" loading="lazy" />
+          <img src="images/iphone-mob.png" alt="alt" class="about__img img-responsive" loading="lazy" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650" />
         </picture>
       </div>
       <div class="benefits">
         <div class="benefits__row row">
-          <div class="benefits__col col-lg-3 col-md-4">
+          <div class="benefits__col col-lg-3 col-md-4" data-aos="fade-right" data-aos-delay="50" data-aos-duration="650">
             <div class="benefits__item item-benefits">
               <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
               <div class="item-benefits__text-wrap">
@@ -579,7 +588,7 @@
               </div>
             </div>
           </div>
-          <div class="benefits__col col-lg-3 col-md-4">
+          <div class="benefits__col col-lg-3 col-md-4" data-aos="fade-right" data-aos-delay="150" data-aos-duration="650">
             <div class="benefits__item item-benefits">
               <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
               <div class="item-benefits__text-wrap">
@@ -587,7 +596,7 @@
               </div>
             </div>
           </div>
-          <div class="benefits__col col-lg-3 col-md-4">
+          <div class="benefits__col col-lg-3 col-md-4" data-aos="fade-right" data-aos-delay="250" data-aos-duration="650">
             <div class="benefits__item item-benefits">
               <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
               <div class="item-benefits__text-wrap">
@@ -595,7 +604,7 @@
               </div>
             </div>
           </div>
-          <div class="benefits__col col-lg-3 col-md-4">
+          <div class="benefits__col col-lg-3 col-md-4" data-aos="fade-right" data-aos-delay="350" data-aos-duration="650">
             <div class="benefits__item item-benefits">
               <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
               <div class="item-benefits__text-wrap">
@@ -603,7 +612,7 @@
               </div>
             </div>
           </div>
-          <div class="benefits__col col-lg-3 col-md-4">
+          <div class="benefits__col col-lg-3 col-md-4" data-aos="fade-right" data-aos-delay="450" data-aos-duration="650">
             <div class="benefits__item item-benefits">
               <img src="images/icons/check-green-circle.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
               <div class="item-benefits__text-wrap">
@@ -618,8 +627,10 @@
 
   <section class="section-documents">
     <div class="container">
-      <h2 class="section-title h1">Сертификаты и благодарности</h2>
-      <div class="documents" data-tabs>
+      <div class="section-title-wrap">
+        <h2 class="section-title h1" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">Сертификаты и благодарности</h2>
+      </div>
+      <div class="documents" data-tabs data-aos="fade" data-aos-delay="50" data-aos-duration="650">
         <div class="documents__btns">
           <button class="documents__btn" type="button" data-tabs-btn>Благодарности</button>
           <button class="documents__btn is-active" type="button" data-tabs-btn>Сертификаты</button>
@@ -720,11 +731,13 @@
 
   <section class="section-portfolio">
     <div class="container">
-      <h2 class="section-title h1">Портфолио</h2>
+      <div class="section-title-wrap">
+        <h2 class="section-title h1" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">Портфолио</h2>
+      </div>
     </div>
     <div class="portfolio">
       <div class="portfolio__row row gx-0">
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -741,7 +754,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -758,7 +771,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio card-portfolio--big">
             <img src="images/portfolio-3.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -776,7 +789,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -793,7 +806,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-4.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -810,7 +823,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -827,7 +840,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -844,7 +857,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio card-portfolio--big">
             <img src="images/portfolio-3.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -862,7 +875,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio card-portfolio--big">
             <img src="images/portfolio-5.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -880,7 +893,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio card-portfolio--big">
             <img src="images/portfolio-6.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -898,7 +911,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -915,7 +928,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -932,7 +945,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-1.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -949,7 +962,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6">
+        <div class="portfolio__col col-xl-3 col-lg-4 col-md-6" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio">
             <img src="images/portfolio-2.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -966,7 +979,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__col col-xl-6 col-lg-4 col-12">
+        <div class="portfolio__col col-xl-6 col-lg-4 col-12" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="portfolio__card card-portfolio card-portfolio--big">
             <img src="images/portfolio-3.jpg" alt="alt" class="card-portfolio__img img-responsive" loading="lazy" />
             <div class="card-portfolio__content">
@@ -997,7 +1010,7 @@
   <footer class="footer footer--big">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer__content content-footer">
+        <div class="footer__content content-footer" data-aos="fade" data-aos-delay="50" data-aos-duration="650">
           <div class="content-footer__title">Обсудим детали вашего проекта?</div>
           <div class="content-footer__phone"><a href="tel:+79630385054">+7 (963) 038-50-54</a></div>
           <div class="content-footer__contact"><a href="mailto:info@price-nt.ru">info@price-nt.ru</a></div>
@@ -1027,7 +1040,7 @@
                 <a href="tel:+79630385054" class="footer__social social">
                   <img src="images/icons/phone.svg" alt="alt" class="social__icon img-responsive" />
                 </a>
-                <a href="#" class="footer__social social">
+                <a href="#" class="footer__social footer__social--tg social">
                   <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive" />
                 </a>
                 <a href="mailto:info@price-nt.ru" class="footer__social social">
@@ -1035,7 +1048,9 @@
                 </a>
               </div>
             </div>
-            <a href="#" class="footer__btn btn btn--primary btn--icon-right">Остались вопросы?</a>
+            <button class="footer__btn btn btn--primary btn--icon-right" type="button" data-micromodal-trigger="modal-callback">
+              Остались вопросы?
+            </button>
           </div>
           <div class="footer__bottom bottom-footer">
             <div class="bottom-footer__row row">
@@ -1073,6 +1088,53 @@
       <use href="images/icons/sprite.svg#arrow-up" />
     </svg>
   </button>
+
+  <div class="modal modal--callback micromodal-slide" id="modal-callback" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+        <svg role="img" class="modal__close-icon">
+          <use href="images/icons/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <form class="form-modal">
+            <div class="form-modal__title">Задайте вопрос</div>
+            <div class="form-modal__row row">
+              <div class="form-modal__col col-12">
+                <div class="form-modal__group input-group">
+                  <label for="firstname" class="input-group__label">Ваше имя</label>
+                  <input type="text" class="input-group__control control" id="firstname" name="firstname" required />
+                </div>
+              </div>
+              <div class="form-modal__col col-sm-6">
+                <div class="form-modal__group input-group">
+                  <label for="phone" class="input-group__label">Ваш телефон</label>
+                  <input type="tel" class="input-group__control control" id="phone" name="phone" required />
+                </div>
+              </div>
+              <div class="form-modal__col col-sm-6">
+                <div class="form-modal__group input-group">
+                  <label for="email" class="input-group__label">Ваш e-mail</label>
+                  <input type="email" class="input-group__control control" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="form-modal__col col-12">
+                <div class="form-modal__group input-group input-group--textarea">
+                  <label for="question" class="input-group__label">Ваш вопрос</label>
+                  <textarea name="question" id="question" class="input-group__control control"></textarea>
+                </div>
+              </div>
+            </div>
+            <button class="form-modal__submit btn btn--primary">Отправить</button>
+            <p class="form-modal__accept">
+              Нажимая кнопку "Отправить", Вы соглашаетесь на обработку персональных данных, защищенных <a href="#">политикой конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/app.js"></script>
 

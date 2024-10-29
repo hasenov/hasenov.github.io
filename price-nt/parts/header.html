@@ -24,7 +24,7 @@
           <a href="tel:+79630385054" class="header__social social">
             <img src="images/icons/phone.svg" alt="alt" class="social__icon img-responsive" />
           </a>
-          <a href="#" class="header__social social">
+          <a href="#" class="header__social header__social--tg social">
             <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive" />
           </a>
           <a href="#" class="header__social social">
@@ -32,10 +32,10 @@
           </a>
         </div>
       </div>
-      <a href="#" class="header__btn btn btn--primary btn--icon-right">
+      <button class="header__btn btn btn--primary btn--icon-right" type="button" data-micromodal-trigger="modal-callback">
         Есть вопрос?
         <img src="images/icons/chat.svg" alt="alt" class="btn__icon img-responsive" />
-      </a>
+      </button>
       <button class="header__hamburger" type="button">
         <img src="images/icons/hamburger.svg" alt="alt" class="header__hamburger-icon img-responsive" />
       </button>
@@ -45,6 +45,9 @@
 
 <div class="mobile-header">
   <button class="mobile-header__close" type="button">
-    <img src="images/icons/close.svg" alt="alt" class="mobile-header__close-icon img-responsive" />
+    <svg role="img" class="mobile-header__close-icon">
+      <use href="images/icons/sprite.svg#close"></use>
+    </svg>
   </button>
+  <div class="mobile-header__content"></div>
 </div>

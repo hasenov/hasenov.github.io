@@ -26,7 +26,7 @@
               <a href="tel:+79630385054" class="footer__social social">
                 <img src="images/icons/phone.svg" alt="alt" class="social__icon img-responsive" />
               </a>
-              <a href="#" class="footer__social social">
+              <a href="#" class="footer__social footer__social--tg social">
                 <img src="images/icons/tg.svg" alt="alt" class="social__icon img-responsive" />
               </a>
               <a href="mailto:info@price-nt.ru" class="footer__social social">
@@ -34,7 +34,9 @@
               </a>
             </div>
           </div>
-          <a href="#" class="footer__btn btn btn--primary btn--icon-right">Остались вопросы?</a>
+          <button class="footer__btn btn btn--primary btn--icon-right" type="button" data-micromodal-trigger="modal-callback">
+            Остались вопросы?
+          </button>
         </div>
         <div class="footer__bottom bottom-footer">
           <div class="bottom-footer__row row">
@@ -70,3 +72,50 @@
     <use href="images/icons/sprite.svg#arrow-up" />
   </svg>
 </button>
+
+<div class="modal modal--callback micromodal-slide" id="modal-callback" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+      <svg role="img" class="modal__close-icon">
+        <use href="images/icons/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <div class="modal__inner">
+        <form class="form-modal">
+          <div class="form-modal__title">Задайте вопрос</div>
+          <div class="form-modal__row row">
+            <div class="form-modal__col col-12">
+              <div class="form-modal__group input-group">
+                <label for="firstname" class="input-group__label">Ваше имя</label>
+                <input type="text" class="input-group__control control" id="firstname" name="firstname" required />
+              </div>
+            </div>
+            <div class="form-modal__col col-sm-6">
+              <div class="form-modal__group input-group">
+                <label for="phone" class="input-group__label">Ваш телефон</label>
+                <input type="tel" class="input-group__control control" id="phone" name="phone" required />
+              </div>
+            </div>
+            <div class="form-modal__col col-sm-6">
+              <div class="form-modal__group input-group">
+                <label for="email" class="input-group__label">Ваш e-mail</label>
+                <input type="email" class="input-group__control control" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-modal__col col-12">
+              <div class="form-modal__group input-group input-group--textarea">
+                <label for="question" class="input-group__label">Ваш вопрос</label>
+                <textarea name="question" id="question" class="input-group__control control"></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="form-modal__submit btn btn--primary">Отправить</button>
+          <p class="form-modal__accept">
+            Нажимая кнопку "Отправить", Вы соглашаетесь на обработку персональных данных, защищенных <a href="#">политикой конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
