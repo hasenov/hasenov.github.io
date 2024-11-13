@@ -1,0 +1,81 @@
+<section class="section-callback-calc spacing-big">
+  <div class="container">
+    <form class="callback">
+      <div class="callback__inner">
+        <div class="callback__header">
+          <h2 class="callback__title section-title">Рассчитать стоимость</h2>
+          <div class="callback__text-wrap no-mb-last">
+            <p>Онлайн расчет продукции</p>
+          </div>
+        </div>
+        <div class="callback__row row">
+          <div class="callback__col col-lg-4 col-md-6">
+            <label for="furniture-type" class="callback__label">Тип мебели</label>
+            <select id="furniture-type" class="callback__select select">
+              <option value="" disabled selected>Диван прямой</option>
+              <option value="1">Диван прямой</option>
+              <option value="1">Диван прямой</option>
+              <option value="1">Диван прямой</option>
+            </select>
+          </div>
+          <div class="callback__col col-lg-4 col-md-6">
+            <label for="work-type" class="callback__label">Вид работ</label>
+            <select id="work-type" class="callback__select select">
+              <option value="" disabled selected>Частичная перетяжка</option>
+              <option value="1">Частичная перетяжка</option>
+              <option value="1">Частичная перетяжка</option>
+              <option value="1">Частичная перетяжка</option>
+            </select>
+          </div>
+          <div class="callback__col col-lg-4 col-md-6">
+            <label for="material-type" class="callback__label">Вид материала</label>
+            <select id="material-type" class="callback__select select">
+              <option value="" disabled selected>Ткань</option>
+              <option value="1">Ткань</option>
+              <option value="1">Ткань</option>
+              <option value="1">Ткань</option>
+            </select>
+          </div>
+          <div class="callback__col col-lg-4 col-md-6">
+            <label for="callback-name" class="callback__label">Ваше имя</label>
+            <select id="callback-name" class="callback__select select">
+              <option value="" disabled selected>Ваше имя*</option>
+              <option value="1">Ваше имя*</option>
+              <option value="1">Ваше имя*</option>
+              <option value="1">Ваше имя*</option>
+            </select>
+          </div>
+          <div class="callback__col col-lg-4 col-md-6">
+            <label for="callback-phone" class="callback__label">Номер телефона</label>
+            <select id="callback-phone" class="callback__select select">
+              <option value="" disabled selected>Телефон*</option>
+              <option value="1">Телефон*</option>
+              <option value="1">Телефон*</option>
+              <option value="1">Телефон*</option>
+            </select>
+          </div>
+          <div class="callback__col col-lg-4 col-md-6">
+            <label for="photo" class="callback__label">Фото мебели</label>
+            <label class="callback__file file">
+              <input type="file" class="file__input hidden" id="photo" />
+              <span class="file__btn">Выберите файл</span>
+              <span class="file__remove">Удалить</span>
+              <span class="file__title">Файл не выбран</span>
+              <span class="file__name"></span>
+            </label>
+          </div>
+        </div>
+        <div class="callback__checkboxes">
+          <label class="callback__checkbox checkbox">
+            <input type="checkbox" class="checkbox__input hidden" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности сайта</a></span>
+          </label>
+        </div>
+        <div class="callback__submit-wrap">
+          <button class="callback__submit btn btn--primary font-bold uppercase" type="submit">отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
