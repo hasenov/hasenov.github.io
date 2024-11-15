@@ -152,12 +152,10 @@
         <h2 class="section-title text-left">Контакты</h2>
         <div class="contacts row gy-5">
           <div class="contacts__col col-xxl-3 col-lg-5 col-md-6">
-            <!-- <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A58285990ab298ed16bcead675227c1b58ea8730a72991f37f01daeb1b851f32f&amp;source=constructor"
-                        class="contacts__map"
-                        loading="lazy"
-                    ></iframe> -->
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58285990ab298ed16bcead675227c1b58ea8730a72991f37f01daeb1b851f32f&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+            <div class="contacts__map-wrap">
+              <img src="images/map.png" alt="alt" class="contacts__map-placeholder img-responsive" />
+              <iframe data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A58285990ab298ed16bcead675227c1b58ea8730a72991f37f01daeb1b851f32f&amp;source=constructor" class="contacts__map" loading="lazy"></iframe>
+            </div>
           </div>
           <div class="contacts__col col-xxl-9 col-lg-7 col-md-6">
             <div class="contacts__text-wrap">
