@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>@@title</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#1b1b1b" />
+
+  <link rel="preload" as="image" href="images/home-1000.webp" media="(min-width: 992px)" imagesrcset="images/home-1000.webp 1000w, images/home-1280.webp 1280w, images/home-1920.webp 1920w" imagesizes="100vw" type="image/webp" />
+  <link rel="preload" as="image" href="images/home-360.webp" media="(max-width: 991.98px)" imagesrcset="images/home-360.webp 360w, images/home-730.webp 730w, images/home-992.webp 992w" imagesizes="100vw" type="image/webp" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <nav class="mobile-menu">
+    <button class="mobile-menu__close" type="button">
+      <svg role="img">
+        <use href="images/icons/sprite.svg#close" />
+      </svg>
+    </button>
+    <div class="mobile-menu__list-wrap"></div>
+    <div class="mobile-menu__info-wrap"></div>
+    <div class="mobile-menu__footer-wrap"></div>
+  </nav>
