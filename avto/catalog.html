@@ -1,0 +1,927 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Каталог</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#e52f3b" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <a href="catalog.html" class="header__catalog-btn catalog-btn">
+        <svg role="img" class="catalog-btn__icon">
+          <use href="images/icons/sprite.svg#menu" />
+        </svg>
+        Каталог
+      </a>
+      <form class="header__search search-header">
+        <button class="search-header__submit" type="submit">
+          <svg role="img" class="search-header__submit-icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+        <input type="text" class="search-header__control control" placeholder="Поиск автомобиля" />
+      </form>
+      <nav class="header__menu menu">
+        <ul class="menu__list list-unstyled">
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="#">Этапы покупки</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="favorites.html" class="header__action-btn header__action-btn--favorite btn btn--outline-lighter btn--icon-left">
+          <svg role="img" class="btn__icon">
+            <use href="images/icons/sprite.svg#heart" />
+          </svg>
+          Избранное
+        </a>
+        <a href="settings.html" class="header__action-btn btn btn--outline-lighter btn--icon-left">
+          <svg role="img" class="btn__icon">
+            <use href="images/icons/sprite.svg#user" />
+          </svg>
+          Личный кабинет
+        </a>
+      </div>
+      <button class="header__hamburger" type="button">
+        <svg role="img" class="header__hamburger-icon">
+          <use href="images/icons/sprite.svg#menu" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header__container container">
+      <div class="mobile-header__header">
+        <button class="mobile-header__close" type="button">
+          <svg role="img" class="mobile-header__close-icon">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-header__location">
+        <svg role="img" class="mobile-header__location-icon">
+          <use href="images/icons/sprite.svg#marker" />
+        </svg>
+        Российская федерация
+      </div>
+      <div class="mobile-header__catalog">
+        <div class="mobile-header__catalog-title">Каталог</div>
+        <nav class="mobile-header__menu">
+          <ul class="list-unstyled">
+            <li><a href="#">Внедорожники</a></li>
+            <li><a href="#">Седан</a></li>
+            <li><a href="#">Хэтчбек</a></li>
+            <li><a href="#">Лифтбек</a></li>
+            <li><a href="#">Универсал</a></li>
+            <li><a href="#">Минивэн</a></li>
+            <li><a href="#">Купе</a></li>
+            <li><a href="#">Пикап</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="#">Аукционы</a></li>
+            <li><a href="#">С пробегом</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="page page--">
+    <div class="breadcrumbs-wrapper">
+      <div class="breadcrumbs-wrapper__container container">
+        <button class="breadcrumbs-wrapper__back-btn btn btn--outline-lighter btn--icon-left" type="button" onclick="history.back()">
+          <svg role="img" class="btn__icon">
+            <use href="images/icons/sprite.svg#arrow-left" />
+          </svg>
+          Назад
+        </button>
+        <nav class="breadcrumbs-wrapper__breadcrumbs breadcrumbs">
+          <ul class="breadcrumbs__list list-unstyled">
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item">Каталог</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="container">
+        <h1 class="catalog__title uppercase">Каталог</h1>
+        <div class="catalog__row row">
+          <div class="catalog__col col-xl-9">
+            <form class="catalog__filter filter-catalog">
+              <div class="filter-catalog__group">
+                <div class="filter-catalog__tabs">
+                  <label class="filter-catalog__tab tab-catalog">
+                    <input type="radio" class="tab-catalog__input hidden" name="status" checked />
+                    <span class="tab-catalog__box">Все</span>
+                  </label>
+                  <label class="filter-catalog__tab tab-catalog">
+                    <input type="radio" class="tab-catalog__input hidden" name="status" />
+                    <span class="tab-catalog__box">Новые</span>
+                  </label>
+                  <label class="filter-catalog__tab tab-catalog">
+                    <input type="radio" class="tab-catalog__input hidden" name="status" />
+                    <span class="tab-catalog__box">С пробегом</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-catalog__group filter-catalog__group--types">
+                <div class="filter-catalog__types">
+                  <div class="filter-catalog__title">Тип кузова</div>
+                  <div class="filter-catalog__types-row row">
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/suv.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Внедорожник
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/sedan.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Седан
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/hatchback.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Хэтчбек
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/liftback.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Лифтбек
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/station-wagon.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Универсал
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/minivan.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Минивэн
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/coupe.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Купе
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter-catalog__type-col col-md-3 col-sm-4 col-6">
+                      <label class="filter-catalog__type type-catalog">
+                        <input type="checkbox" class="type-catalog__input hidden" name="type" />
+                        <span class="type-catalog__box">
+                          <img src="images/pickup.png" alt="alt" class="type-catalog__img img-responsive" loading="lazy" />
+                          Пикап
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-catalog__group filter-catalog__group--controls">
+                <div class="filter-catalog__controls row">
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--brand col-md-4 col-sm-6">
+                    <div class="filter-catalog__title">Марка и модель</div>
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light">
+                          <select class="select__control">
+                            <option value="1">Марка</option>
+                            <option value="1">Марка 2</option>
+                            <option value="1">Марка 3</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--model col-md-4 col-sm-6">
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light is-disabled">
+                          <select class="select__control">
+                            <option value="1">Модель</option>
+                            <option value="1">Модель 2</option>
+                            <option value="1">Модель 3</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--generation col-md-4 col-sm-6">
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light is-disabled">
+                          <select class="select__control">
+                            <option value="1">Поколение</option>
+                            <option value="1">Поколение 2</option>
+                            <option value="1">Поколение 3</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--transmission col-md-4 col-sm-6">
+                    <div class="filter-catalog__title">Характеристики</div>
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light">
+                          <select class="select__control">
+                            <option value="1">Коробка</option>
+                            <option value="1">Коробка 2</option>
+                            <option value="1">Коробка 3</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--engine col-md-4 col-sm-6">
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light">
+                          <select class="select__control">
+                            <option value="1">Двигатель</option>
+                            <option value="1">Двигатель 2</option>
+                            <option value="1">Двигатель 3</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--drive col-md-4 col-sm-6">
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light">
+                          <select class="select__control">
+                            <option value="1">Привод</option>
+                            <option value="1">Привод 2</option>
+                            <option value="1">Привод 3</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--year col-md-4 col-sm-6">
+                    <div class="filter-catalog__subtitle">Год</div>
+                    <div class="filter-catalog__control-row filter-catalog__control-row--pc">
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light">
+                          <select class="select__control">
+                            <option value="1">Год от</option>
+                            <option value="1">Год от</option>
+                            <option value="1">Год от</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="filter-catalog__control-group control-group">
+                        <div class="control-group__control select select--catalog select--outline-light">
+                          <select class="select__control">
+                            <option value="1">до</option>
+                            <option value="1">до</option>
+                            <option value="1">до</option>
+                          </select>
+                          <svg role="img" class="select__icon">
+                            <use href="images/icons/sprite.svg#chevron-down" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-catalog__control-row filter-catalog__control-row--mob">
+                      <div class="filter-catalog__control-group control-group control-group--remove">
+                        <input type="text" class="control-group__control control control--catalog control--outline-light" placeholder="от" />
+                        <button class="control-group__remove" type="button">
+                          <svg role="img" class="control-group__remove-icon">
+                            <use href="images/icons/sprite.svg#close" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="filter-catalog__control-group control-group control-group--remove">
+                        <input type="text" class="control-group__control control control--catalog control--outline-light" placeholder="до" />
+                        <button class="control-group__remove" type="button">
+                          <svg role="img" class="control-group__remove-icon">
+                            <use href="images/icons/sprite.svg#close" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--mileage col-md-4 col-sm-6">
+                    <div class="filter-catalog__subtitle">Пробег км</div>
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group control-group--remove">
+                        <input type="text" class="control-group__control control-group__control--pc control control--catalog control--outline-light" placeholder="Пробег от, км" />
+                        <input type="text" class="control-group__control control-group__control--mob control control--catalog control--outline-light" placeholder="от" />
+                        <button class="control-group__remove" type="button">
+                          <svg role="img" class="control-group__remove-icon">
+                            <use href="images/icons/sprite.svg#close" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="filter-catalog__control-group control-group control-group--remove">
+                        <input type="text" class="control-group__control control control--catalog control--outline-light" placeholder="до" />
+                        <button class="control-group__remove" type="button">
+                          <svg role="img" class="control-group__remove-icon">
+                            <use href="images/icons/sprite.svg#close" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-catalog__control-wrap filter-catalog__control-wrap--price col-md-4 col-sm-6">
+                    <div class="filter-catalog__title">Цена</div>
+                    <div class="filter-catalog__control-row">
+                      <div class="filter-catalog__control-group control-group control-group--remove">
+                        <input type="text" class="control-group__control control-group__control--pc control control--catalog control--outline-light" placeholder="Цена от" />
+                        <input type="text" class="control-group__control control-group__control--mob control control--catalog control--outline-light" placeholder="от" />
+                        <button class="control-group__remove" type="button">
+                          <svg role="img" class="control-group__remove-icon">
+                            <use href="images/icons/sprite.svg#close" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="filter-catalog__control-group control-group control-group--remove">
+                        <input type="text" class="control-group__control control control--catalog control--outline-light" placeholder="до" />
+                        <button class="control-group__remove" type="button">
+                          <svg role="img" class="control-group__remove-icon">
+                            <use href="images/icons/sprite.svg#close" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-catalog__group filter-catalog__group--submit">
+                <button class="filter-catalog__submit btn btn--primary" type="submit">
+                  <span>Показать <span id="filterTotal">1846</span> предложения</span>
+                </button>
+              </div>
+            </form>
+            <div class="catalog__actions">
+              <button class="catalog__filter-toggle btn btn--icon-left" type="button" data-micromodal-trigger="modal-filter">
+                <svg role="img" class="btn__icon">
+                  <use href="images/icons/sprite.svg#settings" />
+                </svg>
+                Параметры
+              </button>
+              <div class="catalog__sort sort-catalog">
+                <div class="sort-catalog__title">Сортировать по</div>
+                <select class="sort-catalog__select">
+                  <option value="1">Новые</option>
+                  <option value="1">Старые</option>
+                  <option value="1">Новые</option>
+                </select>
+              </div>
+              <div class="catalog__sort-mob select select--outline-light">
+                <select class="select__control">
+                  <option value="1">Сначала новые</option>
+                  <option value="1">Сначала старые</option>
+                  <option value="1">Сначала новые</option>
+                </select>
+                <svg role="img" class="select__icon">
+                  <use href="images/icons/sprite.svg#chevron-down" />
+                </svg>
+              </div>
+              <div class="catalog__view view-catalog">
+                <div class="view-catalog__title">Вид списка</div>
+                <div class="view-catalog__items">
+                  <button class="view-catalog__item view-btn is-list" type="button">
+                    <svg role="img" class="view-btn__icon">
+                      <use href="images/icons/sprite.svg#view-list" />
+                    </svg>
+                  </button>
+                  <button class="view-catalog__item view-btn is-grid" type="button">
+                    <svg role="img" class="view-btn__icon">
+                      <use href="images/icons/sprite.svg#view-grid" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__list row is-grid">
+              <div class="catalog__card-wrap">
+                <a href="#" class="card-product">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">Mercedes-Benz V-Klass 300d Long</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__badges-wrap">
+                        <div class="card-product__badges">
+                          <div class="card-product__badge is-dark">С пробегом</div>
+                          <div class="card-product__badge is-light">Стокгольм</div>
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Приблизительная стоимость авто с учетом доставки</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">32 100 000 ₽</p>
+                            <p class="card-product__price-alt">320 000 €</p>
+                          </div>
+                          <div class="card-product__badge is-light">€ Рыночная цена</div>
+                        </div>
+                      </div>
+                      <div class="card-product__btn btn btn--primary">Подробнее</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrap">
+                <a href="#" class="card-product">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">Mercedes-Benz V-Klass 300d Long</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__badges-wrap">
+                        <div class="card-product__badges">
+                          <div class="card-product__badge is-dark">С пробегом</div>
+                          <div class="card-product__badge is-light">Стокгольм</div>
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Приблизительная стоимость авто с учетом доставки</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">32 100 000 ₽</p>
+                            <p class="card-product__price-alt">320 000 €</p>
+                          </div>
+                          <div class="card-product__badge is-light">€ Рыночная цена</div>
+                        </div>
+                      </div>
+                      <div class="card-product__btn btn btn--primary">Подробнее</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrap">
+                <a href="#" class="card-product">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">Mercedes-Benz V-Klass 300d Long</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__badges-wrap">
+                        <div class="card-product__badges">
+                          <div class="card-product__badge is-dark">С пробегом</div>
+                          <div class="card-product__badge is-light">Стокгольм</div>
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Приблизительная стоимость авто с учетом доставки</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">32 100 000 ₽</p>
+                            <p class="card-product__price-alt">320 000 €</p>
+                          </div>
+                          <div class="card-product__badge is-light">€ Рыночная цена</div>
+                        </div>
+                      </div>
+                      <div class="card-product__btn btn btn--primary">Подробнее</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrap">
+                <a href="#" class="card-product">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">Mercedes-Benz V-Klass 300d Long</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__badges-wrap">
+                        <div class="card-product__badges">
+                          <div class="card-product__badge is-dark">С пробегом</div>
+                          <div class="card-product__badge is-light">Стокгольм</div>
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Приблизительная стоимость авто с учетом доставки</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">32 100 000 ₽</p>
+                            <p class="card-product__price-alt">320 000 €</p>
+                          </div>
+                          <div class="card-product__badge is-light">€ Рыночная цена</div>
+                        </div>
+                      </div>
+                      <div class="card-product__btn btn btn--primary">Подробнее</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__col catalog__col--sidebar col-3">
+            <aside class="catalog__sidebar sidebar-catalog">
+              <div class="sidebar-catalog__title">Горячие предложения</div>
+              <div class="sidebar-catalog__cards">
+                <a href="#" class="sidebar-catalog__card card-product card-product--hot">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">VOLVO V60 CROSS COUNTRY</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__timer product-card-timer">
+                        <svg role="img" class="product-card-timer__icon">
+                          <use href="images/icons/sprite.svg#hourglass" />
+                        </svg>
+                        <div class="product-card-timer__time">
+                          Осталось <span class="product-card-timer__hrs">21</span> час
+                          <span class="product-card-timer__mins">15</span> минут
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Последняя ставка</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">2 100 000 ₽</p>
+                            <p class="card-product__price-alt">21 000 €</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="sidebar-catalog__card card-product card-product--hot">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">VOLVO V60 CROSS COUNTRY</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__timer product-card-timer">
+                        <svg role="img" class="product-card-timer__icon">
+                          <use href="images/icons/sprite.svg#hourglass" />
+                        </svg>
+                        <div class="product-card-timer__time">
+                          Осталось <span class="product-card-timer__hrs">21</span> час
+                          <span class="product-card-timer__mins">15</span> минут
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Последняя ставка</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">2 100 000 ₽</p>
+                            <p class="card-product__price-alt">21 000 €</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="sidebar-catalog__card card-product card-product--hot">
+                  <div class="card-product__row">
+                    <div class="card-product__img-wrap">
+                      <div class="card-product__img-inner">
+                        <img src="images/card-sm-1.jpg" alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="card-product__body">
+                      <div class="card-product__title">VOLVO V60 CROSS COUNTRY</div>
+                      <div class="card-product__details-wrap">
+                        <div class="card-product__details">
+                          <div class="card-product__detail">2020</div>
+                          <div class="card-product__detail">40 000 км</div>
+                          <div class="card-product__detail">Дизель</div>
+                          <div class="card-product__detail">2.0 л.</div>
+                        </div>
+                      </div>
+                      <div class="card-product__timer product-card-timer">
+                        <svg role="img" class="product-card-timer__icon">
+                          <use href="images/icons/sprite.svg#hourglass" />
+                        </svg>
+                        <div class="product-card-timer__time">
+                          Осталось <span class="product-card-timer__hrs">21</span> час
+                          <span class="product-card-timer__mins">15</span> минут
+                        </div>
+                      </div>
+                      <div class="card-product__pricing">
+                        <div class="card-product__pricing-title">Последняя ставка</div>
+                        <div class="card-product__prices">
+                          <div class="card-product__prices-row">
+                            <p class="card-product__price">2 100 000 ₽</p>
+                            <p class="card-product__price-alt">21 000 €</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-catalog__callback-card callback-card">
+                <div class="callback-card__title">Не нашли нужный автомобиль?</div>
+                <div class="callback-card__text-wrap no-mb-last">
+                  <p>Заполните форму и мы свяжемся с вами в течении дня</p>
+                </div>
+                <button class="callback-card__btn btn btn--primary" type="button">Оставить заявку</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--filter micromodal-slide" id="modal-filter" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+          <div class="modal__inner">
+            <form class="popup">
+              <div class="popup__header">
+                <div class="popup__header-col">
+                  <button class="popup__close" type="button" data-micromodal-close>
+                    <svg role="img">
+                      <use href="images/icons/sprite.svg#close" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="popup__header-col popup__header-col--title">
+                  <div class="popup__title">Параметры</div>
+                </div>
+                <div class="popup__header-col popup__header-col--reset">
+                  <button class="popup__reset" type="button">Сбросить</button>
+                </div>
+              </div>
+              <div class="popup__body"></div>
+              <div class="popup__footer"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-priorities">
+      <div class="container">
+        <div class="priorities">
+          <h2 class="priorities__title h1 uppercase">С 2013 года занимаемся <span class="font-semibold">покупкой машин</span> на заказ из Европы</h2>
+          <div class="priorities__text-wrap no-mb-last">
+            <p>Приоритетами нашей компании являются:</p>
+          </div>
+          <div class="priorities__benefits benefits benefits--priorities">
+            <div class="benefits__inner">
+              <div class="benefits__row row">
+                <div class="benefits__col col-xl-3 col-lg-4 col-md-6">
+                  <div class="benefits__item item-benefits">
+                    <div class="item-benefits__header">
+                      <div class="item-benefits__title">безопасность</div>
+                      <img src="images/icons/lock.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__col col-xl-3 col-lg-4 col-md-6">
+                  <div class="benefits__item item-benefits">
+                    <div class="item-benefits__header">
+                      <div class="item-benefits__title">выполнение обязательств</div>
+                      <img src="images/icons/task-list.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__col col-xl-3 col-lg-4 col-md-6">
+                  <div class="benefits__item item-benefits">
+                    <div class="item-benefits__header">
+                      <div class="item-benefits__title">индивидуальный подход к клиентам</div>
+                      <img src="images/icons/customers.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__col col-xl-3 col-lg-4 col-md-6">
+                  <div class="benefits__item item-benefits">
+                    <div class="item-benefits__header">
+                      <div class="item-benefits__title">профессионализм в работе</div>
+                      <img src="images/icons/tool-box.svg" alt="alt" class="item-benefits__icon img-responsive" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/bg-stats.svg" alt="alt" class="priorities__bg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-callback">
+      <div class="container">
+        <div class="callback">
+          <div class="callback__row row">
+            <div class="callback__col col-xl-7 col-lg-8">
+              <h2 class="callback__title gradient-text uppercase h1">
+                Подбор авто<br />
+                <strong>для вип-клиентов</strong>
+              </h2>
+              <form class="callback__form form-callback">
+                <div class="form-callback__row row">
+                  <div class="form-callback__col col-md-4 col-sm-6">
+                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" />
+                  </div>
+                  <div class="form-callback__col col-md-4 col-sm-6">
+                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" />
+                  </div>
+                  <div class="form-callback__col col-md-4">
+                    <button class="form-callback__submit btn btn--primary" type="submit">Отправить заявку</button>
+                  </div>
+                </div>
+                <p class="form-callback__accept">
+                  Отправляя вопрос, я принимаю условия <a href="#">политики конфеденциальности</a> и <a href="#">пользовательского соглашения</a> и
+                  даю согласие на обработку персональных данных в соответствии с законодательством России.
+                </p>
+                <img src="images/callback.png" alt="alt" class="form-callback__img img-responsive" loading="lazy" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--logo col-lg-3 col-12">
+          <img src="images/logo-red.svg" alt="alt" class="footer__logo img-responsive" loading="lazy" />
+          <div class="footer__info">
+            <p class="footer__info-item">Москва, Береговой проезд, ЖК «Фили Град»</p>
+            <p class="footer__info-item">
+              Режим работы<br />
+              с 9:00 до 20:00
+            </p>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__social">
+              <img src="images/icons/tg-white.svg" alt="alt" class="footer__social-icon img-responsive" loading="lazy" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="images/icons/wa-white.svg" alt="alt" class="footer__social-icon img-responsive" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__col footer__col--contacts col-lg-5 col-6">
+          <div class="footer__contacts">
+            <div class="footer__contact footer__contact--big"><a href="#">+7 (937) 666-60-01</a></div>
+            <div class="footer__contact"><a href="#">biexcorpsa@ya.ru</a></div>
+          </div>
+          <a href="#" class="footer__btn btn btn--primary">Оставить заявку</a>
+        </div>
+        <div class="footer__col col-lg-2 col-sm-4 col-6">
+          <div class="footer__title">Информация</div>
+          <nav class="footer__menu">
+            <ul class="list-unstyled">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Вопросы</a></li>
+              <li><a href="#">Условия доставки</a></li>
+              <li><a href="#">Процесс покупки</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col col-lg-2 col-sm-4 col-6">
+          <div class="footer__title">МЕНЮ</div>
+          <nav class="footer__menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Аукционы</a></li>
+              <li><a href="#">Журнал</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--mobile col-sm-4"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

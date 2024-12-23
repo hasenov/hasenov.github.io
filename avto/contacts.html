@@ -1,0 +1,281 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Контакты</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#e52f3b" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" />
+      </a>
+      <a href="catalog.html" class="header__catalog-btn catalog-btn">
+        <svg role="img" class="catalog-btn__icon">
+          <use href="images/icons/sprite.svg#menu" />
+        </svg>
+        Каталог
+      </a>
+      <form class="header__search search-header">
+        <button class="search-header__submit" type="submit">
+          <svg role="img" class="search-header__submit-icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+        <input type="text" class="search-header__control control" placeholder="Поиск автомобиля" />
+      </form>
+      <nav class="header__menu menu">
+        <ul class="menu__list list-unstyled">
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="#">Этапы покупки</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="favorites.html" class="header__action-btn header__action-btn--favorite btn btn--outline-lighter btn--icon-left">
+          <svg role="img" class="btn__icon">
+            <use href="images/icons/sprite.svg#heart" />
+          </svg>
+          Избранное
+        </a>
+        <a href="settings.html" class="header__action-btn btn btn--outline-lighter btn--icon-left">
+          <svg role="img" class="btn__icon">
+            <use href="images/icons/sprite.svg#user" />
+          </svg>
+          Личный кабинет
+        </a>
+      </div>
+      <button class="header__hamburger" type="button">
+        <svg role="img" class="header__hamburger-icon">
+          <use href="images/icons/sprite.svg#menu" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header__container container">
+      <div class="mobile-header__header">
+        <button class="mobile-header__close" type="button">
+          <svg role="img" class="mobile-header__close-icon">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-header__location">
+        <svg role="img" class="mobile-header__location-icon">
+          <use href="images/icons/sprite.svg#marker" />
+        </svg>
+        Российская федерация
+      </div>
+      <div class="mobile-header__catalog">
+        <div class="mobile-header__catalog-title">Каталог</div>
+        <nav class="mobile-header__menu">
+          <ul class="list-unstyled">
+            <li><a href="#">Внедорожники</a></li>
+            <li><a href="#">Седан</a></li>
+            <li><a href="#">Хэтчбек</a></li>
+            <li><a href="#">Лифтбек</a></li>
+            <li><a href="#">Универсал</a></li>
+            <li><a href="#">Минивэн</a></li>
+            <li><a href="#">Купе</a></li>
+            <li><a href="#">Пикап</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="#">Аукционы</a></li>
+            <li><a href="#">С пробегом</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="page page--">
+    <div class="breadcrumbs-wrapper">
+      <div class="breadcrumbs-wrapper__container container">
+        <button class="breadcrumbs-wrapper__back-btn btn btn--outline-lighter btn--icon-left" type="button" onclick="history.back()">
+          <svg role="img" class="btn__icon">
+            <use href="images/icons/sprite.svg#arrow-left" />
+          </svg>
+          Назад
+        </button>
+        <nav class="breadcrumbs-wrapper__breadcrumbs breadcrumbs">
+          <ul class="breadcrumbs__list list-unstyled">
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item">Контакты</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="section-contacts">
+      <div class="container">
+        <div class="contacts">
+          <div class="contacts__row row">
+            <div class="contacts__col contacts__col--content col-xl-6 col-lg-7">
+              <h1 class="contacts__title uppercase">Москва, Береговой проезд, ЖК «Фили Град»</h1>
+              <div class="contacts__items row">
+                <div class="contacts__item-col col-sm-6">
+                  <div class="contacts__item item-contacts item-contacts--big">
+                    <div class="item-contacts__title">Режим работы без выходных</div>
+                    <div class="item-contacts__value">с 9:00 до 20:00</div>
+                  </div>
+                </div>
+                <div class="contacts__item-col col-sm-6">
+                  <div class="contacts__item item-contacts">
+                    <div class="item-contacts__title">Номер телефона и почта</div>
+                    <div class="item-contacts__value">
+                      <a href="#">+7 (937) 666-60-01</a>
+                      <a href="#">biexcorpsa@ya.ru</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__info">
+                <div class="contacts__info-content no-mb-last">
+                  <p>По всем юридическим вопросам пишите на <a href="#">biexcorpsa@ya.ru</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__col col-lg-5 offset-xl-1">
+              <form class="contacts__form form-contacts">
+                <div class="form-contacts__title">Связаться</div>
+                <div class="form-contacts__groups">
+                  <div class="form-contacts__group">
+                    <label for="phone" class="form-contacts__label form-contacts__label--required">Номер телефона</label>
+                    <input type="tel" class="form-contacts__control control control--default control--blue" placeholder="+7 (___) ___-__-__" id="phone" />
+                  </div>
+                  <div class="form-contacts__group">
+                    <label for="phone" class="form-contacts__label form-contacts__label--required">Номер телефона</label>
+                    <input type="tel" class="form-contacts__control control control--default control--blue" placeholder="+7 (___) ___-__-__" id="phone" />
+                  </div>
+                  <div class="form-contacts__group">
+                    <label for="phone" class="form-contacts__label form-contacts__label--required">Номер телефона</label>
+                    <input type="tel" class="form-contacts__control control control--default control--blue" placeholder="+7 (___) ___-__-__" id="phone" />
+                  </div>
+                  <div class="form-contacts__group">
+                    <button class="form-contacts__submit btn btn--primary" type="submit">Отправить</button>
+                  </div>
+                  <div class="form-contacts__group">
+                    <p class="form-contacts__accept">
+                      Отправляя заявку, я принимаю условия <a href="#">политики конфеденциальности</a> и
+                      <a href="#">пользовательского соглашения</a> и даю согласие на обработку персональных данных в соответствии с
+                      законодательством России.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa91c3790d38436580940d368328ef252cdf2d5e42e779fbf33b4ac2f9240428d&amp;source=constructor" class="contacts__map" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-callback">
+      <div class="container">
+        <div class="callback">
+          <div class="callback__row row">
+            <div class="callback__col col-xl-7 col-lg-8">
+              <h2 class="callback__title gradient-text uppercase h1">
+                Подбор авто<br />
+                <strong>для вип-клиентов</strong>
+              </h2>
+              <form class="callback__form form-callback">
+                <div class="form-callback__row row">
+                  <div class="form-callback__col col-md-4 col-sm-6">
+                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" />
+                  </div>
+                  <div class="form-callback__col col-md-4 col-sm-6">
+                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" />
+                  </div>
+                  <div class="form-callback__col col-md-4">
+                    <button class="form-callback__submit btn btn--primary" type="submit">Отправить заявку</button>
+                  </div>
+                </div>
+                <p class="form-callback__accept">
+                  Отправляя вопрос, я принимаю условия <a href="#">политики конфеденциальности</a> и <a href="#">пользовательского соглашения</a> и
+                  даю согласие на обработку персональных данных в соответствии с законодательством России.
+                </p>
+                <img src="images/callback.png" alt="alt" class="form-callback__img img-responsive" loading="lazy" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--logo col-lg-3 col-12">
+          <img src="images/logo-red.svg" alt="alt" class="footer__logo img-responsive" loading="lazy" />
+          <div class="footer__info">
+            <p class="footer__info-item">Москва, Береговой проезд, ЖК «Фили Град»</p>
+            <p class="footer__info-item">
+              Режим работы<br />
+              с 9:00 до 20:00
+            </p>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__social">
+              <img src="images/icons/tg-white.svg" alt="alt" class="footer__social-icon img-responsive" loading="lazy" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="images/icons/wa-white.svg" alt="alt" class="footer__social-icon img-responsive" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__col footer__col--contacts col-lg-5 col-6">
+          <div class="footer__contacts">
+            <div class="footer__contact footer__contact--big"><a href="#">+7 (937) 666-60-01</a></div>
+            <div class="footer__contact"><a href="#">biexcorpsa@ya.ru</a></div>
+          </div>
+          <a href="#" class="footer__btn btn btn--primary">Оставить заявку</a>
+        </div>
+        <div class="footer__col col-lg-2 col-sm-4 col-6">
+          <div class="footer__title">Информация</div>
+          <nav class="footer__menu">
+            <ul class="list-unstyled">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Вопросы</a></li>
+              <li><a href="#">Условия доставки</a></li>
+              <li><a href="#">Процесс покупки</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col col-lg-2 col-sm-4 col-6">
+          <div class="footer__title">МЕНЮ</div>
+          <nav class="footer__menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Аукционы</a></li>
+              <li><a href="#">Журнал</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--mobile col-sm-4"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
