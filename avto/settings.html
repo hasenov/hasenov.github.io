@@ -140,22 +140,22 @@
               <div class="personal-data__rows">
                 <div class="personal-data__row personal-data__row--personal row">
                   <div class="personal-data__col col-sm-6">
-                    <label for="lastname" class="personal-data__label">Имя</label>
-                    <input type="text" class="personal-data__control control" value="Василий" />
+                    <label for="firstname" class="personal-data__label">Имя</label>
+                    <input type="text" class="personal-data__control control" value="Василий" id="firstname" />
                   </div>
                   <div class="personal-data__col col-sm-6">
                     <label for="lastname" class="personal-data__label">Фамилия</label>
-                    <input type="text" class="personal-data__control control" value="Васильев" />
+                    <input type="text" class="personal-data__control control" value="Васильев" id="lastname" />
                   </div>
                 </div>
                 <div class="personal-data__row personal-data__row--personal row">
                   <div class="personal-data__col col-sm-6">
-                    <label for="lastname" class="personal-data__label">Телефон</label>
-                    <input type="tel" class="personal-data__control control" value="8 (900) 111-22-33" />
+                    <label for="phone" class="personal-data__label">Телефон</label>
+                    <input type="tel" class="personal-data__control control" value="8 (900) 111-22-33" id="phone" />
                   </div>
                   <div class="personal-data__col col-sm-6">
-                    <label for="lastname" class="personal-data__label">Почта</label>
-                    <input type="email" class="personal-data__control control" value="shved@shvedauto.com" />
+                    <label for="email" class="personal-data__label">Почта</label>
+                    <input type="email" class="personal-data__control control" value="shved@shvedauto.com" id="email" />
                   </div>
                 </div>
               </div>
@@ -170,9 +170,9 @@
                     <div class="personal-data__rows">
                       <div class="personal-data__row row">
                         <div class="personal-data__col col-12">
-                          <label for="lastname" class="personal-data__label">Старый пароль</label>
+                          <label for="oldpass" class="personal-data__label">Старый пароль</label>
                           <div class="personal-data__control-group control-group">
-                            <input type="password" class="personal-data__control control-group__control control" placeholder="********" />
+                            <input type="password" class="personal-data__control control-group__control control" placeholder="********" id="oldpass" />
                             <button class="control-group__password-toggle" type="button">
                               <svg role="img" class="control-group__password-toggle-icon">
                                 <use href="images/icons/sprite.svg#eye" />
@@ -181,9 +181,9 @@
                           </div>
                         </div>
                         <div class="personal-data__col col-12">
-                          <label for="lastname" class="personal-data__label">Новый пароль</label>
+                          <label for="newpass" class="personal-data__label">Новый пароль</label>
                           <div class="personal-data__control-group control-group">
-                            <input type="password" class="personal-data__control control-group__control control" placeholder="********" />
+                            <input type="password" class="personal-data__control control-group__control control" placeholder="********" id="newpass" />
                             <button class="control-group__password-toggle" type="button">
                               <svg role="img" class="control-group__password-toggle-icon">
                                 <use href="images/icons/sprite.svg#eye" />
@@ -192,9 +192,9 @@
                           </div>
                         </div>
                         <div class="personal-data__col col-12">
-                          <label for="lastname" class="personal-data__label">Повторите новый пароль</label>
+                          <label for="newpass2" class="personal-data__label">Повторите новый пароль</label>
                           <div class="personal-data__control-group control-group">
-                            <input type="password" class="personal-data__control control-group__control control" placeholder="********" />
+                            <input type="password" class="personal-data__control control-group__control control" placeholder="********" id="newpass2" />
                             <button class="control-group__password-toggle" type="button">
                               <svg role="img" class="control-group__password-toggle-icon">
                                 <use href="images/icons/sprite.svg#eye" />
@@ -226,10 +226,10 @@
               <form class="callback__form form-callback">
                 <div class="form-callback__row row">
                   <div class="form-callback__col col-md-4 col-sm-6">
-                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" />
+                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" required />
                   </div>
                   <div class="form-callback__col col-md-4 col-sm-6">
-                    <input type="text" class="form-callback__control control control--white" placeholder="Имя" />
+                    <input type="tel" class="form-callback__control control control--white" placeholder="Телефон" required />
                   </div>
                   <div class="form-callback__col col-md-4">
                     <button class="form-callback__submit btn btn--primary" type="submit">Отправить заявку</button>
@@ -273,8 +273,8 @@
         </div>
         <div class="footer__col footer__col--contacts col-lg-5 col-6">
           <div class="footer__contacts">
-            <div class="footer__contact footer__contact--big"><a href="#">+7 (937) 666-60-01</a></div>
-            <div class="footer__contact"><a href="#">biexcorpsa@ya.ru</a></div>
+            <div class="footer__contact footer__contact--big"><a href="tel:79376666001">+7 (937) 666-60-01</a></div>
+            <div class="footer__contact"><a href="mailto:biexcorpsa@ya.ru">biexcorpsa@ya.ru</a></div>
           </div>
           <a href="#" class="footer__btn btn btn--primary">Оставить заявку</a>
         </div>
