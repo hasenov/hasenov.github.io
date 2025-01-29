@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Оплата</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#1b1b1b" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <nav class="mobile-menu">
+    <button class="mobile-menu__close" type="button">
+      <svg role="img">
+        <use href="images/icons/sprite.svg#close" />
+      </svg>
+    </button>
+    <div class="mobile-menu__list-wrap"></div>
+    <div class="mobile-menu__info-wrap"></div>
+    <div class="mobile-menu__footer-wrap"></div>
+  </nav>
+
+  <div class="page">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <a href="index.html" class="header__logo">
+            <img src="images/logo.png" alt="alt" class="img-responsive" width="127" height="93" />
+          </a>
+          <form class="header__search search">
+            <div class="search__inner">
+              <div class="search__title">Оперативный выезд замерщика по указанному адресу</div>
+              <div class="search__group">
+                <button class="search__btn" type="submit">
+                  <svg role="img" class="search__icon">
+                    <use href="images/icons/sprite.svg#search" />
+                  </svg>
+                </button>
+                <input type="text" class="search__control" placeholder="Search..." />
+              </div>
+            </div>
+          </form>
+          <div class="header__info">
+            <div class="header__phones">
+              <div class="header__phone phone">
+                <a href="tel:89802153001" class="phone__inner">
+                  <svg role="img" class="phone__icon">
+                    <use href="images/icons/sprite.svg#phone" />
+                  </svg>
+                  8 (980) 215-30-01
+                </a>
+              </div>
+              <div class="header__phone phone">
+                <a href="tel:89802153001" class="phone__inner">
+                  <svg role="img" class="phone__icon">
+                    <use href="images/icons/sprite.svg#phone" />
+                  </svg>
+                  8 (980) 215-30-01
+                </a>
+              </div>
+              <button type="button" class="header__callback-btn btn btn--primary font-medium" data-micromodal-trigger="modal-callback">
+                Заказать звонок
+              </button>
+            </div>
+            <div class="header__contacts">
+              <div class="header__contact contact-header">
+                <svg role="img" class="contact-header__icon">
+                  <use href="images/icons/sprite.svg#location" />
+                </svg>
+                Московская область, Пушкино,<br />
+                Соколовская улица, 22
+              </div>
+            </div>
+          </div>
+          <div class="header__socials socials">
+            <a href="#" class="socials__item item-socials item-socials--telegram item-socials--lg">
+              <svg role="img" class="item-socials__icon">
+                <use href="images/icons/sprite.svg#telegram" />
+              </svg>
+            </a>
+            <a href="#" class="socials__item item-socials item-socials--whatsapp item-socials--lg">
+              <svg role="img" class="item-socials__icon">
+                <use href="images/icons/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+          </div>
+          <button class="header__calc-btn btn btn--primary btn--icon-left font-medium" type="button" data-micromodal-trigger="modal-callback">
+            <svg role="img" class="btn__icon">
+              <use href="images/icons/sprite.svg#calculator" />
+            </svg>
+            Рассчитать стоимость
+          </button>
+          <div class="header__actions-wrap">
+            <div class="header__actions">
+              <button class="header__action header__action--callback" type="button" data-micromodal-trigger="modal-callback">
+                <svg role="img" class="header__action-icon">
+                  <use href="images/icons/sprite.svg#call" />
+                </svg>
+              </button>
+              <button class="header__action header__action--search" type="button">
+                <svg role="img" class="header__action-icon">
+                  <use href="images/icons/sprite.svg#search" />
+                </svg>
+              </button>
+              <button class="header__action header__action--calc" type="button" data-micromodal-trigger="modal-callback">
+                <svg role="img" class="header__action-icon">
+                  <use href="images/icons/sprite.svg#calculator" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="header__hamburger" type="button">
+            <svg role="img">
+              <use href="images/icons/sprite.svg#hamburger" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="header__menu menu">
+        <div class="menu__container container">
+          <ul class="menu__list list-unstyled">
+            <li class="is-active"><a href="about.html">О компании</a></li>
+            <li><a href="service.html">ремонт мебели</a></li>
+            <li><a href="service.html">перетяжка мебели</a></li>
+            <li><a href="pricing.html">цены</a></li>
+            <li><a href="promos.html">акции</a></li>
+            <li><a href="works.html">примеры работ</a></li>
+            <li><a href="reviews.html">отзывы</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list list-unstyled">
+          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item">оплата</li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="spacing">
+      <div class="container">
+        <h2 class="section-title text-left">оплата</h2>
+        <div class="payment">
+          <div class="row gy-2">
+            <div class="col-xl-3">
+              <picture>
+                <source srcset="images/payment.webp" type="image/webp" media="(min-width: 768px)" />
+                <source srcset="images/payment.jpg" media="(min-width: 768px)" />
+                <source srcset="images/payment-mob.webp" type="image/webp" media="(max-width: 767.98px)" />
+                <img src="images/payment-mob.jpg" alt="alt" class="img-responsive" />
+              </picture>
+            </div>
+            <div class="col-xl-9 no-mb-last">
+              <p>
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на
+                берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми
+                правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не
+                имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
+              </p>
+            </div>
+          </div>
+          <div class="payment__payments payments">
+            <div class="payments__title">Способы оплаты:</div>
+            <div class="payments__items">
+              <div class="payments__item">
+                <img src="images/mir-big.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+              </div>
+              <div class="payments__item">
+                <img src="images/sbp-big.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+              </div>
+              <div class="payments__item">
+                <img src="images/mastercard-big.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+              </div>
+              <div class="payments__item">
+                <img src="images/visa-big.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+              </div>
+              <div class="payments__item">
+                <img src="images/payment-big.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- prettier-ignore -->
+    <section class="section-callback spacing">
+      <div class="container">
+        <form class="callback">
+          <div class="callback__inner">
+            <div class="callback__header">
+              <h2 class="callback__title section-title">Отправить заявку</h2>
+              <div class="callback__text-wrap no-mb-last">
+                <p>Пожалуйста, прикрепите фото мебели, которую вы хотите реставрировать, и опишите коротко задачу</p>
+              </div>
+            </div>
+            <div class="callback__row row">
+              <div class="callback__col col-md-6">
+                <input type="text" class="callback__control control control--center" placeholder="Ваше имя*" required />
+              </div>
+              <div class="callback__col col-md-6">
+                <input type="tel" class="callback__control control control--center" placeholder="Телефон*" required />
+              </div>
+            </div>
+            <div class="callback__checkboxes">
+              <label class="callback__checkbox checkbox">
+                <input type="checkbox" class="checkbox__input hidden" required />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности сайта</a></span>
+              </label>
+            </div>
+            <div class="callback__submit-wrap">
+              <button class="callback__submit btn btn--primary font-bold uppercase" type="submit">отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__inner">
+          <div class="footer__row row">
+            <div class="footer__col footer__col--logo col-12">
+              <div class="footer__logo">
+                <img src="images/logo.png" alt="alt" class="img-responsive" loading="lazy" width="100" height="73" />
+              </div>
+            </div>
+            <div class="footer__col footer__col--main col-sm-6">
+              <nav class="footer__menu menu-footer">
+                <div class="menu-footer__title">Основное</div>
+                <div class="menu-footer__lists">
+                  <ul class="menu-footer__list list-unstyled">
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="pricing.html">Цены</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="works.html">Примеры работ</a></li>
+                  </ul>
+                  <ul class="menu-footer__list list-unstyled">
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="warranty.html">Гарантии</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="footer__col footer__col--services col-sm-6">
+              <nav class="footer__menu menu-footer">
+                <div class="menu-footer__title">услуги</div>
+                <div class="menu-footer__lists">
+                  <ul class="menu-footer__list list-unstyled">
+                    <li><a href="service.html">Ремонт мягкой мебели</a></li>
+                    <li><a href="service.html">Ремонт кухонной мебели</a></li>
+                    <li><a href="service.html">Ремонт кожаной мебели</a></li>
+                  </ul>
+                  <ul class="menu-footer__list list-unstyled">
+                    <li><a href="service.html">Перетяжка мебели</a></li>
+                    <li><a href="service.html">Пошив чехлов</a></li>
+                    <li><a href="service.html">Замена фурнитуры</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="footer__col footer__col--phones col-sm-6">
+              <div class="footer__contact contact-footer contact-footer--location">
+                <div class="contact-footer__inner">
+                  <svg role="img" class="contact-footer__icon">
+                    <use href="images/icons/sprite.svg#location" />
+                  </svg>
+                  Московская область, Пушкино, Соколовская улица, 22
+                </div>
+              </div>
+              <div class="footer__phones">
+                <div class="footer__phone phone">
+                  <a href="tel:89802153001" class="phone__inner">
+                    <svg role="img" class="phone__icon">
+                      <use href="images/icons/sprite.svg#phone" />
+                    </svg>
+                    8 (980) 215-30-01
+                  </a>
+                </div>
+                <div class="footer__phone phone">
+                  <a href="tel:89802153001" class="phone__inner">
+                    <svg role="img" class="phone__icon">
+                      <use href="images/icons/sprite.svg#phone" />
+                    </svg>
+                    8 (980) 215-30-01
+                  </a>
+                </div>
+                <button class="footer__callback-btn btn btn--primary" type="button" data-micromodal-trigger="modal-callback">Заказать звонок</button>
+              </div>
+            </div>
+            <div class="footer__col footer__col--contacts col-sm-6">
+              <div class="footer__contact contact-footer">
+                <a href="#" class="contact-footer__inner">
+                  <svg role="img" class="contact-footer__icon">
+                    <use href="images/icons/sprite.svg#mail" />
+                  </svg>
+                  info@aego-plus.ru
+                </a>
+              </div>
+              <div class="footer__socials socials">
+                <a href="#" class="socials__item item-socials item-socials--telegram">
+                  <svg role="img" class="item-socials__icon">
+                    <use href="images/icons/sprite.svg#telegram" />
+                  </svg>
+                </a>
+                <a href="#" class="socials__item item-socials item-socials--whatsapp">
+                  <svg role="img" class="item-socials__icon">
+                    <use href="images/icons/sprite.svg#whatsapp" />
+                  </svg>
+                </a>
+              </div>
+              <div class="footer__payments payments">
+                <div class="payments__title">Мы принимаем:</div>
+                <div class="payments__items">
+                  <div class="payments__item">
+                    <img src="images/mir.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+                  </div>
+                  <div class="payments__item">
+                    <img src="images/sbp.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+                  </div>
+                  <div class="payments__item">
+                    <img src="images/mastercard.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+                  </div>
+                  <div class="payments__item">
+                    <img src="images/visa.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+                  </div>
+                  <div class="payments__item">
+                    <img src="images/payment.png" alt="alt" class="payments__item-icon img-responsive" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__copyright">©2014 ООО «АЕГО» – Производство и ремонт мебели: кресла и диваны для кафе, бара, гостиниц и отелей.</p>
+            <ul class="footer__links list-unstyled">
+              <li><a href="#">Карта сайта</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal modal--callback micromodal-slide" id="modal-callback" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+          <div class="modal__inner">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+              <svg role="img" class="modal__close-icon">
+                <use href="images/icons/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <form class="form-modal">
+              <div class="form-modal__title">Ответим на все ваши вопросы</div>
+              <div class="form-modal__group">
+                <input type="text" class="form-modal__control control control--alt" placeholder="Ваше имя*" required />
+              </div>
+              <div class="form-modal__group">
+                <input type="tel" class="form-modal__control control control--alt" placeholder="Телефон*" required />
+              </div>
+              <div class="form-modal__group">
+                <input type="email" class="form-modal__control control control--alt" placeholder="Email" />
+              </div>
+              <div class="form-modal__group">
+                <textarea class="form-modal__control control control--alt" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="form-modal__submit-wrap">
+                <button class="form-modal__submit btn btn--primary font-bold uppercase">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
