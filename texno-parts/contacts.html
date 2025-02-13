@@ -1,0 +1,668 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Контакты</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#ffcd11" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top top-header">
+      <div class="top-header__container container">
+        <a href="index.html" class="top-header__logo">
+          <img src="images/logo.svg" alt="alt" class="img-responsive" />
+        </a>
+        <div class="top-header__search search-header">
+          <div class="search-header__catalog-menu catalog-menu">
+            <button class="catalog-menu__btn catalog-btn" type="button" data-popup="popup-catalog">
+              <svg class="catalog-btn__icon" role="img">
+                <use href="images/icons/sprite.svg#hamburger" />
+              </svg>
+              Каталог
+            </button>
+            <nav class="catalog-menu__dropdown">
+              <div class="catalog-menu__title">Каталог</div>
+              <ul class="list-unstyled">
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+                <li><a href="#">Название категории</a></li>
+              </ul>
+            </nav>
+          </div>
+          <form class="search-header__form form-search-header">
+            <input type="text" class="form-search-header__control control control--white" placeholder="Поиск по сайту..." />
+            <button class="form-search-header__submit" type="submit">
+              <svg class="form-search-header__submit-icon" role="img">
+                <use href="images/icons/sprite.svg#search" />
+              </svg>
+            </button>
+          </form>
+          <button class="search-header__toggle" type="submit" data-popup="popup-search">
+            <svg class="search-header__toggle-icon" role="img">
+              <use href="images/icons/sprite.svg#search" />
+            </svg>
+          </button>
+        </div>
+        <div class="top-header__socials-wrap">
+          <div class="top-header__socials">
+            <a href="#" class="top-header__social social social--white">
+              <svg class="social__icon" role="img">
+                <use href="images/icons/sprite.svg#tg" />
+              </svg>
+            </a>
+            <a href="#" class="top-header__social social social--white">
+              <svg class="social__icon" role="img">
+                <use href="images/icons/sprite.svg#wa" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <button class="top-header__callback" type="button" data-micromodal-trigger="modal-callback">заказать звонок</button>
+        <a href="tel:88003339528" class="top-header__phone phone">
+          <svg class="phone__icon" role="img">
+            <use href="images/icons/sprite.svg#phone" />
+          </svg>
+          8 800 333-95-28
+        </a>
+        <button class="top-header__hamburger" type="button" data-popup="popup-menu">
+          <svg role="img">
+            <use href="images/icons/sprite.svg#hamburger-alt" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__bottom bottom-header">
+      <div class="bottom-header__container container">
+        <nav class="bottom-header__menu menu">
+          <ul class="list-unstyled">
+            <li class="is-active"><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="categories.html">Запчасти</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="bottom-header__contacts">
+          <div class="bottom-header__contact contact-header">
+            <div class="contact-header__inner">
+              <svg class="contact-header__icon" role="img">
+                <use href="images/icons/sprite.svg#location" />
+              </svg>
+              620105, Свердловская область, г. Екатеринбург, ул. Барвинка д.21 кор.18
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="popup" id="popup-menu">
+    <button class="popup__close" type="button">
+      <svg role="img">
+        <use href="images/icons/sprite.svg#close-thick" />
+      </svg>
+    </button>
+    <div class="popup__content"></div>
+  </div>
+
+  <div class="popup" id="popup-search">
+    <button class="popup__close" type="button">
+      <svg role="img">
+        <use href="images/icons/sprite.svg#close-thick" />
+      </svg>
+    </button>
+    <div class="popup__content">
+      <form class="search-popup">
+        <input type="text" class="search-popup__control control" placeholder="Введите ваш запрос" />
+        <button class="search-popup__submit" type="submit">
+          <svg class="search-popup__submit-icon" role="img">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-catalog">
+    <button class="popup__close" type="button">
+      <svg role="img">
+        <use href="images/icons/sprite.svg#close-thick" />
+      </svg>
+    </button>
+    <div class="popup__content"></div>
+  </div>
+
+
+  <div class="container">
+    <nav class="breadcrumbs">
+      <ul class="breadcrumbs__list list-unstyled">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item is-active">Контакты</li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="section-contacts">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">Контакты</h1>
+      </div>
+      <div class="contacts">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9463e64f9ab71364e54d9ff867251165c7444b9dd0aac8eb1195c48572b43e78&amp;source=constructor" class="contacts__map"></iframe>
+        <div class="contacts__items row">
+          <div class="contacts__col contacts__col--phone col-xl-3 col-sm-6">
+            <div class="contacts__item item-contacts">
+              <svg role="img" class="item-contacts__icon item-contacts__icon--phone">
+                <use href="images/icons/sprite.svg#phone" />
+              </svg>
+              <div class="item-contacts__title">Телефоны</div>
+              <a href="#" class="item-contacts__value">8 800 333-95-28</a>
+              <a href="#" class="item-contacts__value">+7 (343) 206-70-98</a>
+              <a href="#" class="item-contacts__value">
+                <img src="images/icons/wa.svg" alt="alt" class="item-contacts__value-icon" />
+                <img src="images/icons/tg.svg" alt="alt" class="item-contacts__value-icon" />
+                +7 912 69-96-610
+              </a>
+            </div>
+          </div>
+          <div class="contacts__col contacts__col--email col-xl-3 col-sm-6">
+            <div class="contacts__item item-contacts">
+              <svg role="img" class="item-contacts__icon item-contacts__icon--email">
+                <use href="images/icons/sprite.svg#mail" />
+              </svg>
+              <div class="item-contacts__title">Электронная почта</div>
+              <a href="#" class="item-contacts__value">texpartc@mail.ru</a>
+            </div>
+          </div>
+          <div class="contacts__col contacts__col--clock col-xl-3 col-sm-6">
+            <div class="contacts__item item-contacts">
+              <svg role="img" class="item-contacts__icon item-contacts__icon--clock">
+                <use href="images/icons/sprite.svg#clock" />
+              </svg>
+              <div class="item-contacts__title">Режим работы</div>
+              <div class="item-contacts__value">пн-пт с 9.00 до 18.00</div>
+            </div>
+          </div>
+          <div class="contacts__col contacts__col--location col-xl-3 col-sm-6">
+            <div class="contacts__item item-contacts">
+              <svg role="img" class="item-contacts__icon item-contacts__icon--location">
+                <use href="images/icons/sprite.svg#location" />
+              </svg>
+              <div class="item-contacts__title">Адрес</div>
+              <div class="item-contacts__value">620105, Свердловская область, г. Екатеринбург, ул. Барвинка д.21 кор.18</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-team">
+    <div class="container">
+      <div class="team">
+        <div class="team__header section-header">
+          <div class="section-label">Команда специалистов</div>
+          <h2 class="section-title h1">Наши сотрудники</h2>
+        </div>
+        <div class="team__row row">
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-1.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Павлов Александр Юрьевич</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Директор</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:89049862254" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8-904-986-22-54
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-2.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Коноплев Юрий</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Руководитель отдела</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:89126996610" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8-912-699-66-10
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-3.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Широков Роман Олегович</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Менеджер по продажам</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:88003339528" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8 800 333-95-28
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-4.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Смирнов Николай Борисович</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Менеджер по продажам</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:88003339528" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8 800 333-95-28
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-5.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Клюкин Анатолий Валерьевич</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Менеджер по продажам</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:88003339528" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8 800 333-95-28
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-6.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Ключков Василий Георгиевич</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Менеджер по продажам</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:88003339528" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8 800 333-95-28
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__col col-xl-3 col-lg-4 col-sm-6">
+            <div class="team__item item-team">
+              <div class="item-team__photo-wrap">
+                <div class="item-team__photo-inner">
+                  <img src="images/team-7.png" alt="alt" class="item-team__photo img-responsive" loading="lazy" />
+                </div>
+              </div>
+              <div class="item-team__title">Жихорь Лариса Константиновна</div>
+              <div class="item-team__footer">
+                <div class="item-team__badge">Бухгалтер</div>
+                <div class="item-team__contacts">
+                  <div class="item-team__contact contact-team contact-team--bold">
+                    <a href="tel:89097009555" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon">
+                          <use href="images/icons/sprite.svg#phone" />
+                        </svg>
+                      </div>
+                      8-909-700-95-55
+                    </a>
+                  </div>
+                  <div class="item-team__contact contact-team">
+                    <a href="mailto:texpartc@mail.ru" class="contact-team__inner">
+                      <div class="contact-team__icon-wrap">
+                        <svg role="img" class="contact-team__icon contact-team__icon--mail">
+                          <use href="images/icons/sprite.svg#mail" />
+                        </svg>
+                      </div>
+                      texpartc@mail.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-callback" style="background-image: url(images/bg-callback-alt.jpg)">
+    <div class="container">
+      <div class="callback">
+        <div class="callback__header section-header">
+          <div class="section-label">Всегда на связи!</div>
+          <h2 class="section-title h1">
+            Есть вопрос / пожелание?<br />
+            Напишите нам:
+          </h2>
+        </div>
+        <form class="callback__form form-callback js-validate-form">
+          <div class="form-callback__errors-wrap">
+            <div class="form-callback__errors form-errors"></div>
+          </div>
+          <div class="form-callback__controls row">
+            <div class="form-callback__group col-md-6">
+              <input type="text" class="form-callback__control control control--outline-white js-validate-required" placeholder="Ваше имя" />
+            </div>
+            <div class="form-callback__group col-md-6">
+              <input type="email" class="form-callback__control control control--outline-white js-validate-email-required" placeholder="Email" />
+            </div>
+            <div class="form-callback__group col-12">
+              <textarea class="form-callback__control control control--outline-white" placeholder="Ваш вопрос / пожелание"></textarea>
+            </div>
+          </div>
+          <div class="form-callback__actions row">
+            <div class="form-callback__btn-wrap col-md-6">
+              <button class="form-callback__btn btn btn--primary" type="submit">Отправить сообщение</button>
+            </div>
+            <div class="form-callback__accept-wrap col-md-6">
+              <p class="form-callback__accept">
+                Нажимая кнопку, Вы соглашаетесь на обработку персональных данных на основании <a href="#">политики конфиденциальности</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__row row">
+        <div class="footer__col footer__col--logo col-md-6">
+          <a href="#" class="footer__logo">
+            <img src="images/logo.svg" alt="alt" class="img-responsive" />
+          </a>
+          <div class="footer__info-wrap">
+            <p class="footer__info">Интернет-магазин «Технопартс».</p>
+            <p class="footer__copyright">Все права защищены. Информация на сайте не является публичной офертой.</p>
+          </div>
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__col footer__col--menu col-md-6">
+          <h4 class="footer__title">Меню</h4>
+          <nav class="footer__menu menu-footer">
+            <ul class="list-unstyled">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Запчасти</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--catalog col-md-6">
+          <h4 class="footer__title">Каталог</h4>
+          <nav class="footer__menu menu-footer menu-footer--catalog">
+            <ul class="list-unstyled">
+              <li><a href="#">Отечественная</a></li>
+              <li><a href="#">HITACHI</a></li>
+              <li><a href="#">KOMATSU</a></li>
+              <li><a href="#">HYUNDAI</a></li>
+              <li><a href="#">DOOSAN</a></li>
+              <li><a href="#">VOLVO</a></li>
+              <li><a href="#">JCB</a></li>
+              <li><a href="#">CATERPILLAR</a></li>
+              <li><a href="#">SHANTUI</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--contacts col-md-6">
+          <h4 class="footer__title">Контакты</h4>
+          <div class="footer__contacts">
+            <div class="footer__contact contact-footer contact-footer--phone">
+              <a href="#" class="contact-footer__inner">
+                <svg class="contact-footer__icon" role="img">
+                  <use href="images/icons/sprite.svg#phone" />
+                </svg>
+                8 800 333-95-28
+              </a>
+            </div>
+            <div class="footer__contact contact-footer contact-footer--email">
+              <a href="#" class="contact-footer__inner">
+                <svg class="contact-footer__icon" role="img">
+                  <use href="images/icons/sprite.svg#mail" />
+                </svg>
+                texpartc@mail.ru
+              </a>
+            </div>
+            <div class="footer__contact contact-footer contact-footer--clock">
+              <div class="contact-footer__inner">
+                <svg class="contact-footer__icon" role="img">
+                  <use href="images/icons/sprite.svg#clock" />
+                </svg>
+                пн-пт с 9.00 до 18.00
+              </div>
+            </div>
+          </div>
+          <p class="footer__address">620105, Свердловская область, г. Екатеринбург, ул. Барвинка д.21 кор.18</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social social social--primary">
+              <svg class="social__icon" role="img">
+                <use href="images/icons/sprite.svg#tg" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social social social--primary">
+              <svg class="social__icon" role="img">
+                <use href="images/icons/sprite.svg#wa" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+            <svg role="img" class="modal__close-icon">
+              <use href="images/icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <form class="form-modal js-validate-form">
+            <div class="form-modal__title">Перезвонить вам?</div>
+            <div class="form-modal__errors-wrap">
+              <div class="form-modal__errors form-errors"></div>
+            </div>
+            <div class="form-modal__controls">
+              <input type="text" class="form-modal__control control control--outline-gray js-validate-required" placeholder="Ваше имя" required />
+              <input type="tel" class="form-modal__control control control--outline-gray js-validate-required js-phone-mask" placeholder="Номер телефона" required />
+            </div>
+            <button class="form-modal__submit btn btn--primary" type="submit">Заказать звонок</button>
+            <p class="form-modal__accept">
+              Нажимая кнопку, Вы соглашаетесь на обработку персональных данных на основании <a href="#">политики конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="modal-request" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+            <svg role="img" class="modal__close-icon">
+              <use href="images/icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <form class="form-modal js-validate-form">
+            <div class="form-modal__title">Запрос товара</div>
+            <div class="form-modal__errors-wrap">
+              <div class="form-modal__errors form-errors"></div>
+            </div>
+            <div class="form-modal__controls">
+              <input type="text" class="form-modal__control control control--outline-gray js-validate-required" placeholder="Ваше имя" required />
+              <input type="tel" class="form-modal__control control control--outline-gray js-validate-required js-phone-mask" placeholder="Номер телефона" required />
+              <textarea class="form-modal__control control control--outline-gray js-validate-required" placeholder="Какой товар вас интересует?" required></textarea>
+            </div>
+            <button class="form-modal__submit btn btn--primary" type="submit">Запросить товар</button>
+            <p class="form-modal__accept">
+              Нажимая кнопку, Вы соглашаетесь на обработку персональных данных на основании <a href="#">политики конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="backdrop"></div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

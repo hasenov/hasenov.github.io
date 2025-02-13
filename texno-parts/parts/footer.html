@@ -1,0 +1,145 @@
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__row row">
+      <div class="footer__col footer__col--logo col-md-6">
+        <a href="#" class="footer__logo">
+          <img src="images/logo.svg" alt="alt" class="img-responsive" />
+        </a>
+        <div class="footer__info-wrap">
+          <p class="footer__info">Интернет-магазин «Технопартс».</p>
+          <p class="footer__copyright">Все права защищены. Информация на сайте не является публичной офертой.</p>
+        </div>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__col footer__col--menu col-md-6">
+        <h4 class="footer__title">Меню</h4>
+        <nav class="footer__menu menu-footer">
+          <ul class="list-unstyled">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Запчасти</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col footer__col--catalog col-md-6">
+        <h4 class="footer__title">Каталог</h4>
+        <nav class="footer__menu menu-footer menu-footer--catalog">
+          <ul class="list-unstyled">
+            <li><a href="#">Отечественная</a></li>
+            <li><a href="#">HITACHI</a></li>
+            <li><a href="#">KOMATSU</a></li>
+            <li><a href="#">HYUNDAI</a></li>
+            <li><a href="#">DOOSAN</a></li>
+            <li><a href="#">VOLVO</a></li>
+            <li><a href="#">JCB</a></li>
+            <li><a href="#">CATERPILLAR</a></li>
+            <li><a href="#">SHANTUI</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col footer__col--contacts col-md-6">
+        <h4 class="footer__title">Контакты</h4>
+        <div class="footer__contacts">
+          <div class="footer__contact contact-footer contact-footer--phone">
+            <a href="#" class="contact-footer__inner">
+              <svg class="contact-footer__icon" role="img">
+                <use href="images/icons/sprite.svg#phone" />
+              </svg>
+              8 800 333-95-28
+            </a>
+          </div>
+          <div class="footer__contact contact-footer contact-footer--email">
+            <a href="#" class="contact-footer__inner">
+              <svg class="contact-footer__icon" role="img">
+                <use href="images/icons/sprite.svg#mail" />
+              </svg>
+              texpartc@mail.ru
+            </a>
+          </div>
+          <div class="footer__contact contact-footer contact-footer--clock">
+            <div class="contact-footer__inner">
+              <svg class="contact-footer__icon" role="img">
+                <use href="images/icons/sprite.svg#clock" />
+              </svg>
+              пн-пт с 9.00 до 18.00
+            </div>
+          </div>
+        </div>
+        <p class="footer__address">620105, Свердловская область, г. Екатеринбург, ул. Барвинка д.21 кор.18</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social social social--primary">
+            <svg class="social__icon" role="img">
+              <use href="images/icons/sprite.svg#tg" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social social social--primary">
+            <svg class="social__icon" role="img">
+              <use href="images/icons/sprite.svg#wa" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <div class="modal__inner">
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+          <svg role="img" class="modal__close-icon">
+            <use href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form-modal js-validate-form">
+          <div class="form-modal__title">Перезвонить вам?</div>
+          <div class="form-modal__errors-wrap">
+            <div class="form-modal__errors form-errors"></div>
+          </div>
+          <div class="form-modal__controls">
+            <input type="text" class="form-modal__control control control--outline-gray js-validate-required" placeholder="Ваше имя" required />
+            <input type="tel" class="form-modal__control control control--outline-gray js-validate-required js-phone-mask" placeholder="Номер телефона" required />
+          </div>
+          <button class="form-modal__submit btn btn--primary" type="submit">Заказать звонок</button>
+          <p class="form-modal__accept">
+            Нажимая кнопку, Вы соглашаетесь на обработку персональных данных на основании <a href="#">политики конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-request" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <div class="modal__inner">
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+          <svg role="img" class="modal__close-icon">
+            <use href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form-modal js-validate-form">
+          <div class="form-modal__title">Запрос товара</div>
+          <div class="form-modal__errors-wrap">
+            <div class="form-modal__errors form-errors"></div>
+          </div>
+          <div class="form-modal__controls">
+            <input type="text" class="form-modal__control control control--outline-gray js-validate-required" placeholder="Ваше имя" required />
+            <input type="tel" class="form-modal__control control control--outline-gray js-validate-required js-phone-mask" placeholder="Номер телефона" required />
+            <textarea class="form-modal__control control control--outline-gray js-validate-required" placeholder="Какой товар вас интересует?" required></textarea>
+          </div>
+          <button class="form-modal__submit btn btn--primary" type="submit">Запросить товар</button>
+          <p class="form-modal__accept">
+            Нажимая кнопку, Вы соглашаетесь на обработку персональных данных на основании <a href="#">политики конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="backdrop"></div>
