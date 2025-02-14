@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Успешная оплата</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#ff5632" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+
+  <div class="page">
+    <div class="payment payment--feedback">
+      <div class="payment__top-line">
+        <img src="images/logo.svg" alt="alt" class="payment__logo img-responsive" width="99" height="32" />
+      </div>
+      <div class="payment__header">
+        <div class="payment__order-title text-md">Оплата заказа № 1234</div>
+      </div>
+      <div class="payment__body">
+        <div class="payment__feedback-box feedback-box">
+          <svg class="feedback-box__icon feedback-box__icon--success" role="img">
+            <use href="images/icons/sprite.svg#success-circle" />
+          </svg>
+          <div class="feedback-box__title title">Оплата прошла успешно!</div>
+        </div>
+      </div>
+      <div class="payment__footer">
+        <div class="payment__help help">
+          <div class="help__title text-sm">Нужна помощь?</div>
+          <div class="help__socials">
+            <a href="https://t.me/lava_ru_bot" class="help__social social" target="_blank" rel="noopener noreferrer">
+              <img src="images/icons/telegram.svg" alt="alt" class="social__icon img-responsive" width="32" height="32" />
+            </a>
+            <a href="mailto:help@lava.ru" class="help__social social">
+              <img src="images/icons/email.svg" alt="alt" class="social__icon img-responsive" width="32" height="32" />
+            </a>
+          </div>
+        </div>
+        <div class="payment__payment-logos payment-logos">
+          <img src="images/visa.svg" alt="alt" class="payment-logos__logo img-responsive" width="54" height="24" />
+          <img src="images/PCI.png" alt="alt" class="payment-logos__logo img-responsive" width="54" height="24" />
+          <img src="images/mastercard.svg" alt="alt" class="payment-logos__logo img-responsive" width="54" height="24" />
+        </div>
+        <div class="payment__lang lang">
+          <div class="lang__btn">
+            <img src="images/icons/ru.svg" alt="alt" class="lang__flag img-responsive" width="24" height="24" />
+            <div class="lang__title">RU</div>
+            <svg class="lang__arrow" role="img">
+              <use href="images/icons/sprite.svg#chevron-right" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

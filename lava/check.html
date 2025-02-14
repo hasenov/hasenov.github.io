@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Чек</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#ff5632" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+
+  <div class="page">
+    <div class="payment">
+      <div class="payment__top-line">
+        <img src="images/logo.svg" alt="alt" class="payment__logo img-responsive" width="99" height="32" />
+        <button class="payment__close close" type="button" data-micromodal-trigger="modal-cancel">
+          <svg class="close__icon" role="img">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+      </div>
+      <div class="payment__header">
+        <div class="payment__order-title text-md">Оплата заказа № 1234</div>
+        <div class="payment__store-info store-info">
+          <img src="images/icons/smart-toy.svg" alt="alt" class="store-info__icon img-responsive" width="24" height="24" />
+          <div class="store-info__text">GbUc store</div>
+        </div>
+        <div class="payment__price">5 550 ₽</div>
+      </div>
+      <div class="payment__body">
+        <div class="payment__feedback-box feedback-box feedback-box--check">
+          <div class="feedback-box__loader loader">
+            <div class="loader__counter title" id="timerLoader">8 : 35</div>
+            <div class="loader__line-wrap">
+              <img src="images/loader-dot.svg" alt="alt" class="loader__dot img-responsive" />
+            </div>
+          </div>
+          <div class="feedback-box__title title">Мы проверяем получение вашего платежа</div>
+          <div class="feedback-box__text-sm-wrap no-mb-last text-sm">
+            <p>В данный момент наши системы проверяют поступление средств по Вашему платежу</p>
+          </div>
+        </div>
+        <div class="payment__check check">
+          <div class="check__header">
+            <svg class="check__icon" role="img">
+              <use href="images/icons/sprite.svg#check" />
+            </svg>
+            <div class="check__content">
+              <div class="check__title title">Отправьте чек, это поможет найти платеж быстрее.</div>
+              <div class="check__subtitle text-sm">Откройте операцию в банке и нажмите «Документы» или «Чек».</div>
+            </div>
+          </div>
+          <form class="check__form form-check">
+            <div class="form-check__img-wrap">
+              <img src="images/reciepts.png" srcset="images/reciepts-2x.png 2x" alt="alt" class="form-check__img img-responsive" />
+            </div>
+            <div class="form-check__inner">
+              <label class="form-check__file-input file-input">
+                <input type="file" class="file-input__input hidden" accept=".jpg,.jpeg,.png,.pdf" />
+                <span class="file-input__box">
+                  <span class="file-input__title">Выберите фото или скриншот</span>
+                  <span class="file-input__formats text-sm">JPG, PNG, PDF</span>
+                  <span class="file-input__filename"></span>
+                  <span class="file-input__status text-sm">Файл выбран</span>
+                </span>
+              </label>
+              <div class="form-check__controls">
+                <input type="text" class="form-check__control control control--default" placeholder="Кто отправил перевод? Имя?" />
+                <input type="text" class="form-check__control control control--default control--alt" placeholder="Сколько Вы перевели? (RUB)" />
+              </div>
+              <button class="form-check__submit btn btn--primary" type="submit">Отправить на проверку</button>
+            </div>
+            <div class="form-check__feedback feedback-check">
+              <img src="images/icons/success.svg" alt="alt" class="feedback-check__icon img-responsive" />
+              <div class="feedback-check__title title">Спасибо! Подтверждение загружено.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="payment__footer">
+        <div class="payment__help help">
+          <div class="help__title text-sm">Нужна помощь?</div>
+          <div class="help__socials">
+            <a href="https://t.me/lava_ru_bot" class="help__social social" target="_blank" rel="noopener noreferrer">
+              <img src="images/icons/telegram.svg" alt="alt" class="social__icon img-responsive" width="32" height="32" />
+            </a>
+            <a href="mailto:help@lava.ru" class="help__social social">
+              <img src="images/icons/email.svg" alt="alt" class="social__icon img-responsive" width="32" height="32" />
+            </a>
+          </div>
+        </div>
+        <div class="payment__payment-logos payment-logos">
+          <img src="images/visa.svg" alt="alt" class="payment-logos__logo img-responsive" width="54" height="24" />
+          <img src="images/PCI.png" alt="alt" class="payment-logos__logo img-responsive" width="54" height="24" />
+          <img src="images/mastercard.svg" alt="alt" class="payment-logos__logo img-responsive" width="54" height="24" />
+        </div>
+        <div class="payment__lang lang">
+          <div class="lang__btn">
+            <img src="images/icons/ru.svg" alt="alt" class="lang__flag img-responsive" width="24" height="24" />
+            <div class="lang__title">RU</div>
+            <svg class="lang__arrow" role="img">
+              <use href="images/icons/sprite.svg#chevron-right" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <div class="modal modal--cancel micromodal-slide" id="modal-cancel" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close close" type="button" aria-label="Закрыть всплывающее окно" data-micromodal-close>
+            <svg class="close__icon" role="img">
+              <use href="images/icons/sprite.svg#close" />
+            </svg>
+          </button>
+          <form class="modal__cancel-payment cancel-payment">
+            <svg class="cancel-payment__icon" role="img">
+              <use href="images/icons/sprite.svg#cancel-payment" />
+            </svg>
+            <div class="cancel-payment__title title">Хотите отменить платёж?</div>
+            <div class="cancel-payment__content no-mb-last">
+              <p>После отмены платежа, его уже нельзя будет восстановить. Вы сможете создать новый платёж на сайте, если захотите</p>
+            </div>
+            <div class="cancel-payment__warning warning">
+              <svg class="warning__icon" role="img">
+                <use href="images/icons/sprite.svg#warning-triangle" />
+              </svg>
+              <div class="warning__content no-mb-last">
+                <p>Если вы УЖЕ ОПЛАТИЛИ данный платёж, не отменяйте его, просто ждите завершения платежа!</p>
+              </div>
+            </div>
+            <!-- вариант с button submit. Cсылка <a> для демонстрации -->
+            <!-- <button class="cancel-payment__btn btn btn--primary" type="submit">Отменить платеж</button> -->
+            <a href="canceled.html" class="cancel-payment__btn btn btn--primary">Отменить платеж</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

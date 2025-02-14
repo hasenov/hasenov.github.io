@@ -1,0 +1,33 @@
+<div class="modal modal--cancel micromodal-slide" id="modal-cancel" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <div class="modal__inner">
+        <button class="modal__close close" type="button" aria-label="Закрыть всплывающее окно" data-micromodal-close>
+          <svg class="close__icon" role="img">
+            <use href="images/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <form class="modal__cancel-payment cancel-payment">
+          <svg class="cancel-payment__icon" role="img">
+            <use href="images/icons/sprite.svg#cancel-payment" />
+          </svg>
+          <div class="cancel-payment__title title">Хотите отменить платёж?</div>
+          <div class="cancel-payment__content no-mb-last">
+            <p>После отмены платежа, его уже нельзя будет восстановить. Вы сможете создать новый платёж на сайте, если захотите</p>
+          </div>
+          <div class="cancel-payment__warning warning">
+            <svg class="warning__icon" role="img">
+              <use href="images/icons/sprite.svg#warning-triangle" />
+            </svg>
+            <div class="warning__content no-mb-last">
+              <p>Если вы УЖЕ ОПЛАТИЛИ данный платёж, не отменяйте его, просто ждите завершения платежа!</p>
+            </div>
+          </div>
+          <!-- вариант с button submit. Cсылка <a> для демонстрации -->
+          <!-- <button class="cancel-payment__btn btn btn--primary" type="submit">Отменить платеж</button> -->
+          <a href="canceled.html" class="cancel-payment__btn btn btn--primary">Отменить платеж</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
