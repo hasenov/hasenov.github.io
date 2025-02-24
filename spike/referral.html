@@ -1,0 +1,517 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-black bg-lemon lg:bg-body leading-tight selection:bg-orange selection:text-white overflow-x-hidden min-h-screen flex flex-col">
+  <header class="pt-5 sm:pt-4">
+    <div class="container flex items-center">
+      <div class="max-lg:hidden lg:shrink lg:grow-0 lg:basis-6/12">
+        <div class="mb-1 text-eerie-black">Next price increase in:</div>
+        <div class="flex space-x-[27px] text-center text-eerie-black" data-countdown>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-days>00</div>
+            <div class="text-[14px] text-gold-fusion">days</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-hrs>00</div>
+            <div class="text-[14px] text-gold-fusion">hrs</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-mins>00</div>
+            <div class="text-[14px] text-gold-fusion">mins</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-secs>00</div>
+            <div class="text-[14px] text-gold-fusion">secs</div>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="relative max-w-[54px] shrink-0 max-lg:mr-3 max-md:z-30 sm:max-w-[66px]">
+        <img src="images/logo.png" srcset="images/logo.png 1x, images/logo-2x.png 2x" alt="alt" />
+      </a>
+      <div class="flex items-center justify-end max-lg:ml-auto lg:shrink lg:grow-0 lg:basis-6/12">
+        <nav class="!duration-700 max-md:invisible max-md:fixed max-md:left-0 max-md:top-0 max-md:z-20 max-md:flex max-md:h-full max-md:w-full max-md:flex-col max-md:justify-between max-md:overflow-y-auto max-md:bg-lemon max-md:pt-28 max-md:transition-all max-md:[transform:translate3d(0,-100%,0)] md:mr-11 max-md:[&.is-active]:visible max-md:[&.is-active]:[transform:translate3d(0,0,0)]" data-mobile-menu>
+          <ul class="text-[18px] font-extrabold max-md:mb-28 max-md:space-y-[50px] max-md:text-center md:flex md:space-x-[50px] [&_a:hover]:text-orange [&_a]:transition-colors">
+            <li><a href="referral.html">Referral</a></li>
+            <li><a href="claim.html">Claim</a></li>
+          </ul>
+        </nav>
+        <div class="relative -mx-[5px] -mb-2.5 flex flex-wrap max-md:z-30">
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/x.svg" alt="alt" class="w-3/5 shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/cmc.svg" alt="alt" class="w-[70%] shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/tg.svg" alt="alt" class="w-1/2 shrink-0" />
+          </a>
+        </div>
+      </div>
+      <div class="group relative z-30 ml-7 flex size-7 shrink-0 cursor-pointer items-center justify-center transition-transform md:hidden [&.is-active]:rotate-90" data-hamburger>
+        <div class="flex h-2 w-[18px] shrink-0 flex-col justify-between">
+          <div class="h-0.5 w-full shrink-0 bg-eerie-black transition-colors group-[.is-active]:bg-orange"></div>
+          <div class="h-0.5 w-full shrink-0 bg-eerie-black transition-colors group-[.is-active]:bg-orange"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero referral -->
+  <section class="pb-[155px] pt-[52px] sm:pt-[77px] lg:pb-[209px]">
+    <div class="container">
+      <div class="-mx-[5px] -mb-[50px] flex flex-wrap">
+        <div class="mb-[50px] w-full px-[5px] lg:max-w-[40%] lg:shrink-0 lg:grow-0 lg:basis-2/5 lg:pt-10 xl:max-w-[33.333333%] xl:basis-4/12">
+          <h2 class="mb-2 text-[24px] font-extrabold text-eerie-black max-sm:max-w-[303px] sm:mb-5 sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]"><span class="text-orange">Earn 15%</span> By Referring Friends to Spike AI</h2>
+          <p class="mb-4 text-[18px] sm:mb-8 sm:text-[20px] md:text-[22px] lg:text-[24px]">Become an ambassador</p>
+          <a href="#" class="btn btn-red w-[245px] sm:w-[296px]">Get my referral link</a>
+        </div>
+        <div class="mb-[50px] ml-auto w-full px-[5px] lg:max-w-[41.666667%] lg:shrink-0 lg:grow-0 lg:basis-5/12 xl:ml-[25%]">
+          <div class="relative">
+            <div class="relative">
+              <div class="space-y-2.5">
+                <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5">
+                  <img src="images/1.svg" alt="alt" class="mr-[15px] w-[60px] sm:mr-5 sm:w-20" />
+                  <div>
+                    <div class="text-[18px] font-extrabold sm:mb-1 sm:text-[24px]">Register</div>
+                    <div class="text-eerie-black sm:mb-1.5 sm:text-[18px]">Get started with just your email</div>
+                    <div class="text-gray max-sm:text-[15px]">No password or other information required!</div>
+                  </div>
+                </div>
+                <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5">
+                  <img src="images/2.svg" alt="alt" class="mr-[15px] w-[60px] sm:mr-5 sm:w-20" />
+                  <div>
+                    <div class="text-[18px] font-extrabold sm:mb-1 sm:text-[24px]">Share</div>
+                    <div class="text-eerie-black sm:mb-1.5 sm:text-[18px]">Invite others to the Harambe AI presale</div>
+                    <div class="text-gray max-sm:text-[15px]">Simply share your link to begin earning</div>
+                  </div>
+                </div>
+                <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5">
+                  <img src="images/3.svg" alt="alt" class="mr-[15px] w-[60px] sm:mr-5 sm:w-20" />
+                  <div>
+                    <div class="text-[18px] font-extrabold sm:mb-1 sm:text-[24px]">Earn 15%</div>
+                    <div class="text-eerie-black sm:mb-1.5 sm:text-[18px]">Receive weekly payouts for every referral</div>
+                    <div class="text-gray max-sm:text-[15px]">You’ll receive 15% of each purchase in USDT</div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/two-stars.svg" alt="alt" class="absolute max-lg:right-11 max-lg:top-full max-lg:mt-9 max-sm:max-w-[72px] lg:right-full lg:top-[100px] lg:mr-11" />
+            </div>
+            <img src="images/gold.png" alt="alt" class="-bottom-[108px] -left-[205px] max-lg:mx-auto max-lg:mt-[84px] lg:absolute" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERBOARD -->
+  <section class="pb-[100px]">
+    <div class="container">
+      <div class="flex">
+        <div class="mx-auto w-full lg:max-w-[83.333333%] lg:shrink-0 lg:grow-0 lg:basis-10/12 xl:rounded-[30px] xl:bg-white xl:px-[102px] xl:pb-12 xl:shadow-1 xl:shadow-black/5">
+          <div class="mb-11 flex flex-col items-center max-xl:rounded-[30px] max-xl:bg-white max-xl:px-5 max-xl:pb-12 max-xl:shadow-1 max-xl:shadow-black/5 max-sm:rounded-[20px] max-sm:pb-7 xl:mb-8">
+            <div class="-mt-[15px] mb-6 inline-block rounded-[30px] bg-orange px-12 py-1.5 text-center align-top font-bold text-white sm:-mt-5 sm:px-[30px] sm:py-2.5 sm:text-[18px]">LEADERBOARD</div>
+            <h3 class="mb-2 max-w-[488px] text-center text-[24px] font-extrabold sm:mb-3 sm:text-[28px] xl:text-[32px]">Refer the most people and receive up to a $15k bonus!</h3>
+            <div class="mb-5 max-w-[253px] max-xl:text-center sm:max-w-[394px]">
+              <div class="mb-2.5 text-center text-[18px] font-semibold text-red sm:mb-1 sm:text-[20px] md:text-[22px] lg:text-[24px]">Affiliate Leaderboard</div>
+              <div class="text-dim-gray sm:text-[18px]">Rank in the top 10 affiliates to earn additional monthly rewards on top of your 15% commission.</div>
+            </div>
+            <div>
+              <div class="mb-1 text-center text-eerie-black">Next price increase in:</div>
+              <div class="flex space-x-[27px] text-center text-eerie-black" data-countdown>
+                <div class="relative">
+                  <div class="text-[24px] font-extrabold" data-countdown-days>00</div>
+                  <div class="text-[14px] text-gold-fusion">days</div>
+                  <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+                </div>
+                <div class="relative">
+                  <div class="text-[24px] font-extrabold" data-countdown-hrs>00</div>
+                  <div class="text-[14px] text-gold-fusion">hrs</div>
+                  <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+                </div>
+                <div class="relative">
+                  <div class="text-[24px] font-extrabold" data-countdown-mins>00</div>
+                  <div class="text-[14px] text-gold-fusion">mins</div>
+                  <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+                </div>
+                <div class="relative">
+                  <div class="text-[24px] font-extrabold" data-countdown-secs>00</div>
+                  <div class="text-[14px] text-gold-fusion">secs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="w-full [&_td:not(:last-child)]:pr-2 [&_td]:p-0 [&_th:not(:last-child)]:pr-2 [&_th]:p-0">
+            <colgroup>
+              <col class="w-[15.5%] sm:w-[12%]" />
+              <col class="md:w-[38%]" />
+              <col class="md:w-[38%]" />
+              <col class="md:w-[12%]" />
+            </colgroup>
+            <thead class="text-left text-[15px] text-beaver sm:text-[16px] md:text-[18px] xl:text-silver [&_td]:pb-1 [&_th]:pb-1 [&_th]:font-normal">
+              <tr class="border-b border-beaver xl:border-silver">
+                <th>Rank</th>
+                <th>Wallet address</th>
+                <th>Referral count</th>
+                <th>Referrals $</th>
+              </tr>
+            </thead>
+            <tbody class="text-[18px] font-semibold sm:text-[20px] xl:text-[24px] [&_td]:pt-[20px] xl:[&_td]:pt-[30px] [&_th]:pt-[20px] xl:[&_th]:pt-[30px]">
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">1</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">2</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">3</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">4</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">5</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">6</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">7</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">8</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">9</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="size-6 rounded-full bg-yellow text-center leading-[24px] sm:size-[30px] sm:leading-[30px]">10</div>
+                </td>
+                <td>
+                  <div class="flex flex-wrap items-center">
+                    <div class="mr-2.5">0x1D...757f</div>
+                    <div class="rounded-[20px] bg-orange px-2.5 py-px font-semibold text-white max-sm:text-[16px] sm:px-[17px]">$15k prize</div>
+                  </div>
+                </td>
+                <td>19</td>
+                <td>$34420</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Are You Waiting For? -->
+  <section>
+    <div class="container">
+      <div class="flex items-center max-md:flex-wrap">
+        <div class="w-full shrink-0 grow-0 md:max-w-[50%] md:basis-6/12 lg:ml-[8.333333%] lg:max-w-[33.333333%] lg:basis-4/12">
+          <h2 class="mb-2 text-[24px] font-extrabold text-eerie-black sm:mb-2.5 sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]">What Are You Waiting For?</h2>
+          <p class="mb-8 max-w-[238px] text-[18px] font-semibold text-red sm:mb-7 sm:max-w-[360px] sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]">Presale ends soon so earn USDT while you can!</p>
+          <a href="#" class="btn btn-red w-[246px] sm:w-[296px]">Get my referral link</a>
+        </div>
+        <div class="max-md:mt-6 max-md:w-full md:flex-auto md:pr-2 lg:mr-[8.333333%]">
+          <picture>
+            <source srcset="images/dog-crown.png" media="(min-width: 768px)" />
+            <img src="images/dog-crown-mob.png" alt="alt" loading="lazy" class="ml-auto max-lg:w-[450px] max-md:mx-auto max-md:w-auto" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faq -->
+  <section class="pb-[100px] pt-28 lg:pt-[170px]">
+    <div class="container">
+      <div class="relative mb-10 inline-block pr-[100px] align-top max-sm:max-w-[320px] md:pr-36 lg:pr-[171px]">
+        <div class="mb-2 overflow-hidden">
+          <h2 class="text-[24px] font-extrabold text-eerie-black sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">Frequently Asked Questions</h2>
+        </div>
+        <div class="overflow-hidden">
+          <h3 class="text-[18px] font-semibold text-red sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">Find answers to your questions here!</h3>
+        </div>
+        <img src="images/questionmark.svg" alt="alt" class="absolute bottom-2 right-0 w-[123px] max-lg:w-24 max-md:w-20 sm:bottom-0 sm:-mb-3" data-aos="flip-up" data-aos-delay="650" data-aos-duration="800" />
+      </div>
+      <div class="space-y-2.5" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">Why should I buy it in the pre-sale?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">Why is Harambe unique in the crypto space?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">How do I know the AI trading bot is accurate?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">Do I have to use the AI bot myself?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">How is the APY calculated?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">I've completed the purchase, now what?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="mt-auto px-[5px]" data-footer>
+    <div class="mx-auto max-w-[1600px] rounded-tl-[30px] rounded-tr-[30px] bg-eerie-black pb-16 pt-[30px] text-white sm:pt-[46px]">
+      <div class="container">
+        <div class="mb-5 flex max-lg:flex-wrap sm:mb-9">
+          <div class="flex w-full space-x-5 max-lg:mb-6 max-sm:mb-[14px] lg:max-w-[50%] lg:shrink lg:grow-0 lg:basis-6/12 lg:space-x-2.5">
+            <a href="#" class="btn btn-outline-orange flex-1">White Paper</a>
+            <a href="#" class="btn btn-outline-orange flex-1">
+              <div class="mr-[5px] flex size-5 shrink-0 items-center justify-center rounded-full bg-black sm:mr-2.5 sm:size-6">
+                <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+              </div>
+              Certik Audit
+            </a>
+          </div>
+          <img src="images/logo-white.png" srcset="images/logo-white.png 1x, images/logo-white-2x.png 2x" alt="alt" class="mx-auto max-w-[66px] shrink-0 max-lg:order-first max-lg:mb-6 max-sm:mb-5 lg:mx-[72px]" />
+          <div class="flex w-full items-center justify-between lg:max-w-[50%] lg:shrink lg:grow-0 lg:basis-6/12 lg:justify-end">
+            <nav class="mr-5 sm:mr-11">
+              <ul class="flex space-x-[30px] font-extrabold sm:space-x-[50px] sm:text-[18px]">
+                <li><a href="referral.html">Referral</a></li>
+                <li><a href="claim.html">Claim</a></li>
+              </ul>
+            </nav>
+            <div class="-mx-[5px] -mb-2.5 flex flex-wrap justify-end">
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/x.svg" alt="alt" class="w-3/5 shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/cmc.svg" alt="alt" class="w-[70%] shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/tg.svg" alt="alt" class="w-1/2 shrink-0" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap max-md:flex-col max-md:items-center max-md:space-y-4 md:justify-between">
+          <p class="text-dim-gray">© 2024 Spike Token</p>
+          <a href="mailto:support@spiketoken.ai" class="text-dim-gray transition-colors hover:text-light">support@spiketoken.ai</a>
+          <a href="#" class="text-dim-gray transition-colors hover:text-light">Terms of Service</a>
+          <a href="#" class="text-dim-gray transition-colors hover:text-light">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

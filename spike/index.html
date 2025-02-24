@@ -1,0 +1,1025 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Главная</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#171314" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="text-black bg-lemon lg:bg-body leading-tight selection:bg-orange selection:text-white overflow-x-hidden min-h-screen flex flex-col">
+  <header class="pt-5 sm:pt-4">
+    <div class="container flex items-center">
+      <div class="max-lg:hidden lg:shrink lg:grow-0 lg:basis-6/12">
+        <div class="mb-1 text-eerie-black">Next price increase in:</div>
+        <div class="flex space-x-[27px] text-center text-eerie-black" data-countdown>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-days>00</div>
+            <div class="text-[14px] text-gold-fusion">days</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-hrs>00</div>
+            <div class="text-[14px] text-gold-fusion">hrs</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-mins>00</div>
+            <div class="text-[14px] text-gold-fusion">mins</div>
+            <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+          </div>
+          <div class="relative">
+            <div class="text-[24px] font-extrabold" data-countdown-secs>00</div>
+            <div class="text-[14px] text-gold-fusion">secs</div>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="relative max-w-[54px] shrink-0 max-lg:mr-3 max-md:z-30 sm:max-w-[66px]">
+        <img src="images/logo.png" srcset="images/logo.png 1x, images/logo-2x.png 2x" alt="alt" />
+      </a>
+      <div class="flex items-center justify-end max-lg:ml-auto lg:shrink lg:grow-0 lg:basis-6/12">
+        <nav class="!duration-700 max-md:invisible max-md:fixed max-md:left-0 max-md:top-0 max-md:z-20 max-md:flex max-md:h-full max-md:w-full max-md:flex-col max-md:justify-between max-md:overflow-y-auto max-md:bg-lemon max-md:pt-28 max-md:transition-all max-md:[transform:translate3d(0,-100%,0)] md:mr-11 max-md:[&.is-active]:visible max-md:[&.is-active]:[transform:translate3d(0,0,0)]" data-mobile-menu>
+          <ul class="text-[18px] font-extrabold max-md:mb-28 max-md:space-y-[50px] max-md:text-center md:flex md:space-x-[50px] [&_a:hover]:text-orange [&_a]:transition-colors">
+            <li><a href="referral.html">Referral</a></li>
+            <li><a href="claim.html">Claim</a></li>
+          </ul>
+        </nav>
+        <div class="relative -mx-[5px] -mb-2.5 flex flex-wrap max-md:z-30">
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/x.svg" alt="alt" class="w-3/5 shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/cmc.svg" alt="alt" class="w-[70%] shrink-0" />
+          </a>
+          <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+            <img src="images/icons/tg.svg" alt="alt" class="w-1/2 shrink-0" />
+          </a>
+        </div>
+      </div>
+      <div class="group relative z-30 ml-7 flex size-7 shrink-0 cursor-pointer items-center justify-center transition-transform md:hidden [&.is-active]:rotate-90" data-hamburger>
+        <div class="flex h-2 w-[18px] shrink-0 flex-col justify-between">
+          <div class="h-0.5 w-full shrink-0 bg-eerie-black transition-colors group-[.is-active]:bg-orange"></div>
+          <div class="h-0.5 w-full shrink-0 bg-eerie-black transition-colors group-[.is-active]:bg-orange"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="pb-[100px] pt-7 md:pt-12 xl:pb-[70px]">
+    <div class="container">
+      <div class="flex max-lg:flex-wrap">
+        <div class="w-full max-lg:flex max-lg:flex-col lg:max-w-[52%] lg:shrink-0 lg:grow-0 lg:basis-[52%] lg:pt-5">
+          <div class="mx-auto mb-8 lg:hidden">
+            <div class="mb-1 text-center text-eerie-black">Next price increase in:</div>
+            <div class="flex space-x-[27px] text-center text-eerie-black" data-countdown>
+              <div class="relative">
+                <div class="text-[24px] font-extrabold" data-countdown-days>00</div>
+                <div class="text-[14px] text-gold-fusion">days</div>
+                <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+              </div>
+              <div class="relative">
+                <div class="text-[24px] font-extrabold" data-countdown-hrs>00</div>
+                <div class="text-[14px] text-gold-fusion">hrs</div>
+                <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+              </div>
+              <div class="relative">
+                <div class="text-[24px] font-extrabold" data-countdown-mins>00</div>
+                <div class="text-[14px] text-gold-fusion">mins</div>
+                <div class="absolute left-full top-0 ml-2.5 text-[24px] font-extrabold">:</div>
+              </div>
+              <div class="relative">
+                <div class="text-[24px] font-extrabold" data-countdown-secs>00</div>
+                <div class="text-[14px] text-gold-fusion">secs</div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-2.5 overflow-hidden sm:mb-5">
+            <h1 class="text-[24px] font-extrabold sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">Enjoy Passive Earnings On Autopilot By Simply Holding <span class="text-orange">The Spike AI Token.</span></h1>
+          </div>
+          <div class="mb-6 overflow-hidden sm:mb-8">
+            <p class="text-[18px] max-sm:max-w-[258px] sm:text-[20px] md:text-[22px] lg:text-[24px]" data-aos="fade-up" data-aos-delay="450" data-aos-duration="800">Invest, hold, and reap 100% annual percentage yield</p>
+          </div>
+          <div class="max-w-[500px] space-y-2.5">
+            <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="800">
+              <div class="mr-[15px] w-[50px] shrink-0 sm:mr-5 sm:w-[60px]">
+                <img src="images/icons/coin-heart.svg" alt="alt" />
+              </div>
+              <div class="flex-auto">
+                <div class="font-extrabold sm:text-[18px]">Buy Back & Burn System</div>
+                <div class="text-gray max-sm:text-[15px]">Actively repurchases its own tokens, making them rarer and more valuable.</div>
+              </div>
+            </div>
+            <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="800">
+              <div class="mr-[15px] w-[50px] shrink-0 sm:mr-5 sm:w-[60px]">
+                <img src="images/icons/clock.svg" alt="alt" />
+              </div>
+              <div class="flex-auto">
+                <div class="font-extrabold sm:text-[18px]">1st Decentralized Hedge Fund</div>
+                <div class="text-gray max-sm:text-[15px]">100% autonomous, profits passively return to the Harambe AI community of holders.</div>
+              </div>
+            </div>
+            <div class="flex items-center rounded-[15px] bg-white px-[15px] py-2.5 shadow-1 shadow-medium-champagne sm:rounded-[20px] sm:px-[30px] sm:py-5" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="800">
+              <div class="mr-[15px] w-[50px] shrink-0 sm:mr-5 sm:w-[60px]">
+                <img src="images/icons/coins-up.svg" alt="alt" />
+              </div>
+              <div class="flex-auto">
+                <div class="font-extrabold sm:text-[18px]">30% More Profitable Than The Market</div>
+                <div class="text-gray max-sm:text-[15px]">Our revolutionary AI trading bot is designed to outperform top crypto traders.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-lg:mt-5 max-lg:w-full lg:flex-auto">
+          <img src="images/hero.png" alt="alt" class="max-lg:mx-auto max-lg:!delay-[50ms] xl:max-w-none" data-aos="fade-left" data-aos-delay="1800" data-aos-duration="800" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join The Spike AI Pre-Sale -->
+  <section class="relative pb-[105px] sm:pb-[150px] md:pb-[200px]">
+    <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+      <form class="relative mx-auto max-w-[602px] rounded-[20px] bg-white px-5 pb-[37px] text-center shadow-1 shadow-black/5 sm:rounded-[30px] sm:px-[50px] sm:pb-12">
+        <div class="-mt-[15px] mb-6 inline-block rounded-[30px] bg-orange px-5 py-1.5 align-top font-bold text-white sm:-mt-5 sm:mb-5 sm:px-[30px] sm:py-2.5 sm:text-[18px]">1 Spike AI = $ 0.267 USD</div>
+        <h2 class="mb-1 text-[24px] font-extrabold text-eerie-black sm:mb-1.5 sm:text-[28px] xl:text-[32px]">Join The Spike AI Pre-Sale</h2>
+        <p class="mb-6 text-dim-gray sm:mb-5 sm:text-[18px]">You'll be directed to a secure checkout page where you can finalize your purchase using a variety of major cryptocurrencies.</p>
+        <div class="mb-5">
+          <div class="mb-1.5 h-5 rounded-[15px] bg-light">
+            <div class="h-full rounded-[inherit] bg-btn-red" style="width: 60%"></div>
+          </div>
+          <div class="flex justify-between text-[18px] text-eerie-black">
+            <div>USD Raised:</div>
+            <div class="font-semibold">$ 7,308,597</div>
+          </div>
+        </div>
+        <div class="mb-4 text-[20px] font-extrabold text-eerie-black max-sm:hidden">How many Spike AI Tokens would you like to buy?</div>
+        <div class="mb-5 flex">
+          <div class="w-2/5 shrink-0 grow-0 basis-2/5">
+            <label for="usd" class="mb-1 block text-eerie-black sm:text-[18px]">USD You Pay</label>
+            <input type="text" placeholder="$ 0" id="usd" class="block h-11 w-full rounded-[10px] bg-light text-center text-[24px] text-eerie-black outline-none ring-inset ring-[#d2d2d2] transition-shadow placeholder:text-silver focus:ring-1 sm:h-[59px]" />
+          </div>
+          <div class="mx-auto mb-[7px] self-end sm:mb-2.5">
+            <svg role="img" class="size-[30px] text-orange transition-colors hover:text-orange-light active:text-orange-dark sm:size-10">
+              <use href="images/icons/sprite.svg#exchange" />
+            </svg>
+          </div>
+          <div class="w-2/5 shrink-0 grow-0 basis-2/5">
+            <label for="tokens" class="mb-1 block text-eerie-black sm:text-[18px]">$SpikeAI Tokens</label>
+            <input type="text" placeholder="0" id="tokens" class="block h-11 w-full rounded-[10px] bg-light text-center text-[24px] text-eerie-black outline-none ring-inset ring-[#d2d2d2] transition-shadow placeholder:text-silver focus:ring-1 sm:h-[59px]" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-red mb-3 w-full">Proceed to Checkout Now</button>
+        <a href="#" class="text-[14px] text-silver underline transition-colors hover:text-orange focus:text-orange-dark sm:text-[16px] xl:text-[18px]">Need help? Click here to read how to purchase</a>
+        <img src="images/radom.png" alt="alt" class="mx-auto mb-[25px] mt-5 sm:mb-5 sm:mt-6" />
+        <div class="flex space-x-[15px] sm:space-x-2.5">
+          <a href="#" class="btn btn-outline-red flex-1">White Paper</a>
+          <a href="#" class="btn btn-outline-red flex-1">
+            <div class="mr-[5px] flex size-5 shrink-0 items-center justify-center rounded-full bg-black sm:mr-2.5 sm:size-6">
+              <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+            </div>
+            Certik Audit
+          </a>
+        </div>
+        <img src="images/decor-presale.svg" alt="alt" class="absolute bottom-full max-md:left-2.5 max-md:-mb-5 max-md:w-[150px] max-md:rotate-[29deg] max-sm:-mb-[5px] max-sm:w-[100px] md:right-full md:top-32" />
+        <img src="images/bowl.png" alt="alt" class="absolute -bottom-[113px] -left-[52px] z-10 max-md:w-[192px] md:-bottom-[129px] md:-left-[204px]" />
+        <img src="images/bowl-placeholder.svg" alt="alt" class="absolute -bottom-[119px] -left-14 -z-10 max-md:w-[199px] md:-bottom-[131px] md:-left-[212px]" />
+        <img src="images/coins.png" alt="alt" class="absolute -bottom-[132px] -right-[14px] z-10 max-md:w-[134px] md:-bottom-[104px] md:-right-[65px]" />
+        <img src="images/coins-placeholder.svg" alt="alt" class="absolute -bottom-[117px] -right-[35px] -z-10 max-md:w-[179px] md:-bottom-[107px] md:-right-[94px]" />
+      </form>
+    </div>
+    <div class="relative left-0 right-0 -z-10 -mx-3 -rotate-[5deg] overflow-hidden bg-eerie-black py-[29px] max-lg:mt-36 max-lg:origin-right lg:absolute lg:bottom-[298px] lg:py-9">
+      <div class="flex items-center space-x-10 motion-safe:animate-logos-mob lg:space-x-[50px] lg:motion-safe:animate-logos">
+        <!-- 1 -->
+        <img src="images/partner-1.png" alt="alt" class="max-lg:max-w-[142px]" loading="lazy" />
+        <img src="images/partner-2.png" alt="alt" class="max-lg:max-w-[101px]" loading="lazy" />
+        <img src="images/partner-3.png" alt="alt" class="max-lg:max-w-[175px]" loading="lazy" />
+        <img src="images/partner-4.png" alt="alt" class="max-lg:max-w-[162px]" loading="lazy" />
+        <img src="images/partner-5.png" alt="alt" class="max-lg:max-w-[147px]" loading="lazy" />
+        <img src="images/partner-6.png" alt="alt" class="max-lg:max-w-[166px]" loading="lazy" />
+        <img src="images/partner-7.png" alt="alt" class="max-lg:max-w-[221px]" loading="lazy" />
+        <!-- 2 -->
+        <img src="images/partner-1.png" alt="alt" class="max-lg:max-w-[142px]" loading="lazy" />
+        <img src="images/partner-2.png" alt="alt" class="max-lg:max-w-[101px]" loading="lazy" />
+        <img src="images/partner-3.png" alt="alt" class="max-lg:max-w-[175px]" loading="lazy" />
+        <img src="images/partner-4.png" alt="alt" class="max-lg:max-w-[162px]" loading="lazy" />
+        <img src="images/partner-5.png" alt="alt" class="max-lg:max-w-[147px]" loading="lazy" />
+        <img src="images/partner-6.png" alt="alt" class="max-lg:max-w-[166px]" loading="lazy" />
+        <img src="images/partner-7.png" alt="alt" class="max-lg:max-w-[221px]" loading="lazy" />
+        <!-- 3 -->
+        <img src="images/partner-1.png" alt="alt" class="max-lg:max-w-[142px]" loading="lazy" />
+        <img src="images/partner-2.png" alt="alt" class="max-lg:max-w-[101px]" loading="lazy" />
+        <img src="images/partner-3.png" alt="alt" class="max-lg:max-w-[175px]" loading="lazy" />
+        <img src="images/partner-4.png" alt="alt" class="max-lg:max-w-[162px]" loading="lazy" />
+        <img src="images/partner-5.png" alt="alt" class="max-lg:max-w-[147px]" loading="lazy" />
+        <img src="images/partner-6.png" alt="alt" class="max-lg:max-w-[166px]" loading="lazy" />
+        <img src="images/partner-7.png" alt="alt" class="max-lg:max-w-[221px]" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 steps -->
+  <section class="pb-[100px] sm:pb-[150px] md:pb-[200px]">
+    <div class="container">
+      <div class="-mx-[5px] -mb-9 flex flex-wrap items-center">
+        <div class="mb-9 w-full px-[5px] lg:max-w-[50%] lg:shrink-0 lg:grow-0 lg:basis-6/12">
+          <div class="relative max-w-[335px] max-lg:pr-40 max-md:pr-24 max-sm:pr-[69px] sm:max-w-[420px] md:max-w-[600px] lg:max-w-[510px]" data-aos="fade-right" data-aos-delay="50" data-aos-duration="800">
+            <h2 class="mb-1 text-[24px] font-extrabold text-eerie-black max-lg:max-w-[400px] sm:mb-6 sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]"><span class="text-orange">3 Steps</span> To Unlock Passive Wealth</h2>
+            <p class="sm:text-[18px] md:text-[20px] xl:text-[24px]">As a Harambe holder, the AI does all the heavy lifting for you — from executing strategic trades and seizing market opportunities to steadily generating earnings, and more.</p>
+            <img src="images/decor-steps.svg" alt="alt" class="absolute -top-[9px] right-0 -z-10 w-[150px] max-md:w-[94px] lg:hidden" />
+          </div>
+        </div>
+        <div class="mb-9 w-full px-[5px] lg:max-w-[50%] lg:shrink-0 lg:grow-0 lg:basis-6/12">
+          <div class="relative" data-aos="fade-left" data-aos-delay="50" data-aos-duration="800">
+            <div class="-mx-[5px] -mb-2.5 flex flex-wrap">
+              <div class="mb-2.5 w-full px-[5px]">
+                <div class="flex h-full items-center rounded-[20px] bg-white pb-[15px] pl-5 pr-5 pt-2 shadow-1 shadow-black/5 sm:pl-[34px] sm:pr-16 sm:pt-[11px]">
+                  <div class="max-sm:w-[117px] max-sm:shrink-0 sm:mr-[29px]">
+                    <picture>
+                      <source srcset="images/buy.png" media="(min-width: 576px)" />
+                      <img src="images/buy-mob.png" alt="alt" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div>
+                    <div class="text-[18px] font-extrabold">Take Advantage Of The Presale</div>
+                    <div class="text-gray">Price starts at $0.05 per token and increases every 48 hours!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2.5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12">
+                <div class="h-full rounded-[20px] bg-white pb-3 pl-3.5 pr-5 shadow-1 shadow-black/5 max-sm:flex max-sm:items-center max-sm:pt-2 sm:px-[30px] sm:pb-6">
+                  <div class="max-sm:mr-1.5 max-sm:w-[117px] max-sm:shrink-0 sm:-mb-1">
+                    <picture>
+                      <source srcset="images/hold.png" media="(min-width: 576px)" />
+                      <img src="images/hold-mob.png" alt="alt" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div>
+                    <div class="text-[18px] font-extrabold">Sit Back And Relax</div>
+                    <div class="text-gray">The AI-driven bot buys back and burns Harambe AI tokens from the market.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2.5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12">
+                <div class="h-full rounded-[20px] bg-white pb-3 pl-5 pr-5 pt-[11px] shadow-1 shadow-black/5 max-sm:flex max-sm:items-center sm:pb-6 sm:pl-[30px] sm:pr-[30px] sm:pt-[26px] xl:pr-16">
+                  <div class="max-sm:w-[117px] max-sm:shrink-0 sm:mb-2">
+                    <picture>
+                      <source srcset="images/earn.png" media="(min-width: 576px)" />
+                      <img src="images/earn-mob.png" alt="alt" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div>
+                    <div class="text-[18px] font-extrabold">Your Profits Consistently Grow</div>
+                    <div class="text-gray">With minimal effort and a substantial 100% APY gains to your portfolio.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/decor-steps.svg" alt="alt" class="absolute -right-[101px] -top-[111px] -z-10 max-lg:hidden" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Spike? -->
+  <section class="pb-[100px] sm:pb-[150px]">
+    <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+      <div class="relative rounded-[25px] bg-eerie-black pl-5 pt-6 text-white max-lg:pr-[50px] max-md:pr-8 max-sm:pr-5 sm:rounded-[30px] sm:pl-8 sm:pt-8 md:pl-[50px] md:pt-[52px] lg:pb-14 xl:pl-[102px]">
+        <div class="max-w-[639px] lg:max-xl:pr-[70px]">
+          <h3 class="mb-2 text-[24px] font-extrabold sm:mb-5 sm:text-[28px] xl:text-[32px]">What is <span class="text-orange">Spike?</span></h3>
+          <p class="mb-3 max-w-[631px] sm:mb-5 sm:text-[18px]">
+            Not your average primate, nor your favorite meme, or another crypto wealth dream gone wrong. Harambe is a hedge fund system entirely driven by artificial intelligence and designed to outsmart even the slickest traders out there.
+          </p>
+          <p class="text-silver max-sm:text-[15px]">
+            We've learned from the good, the bad, the winning, and the not-so-winning cryptocurrency blueprints over time to develop a highly profitable venture in the crypto jungle. Harambe has been trained on years of historical trades and powerful strategies of !leading hedge funds and
+            expert traders. The ultimate goal? Making those high returns typically reserved for elites accessible to all investors.<br /><br />
+            Here's the beauty of it: all you have to do is buy it, hold it, and the passive earnings are basically returning to you automatically. And nope, it's not taking coffee breaks. It works non-stop, with zero effort on your end. Deployed on the blockchain, Harambe operates around the
+            clock, making precise trades 24/7 on top cryptocurrencies like Bitcoin and Ethereum.<br /><br />
+            The magic happens through a buy-back and burn mechanism, where profits are funneled back to the community. It's the first decentralized autonomous hedge fund, and the wealth flows directly to the token owners without any detours.
+          </p>
+        </div>
+        <div class="max-lg:flex max-lg:justify-center">
+          <picture>
+            <source srcset="images/dog-standing.png" media="(min-width: 992px)" />
+            <img src="images/dog-standing-mob.png" alt="alt" class="max-lg:-mb-[49px] max-lg:-mt-6 max-lg:max-w-none lg:absolute lg:-bottom-16 lg:-right-[113px] lg:max-xl:w-[500px] xl:-bottom-24 xl:-right-[163px]" />
+          </picture>
+          <img src="images/dog-standing-placeholder.svg" alt="alt" class="absolute -bottom-24 -right-[45px] -z-10 max-xl:w-[400px] max-lg:hidden xl:-bottom-[122px]" />
+        </div>
+        <img src="images/decor-about.svg" alt="alt" class="absolute -top-[110px] -z-10 max-xl:-right-[60px] max-xl:rotate-[70deg] max-md:-right-[50px] max-md:w-[300px] max-sm:-right-[37px] max-sm:w-[215px] sm:-top-[160px] md:-top-[205px] xl:-left-[305px] xl:-top-[248px]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Spike Is Set To Rock The Charts -->
+  <section class="pb-[94px] sm:pb-[150px] md:pb-[185px]">
+    <div class="container">
+      <div class="-mx-[5px] -mb-2.5 flex flex-wrap">
+        <div class="mb-[30px] w-full px-[5px] sm:mb-2.5 lg:max-w-[50%] lg:shrink-0 lg:grow-0 lg:basis-6/12">
+          <div class="flex h-full flex-col rounded-[25px] bg-white pb-8 pl-5 pr-5 pt-6 sm:rounded-[20px] sm:pb-[30px] sm:pl-[30px] sm:pr-[30px] sm:pt-[30px] sm:shadow-1 sm:shadow-black/5 xl:pb-10 xl:pl-10 xl:pr-[103px] xl:pt-8" data-aos="flip-up" data-aos-delay="50" data-aos-duration="800">
+            <h3 class="mb-3 text-[24px] font-extrabold sm:mb-2.5 sm:text-[28px] xl:text-[32px]">
+              Spike Is Set To Rock The Charts With a Whopping 100% ROI<br class="max-sm:hidden" />
+              <span class="text-orange">(This Year Alone!)</span>
+            </h3>
+            <p class="mb-6 text-dim-gray sm:mb-5 sm:text-[18px] md:text-[20px] xl:text-[24px]">Each successful trade triggers the purchase and immediate burning of Harambe Tokens, increasing demand, reducing supply, and driving prices to the moon.</p>
+            <div class="mt-auto max-sm:text-center sm:flex sm:items-center">
+              <a href="#" class="btn btn-red w-full shrink-0 max-sm:mb-4 sm:mr-5 sm:w-56 xl:w-64">Get my tokens</a>
+              <div class="xl:pr-4">
+                <div class="font-medium max-sm:mb-1.5">1 Spike AI = $ 0.267 USD</div>
+                <div class="text-[14px] text-gray">Hurry - Token price increases on April 29th!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2.5 w-full px-[5px] lg:max-w-[50%] lg:shrink-0 lg:grow-0 lg:basis-6/12">
+          <div class="-mx-[5px] -mb-2.5 flex flex-wrap">
+            <div class="mb-2.5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12">
+              <div class="h-full rounded-[15px] bg-white px-[15px] pb-3 pt-3 shadow-1 shadow-medium-champagne max-lg:!delay-[50ms] max-sm:flex max-sm:items-center sm:rounded-[20px] sm:px-[30px] sm:pb-[18px] sm:pt-[23px]" data-aos="flip-up" data-aos-delay="150" data-aos-duration="800">
+                <img src="images/icons/clock.svg" alt="alt" loading="lazy" class="w-[50px] shrink-0 max-sm:mr-[15px] sm:mb-2.5 sm:w-[60px]" />
+                <div>
+                  <div class="font-extrabold sm:text-[18px]">Hassle-Free Profits</div>
+                  <div class="text-gray max-sm:text-[15px]">No active trading needed! Simply hold the tokens and watch your gains grow.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2.5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12">
+              <div class="h-full rounded-[15px] bg-white px-[15px] pb-3 pt-3 shadow-1 shadow-medium-champagne max-lg:!delay-[50ms] max-sm:flex max-sm:items-center sm:rounded-[20px] sm:px-[30px] sm:pb-[18px] sm:pt-[23px]" data-aos="flip-up" data-aos-delay="250" data-aos-duration="800">
+                <img src="images/icons/coins-hand.svg" alt="alt" loading="lazy" class="w-[50px] shrink-0 max-sm:mr-[15px] sm:mb-2.5 sm:w-[60px]" />
+                <div>
+                  <div class="font-extrabold sm:text-[18px]">Decentralized Hedge Fund</div>
+                  <div class="text-gray max-sm:text-[15px]">Operates on its own and shares profits directly with the community of token holders.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2.5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12">
+              <div class="h-full rounded-[15px] bg-white px-[15px] pb-3 pt-3 shadow-1 shadow-medium-champagne max-lg:!delay-[50ms] max-sm:flex max-sm:items-center sm:rounded-[20px] sm:px-[30px] sm:pb-[18px] sm:pt-[23px]" data-aos="flip-up" data-aos-delay="350" data-aos-duration="800">
+                <img src="images/icons/coins-exchange.svg" alt="alt" loading="lazy" class="w-[50px] shrink-0 max-sm:mr-[15px] sm:mb-2.5 sm:w-[60px]" />
+                <div>
+                  <div class="font-extrabold sm:text-[18px]">Auto-trading AI Bot</div>
+                  <div class="text-gray max-sm:text-[15px]">The AI takes care of it all, essentially doing everything an expert trader would do.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2.5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12">
+              <div class="h-full rounded-[15px] bg-white px-[15px] pb-3 pt-3 shadow-1 shadow-medium-champagne max-lg:!delay-[50ms] max-sm:flex max-sm:items-center sm:rounded-[20px] sm:px-[30px] sm:pb-[18px] sm:pt-[23px]" data-aos="flip-up" data-aos-delay="450" data-aos-duration="800">
+                <img src="images/icons/coin-heart.svg" alt="alt" loading="lazy" class="w-[50px] shrink-0 max-sm:mr-[15px] sm:mb-2.5 sm:w-[60px]" />
+                <div>
+                  <div class="font-extrabold sm:text-[18px]">Buy Back & Burn Cycle</div>
+                  <div class="text-gray max-sm:text-[15px]">It buys back its own tokens, steadily reducing the supply and increasing their value.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2.5 w-full px-[5px] md:max-w-[50%] md:shrink-0 md:grow-0 md:basis-6/12">
+          <div class="flex h-full items-center rounded-[15px] bg-white px-[15px] py-[15px] shadow-1 shadow-medium-champagne max-lg:!delay-[50ms] sm:rounded-[20px] sm:px-[30px]" data-aos="flip-up" data-aos-delay="550" data-aos-duration="800">
+            <img src="images/icons/coins-up.svg" alt="alt" loading="lazy" class="mr-[15px] w-[50px] sm:mr-5 sm:w-[60px]" />
+            <div>
+              <div class="font-extrabold sm:text-[18px]">20x Gain For Pre-Sale</div>
+              <div class="text-gray max-sm:text-[15px]">The pre-sale allows you to get tokens starting at $0.05 each, increasing every 48 hours. They will be publically listed on Uniswap for $1 per token!</div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2.5 w-full px-[5px] md:max-w-[50%] md:shrink-0 md:grow-0 md:basis-6/12">
+          <div class="flex h-full items-center rounded-[15px] bg-white px-[15px] py-[15px] shadow-1 shadow-medium-champagne max-lg:!delay-[50ms] sm:rounded-[20px] sm:px-[30px]" data-aos="flip-up" data-aos-delay="650" data-aos-duration="800">
+            <img src="images/icons/wallet.svg" alt="alt" loading="lazy" class="mr-[15px] w-[50px] sm:mr-5 sm:w-[60px]" />
+            <div>
+              <div class="font-extrabold sm:text-[18px]">24/7 Blockchain Trading</div>
+              <div class="text-gray max-sm:text-[15px]">The AI bot executes accurate trades round-the-clock on top cryptocurrencies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics -->
+  <section class="pb-20 sm:pb-[150px] md:pb-48">
+    <div class="container">
+      <div class="-mx-[5px] flex flex-wrap">
+        <div class="w-full px-[5px] xl:max-w-[58.333333%] xl:shrink-0 xl:grow-0 xl:basis-7/12">
+          <h2 class="text-[24px] font-extrabold text-eerie-black max-sm:mb-2 sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">Tokenomics</h2>
+          <h3 class="mb-2.5 text-[18px] font-semibold text-red sm:mb-7 sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">690M Total Tokens. No Tax. No Team Tokens.</h3>
+          <p class="mb-[26px] sm:mb-10 sm:text-[18px] md:text-[20px] xl:text-[24px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+            Token Contract Address <a href="#" class="text-orange underline decoration-1 transition-colors hover:text-orange-light focus:text-orange-dark">(0x548….DB3C2)</a>
+          </p>
+          <div class="max-w-[602px] space-y-[5px] max-xl:mx-auto" data-tokenomics>
+            <div class="flex items-center rounded-[10px] bg-eerie-black py-[15px] pl-[15px] pr-[15px] text-white shadow-2 shadow-medium-champagne sm:pl-[30px] sm:pr-2.5" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+              <div class="flex-auto text-silver sm:text-[18px]">Marketing & community engagement:</div>
+              <div class="max-w-24 shrink-0 text-[18px] font-extrabold">34.5 M</div>
+            </div>
+            <div class="flex items-center rounded-[10px] bg-eerie-black py-[15px] pl-[15px] pr-[15px] text-white shadow-2 shadow-medium-champagne sm:pl-[30px] sm:pr-2.5" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
+              <div class="flex-auto text-silver sm:text-[18px]">CEX listings:</div>
+              <div class="max-w-24 shrink-0 text-[18px] font-extrabold">69 M</div>
+            </div>
+            <div class="flex items-center rounded-[10px] bg-eerie-black py-[15px] pl-[15px] pr-[15px] text-white shadow-2 shadow-medium-champagne sm:pl-[30px] sm:pr-2.5" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+              <div class="flex-auto text-silver sm:text-[18px]">Burned on mint:</div>
+              <div class="max-w-24 shrink-0 text-[18px] font-extrabold">103.5 M</div>
+            </div>
+            <div class="flex items-center rounded-[10px] bg-eerie-black py-[15px] pl-[15px] pr-[15px] text-white shadow-2 shadow-medium-champagne sm:pl-[30px] sm:pr-2.5" data-aos="fade-up" data-aos-delay="350" data-aos-duration="800">
+              <div class="flex-auto text-silver sm:text-[18px]">Presale:</div>
+              <div class="max-w-24 shrink-0 text-[18px] font-extrabold">207 M</div>
+            </div>
+            <div class="flex items-center rounded-[10px] bg-eerie-black py-[15px] pl-[15px] pr-[15px] text-white shadow-2 shadow-medium-champagne sm:pl-[30px] sm:pr-2.5" data-aos="fade-up" data-aos-delay="450" data-aos-duration="800">
+              <div class="flex-auto text-silver sm:text-[18px]">DEX listing:</div>
+              <div class="max-w-24 shrink-0 text-[18px] font-extrabold">276 M</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-[5px] xl:max-w-[41.666667%] xl:shrink-0 xl:grow-0 xl:basis-5/12" data-chart-col>
+          <div class="max-xl:mb-[30px] max-xl:flex max-xl:flex-col xl:relative xl:mr-[100px] xl:mt-7 xl:inline-block xl:align-top" data-chart data-aos="fade-left" data-aos-delay="50" data-aos-duration="800">
+            <div class="max-xl:-mx-[2.5px] max-xl:-mb-[5px] max-xl:flex max-xl:flex-wrap">
+              <div class="-top-5 left-0 flex items-center rounded-[50px] bg-white px-5 py-2.5 shadow-2 shadow-black/5 max-xl:order-1 max-xl:mx-[2.5px] max-xl:mb-[5px] xl:absolute" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="800">
+                <div class="mr-2.5 flex size-2 shrink-0 items-center justify-center rounded-full bg-[#756594]/20">
+                  <div class="size-1 shrink-0 rounded-full bg-[#756594]"></div>
+                  <div class="absolute size-1 shrink-0 rounded-full bg-[#756594]/70 motion-safe:animate-ping"></div>
+                </div>
+                <div class="mr-2.5 font-extrabold text-[#756594]">10%</div>
+                <div class="text-eerie-black">CEX Listings</div>
+              </div>
+              <div class="-top-5 right-0 flex items-center rounded-[50px] bg-white px-5 py-2.5 shadow-2 shadow-black/5 max-xl:order-3 max-xl:mx-[2.5px] max-xl:mb-[5px] xl:absolute" data-aos="zoom-in" data-aos-delay="550" data-aos-duration="800">
+                <div class="mr-2.5 flex size-2 shrink-0 items-center justify-center rounded-full bg-[#BEAECE]/20">
+                  <div class="size-1 shrink-0 rounded-full bg-[#BEAECE]"></div>
+                  <div class="absolute size-1 shrink-0 rounded-full bg-[#BEAECE]/70 motion-safe:animate-ping"></div>
+                </div>
+                <div class="mr-2.5 font-extrabold text-[#BEAECE]">5%</div>
+                <div class="text-eerie-black">Marketing</div>
+              </div>
+              <div class="left-0 top-[89px] flex items-center rounded-[50px] bg-white px-5 py-2.5 shadow-2 shadow-black/5 max-xl:order-2 max-xl:mx-[2.5px] max-xl:mb-[5px] xl:absolute" data-aos="zoom-in" data-aos-delay="750" data-aos-duration="800">
+                <div class="mr-2.5 flex size-2 shrink-0 items-center justify-center rounded-full bg-[#EAB737]/20">
+                  <div class="size-1 shrink-0 rounded-full bg-[#EAB737]"></div>
+                  <div class="absolute size-1 shrink-0 rounded-full bg-[#EAB737]/70 motion-safe:animate-ping"></div>
+                </div>
+                <div class="mr-2.5 font-extrabold text-[#EAB737]">15%</div>
+                <div class="text-eerie-black">Burned</div>
+              </div>
+              <div class="-right-[103px] top-[194px] flex items-center rounded-[50px] bg-white px-5 py-2.5 shadow-2 shadow-black/5 max-xl:order-4 max-xl:mx-[2.5px] max-xl:mb-[5px] xl:absolute" data-aos="zoom-in" data-aos-delay="950" data-aos-duration="800">
+                <div class="mr-2.5 flex size-2 shrink-0 items-center justify-center rounded-full bg-red/20">
+                  <div class="size-1 shrink-0 rounded-full bg-red"></div>
+                  <div class="absolute size-1 shrink-0 rounded-full bg-red/70 motion-safe:animate-ping"></div>
+                </div>
+                <div class="mr-2.5 font-extrabold text-red">30%</div>
+                <div class="text-eerie-black">Pre-Sale</div>
+              </div>
+              <div class="-bottom-[31px] left-[102px] flex items-center rounded-[50px] bg-white px-5 py-2.5 shadow-2 shadow-black/5 max-xl:order-5 max-xl:mx-[2.5px] max-xl:mb-[5px] xl:absolute" data-aos="zoom-in" data-aos-delay="1150" data-aos-duration="800">
+                <div class="mr-2.5 flex size-2 shrink-0 items-center justify-center rounded-full bg-green/20">
+                  <div class="size-1 shrink-0 rounded-full bg-green"></div>
+                  <div class="absolute size-1 shrink-0 rounded-full bg-green/70 motion-safe:animate-ping"></div>
+                </div>
+                <div class="mr-2.5 font-extrabold text-green">40%</div>
+                <div class="text-eerie-black">DEX Liquidity</div>
+              </div>
+            </div>
+            <div class="max-xl:relative max-xl:mx-auto max-xl:mt-[30px] max-xl:inline-block max-xl:align-top max-sm:w-[220px]">
+              <img src="images/chart.png" srcset="images/chart.png 1x, images/chart-2x.png 2x" alt="alt" loading="lazy" />
+              <img src="images/decor-chart.svg" alt="alt" class="absolute -right-[113px] -top-[72px] -z-10 max-xl:w-[350px] max-xl:rotate-[10deg] max-sm:w-[190px] sm:-right-[210px] sm:-top-[128px] xl:-right-[277px] xl:-top-[226px]" />
+              <img src="images/logo-chart.png" srcset="images/logo-chart.png 1x, images/logo-chart-2x.png 2x" alt="alt" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-sm:w-[94px]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="pb-[100px] sm:pb-[150px] md:pb-44">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="relative max-md:pr-20 md:max-w-[50%]" data-aos="fade" data-aos-delay="50" data-aos-duration="800">
+          <h2 class="mb-2 text-[24px] font-extrabold text-eerie-black sm:mb-6 sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]">Our Roadmap</h2>
+          <p class="sm:text-[18px] md:text-[20px] xl:text-[24px]">
+            While fortune-tellers guess, we plan.<br />
+            Here's our upcoming evolution.
+          </p>
+          <img src="images/arrow.svg" alt="alt" class="absolute right-0 top-[11px] w-16 rotate-[40deg] md:hidden" />
+        </div>
+        <div class="ml-auto flex flex-col items-center self-end text-center max-md:order-last max-md:mt-[46px] max-md:w-full" data-aos="fade" data-aos-delay="50" data-aos-duration="800">
+          <div class="mb-2 font-semibold sm:text-[18px] md:mb-0.5">1 Spike AI = $ 0.267 USD</div>
+          <div class="max-md:text-gray max-sm:text-[14px] md:mb-3.5">Hurry - Token price increases on April 29th!</div>
+          <a href="#" class="btn btn-red w-full max-md:order-first max-md:mb-4 sm:w-[296px]">Get my Tokens</a>
+        </div>
+        <div class="mt-8 w-full sm:mt-[50px]">
+          <div class="-mx-[5px] -mb-[30px] flex flex-wrap">
+            <div class="mb-[30px] w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12 lg:max-w-[25%] lg:basis-3/12">
+              <div class="relative flex h-full flex-col items-center rounded-[20px] bg-white px-5 pb-[26px] shadow-1 shadow-medium-champagne sm:pb-5" data-aos="fade-right" data-aos-delay="50" data-aos-duration="800">
+                <div class="mx-auto -mt-[15px] mb-4 inline-block rounded-[50px] bg-orange px-[18px] py-[5px] align-top font-bold text-white sm:px-4 sm:text-[18px]">Phase 1</div>
+                <div class="mb-2 text-center text-[18px] font-extrabold uppercase sm:text-[20px] md:text-[22px] lg:text-[24px]">Token launch</div>
+                <ul class="space-y-2.5 text-dim-gray">
+                  <li class="flex items-center">
+                    <img src="images/icons/tick-circle.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Harambe Token pre-sale launch
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/story.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Complete pre-sale
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    List Harambe on Uniswap
+                  </li>
+                </ul>
+                <img src="images/arrow.svg" alt="alt" class="absolute -right-[72px] top-full mt-7 [transform:scale(-1,1)_rotate(180deg)] max-lg:hidden" />
+              </div>
+            </div>
+            <div class="mb-[30px] w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12 lg:max-w-[25%] lg:basis-3/12">
+              <div class="relative flex h-full flex-col items-center rounded-[20px] bg-white px-5 pb-[26px] shadow-1 shadow-medium-champagne sm:pb-5" data-aos="fade-right" data-aos-delay="150" data-aos-duration="800">
+                <div class="mx-auto -mt-[15px] mb-4 inline-block rounded-[50px] bg-orange px-[18px] py-[5px] align-top font-bold text-white sm:px-4 sm:text-[18px]">Phase 2</div>
+                <div class="mb-2 text-center text-[18px] font-extrabold uppercase sm:text-[20px] md:text-[22px] lg:text-[24px]">Kucoin and gate listings</div>
+                <ul class="space-y-2.5 text-dim-gray">
+                  <li class="flex items-center">
+                    <img src="images/icons/story.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Onboard influencers
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Launch $1M marketing campaign
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/story.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    List Harambe on Gate and Kucoin
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/story.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Deploy Harambe AI
+                  </li>
+                </ul>
+                <img src="images/arrow.svg" alt="alt" class="absolute -right-[55px] bottom-full mb-7 max-lg:hidden" />
+              </div>
+            </div>
+            <div class="mb-[30px] w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12 lg:max-w-[25%] lg:basis-3/12">
+              <div class="relative flex h-full flex-col items-center rounded-[20px] bg-white px-5 pb-[26px] shadow-1 shadow-medium-champagne sm:pb-5" data-aos="fade-right" data-aos-delay="250" data-aos-duration="800">
+                <div class="mx-auto -mt-[15px] mb-4 inline-block rounded-[50px] bg-orange px-[18px] py-[5px] align-top font-bold text-white sm:px-4 sm:text-[18px]">Phase 3</div>
+                <div class="mb-2 text-center text-[18px] font-extrabold uppercase sm:text-[20px] md:text-[22px] lg:text-[24px]">Marketing expansion</div>
+                <ul class="space-y-2.5 text-dim-gray">
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Launch $5M marketing campaign
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Integrate Stocks into Harambe AI
+                  </li>
+                </ul>
+                <img src="images/arrow.svg" alt="alt" class="absolute -right-[72px] top-full mt-7 [transform:scale(-1,1)_rotate(180deg)] max-lg:hidden" />
+              </div>
+            </div>
+            <div class="mb-[30px] w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 md:max-w-[33.333333%] md:basis-4/12 lg:max-w-[25%] lg:basis-3/12">
+              <div class="relative flex h-full flex-col items-center rounded-[20px] bg-white px-5 pb-[26px] shadow-1 shadow-medium-champagne sm:pb-5" data-aos="fade-right" data-aos-delay="350" data-aos-duration="800">
+                <div class="mx-auto -mt-[15px] mb-4 inline-block rounded-[50px] bg-orange px-[18px] py-[5px] align-top font-bold text-white sm:px-4 sm:text-[18px]">Phase 4</div>
+                <div class="mb-2 text-center text-[18px] font-extrabold uppercase sm:text-[20px] md:text-[22px] lg:text-[24px]">binance and coinbase listings</div>
+                <ul class="space-y-2.5 text-dim-gray">
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Integrate Harambe into top crypto bots
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    List Harambe on Binance and Coinbase
+                  </li>
+                  <li class="flex items-center">
+                    <img src="images/icons/clock-alt.svg" alt="alt" class="mr-2.5 w-6 shrink-0" />
+                    Add additional token utilities
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="pb-[50px] sm:pb-20 lg:pb-[100px]">
+    <div class="container">
+      <div class="mb-8 max-w-[992px] sm:mb-10 lg:pr-[92px]">
+        <div class="mb-2 overflow-hidden">
+          <h2 class="max-w-[695px] text-[24px] font-extrabold text-eerie-black sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">Hear It Straight From Crypto Experts & Seasoned Traders</h2>
+        </div>
+        <div class="overflow-hidden">
+          <h3 class="text-[18px] font-semibold text-red max-sm:max-w-[280px] sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">The Spike AI is making waves online for all the right reasons.</h3>
+        </div>
+      </div>
+      <div class="splide slider-reviews" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <div class="h-full rounded-[30px] bg-eerie-black px-5 pb-6 pt-[30px] text-center text-white sm:px-10 sm:pb-11">
+                <div class="mb-4 flex justify-center space-x-[5px] sm:mb-5">
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div class="mb-2.5 text-[18px] font-extrabold sm:mb-2 sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]">“Unraveling the New AI Powered Harambe Token During Its Pre-Sale Launch”</div>
+                <p class="text-silver sm:text-[18px]">
+                  As the crypto landscape continues to evolve, it’s projects like the Harambe Token that will lead the charge, setting new standards in technology, community engagement, and investor benefits. If the massive response to the presale is any indication, the Harambe Token
+                  isn’t just a fleeting trend but a glimpse into the transformative future of cryptocurrency.
+                </p>
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="h-full rounded-[30px] bg-eerie-black px-5 pb-6 pt-[30px] text-center text-white sm:px-10 sm:pb-11">
+                <div class="mb-4 flex justify-center space-x-[5px] sm:mb-5">
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div class="mb-2.5 text-[18px] font-extrabold sm:mb-2 sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]">“Harambe Token’s Revolutionary AI Hedge Fund Meme Token Unlock’s Unprecedented Investment Opportunities”</div>
+                <p class="text-silver sm:text-[18px]">Harambe Token‘s presale isn’t just making waves; it’s creating a tidal wave in the crypto ocean. Every passing day sees the price of this sizzling meme investment surge. It’s like witnessing a rocket launch from the front row!</p>
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="h-full rounded-[30px] bg-eerie-black px-5 pb-6 pt-[30px] text-center text-white sm:px-10 sm:pb-11">
+                <div class="mb-4 flex justify-center space-x-[5px] sm:mb-5">
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                  <svg role="img" class="size-6 shrink-0 text-orange">
+                    <use href="images/icons/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div class="mb-2.5 text-[18px] font-extrabold sm:mb-2 sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]">“Unraveling the New AI Powered Harambe Token During Its Pre-Sale Launch”</div>
+                <p class="text-silver sm:text-[18px]">
+                  As the crypto landscape continues to evolve, it’s projects like the Harambe Token that will lead the charge, setting new standards in technology, community engagement, and investor benefits. If the massive response to the presale is any indication, the Harambe Token
+                  isn’t just a fleeting trend but a glimpse into the transformative future of cryptocurrency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="splide__arrows flex justify-center space-x-[30px] max-lg:mt-5 lg:absolute lg:bottom-full lg:right-0 lg:mb-[39px] lg:space-x-3">
+          <button class="splide__arrow splide__arrow--prev cursor-pointer text-eerie-black transition hover:text-orange focus:text-orange-dark disabled:pointer-events-none disabled:opacity-20" type="button">
+            <svg role="img" class="block size-10">
+              <use href="images/icons/sprite.svg#arrow-square-left" />
+            </svg>
+          </button>
+          <button class="splide__arrow splide__arrow--next cursor-pointer text-eerie-black transition hover:text-orange focus:text-orange-dark disabled:pointer-events-none disabled:opacity-20" type="button">
+            <svg role="img" class="block size-10">
+              <use href="images/icons/sprite.svg#arrow-square-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts -->
+  <div class="container">
+    <div class="splide slider-posts" data-aos="fade" data-aos-delay="50" data-aos-duration="800">
+      <div class="splide__track overflow-visible">
+        <div class="splide__list">
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+          <div class="splide__slide">
+            <img src="images/tweet.png" alt="alt" class="max-lg:max-w-[250px] max-sm:max-w-[157px]" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <section class="pb-[90px] pt-[90px] sm:pb-[100px] sm:pt-[100px] lg:pb-44 xl:pt-44">
+    <div class="container">
+      <div class="-mx-[5px] flex flex-wrap items-end">
+        <div class="w-full px-[5px] xl:max-w-[75%] xl:shrink-0 xl:grow-0 xl:basis-9/12">
+          <div class="mb-6 sm:mb-11">
+            <div class="mb-2 overflow-hidden">
+              <h2 class="text-[24px] font-extrabold text-eerie-black max-sm:max-w-[271px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">Meet The Masterminds Behind Spike</h2>
+            </div>
+            <div class="mb-2.5 overflow-hidden sm:mb-6">
+              <h3 class="text-[18px] font-semibold text-red max-sm:max-w-[239px] sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">Made by crypto enthusiasts, for crypto enthusiasts</h3>
+            </div>
+            <div class="overflow-hidden">
+              <p class="max-w-[830px] text-eerie-black sm:text-[18px] md:text-[20px] xl:text-[24px]" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+                A finance visionary, a corporate expert, and a marketing specialist unite a shared passion for the dynamic world of web3. Each of us contributed something special, and when we joined forces, Spike's success became inevitable.
+              </p>
+            </div>
+          </div>
+          <div class="-mx-[5px] -mb-5 flex flex-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+            <div class="mb-5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 lg:max-w-[33.333333%] lg:basis-4/12">
+              <div class="flex h-full flex-col rounded-[20px] bg-white px-5 pb-4 pt-5 shadow-1 shadow-medium-champagne">
+                <div class="mx-auto mb-4 flex flex-col">
+                  <div class="flex size-[150px] shrink-0 overflow-hidden rounded-full">
+                    <img src="images/avatar-1.png" alt="alt" loading="lazy" class="h-full w-full object-cover" />
+                  </div>
+                  <div class="mx-auto -mt-[15px] inline-block rounded-[50px] bg-orange px-5 py-[5px] align-top text-[18px] font-extrabold text-white">FOUNDER</div>
+                </div>
+                <div class="mb-1.5 text-center text-[18px] font-extrabold sm:mb-1 sm:text-[20px] md:text-[22px] lg:text-[24px]">Valeri Shurik</div>
+                <p class="text-dim-gray max-sm:text-[15px]">
+                  Valeri brings a rich background in traditional finance to the dynamic world of web3.<br />
+                  After spending years in the banking sector, Valeri saw decentralized finance's its potential to reshape the financial landscape. Now, he is leveraging their expertise to bridge the old with the new, paving the way for the future of finance.
+                </p>
+              </div>
+            </div>
+            <div class="mb-5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 lg:max-w-[33.333333%] lg:basis-4/12">
+              <div class="flex h-full flex-col rounded-[20px] bg-white px-5 pb-4 pt-5 shadow-1 shadow-medium-champagne">
+                <div class="mx-auto mb-4 flex flex-col">
+                  <div class="flex size-[150px] shrink-0 overflow-hidden rounded-full">
+                    <img src="images/avatar-2.png" alt="alt" loading="lazy" class="h-full w-full object-cover" />
+                  </div>
+                  <div class="mx-auto -mt-[15px] inline-block rounded-[50px] bg-orange px-5 py-[5px] align-top text-[18px] font-extrabold text-white">CMO</div>
+                </div>
+                <div class="mb-1.5 text-center text-[18px] font-extrabold sm:mb-1 sm:text-[20px] md:text-[22px] lg:text-[24px]">Josh Buck</div>
+                <p class="text-dim-gray max-sm:text-[15px]">
+                  Josh spent years mastering his craft of online advertising in the traditional marketing landscape. Josh pivoted to web3 after seeing its potential to revolutionize content monetization and audience engagement. He is at the forefront of blending advertising techniques
+                  to craft the future of digital marketing.
+                </p>
+              </div>
+            </div>
+            <div class="mb-5 w-full px-[5px] sm:max-w-[50%] sm:shrink-0 sm:grow-0 sm:basis-6/12 lg:max-w-[33.333333%] lg:basis-4/12">
+              <div class="flex h-full flex-col rounded-[20px] bg-white px-5 pb-4 pt-5 shadow-1 shadow-medium-champagne">
+                <div class="mx-auto mb-4 flex flex-col">
+                  <div class="flex size-[150px] shrink-0 overflow-hidden rounded-full">
+                    <img src="images/avatar-3.png" alt="alt" loading="lazy" class="h-full w-full object-cover" />
+                  </div>
+                  <div class="mx-auto -mt-[15px] inline-block rounded-[50px] bg-orange px-5 py-[5px] align-top text-[18px] font-extrabold text-white">PARTNERSHIPS</div>
+                </div>
+                <div class="mb-1.5 text-center text-[18px] font-extrabold sm:mb-1 sm:text-[20px] md:text-[22px] lg:text-[24px]">Matt Sorkin</div>
+                <p class="text-dim-gray max-sm:text-[15px]">
+                  Matt has been deeply rooted in the corporate world, including holding managerial positions in several Fortune 500 companies. Recognizing the transformative potential of web3, Matt made a strategic shift from traditional business frameworks to decentralized digital
+                  ecosystems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-[5px] max-xl:flex max-xl:justify-center xl:max-w-[25%] xl:shrink-0 xl:grow-0 xl:basis-3/12">
+          <div class="relative inline-block align-top max-xl:-mt-[11px] max-sm:-mr-5 max-sm:ml-12 xl:-mb-[93px] xl:-ml-7" data-aos="fade-left" data-aos-delay="50" data-aos-duration="800">
+            <img src="images/crown.svg" alt="alt" class="absolute -left-[20%] top-[12%] max-xl:-rotate-[25deg] max-md:w-[200px] max-sm:w-[38%] sm:-left-[100px] sm:top-[75px] md:-left-[150px] md:top-[50px] xl:-top-[170px] xl:left-[60px]" />
+            <img src="images/dog-doghouse.png" alt="alt" loading="lazy" class="xl:max-w-none" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faq -->
+  <section>
+    <div class="container">
+      <div class="relative mb-10 inline-block pr-[100px] align-top max-sm:max-w-[320px] md:pr-36 lg:pr-[171px]">
+        <div class="mb-2 overflow-hidden">
+          <h2 class="text-[24px] font-extrabold text-eerie-black sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">Frequently Asked Questions</h2>
+        </div>
+        <div class="overflow-hidden">
+          <h3 class="text-[18px] font-semibold text-red sm:text-[22px] md:text-[26px] lg:text-[29px] xl:text-[32px]" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">Find answers to your questions here!</h3>
+        </div>
+        <img src="images/questionmark.svg" alt="alt" class="absolute bottom-2 right-0 w-[123px] max-lg:w-24 max-md:w-20 sm:bottom-0 sm:-mb-3" data-aos="flip-up" data-aos-delay="650" data-aos-duration="800" />
+      </div>
+      <div class="space-y-2.5" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">Why should I buy it in the pre-sale?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">Why is Harambe unique in the crypto space?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">How do I know the AI trading bot is accurate?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">Do I have to use the AI bot myself?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">How is the APY calculated?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-[10px] bg-white shadow-1 shadow-medium-champagne sm:rounded-[15px]" data-faq>
+          <div class="flex min-h-[54px] cursor-pointer items-center px-5 py-2.5 sm:min-h-16 sm:px-[30px]" data-faq-btn>
+            <div class="mr-2.5 flex-auto font-extrabold sm:mr-12 sm:text-[18px]">I've completed the purchase, now what?</div>
+            <div class="relative ml-auto size-5 shrink-0 rounded-md bg-silver transition-colors group-[.is-active]:bg-orange">
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white transition group-[.is-active]:-rotate-90 group-[.is-active]:opacity-0"></div>
+              <div class="group-[.is-active]:bg-primary absolute left-1/2 top-1/2 h-0.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-lg bg-white transition group-[.is-active]:rotate-0"></div>
+            </div>
+          </div>
+          <div class="hidden" data-faq-content>
+            <div class="px-5 pb-5 text-gray max-sm:text-[14px] sm:px-[30px] md:pr-[102px]">
+              <p>
+                By taking part in the presale, you can acquire the Harambe AI token at a significant discount. The price per token will start at $0.05 and increase every 48 hours.<br />
+                The Harambe Token will then be listed on Uniswap at $1. Early participants that took part in the presale will realize up to 20x gain!<br />
+                Also the presale is necessary to provide liquidity for the Harambe AI bot to start trading. Instead of going the traditional route with venture capitalists, we chose a community-first approach. This way, we not only raise liquidity for the bot but also share profits with our
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Invest today - Price Increases on  -->
+  <section class="pb-[50px] pt-[100px] sm:pb-[100px] md:pt-[200px] lg:pb-[200px]">
+    <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+      <div class="relative mx-auto max-w-[602px]">
+        <div class="rounded-[20px] bg-white px-5 pb-[30px] text-center shadow-1 shadow-black/5 sm:rounded-[30px] sm:px-10 sm:pb-11">
+          <div class="-mt-[15px] mb-5 inline-block rounded-[30px] bg-orange px-4 py-1.5 text-center align-top font-bold text-white sm:-mt-5 sm:mb-[30px] sm:px-[30px] sm:py-2.5 sm:text-[18px]">Invest today - Price Increases on</div>
+          <img src="images/logo.png" srcset="images/logo.png 1x, images/logo-2x.png 2x" alt="alt" class="mx-auto mb-3 sm:mb-6" />
+          <h3 class="mb-2 text-[24px] font-extrabold sm:mb-3 sm:text-[28px] xl:text-[32px]">Orders For Harambe AI Tokens Are Rolling In As You're Reading This.</h3>
+          <div class="mb-2.5 text-[18px] font-medium text-green sm:text-[20px] md:text-[22px] lg:text-[24px]">1 Spike AI = $ 0.267 USD</div>
+          <div class="mb-6 text-gray max-sm:hidden sm:mb-8 sm:text-[18px]">Hurry - Token price increases on April 29th!</div>
+          <div class="mb-6 text-gray sm:mb-8 sm:hidden sm:text-[18px]">You'll be directed to a secure checkout page where you can finalize your purchase using a variety of major cryptocurrencies.</div>
+          <a href="#" class="btn btn-red w-full">Get my Tokens</a>
+          <img src="images/radom.png" alt="alt" loading="lazy" class="mx-auto mt-5 sm:mt-[25px]" />
+        </div>
+        <img src="images/decor.svg" alt="alt" class="absolute -left-10 -top-[73px] -z-10 max-lg:w-[350px] max-md:w-[300px] max-sm:w-[200px] sm:-left-[100px] sm:-top-[100px] md:-left-[200px] lg:-left-[238px]" />
+        <picture>
+          <source srcset="images/dog-stars.png" media="(min-width: 992px)" />
+          <img src="images/dog-stars-mob.png" alt="alt" class="max-lg:mx-auto max-lg:-mt-[25px] lg:absolute lg:-bottom-[89px] lg:left-full lg:-ml-9" />
+        </picture>
+        <img src="images/dog-stars-placeholder.svg" alt="alt" class="absolute -bottom-[86px] -right-[306px] -z-10 hidden lg:block" />
+        <img src="images/gold-alt.png" alt="alt" class="absolute -bottom-[72px] -left-[200px] hidden lg:block" />
+        <img src="images/gold-alt-placeholder.svg" alt="alt" class="absolute -bottom-[71px] -left-[218px] -z-10 hidden lg:block" />
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="mt-auto px-[5px]" data-footer>
+    <div class="mx-auto max-w-[1600px] rounded-tl-[30px] rounded-tr-[30px] bg-eerie-black pb-16 pt-[30px] text-white sm:pt-[46px]">
+      <div class="container">
+        <div class="mb-5 flex max-lg:flex-wrap sm:mb-9">
+          <div class="flex w-full space-x-5 max-lg:mb-6 max-sm:mb-[14px] lg:max-w-[50%] lg:shrink lg:grow-0 lg:basis-6/12 lg:space-x-2.5">
+            <a href="#" class="btn btn-outline-orange flex-1">White Paper</a>
+            <a href="#" class="btn btn-outline-orange flex-1">
+              <div class="mr-[5px] flex size-5 shrink-0 items-center justify-center rounded-full bg-black sm:mr-2.5 sm:size-6">
+                <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+              </div>
+              Certik Audit
+            </a>
+          </div>
+          <img src="images/logo-white.png" srcset="images/logo-white.png 1x, images/logo-white-2x.png 2x" alt="alt" class="mx-auto max-w-[66px] shrink-0 max-lg:order-first max-lg:mb-6 max-sm:mb-5 lg:mx-[72px]" />
+          <div class="flex w-full items-center justify-between lg:max-w-[50%] lg:shrink lg:grow-0 lg:basis-6/12 lg:justify-end">
+            <nav class="mr-5 sm:mr-11">
+              <ul class="flex space-x-[30px] font-extrabold sm:space-x-[50px] sm:text-[18px]">
+                <li><a href="referral.html">Referral</a></li>
+                <li><a href="claim.html">Claim</a></li>
+              </ul>
+            </nav>
+            <div class="-mx-[5px] -mb-2.5 flex flex-wrap justify-end">
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/certik.svg" alt="alt" class="w-[70%] shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/x.svg" alt="alt" class="w-3/5 shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/cmc.svg" alt="alt" class="w-[70%] shrink-0" />
+              </a>
+              <a href="#" class="mx-[5px] mb-2.5 flex size-[30px] shrink-0 items-center justify-center rounded-full bg-black transition-colors hover:bg-dark sm:size-9 md:size-10">
+                <img src="images/icons/tg.svg" alt="alt" class="w-1/2 shrink-0" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap max-md:flex-col max-md:items-center max-md:space-y-4 md:justify-between">
+          <p class="text-dim-gray">© 2024 Spike Token</p>
+          <a href="mailto:support@spiketoken.ai" class="text-dim-gray transition-colors hover:text-light">support@spiketoken.ai</a>
+          <a href="#" class="text-dim-gray transition-colors hover:text-light">Terms of Service</a>
+          <a href="#" class="text-dim-gray transition-colors hover:text-light">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
