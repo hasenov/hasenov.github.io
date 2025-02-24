@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /$
+Allow: /contacts.html
+Allow: /projects.html
+
+Disallow: /aego/
+Disallow: /apple-god/
+Disallow: /avto/
+Disallow: /ff-school/
+Disallow: /lava/
+Disallow: /spike/
