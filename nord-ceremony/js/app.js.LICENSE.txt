@@ -5,4 +5,6 @@
  * Copyright: 2022 Naotoshi Fujita
  */
 
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
 /*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
