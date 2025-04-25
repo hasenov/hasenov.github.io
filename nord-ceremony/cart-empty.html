@@ -1,0 +1,822 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Корзина - пусто</title>
+  <meta name="description" content="description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#c27e60" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__top">
+        <a href="#" class="header__lang">English</a>
+        <div class="header__location-selector location-selector">
+          <div class="location-selector__value">Norway</div>
+          <button class="location-selector__toggle" type="button" data-micromodal-trigger="modal-address">Enter your address</button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.svg" alt="alt" class="img-responsive" width="149" height="50" />
+        </a>
+        <div class="header__nav-controls">
+          <div class="header__catalog-wrap">
+            <button class="header__catalog-btn catalog-btn" type="button">
+              <span class="catalog-btn__icon-wrap">
+                <span class="catalog-btn__close"></span>
+                <svg aria-hidden="true" class="catalog-btn__icon">
+                  <use href="images/icons/sprite.svg#menu" />
+                </svg>
+              </span>
+              <span class="catalog-btn__text">Каталог</span>
+            </button>
+            <nav class="header__catalog-menu catalog-menu">
+              <div class="catalog-menu__header">
+                <div class="catalog-menu__back-wrap">
+                  <button class="catalog-menu__back" type="button">
+                    <svg aria-hidden="true" class="catalog-menu__back-icon">
+                      <use href="images/icons/sprite.svg#arrow-left-thin" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="catalog-menu__title">Каталог</div>
+                <div class="catalog-menu__close-wrap">
+                  <button class="catalog-menu__close" type="button">
+                    <svg aria-hidden="true" class="catalog-menu__close-icon">
+                      <use href="images/icons/sprite.svg#close-circle-outline" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="catalog-menu__content">
+                <ul class="catalog-menu__list list-unstyled">
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="wedding">
+                      Свадьба
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="bday">
+                      День рождение
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="party">
+                      Вечеринка
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="corporate">
+                      Корпоратив
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="party">
+                      Вечеринка
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="bday">
+                      День рождение
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="party">
+                      Вечеринка
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="corporate">
+                      Корпоратив
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-tab-target="wedding">
+                      Свадьба
+                      <svg aria-hidden="true">
+                        <use href="images/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="catalog-menu__items">
+                  <div class="catalog-menu__item" data-tab="wedding">
+                    <div class="catalog-menu__categories categories categories--menu">
+                      <div class="categories__row row gx-0 gx-md-3 gy-md-3">
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-wedding-165.jpg" srcset="images/cat-wedding-165.jpg 1x, images/cat-wedding-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Wedding dresses</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-groom-165.jpg" srcset="images/cat-groom-165.jpg 1x, images/cat-groom-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Groom's attire</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-decor-165.jpg" srcset="images/cat-decor-165.jpg 1x, images/cat-decor-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Decor and styling</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-photo-165.jpg" srcset="images/cat-photo-165.jpg 1x, images/cat-photo-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Photo/videography</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-cake-165.jpg" srcset="images/cat-cake-165.jpg 1x, images/cat-cake-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Cake and desserts</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-locations-165.jpg" srcset="images/cat-locations-165.jpg 1x, images/cat-locations-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Locations and venues</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="catalog-menu__btn btn btn--primary">See all</a>
+                  </div>
+                  <div class="catalog-menu__item" data-tab="bday">
+                    <div class="catalog-menu__categories categories categories--menu">
+                      <div class="categories__row row gx-0 gx-md-3 gy-md-3">
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-wedding-165.jpg" srcset="images/cat-wedding-165.jpg 1x, images/cat-wedding-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Wedding dresses</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-groom-165.jpg" srcset="images/cat-groom-165.jpg 1x, images/cat-groom-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Groom's attire</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-decor-165.jpg" srcset="images/cat-decor-165.jpg 1x, images/cat-decor-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Decor and styling</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-photo-165.jpg" srcset="images/cat-photo-165.jpg 1x, images/cat-photo-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Photo/videography</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-cake-165.jpg" srcset="images/cat-cake-165.jpg 1x, images/cat-cake-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Cake and desserts</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="catalog-menu__btn btn btn--primary">See all</a>
+                  </div>
+                  <div class="catalog-menu__item" data-tab="party">
+                    <div class="catalog-menu__categories categories categories--menu">
+                      <div class="categories__row row gx-0 gx-md-3 gy-md-3">
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-wedding-165.jpg" srcset="images/cat-wedding-165.jpg 1x, images/cat-wedding-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Wedding dresses</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-groom-165.jpg" srcset="images/cat-groom-165.jpg 1x, images/cat-groom-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Groom's attire</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-decor-165.jpg" srcset="images/cat-decor-165.jpg 1x, images/cat-decor-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Decor and styling</div>
+                          </a>
+                        </div>
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-photo-165.jpg" srcset="images/cat-photo-165.jpg 1x, images/cat-photo-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Photo/videography</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="catalog-menu__btn btn btn--primary">See all</a>
+                  </div>
+                  <div class="catalog-menu__item" data-tab="corporate">
+                    <div class="catalog-menu__categories categories categories--menu">
+                      <div class="categories__row row gx-0 gx-md-3 gy-md-3">
+                        <div class="categories__col col-md-4">
+                          <a href="#" class="categories__card card-category" target="_blank" rel="noopener noreferrer">
+                            <div class="card-category__img-wrap">
+                              <img src="images/cat-wedding-165.jpg" srcset="images/cat-wedding-165.jpg 1x, images/cat-wedding-330.jpg 2x" alt="alt" class="card-category__img img-responsive" loading="lazy" />
+                            </div>
+                            <div class="card-category__title">Wedding dresses</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="catalog-menu__btn btn btn--primary">See all</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <form class="header__search search-header">
+            <div class="search-header__control-wrap">
+              <input type="text" class="search-header__control control control--white" placeholder="Search on NordCeremony" />
+              <button class="search-header__clear" type="button" aria-label="Clear Input">
+                <svg aria-hidden="true" class="search-header__clear-icon">
+                  <use href="images/icons/sprite.svg#close" />
+                </svg>
+              </button>
+            </div>
+            <button class="search-header__submit btn btn--primary" type="submit" aria-label="Search">
+              <svg aria-hidden="true" class="btn__icon">
+                <use href="images/icons/sprite.svg#search" />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="header__actions-wrap">
+          <div class="header__actions">
+            <a href="#" class="header__action action-header">
+              <span class="action-header__icon-wrap">
+                <svg aria-hidden="true" class="action-header__icon">
+                  <use href="images/icons/sprite.svg#heart" />
+                </svg>
+              </span>
+              <span class="action-header__text">Like</span>
+            </a>
+            <a href="#" class="header__action action-header action-header--gray">
+              <span class="action-header__icon-wrap">
+                <svg aria-hidden="true" class="action-header__icon">
+                  <use href="images/icons/sprite.svg#user" />
+                </svg>
+              </span>
+              <span class="action-header__text">Sign in</span>
+            </a>
+            <a href="cart.html" class="header__action action-header action-header--gray">
+              <span class="action-header__icon-wrap">
+                <svg aria-hidden="true" class="action-header__icon">
+                  <use href="images/icons/sprite.svg#shopping-bag" />
+                </svg>
+                <span class="action-header__count">45</span>
+              </span>
+              <span class="action-header__text">Сart</span>
+            </a>
+            <button class="header__action header__action--location action-header" type="button" data-micromodal-trigger="modal-address">
+              <span class="action-header__icon-wrap">
+                <svg aria-hidden="true" class="action-header__icon">
+                  <use href="images/icons/sprite.svg#location" />
+                </svg>
+              </span>
+              <span class="action-header__text">Address</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="cart">
+    <div class="container">
+      <div class="cart__empty empty-cart">
+        <h1 class="empty-cart__title">Cart is empty</h1>
+        <div class="empty-cart__text-wrap no-mb-last">
+          <p>Use the search to find everything you need</p>
+        </div>
+        <a href="#" class="empty-cart__btn btn btn--outline-primary btn--default">Start shopping</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-slider-products">
+    <div class="slider-products slider-products--destroy-mobile slider-products--4-mobile slider splide">
+      <div class="container">
+        <div class="slider-products__header">
+          <h2 class="slider-products__title title">You've already watched it</h2>
+          <div class="slider-products__arrows slider__arrows splide__arrows">
+            <button class="slider-products__arrow slider-products__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev">
+              <svg aria-hidden="true">
+                <use href="images/icons/sprite.svg#arrow-left" />
+              </svg>
+            </button>
+            <button class="slider-products__arrow slider-products__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next">
+              <svg aria-hidden="true">
+                <use href="images/icons/sprite.svg#arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-products__track-wrap">
+        <div class="container">
+          <div class="slider-products__track slider__track splide__track">
+            <div class="slider-products__list slider__list splide__list">
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-7.jpg" srcset="images/card-product-7.jpg 224w, images/card-product-7-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__icons">
+                      <img src="images/icons/eco.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                      <img src="images/icons/truck.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__badges">
+                      <div class="card-product__badge badge badge--success">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#flame" />
+                        </svg>
+                        Popular
+                      </div>
+                      <div class="card-product__badge badge badge--danger">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#discount" />
+                        </svg>
+                        Discount
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-8.jpg" srcset="images/card-product-8.jpg 224w, images/card-product-8-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <img src="images/icons/norway.svg" alt="alt" class="card-product__country" />
+                    <div class="card-product__icons">
+                      <img src="images/icons/eco.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                      <img src="images/icons/truck.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__badges">
+                      <div class="card-product__badge badge badge--success">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#flame" />
+                        </svg>
+                        Popular
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-9.jpg" srcset="images/card-product-9.jpg 224w, images/card-product-9-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <img src="images/icons/norway.svg" alt="alt" class="card-product__country" />
+                    <div class="card-product__icons">
+                      <img src="images/icons/eco.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                      <img src="images/icons/truck.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__badges">
+                      <div class="card-product__badge badge badge--success">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#flame" />
+                        </svg>
+                        Popular
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-10.jpg" srcset="images/card-product-10.jpg 224w, images/card-product-10-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__icons">
+                      <img src="images/icons/truck.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-11.jpg" srcset="images/card-product-11.jpg 224w, images/card-product-11-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__icons">
+                      <img src="images/icons/eco.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-12.jpg" srcset="images/card-product-12.jpg 224w, images/card-product-12-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <img src="images/icons/norway.svg" alt="alt" class="card-product__country" />
+                    <div class="card-product__icons">
+                      <img src="images/icons/eco.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                      <img src="images/icons/truck.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__badges">
+                      <div class="card-product__badge badge badge--success">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#flame" />
+                        </svg>
+                        Popular
+                      </div>
+                      <div class="card-product__badge badge badge--danger">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#discount" />
+                        </svg>
+                        Discount
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <a href="product.html" class="card-product__img-wrap">
+                    <div class="card-product__img-inner">
+                      <img src="images/card-product-13.jpg" srcset="images/card-product-13.jpg 224w, images/card-product-13-448.jpg 448w" sizes="
+                                                (min-width: 576px) 224px,
+                                                (min-width: 340px) calc(50vw - 20px),
+                                                calc(100vw - 32px)
+                                            " alt="alt" class="card-product__img img-responsive" loading="lazy" />
+                    </div>
+                    <img src="images/icons/norway.svg" alt="alt" class="card-product__country" />
+                    <div class="card-product__icons">
+                      <img src="images/icons/eco.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                      <img src="images/icons/truck.svg" alt="alt" class="card-product__icon img-responsive" loading="lazy" />
+                    </div>
+                    <div class="card-product__badges">
+                      <div class="card-product__badge badge badge--success">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#flame" />
+                        </svg>
+                        Popular
+                      </div>
+                      <div class="card-product__badge badge badge--danger">
+                        <svg aria-hidden="true" class="badge__icon">
+                          <use href="images/icons/sprite.svg#discount" />
+                        </svg>
+                        Discount
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-product__body">
+                    <div class="card-product__prices">
+                      <p class="card-product__price">kr 3595</p>
+                      <p class="card-product__old-price">kr 395</p>
+                      <p class="card-product__discount">-37%</p>
+                    </div>
+                    <div class="card-product__title"><a href="product.html">Swirl Candle Set XXL, Wave, Twist, Spiral Candle, Spiral </a></div>
+                    <button class="card-product__add-to-cart btn btn--primary btn--sm" type="button">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row row gx-3 gy-3 gx-lg-4 gy-lg-4">
+        <div class="footer__col footer__col--support col-md-5">
+          <div class="footer__card">
+            <h2 class="footer__title title">Support</h2>
+            <div class="footer__text-wrap no-mb-last">
+              <p>If you have any questions, we’ll be happy to answer them. <span>Contact our Help Center </span></p>
+            </div>
+            <a href="#" class="footer__contact" target="_blank" rel="noopener noreferrer">To contact</a>
+          </div>
+        </div>
+        <div class="footer__col footer__col--menus col-md-5">
+          <div class="footer__card">
+            <div class="footer__menus">
+              <nav class="footer__menu menu-footer">
+                <h3 class="menu-footer__title title-sm">For Buyers</h3>
+                <ul class="menu-footer__list list-unstyled">
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Site Map</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">NordCeremony Blog</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Gift Cards</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Rental & Booking</a></li>
+                </ul>
+              </nav>
+              <nav class="footer__menu menu-footer">
+                <h3 class="menu-footer__title title-sm">For Sellers</h3>
+                <ul class="menu-footer__list list-unstyled">
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Become a Vendor</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Product Listing Guidelines</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Delivery Terms & Conditions</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Contracts & Documentation</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__col footer__col--socials col-md-2">
+          <div class="footer__card">
+            <div class="footer__socials">
+              <h2 class="footer__socials-title title-sm">Social</h2>
+              <div class="footer__socials-items">
+                <a href="#" class="footer__social social-footer" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" class="social-footer__icon">
+                    <use href="images/icons/sprite.svg#linkedin" />
+                  </svg>
+                  <div class="social-footer__text">LinkedIn</div>
+                </a>
+                <a href="#" class="footer__social social-footer" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" class="social-footer__icon">
+                    <use href="images/icons/sprite.svg#pinterest" />
+                  </svg>
+                  <div class="social-footer__text">Pinterest</div>
+                </a>
+                <a href="#" class="footer__social social-footer" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" class="social-footer__icon">
+                    <use href="images/icons/sprite.svg#instagram" />
+                  </svg>
+                  <div class="social-footer__text">Instagram</div>
+                </a>
+                <a href="#" class="footer__social social-footer" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" class="social-footer__icon">
+                    <use href="images/icons/sprite.svg#facebook" />
+                  </svg>
+                  <div class="social-footer__text">Facebook</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__col col-12">
+          <div class="footer__card footer__card--legal">
+            <div class="footer__legal">
+              <p class="footer__copyright">2025 NordCeremony, Inc</p>
+              <nav class="footer__links">
+                <ul class="list-unstyled">
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal modal--default modal--address" id="modal-address" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-address-title">
+        <div class="modal__inner address-modal">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+            <svg aria-hidden="true" class="modal__close-icon">
+              <use href="images/icons/sprite.svg#close-circle-outline-light"></use>
+            </svg>
+          </button>
+          <div class="address-modal__inner">
+            <div class="address-modal__content">
+              <div class="address-modal__header">
+                <div class="address-modal__back-wrap">
+                  <button class="address-modal__back" aria-label="Close modal" data-micromodal-close>
+                    <svg aria-hidden="true" class="address-modal__back-icon">
+                      <use href="images/icons/sprite.svg#arrow-left"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="address-modal__title" id="modal-address-title">Address</h3>
+                <div class="address-modal__close-wrap">
+                  <button class="address-modal__close" aria-label="Close address search modal">
+                    <svg aria-hidden="true" class="address-modal__close-icon">
+                      <use href="images/icons/sprite.svg#close-circle-outline"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="address-modal__map" id="map"></div>
+              <div class="address-modal__text-wrap no-mb-last">
+                <p>Select a city on the map or use the search</p>
+              </div>
+              <div class="address-modal__address-input-wrap">
+                <div class="address-modal__address-input address-input">
+                  <input type="text" class="address-input__control" id="address" />
+                  <label for="address" class="address-input__label address-input__label--pc">Search on the map</label>
+                  <label for="address" class="address-input__label address-input__label--mobile">Enter address</label>
+                </div>
+              </div>
+              <button class="address-modal__locate locate" type="button">
+                <svg aria-hidden="true" class="locate__icon">
+                  <use href="images/icons/sprite.svg#navigation"></use>
+                </svg>
+                locate
+              </button>
+              <div class="address-modal__mobile-input address-mobile-input">
+                <input type="text" class="address-mobile-input__control control" placeholder="Search" />
+                <svg aria-hidden="true" class="address-mobile-input__icon">
+                  <use href="images/icons/sprite.svg#search-thin"></use>
+                </svg>
+              </div>
+              <button class="address-modal__mobile-btn btn btn--primary btn--sm" type="button" disabled>Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="backdrop"></div>
+
+  <script>
+    (g => {
+      var h, a, k, p = "The Google Maps JavaScript API",
+        c = "google",
+        l = "importLibrary",
+        q = "__ib__",
+        m = document,
+        b = window;
+      b = b[c] || (b[c] = {});
+      var d = b.maps || (b.maps = {}),
+        r = new Set,
+        e = new URLSearchParams,
+        u = () => h || (h = new Promise(async (f, n) => {
+          await (a = m.createElement("script"));
+          e.set("libraries", [...r] + "");
+          for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+          e.set("callback", c + ".maps." + q);
+          a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+          d[q] = f;
+          a.onerror = () => h = n(Error(p + " could not load."));
+          a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+          m.head.append(a)
+        }));
+      d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+    })({
+      key: "AIzaSyD7_0G723dWzLuPShg5LGMuKZvHVqP7-us",
+      v: "weekly",
+      // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+      // Add other bootstrap parameters as needed, using camel case.
+    });
+  </script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

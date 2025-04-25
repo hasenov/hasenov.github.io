@@ -5,6 +5,8 @@
  * Copyright: 2022 Naotoshi Fujita
  */
 
+/*! name: vanilla-calendar-pro v3.0.4 | url: https://github.com/uvarov-frontend/vanilla-calendar-pro */
+
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
