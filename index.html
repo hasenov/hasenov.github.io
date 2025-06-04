@@ -1,331 +1,1129 @@
+<!-- prettier-ignore -->
 <!DOCTYPE html>
-<html lang="en" class="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Aidar Hasenov - Front End developer</title>
-		<meta
-			name="description"
-			content="I'm a Front End developer specializing in building responsive and interactive websites and web applications. Explore my portfolio to see my latest projects and get in touch to start your next project today."
-		/>
-		<meta name="keywords" content="Front End Developer, Web Developer, Web Applications, Responsive Design, Interactive Design, Portfolio" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
-	<body class="bg-light font-mono text-palette-dark antialiased dark:bg-palette-dark dark:text-palette-light" data-barba="wrapper">
-		<header
-			class="fixed bottom-0 left-0 z-20 w-full border-t border-t-slate-300/50 bg-palette-light/75 shadow-sm backdrop-blur-md dark:border-t-palette-gray/50 dark:bg-palette-gray/75 md:top-0 md:bottom-auto md:border-none md:bg-palette-light/50"
-		>
-			<div class="mx-auto flex max-w-screen-2xl items-center justify-between md:justify-start md:px-4">
-				<a href="index.html" class="mr-auto hidden text-xl font-semibold dark:text-teal-300 md:block">aidar.hasenov</a>
-				<nav class="sm:mr-4" id="menu">
-					<ul class="flex divide-x divide-slate-300/50 dark:divide-palette-gray/50 md:divide-none">
-						<li>
-							<a
-								href="index.html"
-								class="active relative block py-5 px-4 font-semibold uppercase before:absolute before:bottom-0 before:left-0 before:block before:h-0.5 before:w-full before:scale-x-0 before:bg-teal-300 before:transition-transform before:duration-300 dark:text-palette-light sm:px-6 sm:text-lg sm:tracking-wide md:px-4 md:hover:before:scale-x-100 [&.active]:before:scale-100"
-								>Home</a
-							>
-						</li>
-						<li>
-							<a
-								href="projects.html"
-								class="relative block py-5 px-4 font-semibold uppercase before:absolute before:bottom-0 before:left-0 before:block before:h-0.5 before:w-full before:scale-x-0 before:bg-teal-300 before:transition-transform before:duration-300 dark:text-palette-light sm:px-6 sm:text-lg sm:tracking-wide md:px-4 md:hover:before:scale-x-100 [&.active]:before:scale-100"
-								>Projects</a
-							>
-						</li>
-						<li>
-							<a
-								href="contacts.html"
-								class="relative block py-5 px-4 font-semibold uppercase before:absolute before:bottom-0 before:left-0 before:block before:h-0.5 before:w-full before:scale-x-0 before:bg-teal-300 before:transition-transform before:duration-300 dark:text-palette-light sm:px-6 sm:text-lg sm:tracking-wide md:px-4 md:hover:before:scale-x-100 [&.active]:before:scale-100"
-								>Contacts</a
-							>
-						</li>
-					</ul>
-				</nav>
-				<label class="relative mr-4 inline-flex cursor-pointer items-center md:mr-0">
-					<input type="checkbox" value="" class="peer sr-only" id="themeSwitcher" />
-					<span
-						class="peer relative h-6 w-11 shrink-0 rounded-full bg-gray-200 after:absolute after:top-2/4 after:left-[2px] after:h-5 after:w-5 after:-translate-y-1/2 after:rounded-full after:border after:border-gray-300 after:bg-palette-light after:transition-all after:content-[''] peer-checked:bg-teal-500 peer-checked:after:translate-x-full peer-checked:after:border-palette-light peer-focus:outline-none peer-focus:ring peer-focus:ring-teal-100 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-teal-700"
-					></span>
-					<span class="ml-3 hidden text-sm dark:text-gray-300 sm:block">Dark mode</span>
-				</label>
-			</div>
-		</header>
-		<div data-barba="container" data-barba-namespace="home">
-			<div class="container flex min-h-screen flex-col items-start justify-center py-10 md:py-28">
-				<h1 class="mb-10 text-3xl font-bold text-palette-dark dark:text-white sm:text-5xl md:text-6xl">
-					Nice to meet you!
-					<br />
-					I'm <span class="border-b-4 border-teal-300">Aidar Hasenov</span>.
-				</h1>
-				<p class="mb-10 text-xl">
-					I'm a front-end developer specializing in building<br />
-					high-quality websites that users love.
-				</p>
-				<a
-					href="contacts.html"
-					class="mb-10 inline-block rounded bg-teal-300 px-7 py-3 text-xl text-palette-dark transition-colors duration-500 hover:bg-teal-400 focus:outline-none focus:ring focus:ring-teal-600 active:bg-teal-500 md:px-8 md:py-4"
-					>Contact me</a
-				>
-				<div class="flex space-x-6" data-barba-prevent="all">
-					<a href="https://github.com/hasenov" target="_blank" rel="noopener noreferrer">
-						<svg
-							class="h-10 w-10 fill-teal-300 transition-colors duration-300 hover:fill-teal-400 active:fill-teal-500"
-							viewBox="0 0 32 32"
-							version="1.1"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"
-							></path>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/hasenov" target="_blank" rel="noopener noreferrer">
-						<svg
-							class="h-10 w-10 fill-teal-300 transition-colors duration-300 hover:fill-teal-400 active:fill-teal-500"
-							viewBox="0 0 32 32"
-							version="1.1"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z"
-							></path>
-						</svg>
-					</a>
-					<a href="https://twitter.com/aidarDev" target="_blank" rel="noopener noreferrer">
-						<svg
-							class="h-10 w-10 fill-teal-300 transition-colors duration-300 hover:fill-teal-400 active:fill-teal-500"
-							version="1.1"
-							id="Layer_1"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							viewBox="-271 296.6 256.4 208.4"
-							xml:space="preserve"
-						>
-							<path
-								d="M-14.6,321.2c-9.4,4.2-19.6,7-30.2,8.3c10.9-6.5,19.2-16.8,23.1-29.1c-10.2,6-21.4,10.4-33.4,12.8
-			c-9.6-10.2-23.3-16.6-38.4-16.6c-29,0-52.6,23.6-52.6,52.6c0,4.1,0.4,8.1,1.4,12c-43.7-2.2-82.5-23.1-108.4-55
-			c-4.5,7.8-7.1,16.8-7.1,26.5c0,18.2,9.3,34.3,23.4,43.8c-8.6-0.3-16.7-2.7-23.8-6.6v0.6c0,25.5,18.1,46.8,42.2,51.6
-			c-4.4,1.2-9.1,1.9-13.9,1.9c-3.4,0-6.7-0.3-9.9-0.9c6.7,20.9,26.1,36.1,49.1,36.5c-18,14.1-40.7,22.5-65.3,22.5
-			c-4.2,0-8.4-0.2-12.6-0.7c23.3,14.9,50.9,23.6,80.6,23.6c96.8,0,149.7-80.2,149.7-149.7c0-2.3,0-4.6-0.1-6.8
-			C-30.5,341-21.6,331.8-14.6,321.2"
-							/>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="pt-10 pb-20">
-				<div class="container">
-					<div class="-mx-3.5 flex-row space-y-12 md:flex md:space-y-0">
-						<div class="mx-3.5 basis-3/5">
-							<h2 class="mb-8 text-3xl font-bold dark:text-teal-300 sm:mb-10 sm:text-5xl md:mb-12 md:leading-10">About me</h2>
-							<p class="text-lg">
-								I'm experienced front-end developer specializing in building websites and web applications. I've built products for companies and businesses around the world ranging
-								from marketing websites to complex solutions with focus on quality of product, providing best user experience. In my work I use the best modern practices.
-							</p>
-						</div>
-						<div class="mx-3.5 basis-2/5 md:text-right">
-							<h3 class="mb-10 text-2xl font-bold sm:text-3xl md:mb-12 md:leading-10">My skills</h3>
-							<div class="relative -mx-2 -mb-4 flex flex-wrap md:justify-end">
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									html
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									css
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									javascript
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									react
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									vue
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									tailwind
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									gulp
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									sass
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									bem
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									bootstrap
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									jquery
-								</div>
-								<div class="mx-2 mb-4 rounded bg-palette-gray px-4 py-1 text-base font-semibold uppercase text-palette-light transition duration-300 hover:-translate-y-1 md:text-lg">
-									wordpress
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="py-20">
-				<div class="container">
-					<h2 class="mb-8 text-3xl font-bold dark:text-teal-300 sm:mb-10 sm:text-5xl md:mb-12">My Portfolio</h2>
-					<div class="cards group -mx-3.5 flex flex-row flex-wrap" data-barba-prevent="all">
-						<div class="mb-10 w-full shrink-0 grow-0 basis-auto px-3.5 sm:mb-16 sm:w-[50%]">
-							<div
-								class="card relative rounded-md bg-white/5 p-px after:pointer-events-none after:absolute after:inset-0 after:z-[1] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(_600px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.4),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 group-hover:after:opacity-100 md:after:block"
-							>
-								<div
-									class="relative z-[2] rounded-[inherit] after:pointer-events-none after:absolute after:inset-0 after:z-[3] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(800px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.06),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 dark:bg-palette-dark md:after:block"
-								>
-									<a
-										href="images/content/1.png"
-										class="glightbox relative z-[4] flex overflow-hidden rounded-md from-black/25 pb-[calc(100%_/_(300_/_190))] before:absolute before:top-0 before:left-0 before:z-[1] before:h-full before:w-full before:bg-gradient-to-t"
-										data-gallery="1"
-									>
-										<img
-											src="images/content/1-thumb.png"
-											data-src="images/content/1-sm.png"
-											alt="project 1"
-											class="lazy absolute top-0 left-0 h-full w-full object-cover blur-lg transition-[filter] duration-300 will-change-[filter] [&.loaded]:blur-none"
-										/>
-									</a>
-									<a href="images/content/1-2.png" class="glightbox hidden" data-gallery="1"></a>
-									<div class="relative z-20 rounded-bl-[inherit] rounded-br-[inherit] p-4">
-										<h4 class="mb-1 text-xl uppercase sm:text-2xl">Social Network</h4>
-										<ul class="-mx-1 flex flex-wrap sm:-mx-2">
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">html</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">css</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">javascript</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">sass</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">bem</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mb-10 w-full shrink-0 grow-0 basis-auto px-3.5 sm:mb-16 sm:w-[50%]">
-							<div
-								class="card relative rounded-md bg-white/5 p-px after:pointer-events-none after:absolute after:inset-0 after:z-[1] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(_600px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.4),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 group-hover:after:opacity-100 md:after:block"
-							>
-								<div
-									class="relative z-[2] rounded-[inherit] after:pointer-events-none after:absolute after:inset-0 after:z-[3] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(800px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.06),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 dark:bg-palette-dark md:after:block"
-								>
-									<a
-										href="images/content/2.png"
-										class="glightbox relative z-[4] flex overflow-hidden rounded-md from-black/25 pb-[calc(100%_/_(300_/_190))] before:absolute before:top-0 before:left-0 before:z-[1] before:h-full before:w-full before:bg-gradient-to-t"
-										data-gallery="2"
-										data-description=".desc2"
-									>
-										<img
-											src="images/content/2-thumb.png"
-											data-src="images/content/2-sm.png"
-											alt="project 2"
-											class="lazy absolute top-0 left-0 h-full w-full object-cover blur-lg transition-[filter] duration-300 will-change-[filter] [&.loaded]:blur-none"
-										/>
-									</a>
-									<div class="desc2 hidden">
-										<div class="text-center text-palette-dark">
-											Project link:
-											<a href="https://dashboard-hasenov.vercel.app/" target="_blank" rel="noopener noreferrer" class="font-semibold text-palette-dark underline"
-												>https://dashboard-hasenov.vercel.app/</a
-											>
-										</div>
-									</div>
-									<a href="images/content/2-2.png" class="glightbox hidden" data-gallery="2" data-description=".desc2"></a>
-									<a href="images/content/2-3.png" class="glightbox hidden" data-gallery="2" data-description=".desc2"></a>
-									<a href="images/content/2-4.png" class="glightbox hidden" data-gallery="2" data-description=".desc2"></a>
-									<div class="relative z-20 rounded-bl-[inherit] rounded-br-[inherit] p-4">
-										<h4 class="mb-1 text-xl uppercase sm:text-2xl">Dashboard Panel</h4>
-										<ul class="-mx-1 flex flex-wrap sm:-mx-2">
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">react.js</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">javascript</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">tailwind</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">html</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">vite</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mb-10 w-full shrink-0 grow-0 basis-auto px-3.5 sm:mb-16 sm:w-[50%]">
-							<div
-								class="card relative rounded-md bg-white/5 p-px after:pointer-events-none after:absolute after:inset-0 after:z-[1] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(_600px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.4),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 group-hover:after:opacity-100 md:after:block"
-							>
-								<div
-									class="relative z-[2] rounded-[inherit] after:pointer-events-none after:absolute after:inset-0 after:z-[3] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(800px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.06),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 dark:bg-palette-dark md:after:block"
-								>
-									<a
-										href="images/content/3.png"
-										class="glightbox relative z-[4] flex overflow-hidden rounded-md from-black/25 pb-[calc(100%_/_(300_/_190))] before:absolute before:top-0 before:left-0 before:z-[1] before:h-full before:w-full before:bg-gradient-to-t"
-										data-gallery="3"
-									>
-										<img
-											src="images/content/3-thumb.png"
-											data-src="images/content/3-sm.png"
-											alt="project 3"
-											class="lazy absolute top-0 left-0 h-full w-full object-cover blur-lg transition-[filter] duration-300 will-change-[filter] [&.loaded]:blur-none"
-										/>
-									</a>
-									<a href="images/content/3-2.png" class="glightbox hidden" data-gallery="3"></a>
-									<div class="relative z-20 rounded-bl-[inherit] rounded-br-[inherit] p-4">
-										<h4 class="mb-1 text-xl uppercase sm:text-2xl">Medium Clone</h4>
-										<ul class="-mx-1 flex flex-wrap sm:-mx-2">
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">vue.js</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">javascript</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">vite</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">html</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">css</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mb-10 w-full shrink-0 grow-0 basis-auto px-3.5 sm:mb-16 sm:w-[50%]">
-							<div
-								class="card relative rounded-md bg-white/5 p-px after:pointer-events-none after:absolute after:inset-0 after:z-[1] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(_600px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.4),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 group-hover:after:opacity-100 md:after:block"
-							>
-								<div
-									class="relative z-[2] rounded-[inherit] after:pointer-events-none after:absolute after:inset-0 after:z-[3] after:hidden after:rounded-[inherit] after:bg-[radial-gradient(800px_circle_at_var(--mouse-x)_var(--mouse-y),_rgba(255,255,255,0.06),_transparent_40%)] after:opacity-0 after:transition-opacity hover:after:opacity-100 dark:bg-palette-dark md:after:block"
-								>
-									<a
-										href="images/content/4.png"
-										class="glightbox relative z-[4] flex overflow-hidden rounded-md from-black/25 pb-[calc(100%_/_(300_/_190))] before:absolute before:top-0 before:left-0 before:z-[1] before:h-full before:w-full before:bg-gradient-to-t"
-										data-gallery="4"
-									>
-										<img
-											src="images/content/4-thumb.png"
-											data-src="images/content/4-sm.png"
-											alt="project 4"
-											class="lazy absolute top-0 left-0 h-full w-full object-cover blur-lg transition-[filter] duration-300 will-change-[filter] [&.loaded]:blur-none"
-										/>
-									</a>
-									<a href="images/content/4-2.png" class="glightbox hidden" data-gallery="4"></a>
-									<a href="images/content/4-3.png" class="glightbox hidden" data-gallery="4"></a>
-									<a href="images/content/4-4.png" class="glightbox hidden" data-gallery="4"></a>
-									<div class="relative z-20 rounded-bl-[inherit] rounded-br-[inherit] p-4">
-										<h4 class="mb-1 text-xl uppercase sm:text-2xl">Cleaning website</h4>
-										<ul class="-mx-1 flex flex-wrap sm:-mx-2">
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">html</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">css</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">javascript</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">sass</li>
-											<li class="mx-1 text-base uppercase dark:text-slate-300 sm:mx-2 sm:text-lg">bem</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="text-center">
-						<a
-							class="mb-10 inline-block rounded bg-teal-300 px-7 py-3 text-xl text-palette-dark transition-colors duration-500 hover:bg-teal-400 focus:outline-none focus:ring focus:ring-teal-600 active:bg-teal-500 md:px-8 md:py-4"
-							href="projects.html"
-							>See more</a
-						>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Professional Turnkey Website Development — Aidar Hasenov</title>
+  <meta name="description" content="I build fast, responsive websites with unique designs and an intuitive admin panel. From concept to launch—complete end-to-end web development." />
+  <meta name="keywords" content="web development, website creation, responsive design, SEO, turnkey websites, WordPress, Bricks Builder, Aidar Hasenov" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ed6a00" />
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://hasenov.github.io/">
+
+  <link rel="alternate" hreflang="en" href="https://hasenov.github.io/" />
+  <link rel="alternate" hreflang="ru" href="https://hasenov.github.io/ru/" />
+  <link rel="alternate" hreflang="kk" href="https://hasenov.github.io/kk/" />
+  <link rel="alternate" hreflang="x-default" href="https://hasenov.github.io/" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Professional Turnkey Website Development — Aidar Hasenov">
+  <meta property="og:description" content="I build fast, responsive websites with unique designs and an intuitive admin panel. From concept to launch—complete end-to-end web development.">
+  <meta property="og:url" content="https://hasenov.github.io/ru/">
+  <meta property="og:image" content="https://hasenov.github.io/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://hasenov.github.io/",
+      "name": "Aidar Hasenov — Web Developer",
+      "author": {
+        "@type": "Person",
+        "name": "Aidar Hasenov"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <img src="/images/logo-2.svg" alt="logo" class="img-responsive" />
+      </a>
+      <nav class="header__menu menu">
+        <div class="menu__header">
+          <button class="menu__close" type="button">
+            <svg class="icon" aria-hidden="true">
+              <use href="/images/icons/sprite.svg#x" />
+            </svg>
+          </button>
+        </div>
+        <ul class="menu__list list-unstyled">
+          <li><a href="/projects/">Portfolio</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="/images/menu-decor-1.svg" alt="decoration shape" class="menu__decor menu__decor--1" />
+        <img src="/images/menu-decor-2.svg" alt="decoration shape" class="menu__decor menu__decor--2" />
+        <img src="/images/menu-decor-3.svg" alt="decoration shape" class="menu__decor menu__decor--3" />
+      </nav>
+      <div class="header__actions">
+        <div class="header__lang lang text-sm">
+          <div class="lang__placeholder">
+            En
+            <svg class="lang__arrow icon" aria-hidden="true">
+              <use href="/images/icons/sprite.svg#chevron-down" />
+            </svg>
+          </div>
+          <div class="lang__dropdown-wrap">
+            <ul class="lang__dropdown list-unstyled">
+              <li><a href="/kk/">Kk</a></li>
+              <li><a href="/ru/">Ru</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#contact" class="header__btn btn btn--outline-primary btn--sm">Let’s Talk</a>
+      </div>
+      <button class="header__hamburger" type="button">
+        <svg class="icon" aria-hidden="true">
+          <use href="/images/icons/sprite.svg#menu" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <section class="section-hero" style="background-image: url(/images/hero-bg.svg)">
+    <div class="hero">
+      <div class="hero__container container">
+        <div class="hero__inner">
+          <img src="/images/ray.svg" alt="ray" class="hero__ray" />
+          <h1 class="hero__title h1">Modern Websites to Drive Your Business Growth and Success</h1>
+          <p class="hero__text text-md">
+            I’m Aidar Hasenov, a web developer with <span class="font-semibold">6 years of experience</span> and
+            <span class="font-semibold">over 150 completed projects.</span> I build turnkey websites—covering everything from structure and design to
+            launch. Your site won’t just look great — it will deliver real results.
+          </p>
+          <div class="hero__btns">
+            <a href="#" class="hero__btn btn btn--primary">Contact Me</a>
+            <a href="#projects" class="hero__btn btn btn--outline-primary">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-projects section-padding" id="projects">
+    <div class="container">
+      <div class="projects">
+        <h2 class="projects__title h2 underline">Featured Projects</h2>
+        <div class="projects__row row">
+          <div class="projects__col col-md-6">
+            <div class="projects__card card-projects">
+              <a href="/images/vkd-1.png" class="card-projects__img-wrap glightbox" data-gallery="1">
+                <img src="/images/vkd-thumb.png" srcset="/images/vkd-thumb.png 481w, /images/vkd-thumb-962.png 962w" sizes="
+                                    (min-width: 1026px) 481px,
+                                    (min-width: 768px) calc(50vw - 32px),
+                                    calc(100vw - 32px)
+                                " alt="Vkrugudruzei" class="card-projects__img img-responsive" loading="lazy" />
+                <svg aria-hidden="true" class="card-projects__zoom-in icon">
+                  <use href="/images/icons/sprite.svg#zoom-in" />
+                </svg>
+              </a>
+              <a href="/images/vkd-2.png" class="card-projects__gallery glightbox" data-gallery="1"></a>
+              <div class="card-projects__body">
+                <div class="card-projects__content">
+                  <h3 class="card-projects__title h3">Vkrugudruzei</h3>
+                  <div class="card-projects__category">Front end</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects__col col-md-6">
+            <div class="projects__card card-projects">
+              <a href="/images/contrast-1.png" class="card-projects__img-wrap glightbox" data-gallery="2">
+                <img src="/images/contrast-thumb.png" srcset="/images/contrast-thumb.png 481w, /images/contrast-thumb-962.png 962w" sizes="
+                                    (min-width: 1026px) 481px,
+                                    (min-width: 768px) calc(50vw - 32px),
+                                    calc(100vw - 32px)
+                                " alt="Contrast" class="card-projects__img img-responsive" loading="lazy" />
+                <svg aria-hidden="true" class="card-projects__zoom-in icon">
+                  <use href="/images/icons/sprite.svg#zoom-in" />
+                </svg>
+              </a>
+              <a href="/images/contrast-2.png" class="card-projects__gallery glightbox" data-gallery="2"></a>
+              <div class="card-projects__body">
+                <div class="card-projects__content">
+                  <h3 class="card-projects__title h3">Contrast</h3>
+                  <div class="card-projects__category">Front end</div>
+                </div>
+                <a href="https://contrast.kz/" class="card-projects__link" target="_blank" rel="noopener noreferrer">
+                  Visit website
+                  <svg aria-hidden="true" class="icon">
+                    <use href="/images/icons/sprite.svg#arrow-up-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__col col-md-6">
+            <div class="projects__card card-projects">
+              <a href="/images/gp-1.png" class="card-projects__img-wrap glightbox" data-gallery="3">
+                <img src="/images/gp-thumb.png" srcset="/images/gp-thumb.png 481w, /images/gp-thumb-962.png 962w" sizes="
+                                    (min-width: 1026px) 481px,
+                                    (min-width: 768px) calc(50vw - 32px),
+                                    calc(100vw - 32px)
+                                " alt="Geografika" class="card-projects__img img-responsive" loading="lazy" />
+                <svg aria-hidden="true" class="card-projects__zoom-in icon">
+                  <use href="/images/icons/sprite.svg#zoom-in" />
+                </svg>
+              </a>
+              <a href="/images/gp-2.png" class="card-projects__gallery glightbox" data-gallery="3"></a>
+              <div class="card-projects__body">
+                <div class="card-projects__content">
+                  <h3 class="card-projects__title h3">Geografika</h3>
+                  <div class="card-projects__category">Front end</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects__col col-md-6">
+            <div class="projects__card card-projects">
+              <a href="/images/ff-1.png" class="card-projects__img-wrap glightbox" data-gallery="4">
+                <img src="/images/ff-thumb.png" srcset="/images/ff-thumb.png 481w, /images/ff-thumb-962.png 962w" sizes="
+                                    (min-width: 1026px) 481px,
+                                    (min-width: 768px) calc(50vw - 32px),
+                                    calc(100vw - 32px)
+                                " alt="FF School" class="card-projects__img img-responsive" loading="lazy" />
+                <svg aria-hidden="true" class="card-projects__zoom-in icon">
+                  <use href="/images/icons/sprite.svg#zoom-in" />
+                </svg>
+              </a>
+              <a href="/images/ff-2.png" class="card-projects__gallery glightbox" data-gallery="4"></a>
+              <div class="card-projects__body">
+                <div class="card-projects__content">
+                  <h3 class="card-projects__title h3">FF School</h3>
+                  <div class="card-projects__category">Front end</div>
+                </div>
+                <a href="/projects/ff-school/" class="card-projects__link" target="_blank" rel="noopener noreferrer">
+                  Visit website
+                  <svg aria-hidden="true" class="icon">
+                    <use href="/images/icons/sprite.svg#arrow-up-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects__btn-wrap">
+          <a href="/projects/" class="projects__btn btn btn--primary">View more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-benefits" id="advantages">
+    <div class="container">
+      <div class="benefits">
+        <div class="benefits__row row">
+          <div class="benefits__col col-lg-7">
+            <div class="benefits__content">
+              <h2 class="benefits__title h2">A Website That Acts as a <span class="color-primary">Growth</span> Engine for Your Business</h2>
+              <p class="benefits__text">
+                I don’t just build websites; I craft mechanisms for your business growth—from concept through to a steady increase in leads and
+                sales.
+              </p>
+              <div class="benefits__cards row">
+                <div class="benefits__card-col col-sm-6">
+                  <div class="benefits__card card-benefits">
+                    <div class="card-benefits__icon-wrap">
+                      <svg class="card-benefits__icon icon" aria-hidden="true">
+                        <use href="/images/icons/sprite.svg#zap" />
+                      </svg>
+                    </div>
+                    <h3 class="card-benefits__title h4">Fast Loading</h3>
+                    <p class="card-benefits__text">
+                      I develop on WordPress with Bricks Builder, writing clean code to ensure lightning‑fast page speeds.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__card-col col-sm-6">
+                  <div class="benefits__card card-benefits">
+                    <div class="card-benefits__icon-wrap">
+                      <svg class="card-benefits__icon icon" aria-hidden="true">
+                        <use href="/images/icons/sprite.svg#palette" />
+                      </svg>
+                    </div>
+                    <h3 class="card-benefits__title h4">Custom Design</h3>
+                    <p class="card-benefits__text">
+                      A unique visual identity tailored to your brand, helping you stand out in a crowded market.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__card-col col-sm-6">
+                  <div class="benefits__card card-benefits">
+                    <div class="card-benefits__icon-wrap">
+                      <svg class="card-benefits__icon icon" aria-hidden="true">
+                        <use href="/images/icons/sprite.svg#responsive" />
+                      </svg>
+                    </div>
+                    <h3 class="card-benefits__title h4">Responsive Layout</h3>
+                    <p class="card-benefits__text">Flawless display on any device—from smartphones to desktops.</p>
+                  </div>
+                </div>
+                <div class="benefits__card-col col-sm-6">
+                  <div class="benefits__card card-benefits">
+                    <div class="card-benefits__icon-wrap">
+                      <svg class="card-benefits__icon icon" aria-hidden="true">
+                        <use href="/images/icons/sprite.svg#sliders" />
+                      </svg>
+                    </div>
+                    <h3 class="card-benefits__title h4">Easy Content Management</h3>
+                    <p class="card-benefits__text">An intuitive Bricks Builder admin interface lets you update content without hassle.</p>
+                  </div>
+                </div>
+                <div class="benefits__card-col col-sm-6">
+                  <div class="benefits__card card-benefits">
+                    <div class="card-benefits__icon-wrap">
+                      <svg class="card-benefits__icon icon" aria-hidden="true">
+                        <use href="/images/icons/sprite.svg#line-up" />
+                      </svg>
+                    </div>
+                    <h3 class="card-benefits__title h4">SEO Optimization</h3>
+                    <p class="card-benefits__text">Strategic structure and content tweaks to boost your site’s rankings in search engines.</p>
+                  </div>
+                </div>
+                <div class="benefits__card-col col-sm-6">
+                  <div class="benefits__card card-benefits">
+                    <div class="card-benefits__icon-wrap">
+                      <svg class="card-benefits__icon icon" aria-hidden="true">
+                        <use href="/images/icons/sprite.svg#headphones" />
+                      </svg>
+                    </div>
+                    <h3 class="card-benefits__title h4">Ongoing Support</h3>
+                    <p class="card-benefits__text">Regular updates, uptime monitoring, and rapid assistance whenever you need it.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#contact" class="benefits__btn btn btn--primary">Discuss Your Project</a>
+            </div>
+          </div>
+          <div class="benefits__col col-lg-5">
+            <div class="benefits__right">
+              <img src="/images/logo-big.svg" alt="aidardev logo" class="benefits__img img-responsive" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-reviews section-padding" id="testimonials">
+    <div class="container">
+      <div class="slider-reviews slider splide">
+        <div class="slider-reviews__header">
+          <h2 class="slider-reviews__title h2">What <span class="color-primary">Clients</span> Are Saying</h2>
+          <div class="slider-reviews__arrows slider__arrows splide__arrows">
+            <button class="slider-reviews__arrow slider-reviews__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/icons/sprite.svg#arrow-left" />
+              </svg>
+            </button>
+            <button class="slider-reviews__arrow slider-reviews__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/icons/sprite.svg#arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="slider-reviews__track slider__track splide__track">
+          <div class="slider-reviews__list slider__list splide__list">
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">kalaganov5</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>The task was to build a catalog page — Aidar did an excellent job. He created a responsive layout for all required resolutions: 1920, 1440, tablet, and mobile. He worked according to the mockup and strictly adhered to the pre-agreed criteria. I’m happy with the collaboration and will definitely reach out again!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">kalaganov5</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Thanks to Aidar, everything was done really well! I especially liked the animations and the smooth appearance of elements — it looks stylish and modern. The adaptation of images in product cards was implemented perfectly; any sizes display correctly. I was pleasantly surprised by how he handled overflow — no artifacts or shifts.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">kir32232</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Excellent and fast work, high quality, many thanks!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">bbelov</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Everything is great! An excellent site assembled on Elementor.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Top_Customer</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Thank you for the work! The website task was promptly completed according to the mockups.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">MarianaC</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>We are grateful to Aidar for the quality website and quick completion of the order; I confidently recommend this specialist!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">promolab</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Thank you for the timely and high-quality website.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Top_Customer</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Thank you for the work! Everything was done on time, with quality, and with a minimum of revisions. Just as it should be.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Phi_i</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Review: 1. To build a website (13 pages). 2. The task was completed on time and with quality. 3. We are satisfied with the work. We will continue to cooperate with the contractor.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">prosite01</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>This order set a record for completion time. When I set the deadline at 7 days, Aidar finished it in 3 hours. And the speed did not come at the expense of quality!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">prosite01</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>A top-level performer! You can rely on him completely.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">prosite01</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Everything is at the highest level; speed and quality are out of this world!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Jerry_Hollyway</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Excellent specialist. I recommend him. He solved the task clearly and quickly.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Cryps</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Thank you, everything is great!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">prosite01</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Everything is great; Aidar is an excellent specialist. He works quickly, leaves no bugs, and requires minimal revisions.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">borzab</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Huge thanks to Aidar for an impeccably executed order! This is already the second time I’m turning to him for website work, and I will contact him again. A minimal number of revisions, no worries that something will be done incorrectly, maximum comfort. Super!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">verstalsh1k</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Aidar is a responsive and communicative contractor. He completed the order excellently, adhering to all the provided specifications. It’s a pleasure to work with a specialist who knows his job. I will reach out again. I recommend him for collaboration!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">borzab</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>It was necessary to do the website from Figma. Aidar exceeded all expectations; I haven’t seen such quality of website and neat code organization in a long time. All the specifications were taken into account. Great communication, everything was clear and to the point. I highly recommend him for collaboration!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Ainur733</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Very grateful! He completed a complex task quickly and with quality! He works with expertise in his field! I recommend him! Success to you in the future!</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="slider-reviews__slide slider__slide splide__slide">
+              <!-- prettier-ignore -->
+              <div class="review">
+                <svg class="review__icon icon" aria-hidden="true">
+                  <use href="/images/icons/sprite.svg#quote" />
+                </svg>
+                <div class="review__header">
+                  <div class="review__avatar-wrap">
+                    <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+                  </div>
+                  <p class="review__title">Rinat_Prezedent</p>
+                </div>
+                <div class="review__content" data-expandable>
+                  <div class="review__text-wrap no-mb-last" data-expandable-content>
+                    <p>Thank you. A very strong specialist, he promptly answered all questions. No questions remain. He quickly assembled our large website. Everything is clean and neat.</p>
+                  </div>
+                  <button class="review__read-more text-sm" type="button" data-expandable-show>
+                    Show more
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <button class="review__read-less text-sm" type="button" data-expandable-hide>
+                    Show less
+                    <svg role="img" aria-hidden="true">
+                      <use href="/images/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <ul class="slider-reviews__pagination slider__pagination splide__pagination"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-steps section-padding" id="workflow">
+    <div class="container">
+      <div class="steps">
+        <div class="steps__header">
+          <h2 class="steps__title h2 underline">Workflow</h2>
+          <div class="steps__text-wrap no-mb-last">
+            <p>Every stage is meticulously planned — from strategy through launch. You’ll always know exactly what phase the project is in.</p>
+          </div>
+        </div>
+        <div class="steps__row row">
+          <div class="steps__col col-lg-4 col-sm-6">
+            <div class="steps__card card-steps">
+              <h3 class="card-steps__title h4">Analysis & Briefing</h3>
+              <div class="card-steps__text-wrap no-mb-last">
+                <p>
+                  I gather all the essentials: business goals, key functionalities, audience profile, and market specifics. Then I craft a precise
+                  specification and roadmap.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="steps__col col-lg-4 col-sm-6">
+            <div class="steps__card card-steps">
+              <h3 class="card-steps__title h4">Architecture & Prototyping</h3>
+              <div class="card-steps__text-wrap no-mb-last">
+                <p>
+                  I design the site’s structure and main user flows, creating a clickable prototype so you can immediately see navigation logic
+                  and content placement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="steps__col col-lg-4 col-sm-6">
+            <div class="steps__card card-steps">
+              <h3 class="card-steps__title h4">Visual Design</h3>
+              <div class="card-steps__text-wrap no-mb-last">
+                <p>
+                  I develop a clean, memorable design—selecting fonts and accent colors, and establishing visual hierarchy. All revisions are made
+                  until you’re completely satisfied.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="steps__col col-lg-4 col-sm-6">
+            <div class="steps__card card-steps">
+              <h3 class="card-steps__title h4">Development & CMS Integration</h3>
+              <div class="card-steps__text-wrap no-mb-last">
+                <p>
+                  I write clean code using WordPress with Bricks Builder, configure the admin area for seamless content management, and integrate
+                  contact forms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="steps__col col-lg-4 col-sm-6">
+            <div class="steps__card card-steps">
+              <h3 class="card-steps__title h4">Testing & Optimization</h3>
+              <div class="card-steps__text-wrap no-mb-last">
+                <p>
+                  I verify functionality and appearance across all devices and major browsers, optimize page load speeds, fix bugs, and set up
+                  basic SEO parameters.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="steps__col col-lg-4 col-sm-6">
+            <div class="steps__card card-steps">
+              <h3 class="card-steps__title h4">Deployment & Support</h3>
+              <div class="card-steps__text-wrap no-mb-last">
+                <p>
+                  I launch your site on your hosting, configure SSL and automated backups, and provide rapid technical support while monitoring
+                  stability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prettier-ignore -->
+  <footer class="footer" style="background-image: url(/images/hero-bg.svg)" id="contact">
+    <div class="footer__container container">
+      <div class="footer__card">
+        <h2 class="footer__title h1">Let’s work together</h2>
+        <div class="footer__text-wrap text-md no-mb-last">
+          <p>
+            Ready to elevate your online presence? Let's build a website that drives results and accelerates your business. Connect with me to get
+            started.
+          </p>
+        </div>
+        <a href="mailto:helloaidardev@gmail.com" class="footer__email">helloaidardev@gmail.com</a>
+        <ul class="footer__socials list-unstyled">
+          <li>
+            <a href="https://www.facebook.com/aidarDev/" class="footer__social" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/icons/sprite.svg#facebook" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aidardev/" class="footer__social" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/icons/sprite.svg#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/aidarhasenov" class="footer__social" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/icons/sprite.svg#telegram" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <img src="/images/ray-footer.svg" alt="ray" class="footer__ray" loading="lazy" />
+      </div>
+      <nav class="footer__menu menu-footer">
+        <ul class="menu-footer__list list-unstyled">
+          <li><a href="/projects/">Portfolio</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copyright text-sm">© 2025 Aidar Hasenov. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+
+</body>
+
 </html>

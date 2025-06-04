@@ -1,0 +1,1842 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description" content="description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#151416">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600&family=Geologica:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <button class="header__hamburger" type="button">
+        <svg role="img">
+          <use href="images/content/icons/sprite.svg#hamburger" />
+        </svg>
+      </button>
+      <a href="index.html" class="header__logo">
+        <img src="images/content/logo.svg" alt="alt" class="img-responsive">
+      </a>
+      <nav class="header__navbar">
+        <button class="header__close close" type="button">
+          <svg role="img" class="close__icon">
+            <use href="images/content/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <a href="#" class="header__btn btn btn--gradient btn--icon-left">
+          <span>
+            <svg role="img" class="btn__icon">
+              <use href="images/content/icons/sprite.svg#microphone" />
+            </svg>
+            Каталог
+          </span>
+        </a>
+        <ul class="header__menu menu list-unstyled">
+          <li>
+            <a href="#">Жанры</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все жанры
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Страны</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все страны
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Города</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все города
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Языки</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все языки
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="header__actions-wrap">
+          <div class="header__actions">
+            <div class="header__action">
+              <a href="map.html" class="header__link-icon link-icon">
+                <svg role="img" class="link-icon__icon">
+                  <use href="images/content/icons/sprite.svg#location" />
+                </svg>
+                Радио на карте
+              </a>
+            </div>
+            <div class="header__action">
+              <a href="#" class="header__link-icon link-icon">
+                <svg role="img" class="link-icon__icon">
+                  <use href="images/content/icons/sprite.svg#magic-wand" />
+                </svg>
+                Случайное радио
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__user-actions-wrap">
+        <div class="header__user-actions">
+          <div class="header__language language-dropdown" data-dropdown>
+            <div class="language-dropdown__selected" data-dropdown-btn>Ру</div>
+            <div class="language-dropdown__menu" data-dropdown-menu>
+              <button class="language-dropdown__close close" type="button" data-dropdown-btn>
+                <svg role="img" class="close__icon">
+                  <use href="images/content/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <ul class="language-dropdown__list list-unstyled">
+                <li>
+                  <a href="#" class="language-dropdown__item language-dropdown__item--selected">
+                    <img src="images/content/ru.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    Русский
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="language-dropdown__item">
+                    <img src="images/content/en.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="language-dropdown__item">
+                    <img src="images/content/de.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    Deutsch
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__search search-header" data-dropdown>
+            <button class="search-header__btn search-btn" type="button" data-dropdown-btn>
+              <svg role="img" class="search-btn__icon">
+                <use href="images/content/icons/sprite.svg#search" />
+              </svg>
+            </button>
+            <form class="search-header__form" data-dropdown-menu>
+              <button class="search-header__close close" type="button" data-dropdown-btn>
+                <svg role="img" class="close__icon">
+                  <use href="images/content/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <div class="search-header__control-wrap">
+                <input type="text" class="search-header__control">
+                <button class="search-header__clear" type="button">
+                  <svg role="img">
+                    <use href="images/content/icons/sprite.svg#backspace" />
+                  </svg>
+                </button>
+              </div>
+              <button class="search-header__search-btn btn btn--accent" type="submit">Найти</button>
+            </form>
+          </div>
+          <a href="#" class="header__favorite-btn favorite-btn">
+            <div class="favorite-btn__inner">
+              <svg role="img" class="favorite-btn__icon">
+                <use href="images/content/icons/sprite.svg#heart" />
+              </svg>
+              <span class="favorite-btn__count count count--accent">10</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ol class="breadcrumbs__list list-unstyled">
+          <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#">Радио</a></li>
+          <li class="breadcrumbs__item is-active">Европа Плюс</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="images/content/waves.png" alt="alt" class="hero__bg" />
+      <div class="hero__container container">
+        <div class="hero__row">
+          <h1 class="hero__title">Европа Плюс</h1>
+          <div class="hero__text-wrap">
+            <p>Европа Плюс (прямой эфир) — слушайте онлайн бесплатно в хорошем качестве без регистрации.</p>
+          </div>
+          <div class="hero__actions-wrap">
+            <div class="hero__actions">
+              <div class="hero__action">
+                <a href="#" class="hero__favorite-btn favorite-btn">
+                  <div class="favorite-btn__inner">
+                    <svg role="img" class="favorite-btn__icon">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="hero__action">
+                <div class="hero__share share" data-dropdown>
+                  <button class="share__btn" type="button" data-dropdown-btn>
+                    <svg role="img" class="share__icon">
+                      <use href="images/content/icons/sprite.svg#share" />
+                    </svg>
+                  </button>
+                  <div class="share__dropdown dropdown" data-dropdown-menu>
+                    <div class="share__title">Share</div>
+                    <div class="share__items">
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/tg.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/wa.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/vk-alt.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/ok.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/facebook.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/x.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/instagram.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                      <a href="#" class="share__item item-share">
+                        <img src="images/content/icons/pinterest.svg" alt="alt" class="item-share__icon img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="station">
+      <div class="station__navbar navbar">
+        <div class="container">
+          <div class="navbar__inner">
+            <ul class="navbar__list list-unstyled">
+              <li class="is-active"><a href="#">Плейлист дня</a></li>
+              <li><a href="#">Топ песен</a></li>
+              <li><a href="#">Рекомендации</a></li>
+              <li><a href="#">Города вещания</a></li>
+              <li><a href="#">Каналы радиостанции</a></li>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Обсудить эфир</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="station__sections">
+          <div class="station__section">
+            <div class="station__player big-player is-playing">
+              <div class="big-player__body">
+                <div class="big-player__logo-item logo-item">
+                  <img src="images/content/europa.svg" alt="alt" class="logo-item__img img-responsive" />
+                </div>
+                <div class="big-player__main">
+                  <div class="big-player__message">
+                    <div class="big-player__unknown h3">Неизвестный исполнитель/песня</div>
+                    <div class="big-player__hint">
+                      Чтобы отобразились название исполнителя и песни, нужно запустить проигрыватель
+                      радиостанции.
+                    </div>
+                  </div>
+                  <div class="big-player__meta">
+                    <div class="big-player__title">Nothing Else Matters</div>
+                    <div class="big-player__subtitle">Metallica</div>
+                  </div>
+                  <div class="big-player__controls">
+                    <button class="big-player__play player-play" type="button">
+                      <svg role="img" class="player-play__icon">
+                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                      </svg>
+                    </button>
+                    <div class="big-player__volume volume">
+                      <button class="volume__mute" type="button">
+                        <svg role="img">
+                          <use href="images/content/icons/sprite.svg#speaker" />
+                        </svg>
+                      </button>
+                      <input type="range" class="volume__slider hidden" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="big-player__details-wrap">
+                <table class="big-player__details table-details">
+                  <colgroup>
+                    <col class="table-details__col table-details__col--title" />
+                    <col class="table-details__col table-details__col--content" />
+                  </colgroup>
+                  <tr>
+                    <th>Страна</th>
+                    <td><a href="#" class="link">Россия</a></td>
+                  </tr>
+                  <tr>
+                    <th>Города</th>
+                    <td><a href="#" class="link">255 городов</a> вещания</td>
+                  </tr>
+                  <tr>
+                    <th>Язык</th>
+                    <td><a href="#" class="link">Русский</a></td>
+                  </tr>
+                  <tr>
+                    <th>Жанры</th>
+                    <td>
+                      <div class="tags-table">
+                        <ul class="tags-table__list list-unstyled">
+                          <li><a href="#" class="link">Рок</a></li>
+                          <li><a href="#" class="link">поп</a></li>
+                          <li><a href="#" class="link">разговорное</a></li>
+                        </ul>
+                        <div class="tags-table__dropdown-wrap" data-dropdown>
+                          <button class="tags-table__more" type="button" data-dropdown-btn>
+                            <svg role="img">
+                              <use href="images/content/icons/sprite.svg#menu" />
+                            </svg>
+                          </button>
+                          <div class="tags-table__dropdown dropdown" data-dropdown-menu>
+                            <div class="tags-table__dropdown-inner dropdown__inner js-scrollbar">
+                              <ul class="tags-table__dropdown-list list-unstyled">
+                                <li><a href="#">#рок</a></li>
+                                <li><a href="#">#разговорное</a></li>
+                                <li><a href="#">#юмор</a></li>
+                                <li><a href="#">#эстрада</a></li>
+                                <li><a href="#">#поп</a></li>
+                                <li><a href="#">#клубнаямузыка</a></li>
+                                <li><a href="#">#шансон</a></li>
+                                <li><a href="#">#бард</a></li>
+                                <li><a href="#">#транс</a></li>
+                                <li><a href="#">#хипхоп</a></li>
+                                <li><a href="#">#диско</a></li>
+                                <li><a href="#">#диско</a></li>
+                                <li><a href="#">#диско</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Битрейт</th>
+                    <td>128 Кб/с, стерео</td>
+                  </tr>
+                  <tr>
+                    <th>Частота</th>
+                    <td>102.5 FM (зависит от <a href="#" class="link">города</a>)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="station__section">
+            <div class="station__row row gx-4">
+              <div class="station__col col-12">
+                <div class="slider-mini-players slider-mini-players--always-active slider splide block">
+                  <div class="slider-mini-players__header">
+                    <div class="slider-mini-players__header-inner">
+                      <div class="slider-mini-players__title">Слушайте также</div>
+                      <div class="slider-mini-players__arrows slider-mini-players__arrows slider__arrows splide__arrows">
+                        <button class="slider-mini-players__arrow slider-mini-players__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev">
+                          <svg role="img">
+                            <use href="images/content/icons/sprite.svg#chevron-left" />
+                          </svg>
+                        </button>
+                        <button class="slider-mini-players__arrow slider-mini-players__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next">
+                          <svg role="img">
+                            <use href="images/content/icons/sprite.svg#chevron-right" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-mini-players__body">
+                    <div class="slider-mini-players__track slider__track splide__track">
+                      <div class="slider-mini-players__list slider__list splide__list">
+                        <div class="slider-mini-players__slide slider__slide splide__slide">
+                          <div class="mini-player">
+                            <div class="mini-player__body">
+                              <div class="mini-player__logo-wrap">
+                                <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                              </div>
+                              <div class="mini-player__main">
+                                <div class="mini-player__top-line">
+                                  <button class="mini-player__play player-play" type="button">
+                                    <svg role="img" class="player-play__icon">
+                                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                    </svg>
+                                  </button>
+                                  <div class="mini-player__title">
+                                    <a href="#">Радио Звезда</a>
+                                  </div>
+                                </div>
+                                <div class="mini-player__volume volume">
+                                  <button class="volume__mute" type="button">
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#speaker" />
+                                    </svg>
+                                  </button>
+                                  <input type="range" class="volume__slider hidden" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mini-player__tags tags-card has-dropdown">
+                              <ul class="tags-card__list list-unstyled">
+                                <li><a href="#">#RussianRock</a></li>
+                                <li><a href="#">#Grunge</a></li>
+                                <li><a href="#">#Punk</a></li>
+                                <li><a href="#">#BritPop</a></li>
+                              </ul>
+                              <div class="tags-card__dropdown-wrap" data-popper data-popper-outside>
+                                <button class="tags-card__more" type="button" data-popper-btn>
+                                  <svg role="img">
+                                    <use href="images/content/icons/sprite.svg#menu" />
+                                  </svg>
+                                </button>
+                                <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                  <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                    <ul class="tags-card__dropdown-list list-unstyled">
+                                      <li><a href="#">#рок</a></li>
+                                      <li><a href="#">#разговорное</a></li>
+                                      <li><a href="#">#юмор</a></li>
+                                      <li><a href="#">#эстрада</a></li>
+                                      <li><a href="#">#поп</a></li>
+                                      <li><a href="#">#клубнаямузыка</a></li>
+                                      <li><a href="#">#шансон</a></li>
+                                      <li><a href="#">#бард</a></li>
+                                      <li><a href="#">#транс</a></li>
+                                      <li><a href="#">#хипхоп</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-mini-players__slide slider__slide splide__slide">
+                          <div class="mini-player">
+                            <div class="mini-player__body">
+                              <div class="mini-player__logo-wrap">
+                                <img src="images/content/record.svg" alt="alt" class="mini-player__logo img-responsive" />
+                              </div>
+                              <div class="mini-player__main">
+                                <div class="mini-player__top-line">
+                                  <button class="mini-player__play player-play" type="button">
+                                    <svg role="img" class="player-play__icon">
+                                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                    </svg>
+                                  </button>
+                                  <div class="mini-player__title">
+                                    <a href="#">Радио Рекорд</a>
+                                  </div>
+                                </div>
+                                <div class="mini-player__volume volume">
+                                  <button class="volume__mute" type="button">
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#speaker" />
+                                    </svg>
+                                  </button>
+                                  <input type="range" class="volume__slider hidden" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mini-player__tags tags-card has-dropdown">
+                              <ul class="tags-card__list list-unstyled">
+                                <li><a href="#">#clubhouse</a></li>
+                                <li><a href="#">#dance</a></li>
+                                <li><a href="#">#dj</a></li>
+                                <li><a href="#">#trance</a></li>
+                              </ul>
+                              <div class="tags-card__dropdown-wrap" data-popper data-popper-outside>
+                                <button class="tags-card__more" type="button" data-popper-btn>
+                                  <svg role="img">
+                                    <use href="images/content/icons/sprite.svg#menu" />
+                                  </svg>
+                                </button>
+                                <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                  <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                    <ul class="tags-card__dropdown-list list-unstyled">
+                                      <li><a href="#">#рок</a></li>
+                                      <li><a href="#">#разговорное</a></li>
+                                      <li><a href="#">#юмор</a></li>
+                                      <li><a href="#">#эстрада</a></li>
+                                      <li><a href="#">#поп</a></li>
+                                      <li><a href="#">#клубнаямузыка</a></li>
+                                      <li><a href="#">#шансон</a></li>
+                                      <li><a href="#">#бард</a></li>
+                                      <li><a href="#">#транс</a></li>
+                                      <li><a href="#">#хипхоп</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-mini-players__slide slider__slide splide__slide">
+                          <div class="mini-player">
+                            <div class="mini-player__body">
+                              <div class="mini-player__logo-wrap">
+                                <img src="images/content/auto.svg" alt="alt" class="mini-player__logo img-responsive" />
+                              </div>
+                              <div class="mini-player__main">
+                                <div class="mini-player__top-line">
+                                  <button class="mini-player__play player-play" type="button">
+                                    <svg role="img" class="player-play__icon">
+                                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                    </svg>
+                                  </button>
+                                  <div class="mini-player__title">
+                                    <a href="#">Авторадио</a>
+                                  </div>
+                                </div>
+                                <div class="mini-player__volume volume">
+                                  <button class="volume__mute" type="button">
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#speaker" />
+                                    </svg>
+                                  </button>
+                                  <input type="range" class="volume__slider hidden" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mini-player__tags tags-card has-dropdown">
+                              <ul class="tags-card__list list-unstyled">
+                                <li><a href="#">#popmusic</a></li>
+                                <li><a href="#">#country</a></li>
+                                <li><a href="#">#dance</a></li>
+                                <li><a href="#">#хипхоп</a></li>
+                              </ul>
+                              <div class="tags-card__dropdown-wrap" data-popper data-popper-outside>
+                                <button class="tags-card__more" type="button" data-popper-btn>
+                                  <svg role="img">
+                                    <use href="images/content/icons/sprite.svg#menu" />
+                                  </svg>
+                                </button>
+                                <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                  <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                    <ul class="tags-card__dropdown-list list-unstyled">
+                                      <li><a href="#">#рок</a></li>
+                                      <li><a href="#">#разговорное</a></li>
+                                      <li><a href="#">#юмор</a></li>
+                                      <li><a href="#">#эстрада</a></li>
+                                      <li><a href="#">#поп</a></li>
+                                      <li><a href="#">#клубнаямузыка</a></li>
+                                      <li><a href="#">#шансон</a></li>
+                                      <li><a href="#">#бард</a></li>
+                                      <li><a href="#">#транс</a></li>
+                                      <li><a href="#">#хипхоп</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-mini-players__slide slider__slide splide__slide">
+                          <div class="mini-player">
+                            <div class="mini-player__body">
+                              <div class="mini-player__logo-wrap">
+                                <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                              </div>
+                              <div class="mini-player__main">
+                                <div class="mini-player__top-line">
+                                  <button class="mini-player__play player-play" type="button">
+                                    <svg role="img" class="player-play__icon">
+                                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                    </svg>
+                                  </button>
+                                  <div class="mini-player__title">
+                                    <a href="#">Радио Звезда</a>
+                                  </div>
+                                </div>
+                                <div class="mini-player__volume volume">
+                                  <button class="volume__mute" type="button">
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#speaker" />
+                                    </svg>
+                                  </button>
+                                  <input type="range" class="volume__slider hidden" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mini-player__tags tags-card has-dropdown">
+                              <ul class="tags-card__list list-unstyled">
+                                <li><a href="#">#RussianRock</a></li>
+                                <li><a href="#">#Grunge</a></li>
+                                <li><a href="#">#Punk</a></li>
+                                <li><a href="#">#BritPop</a></li>
+                              </ul>
+                              <div class="tags-card__dropdown-wrap" data-popper data-popper-outside>
+                                <button class="tags-card__more" type="button" data-popper-btn>
+                                  <svg role="img">
+                                    <use href="images/content/icons/sprite.svg#menu" />
+                                  </svg>
+                                </button>
+                                <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                  <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                    <ul class="tags-card__dropdown-list list-unstyled">
+                                      <li><a href="#">#рок</a></li>
+                                      <li><a href="#">#разговорное</a></li>
+                                      <li><a href="#">#юмор</a></li>
+                                      <li><a href="#">#эстрада</a></li>
+                                      <li><a href="#">#поп</a></li>
+                                      <li><a href="#">#клубнаямузыка</a></li>
+                                      <li><a href="#">#шансон</a></li>
+                                      <li><a href="#">#бард</a></li>
+                                      <li><a href="#">#транс</a></li>
+                                      <li><a href="#">#хипхоп</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                      <li><a href="#">#диско</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="slider-mini-players__btn btn btn--ghost">все радиостанции</a>
+                  </div>
+                </div>
+              </div>
+              <div class="station__col col-xl-4">
+                <div class="block-collection block">
+                  <div class="block-collection__header block__header">
+                    <div class="block__header-inner">
+                      <h2 class="block__title">Плейлист дня</h2>
+                    </div>
+                  </div>
+                  <div class="block-collection__body block__body">
+                    <div class="songs-table">
+                      <div class="songs-table__header">
+                        <div class="songs-table__header-row">
+                          <div class="songs-table__title songs-table__title--time">Время</div>
+                          <div class="songs-table__title songs-table__title--info">
+                            Исполнитель, песня, передача
+                          </div>
+                        </div>
+                      </div>
+                      <div class="songs-table__items">
+                        <div class="songs-table__item is-playing">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--time">
+                              <div class="songs-table__number">10:00</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">
+                                  Nothing Else Matters
+                                </div>
+                                <div class="songs-table__song-subtitle">Metallica</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--time">
+                              <div class="songs-table__number">10:15</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">Сильная</div>
+                                <div class="songs-table__song-subtitle">
+                                  Юлиана Караулова
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--time">
+                              <div class="songs-table__number">12:30</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">Всё будет хорошо</div>
+                                <div class="songs-table__song-subtitle">Митя Фомин</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--time">
+                              <div class="songs-table__number">14:45</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">Новости</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--time">
+                              <div class="songs-table__number">15:00</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">
+                                  Dancing With A Stranger
+                                </div>
+                                <div class="songs-table__song-subtitle">Sam Smith</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="block-collection__btn btn btn--ghost">весь плейлист</a>
+                  </div>
+                </div>
+              </div>
+              <div class="station__col col-xl-4">
+                <div class="block-collection block">
+                  <div class="block-collection__header block__header">
+                    <div class="block__header-inner">
+                      <h2 class="block__title">Топ песен</h2>
+                    </div>
+                  </div>
+                  <div class="block-collection__body block__body">
+                    <div class="songs-table">
+                      <div class="songs-table__header">
+                        <div class="songs-table__header-row">
+                          <div class="songs-table__title songs-table__title--amount">
+                            Кол-во
+                            <div class="songs-table__tooltip tooltip">
+                              <button class="tooltip__btn" type="button">
+                                <svg role="img" class="tooltip__icon">
+                                  <use href="images/content/icons/sprite.svg#info" />
+                                </svg>
+                              </button>
+                              <div class="tooltip__content">
+                                Далеко-далеко за словесными горами в стране гласных и
+                                согласных.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="songs-table__title songs-table__title--info">
+                            Исполнитель и трек
+                          </div>
+                        </div>
+                      </div>
+                      <div class="songs-table__items">
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--amount">
+                              <div class="songs-table__number">1557</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">
+                                  Doja Cat & DJ Dark
+                                </div>
+                                <div class="songs-table__song-subtitle">
+                                  Paint The Town Red
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--amount">
+                              <div class="songs-table__number">1205</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">A Beautiful Lie</div>
+                                <div class="songs-table__song-subtitle">
+                                  Thirty Seconds to Mars
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--amount">
+                              <div class="songs-table__number">1008</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">Всё будет хорошо</div>
+                                <div class="songs-table__song-subtitle">Митя Фомин</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--amount">
+                              <div class="songs-table__number">990</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">Don't Think Twice</div>
+                                <div class="songs-table__song-subtitle">Rita Ora</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="songs-table__item">
+                          <div class="songs-table__item-row">
+                            <div class="songs-table__col songs-table__col--amount">
+                              <div class="songs-table__number">750</div>
+                              <div class="songs-table__playing">сейчас</div>
+                            </div>
+                            <div class="songs-table__col songs-table__col--info">
+                              <div class="songs-table__song">
+                                <div class="songs-table__song-title">Сильная</div>
+                                <div class="songs-table__song-subtitle">
+                                  Юлиана Караулова
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="block-collection__btn btn btn--ghost">весь топ песен</a>
+                  </div>
+                </div>
+              </div>
+              <div class="station__col col-xl-4">
+                <div class="slider-mini-players slider splide block">
+                  <div class="slider-mini-players__header">
+                    <div class="slider-mini-players__header-inner">
+                      <div class="slider-mini-players__title">Слушайте также</div>
+                      <div class="slider-mini-players__arrows slider-mini-players__arrows slider__arrows splide__arrows">
+                        <button class="slider-mini-players__arrow slider-mini-players__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev">
+                          <svg role="img">
+                            <use href="images/content/icons/sprite.svg#chevron-left" />
+                          </svg>
+                        </button>
+                        <button class="slider-mini-players__arrow slider-mini-players__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next">
+                          <svg role="img">
+                            <use href="images/content/icons/sprite.svg#chevron-right" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-mini-players__body">
+                    <div class="slider-mini-players__scroll">
+                      <div class="slider-mini-players__track slider__track splide__track">
+                        <div class="slider-mini-players__list slider__list splide__list">
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Радио Звезда</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#RussianRock</a></li>
+                                  <li><a href="#">#Grunge</a></li>
+                                  <li><a href="#">#Punk</a></li>
+                                  <li><a href="#">#BritPop</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/record.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Радио Рекорд</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#clubhouse</a></li>
+                                  <li><a href="#">#dance</a></li>
+                                  <li><a href="#">#dj</a></li>
+                                  <li><a href="#">#trance</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/auto.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Авторадио</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#popmusic</a></li>
+                                  <li><a href="#">#country</a></li>
+                                  <li><a href="#">#dance</a></li>
+                                  <li><a href="#">#хипхоп</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Радио Звезда</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#RussianRock</a></li>
+                                  <li><a href="#">#Grunge</a></li>
+                                  <li><a href="#">#Punk</a></li>
+                                  <li><a href="#">#BritPop</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Радио Звезда</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#RussianRock</a></li>
+                                  <li><a href="#">#Grunge</a></li>
+                                  <li><a href="#">#Punk</a></li>
+                                  <li><a href="#">#BritPop</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Радио Звезда</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#RussianRock</a></li>
+                                  <li><a href="#">#Grunge</a></li>
+                                  <li><a href="#">#Punk</a></li>
+                                  <li><a href="#">#BritPop</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-mini-players__slide slider__slide splide__slide">
+                            <div class="mini-player">
+                              <div class="mini-player__body">
+                                <div class="mini-player__logo-wrap">
+                                  <img src="images/content/zvezda.svg" alt="alt" class="mini-player__logo img-responsive" />
+                                </div>
+                                <div class="mini-player__main">
+                                  <div class="mini-player__top-line">
+                                    <button class="mini-player__play player-play" type="button">
+                                      <svg role="img" class="player-play__icon">
+                                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                                      </svg>
+                                    </button>
+                                    <div class="mini-player__title">
+                                      <a href="#">Радио Звезда</a>
+                                    </div>
+                                  </div>
+                                  <div class="mini-player__volume volume">
+                                    <button class="volume__mute" type="button">
+                                      <svg role="img">
+                                        <use href="images/content/icons/sprite.svg#speaker" />
+                                      </svg>
+                                    </button>
+                                    <input type="range" class="volume__slider hidden" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-player__tags tags-card has-dropdown">
+                                <ul class="tags-card__list list-unstyled">
+                                  <li><a href="#">#RussianRock</a></li>
+                                  <li><a href="#">#Grunge</a></li>
+                                  <li><a href="#">#Punk</a></li>
+                                  <li><a href="#">#BritPop</a></li>
+                                </ul>
+                                <div class="tags-card__dropdown-wrap" data-popper>
+                                  <button class="tags-card__more" type="button" data-popper-btn>
+                                    <svg role="img">
+                                      <use href="images/content/icons/sprite.svg#menu" />
+                                    </svg>
+                                  </button>
+                                  <div class="tags-card__dropdown dropdown" data-popper-menu>
+                                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                                      <ul class="tags-card__dropdown-list list-unstyled">
+                                        <li><a href="#">#рок</a></li>
+                                        <li><a href="#">#разговорное</a></li>
+                                        <li><a href="#">#юмор</a></li>
+                                        <li><a href="#">#эстрада</a></li>
+                                        <li><a href="#">#поп</a></li>
+                                        <li><a href="#">#клубнаямузыка</a></li>
+                                        <li><a href="#">#шансон</a></li>
+                                        <li><a href="#">#бард</a></li>
+                                        <li><a href="#">#транс</a></li>
+                                        <li><a href="#">#хипхоп</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                        <li><a href="#">#диско</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="slider-mini-players__btn btn btn--ghost">все радиостанции</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="station__section">
+            <div class="slider-channels slider splide block">
+              <div class="slider-channels__header">
+                <div class="slider-channels__header-inner">
+                  <div class="slider-channels__title">Другие каналы</div>
+                  <div class="slider-channels__arrows slider-channels__arrows slider__arrows splide__arrows">
+                    <button class="slider-channels__arrow slider-channels__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev">
+                      <svg role="img">
+                        <use href="images/content/icons/sprite.svg#chevron-left" />
+                      </svg>
+                    </button>
+                    <button class="slider-channels__arrow slider-channels__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next">
+                      <svg role="img">
+                        <use href="images/content/icons/sprite.svg#chevron-right" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-channels__body">
+                <div class="slider-channels__track slider__track splide__track">
+                  <div class="slider-channels__list slider__list splide__list">
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                    <div class="slider-channels__slide slider__slide splide__slide">
+                      <div class="item-channel">
+                        <a href="#" class="item-channel__logo-item logo-item">
+                          <img src="images/content/light.png" alt="alt" class="logo-item__img img-responsive" />
+                        </a>
+                        <div class="item-channel__title"><a href="#">Light</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="station__section">
+            <div class="block-broadcast block">
+              <div class="block-broadcast__header block__header">
+                <div class="block__header-inner">
+                  <h2 class="block__title">Частота вещания в городах</h2>
+                </div>
+              </div>
+              <div class="block-broadcast__body block__body">
+                <div class="broadcast">
+                  <div class="broadcast__row">
+                    <div class="broadcast__col broadcast__col--table">
+                      <table class="broadcast__table table-broadcast">
+                        <tr>
+                          <th><a href="#" class="link">Москва</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr>
+                          <th><a href="#" class="link">Санкт-Петербург</a></th>
+                          <td>103 FM</td>
+                        </tr>
+                        <tr>
+                          <th><a href="#" class="link">Киров</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Москва</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Санкт-Петербург</a></th>
+                          <td>103 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Киров</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Москва</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Санкт-Петербург</a></th>
+                          <td>103 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Киров</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="broadcast__col broadcast__col--table">
+                      <table class="broadcast__table table-broadcast">
+                        <tr>
+                          <th><a href="#" class="link">Москва</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr>
+                          <th><a href="#" class="link">Санкт-Петербург</a></th>
+                          <td>103 FM</td>
+                        </tr>
+                        <tr>
+                          <th><a href="#" class="link">Киров</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Москва</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Санкт-Петербург</a></th>
+                          <td>103 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Киров</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Москва</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Санкт-Петербург</a></th>
+                          <td>103 FM</td>
+                        </tr>
+                        <tr class="table-broadcast__hidden">
+                          <th><a href="#" class="link">Киров</a></th>
+                          <td>102.5 FM</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="broadcast__col broadcast__col--btn">
+                      <button class="broadcast__btn btn btn--ghost" type="button" data-alt="Скрыть часть городов">
+                        Показать все города
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="station__section">
+            <div class="block-info block">
+              <div class="block-info__header block__header">
+                <div class="block__header-inner">
+                  <h2 class="block__title">Информация о радиостанции</h2>
+                </div>
+              </div>
+              <div class="block-info__body block__body">
+                <div class="station-text">
+                  <p>
+                    «Европа Плюс» — первая в СССР и России негосударственная коммерческая радиостанция.
+                    Вещает в формате CHR. Начала вещание 30 апреля 1990 года. Страны вещания: Россия,
+                    Украина, Киргизия, Казахстан, Молдавия, а также Таджикистан. Занимает лидирующую
+                    позицию среди радиосетей России. Крупнейший внеэфирный проект — ежегодный
+                    многочасовой open air «Europa Plus LIVE». 27 июля 2019 года на площади Южного
+                    спортивного ядра «Лужники» посетили 400 000 человек, а общее число зрителей —
+                    примерно 1,5 миллиона. В семичасовом концерте под открытым небом, принимали участие
+                    23 популярные иностранные и российские группы.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="station__section">
+            <div class="block-contacts block">
+              <div class="block-contacts__header block__header">
+                <div class="block__header-inner">
+                  <h2 class="block__title">Контактные данные</h2>
+                </div>
+              </div>
+              <div class="block-contacts__body block__body">
+                <div class="contacts">
+                  <div class="contacts__item">
+                    <div class="contacts__title">Телефон</div>
+                    <div class="contacts__content">
+                      +7 (495) 799-97-97, +7 (495) 627-11-56 (факс), +7 (495) 745-65-65 (телефон
+                      эфира)
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__title">E-mail</div>
+                    <div class="contacts__content">
+                      <a href="#" class="link">legal@europaplus.ru</a>
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__title">Сайт</div>
+                    <div class="contacts__content">
+                      <a href="#" class="link">https://www.europaplus.ru</a>
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__title">Адрес</div>
+                    <div class="contacts__content">
+                      Россия, 109004, Москва, ул. Станиславского, 21, Европа Плюс
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__title">Дата основания</div>
+                    <div class="contacts__content">30 апреля 1990 года</div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__title">Социальные сети</div>
+                    <div class="contacts__content">
+                      <div class="contacts__socials socials">
+                        <a href="#" class="socials__item item-social">
+                          <svg role="img" class="item-social__icon">
+                            <use href="images/content/icons/sprite.svg#ig" />
+                          </svg>
+                        </a>
+                        <a href="#" class="socials__item item-social">
+                          <svg role="img" class="item-social__icon">
+                            <use href="images/content/icons/sprite.svg#ig" />
+                          </svg>
+                        </a>
+                        <a href="#" class="socials__item item-social">
+                          <svg role="img" class="item-social__icon">
+                            <use href="images/content/icons/sprite.svg#ig" />
+                          </svg>
+                        </a>
+                        <a href="#" class="socials__item item-social">
+                          <svg role="img" class="item-social__icon">
+                            <use href="images/content/icons/sprite.svg#ig" />
+                          </svg>
+                        </a>
+                        <a href="#" class="socials__item item-social">
+                          <svg role="img" class="item-social__icon">
+                            <use href="images/content/icons/sprite.svg#ig" />
+                          </svg>
+                        </a>
+                        <a href="#" class="socials__item item-social">
+                          <svg role="img" class="item-social__icon">
+                            <use href="images/content/icons/sprite.svg#ig" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="station__section">
+            <div class="block-reviews block">
+              <div class="block-reviews__header block__header">
+                <div class="block__header-inner">
+                  <h2 class="block__title">Отзывы</h2>
+                </div>
+              </div>
+              <div class="block-reviews__body block__body">
+                <div class="station-text">
+                  <p>Оставьте отзыв о радиостанции или обсудите прямой эфир в комментариях.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  <button class="to-top" type="button">
+    <svg role="img" class="to-top__icon">
+      <use href="images/content/icons/sprite.svg#arrow-circle-up" />
+    </svg>
+  </button>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__body">
+        <div class="footer__logo-wrap">
+          <img src="images/content/logo-compact.svg" alt="alt" class="footer__logo img-responsive">
+          <p class="footer__copyright">
+            © 2023. OnlineRadioHub.ru.
+            <br />
+            All rights reserved.
+          </p>
+        </div>
+        <ul class="footer__links list-unstyled">
+          <li><a href="#">Правообладателям</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+        <a href="#" class="footer__link-icon link-icon">
+          <svg role="img" class="link-icon__icon">
+            <use href="images/content/icons/sprite.svg#chat" />
+          </svg>
+          Обратная связь
+        </a>
+        <a href="#" class="footer__btn btn btn--gradient btn--icon-left">
+          <span>
+            <svg role="img" class="btn__icon">
+              <use href="images/content/icons/sprite.svg#plus-circle" />
+            </svg>
+            Добавить радио
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/runtime.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

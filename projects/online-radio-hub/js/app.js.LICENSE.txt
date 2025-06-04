@@ -1,0 +1,37 @@
+/*!
+ * OverlayScrollbars
+ * Version: 2.4.6
+ *
+ * Copyright (c) Rene Haas | KingSora.
+ * https://github.com/KingSora
+ *
+ * Released under the MIT license.
+ */
+
+/*! ./functions */
+
+/*! ./range-slider.css */
+
+/*! ./utils/dom */
+
+/*! ./utils/functions */
+
+/*! no static exports found */
+
+/*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
+
+/*!**************************!*\
+  !*** ./src/utils/dom.js ***!
+  \**************************/
+
+/*!*****************************!*\
+  !*** ./src/range-slider.js ***!
+  \*****************************/
+
+/*!******************************!*\
+  !*** ./src/range-slider.css ***!
+  \******************************/
+
+/*!********************************!*\
+  !*** ./src/utils/functions.js ***!
+  \********************************/

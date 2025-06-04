@@ -1,0 +1,1361 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description" content="description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#151416">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600&family=Geologica:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <button class="header__hamburger" type="button">
+        <svg role="img">
+          <use href="images/content/icons/sprite.svg#hamburger" />
+        </svg>
+      </button>
+      <a href="index.html" class="header__logo">
+        <img src="images/content/logo.svg" alt="alt" class="img-responsive">
+      </a>
+      <nav class="header__navbar">
+        <button class="header__close close" type="button">
+          <svg role="img" class="close__icon">
+            <use href="images/content/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <a href="#" class="header__btn btn btn--gradient btn--icon-left">
+          <span>
+            <svg role="img" class="btn__icon">
+              <use href="images/content/icons/sprite.svg#microphone" />
+            </svg>
+            Каталог
+          </span>
+        </a>
+        <ul class="header__menu menu list-unstyled">
+          <li>
+            <a href="#">Жанры</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все жанры
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Страны</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все страны
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Города</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все города
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Языки</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все языки
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="header__actions-wrap">
+          <div class="header__actions">
+            <div class="header__action">
+              <a href="map.html" class="header__link-icon link-icon">
+                <svg role="img" class="link-icon__icon">
+                  <use href="images/content/icons/sprite.svg#location" />
+                </svg>
+                Радио на карте
+              </a>
+            </div>
+            <div class="header__action">
+              <a href="#" class="header__link-icon link-icon">
+                <svg role="img" class="link-icon__icon">
+                  <use href="images/content/icons/sprite.svg#magic-wand" />
+                </svg>
+                Случайное радио
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__user-actions-wrap">
+        <div class="header__user-actions">
+          <div class="header__language language-dropdown" data-dropdown>
+            <div class="language-dropdown__selected" data-dropdown-btn>Ру</div>
+            <div class="language-dropdown__menu" data-dropdown-menu>
+              <button class="language-dropdown__close close" type="button" data-dropdown-btn>
+                <svg role="img" class="close__icon">
+                  <use href="images/content/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <ul class="language-dropdown__list list-unstyled">
+                <li>
+                  <a href="#" class="language-dropdown__item language-dropdown__item--selected">
+                    <img src="images/content/ru.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    Русский
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="language-dropdown__item">
+                    <img src="images/content/en.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="language-dropdown__item">
+                    <img src="images/content/de.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    Deutsch
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__search search-header" data-dropdown>
+            <button class="search-header__btn search-btn" type="button" data-dropdown-btn>
+              <svg role="img" class="search-btn__icon">
+                <use href="images/content/icons/sprite.svg#search" />
+              </svg>
+            </button>
+            <form class="search-header__form" data-dropdown-menu>
+              <button class="search-header__close close" type="button" data-dropdown-btn>
+                <svg role="img" class="close__icon">
+                  <use href="images/content/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <div class="search-header__control-wrap">
+                <input type="text" class="search-header__control">
+                <button class="search-header__clear" type="button">
+                  <svg role="img">
+                    <use href="images/content/icons/sprite.svg#backspace" />
+                  </svg>
+                </button>
+              </div>
+              <button class="search-header__search-btn btn btn--accent" type="submit">Найти</button>
+            </form>
+          </div>
+          <a href="#" class="header__favorite-btn favorite-btn">
+            <div class="favorite-btn__inner">
+              <svg role="img" class="favorite-btn__icon">
+                <use href="images/content/icons/sprite.svg#heart" />
+              </svg>
+              <span class="favorite-btn__count count count--accent">10</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ol class="breadcrumbs__list list-unstyled">
+          <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#">Страны</a></li>
+          <li class="breadcrumbs__item is-active">Россия</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="images/content/waves.png" alt="alt" class="hero__bg" />
+      <div class="hero__container container">
+        <div class="hero__row">
+          <h1 class="hero__title">Радиостанции России</h1>
+          <div class="hero__text-wrap">
+            <p>
+              Слушайте Интернет-радио бесплатно в хорошем качестве без регистрации. Выберите радиостанцию по
+              жанру, стране, городу или языку вещания.
+            </p>
+          </div>
+          <div class="hero__results">Найдено 1 450 радиостанций</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stations">
+      <div class="container">
+        <button class="stations__toggle-btn btn btn--outline-accent btn--icon-left" type="button" data-modal-toggle="modal-filter">
+          <svg role="img" class="btn__icon">
+            <use href="images/content/icons/sprite.svg#sliders" />
+          </svg>
+          Открыть фильтры
+          <span class="count">5</span>
+        </button>
+        <form class="stations__filter filter" data-modal="modal-filter">
+          <div class="filter__header">
+            <h3 class="filter__title">Фильтры</h3>
+            <button class="filter__close close" type="button" data-modal-close>
+              <svg role="img" class="close__icon">
+                <use href="images/content/icons/sprite.svg#close" />
+              </svg>
+            </button>
+          </div>
+          <div class="filter__body">
+            <div class="filter__actions row">
+              <div class="col-12 col-lg-8">
+                <div class="filter__tags tags-filter">
+                  <div class="tags-filter__tag filter-tag">rap ×</div>
+                  <div class="tags-filter__tag filter-tag">club ×</div>
+                  <div class="tags-filter__tag filter-tag">Русский ×</div>
+                  <div class="tags-filter__tag filter-tag">Россия ×</div>
+                  <div class="tags-filter__tag filter-tag">Москва ×</div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="filter__clear-wrap">
+                  <button class="filter__clear clear-filter" type="button">
+                    <svg role="img" class="clear-filter__icon">
+                      <use href="images/content/icons/sprite.svg#backspace"></use>
+                    </svg>
+                    Очистить всё
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="filter__row row gx-4 gy-4">
+              <div class="filter__col col-lg-3 col-sm-6">
+                <div class="select">
+                  <input type="hidden" class="select__input" />
+                  <div class="select__btn">
+                    <div class="select__label">Жанр</div>
+                    <div class="select__values"></div>
+                    <svg role="img" class="select__arrows">
+                      <use href="images/content/icons/sprite.svg#arrows" />
+                    </svg>
+                  </div>
+                  <div class="select__dropdown dropdown">
+                    <div class="dropdown__inner js-scrollbar">
+                      <div class="select__option" data-value="1">Жанр 1</div>
+                      <div class="select__option" data-value="2">Жанр 2</div>
+                      <div class="select__option" data-value="3">Жанр 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__col col-lg-3 col-sm-6">
+                <div class="select">
+                  <input type="hidden" class="select__input" />
+                  <div class="select__btn">
+                    <div class="select__label">Язык</div>
+                    <div class="select__values"></div>
+                    <svg role="img" class="select__arrows">
+                      <use href="images/content/icons/sprite.svg#arrows" />
+                    </svg>
+                  </div>
+                  <div class="select__dropdown dropdown">
+                    <div class="dropdown__inner js-scrollbar">
+                      <div class="select__option" data-value="1">Язык 1</div>
+                      <div class="select__option" data-value="2">Язык 2</div>
+                      <div class="select__option" data-value="3">Язык 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__col col-lg-3 col-sm-6">
+                <div class="select">
+                  <input type="hidden" class="select__input" />
+                  <div class="select__btn">
+                    <div class="select__label">Страна</div>
+                    <div class="select__values"></div>
+                    <svg role="img" class="select__arrows">
+                      <use href="images/content/icons/sprite.svg#arrows" />
+                    </svg>
+                  </div>
+                  <div class="select__dropdown dropdown">
+                    <div class="dropdown__inner js-scrollbar">
+                      <div class="select__option" data-value="1">Россия</div>
+                      <div class="select__option" data-value="2">Беларусь</div>
+                      <div class="select__option" data-value="3">Украина</div>
+                      <div class="select__option" data-value="4">Казахстан</div>
+                      <div class="select__option" data-value="5">Молдова</div>
+                      <div class="select__option" data-value="6">Грузия</div>
+                      <div class="select__option" data-value="7">Армения</div>
+                      <div class="select__option" data-value="8">Англия</div>
+                      <div class="select__option" data-value="9">Германия</div>
+                      <div class="select__option" data-value="10">Франция</div>
+                      <div class="select__option" data-value="11">Испания</div>
+                      <div class="select__option" data-value="11">Испания</div>
+                      <div class="select__option" data-value="11">Испания</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__col col-lg-3 col-sm-6">
+                <div class="select">
+                  <input type="hidden" class="select__input" />
+                  <div class="select__btn">
+                    <div class="select__label">Город</div>
+                    <div class="select__values"></div>
+                    <svg role="img" class="select__arrows">
+                      <use href="images/content/icons/sprite.svg#arrows" />
+                    </svg>
+                  </div>
+                  <div class="select__dropdown dropdown">
+                    <div class="dropdown__inner js-scrollbar">
+                      <div class="select__option" data-value="1">Город 1</div>
+                      <div class="select__option" data-value="2">Город 2</div>
+                      <div class="select__option" data-value="3">Город 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="filter__show-results btn btn--accent" type="button" data-modal-close>
+            показать результаты
+          </button>
+        </form>
+        <div class="stations__row row gx-4">
+          <div class="stations__col col-md-6">
+            <div class="stations__card card-station">
+              <a href="#" class="card-station__logo-item logo-item">
+                <img src="images/content/radio-rus.svg" alt="alt" class="logo-item__img img-responsive" />
+              </a>
+              <div class="card-station__player-wrap">
+                <div class="card-station__top-line">
+                  <button class="card-station__play player-play" type="button">
+                    <svg role="img" class="player-play__icon">
+                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                    </svg>
+                  </button>
+                  <div class="card-station__title"><a href="#">Русское Радио</a></div>
+                  <button class="card-station__favorite-btn" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-station__volume volume">
+                  <button class="volume__mute" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#speaker" />
+                    </svg>
+                  </button>
+                  <input type="range" class="volume__slider hidden" />
+                </div>
+              </div>
+              <div class="card-station__tags tags-card">
+                <ul class="tags-card__list list-unstyled">
+                  <li><a href="#">#рок</a></li>
+                  <li><a href="#">#разговорное</a></li>
+                  <li><a href="#">#юмор</a></li>
+                  <li><a href="#">#эстрада</a></li>
+                </ul>
+                <div class="tags-card__dropdown-wrap" data-dropdown>
+                  <button class="tags-card__more" type="button" data-dropdown-btn>
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#menu" />
+                    </svg>
+                  </button>
+                  <div class="tags-card__dropdown dropdown" data-dropdown-menu>
+                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                      <ul class="tags-card__dropdown-list list-unstyled">
+                        <li><a href="#">#рок</a></li>
+                        <li><a href="#">#разговорное</a></li>
+                        <li><a href="#">#юмор</a></li>
+                        <li><a href="#">#эстрада</a></li>
+                        <li><a href="#">#поп</a></li>
+                        <li><a href="#">#клубнаямузыка</a></li>
+                        <li><a href="#">#шансон</a></li>
+                        <li><a href="#">#бард</a></li>
+                        <li><a href="#">#транс</a></li>
+                        <li><a href="#">#хипхоп</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stations__col col-md-6">
+            <div class="stations__card card-station">
+              <a href="#" class="card-station__logo-item logo-item">
+                <img src="images/content/radio-rus.svg" alt="alt" class="logo-item__img img-responsive" />
+              </a>
+              <div class="card-station__player-wrap">
+                <div class="card-station__top-line">
+                  <button class="card-station__play player-play" type="button">
+                    <svg role="img" class="player-play__icon">
+                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                    </svg>
+                  </button>
+                  <div class="card-station__title"><a href="#">Радио DFM</a></div>
+                  <button class="card-station__favorite-btn" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-station__volume volume">
+                  <button class="volume__mute" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#speaker" />
+                    </svg>
+                  </button>
+                  <input type="range" class="volume__slider hidden" />
+                </div>
+              </div>
+              <div class="card-station__tags tags-card">
+                <ul class="tags-card__list list-unstyled">
+                  <li><a href="#">#рок</a></li>
+                  <li><a href="#">#разговорное</a></li>
+                  <li><a href="#">#юмор</a></li>
+                  <li><a href="#">#эстрада</a></li>
+                </ul>
+                <div class="tags-card__dropdown-wrap" data-dropdown>
+                  <button class="tags-card__more" type="button" data-dropdown-btn>
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#menu" />
+                    </svg>
+                  </button>
+                  <div class="tags-card__dropdown dropdown" data-dropdown-menu>
+                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                      <ul class="tags-card__dropdown-list list-unstyled">
+                        <li><a href="#">#рок</a></li>
+                        <li><a href="#">#разговорное</a></li>
+                        <li><a href="#">#юмор</a></li>
+                        <li><a href="#">#эстрада</a></li>
+                        <li><a href="#">#поп</a></li>
+                        <li><a href="#">#клубнаямузыка</a></li>
+                        <li><a href="#">#шансон</a></li>
+                        <li><a href="#">#бард</a></li>
+                        <li><a href="#">#транс</a></li>
+                        <li><a href="#">#хипхоп</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stations__col col-md-6">
+            <div class="stations__card card-station">
+              <a href="#" class="card-station__logo-item logo-item">
+                <img src="images/content/radio-rus.svg" alt="alt" class="logo-item__img img-responsive" />
+              </a>
+              <div class="card-station__player-wrap">
+                <div class="card-station__top-line">
+                  <button class="card-station__play player-play" type="button">
+                    <svg role="img" class="player-play__icon">
+                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                    </svg>
+                  </button>
+                  <div class="card-station__title"><a href="#">Радио Рекорд</a></div>
+                  <button class="card-station__favorite-btn" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-station__volume volume">
+                  <button class="volume__mute" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#speaker" />
+                    </svg>
+                  </button>
+                  <input type="range" class="volume__slider hidden" />
+                </div>
+              </div>
+              <div class="card-station__tags tags-card">
+                <ul class="tags-card__list list-unstyled">
+                  <li><a href="#">#рок</a></li>
+                  <li><a href="#">#разговорное</a></li>
+                  <li><a href="#">#юмор</a></li>
+                  <li><a href="#">#эстрада</a></li>
+                </ul>
+                <div class="tags-card__dropdown-wrap" data-dropdown>
+                  <button class="tags-card__more" type="button" data-dropdown-btn>
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#menu" />
+                    </svg>
+                  </button>
+                  <div class="tags-card__dropdown dropdown" data-dropdown-menu>
+                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                      <ul class="tags-card__dropdown-list list-unstyled">
+                        <li><a href="#">#рок</a></li>
+                        <li><a href="#">#разговорное</a></li>
+                        <li><a href="#">#юмор</a></li>
+                        <li><a href="#">#эстрада</a></li>
+                        <li><a href="#">#поп</a></li>
+                        <li><a href="#">#клубнаямузыка</a></li>
+                        <li><a href="#">#шансон</a></li>
+                        <li><a href="#">#бард</a></li>
+                        <li><a href="#">#транс</a></li>
+                        <li><a href="#">#хипхоп</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stations__col col-md-6">
+            <div class="stations__card card-station">
+              <a href="#" class="card-station__logo-item logo-item">
+                <img src="images/content/radio-rus.svg" alt="alt" class="logo-item__img img-responsive" />
+              </a>
+              <div class="card-station__player-wrap">
+                <div class="card-station__top-line">
+                  <button class="card-station__play player-play" type="button">
+                    <svg role="img" class="player-play__icon">
+                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                    </svg>
+                  </button>
+                  <div class="card-station__title"><a href="#">Радио Звезда</a></div>
+                  <button class="card-station__favorite-btn" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-station__volume volume">
+                  <button class="volume__mute" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#speaker" />
+                    </svg>
+                  </button>
+                  <input type="range" class="volume__slider hidden" />
+                </div>
+              </div>
+              <div class="card-station__tags tags-card">
+                <ul class="tags-card__list list-unstyled">
+                  <li><a href="#">#рок</a></li>
+                  <li><a href="#">#разговорное</a></li>
+                  <li><a href="#">#юмор</a></li>
+                  <li><a href="#">#эстрада</a></li>
+                </ul>
+                <div class="tags-card__dropdown-wrap" data-dropdown>
+                  <button class="tags-card__more" type="button" data-dropdown-btn>
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#menu" />
+                    </svg>
+                  </button>
+                  <div class="tags-card__dropdown dropdown" data-dropdown-menu>
+                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                      <ul class="tags-card__dropdown-list list-unstyled">
+                        <li><a href="#">#рок</a></li>
+                        <li><a href="#">#разговорное</a></li>
+                        <li><a href="#">#юмор</a></li>
+                        <li><a href="#">#эстрада</a></li>
+                        <li><a href="#">#поп</a></li>
+                        <li><a href="#">#клубнаямузыка</a></li>
+                        <li><a href="#">#шансон</a></li>
+                        <li><a href="#">#бард</a></li>
+                        <li><a href="#">#транс</a></li>
+                        <li><a href="#">#хипхоп</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stations__col col-md-6">
+            <div class="stations__card card-station">
+              <a href="#" class="card-station__logo-item logo-item">
+                <img src="images/content/radio-rus.svg" alt="alt" class="logo-item__img img-responsive" />
+              </a>
+              <div class="card-station__player-wrap">
+                <div class="card-station__top-line">
+                  <button class="card-station__play player-play" type="button">
+                    <svg role="img" class="player-play__icon">
+                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                    </svg>
+                  </button>
+                  <div class="card-station__title"><a href="#">Авторадио</a></div>
+                  <button class="card-station__favorite-btn" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-station__volume volume">
+                  <button class="volume__mute" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#speaker" />
+                    </svg>
+                  </button>
+                  <input type="range" class="volume__slider hidden" />
+                </div>
+              </div>
+              <div class="card-station__tags tags-card">
+                <ul class="tags-card__list list-unstyled">
+                  <li><a href="#">#рок</a></li>
+                  <li><a href="#">#разговорное</a></li>
+                  <li><a href="#">#юмор</a></li>
+                  <li><a href="#">#эстрада</a></li>
+                </ul>
+                <div class="tags-card__dropdown-wrap" data-dropdown>
+                  <button class="tags-card__more" type="button" data-dropdown-btn>
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#menu" />
+                    </svg>
+                  </button>
+                  <div class="tags-card__dropdown dropdown" data-dropdown-menu>
+                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                      <ul class="tags-card__dropdown-list list-unstyled">
+                        <li><a href="#">#рок</a></li>
+                        <li><a href="#">#разговорное</a></li>
+                        <li><a href="#">#юмор</a></li>
+                        <li><a href="#">#эстрада</a></li>
+                        <li><a href="#">#поп</a></li>
+                        <li><a href="#">#клубнаямузыка</a></li>
+                        <li><a href="#">#шансон</a></li>
+                        <li><a href="#">#бард</a></li>
+                        <li><a href="#">#транс</a></li>
+                        <li><a href="#">#хипхоп</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stations__col col-md-6">
+            <div class="stations__card card-station">
+              <a href="#" class="card-station__logo-item logo-item">
+                <img src="images/content/radio-rus.svg" alt="alt" class="logo-item__img img-responsive" />
+              </a>
+              <div class="card-station__player-wrap">
+                <div class="card-station__top-line">
+                  <button class="card-station__play player-play" type="button">
+                    <svg role="img" class="player-play__icon">
+                      <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                    </svg>
+                  </button>
+                  <div class="card-station__title"><a href="#">Новое Радио</a></div>
+                  <button class="card-station__favorite-btn" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-station__volume volume">
+                  <button class="volume__mute" type="button">
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#speaker" />
+                    </svg>
+                  </button>
+                  <input type="range" class="volume__slider hidden" />
+                </div>
+              </div>
+              <div class="card-station__tags tags-card">
+                <ul class="tags-card__list list-unstyled">
+                  <li><a href="#">#рок</a></li>
+                  <li><a href="#">#разговорное</a></li>
+                  <li><a href="#">#юмор</a></li>
+                  <li><a href="#">#эстрада</a></li>
+                </ul>
+                <div class="tags-card__dropdown-wrap" data-dropdown>
+                  <button class="tags-card__more" type="button" data-dropdown-btn>
+                    <svg role="img">
+                      <use href="images/content/icons/sprite.svg#menu" />
+                    </svg>
+                  </button>
+                  <div class="tags-card__dropdown dropdown" data-dropdown-menu>
+                    <div class="tags-card__dropdown-inner dropdown__inner js-scrollbar">
+                      <ul class="tags-card__dropdown-list list-unstyled">
+                        <li><a href="#">#рок</a></li>
+                        <li><a href="#">#разговорное</a></li>
+                        <li><a href="#">#юмор</a></li>
+                        <li><a href="#">#эстрада</a></li>
+                        <li><a href="#">#поп</a></li>
+                        <li><a href="#">#клубнаямузыка</a></li>
+                        <li><a href="#">#шансон</a></li>
+                        <li><a href="#">#бард</a></li>
+                        <li><a href="#">#транс</a></li>
+                        <li><a href="#">#хипхоп</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                        <li><a href="#">#диско</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stations__content-navigation content-navigation">
+          <button class="content-navigation__load-more btn btn--gradient btn--icon-left" type="button">
+            <span>
+              <svg role="img" class="btn__icon">
+                <use href="images/content/icons/sprite.svg#refresh" />
+              </svg>
+              Показать ещё
+            </span>
+          </button>
+          <nav class="content-navigation__pagination pagination">
+            <ul class="pagination__list list-unstyled">
+              <li class="pagination__arrow pagination__arrow--prev">
+                <a class="pagination__link" href="#">
+                  <svg role="img" class="pagination__arrow-icon">
+                    <use href="images/content/icons/sprite.svg#double-arrows-left" />
+                  </svg>
+                </a>
+              </li>
+              <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item pagination__item--active">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+              <li class="pagination__item">
+                <div class="pagination__dots">...</div>
+              </li>
+              <li class="pagination__item"><a class="pagination__link" href="#">25</a></li>
+              <li class="pagination__arrow pagination__arrow--next">
+                <a class="pagination__link" href="#">
+                  <svg role="img" class="pagination__arrow-icon">
+                    <use href="images/content/icons/sprite.svg#double-arrows-right" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-alphabet">
+      <div class="container">
+        <h2 class="section-title">Радиостанции по городам</h2>
+        <div class="alphabet">
+          <div class="alphabet__card card-alphabet">
+            <div class="card-alphabet__links">
+              <a href="#" class="card-alphabet__link">Москва</a>
+              <a href="#" class="card-alphabet__link">Санкт-Петербург</a>
+            </div>
+            <div class="card-alphabet__slider slider-alphabet slider splide">
+              <div class="slider-alphabet__track slider__track splide__track">
+                <div class="slider-alphabet__list slider__list splide__list">
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="1">а</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="2">б</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="3">в</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="4">г</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="5">д</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="6">е</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="7">ж</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="8">з</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="9">и</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="10">к</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="11">л</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="12">м</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="13">н</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="14">о</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="15">п</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="16">р</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="17">с</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="18">т</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="19">у</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="20">ф</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="21">х</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="22">ц</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="23">ч</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="24">ш</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="25">щ</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="26">э</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="27">ю</button>
+                  </div>
+                  <div class="slider-alphabet__slide slider__slide splide__slide">
+                    <button class="letter" type="button" data-category="28">я</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-alphabet__arrows slider__arrows splide__arrows">
+                <button class="slider-alphabet__arrow slider-alphabet__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev">
+                  <svg role="img">
+                    <use href="images/content/icons/sprite.svg#chevron-left" />
+                  </svg>
+                </button>
+                <button class="slider-alphabet__arrow slider-alphabet__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next">
+                  <svg role="img">
+                    <use href="images/content/icons/sprite.svg#chevron-right" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="alphabet__list list-alphabet row gx-2">
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["1"]'>
+              <div class="item-alphabet__letter">А</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Абакан</a></li>
+                <li><a href="#">Абинск</a></li>
+                <li><a href="#">Адлер</a></li>
+                <li><a href="#">Адыгейск</a></li>
+                <li><a href="#">Азов</a></li>
+                <li><a href="#">Алагир</a></li>
+                <li><a href="#">Алапаевск</a></li>
+                <li><a href="#">Алдан</a></li>
+                <li><a href="#">Александров</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["2"]'>
+              <div class="item-alphabet__letter">Б</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Бавлы</a></li>
+                <li><a href="#">Байкальск</a></li>
+                <li><a href="#">Баксан</a></li>
+                <li><a href="#">Балашиха</a></li>
+                <li><a href="#">Барнаул</a></li>
+                <li><a href="#">Батайск</a></li>
+                <li><a href="#">Белгород</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["3"]'>
+              <div class="item-alphabet__letter">В</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Валаам</a></li>
+                <li><a href="#">Валдай</a></li>
+                <li><a href="#">Ведено</a></li>
+                <li><a href="#">Великие Луки</a></li>
+                <li><a href="#">Великий Устюг</a></li>
+                <li><a href="#">Вендинга</a></li>
+                <li><a href="#">Верещагино</a></li>
+                <li><a href="#">Верхнее Пенжино</a></li>
+                <li><a href="#">Верхний Баскунчак</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["4"]'>
+              <div class="item-alphabet__letter">г</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["5"]'>
+              <div class="item-alphabet__letter">Д</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Дзержинск</a></li>
+                <li><a href="#">Димитровград</a></li>
+                <li><a href="#">Долгопрудный</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Дубна</a></li>
+                <li><a href="#">Дудинка</a></li>
+                <li><a href="#">Духовщина</a></li>
+                <li><a href="#">Дюртюли</a></li>
+                <li><a href="#">Дзержинск</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["6"]'>
+              <div class="item-alphabet__letter">Е</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Егорьевск</a></li>
+                <li><a href="#">Ейск</a></li>
+                <li><a href="#">Екатеринбург</a></li>
+                <li><a href="#">Елабуга</a></li>
+                <li><a href="#">Ессентуки</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["7"]'>
+              <div class="item-alphabet__letter">ж</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["8"]'>
+              <div class="item-alphabet__letter">З</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Заводоуковск</a></li>
+                <li><a href="#">Заволжье</a></li>
+                <li><a href="#">Заполярный</a></li>
+                <li><a href="#">Зарайск</a></li>
+                <li><a href="#">Звенигород</a></li>
+                <li><a href="#">Зеленогорск</a></li>
+                <li><a href="#">Зеленодольск</a></li>
+                <li><a href="#">Златоуст</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["9"]'>
+              <div class="item-alphabet__letter">И</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Ивангород</a></li>
+                <li><a href="#">Иваново</a></li>
+                <li><a href="#">Ивантеевка</a></li>
+                <li><a href="#">Ивдель</a></li>
+                <li><a href="#">Игарка</a></li>
+                <li><a href="#">Ижевск</a></li>
+                <li><a href="#">Избербаш</a></li>
+                <li><a href="#">Ирбит</a></li>
+                <li><a href="#">Иркутск</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["10"]'>
+              <div class="item-alphabet__letter">К</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Казань</a></li>
+                <li><a href="#">Калач</a></li>
+                <li><a href="#">Калачинск</a></li>
+                <li><a href="#">Калуга</a></li>
+                <li><a href="#">Каменск-Уральский</a></li>
+                <li><a href="#">Каменск-Шахтинский</a></li>
+                <li><a href="#">Камышин</a></li>
+                <li><a href="#">Канаш</a></li>
+                <li><a href="#">Кандалакша</a></li>
+                <li><a href="#">Канск</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["11"]'>
+              <div class="item-alphabet__letter">Л</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Лабинск</a></li>
+                <li><a href="#">Лабытнанги</a></li>
+                <li><a href="#">Лагань</a></li>
+                <li><a href="#">Ладушкин</a></li>
+                <li><a href="#">Лаишево</a></li>
+                <li><a href="#">Лакинск</a></li>
+                <li><a href="#">Лангепас</a></li>
+                <li><a href="#">Лахденпохья</a></li>
+                <li><a href="#">Лебедянь</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["12"]'>
+              <div class="item-alphabet__letter">М</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Магадан</a></li>
+                <li><a href="#">Магнитогорск</a></li>
+                <li><a href="#">Майкоп</a></li>
+                <li><a href="#">Малая Вишера</a></li>
+                <li><a href="#">Махачкала</a></li>
+                <li><a href="#">Минеральные Воды</a></li>
+                <li><a href="#">Мурманск</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["13"]'>
+              <div class="item-alphabet__letter">Н</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Набережные Челны</a></li>
+                <li><a href="#">Навашино</a></li>
+                <li><a href="#">Наволоки</a></li>
+                <li><a href="#">Надым</a></li>
+                <li><a href="#">Назарово</a></li>
+                <li><a href="#">Назрань</a></li>
+                <li><a href="#">Называевск</a></li>
+                <li><a href="#">Нальчик</a></li>
+                <li><a href="#">Нариманов</a></li>
+                <li><a href="#">Наро-Фоминск</a></li>
+                <li><a href="#">Нарткала</a></li>
+                <li><a href="#">Нарьян-Мар</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["14"]'>
+              <div class="item-alphabet__letter">О</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Облучье</a></li>
+                <li><a href="#">Обнинск</a></li>
+                <li><a href="#">Обоянь</a></li>
+                <li><a href="#">Обь</a></li>
+                <li><a href="#">Одинцово</a></li>
+                <li><a href="#">Озёры</a></li>
+                <li><a href="#">Октябрьск</a></li>
+                <li><a href="#">Октябрьский</a></li>
+                <li><a href="#">Окуловка</a></li>
+                <li><a href="#">Олёкминск</a></li>
+                <li><a href="#">Оленегорск</a></li>
+                <li><a href="#">Орлов</a></li>
+                <li><a href="#">Орск</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["15"]'>
+              <div class="item-alphabet__letter">П</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Павлово</a></li>
+                <li><a href="#">Павловский Посад</a></li>
+                <li><a href="#">Пенза</a></li>
+                <li><a href="#">Первоуральск</a></li>
+                <li><a href="#">Переславль-Залесский</a></li>
+                <li><a href="#">Пермь</a></li>
+                <li><a href="#">Петрозаводск</a></li>
+                <li><a href="#">Петропавловск-Камчатский</a></li>
+                <li><a href="#">Подольск</a></li>
+                <li><a href="#">Полевской</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["16"]'>
+              <div class="item-alphabet__letter">Р</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Раменское</a></li>
+                <li><a href="#">Ревда</a></li>
+                <li><a href="#">Реутов</a></li>
+                <li><a href="#">Ржев</a></li>
+                <li><a href="#">Рославль</a></li>
+                <li><a href="#">Россошь</a></li>
+                <li><a href="#">Ростов</a></li>
+                <li><a href="#">Рыбинск</a></li>
+                <li><a href="#">Рязань</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["17"]'>
+              <div class="item-alphabet__letter">С</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Санкт-Петербург</a></li>
+                <li><a href="#">Саратов</a></li>
+                <li><a href="#">Севастополь</a></li>
+                <li><a href="#">Сергиев Посад</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><a href="#">Смоленск</a></li>
+                <li><a href="#">Сосновый Бор</a></li>
+                <li><a href="#">Ставрополь</a></li>
+                <li><a href="#">Сызрань</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["18"]'>
+              <div class="item-alphabet__letter">Т</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Таганрог</a></li>
+                <li><a href="#">Тамбов</a></li>
+                <li><a href="#">Таруса</a></li>
+                <li><a href="#">Татарск</a></li>
+                <li><a href="#">Таштагол</a></li>
+                <li><a href="#">Тверь</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["19"]'>
+              <div class="item-alphabet__letter">У</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Уварово</a></li>
+                <li><a href="#">Углич</a></li>
+                <li><a href="#">Удачный</a></li>
+                <li><a href="#">Ужур</a></li>
+                <li><a href="#">Улан-Удэ</a></li>
+                <li><a href="#">Ульяновск</a></li>
+                <li><a href="#">Урус-Мартан</a></li>
+                <li><a href="#">Усинск</a></li>
+                <li><a href="#">Усолье-Сибирское</a></li>
+                <li><a href="#">Уссурийск</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["20"]'>
+              <div class="item-alphabet__letter">ф</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["21"]'>
+              <div class="item-alphabet__letter">х</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["22"]'>
+              <div class="item-alphabet__letter">ц</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["23"]'>
+              <div class="item-alphabet__letter">Ч</div>
+              <ul class="item-alphabet__list list-unstyled">
+                <li><a href="#">Чайковский</a></li>
+                <li><a href="#">Чебоксары</a></li>
+                <li><a href="#">Челябинск</a></li>
+                <li><a href="#">Черемхово</a></li>
+                <li><a href="#">Череповец</a></li>
+                <li><a href="#">Черняховск</a></li>
+                <li><a href="#">Чехов</a></li>
+                <li><a href="#">Чита</a></li>
+              </ul>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["24"]'>
+              <div class="item-alphabet__letter">ш</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["25"]'>
+              <div class="item-alphabet__letter">щ</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["26"]'>
+              <div class="item-alphabet__letter">э</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["27"]'>
+              <div class="item-alphabet__letter">ю</div>
+            </div>
+            <div class="list-alphabet__item item-alphabet col-xl-3 col-md-4 col-sm-6" data-groups='["28"]'>
+              <div class="item-alphabet__letter">я</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- prettier-ignore -->
+  <button class="to-top" type="button">
+    <svg role="img" class="to-top__icon">
+      <use href="images/content/icons/sprite.svg#arrow-circle-up" />
+    </svg>
+  </button>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__body">
+        <div class="footer__logo-wrap">
+          <img src="images/content/logo-compact.svg" alt="alt" class="footer__logo img-responsive">
+          <p class="footer__copyright">
+            © 2023. OnlineRadioHub.ru.
+            <br />
+            All rights reserved.
+          </p>
+        </div>
+        <ul class="footer__links list-unstyled">
+          <li><a href="#">Правообладателям</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+        <a href="#" class="footer__link-icon link-icon">
+          <svg role="img" class="link-icon__icon">
+            <use href="images/content/icons/sprite.svg#chat" />
+          </svg>
+          Обратная связь
+        </a>
+        <a href="#" class="footer__btn btn btn--gradient btn--icon-left">
+          <span>
+            <svg role="img" class="btn__icon">
+              <use href="images/content/icons/sprite.svg#plus-circle" />
+            </svg>
+            Добавить радио
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/runtime.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/alphabet.js"></script>
+</body>
+
+</html>

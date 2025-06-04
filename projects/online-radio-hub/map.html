@@ -1,0 +1,484 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description" content="description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#151416">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600&family=Geologica:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body class="body-map">
+  <header class="header">
+    <div class="header__container container">
+      <button class="header__hamburger" type="button">
+        <svg role="img">
+          <use href="images/content/icons/sprite.svg#hamburger" />
+        </svg>
+      </button>
+      <a href="index.html" class="header__logo">
+        <img src="images/content/logo.svg" alt="alt" class="img-responsive">
+      </a>
+      <nav class="header__navbar">
+        <button class="header__close close" type="button">
+          <svg role="img" class="close__icon">
+            <use href="images/content/icons/sprite.svg#close" />
+          </svg>
+        </button>
+        <a href="#" class="header__btn btn btn--gradient btn--icon-left">
+          <span>
+            <svg role="img" class="btn__icon">
+              <use href="images/content/icons/sprite.svg#microphone" />
+            </svg>
+            Каталог
+          </span>
+        </a>
+        <ul class="header__menu menu list-unstyled">
+          <li>
+            <a href="#">Жанры</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все жанры
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Страны</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все страны
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Города</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Club House</a></li>
+                <li><a href="#">Лаунж</a></li>
+                <li><a href="#">Даунтемпо</a></li>
+                <li><a href="#">Госпел</a></li>
+                <li><a href="#">Опера</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Рок</a></li>
+                <li><a href="#">Метал</a></li>
+                <li><a href="#">Хард-рок</a></li>
+                <li><a href="#">Свинг</a></li>
+                <li><a href="#">Сальса</a></li>
+                <li><a href="#">Tropic Dance</a></li>
+                <li><a href="#">Кантри</a></li>
+                <li><a href="#">Соул</a></li>
+                <li><a href="#">Джаз</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Детская музыка</a></li>
+                <li><a href="#">Музыка из кино</a></li>
+                <li><a href="#">Mainstream</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Latina</a></li>
+                <li><a href="#">Шансон</a></li>
+                <li><a href="#">Фанк</a></li>
+                <li><a href="#">Техно</a></li>
+                <li><a href="#">Диско</a></li>
+                <li><a href="#">Поп</a></li>
+                <li><a href="#">Tribal House</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Acid House</a></li>
+                <li><a href="#">Dubstep</a></li>
+                <li><a href="#">Евродэнс</a></li>
+                <li><a href="#">Drum’n’bass</a></li>
+                <li><a href="#">Романс</a></li>
+                <li><a href="#">Авторская песня</a></li>
+                <li><a href="#">Синти-поп</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все города
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Языки</a>
+            <div class="menu__dropdown dropdown-menu">
+              <ul class="dropdown-menu__list list-unstyled">
+                <li><a href="#">Urban</a></li>
+                <li><a href="#">Регги</a></li>
+                <li><a href="#">Хип-хоп</a></li>
+                <li><a href="#">Электро</a></li>
+                <li><a href="#">Брейкбит</a></li>
+                <li><a href="#">Транс</a></li>
+                <li><a href="#">Эмбиент</a></li>
+              </ul>
+              <div class="dropdown-menu__more more">
+                <a href="#" class="more__link more-link">
+                  все языки
+                  <svg role="img" class="more-link__arrow">
+                    <use href="images/content/icons/sprite.svg#arrow-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="header__actions-wrap">
+          <div class="header__actions">
+            <div class="header__action">
+              <a href="map.html" class="header__link-icon link-icon">
+                <svg role="img" class="link-icon__icon">
+                  <use href="images/content/icons/sprite.svg#location" />
+                </svg>
+                Радио на карте
+              </a>
+            </div>
+            <div class="header__action">
+              <a href="#" class="header__link-icon link-icon">
+                <svg role="img" class="link-icon__icon">
+                  <use href="images/content/icons/sprite.svg#magic-wand" />
+                </svg>
+                Случайное радио
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__user-actions-wrap">
+        <div class="header__user-actions">
+          <div class="header__language language-dropdown" data-dropdown>
+            <div class="language-dropdown__selected" data-dropdown-btn>Ру</div>
+            <div class="language-dropdown__menu" data-dropdown-menu>
+              <button class="language-dropdown__close close" type="button" data-dropdown-btn>
+                <svg role="img" class="close__icon">
+                  <use href="images/content/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <ul class="language-dropdown__list list-unstyled">
+                <li>
+                  <a href="#" class="language-dropdown__item language-dropdown__item--selected">
+                    <img src="images/content/ru.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    Русский
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="language-dropdown__item">
+                    <img src="images/content/en.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="language-dropdown__item">
+                    <img src="images/content/de.png" alt="alt" class="language-dropdown__icon img-responsive">
+                    Deutsch
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__search search-header" data-dropdown>
+            <button class="search-header__btn search-btn" type="button" data-dropdown-btn>
+              <svg role="img" class="search-btn__icon">
+                <use href="images/content/icons/sprite.svg#search" />
+              </svg>
+            </button>
+            <form class="search-header__form" data-dropdown-menu>
+              <button class="search-header__close close" type="button" data-dropdown-btn>
+                <svg role="img" class="close__icon">
+                  <use href="images/content/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <div class="search-header__control-wrap">
+                <input type="text" class="search-header__control">
+                <button class="search-header__clear" type="button">
+                  <svg role="img">
+                    <use href="images/content/icons/sprite.svg#backspace" />
+                  </svg>
+                </button>
+              </div>
+              <button class="search-header__search-btn btn btn--accent" type="submit">Найти</button>
+            </form>
+          </div>
+          <a href="#" class="header__favorite-btn favorite-btn">
+            <div class="favorite-btn__inner">
+              <svg role="img" class="favorite-btn__icon">
+                <use href="images/content/icons/sprite.svg#heart" />
+              </svg>
+              <span class="favorite-btn__count count count--accent">10</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="map">
+      <div class="map__bar bar-map">
+        <div class="bar-map__container container">
+          <div class="bar-map__inner block">
+            <div class="bar-map__content">
+              <div class="bar-map__title-wrap">
+                <h4 class="bar-map__title">Радио на карте мира</h4>
+                <button class="bar-map__toggle" type="button" data-modal-toggle="modal">
+                  <svg role="img">
+                    <use href="images/content/icons/sprite.svg#sliders" />
+                  </svg>
+                </button>
+              </div>
+              <div class="bar-map__text-wrap">
+                <div class="expandable-text expandable-text--lines-1">
+                  <div class="expandable-text__content">
+                    <p>Выбирайте и слушайте радио на карте в любой точке мира.</p>
+                  </div>
+                  <button class="expandable-text__show" type="button">Развернуть</button>
+                  <button class="expandable-text__hide" type="button">Скрыть</button>
+                </div>
+              </div>
+            </div>
+            <div class="bar-map__mini-player mini-player">
+              <div class="mini-player__body">
+                <div class="mini-player__main">
+                  <div class="mini-player__top-line">
+                    <button class="mini-player__play player-play" type="button">
+                      <svg role="img" class="player-play__icon">
+                        <use href="images/content/icons/sprite.svg#play-circle-outline" />
+                      </svg>
+                    </button>
+                    <div class="mini-player__title">
+                      <a href="#">Радио Звезда</a>
+                    </div>
+                    <button class="mini-player__favorite-btn" type="button">
+                      <svg role="img">
+                        <use href="images/content/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="mini-player__volume volume">
+                    <button class="volume__mute" type="button">
+                      <svg role="img">
+                        <use href="images/content/icons/sprite.svg#speaker" />
+                      </svg>
+                    </button>
+                    <input type="range" class="volume__slider hidden" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bar-map__filter filter-map" data-modal="modal">
+              <div class="filter-map__header">
+                <h3 class="filter-map__title">Фильтры</h3>
+                <button class="filter-map__close close" type="button" data-modal-close>
+                  <svg role="img" class="close__icon">
+                    <use href="images/content/icons/sprite.svg#close" />
+                  </svg>
+                </button>
+              </div>
+              <div class="filter-map__body">
+                <div class="filter-map__actions row">
+                  <div class="col-12 col-lg-8">
+                    <div class="filter-map__tags tags-filter">
+                      <div class="tags-filter__tag filter-tag">rap ×</div>
+                      <div class="tags-filter__tag filter-tag">Русский ×</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="filter-map__clear-wrap">
+                      <button class="filter-map__clear clear-filter" type="button">
+                        <svg role="img" class="clear-filter__icon">
+                          <use href="images/content/icons/sprite.svg#backspace"></use>
+                        </svg>
+                        Очистить всё
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-map__row row">
+                  <div class="filter-map__col col-sm-6">
+                    <div class="select">
+                      <input type="hidden" class="select__input" />
+                      <div class="select__btn">
+                        <div class="select__label">Жанр</div>
+                        <div class="select__values"></div>
+                        <svg role="img" class="select__arrows">
+                          <use href="images/content/icons/sprite.svg#arrows" />
+                        </svg>
+                      </div>
+                      <div class="select__dropdown dropdown">
+                        <div class="dropdown__inner js-scrollbar">
+                          <div class="select__option" data-value="1">Жанр 1</div>
+                          <div class="select__option" data-value="2">Жанр 2</div>
+                          <div class="select__option" data-value="3">Жанр 3</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-map__col col-sm-6">
+                    <div class="select">
+                      <input type="hidden" class="select__input" />
+                      <div class="select__btn">
+                        <div class="select__label">Жанр</div>
+                        <div class="select__values"></div>
+                        <svg role="img" class="select__arrows">
+                          <use href="images/content/icons/sprite.svg#arrows" />
+                        </svg>
+                      </div>
+                      <div class="select__dropdown dropdown">
+                        <div class="dropdown__inner js-scrollbar">
+                          <div class="select__option" data-value="1">Жанр 1</div>
+                          <div class="select__option" data-value="2">Жанр 2</div>
+                          <div class="select__option" data-value="3">Жанр 3</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="filter-map__show-results btn btn--accent" type="button" data-modal-close>
+                показать результаты
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map__map" id="map"></div>
+    </div>
+  </div>
+
+  <script>
+    var map = L.map("map").setView([51.505, -0.09], 3);
+
+    L.tileLayer(
+      "https://tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=5a779c5a4993433e94672e263a0c0ce9", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }
+    ).addTo(map);
+
+    map.setMaxZoom(10); // Максимальный уровень зума
+    map.setMinZoom(2); // Минимальный уровень зума
+  </script>
+
+  <!-- prettier-ignore -->
+  <script src="js/runtime.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

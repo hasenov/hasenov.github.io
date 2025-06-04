@@ -1,0 +1,28 @@
+<div class="review">
+  <svg class="review__icon icon" aria-hidden="true">
+    <use href="/images/icons/sprite.svg#quote" />
+  </svg>
+  <div class="review__header">
+    <div class="review__avatar-wrap">
+      <img src="/images/avatar.svg" alt="avatar placeholder" class="review__avatar img-responsive" />
+    </div>
+    <p class="review__title">@@name</p>
+  </div>
+  <div class="review__content" data-expandable>
+    <div class="review__text-wrap no-mb-last" data-expandable-content>
+      <p>@@text</p>
+    </div>
+    <button class="review__read-more text-sm" type="button" data-expandable-show>
+      @@readmore
+      <svg role="img" aria-hidden="true">
+        <use href="/images/icons/sprite.svg#chevron-down"></use>
+      </svg>
+    </button>
+    <button class="review__read-less text-sm" type="button" data-expandable-hide>
+      @@readless
+      <svg role="img" aria-hidden="true">
+        <use href="/images/icons/sprite.svg#chevron-down"></use>
+      </svg>
+    </button>
+  </div>
+</div>
