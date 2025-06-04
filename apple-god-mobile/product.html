@@ -1,0 +1,1172 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Товар</title>
+  <meta name="description" content="описание" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#1a1a1a" />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.svg" alt="alt" class="img-responsive" width="58" height="40" />
+      </a>
+      <div class="header__actions">
+        <a href="#" class="header__action action-header action-header--gray">
+          <svg role="img" class="action-header__icon">
+            <use href="images/icons/sprite.svg#search" />
+          </svg>
+        </a>
+        <a href="#" class="header__action action-header">
+          <svg role="img" class="action-header__icon">
+            <use href="images/icons/sprite.svg#user" />
+          </svg>
+        </a>
+        <a href="favorites.html" class="header__action action-header">
+          <svg role="img" class="action-header__icon">
+            <use href="images/icons/sprite.svg#heart" />
+          </svg>
+        </a>
+        <a href="#" class="header__action action-header">
+          <svg role="img" class="action-header__icon">
+            <use href="images/icons/sprite.svg#compare" />
+          </svg>
+        </a>
+        <a href="cart.html" class="header__action action-header">
+          <svg role="img" class="action-header__icon">
+            <use href="images/icons/sprite.svg#cart" />
+          </svg>
+          <span class="action-header__count">3</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <button class="header__btn btn-header btn-header--dark" type="button" id="toggleCatalogMenu">
+        <svg role="img" class="btn-header__icon">
+          <use href="images/icons/sprite.svg#pillar" />
+        </svg>
+        Каталог
+        <svg role="img" class="btn-header__close">
+          <use href="images/icons/sprite.svg#close" />
+        </svg>
+      </button>
+      <button class="header__btn btn-header btn-header--light" type="button" id="toggleContactsMenu">
+        Связаться с нами
+        <svg role="img" class="btn-header__close">
+          <use href="images/icons/sprite.svg#close" />
+        </svg>
+      </button>
+    </div>
+    <div class="header__popups">
+      <nav class="header__popup popup-header multilevel-menu">
+        <div class="multilevel-menu__list-wrapper">
+          <ul class="list-unstyled level-1">
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#charger" />
+                </svg>
+                Аксессуары
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#apple" />
+                </svg>
+                Apple
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#dyson" />
+                </svg>
+                Dyson
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#samsung" />
+                </svg>
+                Samsung
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#joystick" />
+                </svg>
+                Игровые приставки
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#headphones" />
+                </svg>
+                Наушники и аудиотехника
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#action-cam" />
+                </svg>
+                Экшн-камеры
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#gift-card" />
+                </svg>
+                Услуги
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#camera" />
+                </svg>
+                Фотоаппараты
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nested">
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#google" />
+                </svg>
+                Google
+              </a>
+              <ul class="sub-menu list-unstyled level-2">
+                <li>
+                  <a href="catalog.html">iPhone</a>
+                </li>
+                <li>
+                  <a href="catalog.html">MacBook</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iPad</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple Watch</a>
+                </li>
+                <li>
+                  <a href="catalog.html">AirPods</a>
+                </li>
+                <li>
+                  <a href="catalog.html">iMac</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Mac mini</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple TV</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Apple AirTag</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="multilevel-menu__list-wrapper">
+          <button type="button" class="back-one-level">
+            <span>Назад</span>
+          </button>
+          <div class="sub-menu-wrapper"></div>
+        </div>
+        <div class="multilevel-menu__list-wrapper">
+          <button type="button" class="back-one-level">
+            <span>Назад</span>
+          </button>
+          <div class="sub-menu-wrapper"></div>
+        </div>
+      </nav>
+      <div class="header__popup popup-header popup-header--contacts">
+        <div class="popup-header__contacts contacts-popup-header">
+          <a href="tel:+74951248600" class="contacts-popup-header__item contacts-popup-header__item--big">
+            <svg role="img" class="contacts-popup-header__icon">
+              <use href="images/icons/sprite.svg#telephone" />
+            </svg>
+            +7 (495) 124 86 00
+          </a>
+          <a href="#" class="contacts-popup-header__item">Написать в WhatsApp</a>
+          <a href="#" class="contacts-popup-header__item">Написать в Telegram</a>
+        </div>
+        <div class="popup-header__socials socials socials--primary">
+          <p class="socials__title">Мы в соц. сетях:</p>
+          <ul class="socials__items list-unstyled">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg role="img" class="socials__icon">
+                  <use href="images/icons/sprite.svg#vk" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg role="img" class="socials__icon">
+                  <use href="images/icons/sprite.svg#tg" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg role="img" class="socials__icon">
+                  <use href="images/icons/sprite.svg#ig" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg role="img" class="socials__icon">
+                  <use href="images/icons/sprite.svg#wa" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <nav class="breadcrumbs" aria-label="Хлебные крошки (навигация)">
+    <ul class="breadcrumbs__list list-unstyled">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Apple</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">iPhone</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">iPhone 11</a>
+      </li>
+      <li class="breadcrumbs__item current" aria-current="page">
+        <span>Телефон Apple iPhone 11 64 Gb (Черный)</span>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="product">
+      <div class="product__slider slider-product slider splide" role="group" aria-label="Слайдер товара">
+        <div class="slider-product__track slider__track splide__track">
+          <div class="slider-product__list slider__list splide__list">
+            <div class="slider-product__slide slider__slide splide__slide">
+              <a href="images/product-2x.png" class="product-image glightbox" data-gallery="product">
+                <img src="images/product.png" srcset="images/product.png 1x, images/product-2x.png 2x" alt="alt" class="product-image__img img-responsive" width="316" height="315" />
+              </a>
+            </div>
+            <div class="slider-product__slide slider__slide splide__slide">
+              <a href="images/product-2x.png" class="product-image glightbox" data-gallery="product">
+                <img src="images/product.png" srcset="images/product.png 1x, images/product-2x.png 2x" alt="alt" class="product-image__img img-responsive" width="316" height="315" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <ul class="slider-product__pagination slider__pagination splide__pagination"></ul>
+      </div>
+      <div class="product__header">
+        <h1 class="product__title">Телефон Apple iPhone 11 64 Gb (Черный)</h1>
+        <div class="product__meta">
+          <div class="product__code text-xs"><span class="font-semibold">Артикул:</span> 5502</div>
+          <div class="product__status status-product status-product--success text-xs">
+            <svg role="img" class="status-product__icon">
+              <use href="images/icons/sprite.svg#check" />
+            </svg>
+            <span class="font-semibold">В наличии</span> (много)
+          </div>
+        </div>
+      </div>
+      <div class="product__prices">
+        <p class="product__price section-title">27 790 руб.</p>
+        <p class="product__old-price">27 790 руб.</p>
+      </div>
+      <div class="product__actions-wrap">
+        <div class="product__actions">
+          <button class="product__price-drop btn btn--light" type="button">Узнать о снижении цены</button>
+          <button class="product__action-btn product-action-btn product-action-btn--favorite" type="button">
+            <svg role="img" class="product-action-btn__icon">
+              <use href="images/icons/sprite.svg#heart" />
+            </svg>
+          </button>
+          <button class="product__action-btn product-action-btn product-action-btn--compare" type="button">
+            <svg role="img" class="product-action-btn__icon">
+              <use href="images/icons/sprite.svg#compare" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="product__variations">
+        <div class="product__variation variation">
+          <div class="variation__title">Цвет:</div>
+          <div class="variation__items">
+            <a href="#" class="variation__color color" style="background-color: #ff0000"></a>
+            <a href="#" class="variation__color color" style="background-color: #ee82ee"></a>
+            <a href="#" class="variation__color color" style="background-color: #ffff00"></a>
+            <a href="#" class="variation__color color" style="background-color: #008000"></a>
+            <a href="#" class="variation__color color" style="background-color: #fff"></a>
+            <a href="#" class="variation__color color current" style="background-color: #000"></a>
+          </div>
+        </div>
+        <div class="product__variation variation">
+          <div class="variation__title">Память:</div>
+          <div class="variation__items">
+            <a href="#" class="variation__option text-sm option current">64 ГБ</a>
+            <a href="#" class="variation__option text-sm option">128 ГБ</a>
+          </div>
+        </div>
+      </div>
+      <div class="product__extra-options extra-options">
+        <div class="extra-options__item">
+          <label class="extra-options__checkbox checkbox">
+            <input type="checkbox" class="checkbox__input hidden" />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text text-sm">Добавить подарочную упаковку S</span>
+          </label>
+          <div class="extra-options__price text-sm">+2 000 ₽</div>
+        </div>
+        <div class="extra-options__item">
+          <label class="extra-options__checkbox checkbox">
+            <input type="checkbox" class="checkbox__input hidden" checked />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text text-sm">Добавить доп. гарантию</span>
+          </label>
+          <div class="extra-options__price text-sm">+2 000 ₽</div>
+        </div>
+        <div class="extra-options__item">
+          <label class="extra-options__checkbox checkbox">
+            <input type="checkbox" class="checkbox__input hidden" />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text text-sm">Добавить мини-комплект</span>
+          </label>
+          <div class="extra-options__price text-sm">+2 000 ₽</div>
+        </div>
+        <div class="extra-options__item">
+          <label class="extra-options__checkbox checkbox">
+            <input type="checkbox" class="checkbox__input hidden" />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text text-sm">Добавить стандартный комплект</span>
+          </label>
+          <div class="extra-options__hint hint">
+            <svg role="img" class="hint__icon">
+              <use href="images/icons/sprite.svg#question" />
+            </svg>
+            <div class="hint__text text-sm">Далеко-далеко за словесными горами в стране.</div>
+          </div>
+          <div class="extra-options__price text-sm">+2 000 ₽</div>
+        </div>
+        <div class="extra-options__item">
+          <label class="extra-options__checkbox checkbox">
+            <input type="checkbox" class="checkbox__input hidden" />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text text-sm">Добавить VIP-комплект</span>
+          </label>
+          <div class="extra-options__hint hint">
+            <svg role="img" class="hint__icon">
+              <use href="images/icons/sprite.svg#question" />
+            </svg>
+            <div class="hint__text text-sm">Далеко-далеко за словесными горами в стране.</div>
+          </div>
+          <div class="extra-options__price text-sm">+2 000 ₽</div>
+        </div>
+      </div>
+      <div class="product__purchase">
+        <div class="product__purchase-row">
+          <div class="product__quantity quantity quantity--big">
+            <button class="quantity__btn quantity__btn--minus" type="button" disabled></button>
+            <input type="number" class="quantity__control" placeholder="1" value="1" />
+            <button class="quantity__btn quantity__btn--plus" type="button"></button>
+          </div>
+          <button class="product__add-to-cart btn btn--primary btn--icon-left" type="button" data-micromodal-trigger="modal-added-to-cart">
+            <svg role="img" class="btn__icon">
+              <use href="images/icons/sprite.svg#cart-add" />
+            </svg>
+            В корзину
+          </button>
+        </div>
+        <button class="product__one-click btn btn--dark" type="button" data-micromodal-trigger="modal-one-click">Купить в 1 клик</button>
+      </div>
+      <div class="product__tabs tabs-product" data-tabs>
+        <div class="tabs-product__btns">
+          <button class="tabs-product__btn text-sm is-active" type="button" data-tabs-btn>Описание</button>
+          <button class="tabs-product__btn text-sm" type="button" data-tabs-btn>Характеристики</button>
+        </div>
+        <div class="tabs-product__items">
+          <div class="tabs-product__item is-active" data-tabs-item>
+            <div class="tabs-product__content-wrap" data-expandable>
+              <div class="tabs-product__content" data-expandable-content>
+                <p>
+                  Флагман iPhone 11 поразил пользователей мощной аппаратной платформой, безграничным дисплеем, улучшенным голосовым управлением,
+                  компактными габаритами, большим разнообразием расцветок. Суперсовременный смартфон получил защищённый корпус, выполненный из
+                  специализированного цельного стекла, закалённого по технологии двойного ионного обмена. Купить iPhone 11 — это отличное решение,
+                  если вы хотите сделать себе или близким хороший подарок.
+                </p>
+                <p>Почему вам нужно купить iPhone 11?</p>
+                <p>
+                  «Яблочный» девайс получил поддержку одновременно двух сим-карт. Дополнительная eSIM применяется исключительно для мобильных
+                  операторов с беспроводным тарифам.
+                </p>
+                <p>
+                  Флагман iPhone 11 поразил пользователей мощной аппаратной платформой, безграничным дисплеем, улучшенным голосовым управлением,
+                  компактными габаритами, большим разнообразием расцветок. Суперсовременный смартфон получил защищённый корпус, выполненный из
+                  специализированного цельного стекла, закалённого по технологии двойного ионного обмена. Купить iPhone 11 — это отличное решение,
+                  если вы хотите сделать себе или близким хороший подарок.
+                </p>
+                <p>Почему вам нужно купить iPhone 11?</p>
+              </div>
+              <button class="tabs-product__read-toggle tabs-product__read-toggle--more text-sm" type="button" data-expandable-show>
+                Показать полностью
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#chevron-down" />
+                </svg>
+              </button>
+              <button class="tabs-product__read-toggle tabs-product__read-toggle--less text-sm" type="button" data-expandable-hide>
+                Скрыть
+                <svg role="img">
+                  <use href="images/icons/sprite.svg#chevron-down" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="tabs-product__item" data-tabs-item>
+            <table class="tabs-product__table table-details">
+              <tr>
+                <th>Цвет</th>
+                <td>Черный</td>
+              </tr>
+              <tr>
+                <th>Объем встроенной памяти</th>
+                <td>64 ГБ</td>
+              </tr>
+              <tr>
+                <th>Процессор</th>
+                <td>A13 Bionic</td>
+              </tr>
+              <tr>
+                <th>Диагональ</th>
+                <td>6.1"</td>
+              </tr>
+              <tr>
+                <th>Sim-карта</th>
+                <td>Nano-SIM, eSIM</td>
+              </tr>
+              <tr>
+                <th>В комплекте</th>
+                <td>кабель Lightning / USB-C</td>
+              </tr>
+              <tr>
+                <th>Тип экрана</th>
+                <td>IPS</td>
+              </tr>
+              <tr>
+                <th>Модель</th>
+                <td>iPhone 11</td>
+              </tr>
+              <tr>
+                <th>Материал</th>
+                <td>алюминий</td>
+              </tr>
+              <tr>
+                <th>Сотовая и беспроводная сеть</th>
+                <td>4G LTE, Bluetooth 5.0, GSM/EDGE, MIMO, NFC с поддержкой режима считывания, UMTS/​HSPA+/​DC-HSDPA, VoLTE, Wi-Fi (802.11​ax)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="product__accordions">
+        <div class="product__accordion accordion">
+          <div class="accordion__btn">
+            <div class="accordion__title">Доставка</div>
+            <svg role="img" class="accordion__arrow">
+              <use href="images/icons/sprite.svg#chevron-down" />
+            </svg>
+          </div>
+          <div class="accordion__body">
+            <div class="accordion__content">
+              <div class="details-product">
+                <ul class="details-product__list-icons list-icons list-unstyled">
+                  <li>
+                    <img src="images/icons/box.svg" alt="alt" class="list-icons__icon" loading="lazy" />
+                    <div class="list-icons__text">Самовывоз из магазина</div>
+                  </li>
+                  <li>
+                    <img src="images/icons/truck.svg" alt="alt" class="list-icons__icon" loading="lazy" />
+                    <div class="list-icons__text">Курьерская от <span class="font-semibold">490 руб.</span></div>
+                  </li>
+                  <li>
+                    <img src="images/icons/truck-fast.svg" alt="alt" class="list-icons__icon" loading="lazy" />
+                    <div class="list-icons__text">Срочная от <span class="font-semibold">800 руб.</span></div>
+                  </li>
+                </ul>
+                <a href="#" class="details-product__link text-sm">Подробнее о доставке</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__accordion accordion">
+          <div class="accordion__btn">
+            <div class="accordion__title">Оплата</div>
+            <svg role="img" class="accordion__arrow">
+              <use href="images/icons/sprite.svg#chevron-down" />
+            </svg>
+          </div>
+          <div class="accordion__body">
+            <div class="accordion__content">
+              <div class="details-product">
+                <ul class="details-product__list-icons list-icons list-unstyled">
+                  <li>
+                    <img src="images/icons/dollars-dark.svg" alt="alt" class="list-icons__icon" loading="lazy" />
+                    <div class="list-icons__text">Наличный расчет</div>
+                  </li>
+                  <li>
+                    <img src="images/icons/sbp-dark.svg" alt="alt" class="list-icons__icon" loading="lazy" />
+                    <div class="list-icons__text">Онлайн-перевод</div>
+                  </li>
+                  <li>
+                    <img src="images/icons/card-dark.svg" alt="alt" class="list-icons__icon" loading="lazy" />
+                    <div class="list-icons__text">Безналичный расчет</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__accordion accordion">
+          <div class="accordion__btn">
+            <div class="accordion__title">Гарантийные условия</div>
+            <svg role="img" class="accordion__arrow">
+              <use href="images/icons/sprite.svg#chevron-down" />
+            </svg>
+          </div>
+          <div class="accordion__body">
+            <div class="accordion__content">
+              <p>- 1 год с момента приобретения товара (подробности уточняйте у оператора)</p>
+              <p>- Возврат или обмен товара в течение 14 дней по чеку</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section-slider-products">
+      <div class="slider-products-wrapper">
+        <div class="slider-products-wrapper__header">
+          <h2 class="slider-products-wrapper__title section-title">Аксессуары</h2>
+        </div>
+        <div class="slider-products-wrapper__slider slider-products slider splide" role="group" aria-label="Аксессуары">
+          <div class="slider-products__track slider__track splide__track">
+            <div class="slider-products__list slider__list splide__list">
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <div class="card-product__badges">
+                    <span class="card-product__badge badge badge--success">скидка</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <button class="card-product__action action-card-product action-card-product--compare" type="button">
+                      <svg role="img" class="action-card-product__icon">
+                        <use href="images/icons/sprite.svg#compare" />
+                      </svg>
+                    </button>
+                    <button class="card-product__action action-card-product action-card-product--favorite is-active" type="button">
+                      <svg role="img" class="action-card-product__icon">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+                  </div>
+                  <a href="product.html" class="card-product__img-wrap">
+                    <img src="images/card-4.png" srcset="images/card-4.png 1x, images/card-4-2x.png 2x" alt="alt" class="card-product__img img-responsive" loading="lazy" width="152" height="106" />
+                  </a>
+                  <div class="card-product__title"><a href="product.html">Защитное стекло Remax ES-01 для iPhone 13 Pro/13/14 (С черной рамкой)</a></div>
+                  <div class="card-product__prices">
+                    <p class="card-product__price">1 990 ₽</p>
+                    <p class="card-product__old-price">257 000 ₽</p>
+                  </div>
+                  <div class="card-product__btns">
+                    <button class="card-product__one-click btn btn--dark" type="button" data-micromodal-trigger="modal-one-click">В 1 КЛИК</button>
+                    <button class="card-product__add-to-cart btn btn--primary" type="button" data-micromodal-trigger="modal-added-to-cart">
+                      <svg role="img" class="btn__icon">
+                        <use href="images/icons/sprite.svg#cart-add" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <div class="card-product__badges">
+                    <span class="card-product__badge badge badge--success">скидка</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <button class="card-product__action action-card-product action-card-product--compare" type="button">
+                      <svg role="img" class="action-card-product__icon">
+                        <use href="images/icons/sprite.svg#compare" />
+                      </svg>
+                    </button>
+                    <button class="card-product__action action-card-product action-card-product--favorite is-active" type="button">
+                      <svg role="img" class="action-card-product__icon">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+                  </div>
+                  <a href="product.html" class="card-product__img-wrap">
+                    <img src="images/card-4.png" srcset="images/card-4.png 1x, images/card-4-2x.png 2x" alt="alt" class="card-product__img img-responsive" loading="lazy" width="152" height="106" />
+                  </a>
+                  <div class="card-product__title"><a href="product.html">Защитное стекло Remax ES-01 для iPhone 13 Pro/13/14 (С черной рамкой)</a></div>
+                  <div class="card-product__prices">
+                    <p class="card-product__price">1 990 ₽</p>
+                    <p class="card-product__old-price">257 000 ₽</p>
+                  </div>
+                  <div class="card-product__btns">
+                    <button class="card-product__one-click btn btn--dark" type="button" data-micromodal-trigger="modal-one-click">В 1 КЛИК</button>
+                    <button class="card-product__add-to-cart btn btn--primary" type="button" data-micromodal-trigger="modal-added-to-cart">
+                      <svg role="img" class="btn__icon">
+                        <use href="images/icons/sprite.svg#cart-add" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-products__slide slider__slide splide__slide">
+                <div class="card-product">
+                  <div class="card-product__badges">
+                    <span class="card-product__badge badge badge--success">скидка</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <button class="card-product__action action-card-product action-card-product--compare" type="button">
+                      <svg role="img" class="action-card-product__icon">
+                        <use href="images/icons/sprite.svg#compare" />
+                      </svg>
+                    </button>
+                    <button class="card-product__action action-card-product action-card-product--favorite is-active" type="button">
+                      <svg role="img" class="action-card-product__icon">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+                  </div>
+                  <a href="product.html" class="card-product__img-wrap">
+                    <img src="images/card-4.png" srcset="images/card-4.png 1x, images/card-4-2x.png 2x" alt="alt" class="card-product__img img-responsive" loading="lazy" width="152" height="106" />
+                  </a>
+                  <div class="card-product__title"><a href="product.html">Защитное стекло Remax ES-01 для iPhone 13 Pro/13/14 (С черной рамкой)</a></div>
+                  <div class="card-product__prices">
+                    <p class="card-product__price">1 990 ₽</p>
+                    <p class="card-product__old-price">257 000 ₽</p>
+                  </div>
+                  <div class="card-product__btns">
+                    <button class="card-product__one-click btn btn--dark" type="button" data-micromodal-trigger="modal-one-click">В 1 КЛИК</button>
+                    <button class="card-product__add-to-cart btn btn--primary" type="button" data-micromodal-trigger="modal-added-to-cart">
+                      <svg role="img" class="btn__icon">
+                        <use href="images/icons/sprite.svg#cart-add" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-products__arrows slider__arrows splide__arrows">
+            <button class="slider-products__arrow slider-products__arrow--prev slider__arrow slider__arrow--prev splide__arrow splide__arrow--prev" type="button">
+              <svg role="img">
+                <use href="images/icons/sprite.svg#arrow-left" />
+              </svg>
+            </button>
+            <button class="slider-products__arrow slider-products__arrow--next slider__arrow slider__arrow--next splide__arrow splide__arrow--next" type="button">
+              <svg role="img">
+                <use href="images/icons/sprite.svg#arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- prettier-ignore -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__brand brand-footer">
+        <img src="images/logo.svg" alt="alt" class="brand-footer__img img-responsive" loading="lazy" width="105" height="73" />
+        <p class="brand-footer__text">«Apple God» – магазин современной техники в Москве.</p>
+      </div>
+      <nav class="footer__menu menu-footer">
+        <ul class="menu-footer__list list-unstyled">
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Ремонт</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Реквизиты</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__socials socials socials--white">
+        <p class="socials__title">Мы в соц. сетях:</p>
+        <ul class="socials__items list-unstyled">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg role="img" class="socials__icon">
+                <use href="images/icons/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg role="img" class="socials__icon">
+                <use href="images/icons/sprite.svg#tg" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg role="img" class="socials__icon">
+                <use href="images/icons/sprite.svg#ig" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg role="img" class="socials__icon">
+                <use href="images/icons/sprite.svg#wa" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contacts contacts-footer">
+        <ul class="contacts-footer__items list-unstyled">
+          <li class="contacts-footer__item contacts-footer__item--bold">
+            <div class="contacts-footer__row">
+              <svg role="img" class="contacts-footer__icon">
+                <use href="images/icons/sprite.svg#location" />
+              </svg>
+              <p class="contacts-footer__text">г. Москва, Багратионовский пр., 7, корп. 20В</p>
+            </div>
+          </li>
+          <li class="contacts-footer__item contacts-footer__item--bold">
+            <a href="tel:+74951248600" class="contacts-footer__row">
+              <svg role="img" class="contacts-footer__icon">
+                <use href="images/icons/sprite.svg#telephone" />
+              </svg>
+              <p class="contacts-footer__text">+7 (495) 124 86 00</p>
+            </a>
+          </li>
+          <li class="contacts-footer__item">
+            <a href="mailto:sales@applegod.ru" class="contacts-footer__row">
+              <svg role="img" class="contacts-footer__icon">
+                <use href="images/icons/sprite.svg#mail" />
+              </svg>
+              <p class="contacts-footer__text">sales@applegod.ru</p>
+            </a>
+          </li>
+          <li class="contacts-footer__item">
+            <div class="contacts-footer__row">
+              <svg role="img" class="contacts-footer__icon">
+                <use href="images/icons/sprite.svg#clock" />
+              </svg>
+              <p class="contacts-footer__text">пн. – вс. 10:00-20:00</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="contacts-footer__btn btn btn--primary">Заказать звонок</a>
+      </div>
+      <div class="footer__ratings-wrap">
+        <div class="footer__ratings row">
+          <div class="footer__rating-col col-6">
+            <div class="footer__rating rating-footer">
+              <svg role="img" class="rating-footer__star">
+                <use href="images/icons/sprite.svg#star" />
+              </svg>
+              <div class="rating-footer__value">5</div>
+              <img src="images/yandex.svg" alt="alt" class="rating-footer__logo img-responsive" loading="lazy" />
+            </div>
+          </div>
+          <div class="footer__rating-col col-6">
+            <div class="footer__rating rating-footer">
+              <svg role="img" class="rating-footer__star">
+                <use href="images/icons/sprite.svg#star" />
+              </svg>
+              <div class="rating-footer__value">5</div>
+              <img src="images/google.svg" alt="alt" class="rating-footer__logo img-responsive" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__payment-methods">
+        <div class="footer__payment-method">
+          <img src="images/icons/dollars.svg" alt="alt" class="footer__payment-method-img img-responsive" loading="lazy" />
+        </div>
+        <div class="footer__payment-method">
+          <img src="images/icons/card.svg" alt="alt" class="footer__payment-method-img img-responsive" loading="lazy" />
+        </div>
+        <div class="footer__payment-method">
+          <img src="images/icons/sbp.svg" alt="alt" class="footer__payment-method-img img-responsive" loading="lazy" />
+        </div>
+        <div class="footer__payment-method">
+          <img src="images/icons/mastercard.svg" alt="alt" class="footer__payment-method-img img-responsive" loading="lazy" />
+        </div>
+        <div class="footer__payment-method">
+          <img src="images/icons/visa.svg" alt="alt" class="footer__payment-method-img img-responsive" loading="lazy" />
+        </div>
+        <div class="footer__payment-method">
+          <img src="images/icons/mir.svg" alt="alt" class="footer__payment-method-img img-responsive" loading="lazy" />
+        </div>
+      </div>
+      <ul class="footer__links list-unstyled">
+        <li><a href="#">Оферта</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+      </ul>
+      <p class="footer__copyright">Все права защищены. Информация на сайте не является публичной офертой.</p>
+      <p class="footer__devs">Разработка сайта – веб-студия PRICE-NT</p>
+    </div>
+  </footer>
+
+  <div class="modal micromodal-slide" id="modal-added-to-cart" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-added-to-cart-title">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+            <svg role="img" class="modal__close-icon">
+              <use href="images/icons/sprite.svg#close-thick"></use>
+            </svg>
+          </button>
+          <div class="product-modal-action">
+            <div class="product-modal-action__title" id="modal-added-to-cart-title">Товар добавлен в корзину</div>
+            <div class="product-modal-action__item item-product-modal">
+              <div class="item-product-modal__row">
+                <a href="product.html" class="item-product-modal__img-wrap">
+                  <img src="images/modal-1.png" srcset="images/modal-1.png 1x, images/modal-1-2x.png 2x" alt="alt" class="item-product-modal__img img-responsive" loading="lazy" width="77" height="78" />
+                </a>
+                <div class="item-product-modal__body">
+                  <div class="item-product-modal__title text-sm">
+                    <a href="product.html">Apple MacBook Air 15″ (M2, 8 Gb, 256 Gb SSD) Сияющая Звезда (MQKU3)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-modal-action__btns">
+              <button class="product-modal-action__btn btn btn--dark" type="button" data-micromodal-close>Продолжить покупки</button>
+              <a href="cart.html" class="product-modal-action__btn btn btn--primary">Перейти в корзину</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="modal-one-click" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-one-click-title">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+            <svg role="img" class="modal__close-icon">
+              <use href="images/icons/sprite.svg#close-thick"></use>
+            </svg>
+          </button>
+          <div class="product-modal-action">
+            <div class="product-modal-action__title" id="modal-one-click-title">Купить в один клик</div>
+            <div class="product-modal-action__item item-product-modal">
+              <div class="item-product-modal__row">
+                <a href="product.html" class="item-product-modal__img-wrap">
+                  <img src="images/modal-1.png" srcset="images/modal-1.png 1x, images/modal-1-2x.png 2x" alt="alt" class="item-product-modal__img img-responsive" loading="lazy" width="77" height="78" />
+                </a>
+                <div class="item-product-modal__body">
+                  <div class="item-product-modal__title text-sm">
+                    <a href="product.html">Apple MacBook Air 15″ (M2, 8 Gb, 256 Gb SSD) Сияющая Звезда (MQKU3)</a>
+                  </div>
+                </div>
+              </div>
+              <p class="item-product-modal__price">130 000 руб.</p>
+            </div>
+            <form class="product-modal-action__form form-one-click">
+              <input type="tel" class="form-one-click__control control" placeholder="Ваш телефон" />
+              <button class="form-one-click__submit btn btn--primary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

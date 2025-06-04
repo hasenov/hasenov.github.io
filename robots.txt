@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /projects/
+Allow: /projects/$
+Disallow: /projects/*
+
+Disallow: /apple-god-mobile/
+
+Sitemap: https://hasenov.github.io/sitemap.xml
