@@ -49,48 +49,48 @@
   </url>
 
   <url>
-    <loc>https://hasenov.github.io/projects/</loc>
+    <loc>https://hasenov.github.io/projects</loc>
     <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link 
         rel="alternate" 
         hreflang="ru" 
-        href="https://hasenov.github.io/ru/projects/" />
+        href="https://hasenov.github.io/ru/projects" />
     <xhtml:link 
         rel="alternate" 
         hreflang="kk" 
-        href="https://hasenov.github.io/kk/projects/" />
+        href="https://hasenov.github.io/kk/projects" />
   </url>
 
   <url>
-    <loc>https://hasenov.github.io/ru/projects/</loc>
+    <loc>https://hasenov.github.io/ru/projects</loc>
     <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link 
         rel="alternate" 
         hreflang="en" 
-        href="https://hasenov.github.io/projects/" />
+        href="https://hasenov.github.io/projects" />
     <xhtml:link 
         rel="alternate" 
         hreflang="kk" 
-        href="https://hasenov.github.io/kk/projects/" />
+        href="https://hasenov.github.io/kk/projects" />
   </url>
 
   <url>
-    <loc>https://hasenov.github.io/kk/projects/</loc>
+    <loc>https://hasenov.github.io/kk/projects</loc>
     <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link 
         rel="alternate" 
         hreflang="en" 
-        href="https://hasenov.github.io/projects/" />
+        href="https://hasenov.github.io/projects" />
     <xhtml:link 
         rel="alternate" 
         hreflang="ru" 
-        href="https://hasenov.github.io/ru/projects/" />
+        href="https://hasenov.github.io/ru/projects" />
   </url>
 
 </urlset>

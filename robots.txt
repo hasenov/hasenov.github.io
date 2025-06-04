@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /projects/$
+Allow: /projects$
 Disallow: /projects/*
 
 Disallow: /apple-god-mobile/
