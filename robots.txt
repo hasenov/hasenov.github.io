@@ -4,6 +4,5 @@ Disallow: /projects/*
 
 Disallow: /apple-god-mobile/
 Disallow: /amdor/
-Disallow: /amdor-test/
 
 Sitemap: https://hasenov.github.io/sitemap.xml
