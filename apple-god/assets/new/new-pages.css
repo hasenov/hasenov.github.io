@@ -173,7 +173,11 @@
 
 /* Ремонт START */
 .section-repair-showcase {
-    background-color: #F9F1E4;
+    background-color: #FCF9F3;
+    background-image: url(./bg-gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 .repair-showcase {
 }
@@ -384,14 +388,11 @@
     z-index: 1;
     overflow: hidden;
     height: 100%;
-}
-.callback-popular-services::before {
-    content: '';
-    display: block;
-    position: absolute;
-    inset: 0;
-    background: #FBF5ED;
-    z-index: -1;
+    background-color: #FCF9F3;
+    background-image: url(./bg-gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 .callback-popular-services__title {
     max-width: 28ch;
