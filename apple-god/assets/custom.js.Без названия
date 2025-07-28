@@ -1,0 +1,602 @@
+seconds = 10;
+function startTimer(){
+    if (seconds <= 0) {
+        clearInterval(timer);
+        $('#modal-success .hystmodal__close').click();
+        seconds = 10;
+        $("#timer").html('10');
+    } else {
+        $("#timer").html(seconds);
+        seconds = seconds - 1;
+    }
+}
+
+function addFavorite(id, action)
+{
+    var param = 'id='+id+"&action="+action;
+    $.ajax({
+        url: '/ajax/favorites.php',
+        type: "GET",
+        dataType: "html",
+        data: param,
+        success: function(response) {
+            var result = $.parseJSON(response);
+            console.log('result='+result);
+            if(result == 1){
+                $('.favor[data-id="'+id+'"]').addClass('active');
+                var wishCount = parseInt($('.middle-header__favorite .cart-btn__count').html()) + 1;
+                $('.middle-header__favorite .cart-btn__count').html(wishCount);
+            }
+            if(result == 2){
+                $('.favor[data-id="'+id+'"]').removeClass('active');
+                var wishCount = parseInt($('.middle-header__favorite .cart-btn__count').html()) - 1;
+                $('.middle-header__favorite .cart-btn__count').html(wishCount);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+            console.log('Error: '+ errorThrown);
+        }
+    });
+}
+
+function deleteFavorite(id)
+{
+    var param = 'id='+id;
+    $.ajax({
+        url:     '/ajax/delete-favorites.php',
+        type:     "GET",
+        dataType: "html",
+        data: param,
+        success: function(response) {
+
+            $('.wishlist__delete[data-id="'+id+'"]').closest('.product-row--favorite').remove();
+            var wishCount = parseInt($('.middle-header__favorite .cart-btn__count').html()) - 1;
+            $('.middle-header__favorite .cart-btn__count').html(wishCount);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+            console.log('Error: '+ errorThrown);
+        }
+    });
+}
+
+function deleteCompare(id)
+{
+    var AddedGoodId = id;
+    $.get("/ajax/delete-compare.php",
+        {
+            action: "DELETE_FROM_COMPARE_LIST", id: AddedGoodId},
+        function(data) {
+            var compareCount = parseInt($('.middle-header__compare .cart-btn__count').html()) - 1;
+            $('.middle-header__compare .cart-btn__count').html(compareCount);
+            $('.compare').find('div[data-id="'+id+'"]').remove();
+        }
+    );
+}
+
+const ModalSuccesss = new HystModal({
+    linkAttributeName: 'data-hystmodal',
+    catchFocus: true,
+    waitTransitions: true,
+    closeOnEsc: true,
+});
+function initFormAjax() {
+    $('input[name=PHONE]').inputmask({"mask": "+7 (999) 999-99-99"},{ showMaskOnHover: false });
+    $('.ajax_form').on('submit', function (event) {
+        event.preventDefault();
+        var form = $(this);
+        $('.messages').html('')
+        form.find('.success-text,.error-text').remove();
+
+        var formData = new FormData(form[0]);
+
+        formData.append('recaptcha_token', window.recaptcha.getToken());
+        var params = $(form).serializeArray();
+        $.each(params, function (i, val) {
+            formData.append(val.name, val.value);
+        });
+        $.ajax({
+            processData: false,
+            contentType: false,
+            type: 'POST',
+            mimeType: 'multipart/form-data',
+            url: $(this).attr('action'),
+            data: formData,
+            error: function (data) {
+                console.log('err', data)
+            },
+            success: function (data) {
+                var messages = $(data).find('.message');
+                if(messages.length){
+                    $('.messages').append(messages);
+                }
+                let el = $(data).find(`[data-id="${form.attr('data-id')}"]`);
+                if (el) {
+                    form.html($(el).html());
+                }
+                $('input,textarea, select').on('change', function (){
+                    $(this).removeClass('error')
+                })
+                $('input,textarea, select').on('keyup', function (){
+                    $(this).removeClass('error')
+                })
+                $('input[name=PHONE]').inputmask({"mask": "+7 (999) 999-99-99"},{ showMaskOnHover: false });
+
+            }
+        });
+        return false;
+    })
+}
+
+$(document).ready(function(){
+    initFormAjax();
+    $('.mob-filter-open').on('click', function (e){
+        $('.category__col--filter ').toggleClass('active');
+    });
+
+    // --------------------------
+    $('.catalog-mob-menu-link.parent').on('click', function (e){
+        const id = $(this).attr('data-id');
+        console.log('id', id, $(`.catalog-mob-menu-drop[data-parent="${id}"]`))
+        $('.catalog-mob-menu-root').css('display', 'none');
+        $(`.catalog-mob-menu-drop`).css('display', 'none');
+        $(`.catalog-mob-menu-drop[data-parent="${id}"]`).css('display', 'block');
+    });
+
+    $('.catalog-mob-menu-back').on('click', function (e){
+        const id = $(this).attr('data-parent');
+        $('.catalog-mob-menu-root').css('display', 'none');
+        $(`.catalog-mob-menu-drop`).css('display', 'none');
+        if(id) {
+            $(`.catalog-mob-menu-drop[data-parent="${id}"]`).css('display', 'block');
+        }else{
+            $('.catalog-mob-menu-root').css('display', 'block');
+        }
+    });
+
+    $('.mobile-menu__close').on('click', function (e){
+        $(`.catalog-mob-menu-drop`).css('display', 'none');
+        $('.catalog-mob-menu-root').css('display', 'block');
+    });
+    // --------------------------
+
+    if($('#modal-work').hasClass('hystmodal--active')){
+        $('#modal-work').removeClass('hystmodal--active');
+    } else {
+        if($.cookie('poupup') == null ){
+            $('#modal-work').addClass('hystmodal--active');
+            $.cookie('poupup', 'Y', { expires: 7, path: '/' });
+        }
+    }
+
+    $('input[name=PHONE]').inputmask({"mask": "+7 (999) 999-99-99"},{ showMaskOnHover: false });
+    $('input[name="REGISTER[PHONE_NUMBER]"]').inputmask({"mask": "+79999999999"},{ showMaskOnHover: false });
+    $('.middle-header__minicart').delegate('.minicart__cart-btn','click',function(event){
+        event.preventDefault();
+
+        if($(this).closest('.middle-header__minicart').hasClass('active')){
+            $(this).closest('.middle-header__minicart').removeClass('active');
+        } else{
+            $(this).closest('.middle-header__minicart').addClass('active');
+            $.ajax({
+                type: "POST",
+                url: "/ajax/update-basket.php",
+                data: {'ajax_get_page': 'y'},
+                dataType: "html",
+                success: function (data) {
+                    $('.minicart__inner').empty();
+                    $('.minicart__inner').append(data);
+                }
+            });
+        }
+
+    });
+
+    $('body').on('click', function(e) {
+
+        if (!$(e.target).closest(".middle-header__minicart").length && !$(e.target).closest(".minicart__item").length) {
+            $('.middle-header__minicart').removeClass('active');
+        }
+
+    });
+
+    $('.form__price-submit').click(function(){
+        var flag = true;
+
+        if(/\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}/g.test($(".form__price input[name=PHONE]").val())){
+            $(".form__price  input[name=PHONE]").removeClass('form__error');
+        } else {
+            $(".form__price  input[name=PHONE]").val('');
+            $(".form__price  input[name=PHONE]").addClass('form__error');
+            $(".form__price input[name=PHONE]").focus();
+            flag = false;
+        }
+
+
+        if($(".form__price  input[name=NAME]").val().length < 3 || $(".form__price input[name=NAME]").val().length > 50){
+            $(".form__price input[name=NAME]").addClass('form__error');
+            $(".form__price input[name=NAME]").focus();
+            flag = false;
+        }
+        else{
+            $(".form__price input[name=NAME]").removeClass('form__error');
+        }
+
+        if(flag){
+            var formData = new FormData($('form.form__price')[0]);
+
+            $.ajax({
+                type: 'POST',
+                url: $('.form__price').attr('action'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+
+                    $('.form__price input').val('');
+                    $('#modal-price-drop .hystmodal__close').click();
+                    ModalSuccesss.open("#modal-success");
+                    timer = setInterval(startTimer, 1000);
+
+                    return false;
+                },
+                error:  function(xhr, str){
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+                }
+            });
+        }
+
+    });
+
+
+    $('.form__callback-submit').click(function(){
+        var flag = true;
+
+        if(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})/g.test($(".form__callback input[name=EMAIL]").val())){
+            $(".form__callback input[name=EMAIL]").removeClass('form__error');
+        } else {
+            $(".form__callback input[name=EMAIL]").addClass('form__error');
+            $(".form__callback input[name=EMAIL]").focus();
+            flag = false;
+        }
+
+        if(/\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}/g.test($(".form__callback input[name=PHONE]").val())){
+            $(".form__callback  input[name=PHONE]").removeClass('form__error');
+        } else {
+            $(".form__callback  input[name=PHONE]").val('');
+            $(".form__callback  input[name=PHONE]").addClass('form__error');
+            $(".form__callback input[name=PHONE]").focus();
+            flag = false;
+        }
+
+        if($(".form__callback  input[name=NAME]").val().length < 3 || $(".form__callback input[name=NAME]").val().length > 50){
+            $(".form__callback input[name=NAME]").addClass('form__error');
+            $(".form__callback input[name=NAME]").focus();
+            flag = false;
+        }
+        else{
+            $(".form__callback input[name=NAME]").removeClass('form__error');
+        }
+
+        if(flag){
+            var formData = new FormData($('form.form__callback')[0]);
+
+            $.ajax({
+                type: 'POST',
+                url: $('.form__callback').attr('action'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+                    $('.form__callback input').val('');
+                    ModalSuccesss.open("#modal-success");
+                    timer = setInterval(startTimer, 1000);
+
+                    return false;
+                },
+                error:  function(xhr, str){
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+                }
+            });
+        }
+
+    });
+
+    $('.summary-product__price-drop').click(function(){
+        var nameProduct = $('h1').text();
+        var productId = $(this).attr('data-id');
+        $('.form__price').find('.form-modal__text').text(nameProduct);
+        $('.form__price').find('input[NAME=PRODUCT]').val(productId);
+        $('.form__price').find('input[NAME=PRODUCT_NAME]').val(nameProduct);
+
+    });
+    $('.summary-product__one-click').click(function(){
+        var productId = $(this).attr('data-id');
+        var nameProduct = $('h1').text();
+        var priceProduct = $('.summary-product__price').html();
+        var pictureProduct = $('.item-slider-product').find('img').attr('src');
+        $('.form__buy-one-click').find('.item-minicart__title a').text(nameProduct);
+        $('.form__buy-one-click').find('.form-one-click__price').html(priceProduct);
+        $('.form__buy-one-click').find('.item-minicart__img').attr('src', pictureProduct);
+        $('.form__buy-one-click').find('input[NAME=PRODUCT]').val(productId);
+        $('.form__buy-one-click').find('input[NAME=PRODUCT_NAME]').val(nameProduct);
+    });
+
+
+    $('.card-product__one-click').click(function(){
+        var productId = $(this).attr('data-id');
+        var nameProduct = $(this).closest('.products__col').find('.card-product__title a').text();
+        var priceProduct = $(this).closest('.products__col').find('.card-product__price').html();
+        var pictureProduct = $(this).closest('.products__col').find('.card-product__img').attr('src');
+        $('.form__buy-one-click').find('.item-minicart__title a').text(nameProduct);
+        $('.form__buy-one-click').find('.form-one-click__price').html(priceProduct);
+        $('.form__buy-one-click').find('.item-minicart__img').attr('src', pictureProduct);
+        $('.form__buy-one-click').find('input[NAME=PRODUCT]').val(productId);
+        $('.form__buy-one-click').find('input[NAME=PRODUCT_NAME]').val(nameProduct);
+    });
+
+
+    $('.form__buy-one-click-submit').click(function(e){
+        var flag = true;
+
+        if(/\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}/g.test($(".form__buy-one-click input[name=PHONE]").val())){
+            $(".form__buy-one-click  input[name=PHONE]").removeClass('form__error');
+        } else {
+            $(".form__buy-one-click  input[name=PHONE]").val('');
+            $(".form__buy-one-click  input[name=PHONE]").addClass('form__error');
+            $(".form__buy-one-click input[name=PHONE]").focus();
+            flag = false;
+        }
+
+        if(flag){
+            var formData = new FormData($('form.form__buy-one-click')[0]);
+
+            $.ajax({
+                type: 'POST',
+                url: $('.form__buy-one-click').attr('action'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+                    $('.form__buy-one-click input').val('');
+                    $('#modal-one-click .hystmodal__close').click();
+                    ModalSuccesss.open("#modal-success");
+                    timer = setInterval(startTimer, 1000);
+                    return false;
+                },
+                error:  function(xhr, str){
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+                }
+            });
+        }
+
+    });
+
+    // $('input[name="DELIVERY_ID"]').click(function(){
+    //     var radio = $(this).val();
+    //
+    //     if(radio == '2'){
+    //         $('input[name="DELIVERY_PRICE"]').val(490);
+    //         $('.input__address').removeClass('input__hidden');
+    //     } else {
+    //         $('input[name="DELIVERY_PRICE"]').val(0);
+    //         $('.input__address').addClass('input__hidden');
+    //     }
+    // });
+    //
+    // $('input[name="CONFIRMATION"]').click(function(){
+    //     if ($(this).is(':checked')){
+    //        $(this).val('Y');
+    //     } else {
+    //         $(this).val('N');
+    //     }
+    // });
+
+    // $('.payment-method__btn').click(function(){
+    //     $('input[name=PAY_SYSTEM_ID]').removeAttr('checked');
+    //
+    //     $(this).closest('.payment-method__btn-wrap').find('input').attr('checked', 'checked');
+    // });
+
+    // $('.personal-type__btn').click(function(){
+    //     $('.personal-type__btn').removeClass('is-active');
+    //     $('input[name=PERSONAL_TYPE]').removeAttr('checked');
+    //     $(this).closest('.payment-method__btn-wrap').find('.personal-type__btn').addClass('is-active');
+    //     $(this).closest('.payment-method__btn-wrap').find('input').attr('checked', 'checked');
+    //
+    //     if($(this).text() == 'Юридическое лицо'){
+    //         console.log('222');
+    //         $('.personal__legal').removeClass('input__hidden');
+    //     } else {
+    //         console.log('333');
+    //         $('.personal__legal').addClass('input__hidden');
+    //     }
+    // });
+
+    $('.product__soputs_action_buy').click(function (e) {
+        e.preventDefault();
+        let id = $(this).attr('data-id');
+        let add = "Y";
+        let count = 1;
+        $.ajax({
+            url: '/ajax/addcart.php',
+            type: 'post',
+            data: {
+                id: id,
+                add: add,
+                count: count
+            },
+            error: function (data) {
+                console.log(data);
+            },
+            success: function (data) {
+                BX.onCustomEvent('OnBasketChange');
+            }
+        });
+    });
+
+    $("body").delegate('.favor','click', function(e) {
+        e.preventDefault();
+        var favorID = $(this).attr('data-id');
+        if($(this).hasClass('active'))
+        {
+            var doAction = 'delete';
+        } else {
+            var doAction = 'add';
+        }
+        addFavorite(favorID, doAction);
+    });
+
+
+
+    $("body").delegate('.wishlist__delete','click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('data-id');
+        deleteFavorite(id);
+    });
+
+    $('.form__call-submit').click(function(){
+        var flag = true;
+
+        if(/\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}/g.test($(".form__call input[name=PHONE]").val())){
+            $(".form__call  input[name=PHONE]").removeClass('form__error');
+        } else {
+            $(".form__call input[name=PHONE]").val('');
+            $(".form__call input[name=PHONE]").addClass('form__error');
+            $(".form__call input[name=PHONE]").focus();
+            flag = false;
+        }
+
+        if($(".form__call input[name=NAME]").val().length < 3 || $(".form__call input[name=NAME]").val().length > 50){
+            $(".form__call input[name=NAME]").addClass('form__error');
+            $(".form__call input[name=NAME]").focus();
+            flag = false;
+        }
+        else{
+            $(".form__call input[name=NAME]").removeClass('form__error');
+        }
+
+        if(flag){
+            var formData = new FormData($('form.form__call')[0]);
+
+            $.ajax({
+                type: 'POST',
+                url: $('.form__call').attr('action'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+                    $('.form__call input').val('');
+                    $('#modal-callback .hystmodal__close').click();
+                    ModalSuccesss.open("#modal-success");
+                    timer = setInterval(startTimer, 1000);
+
+                    return false;
+                },
+                error:  function(xhr, str){
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+                }
+            });
+        }
+
+    });
+
+    $('body').delegate('.summary-product__add-to-cart','click',function(){
+        var nameProduct = $('h1').text();
+        var pictureProduct = $('.item-slider-product').find('img').attr('src');
+        $('.modal-basket-add').find('.item-minicart__title a').text(nameProduct);
+        $('.modal-basket-add').find('.item-minicart__img').attr('src', pictureProduct);
+    });
+
+
+    $('body').delegate('.product__add-basket','click',function(){
+        var nameProduct = $(this).closest('.products__col').find('.card-product__title a').text();
+        var pictureProduct = $(this).closest('.products__col').find('.card-product__img').attr('src');
+        $('.modal-basket-add').find('.item-minicart__title a').text(nameProduct);
+        $('.modal-basket-add').find('.item-minicart__img').attr('src', pictureProduct);
+    });
+
+    $('body').delegate('.product__add-basket-wishlist','click',function(){
+
+        var nameProduct = $(this).closest('.product-rows__item').find('.product-row__title a').text();
+        var pictureProduct = $(this).closest('.product-rows__item').find('.product-row__img').attr('src');
+        $('.modal-basket-add').find('.item-minicart__title a').text(nameProduct);
+        $('.modal-basket-add').find('.item-minicart__img').attr('src', pictureProduct);
+    });
+
+
+    $('.category__menu a.category__menu-link span').click(function(e){
+        if($(this).parent().next('div.submenu').length > 0){
+            e.preventDefault();
+            $(this).parent().toggleClass('active').next().slideToggle();
+        }
+    })
+
+    $('#modal-work .modal__close').click(function(){
+        $('#modal-work').removeClass('hystmodal--active');
+    });
+
+    $('.category__mobile .category__menu-item').click(function(){
+
+       if($(this).find('.submenu').hasClass('open')){
+           $(this).find('.submenu').removeClass('open');
+
+       } else {
+           $('.category__mobile .category__menu-item').find('.submenu').removeClass('open');
+           $(this).find('.submenu').addClass('open');
+       }
+    });
+
+    $('.search__icon-mobile').click(function(){
+        $('.popup-search').addClass('is-active');
+    });
+
+    $('.popup-search .mobile-menu__close').click(function(){
+        $('.popup-search').removeClass('is-active');
+    });
+
+    $('.personal__submit').click(function(){
+
+        var flag = true;
+
+        if(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})/g.test($(".auth__form input[name=EMAIL]").val())){
+            $(".personal__form input[name=EMAIL]").removeClass('form__input-error');
+        } else {
+            $(".auth__form input[name=EMAIL]").addClass('form__input-error');
+            $(".auth__form input[name=EMAIL]").focus();
+            flag = false;
+        }
+
+        if($(".auth__form input[name=NAME]").val().length < 3 || $(".auth__form input[name=NAME]").val().length > 50){
+            $(".auth__form input[name=NAME]").addClass('form__input-error');
+            $(".auth__form input[name=NAME]").focus();
+            flag = false;
+        }
+        else{
+            $(".auth__form input[name=NAME]").removeClass('form__input-error');
+        }
+
+
+        if(flag){
+            var formData = new FormData($('form.auth__form')[0]);
+
+            $.ajax({
+                type: 'POST',
+                url: $('.auth__form').attr('action'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+                    $('#modal-success .modal-success__title').text('Ваши личные данные обновлены!');
+                    $('#modal-success .modal-success__desc').remove();
+                    ModalSuccesss.open("#modal-success");
+                    timer = setInterval(startTimer, 1000);
+                    return false;
+                },
+                error:  function(xhr, str){
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+                }
+            });
+        }
+    });
+
+});
