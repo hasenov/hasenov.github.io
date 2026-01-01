@@ -2,8 +2,6 @@ User-agent: *
 Allow: /projects$
 Disallow: /projects/*
 
-Disallow: /apple-god/
-Disallow: /apple-god-mobile/
-Disallow: /amdor/
+Disallow: /kuber-lp/
 
 Sitemap: https://hasenov.github.io/sitemap.xml
