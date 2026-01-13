@@ -1,0 +1,476 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Главная</title>
+        <meta name="robots" content="noindex" />
+        <meta name="description" content="описание" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="theme-color" content="#2094F3" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+
+    <body class="antialiased">
+        <header class="py-2 sm:px-2 sm:py-6">
+            <div class="container flex min-h-10 items-center justify-between gap-2 max-sm:pr-4">
+                <a href="index.html" class="max-w-40 sm:max-w-[13.125rem]">
+                    <img src="images/logo.svg" alt="logo" class="w-full" width="210" height="33" />
+                </a>
+                <a href="tel:88002502402" class="flex shrink-0 items-center gap-1.5 text-sm font-semibold text-gray-500 transition-colors hover:text-primary-500 sm:gap-2 sm:text-xl">
+                    <svg class="size-4 shrink-0 sm:size-5" aria-hidden="true">
+                        <use href="images/icons/sprite.svg#phone" />
+                    </svg>
+                    8 800 250-24-02
+                </a>
+            </div>
+        </header>
+
+        <main class="flex flex-col">
+            <!-- Hero -->
+            <section class="order-1 mb-6 mt-8 sm:my-12 lg:my-16">
+                <div class="container flex flex-col gap-6 sm:gap-8">
+                    <div class="flex flex-col gap-8 sm:items-center">
+                        <div class="flex w-[73ch] max-w-full shrink-0 flex-col gap-4 sm:gap-6 lg:gap-7">
+                            <h1 class="text-[1.75rem] font-extrabold max-lg:leading-10 max-sm:leading-[2.125rem] sm:text-[2rem] lg:text-4xl">KUBER — автоперевозчик контейнеров</h1>
+                            <div class="font-semibold text-gray-500 max-lg:leading-tight lg:text-xl">
+                                <p>Предлагаем автовывоз и&nbsp;сотрудничество на&nbsp;постоянной&nbsp;основе</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-6 sm:items-center">
+                            <form class="flex max-w-full shrink-0 flex-col gap-2 sm:w-[26.25rem]">
+                                <div class="text-sm font-semibold text-gray-500">Отправьте номер, мы перезвоним</div>
+                                <div class="relative max-sm:flex max-sm:flex-col max-sm:gap-2">
+                                    <div class="input-wrap input-wrap--primary group">
+                                        <input type="tel" id="heroPhone" class="input sm:pr-[calc(9.75rem+3rem)]" placeholder="+7 (_ _ _) _ _ _ _ _ _ _" required />
+                                        <label for="heroPhone" class="input-floating-label">Введите номер</label>
+                                        <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-white/60 transition-all hover:text-white/70 sm:right-[calc(9.75rem+1rem)]" aria-label="Очистить поле">
+                                    <svg class="size-full" aria-hidden="true">
+                                        <use href="images/icons/sprite.svg#x" />
+                                    </svg>
+                                </button> -->
+                                    </div>
+                                    <button type="submit" class="btn btn--primary w-full sm:absolute sm:bottom-0 sm:right-0 sm:top-0 sm:w-[9.75rem]">Отправить</button>
+                                </div>
+                            </form>
+                            <div class="flex flex-col gap-3" id="hero-socials">
+                                <div class="text-sm font-semibold text-gray-500">Или напишите нам в мессенжерах</div>
+                                <div class="flex flex-wrap gap-4">
+                                    <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 underline underline-offset-4 transition-colors hover:text-primary-500">
+                                        <img src="images/icons/telegram.svg" alt="alt" class="w-7 shrink-0" width="28" height="28" />
+                                        Telegram
+                                    </a>
+                                    <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 underline underline-offset-4 transition-colors hover:text-primary-500">
+                                        <img src="images/icons/whatsapp.svg" alt="alt" class="w-7 shrink-0" width="28" height="28" />
+                                        WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <picture class="max-sm:-mx-6" id="hero-img">
+                        <source media="(min-width: 64rem)" srcset="images/hero.png 1254w, images/hero@2x.png 2508w" sizes="(min-width: 84.375rem) 78.375rem, calc(100vw - 6rem)" />
+                        <source srcset="images/hero-tablet.png 672w, images/hero-tablet@2x.png 1344w" sizes="(min-width: 48rem) calc(100vw - 6rem), (min-width: 40rem) calc(100vw - 3rem), 100vw" />
+                        <img src="images/hero.png" alt="Картинка первого экрана" class="w-full max-sm:max-w-[calc(100%+3rem)]" fetchpriority="high" width="1254" height="334" />
+                    </picture>
+                    <picture class="max-sm:hidden">
+                        <source srcset="images/hero-lines-tablet.svg" media="(max-width: 63.99rem)" />
+                        <img src="images/hero-lines.svg" alt="Этапы доставки: Терминал, Склад, Депо" class="w-full" width="1254" height="63" />
+                    </picture>
+                </div>
+            </section>
+
+            <!-- О нас -->
+            <section class="order-2 pt-6 sm:bg-gray-100 sm:pt-14">
+                <div class="container">
+                    <div class="grid grid-cols-1 gap-[clamp(2rem,12.195vw-5.805rem,4.5rem)] sm:rounded-3xl sm:bg-white sm:px-[clamp(3.5rem,19.512vw-8.988rem,7.5rem)] sm:py-12 lg:grid-cols-[1.14fr_1fr] lg:py-14">
+                        <div class="flex flex-col gap-6 sm:gap-8">
+                            <h2 class="text-2xl font-extrabold sm:text-4xl">Немного о нас</h2>
+                            <div class="flex flex-col gap-2 max-sm:-mt-2 sm:gap-3" id="about-company-info">
+                                <div class="font-extrabold">OOO «КУБЕР»</div>
+                                <p class="text-sm leading-[1.3]">Находимся по адресу: г. Москва, ул. Научный пр-д., д. 17</p>
+                            </div>
+                            <div class="flex flex-col gap-4 sm:gap-6">
+                                <div class="font-extrabold sm:text-xl sm:leading-6">Работаем в таких городах как:</div>
+                                <div class="flex flex-wrap gap-x-2 gap-y-2 sm:gap-x-3">
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Москва</div>
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Санкт-Петербург</div>
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Новосибирск</div>
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Красноярск</div>
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Екаринбург</div>
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Владивосток</div>
+                                    <div class="rounded-xl bg-primary-100 px-3 py-2 text-sm font-semibold text-primary-700">Казань</div>
+                                    <div class="rounded-xl bg-primary-200/40 px-3 py-2 text-sm font-semibold text-primary-700">И другие</div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-8">
+                                <form class="flex max-w-[26.25rem] shrink-0 flex-col gap-2">
+                                    <div class="text-sm font-semibold text-gray-500">Отправьте номер, мы перезвоним</div>
+                                    <div class="relative max-sm:flex max-sm:flex-col max-sm:gap-2">
+                                        <div class="input-wrap input-wrap--primary group">
+                                            <input type="tel" id="aboutPhone" class="input sm:pr-[10.75rem]" placeholder="+7 (_ _ _) _ _ _ _ _ _ _" required />
+                                            <label for="aboutPhone" class="input-floating-label">Введите номер</label>
+                                            <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-white/60 transition-all hover:text-white/70 sm:right-[calc(9.75rem+1rem)]" aria-label="Очистить поле">
+                                        <svg class="size-full" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#x" />
+                                        </svg>
+                                    </button> -->
+                                        </div>
+                                        <button type="submit" class="btn btn--primary w-full sm:absolute sm:bottom-0 sm:right-0 sm:top-0 sm:w-[9.75rem]">Отправить</button>
+                                    </div>
+                                </form>
+                                <div class="flex flex-col gap-3">
+                                    <div class="text-sm font-semibold text-gray-500">Или напишите нам в мессенжерах</div>
+                                    <div class="flex flex-wrap gap-4">
+                                        <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 underline underline-offset-4 transition-colors hover:text-primary-500">
+                                            <img src="images/icons/telegram.svg" alt="alt" class="w-7 shrink-0" width="28" height="28" />
+                                            Telegram
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 underline underline-offset-4 transition-colors hover:text-primary-500">
+                                            <img src="images/icons/whatsapp.svg" alt="alt" class="w-7 shrink-0" width="28" height="28" />
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-6 sm:max-lg:gap-4" id="about-stats-cards">
+                            <div class="flex flex-col gap-2 rounded-3xl bg-gray-100 px-6 py-4 sm:gap-3 sm:px-8 sm:py-6 md:px-[4.5rem] md:py-10 xl:px-[5.5rem]">
+                                <div class="title-lg max-sm:text-base max-sm:font-bold max-sm:leading-[1.1]">5 лет на рынке</div>
+                                <div class="max-sm:text-sm"><strong class="text-primary-700">Гарантируем</strong> наличие машин</div>
+                                <div class="text-gray-500 max-sm:leading-[1.3]">В автопарке свои авто и арендованные сцепки</div>
+                            </div>
+                            <div class="flex flex-col gap-4 rounded-3xl bg-gray-100 px-6 py-4 sm:gap-[1.625rem] sm:px-8 sm:py-6 md:px-[4.5rem] md:py-10 xl:px-[5.5rem]">
+                                <div class="flex items-center gap-4">
+                                    <span class="title-lg max-sm:text-base max-sm:font-normal">Рейтинг</span>
+                                    <svg class="h-5 w-24 shrink-0 max-sm:text-primary-500 sm:h-6 sm:w-[7.1875rem]" role="img" aria-labelledby="logo-title">
+                                        <title id="logo-title">KUBER</title>
+                                        <use href="images/icons/sprite.svg#logo" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center gap-3 sm:gap-6">
+                                    <div class="flex gap-1">
+                                        <svg class="size-6 shrink-0 text-yellow sm:size-8" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#star" />
+                                        </svg>
+                                        <svg class="size-6 shrink-0 text-yellow sm:size-8" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#star" />
+                                        </svg>
+                                        <svg class="size-6 shrink-0 text-yellow sm:size-8" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#star" />
+                                        </svg>
+                                        <svg class="size-6 shrink-0 text-yellow sm:size-8" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#star" />
+                                        </svg>
+                                        <svg class="size-6 shrink-0 text-yellow sm:size-8" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#star" />
+                                        </svg>
+                                    </div>
+                                    <div class="font-bold leading-9 max-sm:leading-tight sm:text-[1.75rem]">5.0</div>
+                                </div>
+                                <div class="flex items-center gap-6 lg:justify-between">
+                                    <div class="rounded-xl bg-gradient-to-t from-primary-200/20 to-primary-600/20 px-3 py-2 text-sm font-semibold text-primary-600">код 333</div>
+                                    <div class="font-semibold sm:text-xl">на <a href="#" class="transition-colors hover:text-primary-600 sm:underline sm:underline-offset-4">ATI.SU</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Отзывы -->
+            <section class="order-4 overflow-hidden bg-gray-100 pb-2 pt-6 sm:order-3 sm:pb-14 sm:pt-10">
+                <div class="container">
+                    <div class="splide slider-reviews flex flex-col gap-4 lg:gap-6" role="region" aria-labelledby="reviews-heading">
+                        <div class="flex items-center justify-between gap-2">
+                            <h2 class="font-extrabold max-sm:leading-tight sm:text-2xl" id="reviews-heading">Отзывы</h2>
+                            <div class="splide__arrows flex gap-2">
+                                <button class="splide__arrow splide__arrow--prev flex size-10 items-center justify-center rounded-xl bg-white text-primary-500 ring-1 ring-inset ring-white transition disabled:text-gray-500 disabled:ring-gray-200 sm:size-12" type="button">
+                                    <svg class="size-5 shrink-0 sm:size-6" aria-hidden="true">
+                                        <use href="images/icons/sprite.svg#chevron-left" />
+                                    </svg>
+                                </button>
+                                <button class="splide__arrow splide__arrow--next flex size-10 items-center justify-center rounded-xl bg-white text-primary-500 ring-1 ring-inset ring-white transition disabled:text-gray-500 disabled:ring-gray-200 sm:size-12" type="button">
+                                    <svg class="size-5 shrink-0 sm:size-6" aria-hidden="true">
+                                        <use href="images/icons/sprite.svg#chevron-right" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="splide__track reviewsSliderOverflow:overflow-visible">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="flex h-full w-[25.458125rem] max-w-[calc(100vw-3rem)] flex-col gap-4 rounded-3xl bg-white p-6 sm:gap-5 sm:p-10">
+                                        <div class="flex flex-col gap-1 sm:gap-2">
+                                            <div class="text-xl font-bold sm:text-2xl sm:font-extrabold">Артём</div>
+                                            <div class="font-semibold text-gray-500 sm:text-xl">Нева-Балт Спб, ООО</div>
+                                        </div>
+                                        <div class="text-gray-600/80">
+                                            <p>КУБЕР очень порядочный и ответственный партнёр! Работали не один раз. Всё организованно, быстро, адекватно.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex h-full w-[25.458125rem] max-w-[calc(100vw-3rem)] flex-col gap-4 rounded-3xl bg-white p-6 sm:gap-5 sm:p-10">
+                                        <div class="flex flex-col gap-1 sm:gap-2">
+                                            <div class="text-xl font-bold sm:text-2xl sm:font-extrabold">Георгий</div>
+                                            <div class="font-semibold text-gray-500 sm:text-xl">ТРАНСПОРТНАЯ КОМПАНИЯ МОСПРИНТРАНС, ООО</div>
+                                        </div>
+                                        <div class="text-gray-600/80">
+                                            <p>Работали впервые с данной компанией и остались довольны сотрудничеством. Ответственные, все вопросы решались быстро и чётко.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex h-full w-[25.458125rem] max-w-[calc(100vw-3rem)] flex-col gap-4 rounded-3xl bg-white p-6 sm:gap-5 sm:p-10">
+                                        <div class="flex flex-col gap-1 sm:gap-2">
+                                            <div class="text-xl font-bold sm:text-2xl sm:font-extrabold">Татьяна</div>
+                                            <div class="font-semibold text-gray-500 sm:text-xl">ИнтерНорд, ООО</div>
+                                        </div>
+                                        <div class="text-gray-600/80">
+                                            <p>Ответственный подход к работе. Всё выполнено было чётко, в срок. Всегда на связи, информация вовремя. Осталось очень приятное впечатление. Рекомендую.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Преимущества -->
+            <section class="order-3 pb-6 pt-16 sm:order-4 sm:py-12 lg:py-16">
+                <div class="container flex flex-col gap-6 sm:gap-12 lg:gap-16">
+                    <h2 class="title-lg max-sm:text-2xl">Преимущества работы с KUBER</h2>
+                    <div class="grid gap-x-8 max-sm:divide-y max-sm:divide-gray-200 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:gap-y-16">
+                        <div class="relative flex flex-col gap-4 max-sm:py-3 sm:pt-7 sm:before:absolute sm:before:left-0 sm:before:top-0 sm:before:h-1 sm:before:w-[7.5rem] sm:before:bg-primary-400">
+                            <div class="font-semibold max-sm:flex max-sm:min-h-10 max-sm:items-center max-sm:gap-3 sm:text-xl">
+                                <img src="images/icons/folder.svg" alt="icon" class="w-8 shrink-0 sm:hidden" loading="lazy" />
+                                Транспортные документы сразу
+                            </div>
+                            <div class="text-gray-500 max-sm:hidden">
+                                <p>Мы применяем собственную систему документооборота для обмена транспортными документами с водителями.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex flex-col gap-4 max-sm:py-3 sm:pt-7 sm:before:absolute sm:before:left-0 sm:before:top-0 sm:before:h-1 sm:before:w-[7.5rem] sm:before:bg-primary-400">
+                            <div class="font-semibold max-sm:flex max-sm:min-h-10 max-sm:items-center max-sm:gap-3 sm:text-xl">
+                                <img src="images/icons/location.svg" alt="icon" class="w-8 shrink-0 sm:hidden" loading="lazy" />
+                                Наличие машин
+                            </div>
+                            <div class="text-gray-500 max-sm:hidden">
+                                <p>У нас свой автопарк с 4-х-остными прицепами Тонар и несколько сцепок в аренде.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex flex-col gap-4 max-sm:py-3 sm:pt-7 sm:before:absolute sm:before:left-0 sm:before:top-0 sm:before:h-1 sm:before:w-[7.5rem] sm:before:bg-primary-400">
+                            <div class="font-semibold max-sm:flex max-sm:min-h-10 max-sm:items-center max-sm:gap-3 sm:text-xl">
+                                <img src="images/icons/wallet.svg" alt="icon" class="w-8 shrink-0 sm:hidden" loading="lazy" />
+                                Рыночные тарифы
+                            </div>
+                            <div class="text-gray-500 max-sm:hidden">
+                                <p>Мы работаем по рыночным тарифам, но всегда готовы пойти навстречу клиенту.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex flex-col gap-4 max-sm:py-3 sm:pt-7 sm:before:absolute sm:before:left-0 sm:before:top-0 sm:before:h-1 sm:before:w-[7.5rem] sm:before:bg-primary-400">
+                            <div class="font-semibold max-sm:flex max-sm:min-h-10 max-sm:items-center max-sm:gap-3 sm:text-xl">
+                                <img src="images/icons/clock.svg" alt="icon" class="w-8 shrink-0 sm:hidden" loading="lazy" />
+                                Отсрочка платежа
+                            </div>
+                            <div class="text-gray-500 max-sm:hidden">
+                                <p>Постоянным клиентам мы готовы предоставить большее количество дней отсрочки платежа.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex flex-col gap-4 max-sm:py-3 sm:pt-7 sm:before:absolute sm:before:left-0 sm:before:top-0 sm:before:h-1 sm:before:w-[7.5rem] sm:before:bg-primary-400">
+                            <div class="font-semibold max-sm:flex max-sm:min-h-10 max-sm:items-center max-sm:gap-3 sm:text-xl">
+                                <img src="images/icons/briefcase.svg" alt="icon" class="w-8 shrink-0 sm:hidden" loading="lazy" />
+                                Профессиональность работы
+                            </div>
+                            <div class="text-gray-500 max-sm:hidden">
+                                <p>Мы можем принимать ваши заявки «по старинке» в WhatsApp и Telegram, либо вы можете самостоятельно их заводить на сайте kuber.ru в своём личном кабинете.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex flex-col gap-4 max-sm:py-3 sm:pt-7 sm:before:absolute sm:before:left-0 sm:before:top-0 sm:before:h-1 sm:before:w-[7.5rem] sm:before:bg-primary-400">
+                            <div class="font-semibold max-sm:flex max-sm:min-h-10 max-sm:items-center max-sm:gap-3 sm:text-xl">
+                                <img src="images/icons/chat.svg" alt="icon" class="w-8 shrink-0 sm:hidden" loading="lazy" />
+                                Клиентская поддержка 24/7
+                            </div>
+                            <div class="text-gray-500 max-sm:hidden">
+                                <p>Наша команда логистов всегда на связи и поможет решить все штатные и нештатные ситуации.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Начните работать с нами -->
+            <section class="order-5">
+                <div class="container max-lg:p-0">
+                    <div class="flex flex-col gap-5 bg-gray-100 pb-10 pt-12 max-lg:px-12 max-md:px-6 sm:gap-8 sm:pb-12 lg:rounded-3xl lg:pb-[4.5rem] lg:pt-14" id="tariffs-form-dest">
+                        <h2 class="title-lg text-center text-gray-900 max-lg:text-2xl">Начните с нами работать</h2>
+                        <div class="grid grid-cols-1 gap-16 pb-4 pt-4 max-md:gap-y-20 sm:pt-6 md:grid-cols-3 lg:gap-24">
+                            <div class="relative flex flex-col items-center gap-4 text-center md:gap-6">
+                                <svg class="absolute top-full size-8 text-primary-500 max-md:mt-6 max-md:rotate-90 md:left-full md:top-4 md:ml-4 lg:ml-8" aria-hidden="true">
+                                    <use href="images/icons/sprite.svg#arrow-right" />
+                                </svg>
+                                <div class="title-lg flex size-16 items-center justify-center rounded-full bg-primary-500/10 text-center text-primary-500">1</div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="font-semibold text-gray-900 max-md:text-xl lg:text-xl">Свяжитесь с нами</div>
+                                    <p class="max-w-[29ch] text-gray-600/80 md:max-lg:text-sm">
+                                        Оставьте ваш номер или напишите в&nbsp;мессенджеры
+                                        <a href="#" class="ml-0.5 inline-block align-middle max-lg:hidden">
+                                            <img src="images/icons/telegram.svg" alt="alt" class="w-4" />
+                                        </a>
+                                        <a href="#" class="ml-0.5 inline-block align-middle max-lg:hidden">
+                                            <img src="images/icons/whatsapp.svg" alt="alt" class="w-4" />
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="relative flex flex-col items-center gap-4 text-center md:gap-6">
+                                <svg class="absolute top-full size-8 text-primary-500 max-md:mt-6 max-md:rotate-90 md:left-full md:top-4 md:ml-4 lg:ml-8" aria-hidden="true">
+                                    <use href="images/icons/sprite.svg#arrow-right" />
+                                </svg>
+                                <div class="title-lg flex size-16 items-center justify-center rounded-full bg-primary-500/10 text-center text-primary-500">2</div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="font-semibold text-gray-900 max-md:text-xl lg:text-xl">Подпишите договор</div>
+                                    <p class="max-w-[29ch] text-gray-600/80 md:max-lg:text-sm">По своей или по нашей проформе</p>
+                                </div>
+                            </div>
+                            <div class="relative flex flex-col items-center gap-4 text-center md:gap-6">
+                                <div class="title-lg flex size-16 items-center justify-center rounded-full bg-primary-500/10 text-center text-primary-500">3</div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="font-semibold text-gray-900 max-md:text-xl lg:text-xl">Размещайте заявки</div>
+                                    <p class="max-w-[29ch] text-gray-600/80 md:max-lg:text-sm">Мы готовы к автовывозу контейнеров</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Расчитайте тариф -->
+            <section class="order-6 my-12 lg:my-16">
+                <div class="container max-w-[84.5rem]">
+                    <div class="sm:rounded-[2.5rem] sm:px-[clamp(3rem,21.951vw-11.049rem,7.5rem)] sm:py-14 sm:ring-1 sm:ring-inset sm:ring-gray-200">
+                        <div class="lg:grid lg:grid-cols-2 lg:gap-[clamp(3rem,39.024vw-21.976rem,11rem)]">
+                            <div class="flex flex-col gap-6 max-lg:mx-auto max-lg:w-full sm:gap-8 sm:max-lg:max-w-[26.25rem]">
+                                <h2 class="title-lg max-sm:text-2xl">Расчитайте тариф</h2>
+                                <form class="flex flex-col gap-6 sm:gap-8">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="font-semibold max-sm:text-sm">Маршрут заказа</div>
+                                        <div class="input-wrap input-wrap--default input-wrap--responsive group">
+                                            <input type="tel" id="tariffsPhone" class="input" placeholder="+7 (_ _ _) _ _ _ _ _ _ _" required />
+                                            <label for="tariffsPhone" class="input-floating-label">Введите номер</label>
+                                            <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-gray-400 transition-all hover:text-gray-500" aria-label="Очистить поле">
+                                        <svg class="size-full" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#x" />
+                                        </svg>
+                                    </button> -->
+                                        </div>
+                                        <div class="input-wrap input-wrap--default input-wrap--responsive group">
+                                            <input type="text" id="receive" class="input" required />
+                                            <label for="receive" class="input-floating-label">Место получения контейнера*</label>
+                                            <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-gray-400 transition-all hover:text-gray-500" aria-label="Очистить поле">
+                                        <svg class="size-full" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#x" />
+                                        </svg>
+                                    </button> -->
+                                        </div>
+                                        <div class="input-wrap input-wrap--default input-wrap--responsive group">
+                                            <input type="text" id="destination" class="input" required />
+                                            <label for="destination" class="input-floating-label">Место доставки контейнера*</label>
+                                            <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-gray-400 transition-all hover:text-gray-500" aria-label="Очистить поле">
+                                        <svg class="size-full" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#x" />
+                                        </svg>
+                                    </button> -->
+                                        </div>
+                                        <div class="input-wrap input-wrap--default input-wrap--responsive group">
+                                            <input type="text" id="send" class="input" required />
+                                            <label for="send" class="input-floating-label">Место сдачи контейнера*</label>
+                                            <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-gray-400 transition-all hover:text-gray-500" aria-label="Очистить поле">
+                                        <svg class="size-full" aria-hidden="true">
+                                            <use href="images/icons/sprite.svg#x" />
+                                        </svg>
+                                    </button> -->
+                                        </div>
+                                        <!-- Success message -->
+                                        <!-- <div class="bg-green-50 flex items-center gap-2 rounded-xl px-3 py-4">
+                                    <svg class="text-green-600 size-6 shrink-0" aria-hidden="true">
+                                        <use href="images/icons/sprite.svg#check-circle" />
+                                    </svg>
+                                    <div class="text-green-900 flex-auto font-medium leading-tight">Ваша заявка принята, мы вам перезвоним</div>
+                                </div> -->
+                                    </div>
+                                    <button type="submit" class="btn btn--primary w-full">Рассчитать тариф</button>
+                                </form>
+                            </div>
+                            <div class="flex flex-col gap-8 max-lg:hidden">
+                                <img src="images/tariff.png" alt="alt" loading="lazy" />
+                                <div class="flex flex-col gap-6 sm:max-lg:self-center" id="tariffs-form">
+                                    <form class="flex max-w-full shrink-0 flex-col gap-2 sm:w-[26.25rem]">
+                                        <div class="text-sm font-semibold text-gray-600 lg:text-gray-500">Отправьте номер, мы перезвоним</div>
+                                        <div class="relative max-sm:flex max-sm:flex-col max-sm:gap-2">
+                                            <div class="input-wrap input-wrap--primary group">
+                                                <input type="tel" id="phone" class="input sm:pr-[10.75rem]" placeholder="+7 (_ _ _) _ _ _ _ _ _ _" required />
+                                                <label for="phone" class="input-floating-label">Введите номер</label>
+                                                <!-- <button type="button" class="absolute right-4 top-1/2 size-6 -translate-y-1/2 cursor-pointer text-white/60 transition-all hover:text-white/70 sm:right-[calc(9.75rem+1rem)]" aria-label="Очистить поле">
+                                            <svg class="size-full" aria-hidden="true">
+                                                <use href="images/icons/sprite.svg#x" />
+                                            </svg>
+                                        </button> -->
+                                            </div>
+                                            <button type="submit" class="btn btn--primary w-full sm:absolute sm:bottom-0 sm:right-0 sm:top-0 sm:w-[9.75rem]">Отправить</button>
+                                        </div>
+                                    </form>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="text-sm font-semibold text-gray-600 lg:text-gray-500">Или напишите нам в мессенжерах</div>
+                                        <div class="flex flex-wrap gap-4">
+                                            <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-500 underline underline-offset-4 transition-colors hover:text-primary-500 lg:text-gray-400">
+                                                <img src="images/icons/telegram.svg" alt="alt" class="w-7 shrink-0" width="28" height="28" />
+                                                Telegram
+                                            </a>
+                                            <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-500 underline underline-offset-4 transition-colors hover:text-primary-500 lg:text-gray-400">
+                                                <img src="images/icons/whatsapp.svg" alt="alt" class="w-7 shrink-0" width="28" height="28" />
+                                                WhatsApp
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="sticky-socials"></div>
+
+        <!-- prettier-ignore -->
+        <footer class="footer bg-primary-900 pb-10 pt-10 text-white sm:pt-[4.5rem] lg:pt-[5.5rem]">
+    <div class="container">
+      <div class="mx-auto flex max-w-[67ch] flex-col gap-4 text-center">
+        <div class="text-xl font-semibold">ООО «КУБЕР»</div>
+        <div>
+          <div>ИНН 7722489721</div>
+          <div>Москва, Научный проезд, 17, оф. 1537</div>
+          <div><a href="tel:88002502402">8 800 250 24 02</a></div>
+        </div>
+        <nav>
+          <ul class="flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <li><a href="#" class="text-primary-400 underline underline-offset-4 sm:text-primary-300">Политика обработки и защиты персональных данных</a></li>
+            <li><a href="#" class="text-primary-400 underline underline-offset-4 sm:text-primary-300">Правила пользования сайтом</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
